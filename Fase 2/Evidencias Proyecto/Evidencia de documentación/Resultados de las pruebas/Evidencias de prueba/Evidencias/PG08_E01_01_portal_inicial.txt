@@ -1,0 +1,70 @@
+2026-10-28T03:17:42.384Z
+Suscripción mensual de una prueba. Portal identifica entorno de prueba. Antes de cancelar.
+- link "Entorno de prueba de Aprueba - MVP universitario Entorno de prueba":
+  - /url: https://aprueba-student.vercel.app/plan
+  - generic: Entorno de prueba de Aprueba - MVP universitario
+  - text: Entorno de prueba
+- generic: Gestiona tu suscripcion a Aprueba
+- link "Volver a Entorno de prueba de Aprueba - MVP universitario":
+  - /url: https://aprueba-student.vercel.app/plan
+  - generic: Volver a Entorno de prueba de Aprueba - MVP universitario
+- contentinfo:
+  - link "Powered by Stripe":
+    - /url: [enlace de Stripe omitido]
+    - generic: Powered by
+    - img "Stripe"
+  - link "Condiciones":
+    - /url: [enlace de Stripe omitido]
+  - link "Privacidad":
+    - /url: [enlace de Stripe omitido]
+- generic: Suscripción actual
+- generic: Aprueba - 1 prueba ilimitada
+- generic: 1,00 US$ por mes
+- generic: Tu próxima fecha de facturación es 4 de noviembre de 2026.
+- text: Tu próximo pago estimado será de
+- generic: 0,00 US$
+- button "Consulta los datos":
+  - generic: Consulta los datos
+- link "Actualiza la suscripción":
+  - /url: /p/session/subscriptions/sub_1UMxrIAhY3J8iTOwYmtPRKb5/update?secret=test_YWNjdF8xVU1yM0hBaFkzSjhpVE93LF9WV1FDVnN2b2NuTGdNQWw5dW5uY0wwQmZDWFV0MHQz0100uh9j37MX
+  - generic: Actualiza la suscripción
+- link "Cancelar suscripción":
+  - /url: /p/session/subscriptions/sub_1UMxrIAhY3J8iTOwYmtPRKb5/cancel?secret=test_YWNjdF8xVU1yM0hBaFkzSjhpVE93LF9WV1FDVnN2b2NuTGdNQWw5dW5uY0wwQmZDWFV0MHQz0100uh9j37MX
+  - generic: Cancelar suscripción
+- generic: Métodos de pago
+- generic: Mastercard •••• 4444
+- generic: Caduca el 12/2034
+- generic: Predeterminado
+- button "Eliminar" [disabled]:
+- generic: Visa •••• 0341
+- generic: Caduca el 12/2030
+- button "More options":
+  - generic: More options
+- generic: Visa •••• 4242
+- generic: Caduca el 12/2030
+- button "More options":
+  - generic: More options
+- link "Añadir método de pago":
+  - /url: /p/session/payment-methods?secret=test_YWNjdF8xVU1yM0hBaFkzSjhpVE93LF9WV1FDVnN2b2NuTGdNQWw5dW5uY0wwQmZDWFV0MHQz0100uh9j37MX
+  - generic: Añadir método de pago
+- generic: Historial de facturas
+- button:
+- link "7 oct 2026 0,00 US$ Pagada Aprueba - 1 prueba ilimitada":
+  - /url: [enlace de Stripe omitido]
+  - generic: 7 oct 2026
+  - generic: 0,00 US$
+  - generic: Pagada
+  - paragraph: Aprueba - 1 prueba ilimitada
+- link "6 oct 2026 3,80 US$ Pagada Aprueba - Todas las pruebas":
+  - /url: [enlace de Stripe omitido]
+  - generic: 6 oct 2026
+  - generic: 3,80 US$
+  - generic: Pagada
+  - paragraph: Aprueba - Todas las pruebas
+- link "4 oct 2026 1,00 US$ Pagada Aprueba - 1 prueba ilimitada":
+  - /url: [enlace de Stripe omitido]
+  - generic: 4 oct 2026
+  - generic: 1,00 US$
+  - generic: Pagada
+  - paragraph: Aprueba - 1 prueba ilimitada
+- iframe

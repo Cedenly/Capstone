@@ -1,0 +1,72 @@
+2026-10-28T03:19:00.453Z
+Mi plan tras actualizar estado.
+- complementary:
+  - text: Aprueba
+  - navigation:
+    - generic: Principal
+    - link "🏠 Inicio":
+      - /url: /
+      - generic: 🏠
+      - text: Inicio
+    - link "✏️ Practicar":
+      - /url: /practicar
+      - generic: ✏️
+      - text: Practicar
+    - link "🏅 Medallas":
+      - /url: /medallas
+      - generic: 🏅
+      - text: Medallas
+    - link "👥 Grupos":
+      - /url: /grupos
+      - generic: 👥
+      - text: Grupos
+    - link "💬 Comunidad":
+      - /url: /comunidad
+      - generic: 💬
+      - text: Comunidad
+    - generic: Cuenta
+    - link "💳 Mi plan":
+      - /url: /plan
+      - generic: 💳
+      - text: Mi plan
+    - link "⚙️ Ajustes":
+      - /url: /ajustes
+      - generic: ⚙️
+      - text: Ajustes
+  - generic: PV
+  - generic: Prueba Vercel Octubre
+  - generic: 1 prueba ilimitada
+- banner:
+  - generic: Mi plan
+  - text: 🔍
+  - textbox "Buscar pregunta, tema o grupo..."
+  - generic: 🔥 7
+  - combobox:
+    - option "ES" [selected]
+    - option "EN"
+  - button "🌙"
+- main:
+  - generic: Mi plan
+  - generic: Modo de prueba
+  - paragraph: Planes y suscripciones de Aprueba. Precios en dólares estadounidenses.
+  - generic: 💳
+  - text: Gestiona tu suscripción
+  - paragraph: Cambia tu plan, gestiona la renovación y consulta tu tarjeta y facturas.
+  - paragraph:
+    - strong: "Medio de pago registrado:"
+    - text: MASTERCARD •••• 4444
+  - text: Prueba incluida al elegir 1 prueba ilimitada
+  - paragraph: Si eliges ese plan en Stripe, la prueba asignada será Ciencias.
+  - paragraph: La prueba se elige en Aprueba al realizar la primera compra. Cambiar esa elección en una suscripción existente todavía no está disponible en esta versión.
+  - button "Gestionar suscripción en Stripe"
+  - generic: ✅
+  - text: Plan actual
+  - paragraph: Renovación cancelada, acceso vigente
+  - generic: 1 prueba ilimitada
+  - generic: Ciclo
+  - generic: Mensual
+  - generic: Acceso hasta
+  - generic: 04-11-2026
+  - paragraph: "Prueba ilimitada: Ciencias"
+  - paragraph: La renovación está cancelada. Mantienes el acceso hasta el fin del período.
+  - button "Actualizar estado" [active]

@@ -1,0 +1,85 @@
+2026-10-28T03:22:58.127Z
+Después de responder Ciencias: beneficio ilimitado y cuota gratuita utilizada 0.
+- complementary:
+  - text: Aprueba
+  - navigation:
+    - generic: Principal
+    - link "🏠 Inicio" [active]:
+      - /url: /
+      - generic: 🏠
+      - text: Inicio
+    - link "✏️ Practicar":
+      - /url: /practicar
+      - generic: ✏️
+      - text: Practicar
+    - link "🏅 Medallas":
+      - /url: /medallas
+      - generic: 🏅
+      - text: Medallas
+    - link "👥 Grupos":
+      - /url: /grupos
+      - generic: 👥
+      - text: Grupos
+    - link "💬 Comunidad":
+      - /url: /comunidad
+      - generic: 💬
+      - text: Comunidad
+    - generic: Cuenta
+    - link "💳 Mi plan":
+      - /url: /plan
+      - generic: 💳
+      - text: Mi plan
+    - link "⚙️ Ajustes":
+      - /url: /ajustes
+      - generic: ⚙️
+      - text: Ajustes
+  - generic: PV
+  - generic: Prueba Vercel Octubre
+  - generic: 1 prueba ilimitada
+- banner:
+  - generic: Inicio
+  - text: 🔍
+  - textbox "Buscar pregunta, tema o grupo..."
+  - generic: 🔥 7
+  - combobox:
+    - option "ES" [selected]
+    - option "EN"
+  - button "🌙"
+- main:
+  - generic: Hola, Prueba Vercel Octubre 👋
+  - generic: Esto es lo que tienes para hoy.
+  - button "Empezar a practicar →"
+  - generic: Cuota diaria
+  - generic: Ilimitada en Ciencias
+  - paragraph: Las demás pruebas comparten una cuota gratuita de 10 respuestas diarias. Hoy has utilizado 0.
+  - generic: Racha 🔥
+  - generic: 7 dias
+  - paragraph: Sigue asi! No pierdas tu racha.
+  - generic: Tus medallas
+  - generic: Ver todo →
+  - generic: 🥉
+  - generic: "267"
+  - generic: 🥈
+  - generic: "0"
+  - generic: 🥇
+  - generic: "0"
+  - generic: 💎
+  - generic: "0"
+  - generic: ⬢
+  - generic: "0"
+  - generic: 🥉
+  - text: 2/5 para
+  - generic: 🥈
+  - generic: Continuar practicando
+  - paragraph: Retoma donde quedaste.
+  - button "Empezar a practicar"
+  - generic: Accesos rapidos
+  - generic: ✏️
+  - text: Practicar
+  - generic: 👥
+  - text: Mis grupos
+  - generic: 🏅
+  - text: Canjear medallas
+  - generic: Progreso por prueba
+  - generic: Ciencias
+  - generic: 36%

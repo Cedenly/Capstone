@@ -1,0 +1,24 @@
+{
+  "caso": "CP02",
+  "ejecucion": "CP02_E01_20261029",
+  "source": "Stripe GET /v1/payment_intents; customer cus_VWyTM9wzjtYxWG",
+  "entorno": "test",
+  "nota": "Extracto de consulta real. Se omiten client_secret, método de pago completo y datos no necesarios.",
+  "payment_intent": {
+    "id": "pi_3UVuWuAhY3J8iTOw1zsoa63Q",
+    "object": "payment_intent",
+    "created": 1793284932,
+    "livemode": false,
+    "customer": "cus_VWyTM9wzjtYxWG",
+    "amount": 100,
+    "amount_received": 0,
+    "currency": "usd",
+    "status": "requires_payment_method"
+  },
+  "last_payment_error": {
+    "code": "card_declined",
+    "decline_code": "generic_decline",
+    "message": "Your card was declined.",
+    "type": "card_error"
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "case": "PG-01",
+  "execution": "PG01_E01_20261029",
+  "source": "Stripe GET checkout sessions, subscription and invoice; test account acct_1UMr3HAhY3J8iTOw",
+  "session": {
+    "id": "cs_test_a16UUOPJk6XAk21cWbkMZi6yteFMEZqhto84ZizZKwrRwWVSbbwxTQUbIg",
+    "status": "complete",
+    "payment_status": "paid",
+    "customer": "cus_VWytQkXU3Nd5tt",
+    "subscription": "sub_1UVuvWAhY3J8iTOwIx3147Sz",
+    "invoice": "in_1UVuvUAhY3J8iTOwQgyeylGh",
+    "amount_total": 100,
+    "currency": "usd",
+    "livemode": false,
+    "metadata": {
+      "attemptId": "abb29dac-3268-4039-b15b-d5da9d317b79",
+      "billingCycle": "monthly",
+      "integration": "aprueba_mvp",
+      "plan": "uni",
+      "testId": "cien",
+      "userId": "usr_cd0e892722"
+    }
+  },
+  "subscription": {
+    "id": "sub_1UVuvWAhY3J8iTOwIx3147Sz",
+    "status": "active",
+    "customer": "cus_VWytQkXU3Nd5tt",
+    "latest_invoice": "in_1UVuvUAhY3J8iTOwQgyeylGh",
+    "pending_update": null,
+    "metadata": {
+      "attemptId": "abb29dac-3268-4039-b15b-d5da9d317b79",
+      "billingCycle": "monthly",
+      "integration": "aprueba_mvp",
+      "plan": "uni",
+      "testId": "cien",
+      "userId": "usr_cd0e892722"
+    },
+    "test_clock": null
+  },
+  "items": [
+    {
+      "id": "si_VWythH8zeoPX9f",
+      "current_period_start": 1793286456,
+      "current_period_end": 1795964856,
+      "price": {
+        "id": "price_1UMtdgAhY3J8iTOwCaU4YkPk",
+        "unit_amount": 100,
+        "currency": "usd",
+        "recurring": {
+          "interval": "month",
+          "interval_count": 1,
+          "meter": null,
+          "trial_period_days": null,
+          "usage_type": "licensed"
+        },
+        "product": "prod_aprueba_uni"
+      }
+    }
+  ],
+  "invoice": {
+    "id": "in_1UVuvUAhY3J8iTOwQgyeylGh",
+    "status": "paid",
+    "amount_paid": 100,
+    "amount_due": 100,
+    "amount_remaining": 0,
+    "currency": "usd",
+    "customer": "cus_VWytQkXU3Nd5tt",
+    "billing_reason": "subscription_create",
+    "status_transitions": {
+      "finalized_at": 1793286456,
+      "marked_uncollectible_at": null,
+      "paid_at": 1793286457,
+      "voided_at": null
+    }
+  }
+}

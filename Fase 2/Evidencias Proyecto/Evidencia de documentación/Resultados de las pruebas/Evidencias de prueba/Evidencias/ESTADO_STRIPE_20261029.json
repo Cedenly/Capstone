@@ -1,0 +1,68 @@
+{
+  "source": "Stripe GET /v1/checkout/sessions?limit=3",
+  "fecha_consulta": "2026-10-29",
+  "momento": "Después del bloqueo de PG-01. Hora exacta no retenida.",
+  "nota": "Selección de campos de la respuesta real; se omiten URLs de sesión y secretos. No se reconstruye una respuesta de API Aprueba.",
+  "sessions": [
+    {
+      "caso": "PG-03",
+      "id": "cs_test_a1EGGjeslWVIhFv9ZMEznFBJ4MyF2YYqh0PV2l3UiBywEIuoKPtfg6xjui",
+      "metadata": {
+        "attemptId": "b66ce2fa-6e45-45bb-b200-fa40a8c78e16",
+        "userId": "usr_cd0e892722",
+        "plan": "uni",
+        "testId": "cien",
+        "billingCycle": "monthly"
+      },
+      "status": "expired",
+      "payment_status": "unpaid",
+      "subscription": null,
+      "invoice": null,
+      "customer": null,
+      "amount_total": 100,
+      "currency": "usd",
+      "livemode": false,
+      "created": 1793284722
+    },
+    {
+      "caso": "CP02",
+      "id": "cs_test_a1Xq9vLXxvicUyEcZxHcaLYKq8mcdswWIzrcy9Rg9Co30thCgsnRd8VTOe",
+      "metadata": {
+        "attemptId": "ed382dc9-b4df-4266-a4e5-5e641cb53c6c",
+        "userId": "usr_cd0e892722",
+        "plan": "uni",
+        "testId": "cien",
+        "billingCycle": "monthly"
+      },
+      "status": "expired",
+      "payment_status": "unpaid",
+      "subscription": null,
+      "invoice": null,
+      "customer": "cus_VWyTM9wzjtYxWG",
+      "amount_total": 100,
+      "currency": "usd",
+      "livemode": false,
+      "created": 1793284858
+    },
+    {
+      "caso": "PG-01",
+      "id": "cs_test_a16UUOPJk6XAk21cWbkMZi6yteFMEZqhto84ZizZKwrRwWVSbbwxTQUbIg",
+      "metadata": {
+        "attemptId": "abb29dac-3268-4039-b15b-d5da9d317b79",
+        "userId": "usr_cd0e892722",
+        "plan": "uni",
+        "testId": "cien",
+        "billingCycle": "monthly"
+      },
+      "status": "open",
+      "payment_status": "unpaid",
+      "subscription": null,
+      "invoice": null,
+      "customer": null,
+      "amount_total": 100,
+      "currency": "usd",
+      "livemode": false,
+      "created": 1793285366
+    }
+  ]
+}

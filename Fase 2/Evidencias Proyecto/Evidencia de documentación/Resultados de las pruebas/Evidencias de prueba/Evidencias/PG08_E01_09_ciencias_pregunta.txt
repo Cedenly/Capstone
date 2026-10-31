@@ -1,0 +1,65 @@
+2026-10-28T03:22:09.179Z
+Práctica CIEN Biología accesible con renovación cancelada.
+- complementary:
+  - text: Aprueba
+  - navigation:
+    - generic: Principal
+    - link "🏠 Inicio":
+      - /url: /
+      - generic: 🏠
+      - text: Inicio
+    - link "✏️ Practicar" [active]:
+      - /url: /practicar
+      - generic: ✏️
+      - text: Practicar
+    - link "🏅 Medallas":
+      - /url: /medallas
+      - generic: 🏅
+      - text: Medallas
+    - link "👥 Grupos":
+      - /url: /grupos
+      - generic: 👥
+      - text: Grupos
+    - link "💬 Comunidad":
+      - /url: /comunidad
+      - generic: 💬
+      - text: Comunidad
+    - generic: Cuenta
+    - link "💳 Mi plan":
+      - /url: /plan
+      - generic: 💳
+      - text: Mi plan
+    - link "⚙️ Ajustes":
+      - /url: /ajustes
+      - generic: ⚙️
+      - text: Ajustes
+  - generic: PV
+  - generic: Prueba Vercel Octubre
+  - generic: 1 prueba ilimitada
+- banner:
+  - generic: Practicar
+  - text: 🔍
+  - textbox "Buscar pregunta, tema o grupo..."
+  - generic: 🔥 7
+  - combobox:
+    - option "ES" [selected]
+    - option "EN"
+  - button "🌙"
+- main:
+  - generic: Pregunta 1 de 10
+  - text: ⏱️
+  - generic: 0:15
+  - generic: CIEN · Biologia
+  - generic: En un experimento, se colocan mitocondrias aisladas en un tubo con ADP, fosfato inorgánico y un sustrato que será oxidado. ¿Qué molécula se producirá en mayor cantidad si se suministra oxígeno suficiente?
+  - generic: A
+  - text: Glucosa
+  - generic: B
+  - text: NADH
+  - generic: C
+  - text: ATP
+  - generic: D
+  - text: CO₂
+  - generic: E
+  - text: Agua
+  - paragraph: El cronómetro registra tu tiempo de respuesta.
+  - button "Comprobar respuesta" [disabled]

@@ -1,0 +1,70 @@
+2026-10-28T03:26:34.758Z
+Restauración confirmada visualmente: solo Comp. Lectora seleccionada.
+- complementary:
+  - text: Aprueba
+  - navigation:
+    - generic: Principal
+    - link "🏠 Inicio":
+      - /url: /
+      - generic: 🏠
+      - text: Inicio
+    - link "✏️ Practicar":
+      - /url: /practicar
+      - generic: ✏️
+      - text: Practicar
+    - link "🏅 Medallas":
+      - /url: /medallas
+      - generic: 🏅
+      - text: Medallas
+    - link "👥 Grupos":
+      - /url: /grupos
+      - generic: 👥
+      - text: Grupos
+    - link "💬 Comunidad":
+      - /url: /comunidad
+      - generic: 💬
+      - text: Comunidad
+    - generic: Cuenta
+    - link "💳 Mi plan":
+      - /url: /plan
+      - generic: 💳
+      - text: Mi plan
+    - link "⚙️ Ajustes":
+      - /url: /ajustes
+      - generic: ⚙️
+      - text: Ajustes
+  - generic: PV
+  - generic: Prueba Vercel Octubre
+  - generic: 1 prueba ilimitada
+- banner:
+  - generic: Ajustes
+  - text: 🔍
+  - textbox "Buscar pregunta, tema o grupo..."
+  - generic: 🔥 7
+  - combobox:
+    - option "ES" [selected]
+    - option "EN"
+  - button "🌙"
+- main:
+  - generic: Ajustes
+  - generic: Modo oscuro
+  - generic: Idioma
+  - combobox:
+    - option "Español" [selected]
+    - option "English"
+  - generic: Recordatorio diario
+  - text: Mis pruebas
+  - generic: Comp. Lectora
+  - generic: Matematica M1
+  - generic: Matematica M2
+  - generic: Ciencias
+  - generic: Historia y C. Soc.
+  - generic: Mi plan
+  - generic: 1 prueba ›
+  - generic: Mis datos y privacidad
+  - generic: ›
+  - generic: Cerrar sesion
+  - generic: ›
+  - text: Eliminar cuenta
+  - paragraph: Todos tus datos y medallas seran eliminados.
+  - button "Eliminar cuenta"

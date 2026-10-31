@@ -1,0 +1,99 @@
+2026-10-28T03:19:00.380Z
+Mismo ID de suscripción, renovación cancelada, acceso habilitado y fecha conservada.
+- complementary:
+  - text: Aprueba
+  - generic: Consola de negocio
+  - navigation:
+    - generic: Negocio
+    - link "📊 Resumen":
+      - /url: /
+      - generic: 📊
+      - text: Resumen
+    - link "💰 Comercial":
+      - /url: /comercial
+      - generic: 💰
+      - text: Comercial
+    - link "🤝 Sponsors":
+      - /url: /sponsors
+      - generic: 🤝
+      - text: Sponsors
+    - link "💳 Facturación":
+      - /url: /facturacion
+      - generic: 💳
+      - text: Facturación
+    - generic: Plataforma
+    - link "🛠️ Operativa":
+      - /url: /operativa
+      - generic: 🛠️
+      - text: Operativa
+    - link "👥 Usuarios y soporte":
+      - /url: /usuarios
+      - generic: 👥
+      - text: Usuarios y soporte
+    - link "🎓 Tutores":
+      - /url: /tutores
+      - generic: 🎓
+      - text: Tutores
+    - link "📚 Contenido":
+      - /url: /contenido
+      - generic: 📚
+      - text: Contenido
+    - link "🧩 Planes y productos":
+      - /url: /planes
+      - generic: 🧩
+      - text: Planes y productos
+  - generic: AM
+  - generic: Administrador MVP
+  - generic: Gerencia
+  - button "Cerrar sesión"
+- banner:
+  - generic: Facturación
+  - combobox:
+    - option "🌐 ES" [selected]
+    - option "🌐 EN"
+  - button "🌙"
+- main:
+  - heading "Facturación" [level=2]
+  - paragraph: Suscripciones y facturas sincronizadas con Stripe.
+  - generic: Modo de prueba · Sin cobros reales
+  - button "Actualizar"
+  - tablist:
+    - tab "Suscripciones" [selected]
+    - tab "Facturas"
+  - textbox "Buscar en esta página":
+    - /placeholder: Buscar en esta página por usuario, correo o ID
+    - text: prueba.vercel.octubre@example.com
+  - generic: Registros mostrados
+  - generic: "1"
+  - generic: Con acceso habilitado
+  - generic: "1"
+  - generic: Renovaciones canceladas
+  - generic: "1"
+  - paragraph: Los indicadores corresponden a las filas mostradas. Se incluyen solo registros de Stripe en modo de prueba.
+  - table:
+    - rowgroup:
+      - row "Usuario Plan y suscripción Estado Acceso Vigencia y renovación":
+        - columnheader "Usuario"
+        - columnheader "Plan y suscripción"
+        - columnheader "Estado"
+        - columnheader "Acceso"
+        - columnheader "Vigencia y renovación"
+    - rowgroup:
+      - 'row "Prueba Vercel Octubre prueba.vercel.octubre@example.com 1 prueba ilimitada Prueba ilimitada: Ciencias Mensual sub_1UMxrIAhY3J8iTOwYmtPRKb5 Activa Habilitado Fin del período: 04-11-2026 Renovación cancelada"':
+        - cell "Prueba Vercel Octubre prueba.vercel.octubre@example.com":
+          - text: Prueba Vercel Octubre
+          - generic: prueba.vercel.octubre@example.com
+        - 'cell "1 prueba ilimitada Prueba ilimitada: Ciencias Mensual sub_1UMxrIAhY3J8iTOwYmtPRKb5"':
+          - text: 1 prueba ilimitada
+          - generic: "Prueba ilimitada: Ciencias"
+          - generic: Mensual
+          - generic: sub_1UMxrIAhY3J8iTOwYmtPRKb5
+        - cell "Activa":
+          - generic: Activa
+        - cell "Habilitado"
+        - 'cell "Fin del período: 04-11-2026 Renovación cancelada"':
+          - generic: "Fin del período: 04-11-2026"
+          - generic: Renovación cancelada
+  - generic: Página 1 · Hasta 25 registros por página
+  - button "Anterior" [disabled]
+  - button "Siguiente" [disabled]

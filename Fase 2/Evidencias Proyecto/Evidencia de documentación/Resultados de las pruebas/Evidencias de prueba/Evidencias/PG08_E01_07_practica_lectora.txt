@@ -1,0 +1,65 @@
+2026-10-28T03:20:29.502Z
+Los accesos visibles a Practicar abren LECTORA. No se ha localizado selector de Ciencias en esta pantalla. No acredita práctica de la materia pagada.
+- complementary:
+  - text: Aprueba
+  - navigation:
+    - generic: Principal
+    - link "🏠 Inicio":
+      - /url: /
+      - generic: 🏠
+      - text: Inicio
+    - link "✏️ Practicar":
+      - /url: /practicar
+      - generic: ✏️
+      - text: Practicar
+    - link "🏅 Medallas":
+      - /url: /medallas
+      - generic: 🏅
+      - text: Medallas
+    - link "👥 Grupos":
+      - /url: /grupos
+      - generic: 👥
+      - text: Grupos
+    - link "💬 Comunidad":
+      - /url: /comunidad
+      - generic: 💬
+      - text: Comunidad
+    - generic: Cuenta
+    - link "💳 Mi plan":
+      - /url: /plan
+      - generic: 💳
+      - text: Mi plan
+    - link "⚙️ Ajustes":
+      - /url: /ajustes
+      - generic: ⚙️
+      - text: Ajustes
+  - generic: PV
+  - generic: Prueba Vercel Octubre
+  - generic: 1 prueba ilimitada
+- banner:
+  - generic: Practicar
+  - text: 🔍
+  - textbox "Buscar pregunta, tema o grupo..."
+  - generic: 🔥 7
+  - combobox:
+    - option "ES" [selected]
+    - option "EN"
+  - button "🌙"
+- main:
+  - generic: Pregunta 1 de 10
+  - text: ⏱️
+  - generic: 0:38
+  - generic: LECTORA · Comprension lectora
+  - generic: Señala la opción que presenta una incorrecta concordancia de género con el sustantivo 'agua'.
+  - generic: A
+  - text: El agua está fría.
+  - generic: B
+  - text: El agua fría.
+  - generic: C
+  - text: Las aguas frías.
+  - generic: D
+  - text: La agua fresca.
+  - generic: E
+  - text: Esta agua es clara.
+  - paragraph: El cronómetro registra tu tiempo de respuesta.
+  - button "Comprobar respuesta" [disabled]

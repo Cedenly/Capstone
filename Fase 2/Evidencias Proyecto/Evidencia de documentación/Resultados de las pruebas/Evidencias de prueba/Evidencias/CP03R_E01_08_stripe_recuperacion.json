@@ -1,0 +1,40 @@
+{
+  "source": "Stripe GET invoice/subscription/payment_intents",
+  "capturedAt": "2026-10-29T15:24:08.849Z",
+  "livemode": false,
+  "before_payment": {
+    "id": "in_1UVv5VAhY3J8iTOwbfpXdNdz",
+    "status": "open",
+    "amount_paid": 0,
+    "remaining": 400,
+    "attempt_count": 1
+  },
+  "after_payment": {
+    "invoice": "in_1UVv5VAhY3J8iTOwbfpXdNdz",
+    "number": "C8ESGMOZ-0002",
+    "status": "paid",
+    "paid": 400,
+    "remaining": 0,
+    "currency": "usd",
+    "subscription": "sub_1UVuvWAhY3J8iTOwIx3147Sz",
+    "subscription_status": "active",
+    "pending_update": null,
+    "product": "prod_aprueba_all",
+    "unit_amount": 500,
+    "period_end": 1795964856
+  },
+  "intents": [
+    {
+      "id": "pi_3UVv5WAhY3J8iTOw0FeWuc4i",
+      "status": "succeeded",
+      "amount": 400,
+      "received": 400
+    },
+    {
+      "id": "pi_3UVuvUAhY3J8iTOw0UzPLlVB",
+      "status": "succeeded",
+      "amount": 100,
+      "received": 100
+    }
+  ]
+}

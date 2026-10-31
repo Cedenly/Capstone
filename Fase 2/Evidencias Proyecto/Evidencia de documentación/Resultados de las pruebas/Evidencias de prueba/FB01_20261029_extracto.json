@@ -1,0 +1,588 @@
+{
+  "evidenceId": "FB01_20261029",
+  "source": "DAD_20_FIRESTORE_BD_aprueba-mvp-pruebas-2fc41_COMPLETO_2026-10-29T17-09-06-668Z.json",
+  "sha256": "c8eda697857dc6c0375c8872841a78ee10f6ae434184d087fed754dcd0cc3201",
+  "metadata": {
+    "projectId": "aprueba-mvp-pruebas-2fc41",
+    "databaseId": "(default)",
+    "startedAt": "2026-10-29T17:09:06.668Z",
+    "finishedAt": "2026-10-29T17:11:18.786Z",
+    "complete": true,
+    "scope": "Documentos y subcolecciones accesibles en esta base de Firestore",
+    "exclusions": [
+      "Authentication",
+      "Storage",
+      "Security Rules",
+      "index definitions",
+      "IAM",
+      "campos sin ejemplos guardados"
+    ],
+    "notes": [
+      "Esquema observado, no contrato de datos obligatorio.",
+      "Lecturas durante un intervalo; evitar cambios mientras se ejecuta.",
+      "IDs de texto pueden representar relaciones aunque no sean DocumentReference.",
+      "No es un archivo de importacion nativo de Firebase."
+    ]
+  },
+  "questionCounts": {
+    "m1": 683,
+    "m2": 0,
+    "lectora": 559,
+    "hist": 0,
+    "cien": 123
+  },
+  "records": [
+    {
+      "path": "answers/ans_prs_0e84201813804275a6f83f15d944c20b",
+      "updateTime": {
+        "__firestoreType": "timestamp",
+        "seconds": 1793287232,
+        "nanoseconds": 895591000,
+        "iso": "2026-10-29T15:20:32.896Z"
+      },
+      "data": {
+        "id": "ans_prs_0e84201813804275a6f83f15d944c20b",
+        "userId": "usr_cd0e892722",
+        "questionId": "qst_ef5b52b354",
+        "testId": "m1",
+        "correct": true,
+        "sessionId": "prs_0e84201813804275a6f83f15d944c20b",
+        "createdAt": "2026-10-29T15:20:32.795Z"
+      }
+    },
+    {
+      "path": "answers/ans_prs_23662496e9d14e04ab9ca28a7bce5442",
+      "updateTime": {
+        "__firestoreType": "timestamp",
+        "seconds": 1793287496,
+        "nanoseconds": 367423000,
+        "iso": "2026-10-29T15:24:56.367Z"
+      },
+      "data": {
+        "id": "ans_prs_23662496e9d14e04ab9ca28a7bce5442",
+        "userId": "usr_cd0e892722",
+        "questionId": "qst_eb7a150220",
+        "testId": "m1",
+        "correct": true,
+        "sessionId": "prs_23662496e9d14e04ab9ca28a7bce5442",
+        "createdAt": "2026-10-29T15:24:56.250Z"
+      }
+    },
+    {
+      "path": "answers/ans_prs_3f64a7da67794caaadcd2656996cbadc",
+      "updateTime": {
+        "__firestoreType": "timestamp",
+        "seconds": 1793288046,
+        "nanoseconds": 234197000,
+        "iso": "2026-10-29T15:34:06.234Z"
+      },
+      "data": {
+        "id": "ans_prs_3f64a7da67794caaadcd2656996cbadc",
+        "userId": "usr_cd0e892722",
+        "questionId": "qst_5c7bd28974",
+        "testId": "cien",
+        "correct": true,
+        "sessionId": "prs_3f64a7da67794caaadcd2656996cbadc",
+        "createdAt": "2026-10-29T15:34:06.115Z"
+      }
+    },
+    {
+      "path": "answers/ans_prs_4e3c389969e244f29bfb31059bcf38c0",
+      "updateTime": {
+        "__firestoreType": "timestamp",
+        "seconds": 1793287820,
+        "nanoseconds": 880253000,
+        "iso": "2026-10-29T15:30:20.880Z"
+      },
+      "data": {
+        "id": "ans_prs_4e3c389969e244f29bfb31059bcf38c0",
+        "userId": "usr_cd0e892722",
+        "questionId": "qst_8add6741b1",
+        "testId": "lectora",
+        "correct": true,
+        "sessionId": "prs_4e3c389969e244f29bfb31059bcf38c0",
+        "createdAt": "2026-10-29T15:30:20.764Z"
+      }
+    },
+    {
+      "path": "answers/ans_prs_dcd3f921d8174177b2f8e495895678b8",
+      "updateTime": {
+        "__firestoreType": "timestamp",
+        "seconds": 1793286601,
+        "nanoseconds": 421891000,
+        "iso": "2026-10-29T15:10:01.422Z"
+      },
+      "data": {
+        "id": "ans_prs_dcd3f921d8174177b2f8e495895678b8",
+        "userId": "usr_cd0e892722",
+        "questionId": "qst_3a2d8755bc",
+        "testId": "cien",
+        "correct": true,
+        "sessionId": "prs_dcd3f921d8174177b2f8e495895678b8",
+        "createdAt": "2026-10-29T15:10:01.318Z"
+      }
+    },
+    {
+      "path": "answers/ans_prs_e7466694b4ef4fb7ae0ac9c18ccbe426",
+      "updateTime": {
+        "__firestoreType": "timestamp",
+        "seconds": 1793287160,
+        "nanoseconds": 909696000,
+        "iso": "2026-10-29T15:19:20.910Z"
+      },
+      "data": {
+        "id": "ans_prs_e7466694b4ef4fb7ae0ac9c18ccbe426",
+        "userId": "usr_cd0e892722",
+        "questionId": "qst_85e5551e3c",
+        "testId": "cien",
+        "correct": true,
+        "sessionId": "prs_e7466694b4ef4fb7ae0ac9c18ccbe426",
+        "createdAt": "2026-10-29T15:19:20.782Z"
+      }
+    },
+    {
+      "path": "checkoutSessions/cs_test_a16UUOPJk6XAk21cWbkMZi6yteFMEZqhto84ZizZKwrRwWVSbbwxTQUbIg",
+      "updateTime": {
+        "__firestoreType": "timestamp",
+        "seconds": 1793287382,
+        "nanoseconds": 794489000,
+        "iso": "2026-10-29T15:23:02.794Z"
+      },
+      "data": {
+        "createdAt": "2026-10-29T14:49:26.302Z",
+        "billingCycle": "monthly",
+        "checkoutSessionId": "cs_test_a16UUOPJk6XAk21cWbkMZi6yteFMEZqhto84ZizZKwrRwWVSbbwxTQUbIg",
+        "currency": "usd",
+        "testId": "cien",
+        "plan": "uni",
+        "userId": "usr_cd0e892722",
+        "stripeSubscriptionId": "sub_1UVuvWAhY3J8iTOwIx3147Sz",
+        "paymentStatus": "paid",
+        "status": "complete",
+        "updatedAt": "2026-10-29T15:23:02.675Z"
+      }
+    },
+    {
+      "path": "checkoutSessions/cs_test_a1EGGjeslWVIhFv9ZMEznFBJ4MyF2YYqh0PV2l3UiBywEIuoKPtfg6xjui",
+      "updateTime": {
+        "__firestoreType": "timestamp",
+        "seconds": 1793284836,
+        "nanoseconds": 71669000,
+        "iso": "2026-10-29T14:40:36.072Z"
+      },
+      "data": {
+        "createdAt": "2026-10-29T14:38:41.539Z",
+        "billingCycle": "monthly",
+        "checkoutSessionId": "cs_test_a1EGGjeslWVIhFv9ZMEznFBJ4MyF2YYqh0PV2l3UiBywEIuoKPtfg6xjui",
+        "currency": "usd",
+        "testId": "cien",
+        "plan": "uni",
+        "userId": "usr_cd0e892722",
+        "status": "expired",
+        "stripeSubscriptionId": null,
+        "paymentStatus": "unpaid",
+        "updatedAt": "2026-10-29T14:40:35.967Z"
+      }
+    },
+    {
+      "path": "checkoutSessions/cs_test_a1Xq9vLXxvicUyEcZxHcaLYKq8mcdswWIzrcy9Rg9Co30thCgsnRd8VTOe",
+      "updateTime": {
+        "__firestoreType": "timestamp",
+        "seconds": 1793285319,
+        "nanoseconds": 5627000,
+        "iso": "2026-10-29T14:48:39.006Z"
+      },
+      "data": {
+        "createdAt": "2026-10-29T14:40:57.866Z",
+        "billingCycle": "monthly",
+        "checkoutSessionId": "cs_test_a1Xq9vLXxvicUyEcZxHcaLYKq8mcdswWIzrcy9Rg9Co30thCgsnRd8VTOe",
+        "currency": "usd",
+        "testId": "cien",
+        "plan": "uni",
+        "userId": "usr_cd0e892722",
+        "status": "expired",
+        "stripeSubscriptionId": null,
+        "paymentStatus": "unpaid",
+        "updatedAt": "2026-10-29T14:48:38.930Z"
+      }
+    },
+    {
+      "path": "invoices/in_1UVuvUAhY3J8iTOwQgyeylGh",
+      "updateTime": {
+        "__firestoreType": "timestamp",
+        "seconds": 1793287067,
+        "nanoseconds": 264853000,
+        "iso": "2026-10-29T15:17:47.265Z"
+      },
+      "data": {
+        "amount": {
+          "__firestoreType": "integer64",
+          "value": "1"
+        },
+        "livemode": false,
+        "userId": "usr_cd0e892722",
+        "createdAt": "2026-10-29T15:07:36.000Z",
+        "stripeSubscriptionId": "sub_1UVuvWAhY3J8iTOwIx3147Sz",
+        "paidAt": "2026-10-29T15:07:37.000Z",
+        "currency": "USD",
+        "id": "in_1UVuvUAhY3J8iTOwQgyeylGh",
+        "stripeCustomerId": "cus_VWytQkXU3Nd5tt",
+        "status": "paid",
+        "updatedAt": "2026-10-29T15:17:46.929Z"
+      }
+    },
+    {
+      "path": "invoices/in_1UVv5VAhY3J8iTOwbfpXdNdz",
+      "updateTime": {
+        "__firestoreType": "timestamp",
+        "seconds": 1793287382,
+        "nanoseconds": 794489000,
+        "iso": "2026-10-29T15:23:02.794Z"
+      },
+      "data": {
+        "amount": {
+          "__firestoreType": "integer64",
+          "value": "4"
+        },
+        "livemode": false,
+        "userId": "usr_cd0e892722",
+        "createdAt": "2026-10-29T15:17:57.000Z",
+        "stripeSubscriptionId": "sub_1UVuvWAhY3J8iTOwIx3147Sz",
+        "currency": "USD",
+        "id": "in_1UVv5VAhY3J8iTOwbfpXdNdz",
+        "stripeCustomerId": "cus_VWytQkXU3Nd5tt",
+        "paidAt": "2026-10-29T15:22:57.000Z",
+        "status": "paid",
+        "updatedAt": "2026-10-29T15:23:02.675Z"
+      }
+    },
+    {
+      "path": "stripeEvents/evt_1UVud7AhY3J8iTOwuIAtUh5m",
+      "updateTime": {
+        "__firestoreType": "timestamp",
+        "seconds": 1793285319,
+        "nanoseconds": 5627000,
+        "iso": "2026-10-29T14:48:39.006Z"
+      },
+      "data": {
+        "type": "checkout.session.expired",
+        "userId": "usr_cd0e892722",
+        "stripeSubscriptionId": null,
+        "checkoutSessionId": "cs_test_a1Xq9vLXxvicUyEcZxHcaLYKq8mcdswWIzrcy9Rg9Co30thCgsnRd8VTOe",
+        "processingVersion": {
+          "__firestoreType": "integer64",
+          "value": "3"
+        },
+        "processedAt": "2026-10-29T14:48:38.930Z"
+      }
+    },
+    {
+      "path": "stripeEvents/evt_1UVuVKAhY3J8iTOwqvUbthb3",
+      "updateTime": {
+        "__firestoreType": "timestamp",
+        "seconds": 1793284836,
+        "nanoseconds": 71669000,
+        "iso": "2026-10-29T14:40:36.072Z"
+      },
+      "data": {
+        "type": "checkout.session.expired",
+        "userId": "usr_cd0e892722",
+        "stripeSubscriptionId": null,
+        "checkoutSessionId": "cs_test_a1EGGjeslWVIhFv9ZMEznFBJ4MyF2YYqh0PV2l3UiBywEIuoKPtfg6xjui",
+        "processingVersion": {
+          "__firestoreType": "integer64",
+          "value": "3"
+        },
+        "processedAt": "2026-10-29T14:40:35.967Z"
+      }
+    },
+    {
+      "path": "stripeEvents/evt_1UVuvXAhY3J8iTOwAkyPQzkQ",
+      "updateTime": {
+        "__firestoreType": "timestamp",
+        "seconds": 1793286468,
+        "nanoseconds": 318829000,
+        "iso": "2026-10-29T15:07:48.319Z"
+      },
+      "data": {
+        "type": "invoice.paid",
+        "userId": "usr_cd0e892722",
+        "stripeSubscriptionId": "sub_1UVuvWAhY3J8iTOwIx3147Sz",
+        "checkoutSessionId": "cs_test_a16UUOPJk6XAk21cWbkMZi6yteFMEZqhto84ZizZKwrRwWVSbbwxTQUbIg",
+        "processingVersion": {
+          "__firestoreType": "integer64",
+          "value": "3"
+        },
+        "processedAt": "2026-10-29T15:07:47.746Z"
+      }
+    },
+    {
+      "path": "stripeEvents/evt_1UVuvYAhY3J8iTOwcApJTycT",
+      "updateTime": {
+        "__firestoreType": "timestamp",
+        "seconds": 1793286471,
+        "nanoseconds": 139981000,
+        "iso": "2026-10-29T15:07:51.140Z"
+      },
+      "data": {
+        "type": "checkout.session.completed",
+        "userId": "usr_cd0e892722",
+        "stripeSubscriptionId": "sub_1UVuvWAhY3J8iTOwIx3147Sz",
+        "checkoutSessionId": "cs_test_a16UUOPJk6XAk21cWbkMZi6yteFMEZqhto84ZizZKwrRwWVSbbwxTQUbIg",
+        "processingVersion": {
+          "__firestoreType": "integer64",
+          "value": "3"
+        },
+        "processedAt": "2026-10-29T15:07:50.845Z"
+      }
+    },
+    {
+      "path": "stripeEvents/evt_1UVuvYAhY3J8iTOwl8fXr2Dt",
+      "updateTime": {
+        "__firestoreType": "timestamp",
+        "seconds": 1793286465,
+        "nanoseconds": 808990000,
+        "iso": "2026-10-29T15:07:45.809Z"
+      },
+      "data": {
+        "type": "customer.subscription.created",
+        "userId": "usr_cd0e892722",
+        "stripeSubscriptionId": "sub_1UVuvWAhY3J8iTOwIx3147Sz",
+        "checkoutSessionId": "cs_test_a16UUOPJk6XAk21cWbkMZi6yteFMEZqhto84ZizZKwrRwWVSbbwxTQUbIg",
+        "processingVersion": {
+          "__firestoreType": "integer64",
+          "value": "3"
+        },
+        "processedAt": "2026-10-29T15:07:44.559Z"
+      }
+    },
+    {
+      "path": "stripeEvents/evt_1UVv5HAhY3J8iTOwQpS2pzHU",
+      "updateTime": {
+        "__firestoreType": "timestamp",
+        "seconds": 1793287066,
+        "nanoseconds": 384170000,
+        "iso": "2026-10-29T15:17:46.384Z"
+      },
+      "data": {
+        "type": "customer.updated",
+        "userId": "usr_cd0e892722",
+        "stripeSubscriptionId": "sub_1UVuvWAhY3J8iTOwIx3147Sz",
+        "checkoutSessionId": "cs_test_a16UUOPJk6XAk21cWbkMZi6yteFMEZqhto84ZizZKwrRwWVSbbwxTQUbIg",
+        "processingVersion": {
+          "__firestoreType": "integer64",
+          "value": "3"
+        },
+        "processedAt": "2026-10-29T15:17:46.240Z"
+      }
+    },
+    {
+      "path": "stripeEvents/evt_1UVv5HAhY3J8iTOwyxyDlWwx",
+      "updateTime": {
+        "__firestoreType": "timestamp",
+        "seconds": 1793287067,
+        "nanoseconds": 264853000,
+        "iso": "2026-10-29T15:17:47.265Z"
+      },
+      "data": {
+        "type": "customer.subscription.updated",
+        "userId": "usr_cd0e892722",
+        "stripeSubscriptionId": "sub_1UVuvWAhY3J8iTOwIx3147Sz",
+        "checkoutSessionId": "cs_test_a16UUOPJk6XAk21cWbkMZi6yteFMEZqhto84ZizZKwrRwWVSbbwxTQUbIg",
+        "processingVersion": {
+          "__firestoreType": "integer64",
+          "value": "3"
+        },
+        "processedAt": "2026-10-29T15:17:46.929Z"
+      }
+    },
+    {
+      "path": "stripeEvents/evt_1UVv5YAhY3J8iTOw8stZfIoD",
+      "updateTime": {
+        "__firestoreType": "timestamp",
+        "seconds": 1793287085,
+        "nanoseconds": 206888000,
+        "iso": "2026-10-29T15:18:05.207Z"
+      },
+      "data": {
+        "type": "invoice.payment_failed",
+        "userId": "usr_cd0e892722",
+        "stripeSubscriptionId": "sub_1UVuvWAhY3J8iTOwIx3147Sz",
+        "checkoutSessionId": "cs_test_a16UUOPJk6XAk21cWbkMZi6yteFMEZqhto84ZizZKwrRwWVSbbwxTQUbIg",
+        "processingVersion": {
+          "__firestoreType": "integer64",
+          "value": "3"
+        },
+        "processedAt": "2026-10-29T15:18:04.902Z"
+      }
+    },
+    {
+      "path": "stripeEvents/evt_1UVv5YAhY3J8iTOwSalKuJq8",
+      "updateTime": {
+        "__firestoreType": "timestamp",
+        "seconds": 1793287082,
+        "nanoseconds": 507390000,
+        "iso": "2026-10-29T15:18:02.507Z"
+      },
+      "data": {
+        "type": "customer.subscription.updated",
+        "userId": "usr_cd0e892722",
+        "stripeSubscriptionId": "sub_1UVuvWAhY3J8iTOwIx3147Sz",
+        "checkoutSessionId": "cs_test_a16UUOPJk6XAk21cWbkMZi6yteFMEZqhto84ZizZKwrRwWVSbbwxTQUbIg",
+        "processingVersion": {
+          "__firestoreType": "integer64",
+          "value": "3"
+        },
+        "processedAt": "2026-10-29T15:18:01.620Z"
+      }
+    },
+    {
+      "path": "stripeEvents/evt_1UVv90AhY3J8iTOw5TaSef7S",
+      "updateTime": {
+        "__firestoreType": "timestamp",
+        "seconds": 1793287295,
+        "nanoseconds": 609438000,
+        "iso": "2026-10-29T15:21:35.609Z"
+      },
+      "data": {
+        "type": "customer.updated",
+        "userId": "usr_cd0e892722",
+        "stripeSubscriptionId": "sub_1UVuvWAhY3J8iTOwIx3147Sz",
+        "checkoutSessionId": "cs_test_a16UUOPJk6XAk21cWbkMZi6yteFMEZqhto84ZizZKwrRwWVSbbwxTQUbIg",
+        "processingVersion": {
+          "__firestoreType": "integer64",
+          "value": "3"
+        },
+        "processedAt": "2026-10-29T15:21:35.503Z"
+      }
+    },
+    {
+      "path": "stripeEvents/evt_1UVv90AhY3J8iTOwnHkwSlxn",
+      "updateTime": {
+        "__firestoreType": "timestamp",
+        "seconds": 1793287296,
+        "nanoseconds": 247238000,
+        "iso": "2026-10-29T15:21:36.247Z"
+      },
+      "data": {
+        "type": "customer.subscription.updated",
+        "userId": "usr_cd0e892722",
+        "stripeSubscriptionId": "sub_1UVuvWAhY3J8iTOwIx3147Sz",
+        "checkoutSessionId": "cs_test_a16UUOPJk6XAk21cWbkMZi6yteFMEZqhto84ZizZKwrRwWVSbbwxTQUbIg",
+        "processingVersion": {
+          "__firestoreType": "integer64",
+          "value": "3"
+        },
+        "processedAt": "2026-10-29T15:21:35.943Z"
+      }
+    },
+    {
+      "path": "stripeEvents/evt_1UVvAMAhY3J8iTOw0R6WFHVZ",
+      "updateTime": {
+        "__firestoreType": "timestamp",
+        "seconds": 1793287382,
+        "nanoseconds": 794489000,
+        "iso": "2026-10-29T15:23:02.794Z"
+      },
+      "data": {
+        "type": "customer.subscription.updated",
+        "userId": "usr_cd0e892722",
+        "stripeSubscriptionId": "sub_1UVuvWAhY3J8iTOwIx3147Sz",
+        "checkoutSessionId": "cs_test_a16UUOPJk6XAk21cWbkMZi6yteFMEZqhto84ZizZKwrRwWVSbbwxTQUbIg",
+        "processingVersion": {
+          "__firestoreType": "integer64",
+          "value": "3"
+        },
+        "processedAt": "2026-10-29T15:23:02.675Z"
+      }
+    },
+    {
+      "path": "stripeEvents/evt_1UVvAMAhY3J8iTOwH6pm84WH",
+      "updateTime": {
+        "__firestoreType": "timestamp",
+        "seconds": 1793287380,
+        "nanoseconds": 735416000,
+        "iso": "2026-10-29T15:23:00.735Z"
+      },
+      "data": {
+        "type": "invoice.paid",
+        "userId": "usr_cd0e892722",
+        "stripeSubscriptionId": "sub_1UVuvWAhY3J8iTOwIx3147Sz",
+        "checkoutSessionId": "cs_test_a16UUOPJk6XAk21cWbkMZi6yteFMEZqhto84ZizZKwrRwWVSbbwxTQUbIg",
+        "processingVersion": {
+          "__firestoreType": "integer64",
+          "value": "3"
+        },
+        "processedAt": "2026-10-29T15:23:00.440Z"
+      }
+    },
+    {
+      "path": "subscriptions/sub_1UVuvWAhY3J8iTOwIx3147Sz",
+      "updateTime": {
+        "__firestoreType": "timestamp",
+        "seconds": 1793287382,
+        "nanoseconds": 794489000,
+        "iso": "2026-10-29T15:23:02.794Z"
+      },
+      "data": {
+        "currentPeriodStart": "2026-10-29T15:07:36.000Z",
+        "livemode": false,
+        "accessActive": true,
+        "checkoutSessionId": "cs_test_a16UUOPJk6XAk21cWbkMZi6yteFMEZqhto84ZizZKwrRwWVSbbwxTQUbIg",
+        "currentPeriodEnd": "2026-11-29T15:07:36.000Z",
+        "userId": "usr_cd0e892722",
+        "createdAt": "2026-10-29T15:07:36.000Z",
+        "billingCycle": "monthly",
+        "cancelAtPeriodEnd": false,
+        "id": "sub_1UVuvWAhY3J8iTOwIx3147Sz",
+        "stripeCustomerId": "cus_VWytQkXU3Nd5tt",
+        "status": "active",
+        "paymentPending": false,
+        "testId": null,
+        "plan": "all",
+        "updatedAt": "2026-10-29T15:23:02.675Z"
+      }
+    },
+    {
+      "path": "users/usr_cd0e892722",
+      "updateTime": {
+        "__firestoreType": "timestamp",
+        "seconds": 1793288046,
+        "nanoseconds": 234197000,
+        "iso": "2026-10-29T15:34:06.234Z"
+      },
+      "data": {
+        "id": "usr_cd0e892722",
+        "selectedTests": [
+          "cien"
+        ],
+        "createdAt": "2026-10-29T14:30:42.719Z",
+        "stripeSubscriptionId": "sub_1UVuvWAhY3J8iTOwIx3147Sz",
+        "billingAccessActive": true,
+        "stripeCustomerId": "cus_VWytQkXU3Nd5tt",
+        "billingPeriodEnd": "2026-11-29T15:07:36.000Z",
+        "billingProvider": "stripe",
+        "billingStatus": "active",
+        "billingTestId": null,
+        "plan": "all",
+        "quota": {
+          "day": "2026-10-29",
+          "used": {
+            "__firestoreType": "integer64",
+            "value": "1"
+          },
+          "total": {
+            "__firestoreType": "integer64",
+            "value": "6"
+          }
+        }
+      }
+    }
+  ],
+  "invalidSignatureEventPresent": false,
+  "limits": [
+    "Exportación posterior, no captura del estado anterior a las pruebas.",
+    "No acredita ausencia de cualquier modificación por firma inválida.",
+    "No incluye Authentication, reglas, índices ni IAM."
+  ]
+}

@@ -1,0 +1,192 @@
+{
+  "executedAt": "2026-10-29T16:26:13.655Z",
+  "kind": "Pruebas unitarias locales sobre código entregado, sin modificarlo",
+  "limits": "No ejecutan Vercel, Stripe, Firebase ni webhooks. No prueban disponibilidad de preguntas. No cierran casos integrales PG ni aumentan el inventario de 41 casos.",
+  "sources": [
+    {
+      "file": "backend/src/lib/entitlements.js",
+      "sha256": "602d1dfaa5bf1b5bcb0c30109863afbd5dc8ef2ef9ee94ec8640492554227b7f"
+    },
+    {
+      "file": "backend/src/lib/quota.js",
+      "sha256": "4fbd687e74015d83fabb1c508103e74b44d52322a77c1975e2f8fa30290d2a7f"
+    }
+  ],
+  "total": 23,
+  "passed": 23,
+  "cases": [
+    {
+      "id": "UT-01",
+      "description": "Usuario sin plan conserva acceso gratuito",
+      "expected": "free",
+      "actual": "free",
+      "status": "Aprobado"
+    },
+    {
+      "id": "UT-02",
+      "description": "Ciencias confirmada dentro del periodo conserva uni",
+      "expected": "uni",
+      "actual": "uni",
+      "status": "Aprobado"
+    },
+    {
+      "id": "UT-03",
+      "description": "Todas confirmada dentro del periodo conserva all",
+      "expected": "all",
+      "actual": "all",
+      "status": "Aprobado"
+    },
+    {
+      "id": "UT-04",
+      "description": "Pago vencido con acceso confirmado y periodo pagado vigente conserva uni",
+      "expected": "uni",
+      "actual": "uni",
+      "status": "Aprobado"
+    },
+    {
+      "id": "UT-05",
+      "description": "Acceso no confirmado no otorga plan de pago",
+      "expected": "free",
+      "actual": "free",
+      "status": "Aprobado"
+    },
+    {
+      "id": "UT-06",
+      "description": "Un milisegundo antes del término conserva beneficio",
+      "expected": "uni",
+      "actual": "uni",
+      "status": "Aprobado"
+    },
+    {
+      "id": "UT-07",
+      "description": "Exactamente al término pierde beneficio",
+      "expected": "free",
+      "actual": "free",
+      "status": "Aprobado"
+    },
+    {
+      "id": "UT-08",
+      "description": "Después del término pierde beneficio",
+      "expected": "free",
+      "actual": "free",
+      "status": "Aprobado"
+    },
+    {
+      "id": "UT-09",
+      "description": "past_due después del término no prolonga beneficio",
+      "expected": "free",
+      "actual": "free",
+      "status": "Aprobado"
+    },
+    {
+      "id": "UT-10",
+      "description": "Fecha de término inválida no otorga beneficio",
+      "expected": "free",
+      "actual": "free",
+      "status": "Aprobado"
+    },
+    {
+      "id": "UT-11",
+      "description": "Suscripción cancelada no otorga beneficio aunque fecha sea futura",
+      "expected": "free",
+      "actual": "free",
+      "status": "Aprobado"
+    },
+    {
+      "id": "UT-12",
+      "description": "Plan gratuito permanece gratuito",
+      "expected": "free",
+      "actual": "free",
+      "status": "Aprobado"
+    },
+    {
+      "id": "UT-13",
+      "description": "uni habilita Ciencias contratada",
+      "expected": true,
+      "actual": true,
+      "status": "Aprobado"
+    },
+    {
+      "id": "UT-14",
+      "description": "Preferir M1 no cambia la materia contratada",
+      "expected": false,
+      "actual": false,
+      "status": "Aprobado"
+    },
+    {
+      "id": "UT-15",
+      "description": "uni no otorga ilimitado sin materia asignada",
+      "expected": false,
+      "actual": false,
+      "status": "Aprobado"
+    },
+    {
+      "id": "UT-16",
+      "description": "all habilita las cinco materias a nivel de regla",
+      "expected": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "actual": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "status": "Aprobado"
+    },
+    {
+      "id": "UT-17",
+      "description": "Suscripción vencida no otorga ilimitado",
+      "expected": false,
+      "actual": false,
+      "status": "Aprobado"
+    },
+    {
+      "id": "UT-18",
+      "description": "Cuota gratuita base",
+      "expected": 10,
+      "actual": 10,
+      "status": "Aprobado"
+    },
+    {
+      "id": "UT-19",
+      "description": "Bono colegio",
+      "expected": 15,
+      "actual": 15,
+      "status": "Aprobado"
+    },
+    {
+      "id": "UT-20",
+      "description": "Bono dirección",
+      "expected": 15,
+      "actual": 15,
+      "status": "Aprobado"
+    },
+    {
+      "id": "UT-21",
+      "description": "Ambos bonos alcanzan máximo de veinte",
+      "expected": 20,
+      "actual": 20,
+      "status": "Aprobado"
+    },
+    {
+      "id": "UT-22",
+      "description": "Contador del mismo día se conserva",
+      "expected": 4,
+      "actual": 4,
+      "status": "Aprobado"
+    },
+    {
+      "id": "UT-23",
+      "description": "Contador de otro día se reinicia",
+      "expected": 0,
+      "actual": 0,
+      "status": "Aprobado"
+    }
+  ]
+}

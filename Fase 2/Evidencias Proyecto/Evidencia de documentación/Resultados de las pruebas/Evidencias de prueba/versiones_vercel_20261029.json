@@ -1,0 +1,54 @@
+{
+  "queriedAt": "2026-10-29T16:27:10.781Z",
+  "scope": "Consulta de metadatos actual. No sustituye una comparación de bytes del ZIP local con el despliegue.",
+  "deployments": [
+    {
+      "name": "aprueba-student",
+      "deploymentId": "dpl_2wRv94gK5xUgc425Y7EQZn3KeXbD",
+      "aliases": [
+        "aprueba-student.vercel.app",
+        "aprueba-student-aprueba-admin3.vercel.app",
+        "aprueba-student-git-main-aprueba-admin3.vercel.app"
+      ],
+      "commit": "d1ac22791bdf6f276c8dcce3ec02d707daca3735",
+      "branch": "main",
+      "state": "READY"
+    },
+    {
+      "name": "aprueba-admin",
+      "deploymentId": "dpl_8vAoKcdYiCURXHD6epwGhpzvP5oS",
+      "aliases": [
+        "aprueba-admin.vercel.app",
+        "aprueba-admin-aprueba-admin3.vercel.app",
+        "aprueba-admin-git-main-aprueba-admin3.vercel.app"
+      ],
+      "commit": "31fb7f2866317b555e65b91c37256cff4e129ef3",
+      "branch": "main",
+      "state": "READY"
+    },
+    {
+      "name": "aprueba-admin-api",
+      "deploymentId": "dpl_7gFk4xUq7YXU2Hp8uy4799ograpC",
+      "aliases": [
+        "aprueba-admin-api.vercel.app",
+        "aprueba-admin-api-aprueba-admin3.vercel.app",
+        "aprueba-admin-api-git-main-aprueba-admin3.vercel.app"
+      ],
+      "commit": "31fb7f2866317b555e65b91c37256cff4e129ef3",
+      "branch": "main",
+      "state": "READY"
+    },
+    {
+      "name": "aprueba-student-api",
+      "deploymentId": "dpl_5eJZCmftDNTSqjZrdneNgDMn4Hbf",
+      "aliases": [
+        "aprueba-student-api.vercel.app",
+        "aprueba-student-api-aprueba-admin3.vercel.app",
+        "aprueba-student-api-git-main-aprueba-admin3.vercel.app"
+      ],
+      "commit": "d1ac22791bdf6f276c8dcce3ec02d707daca3735",
+      "branch": "main",
+      "state": "READY"
+    }
+  ]
+}

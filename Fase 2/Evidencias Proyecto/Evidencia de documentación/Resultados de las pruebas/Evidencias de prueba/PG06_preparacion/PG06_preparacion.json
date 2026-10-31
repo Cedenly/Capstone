@@ -1,0 +1,14 @@
+{
+  "case": "PG-06",
+  "account_alias": "Prueba Fase2 C",
+  "email": "correoC@correoC.com",
+  "initial_state": "Plan Gratis; 0 de 10 preguntas usadas; preferencia inicial M2",
+  "selected_plan": "Una prueba ilimitada: Ciencias",
+  "cycle": "annual",
+  "amount_usd": 10,
+  "checkout_session": "cs_test_a1IgzesYtzouThzsz7q8RpMylF1QPFUdRuRYYqMn3x5jiBljPOFBIQqUwO",
+  "status": "Preparado; sin envío final por el agente. No constituye pago ni prueba aprobada.",
+  "captured_at": "2026-10-29T18:01:52.953Z",
+  "next_step": "Usuario pulsa Suscribirse; después verificar retorno, Stripe, administración, periodo anual y práctica/cuenta.",
+  "note": "Mantener PG-06 no ejecutado en resultado integral hasta comprobar el pago. Credenciales no incluidas. Última selección de práctica M2; cambiar a Ciencias para verificar beneficio después del pago."
+}

@@ -1,0 +1,147 @@
+<!doctype html><html lang="es"><meta charset="utf-8"><title>Pruebas Aprueba 29 octubre 2026</title><style>body{font:16px Arial;max-width:1000px;margin:2rem auto;padding:1rem;line-height:1.5}img{max-width:100%;height:auto}figure{margin:2rem 0}pre{white-space:pre-wrap;overflow-wrap:anywhere}h2{margin-top:3rem}</style><h1>Pruebas Aprueba del 29 de octubre</h1><p>Entorno de pagos simulado. Resultados y límites por caso; los antecedentes del 21 y 28 de octubre permanecen en el Word consolidado.</p>
+<h2>PG-03 — Aprobado</h2>
+<p>Ejecución: PG03_E01_20261029</p>
+<p>Horario: 14:38–14:41 UTC</p>
+<p>Estado inicial: Plan Gratis, cuota 0 de 10 y sin suscripción pagada.</p>
+<p>Resultado observado: Checkout de Ciencias mensual USD 1 abandonado sin pagar. Se conservó Plan Gratis y cuota 0/10. Stripe open/unpaid y sin suscripción; tras descartar, expired/unpaid. El catálogo permitió abrir otro intento.</p>
+<p>Límites: No prueba retorno manipulado, agotamiento de cuota ni permisos internos.</p>
+<p>Continuación: Cerrado en alcance funcional.</p>
+<p>Estado al finalizar: Intento descartado y cuenta gratuita antes de CP02.</p>
+<figure><img src="evidencias/PG03_E01_01_inicio_gratuito.jpg"><figcaption>PG03_E01_01_inicio_gratuito. Inicio gratuito.</figcaption></figure>
+<figure><img src="evidencias/PG03_E01_02_oferta_ciencias.jpg"><figcaption>PG03_E01_02_oferta_ciencias. Oferta ciencias.</figcaption></figure>
+<figure><img src="evidencias/PG03_E01_03_checkout_sin_pagar.jpg"><figcaption>PG03_E01_03_checkout_sin_pagar. Checkout sin pagar.</figcaption></figure>
+<figure><img src="evidencias/PG03_E01_04_retorno_abandono.jpg"><figcaption>PG03_E01_04_retorno_abandono. Retorno abandono.</figcaption></figure>
+<figure><img src="evidencias/PG03_E01_05_cuota_tras_abandono.jpg"><figcaption>PG03_E01_05_cuota_tras_abandono. Cuota tras abandono.</figcaption></figure>
+<figure><img src="evidencias/PG03_E01_07_catalogo_tras_descarte.jpg"><figcaption>PG03_E01_07_catalogo_tras_descarte. Catalogo tras descarte.</figcaption></figure>
+<p><a href="evidencias/PG03_E01_06_stripe_sesion_sin_pagar.json">Registro técnico adjunto: PG03_E01_06_stripe_sesion_sin_pagar.json. Consulta o respuesta real; conservar su fecha y sus límites. Disponible en la carpeta evidencias del paquete.</a></p>
+<h2>CP02 — Aprobado</h2>
+<p>Ejecución: CP02_E01_20261029</p>
+<p>Horario: 14:40–14:49 UTC</p>
+<p>Estado inicial: Cuenta gratuita después del abandono; Ciencias mensual USD 1.</p>
+<p>Resultado observado: Un intento con tarjeta de prueba terminada en 0002 fue rechazado. Stripe card_declined/generic_decline, requires_payment_method y recibido 0. Aprueba mantuvo Plan Gratis y cuota 0/10; administración filtrada sin suscripción ni factura. Intento descartado, expired/unpaid.</p>
+<p>Límites: Sin lectura directa de Firebase. No demuestra agotamiento de cuota ni autorización de API.</p>
+<p>Continuación: Cerrado en alcance funcional.</p>
+<p>Estado al finalizar: Cuenta gratuita usada posteriormente en PG-01.</p>
+<figure><img src="evidencias/CP02_E01_01_seleccion_ciencias.jpg"><figcaption>CP02_E01_01_seleccion_ciencias. Seleccion ciencias.</figcaption></figure>
+<figure><img src="evidencias/CP02_E01_02_checkout_tarjeta_rechazo.jpg"><figcaption>CP02_E01_02_checkout_tarjeta_rechazo. Checkout tarjeta rechazo.</figcaption></figure>
+<figure><img src="evidencias/CP02_E01_03_rechazo_stripe.jpg"><figcaption>CP02_E01_03_rechazo_stripe. Rechazo stripe.</figcaption></figure>
+<figure><img src="evidencias/CP02_E01_04_aprueba_pendiente_sin_plan.jpg"><figcaption>CP02_E01_04_aprueba_pendiente_sin_plan. Aprueba pendiente sin plan.</figcaption></figure>
+<figure><img src="evidencias/CP02_E01_05_cuota_gratuita.jpg"><figcaption>CP02_E01_05_cuota_gratuita. Cuota gratuita.</figcaption></figure>
+<figure><img src="evidencias/CP02_E01_06_admin_sin_suscripcion.jpg"><figcaption>CP02_E01_06_admin_sin_suscripcion. Admin sin suscripcion.</figcaption></figure>
+<figure><img src="evidencias/CP02_E01_07_admin_sin_factura.jpg"><figcaption>CP02_E01_07_admin_sin_factura. Admin sin factura.</figcaption></figure>
+<figure><img src="evidencias/CP02_E01_08_catalogo_tras_descarte.jpg"><figcaption>CP02_E01_08_catalogo_tras_descarte. Catalogo tras descarte.</figcaption></figure>
+<p><a href="evidencias/CP02_E01_09_stripe_rechazo.json">Registro técnico adjunto: CP02_E01_09_stripe_rechazo.json. Consulta o respuesta real; conservar su fecha y sus límites. Disponible en la carpeta evidencias del paquete.</a></p>
+<h2>PG-01 — Aprobado</h2>
+<p>Ejecución: PG01_E01_20261029</p>
+<p>Horario: 15:07–15:11 UTC</p>
+<p>Estado inicial: Plan Gratis tras CP02 descartado; Ciencias mensual USD 1; sin crédito.</p>
+<p>Resultado observado: Checkout complete/paid. Factura USD 1 pagada; misma suscripción activa hasta 29-11-2026. Aprueba confirma Ciencias, administración concuerda. Respuesta Cloroplasto correcta y cuota gratuita sin consumo.</p>
+<p>Límites: Aprobación funcional. No acredita lectura directa de Firestore, agotamiento de cuota o autorización de API.</p>
+<p>Continuación: Cerrado en el alcance funcional. PG-02 requiere otra cuenta gratuita.</p>
+<p>Estado al finalizar: Ciencias mensual activa; luego usada para CP03.</p>
+<p>Suscripción correlacionada: sub_1UVuvWAhY3J8iTOwIx3147Sz. Factura inicial: in_1UVuvUAhY3J8iTOwQgyeylGh (USD 1). Factura del cambio y su recuperación: in_1UVv5VAhY3J8iTOwbfpXdNdz (USD 4). El periodo vigente termina el 29-11-2026.</p>
+<figure><img src="evidencias/PG01_E01_01_oferta_ciencias_mensual.jpg"><figcaption>PG01_E01_01_oferta_ciencias_mensual. Oferta ciencias mensual.</figcaption></figure>
+<figure><img src="evidencias/PG01_E01_02_checkout_datos_prueba.jpg"><figcaption>PG01_E01_02_checkout_datos_prueba. Checkout datos prueba.</figcaption></figure>
+<figure><img src="evidencias/PG01_E01_03_pago_confirmado.jpg"><figcaption>PG01_E01_03_pago_confirmado. Pago confirmado.</figcaption></figure>
+<figure><img src="evidencias/PG01_E01_04_admin_factura_pagada.jpg"><figcaption>PG01_E01_04_admin_factura_pagada. Admin factura pagada.</figcaption></figure>
+<figure><img src="evidencias/PG01_E01_05_cuota_ciencias_activa.jpg"><figcaption>PG01_E01_05_cuota_ciencias_activa. Cuota ciencias activa.</figcaption></figure>
+<figure><img src="evidencias/PG01_E01_06b_admin_suscripcion_filtrada.jpg"><figcaption>PG01_E01_06b_admin_suscripcion_filtrada. Admin suscripcion filtrada.</figcaption></figure>
+<figure><img src="evidencias/PG01_E01_07_seleccion_ciencias.jpg"><figcaption>PG01_E01_07_seleccion_ciencias. Seleccion ciencias.</figcaption></figure>
+<figure><img src="evidencias/PG01_E01_08_pregunta_ciencias.jpg"><figcaption>PG01_E01_08_pregunta_ciencias. Pregunta ciencias.</figcaption></figure>
+<figure><img src="evidencias/PG01_E01_09_correccion_ciencias.jpg"><figcaption>PG01_E01_09_correccion_ciencias. Correccion ciencias.</figcaption></figure>
+<figure><img src="evidencias/PG01_E01_10_cuota_tras_practica.jpg"><figcaption>PG01_E01_10_cuota_tras_practica. Cuota tras practica.</figcaption></figure>
+<p><a href="evidencias/PG01_E01_11_stripe_pago_y_periodo.json">Registro técnico adjunto: PG01_E01_11_stripe_pago_y_periodo.json. Consulta o respuesta real; conservar su fecha y sus límites. Disponible en la carpeta evidencias del paquete.</a></p>
+<h2>CP03 — Aprobado</h2>
+<p>Ejecución: CP03_E01_20261029</p>
+<p>Horario: 15:11–15:20 UTC</p>
+<p>Estado inicial: Ciencias mensual vigente. Cambio a Todas mensual USD 5 con USD 4 debido tras prorrateo. Tarjeta de prueba terminada en 0341.</p>
+<p>Resultado observado: Un intento de cambio rechazado. Factura in_1UVv5VAhY3J8iTOwbfpXdNdz abierta por USD 4; PI requires_payment_method, card_declined/generic_decline. Ciencias conserva vigencia hasta 29-11. Administración muestra deuda. Respuesta Paratiroides correcta sin consumo de cuota gratuita.</p>
+<p>Límites: El bloqueo por crédito del 28-10 correspondía a otra cuenta y se conserva como preparación histórica. No se consultó Firestore directamente.</p>
+<p>Continuación: Cerrado funcionalmente; se ejecutó PG-04 antes de recuperar esta factura.</p>
+<p>Estado al finalizar: Factura pendiente conservada para CP03-R; Ciencias vigente.</p>
+<p>Suscripción correlacionada: sub_1UVuvWAhY3J8iTOwIx3147Sz. Factura inicial: in_1UVuvUAhY3J8iTOwQgyeylGh (USD 1). Factura del cambio y su recuperación: in_1UVv5VAhY3J8iTOwbfpXdNdz (USD 4). El periodo vigente termina el 29-11-2026.</p>
+<figure><img src="evidencias/CP03_E01_01_portal_ciencias_vigente.jpg"><figcaption>CP03_E01_01_portal_ciencias_vigente. Portal ciencias vigente.</figcaption></figure>
+<figure><img src="evidencias/CP03_E01_02_importe_positivo_previo.jpg"><figcaption>CP03_E01_02_importe_positivo_previo. Importe positivo previo.</figcaption></figure>
+<figure><img src="evidencias/CP03_E01_03_tarjeta_rechazo_preparada.jpg"><figcaption>CP03_E01_03_tarjeta_rechazo_preparada. Tarjeta rechazo preparada.</figcaption></figure>
+<figure><img src="evidencias/CP03_E01_04_confirmacion_cargo_rechazable.jpg"><figcaption>CP03_E01_04_confirmacion_cargo_rechazable. Confirmacion cargo rechazable.</figcaption></figure>
+<figure><img src="evidencias/CP03_E01_05_rechazo_confirmado.jpg"><figcaption>CP03_E01_05_rechazo_confirmado. Rechazo confirmado.</figcaption></figure>
+<figure><img src="evidencias/CP03_E01_06_aprueba_conserva_ciencias.jpg"><figcaption>CP03_E01_06_aprueba_conserva_ciencias. Aprueba conserva ciencias.</figcaption></figure>
+<figure><img src="evidencias/CP03_E01_07_ciencias_disponible_tras_rechazo.jpg"><figcaption>CP03_E01_07_ciencias_disponible_tras_rechazo. Ciencias disponible tras rechazo.</figcaption></figure>
+<figure><img src="evidencias/CP03_E01_08_admin_acceso_y_deuda.jpg"><figcaption>CP03_E01_08_admin_acceso_y_deuda. Admin acceso y deuda.</figcaption></figure>
+<figure><img src="evidencias/CP03_E01_09_ciencias_corregida.jpg"><figcaption>CP03_E01_09_ciencias_corregida. Ciencias corregida.</figcaption></figure>
+<figure><img src="evidencias/CP03_E01_10_admin_factura_pendiente.jpg"><figcaption>CP03_E01_10_admin_factura_pendiente. Admin factura pendiente.</figcaption></figure>
+<figure><img src="evidencias/CP03_E01_11_cuota_ciencias_sin_consumo.jpg"><figcaption>CP03_E01_11_cuota_ciencias_sin_consumo. Cuota ciencias sin consumo.</figcaption></figure>
+<p><a href="evidencias/CP03_E01_12_stripe_rechazo_y_pendiente.json">Registro técnico adjunto: CP03_E01_12_stripe_rechazo_y_pendiente.json. Consulta o respuesta real; conservar su fecha y sus límites. Disponible en la carpeta evidencias del paquete.</a></p>
+<h2>PG-04 — Aprobado</h2>
+<p>Ejecución: PG04_E01_20261029</p>
+<p>Horario: 15:20–15:21 UTC</p>
+<p>Estado inicial: Cambio rechazado pendiente; Ciencias vigente; M1 no pagada; cuota gratuita usada 0 de 10.</p>
+<p>Resultado observado: M1 seleccionada y pregunta |x−3|≤2 respondida correctamente con 1≤x≤5. Cuota gratuita pasó de 0 a 1 de 10; Ciencias mantuvo ilimitado. El cambio rechazado no otorgó ilimitado a M1.</p>
+<p>Límites: Alcance delimitado a M1 y una respuesta. No acredita agotamiento, bypass, todas las materias ni autorización de API.</p>
+<p>Continuación: Cerrado en el alcance definido; ejecutado antes de CP03-R.</p>
+<p>Estado al finalizar: Una respuesta gratuita consumida; factura del cambio seguía pendiente.</p>
+<figure><img src="evidencias/PG04_E01_01_seleccion_matematica.jpg"><figcaption>PG04_E01_01_seleccion_matematica. Seleccion matematica.</figcaption></figure>
+<figure><img src="evidencias/PG04_E01_02_pregunta_m1.jpg"><figcaption>PG04_E01_02_pregunta_m1. Pregunta m1.</figcaption></figure>
+<figure><img src="evidencias/PG04_E01_03_m1_corregida.jpg"><figcaption>PG04_E01_03_m1_corregida. M1 corregida.</figcaption></figure>
+<figure><img src="evidencias/PG04_E01_04_consumo_cuota_gratuita.jpg"><figcaption>PG04_E01_04_consumo_cuota_gratuita. Consumo cuota gratuita.</figcaption></figure>
+<h2>CP03-R — Aprobado</h2>
+<p>Ejecución: CP03R_E01_20261029</p>
+<p>Horario: 15:21–15:24 UTC</p>
+<p>Estado inicial: Misma factura de CP03 abierta por USD 4; Ciencias activa. PG-04 ya ejecutado.</p>
+<p>Resultado observado: Restaurar 4242 no pagó automáticamente: factura siguió abierta. Se pagó una sola vez la misma factura. Stripe paid, recibido 400 centavos, saldo 0; mismo PaymentIntent succeeded. Misma suscripción pasó a Todas mensual, pending_update null y periodo sin cambio. Administración muestra las dos facturas pagadas (USD 1 + USD 4).</p>
+<p>Límites: Aprobado en recuperación de facturación; acceso completo por materia se evalúa por separado en PG-05. No lectura directa de Firestore.</p>
+<p>Continuación: Recuperación cerrada. Completar PG-05 para M2 e Historia.</p>
+<p>Estado al finalizar: Todas las pruebas mensual activa, sin deuda; método 4242 predeterminado.</p>
+<p>Suscripción correlacionada: sub_1UVuvWAhY3J8iTOwIx3147Sz. Factura inicial: in_1UVuvUAhY3J8iTOwQgyeylGh (USD 1). Factura del cambio y su recuperación: in_1UVv5VAhY3J8iTOwbfpXdNdz (USD 4). El periodo vigente termina el 29-11-2026.</p>
+<figure><img src="evidencias/CP03R_E01_01_misma_factura_fallida.jpg"><figcaption>CP03R_E01_01_misma_factura_fallida. Misma factura fallida.</figcaption></figure>
+<figure><img src="evidencias/CP03R_E01_02_medio_valido_deuda_abierta.jpg"><figcaption>CP03R_E01_02_medio_valido_deuda_abierta. Medio valido deuda abierta.</figcaption></figure>
+<figure><img src="evidencias/CP03R_E01_03_factura_preparada.jpg"><figcaption>CP03R_E01_03_factura_preparada. Factura preparada.</figcaption></figure>
+<figure><img src="evidencias/CP03R_E01_04_factura_pagada.jpg"><figcaption>CP03R_E01_04_factura_pagada. Factura pagada.</figcaption></figure>
+<figure><img src="evidencias/CP03R_E01_05_aprueba_todas_activas.jpg"><figcaption>CP03R_E01_05_aprueba_todas_activas. Aprueba todas activas.</figcaption></figure>
+<figure><img src="evidencias/CP03R_E01_06_admin_misma_factura_pagada.jpg"><figcaption>CP03R_E01_06_admin_misma_factura_pagada. Admin misma factura pagada.</figcaption></figure>
+<figure><img src="evidencias/CP03R_E01_07_admin_suscripcion_recuperada.jpg"><figcaption>CP03R_E01_07_admin_suscripcion_recuperada. Admin suscripcion recuperada.</figcaption></figure>
+<p><a href="evidencias/CP03R_E01_08_stripe_recuperacion.json">Registro técnico adjunto: CP03R_E01_08_stripe_recuperacion.json. Consulta o respuesta real; conservar su fecha y sus límites. Disponible en la carpeta evidencias del paquete.</a></p>
+<h2>PG-05 — Parcial</h2>
+<p>Ejecución: PG05_E01_20261029</p>
+<p>Horario: 15:24–15:40 UTC</p>
+<p>Estado inicial: Todas mensual activa tras CP03-R; catálogo con M1, M2, Comprensión Lectora, Historia y C. Sociales, Ciencias.</p>
+<p>Resultado observado: M1, Comprensión Lectora y Ciencias: selección, pregunta, respuesta correcta y beneficio ilimitado posterior. M2 e Historia: sin preguntas disponibles para los filtros. No se logró ejecutar respuesta/corrección en esas dos materias.</p>
+<p>Límites: No se aprueba cobertura de las cinco materias. Primera entrada tras seleccionar M2 mostró una pregunta M1; al reconsultar M2 se mostró sin preguntas. Causa técnica no determinada; no se atribuye automáticamente a facturación.</p>
+<p>Continuación: Disponer de preguntas de M2 e Historia o confirmar formalmente su exclusión del catálogo contratado. Repetir selección, respuesta, corrección y cuota por cada una.</p>
+<p>Estado al finalizar: Cuenta conserva Todas y cuota ilimitada; última selección Ciencias.</p>
+<figure><img src="evidencias/PG05_E01_01_beneficio_ilimitado.jpg"><figcaption>PG05_E01_01_beneficio_ilimitado. Beneficio ilimitado.</figcaption></figure>
+<figure><img src="evidencias/PG05_E01_02_m1_pregunta.jpg"><figcaption>PG05_E01_02_m1_pregunta. M1 pregunta.</figcaption></figure>
+<figure><img src="evidencias/PG05_E01_03_m1_corregida.jpg"><figcaption>PG05_E01_03_m1_corregida. M1 corregida.</figcaption></figure>
+<figure><img src="evidencias/PG05_E01_04_m1_beneficio.jpg"><figcaption>PG05_E01_04_m1_beneficio. M1 beneficio.</figcaption></figure>
+<figure><img src="evidencias/PG05_E01_05_m2_seleccion.jpg"><figcaption>PG05_E01_05_m2_seleccion. M2 seleccion.</figcaption></figure>
+<figure><img src="evidencias/PG05_E01_06_m2_muestra_pregunta_m1.jpg"><figcaption>PG05_E01_06_m2_muestra_pregunta_m1. M2 muestra pregunta m1.</figcaption></figure>
+<figure><img src="evidencias/PG05_E01_07_m2_preferencia_reconsultada.jpg"><figcaption>PG05_E01_07_m2_preferencia_reconsultada. M2 preferencia reconsultada.</figcaption></figure>
+<figure><img src="evidencias/PG05_E01_08_m2_segunda_consulta.jpg"><figcaption>PG05_E01_08_m2_segunda_consulta. M2 segunda consulta.</figcaption></figure>
+<figure><img src="evidencias/PG05_E01_09_lectora_seleccion.jpg"><figcaption>PG05_E01_09_lectora_seleccion. Lectora seleccion.</figcaption></figure>
+<figure><img src="evidencias/PG05_E01_10_lectora_estado.jpg"><figcaption>PG05_E01_10_lectora_estado. Lectora estado.</figcaption></figure>
+<figure><img src="evidencias/PG05_E01_11_lectora_corregida.jpg"><figcaption>PG05_E01_11_lectora_corregida. Lectora corregida.</figcaption></figure>
+<figure><img src="evidencias/PG05_E01_12_lectora_beneficio.jpg"><figcaption>PG05_E01_12_lectora_beneficio. Lectora beneficio.</figcaption></figure>
+<figure><img src="evidencias/PG05_E01_13_historia_seleccion.jpg"><figcaption>PG05_E01_13_historia_seleccion. Historia seleccion.</figcaption></figure>
+<figure><img src="evidencias/PG05_E01_14_historia_estado.jpg"><figcaption>PG05_E01_14_historia_estado. Historia estado.</figcaption></figure>
+<figure><img src="evidencias/PG05_E01_15b_ciencias_seleccion_guardada.jpg"><figcaption>PG05_E01_15b_ciencias_seleccion_guardada. Ciencias seleccion guardada.</figcaption></figure>
+<figure><img src="evidencias/PG05_E01_16_ciencias_pregunta.jpg"><figcaption>PG05_E01_16_ciencias_pregunta. Ciencias pregunta.</figcaption></figure>
+<figure><img src="evidencias/PG05_E01_17_ciencias_corregida.jpg"><figcaption>PG05_E01_17_ciencias_corregida. Ciencias corregida.</figcaption></figure>
+<figure><img src="evidencias/PG05_E01_18_ciencias_beneficio.jpg"><figcaption>PG05_E01_18_ciencias_beneficio. Ciencias beneficio.</figcaption></figure>
+<h2>PG-16 — Parcial</h2>
+<p>Ejecución: PG16_E01_20261029</p>
+<p>Horario: 15:28:20.949 UTC</p>
+<p>Estado inicial: POST al webhook de student-api; payload sintético livemode false con IDs inexistentes y firma t=0,v1=invalid_test_signature.</p>
+<p>Resultado observado: Respuesta real HTTP 400, código WEBHOOK_SIGNATURE_INVALID, requestId req_d366464e-716. Solicitud y respuesta registradas en JSON.</p>
+<p>Límites: No se obtuvo estado de negocio antes/después en Firestore. El endpoint desplegado fue probado con firma deliberadamente inválida; no es un entorno aislado completo ni una prueba de eventos válidos.</p>
+<p>Continuación: Comparar estado de negocio antes/después mediante acceso de lectura o capturas verificables de Firebase; mantener parcial hasta completar ese criterio.</p>
+<p>Estado al finalizar: Rechazo HTTP demostrado; persistencia no verificada.</p>
+<p><a href="evidencias/PG16_E01_01_firma_invalida.json">Registro técnico adjunto: PG16_E01_01_firma_invalida.json. Consulta o respuesta real; conservar su fecha y sus límites. Disponible en la carpeta evidencias del paquete.</a></p>
+<p>PG-02, PG-06 y PG-07: cuentas gratuitas independientes para compras iniciales mensual y anuales. PG-20: otra cuenta con Ciencias vigente, sin crédito y con cobro positivo; la recuperación realizada no sustituye un cambio directo aprobado.</p>
+<p>PG-05: disponer de preguntas en M2 e Historia o confirmar una exclusión del catálogo contratado; luego repetir selección, respuesta, corrección y beneficio. No volver a cobrar la factura ya pagada.</p>
+<p>PG-10, PG-11 y PG-12: ciclo real o reloj compatible con Stripe y Aprueba. El cliente consultado no tiene Test Clock. Confirmar la política de gracia/reintentos; no alterar fechas del código.</p>
+<p>PG-13, PG-14, PG-15 y PG-17: eventos válidos, ejecutor aislado y lectura de persistencia. PG-16: cotejar datos antes/después. Firebase directo no está disponible en esta sesión; se pueden incorporar capturas verificables aportadas por el usuario.</p>
+<p>PG-18 y PG-19: definir operación, muestra e instrumento. Los logs acotados de Vercel muestran POST al webhook e inicialización de Firebase Admin, pero no contienen duración y acuse suficientes para aprobar los umbrales. No equivalen a evidencia de escritura de negocio.</p>
+<p>PG-21 y PG-22: confirmar notificaciones y medio alternativo aplicables; conservarlos sin ejecutar hasta aclarar el alcance. No usar métodos de pago reales.</p>
+<p>Estado final de la cuenta sintética: Todas las pruebas mensual activa hasta el 29-11-2026, sin deuda pendiente; 4242 predeterminada, 0341 de prueba aún guardada. Última selección: Ciencias. No se modificó código, despliegue ni Jira.</p>
+<p>Balance documental: NPG05 terminada; NPG06 y NPG10 en curso. 27 tareas de archivos nuevos: 12 terminadas y 15 sin cerrar. Los responsables y las horas iniciales se conservan en Excel. No se considera terminada una prueba por haber redactado su documentación.</p>
+</html>

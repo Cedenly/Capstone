@@ -1,0 +1,96 @@
+{
+  "policy": "Cierre interno del avance de Fase 2 al 30-10-2026. Terminada significa evaluación y documentación realizadas hasta el límite disponible. No equivale a funcionalidad aprobada. No se modifica ni despliega código. Las pruebas no ejecutadas, bloqueadas, parciales y fallidas conservan su resultado y causa. Código candidato, emuladores y datos sintéticos se separan de la evidencia del sistema publicado. No se atribuye feedback ni aprobación a Alloxentric.",
+  "tasks": {
+    "NPG09": [
+      "Stripe y Firestore confirman cancelación final, recibo v3 y usuario/suscripción sin acceso; administración coincide.",
+      "Prueba integral limitada: reloj simulado de Stripe distinto del reloj de la aplicación; corte exacto de acceso en UI y transición única no acreditados."
+    ],
+    "NPG10": [
+      "Reentrega real PG13 comprobada. Auditoría y recuperación revisadas hasta la evidencia disponible.",
+      "Pruebas locales/candidatas son antecedentes, no aprobación publicada. Concurrencia, desorden, auditoría durable y recuperación integral pendientes en la versión desplegada."
+    ],
+    "NPG11": [
+      "60 consultas HTTP publicadas y acuse HTTP200 documentados. Stripe registra 65 entregas sin fallo en la ventana mostrada.",
+      "Falta aislar latencia propia y medir individualmente el webhook para RNF15. Avisos financieros no ejecutados: emisor/canal sin acreditar. No se inventan requisitos ni configuraciones."
+    ],
+    "NDP03": [
+      "DP06: cuenta de alumno rechazada en login administrativo y admitida en aplicación estudiante. Portal propio visible. Se conservan DP09/10 con sus límites previos.",
+      "DP07 de interfaz no acreditado por abrir el portal propio. No se extiende DP06 a API/IAM ni a todos los roles. Ensayos locales separados."
+    ],
+    "NDP04": [
+      "Catálogo observado y operaciones deshabilitadas documentados, sin editar planes compartidos.",
+      "DP12–15 bloqueados por operaciones no habilitadas y/o falta de plan desechable. DP16 parcial. Alcance contractual no ampliado ni reducido sin fuente de Alloxentric."
+    ],
+    "NIF02": [
+      "Cuota y navegación previamente probadas; Mi plan e historial propio de Stripe visibles en nuevas capturas.",
+      "Historial externo no demuestra historial interno ni propiedad entre cuentas. Paginación y rutas no disponibles mantienen sus límites. M2/Historia dependen de otro equipo."
+    ],
+    "NIF03": [
+      "Chrome 156.0.8078.80: ingreso, Practicar, Mi plan y portal. Vista móvil emulada. Foco visible en dos botones; Enter abre Stripe según usuario.",
+      "Cobertura parcial: no teléfono real ni matriz completa; emulación solicitada 390×844, sin dimensiones visibles en capturas. Teclado limitado a Mi plan; no cierra D04 de Practicar ni acredita WCAG. Defectos actuales conservados."
+    ]
+  },
+  "images": [
+    "image(20261030-230905).png",
+    "image(20261030-230912).png",
+    "image(20261030-231158).png",
+    "image(20261030-231213).png",
+    "image(20261030-231413).png",
+    "image(20261030-231520).png",
+    "image(20261030-233512).png",
+    "image(20261030-233531).png",
+    "image(20261030-233605).png",
+    "image(20261030-233620).png",
+    "image(20261030-233731).png",
+    "image(20261030-234011).png",
+    "image(20261030-234014).png",
+    "image(20261030-234025).png",
+    "image(20261030-234033).png",
+    "image(20261030-234300).png",
+    "image(20261030-234324).png",
+    "image(20261030-234346).png"
+  ],
+  "counts": {
+    "tasks_done": 83,
+    "not_applicable": 1,
+    "open": 0,
+    "cases": 57,
+    "passed": 30,
+    "partial": 17,
+    "failed": 2,
+    "blocked": 7,
+    "not_executed": 1
+  },
+  "documents_reviewed": [
+    {
+      "file": "Fase_2/Avance_Fase2_al_20261030.docx",
+      "targeted_replacements": 1,
+      "history_preserved": true
+    },
+    {
+      "file": "Fase_2/Evidencias_Grupales/2.4_GuiaEstudiante_Fase 2_DesarrolloProyecto APT.docx",
+      "targeted_replacements": 1,
+      "history_preserved": true
+    },
+    {
+      "file": "Fase_2/Evidencias_Proyecto/Gestion/Estados_de_avance.docx",
+      "targeted_replacements": 0,
+      "history_preserved": true
+    },
+    {
+      "file": "Fase_2/Evidencias_Proyecto/Pruebas/Plan_de_pruebas_Fase2.docx",
+      "targeted_replacements": 1,
+      "history_preserved": true
+    },
+    {
+      "file": "Fase_2/Evidencias_Proyecto/Pruebas/Resultados_de_pruebas_Fase2.docx",
+      "targeted_replacements": 2,
+      "history_preserved": true
+    },
+    {
+      "file": "Fase_2/Evidencias_Proyecto/Metodologia/Metodologia_incremental_Fase2.docx",
+      "targeted_replacements": 0,
+      "history_preserved": true
+    }
+  ]
+}

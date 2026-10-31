@@ -1,0 +1,101 @@
+EVIDENCIAS DE PRUEBA
+
+El informe principal está en ../Resultados_de_pruebas.docx.
+Los registros de ejecución y las rutas de respaldo están en ../Adjuntos/:
+- Casos_y_resultados_de_pagos.xlsx
+- Casos_y_resultados_de_interfaz.xlsx
+- Resultados_de_datos_y_permisos.xlsx
+
+Las rutas de la hoja Evidencias se interpretan desde la ubicación de cada Excel. Los informes y registros fechados de esta carpeta conservan el estado observado en su respectiva ejecución. El balance consolidado está en el informe principal.
+
+REGISTROS HISTÓRICOS DE EJECUCIÓN
+
+Ejecución Pagos — 28-10-2026
+2 casos actuales aprobados: PG-08 y PG-09. CP03 y PG-20 bloqueados en preparación, sin intento.
+Tiempos locales: America/Santiago UTC-3. Textos originales conservan UTC.
+Las capturas muestran estado visible, no inspección interna de base de datos.
+
+PG08_E01_01_portal_inicial | 2026-10-28T00:17:42.384000-03:00 | UTC 2026-10-28T03:17:42.384Z
+Suscripción mensual de una prueba. Portal identifica entorno de prueba. Antes de cancelar.
+Archivos: evidencias/PG08_E01_01_portal_inicial.jpg y .txt
+
+PG08_E01_02_admin_inicial | 2026-10-28T00:17:59.388000-03:00 | UTC 2026-10-28T03:17:59.388Z
+Registro administrativo filtrado de la cuenta de prueba antes de cancelar.
+Archivos: evidencias/PG08_E01_02_admin_inicial.jpg y .txt
+
+PG08_E01_03_condicion_cancelacion | 2026-10-28T00:18:20.339000-03:00 | UTC 2026-10-28T03:18:20.339Z
+Stripe indica conservación de acceso hasta el 4 de noviembre de 2026. Aún sin confirmar.
+Archivos: evidencias/PG08_E01_03_condicion_cancelacion.jpg y .txt
+
+PG08_E01_04_stripe_cancelada | 2026-10-28T00:18:49.033000-03:00 | UTC 2026-10-28T03:18:49.033Z
+Cancelación programada confirmada por Stripe para el 4 de noviembre.
+Archivos: evidencias/PG08_E01_04_stripe_cancelada.jpg y .txt
+
+PG08_E01_05_admin_cancelada | 2026-10-28T00:19:00.380000-03:00 | UTC 2026-10-28T03:19:00.380Z
+Mismo ID de suscripción, renovación cancelada, acceso habilitado y fecha conservada.
+Archivos: evidencias/PG08_E01_05_admin_cancelada.jpg y .txt
+
+PG08_E01_06_plan_cancelada | 2026-10-28T00:19:00.453000-03:00 | UTC 2026-10-28T03:19:00.453Z
+Mi plan tras actualizar estado.
+Archivos: evidencias/PG08_E01_06_plan_cancelada.jpg y .txt
+
+PG08_E01_07_practica_lectora | 2026-10-28T00:20:29.502000-03:00 | UTC 2026-10-28T03:20:29.502Z
+Los accesos visibles a Practicar abren LECTORA. No se ha localizado selector de Ciencias en esta pantalla. No acredita práctica de la materia pagada.
+Archivos: evidencias/PG08_E01_07_practica_lectora.jpg y .txt
+
+PG08_E01_08_seleccion_ciencias | 2026-10-28T00:21:52.754000-03:00 | UTC 2026-10-28T03:21:52.754Z
+Selección temporal: solo Ciencias en Ajustes > Mis pruebas. Inicialmente estaba seleccionada solo Comp. Lectora; se restaurará al finalizar.
+Archivos: evidencias/PG08_E01_08_seleccion_ciencias.jpg y .txt
+
+PG08_E01_09_ciencias_pregunta | 2026-10-28T00:22:09.179000-03:00 | UTC 2026-10-28T03:22:09.179Z
+Práctica CIEN Biología accesible con renovación cancelada.
+Archivos: evidencias/PG08_E01_09_ciencias_pregunta.jpg y .txt
+
+PG08_E01_10_ciencias_corregida | 2026-10-28T00:22:47.634000-03:00 | UTC 2026-10-28T03:22:47.634Z
+Respuesta de Ciencias enviada y corrección visible tras cancelar renovación.
+Archivos: evidencias/PG08_E01_10_ciencias_corregida.jpg y .txt
+
+PG08_E01_11_cuota_despues | 2026-10-28T00:22:58.127000-03:00 | UTC 2026-10-28T03:22:58.127Z
+Después de responder Ciencias: beneficio ilimitado y cuota gratuita utilizada 0.
+Archivos: evidencias/PG08_E01_11_cuota_despues.jpg y .txt
+
+PG09_E01_01_condicion_reactivar | 2026-10-28T00:23:21.932000-03:00 | UTC 2026-10-28T03:23:21.932Z
+Reactivación antes del vencimiento. Stripe conserva fecha del 4 de noviembre.
+Archivos: evidencias/PG09_E01_01_condicion_reactivar.jpg y .txt
+
+PG09_E01_02_stripe_reactivada | 2026-10-28T00:23:44.618000-03:00 | UTC 2026-10-28T03:23:44.618Z
+Stripe vuelve a mostrar renovación el 4 de noviembre y opción Cancelar.
+Archivos: evidencias/PG09_E01_02_stripe_reactivada.jpg y .txt
+
+PG09_E01_03_admin_reactivada | 2026-10-28T00:23:58.564000-03:00 | UTC 2026-10-28T03:23:58.564Z
+Mismo ID sub_1UMxrIAhY3J8iTOwYmtPRKb5, renovación automática, acceso habilitado y fin 04-11-2026.
+Archivos: evidencias/PG09_E01_03_admin_reactivada.jpg y .txt
+
+PG09_E01_04_plan_reactivada | 2026-10-28T00:23:58.634000-03:00 | UTC 2026-10-28T03:23:58.634Z
+Mi plan después de Actualizar estado al reactivar.
+Archivos: evidencias/PG09_E01_04_plan_reactivada.jpg y .txt
+
+PG09_E01_05_cuota_reactivada | 2026-10-28T00:24:20.901000-03:00 | UTC 2026-10-28T03:24:20.901Z
+Beneficio de Ciencias conservado tras reactivar.
+Archivos: evidencias/PG09_E01_05_cuota_reactivada.jpg y .txt
+
+PRE_CP03_01_saldo_a_favor | 2026-10-28T00:25:17.899000-03:00 | UTC 2026-10-28T03:25:17.899Z
+Preparación CP03 y PG20: crédito de período -0,25; cargo 1,26; total 1,01; saldo aplicado -1,01; debido hoy 0,00 USD. No se confirmó el cambio ni se cambió la tarjeta.
+Archivos: evidencias/PRE_CP03_01_saldo_a_favor.jpg y .txt
+
+PRE_ANUAL_01_ofertas | 2026-10-28T00:26:15.307000-03:00 | UTC 2026-10-28T03:26:15.307Z
+Ofertas anuales visibles en el portal: una prueba USD10 y todas USD50. Solo inspección, ninguna contratación confirmada.
+Archivos: evidencias/PRE_ANUAL_01_ofertas.jpg y .txt
+
+CIERRE_02_preferencias_confirmadas | 2026-10-28T00:26:34.758000-03:00 | UTC 2026-10-28T03:26:34.758Z
+Restauración confirmada visualmente: solo Comp. Lectora seleccionada.
+Archivos: evidencias/CIERRE_02_preferencias_confirmadas.jpg y .txt
+
+CIERRE_03_plan_final | 2026-10-28T00:26:34.832000-03:00 | UTC 2026-10-28T03:26:34.832Z
+Estado final: Ciencias mensual activa, renovación reactivada, fin 04-11-2026. Sin confirmar cambio de plan.
+Archivos: evidencias/CIERRE_03_plan_final.jpg y .txt
+
+
+Continuación D2 del 29-10-2026
+IF_sesion_D2_20261029/: 19 capturas, registro de teclado, resumen de Checkout sin pago, despliegues y registro de ejecuciones.
+IF02/IF15 aprobados; IF13 D02 reproducido y D03 no reproducido. 57 casos principales: 22 aprobados, 9 parciales, 2 fallidos, 10 bloqueados y 14 no ejecutados. Se mantienen aparte las 18 comprobaciones EX y los tres antecedentes históricos.

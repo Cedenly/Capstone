@@ -1,0 +1,837 @@
+[
+  {
+    "file": "CP02_E01_01_seleccion_ciencias.jpg",
+    "case": "CP02",
+    "caption": "seleccion ciencias",
+    "sha256": "7c483ddf95c8dd81b018876db422fa77c388eb30d405033b23816b6f894add2a",
+    "include": true,
+    "limit": "No sustituye comprobaciones internas de Firebase."
+  },
+  {
+    "file": "CP02_E01_02_checkout_tarjeta_rechazo.jpg",
+    "case": "CP02",
+    "caption": "checkout tarjeta rechazo",
+    "sha256": "c5180e2f53de405b6fb2855fa45116928ffcfa572aa9094f7a2d897f8fea9534",
+    "include": true,
+    "limit": "No sustituye comprobaciones internas de Firebase."
+  },
+  {
+    "file": "CP02_E01_03_rechazo_stripe.jpg",
+    "case": "CP02",
+    "caption": "rechazo stripe",
+    "sha256": "38df685838df9cbec53d9bc496222b751fc197fa3535d5fa0010c8312ab350dd",
+    "include": true,
+    "limit": "No sustituye comprobaciones internas de Firebase."
+  },
+  {
+    "file": "CP02_E01_04_aprueba_pendiente_sin_plan.jpg",
+    "case": "CP02",
+    "caption": "aprueba pendiente sin plan",
+    "sha256": "a6d6ffb71c76b7f99fa597eeab1a3fe7199437a92fea278ec8656dc5cfc5bb6b",
+    "include": true,
+    "limit": "No sustituye comprobaciones internas de Firebase."
+  },
+  {
+    "file": "CP02_E01_05_cuota_gratuita.jpg",
+    "case": "CP02",
+    "caption": "cuota gratuita",
+    "sha256": "136d606645d95972fba6653f3b41d9e6a9c32a7296594ccec6621af9b18877d9",
+    "include": true,
+    "limit": "No sustituye comprobaciones internas de Firebase."
+  },
+  {
+    "file": "CP02_E01_06_admin_sin_suscripcion.jpg",
+    "case": "CP02",
+    "caption": "admin sin suscripcion",
+    "sha256": "2721d3550fa99b8eecb3c275b85496dd8c93118db64ac5c8f0492a5f403526af",
+    "include": true,
+    "limit": "No sustituye comprobaciones internas de Firebase."
+  },
+  {
+    "file": "CP02_E01_07_admin_sin_factura.jpg",
+    "case": "CP02",
+    "caption": "admin sin factura",
+    "sha256": "28fc026fbd49c80735264f9a4ce9fd861cd8903228b8973ac5be6944f57780eb",
+    "include": true,
+    "limit": "No sustituye comprobaciones internas de Firebase."
+  },
+  {
+    "file": "CP02_E01_08_catalogo_tras_descarte.jpg",
+    "case": "CP02",
+    "caption": "catalogo tras descarte",
+    "sha256": "0fa9d762a00c22802d38da46e9614d2b9294544467f1151beb923305a9c393d8",
+    "include": true,
+    "limit": "No sustituye comprobaciones internas de Firebase."
+  },
+  {
+    "file": "CP02_E01_09_stripe_rechazo.json",
+    "case": "CP02",
+    "caption": "stripe rechazo",
+    "sha256": "384c38d3fc83621961b83d23866f4fbc282826c0021af347d9f923b420976e32",
+    "include": true,
+    "limit": "Conservar fecha y fuente; no es lectura de Firestore."
+  },
+  {
+    "file": "CP03R_E01_01_misma_factura_fallida.jpg",
+    "case": "CP03-R",
+    "caption": "misma factura fallida",
+    "sha256": "e2f4f603c761736f1e1450b80c3d42b098df5a2433c8fb3d281156856237d1e9",
+    "include": true,
+    "limit": "No sustituye comprobaciones internas de Firebase."
+  },
+  {
+    "file": "CP03R_E01_02_medio_valido_deuda_abierta.jpg",
+    "case": "CP03-R",
+    "caption": "medio valido deuda abierta",
+    "sha256": "44bd870a0f9d9a3bede660a8a77b58c74e5b8e85cb9751e26f1505f5b095c0d2",
+    "include": true,
+    "limit": "No sustituye comprobaciones internas de Firebase."
+  },
+  {
+    "file": "CP03R_E01_03_factura_preparada.jpg",
+    "case": "CP03-R",
+    "caption": "factura preparada",
+    "sha256": "90f030659ca977111dfaf0598624e987c01d45e759d2fab4343c1365886e0d0f",
+    "include": true,
+    "limit": "No sustituye comprobaciones internas de Firebase."
+  },
+  {
+    "file": "CP03R_E01_04_factura_pagada.jpg",
+    "case": "CP03-R",
+    "caption": "factura pagada",
+    "sha256": "a2b87d7b75f48b778de0456be48bc1574a7cf9fc5bf7cc6a0f239a6abf822eb2",
+    "include": true,
+    "limit": "No sustituye comprobaciones internas de Firebase."
+  },
+  {
+    "file": "CP03R_E01_05_aprueba_todas_activas.jpg",
+    "case": "CP03-R",
+    "caption": "aprueba todas activas",
+    "sha256": "039811a6d8d56832a8caf0370d3b881bddb31037ad38227fef68c6c44091912a",
+    "include": true,
+    "limit": "No sustituye comprobaciones internas de Firebase."
+  },
+  {
+    "file": "CP03R_E01_06_admin_misma_factura_pagada.jpg",
+    "case": "CP03-R",
+    "caption": "admin misma factura pagada",
+    "sha256": "945e2be63d917c85505f41e25a43705d6a548a4afcf7bee23046f8fb60a07e12",
+    "include": true,
+    "limit": "No sustituye comprobaciones internas de Firebase."
+  },
+  {
+    "file": "CP03R_E01_07_admin_suscripcion_recuperada.jpg",
+    "case": "CP03-R",
+    "caption": "admin suscripcion recuperada",
+    "sha256": "6481b6f65cc931b212ce6e91f5232f9490cdd590ef35e78a4884293e5b70ad9a",
+    "include": true,
+    "limit": "No sustituye comprobaciones internas de Firebase."
+  },
+  {
+    "file": "CP03R_E01_08_stripe_recuperacion.json",
+    "case": "CP03-R",
+    "caption": "stripe recuperacion",
+    "sha256": "76a39627a7e0c161b32f57b1d92c05a7df94d655e1904a5bb07bdcecfc8c6ace",
+    "include": true,
+    "limit": "Conservar fecha y fuente; no es lectura de Firestore."
+  },
+  {
+    "file": "CP03_E01_01_portal_ciencias_vigente.jpg",
+    "case": "CP03",
+    "caption": "portal ciencias vigente",
+    "sha256": "6ffa33793507c5b769434c4d303dcd5aa0575d1dd2ed22d69a984c1c1345895e",
+    "include": true,
+    "limit": "No sustituye comprobaciones internas de Firebase."
+  },
+  {
+    "file": "CP03_E01_02_importe_positivo_previo.jpg",
+    "case": "CP03",
+    "caption": "importe positivo previo",
+    "sha256": "775a4587b29b7d33a4fb8a500a7209a816ba97402bb07d084f590c1775dca2a4",
+    "include": true,
+    "limit": "No sustituye comprobaciones internas de Firebase."
+  },
+  {
+    "file": "CP03_E01_03_tarjeta_rechazo_preparada.jpg",
+    "case": "CP03",
+    "caption": "tarjeta rechazo preparada",
+    "sha256": "1ba912ae6930fa9d071320c71d50db55bc77eeaba9791e0d7ff5c2600870406c",
+    "include": true,
+    "limit": "No sustituye comprobaciones internas de Firebase."
+  },
+  {
+    "file": "CP03_E01_04_confirmacion_cargo_rechazable.jpg",
+    "case": "CP03",
+    "caption": "confirmacion cargo rechazable",
+    "sha256": "3b0cd8f81b9631aceeef0712a5b9cdf9a7e355c576138775d45620ad72688dc0",
+    "include": true,
+    "limit": "No sustituye comprobaciones internas de Firebase."
+  },
+  {
+    "file": "CP03_E01_05_rechazo_confirmado.jpg",
+    "case": "CP03",
+    "caption": "rechazo confirmado",
+    "sha256": "dd436f3cf5b7101294a11e4b123bf391bd5e3528347cda9702c418dc24c61c25",
+    "include": true,
+    "limit": "No sustituye comprobaciones internas de Firebase."
+  },
+  {
+    "file": "CP03_E01_06_aprueba_conserva_ciencias.jpg",
+    "case": "CP03",
+    "caption": "aprueba conserva ciencias",
+    "sha256": "0e6883a60c289aef23d20c1d9045e410a4abb660eb9e4e33e772d3b143d66909",
+    "include": true,
+    "limit": "No sustituye comprobaciones internas de Firebase."
+  },
+  {
+    "file": "CP03_E01_07_ciencias_disponible_tras_rechazo.jpg",
+    "case": "CP03",
+    "caption": "ciencias disponible tras rechazo",
+    "sha256": "1f124fd06aeaea95b5bde6d12078f62564127ca0164f7a79ff1de51e299b335c",
+    "include": true,
+    "limit": "No sustituye comprobaciones internas de Firebase."
+  },
+  {
+    "file": "CP03_E01_08_admin_acceso_y_deuda.jpg",
+    "case": "CP03",
+    "caption": "admin acceso y deuda",
+    "sha256": "27515b46016507cb6ce71c7fb4fb3e8fc01d2b35c7dbf70fbe7edd2d43c4cc3e",
+    "include": true,
+    "limit": "No sustituye comprobaciones internas de Firebase."
+  },
+  {
+    "file": "CP03_E01_09_ciencias_corregida.jpg",
+    "case": "CP03",
+    "caption": "ciencias corregida",
+    "sha256": "50b5852adfdd754186936286218ada10d765dab9c58d8b770a7c0c7cb4c8ea35",
+    "include": true,
+    "limit": "No sustituye comprobaciones internas de Firebase."
+  },
+  {
+    "file": "CP03_E01_10_admin_factura_pendiente.jpg",
+    "case": "CP03",
+    "caption": "admin factura pendiente",
+    "sha256": "8d3d47cf8f196a5e3bd0ddddce9e327fa33947fe4a2d0ec5c54352a25ad7611e",
+    "include": true,
+    "limit": "No sustituye comprobaciones internas de Firebase."
+  },
+  {
+    "file": "CP03_E01_11_cuota_ciencias_sin_consumo.jpg",
+    "case": "CP03",
+    "caption": "cuota ciencias sin consumo",
+    "sha256": "099839d071a7d5ff43e16916359db8ac0d92c0e2d2512a4870613ee51826caaa",
+    "include": true,
+    "limit": "No sustituye comprobaciones internas de Firebase."
+  },
+  {
+    "file": "CP03_E01_12_stripe_rechazo_y_pendiente.json",
+    "case": "CP03",
+    "caption": "stripe rechazo y pendiente",
+    "sha256": "e4ff95a068d8d87c82d364cde549e3407b45eca20dc61f9bc2393e75607bed8e",
+    "include": true,
+    "limit": "Conservar fecha y fuente; no es lectura de Firestore."
+  },
+  {
+    "file": "ESTADO_STRIPE_20261029.json",
+    "case": "Contexto",
+    "caption": "20261029",
+    "sha256": "cd8963e689e95aa63bc644a66de8aa9bf5913d04a60cf10f61d70ea8d7a05963",
+    "include": true,
+    "limit": "Conservar fecha y fuente; no es lectura de Firestore."
+  },
+  {
+    "file": "PG01_E01_01_oferta_ciencias_mensual.jpg",
+    "case": "PG-01",
+    "caption": "oferta ciencias mensual",
+    "sha256": "7bcce4375652162ff3e7e81c3e0d92a7ab038ac8906610c1c0f1ef33c2cc5891",
+    "include": true,
+    "limit": "No sustituye comprobaciones internas de Firebase."
+  },
+  {
+    "file": "PG01_E01_02_checkout_datos_prueba.jpg",
+    "case": "PG-01",
+    "caption": "checkout datos prueba",
+    "sha256": "30167a1eeb04bbcc39842dfb76d3f72dc8d2c5acb79dc00fa205a8f678cb5250",
+    "include": true,
+    "limit": "No sustituye comprobaciones internas de Firebase."
+  },
+  {
+    "file": "PG01_E01_03_pago_confirmado.jpg",
+    "case": "PG-01",
+    "caption": "pago confirmado",
+    "sha256": "fe94935f84ed8d9dbccdaac8927d4ab6c6b9c195727730d10af1958518c575ff",
+    "include": true,
+    "limit": "No sustituye comprobaciones internas de Firebase."
+  },
+  {
+    "file": "PG01_E01_04_admin_factura_pagada.jpg",
+    "case": "PG-01",
+    "caption": "admin factura pagada",
+    "sha256": "d49b2ddc3aab5e021f0710415862db666cf3c64ccbf9d00c559896b1e83cf9ab",
+    "include": true,
+    "limit": "No sustituye comprobaciones internas de Firebase."
+  },
+  {
+    "file": "PG01_E01_05_cuota_ciencias_activa.jpg",
+    "case": "PG-01",
+    "caption": "cuota ciencias activa",
+    "sha256": "dbb56e41b99647d10f2ec5b7d9029589e2d0b3836db6b01f3da575643cfe2776",
+    "include": true,
+    "limit": "No sustituye comprobaciones internas de Firebase."
+  },
+  {
+    "file": "PG01_E01_06_admin_suscripcion.jpg",
+    "case": "PG-01",
+    "caption": "admin suscripcion",
+    "sha256": "6e6d9ce70a4acd5d7898041e652d9e4dfd14769767dd198c69d63097bfd360d4",
+    "include": false,
+    "limit": "Vista transitoria sin filtro; sustituida por 06b."
+  },
+  {
+    "file": "PG01_E01_06b_admin_suscripcion_filtrada.jpg",
+    "case": "PG-01",
+    "caption": "admin suscripcion filtrada",
+    "sha256": "80eac8e4aa6219d429cb2b9754e38370c573a6b07b2b8ca09e8eb0d881a32e72",
+    "include": true,
+    "limit": "No sustituye comprobaciones internas de Firebase."
+  },
+  {
+    "file": "PG01_E01_07_seleccion_ciencias.jpg",
+    "case": "PG-01",
+    "caption": "seleccion ciencias",
+    "sha256": "7ee039fae0ad20456c01a5b11fdf1017be052383ccc14bf44bedb67a3eef49fd",
+    "include": true,
+    "limit": "No sustituye comprobaciones internas de Firebase."
+  },
+  {
+    "file": "PG01_E01_08_pregunta_ciencias.jpg",
+    "case": "PG-01",
+    "caption": "pregunta ciencias",
+    "sha256": "b3bea226b125bd5e41a509e7ba88a5e920a56052e77113ca40460fbfdbfac4a7",
+    "include": true,
+    "limit": "No sustituye comprobaciones internas de Firebase."
+  },
+  {
+    "file": "PG01_E01_09_correccion_ciencias.jpg",
+    "case": "PG-01",
+    "caption": "correccion ciencias",
+    "sha256": "aca59d3da7e1001c161221910da66de0ddaf649f508d54e2d763d5cc9d584c00",
+    "include": true,
+    "limit": "No sustituye comprobaciones internas de Firebase."
+  },
+  {
+    "file": "PG01_E01_10_cuota_tras_practica.jpg",
+    "case": "PG-01",
+    "caption": "cuota tras practica",
+    "sha256": "450464119d83f9a3cb6c6dff2322630556bd1ee405a3f90bbdce46364bdc6886",
+    "include": true,
+    "limit": "No sustituye comprobaciones internas de Firebase."
+  },
+  {
+    "file": "PG01_E01_11_stripe_pago_y_periodo.json",
+    "case": "PG-01",
+    "caption": "stripe pago y periodo",
+    "sha256": "e257543e684fce22f048efae456b5e5b508675ac7c6d2a12209fb6c1dbea5a42",
+    "include": true,
+    "limit": "Conservar fecha y fuente; no es lectura de Firestore."
+  },
+  {
+    "file": "PG03_E01_01_inicio_gratuito.jpg",
+    "case": "PG-03",
+    "caption": "inicio gratuito",
+    "sha256": "6483845c0acce082afaba0a3a986f3d8c0f992b22140ec168c4fd40259e316bb",
+    "include": true,
+    "limit": "No sustituye comprobaciones internas de Firebase."
+  },
+  {
+    "file": "PG03_E01_02_oferta_ciencias.jpg",
+    "case": "PG-03",
+    "caption": "oferta ciencias",
+    "sha256": "888881f94914961d63ec28244022d8969b94ccee3c2cd80c76650d12027beb0c",
+    "include": true,
+    "limit": "No sustituye comprobaciones internas de Firebase."
+  },
+  {
+    "file": "PG03_E01_03_checkout_sin_pagar.jpg",
+    "case": "PG-03",
+    "caption": "checkout sin pagar",
+    "sha256": "189e0f489baf9752e337c7d5082004345824169ecb9bc6c6e6f29e96a230f2e0",
+    "include": true,
+    "limit": "No sustituye comprobaciones internas de Firebase."
+  },
+  {
+    "file": "PG03_E01_04_retorno_abandono.jpg",
+    "case": "PG-03",
+    "caption": "retorno abandono",
+    "sha256": "9351574555544f3411ecd53aca42d620888d983d0245521277b9dff400f5cddb",
+    "include": true,
+    "limit": "No sustituye comprobaciones internas de Firebase."
+  },
+  {
+    "file": "PG03_E01_05_cuota_tras_abandono.jpg",
+    "case": "PG-03",
+    "caption": "cuota tras abandono",
+    "sha256": "136d606645d95972fba6653f3b41d9e6a9c32a7296594ccec6621af9b18877d9",
+    "include": true,
+    "limit": "No sustituye comprobaciones internas de Firebase."
+  },
+  {
+    "file": "PG03_E01_06_stripe_sesion_sin_pagar.json",
+    "case": "PG-03",
+    "caption": "stripe sesion sin pagar",
+    "sha256": "049bd75cb321e246fdd06cced218634101f479c04f786fcffe929cac3b05f386",
+    "include": true,
+    "limit": "Conservar fecha y fuente; no es lectura de Firestore."
+  },
+  {
+    "file": "PG03_E01_07_catalogo_tras_descarte.jpg",
+    "case": "PG-03",
+    "caption": "catalogo tras descarte",
+    "sha256": "0fa9d762a00c22802d38da46e9614d2b9294544467f1151beb923305a9c393d8",
+    "include": true,
+    "limit": "No sustituye comprobaciones internas de Firebase."
+  },
+  {
+    "file": "PG04_E01_01_seleccion_matematica.jpg",
+    "case": "PG-04",
+    "caption": "seleccion matematica",
+    "sha256": "59653ac2d05f7fc10f2fc3ae814470ae683b56f9fb64cdb3e79f88c2358fef5d",
+    "include": true,
+    "limit": "No sustituye comprobaciones internas de Firebase."
+  },
+  {
+    "file": "PG04_E01_02_pregunta_m1.jpg",
+    "case": "PG-04",
+    "caption": "pregunta m1",
+    "sha256": "001d0c586ab96926ff5a871a2fac3c00028b44e00761a7710d7fa4f6ccf050d3",
+    "include": true,
+    "limit": "No sustituye comprobaciones internas de Firebase."
+  },
+  {
+    "file": "PG04_E01_03_m1_corregida.jpg",
+    "case": "PG-04",
+    "caption": "m1 corregida",
+    "sha256": "323acc322cac660dcab1163ceb9b6475e74d149b4b16290bef65e92c1845c53f",
+    "include": true,
+    "limit": "No sustituye comprobaciones internas de Firebase."
+  },
+  {
+    "file": "PG04_E01_04_consumo_cuota_gratuita.jpg",
+    "case": "PG-04",
+    "caption": "consumo cuota gratuita",
+    "sha256": "dffa6599c1c5df466376c128c89f2d728edc45d0c64e5d7c4e4959628d5bf129",
+    "include": true,
+    "limit": "No sustituye comprobaciones internas de Firebase."
+  },
+  {
+    "file": "PG05_E01_01_beneficio_ilimitado.jpg",
+    "case": "PG-05",
+    "caption": "beneficio ilimitado",
+    "sha256": "ac20aecf9187fe3c7601fdbf8adcc06639f149e9b329b1f8b169adada39bd54b",
+    "include": true,
+    "limit": "No sustituye comprobaciones internas de Firebase."
+  },
+  {
+    "file": "PG05_E01_02_m1_pregunta.jpg",
+    "case": "PG-05",
+    "caption": "m1 pregunta",
+    "sha256": "85d9f439d669826cb30b1d1e30e2c178550c69194a060bd892a20818c3da5394",
+    "include": true,
+    "limit": "No sustituye comprobaciones internas de Firebase."
+  },
+  {
+    "file": "PG05_E01_03_m1_corregida.jpg",
+    "case": "PG-05",
+    "caption": "m1 corregida",
+    "sha256": "f1c11e501404d2118f5036213e0dfc6097c558a5bec31cc93a7f8e346078b0b0",
+    "include": true,
+    "limit": "No sustituye comprobaciones internas de Firebase."
+  },
+  {
+    "file": "PG05_E01_04_m1_beneficio.jpg",
+    "case": "PG-05",
+    "caption": "m1 beneficio",
+    "sha256": "5a1054392b645b06deefcc53a7f42ad57d5df930cb9a14feac6befb1c7fc7a62",
+    "include": true,
+    "limit": "No sustituye comprobaciones internas de Firebase."
+  },
+  {
+    "file": "PG05_E01_05_m2_seleccion.jpg",
+    "case": "PG-05",
+    "caption": "m2 seleccion",
+    "sha256": "75fb3ae76d4c6c000d30d2a3b6351a0a0afc862e5e059f102652b29221d6430c",
+    "include": true,
+    "limit": "No sustituye comprobaciones internas de Firebase."
+  },
+  {
+    "file": "PG05_E01_06_m2_muestra_pregunta_m1.jpg",
+    "case": "PG-05",
+    "caption": "m2 muestra pregunta m1",
+    "sha256": "d4024d5a025b14479b9dd42ffecd49d823edb59423a7dcdb49881d414f06ac6c",
+    "include": true,
+    "limit": "No sustituye comprobaciones internas de Firebase."
+  },
+  {
+    "file": "PG05_E01_07_m2_preferencia_reconsultada.jpg",
+    "case": "PG-05",
+    "caption": "m2 preferencia reconsultada",
+    "sha256": "7c20534dba38b41b247463084b48ac09d98349c68b3c006e5396754e5bf34982",
+    "include": true,
+    "limit": "No sustituye comprobaciones internas de Firebase."
+  },
+  {
+    "file": "PG05_E01_08_m2_segunda_consulta.jpg",
+    "case": "PG-05",
+    "caption": "m2 segunda consulta",
+    "sha256": "fd2227d55fea3d3d941871ecc35dbc60db1837c33142d99ea1909ee508b78733",
+    "include": true,
+    "limit": "No sustituye comprobaciones internas de Firebase."
+  },
+  {
+    "file": "PG05_E01_09_lectora_seleccion.jpg",
+    "case": "PG-05",
+    "caption": "lectora seleccion",
+    "sha256": "05089935631df71335e1930ef46b9dad308c158543720e9c6d40a067c76bfce2",
+    "include": true,
+    "limit": "No sustituye comprobaciones internas de Firebase."
+  },
+  {
+    "file": "PG05_E01_10_lectora_estado.jpg",
+    "case": "PG-05",
+    "caption": "lectora estado",
+    "sha256": "139dfbc2fb750b922528438d10f21afb6bb22fe23bc7df02e2e0078d4acc156e",
+    "include": true,
+    "limit": "No sustituye comprobaciones internas de Firebase."
+  },
+  {
+    "file": "PG05_E01_11_lectora_corregida.jpg",
+    "case": "PG-05",
+    "caption": "lectora corregida",
+    "sha256": "69a1ba860796bf0b36fd3bb9045c7423970642e4c3d6baf7f7a9bc2aee98681c",
+    "include": true,
+    "limit": "No sustituye comprobaciones internas de Firebase."
+  },
+  {
+    "file": "PG05_E01_12_lectora_beneficio.jpg",
+    "case": "PG-05",
+    "caption": "lectora beneficio",
+    "sha256": "5e3fee54f8d69a5367bb28223419bcda381c4f46fb46f23dcb82b6c1be3866d8",
+    "include": true,
+    "limit": "No sustituye comprobaciones internas de Firebase."
+  },
+  {
+    "file": "PG05_E01_13_historia_seleccion.jpg",
+    "case": "PG-05",
+    "caption": "historia seleccion",
+    "sha256": "032687e187f5c3d1bdcb4d8655a303528c4f15ba37bfad809f71437b00840634",
+    "include": true,
+    "limit": "No sustituye comprobaciones internas de Firebase."
+  },
+  {
+    "file": "PG05_E01_14_historia_estado.jpg",
+    "case": "PG-05",
+    "caption": "historia estado",
+    "sha256": "fd2227d55fea3d3d941871ecc35dbc60db1837c33142d99ea1909ee508b78733",
+    "include": true,
+    "limit": "No sustituye comprobaciones internas de Firebase."
+  },
+  {
+    "file": "PG05_E01_15_ciencias_seleccion.jpg",
+    "case": "PG-05",
+    "caption": "ciencias seleccion",
+    "sha256": "8a1a95892d0493e08391cbe1c1e68b4d561ed369183bd20dd7dba9938b4e2323",
+    "include": false,
+    "limit": "Preferencia aún transitoria; sustituida por 15b."
+  },
+  {
+    "file": "PG05_E01_15b_ciencias_seleccion_guardada.jpg",
+    "case": "PG-05",
+    "caption": "ciencias seleccion guardada",
+    "sha256": "557c605757306571025a183ca67713ab1a4b97015510f2b5ef83601d178d17bf",
+    "include": true,
+    "limit": "No sustituye comprobaciones internas de Firebase."
+  },
+  {
+    "file": "PG05_E01_16_ciencias_pregunta.jpg",
+    "case": "PG-05",
+    "caption": "ciencias pregunta",
+    "sha256": "bbbf988593764e834df1ff6b028bb3d5c5e87948608f7c9d12a2f5ad2657483c",
+    "include": true,
+    "limit": "No sustituye comprobaciones internas de Firebase."
+  },
+  {
+    "file": "PG05_E01_17_ciencias_corregida.jpg",
+    "case": "PG-05",
+    "caption": "ciencias corregida",
+    "sha256": "ad1dce8054d68ca0d9efe795ed6877b45c7489f8b4998267e211566a19be1b03",
+    "include": true,
+    "limit": "No sustituye comprobaciones internas de Firebase."
+  },
+  {
+    "file": "PG05_E01_18_ciencias_beneficio.jpg",
+    "case": "PG-05",
+    "caption": "ciencias beneficio",
+    "sha256": "aa72590773e50bb8a95153388e1bdf964777563ba6ef251d1996cd9f041882cd",
+    "include": true,
+    "limit": "No sustituye comprobaciones internas de Firebase."
+  },
+  {
+    "file": "PG16_E01_01_firma_invalida.json",
+    "case": "PG-16",
+    "caption": "firma invalida",
+    "sha256": "1693c307f7935f9f43f191ebae6c249bce5695fff49c16e40bbcd87e163e3280",
+    "include": true,
+    "limit": "Conservar fecha y fuente; no es lectura de Firestore."
+  },
+  {
+    "file": "VERCEL_E01_logs_acotados.txt",
+    "case": "Contexto",
+    "caption": "acotados",
+    "sha256": "82043c61a7c6b53f9349814365c0d4a6f3f1e7757afb42e2f330e11dbae5fe7c",
+    "include": true,
+    "limit": "Conservar fecha y fuente; no es lectura de Firestore."
+  },
+  {
+    "file": "PG02_20261029_B/PG02_01_gratis.jpg",
+    "case": "PG-02",
+    "execution": "PG02-20261029-B",
+    "caption": "Plan Gratis antes de contratar",
+    "sha256": "03a6371a267945818ef28498e9dbbda592971e3ed813fad7980005d62a487c10",
+    "include": true,
+    "limit": "Resultado parcial. No acredita persistencia directa de B en Firebase."
+  },
+  {
+    "file": "PG02_20261029_B/PG02_02_oferta_mensual.jpg",
+    "case": "PG-02",
+    "execution": "PG02-20261029-B",
+    "caption": "Oferta Todas mensual USD 5",
+    "sha256": "ac17133de399c1a9bbb3702643d0faadb36a516cb662e07012f4a2856ac322fc",
+    "include": true,
+    "limit": "Resultado parcial. No acredita persistencia directa de B en Firebase."
+  },
+  {
+    "file": "PG02_20261029_B/PG02_03_checkout_test_preparado.jpg",
+    "case": "PG-02",
+    "execution": "PG02-20261029-B",
+    "caption": "Checkout test antes del envío final",
+    "sha256": "18edf184e19421b3927fbbb7174f3c89fc04880373309206c781238d1153c620",
+    "include": true,
+    "limit": "Resultado parcial. No acredita persistencia directa de B en Firebase."
+  },
+  {
+    "file": "PG02_20261029_B/PG02_04_pago_confirmado.jpg",
+    "case": "PG-02",
+    "execution": "PG02-20261029-B",
+    "caption": "Pago confirmado y plan mensual activo",
+    "sha256": "3de9e632b45ef8ee13fcedd4107f3b7c9d90f147f21130a26343e51a510c3c6a",
+    "include": true,
+    "limit": "Resultado parcial. No acredita persistencia directa de B en Firebase."
+  },
+  {
+    "file": "PG02_20261029_B/PG02_05_cuota_ilimitada.jpg",
+    "case": "PG-02",
+    "execution": "PG02-20261029-B",
+    "caption": "Cuota ilimitada tras activar el plan",
+    "sha256": "e027a66d8d49ad69d4c7965d0febe3da9378d613cf5c960b5244b237dde9625f",
+    "include": true,
+    "limit": "Resultado parcial. No acredita persistencia directa de B en Firebase."
+  },
+  {
+    "file": "PG02_20261029_B/PG02_06_pregunta_lectora.jpg",
+    "case": "PG-02",
+    "execution": "PG02-20261029-B",
+    "caption": "Pregunta de Comprensión Lectora",
+    "sha256": "3cabb7e0c9959611219d462497b115fcc1d99c2e5a2458f6fab3edb9d6a6611e",
+    "include": true,
+    "limit": "Resultado parcial. No acredita persistencia directa de B en Firebase."
+  },
+  {
+    "file": "PG02_20261029_B/PG02_07_respuesta_correcta.jpg",
+    "case": "PG-02",
+    "execution": "PG02-20261029-B",
+    "caption": "Corrección correcta en Lectora",
+    "sha256": "9ef6d5622c17f942299021eebbec4a90270624ab581db5c87564204290cdd9e7",
+    "include": true,
+    "limit": "Resultado parcial. No acredita persistencia directa de B en Firebase."
+  },
+  {
+    "file": "PG02_20261029_B/PG02_08_admin_suscripcion.jpg",
+    "case": "PG-02",
+    "execution": "PG02-20261029-B",
+    "caption": "Suscripción activa en administración",
+    "sha256": "79c5f921c05ecd222ecb8457134b16a668a90bcfb06bcfbfbe016461f2f7399a",
+    "include": true,
+    "limit": "Resultado parcial. No acredita persistencia directa de B en Firebase."
+  },
+  {
+    "file": "PG02_20261029_B/PG02_09_admin_factura.jpg",
+    "case": "PG-02",
+    "execution": "PG02-20261029-B",
+    "caption": "Factura de USD 5 pagada en administración",
+    "sha256": "06140b8be08ab5266c094239cd3249b70144c1032f9b3759053e04673ad1c8b5",
+    "include": true,
+    "limit": "Resultado parcial. No acredita persistencia directa de B en Firebase."
+  },
+  {
+    "file": "PG02_20261029_B/PG02_10_cuota_tras_lectora.jpg",
+    "case": "PG-02",
+    "execution": "PG02-20261029-B",
+    "caption": "Cuota ilimitada después de Lectora",
+    "sha256": "9bdb8d62ad151fa6366e805be1b0e6f228b45a15ae7a002773e3fd897675ffb3",
+    "include": true,
+    "limit": "Resultado parcial. No acredita persistencia directa de B en Firebase."
+  },
+  {
+    "file": "PG02_20261029_B/PG02_11_seleccion_M1.jpg",
+    "case": "PG-02",
+    "execution": "PG02-20261029-B",
+    "caption": "Selección exclusiva de M1",
+    "sha256": "07f717615382f1f74ef42932dff171df4dcd266a7e8f762e7f58d78d090b02e4",
+    "include": true,
+    "limit": "Resultado parcial. No acredita persistencia directa de B en Firebase."
+  },
+  {
+    "file": "PG02_20261029_B/PG02_12_pregunta_M1.jpg",
+    "case": "PG-02",
+    "execution": "PG02-20261029-B",
+    "caption": "Pregunta de M1",
+    "sha256": "5812e1b91258595375724ec5bee33017e3210f17f8c7fc624c7fbaf08754078c",
+    "include": true,
+    "limit": "Resultado parcial. No acredita persistencia directa de B en Firebase."
+  },
+  {
+    "file": "PG02_20261029_B/PG02_13_resultado_M1.jpg",
+    "case": "PG-02",
+    "execution": "PG02-20261029-B",
+    "caption": "Corrección correcta de M1",
+    "sha256": "aa7761d7aa530306bbdd43e93d0ac294715d83d2d33980c2d9e8cd407484f746",
+    "include": true,
+    "limit": "Resultado parcial. No acredita persistencia directa de B en Firebase."
+  },
+  {
+    "file": "PG02_20261029_B/PG02_14_cuota_tras_M1.jpg",
+    "case": "PG-02",
+    "execution": "PG02-20261029-B",
+    "caption": "Cuota ilimitada después de M1",
+    "sha256": "8625838b3dc899b8c74369b0fcb4261ba64d99da07c1d0aca6ed7b6d289c4949",
+    "include": true,
+    "limit": "Resultado parcial. No acredita persistencia directa de B en Firebase."
+  },
+  {
+    "file": "PG02_20261029_B/PG02_15_seleccion_Ciencias.jpg",
+    "case": "PG-02",
+    "execution": "PG02-20261029-B",
+    "caption": "Selección exclusiva de Ciencias",
+    "sha256": "5668cbdabd310453aa554fd1f7e5370cd420f9e689823a4433d22919ff8b5ee0",
+    "include": true,
+    "limit": "Resultado parcial. No acredita persistencia directa de B en Firebase."
+  },
+  {
+    "file": "PG02_20261029_B/PG02_16_pregunta_Ciencias.jpg",
+    "case": "PG-02",
+    "execution": "PG02-20261029-B",
+    "caption": "Pregunta de Ciencias",
+    "sha256": "91d0a727d9a8a6a7972f2f95867a0b622aadfdd5ba13a487646c8db209681861",
+    "include": true,
+    "limit": "Resultado parcial. No acredita persistencia directa de B en Firebase."
+  },
+  {
+    "file": "PG02_20261029_B/PG02_17_resultado_Ciencias.jpg",
+    "case": "PG-02",
+    "execution": "PG02-20261029-B",
+    "caption": "Corrección correcta de Ciencias",
+    "sha256": "b57a9ee84e0263703f3d92ea2b60be076dae9f336757bbba0b099cf16a867a80",
+    "include": true,
+    "limit": "Resultado parcial. No acredita persistencia directa de B en Firebase."
+  },
+  {
+    "file": "PG02_20261029_B/PG02_18_cuota_tras_Ciencias.jpg",
+    "case": "PG-02",
+    "execution": "PG02-20261029-B",
+    "caption": "Cuota ilimitada después de Ciencias",
+    "sha256": "910f775eeea718374e6b4c9f9f06c1d4100221ed33b7be60684d8c250a4d75f6",
+    "include": true,
+    "limit": "Resultado parcial. No acredita persistencia directa de B en Firebase."
+  },
+  {
+    "file": "PG02_20261029_B/PG02_19_seleccion_M2.jpg",
+    "case": "PG-02",
+    "execution": "PG02-20261029-B",
+    "caption": "Selección de M2",
+    "sha256": "97a2f6bad099fce6e37045bd2ee1f1a7966b1eeea50adaebb01663099b85dbdc",
+    "include": true,
+    "limit": "Resultado parcial. No acredita persistencia directa de B en Firebase."
+  },
+  {
+    "file": "PG02_20261029_B/PG02_20_M2_muestra_Ciencias.jpg",
+    "case": "PG-02",
+    "execution": "PG02-20261029-B",
+    "caption": "Anomalía: pregunta CIEN tras seleccionar M2",
+    "sha256": "6b819c3a264730785b8fe0da5e695cbf8da8c06637a3e81a74b98446009d6b8e",
+    "include": true,
+    "limit": "Resultado parcial. No acredita persistencia directa de B en Firebase."
+  },
+  {
+    "file": "PG02_20261029_B/PG02_21_M2_preferencia_persistida.jpg",
+    "case": "PG-02",
+    "execution": "PG02-20261029-B",
+    "caption": "Preferencia M2 conservada al volver a Ajustes",
+    "sha256": "b73ca333b879bee432a29c1792192b59640b1a0f994c7484367ab27746396f9d",
+    "include": true,
+    "limit": "Resultado parcial. No acredita persistencia directa de B en Firebase."
+  },
+  {
+    "file": "PG02_20261029_B/PG02_22_M2_tras_recarga.jpg",
+    "case": "PG-02",
+    "execution": "PG02-20261029-B",
+    "caption": "M2 sin preguntas después de recargar",
+    "sha256": "690b0c52763847dbf111b44ee50003db7b4eaece0899e0b2bdcaaac241f91ae5",
+    "include": true,
+    "limit": "Resultado parcial. No acredita persistencia directa de B en Firebase."
+  },
+  {
+    "file": "PG02_20261029_B/PG02_23_seleccion_Historia.jpg",
+    "case": "PG-02",
+    "execution": "PG02-20261029-B",
+    "caption": "Transición de selección: M2 e Historia aún visibles como activas",
+    "sha256": "67f70553eed33b3bb859c729c2acc89c506f61bf5ae8fafcb97f2471d8eb34df",
+    "include": true,
+    "limit": "Resultado parcial. No acredita persistencia directa de B en Firebase."
+  },
+  {
+    "file": "PG02_20261029_B/PG02_24_Historia_preferencia_persistida.jpg",
+    "case": "PG-02",
+    "execution": "PG02-20261029-B",
+    "caption": "Historia exclusiva confirmada tras volver a Ajustes",
+    "sha256": "2578bd561b33bc7be60eeb18a75d61c0eb8aa7bbdc687a969834575f3fd48d4c",
+    "include": true,
+    "limit": "Resultado parcial. No acredita persistencia directa de B en Firebase."
+  },
+  {
+    "file": "PG02_20261029_B/PG02_25_Historia_sin_preguntas.jpg",
+    "case": "PG-02",
+    "execution": "PG02-20261029-B",
+    "caption": "Historia sin preguntas disponibles",
+    "sha256": "690b0c52763847dbf111b44ee50003db7b4eaece0899e0b2bdcaaac241f91ae5",
+    "include": true,
+    "limit": "Resultado parcial. No acredita persistencia directa de B en Firebase."
+  },
+  {
+    "file": "PG02_20261029_B/PG02_26_plan_final.jpg",
+    "case": "PG-02",
+    "execution": "PG02-20261029-B",
+    "caption": "Estado final de Mi plan",
+    "sha256": "cddc42cfa1b1619675f5ac0231e0113cacbc8594c4581fa25050b99e8320b435",
+    "include": true,
+    "limit": "Resultado parcial. No acredita persistencia directa de B en Firebase."
+  },
+  {
+    "file": "PG02_20261029_B/PG02_Stripe_extracto.json",
+    "case": "PG-02",
+    "execution": "PG02-20261029-B",
+    "caption": "Consulta Stripe test: Checkout, suscripción y factura",
+    "sha256": "c9175e257e552b64454f1c8a6fc670b2ba55a81d5d6a9c041a9e2365cd2be955",
+    "include": true,
+    "limit": "Resultado parcial. No acredita persistencia directa de B en Firebase."
+  }
+]

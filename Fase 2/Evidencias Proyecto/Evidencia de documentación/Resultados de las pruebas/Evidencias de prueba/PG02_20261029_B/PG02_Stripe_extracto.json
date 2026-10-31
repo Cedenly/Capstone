@@ -1,0 +1,79 @@
+{
+  "case": "PG-02",
+  "execution": "PG02-20261029-B",
+  "retrieved_at": "2026-10-29T17:39:00Z (consulta aproximada; capturas con hora de archivo)",
+  "account": "acct_1UMr3HAhY3J8iTOw",
+  "source": "Stripe connector, consultas de solo lectura en modo test",
+  "checkout": {
+    "id": "cs_test_a1Sb4HHUhroDNkhOvy2AdWvsXmfGwjydGdyEoMo2S6dGGPcRZfSOrkQmrx",
+    "status": "complete",
+    "payment_status": "paid",
+    "livemode": false,
+    "amount_subtotal": 500,
+    "amount_total": 500,
+    "currency": "usd",
+    "customer": "cus_VX1HuaQ6VvT1oH",
+    "subscription": "sub_1UVxF3AhY3J8iTOwQ1UulEam",
+    "invoice": "in_1UVxF1AhY3J8iTOw6xdrmtvA",
+    "created": 1793295179,
+    "metadata": {
+      "attemptId": "1282cc05-6aad-4b07-b887-9c6ff1787555",
+      "billingCycle": "monthly",
+      "integration": "aprueba_mvp",
+      "plan": "all",
+      "userId": "usr_b27c658530"
+    }
+  },
+  "subscription": {
+    "id": "sub_1UVxF3AhY3J8iTOwQ1UulEam",
+    "status": "active",
+    "livemode": false,
+    "customer": "cus_VX1HuaQ6VvT1oH",
+    "cancel_at_period_end": false,
+    "pending_update": null,
+    "start_date": 1793295355,
+    "latest_invoice": "in_1UVxF1AhY3J8iTOw6xdrmtvA"
+  },
+  "items": [
+    {
+      "id": "si_VX1HRZDLyEtFSx",
+      "quantity": 1,
+      "current_period_start": 1793295355,
+      "current_period_end": 1795973755,
+      "price": {
+        "id": "price_1UMtdlAhY3J8iTOwsTxr9fTO",
+        "unit_amount": 500,
+        "currency": "usd",
+        "product": "prod_aprueba_all",
+        "recurring": {
+          "interval": "month",
+          "interval_count": 1,
+          "meter": null,
+          "trial_period_days": null,
+          "usage_type": "licensed"
+        }
+      }
+    }
+  ],
+  "invoices": [
+    {
+      "id": "in_1UVxF1AhY3J8iTOw6xdrmtvA",
+      "number": "NOQ3NHR7-0001",
+      "status": "paid",
+      "livemode": false,
+      "amount_due": 500,
+      "amount_paid": 500,
+      "amount_remaining": 0,
+      "currency": "usd",
+      "customer": "cus_VX1HuaQ6VvT1oH",
+      "created": 1793295355,
+      "status_transitions": {
+        "finalized_at": 1793295355,
+        "marked_uncollectible_at": null,
+        "paid_at": 1793295356,
+        "voided_at": null
+      }
+    }
+  ],
+  "limit": "Extracto de campos seleccionados; no es exportación de Firebase ni prueba de idempotencia."
+}

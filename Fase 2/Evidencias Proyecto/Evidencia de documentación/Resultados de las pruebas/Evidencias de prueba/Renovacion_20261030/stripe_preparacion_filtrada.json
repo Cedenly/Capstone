@@ -1,0 +1,53 @@
+{
+  "collected_at": "2026-10-30T12:22:35.724Z",
+  "account": "acct_1UMr3HAhY3J8iTOw",
+  "livemode": false,
+  "email": "renov@renov.com",
+  "customer": "cus_VXJAOZAucUHSrB",
+  "user_id": "usr_5cf425a950",
+  "subscription": {
+    "id": "sub_1UWEYZAhY3J8iTOwyPTu8Ihu",
+    "status": "active",
+    "metadata": {
+      "attemptId": "28c909e1-9fff-488f-a13c-7dd8eef67b90",
+      "billingCycle": "monthly",
+      "integration": "aprueba_mvp",
+      "plan": "uni",
+      "testId": "cien",
+      "userId": "usr_5cf425a950"
+    },
+    "latest_invoice": "in_1UWEYXAhY3J8iTOwv9LgneAH",
+    "test_clock": null,
+    "items": [
+      {
+        "price": "price_1UMtdgAhY3J8iTOwCaU4YkPk",
+        "amount": 100,
+        "currency": "usd",
+        "interval": "month",
+        "current_period_start": 1793361913,
+        "current_period_end": 1796040313
+      }
+    ]
+  },
+  "invoice": {
+    "id": "in_1UWEYXAhY3J8iTOwv9LgneAH",
+    "number": "GAVVFJEE-0001",
+    "status": "paid",
+    "livemode": false,
+    "amount_paid": 100,
+    "amount_remaining": 0,
+    "currency": "usd",
+    "billing_reason": "subscription_create",
+    "created": 1793361913
+  },
+  "clock_attempt": {
+    "status": "No se confirmó creación. Dos respuestas de autenticación solicitada y aceptada con instrucción de repetir; no se hizo tercer intento.",
+    "subscription_test_clock_after_attempts": null,
+    "requested_params": {
+      "customer": "cus_VXJAOZAucUHSrB",
+      "frozen_time": 1793363968,
+      "name": "Fase2 Renovacion - renov@renov.com"
+    }
+  },
+  "test_status": "Preparación completada con compra inicial. PG10/11/12 siguen No ejecutado; no hubo ciclo de renovación ni vencimiento."
+}

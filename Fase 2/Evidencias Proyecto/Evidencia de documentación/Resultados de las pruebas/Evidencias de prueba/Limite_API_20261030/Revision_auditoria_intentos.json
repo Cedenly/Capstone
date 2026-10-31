@@ -1,0 +1,64 @@
+{
+  "kind": "Revisión de evidencia previa; no nueva ejecución PG17",
+  "review_date": "2026-10-30",
+  "source": {
+    "file": "Resultados_webhooks_negocio_local.json",
+    "executed_at": "2026-10-30T01:02:58.426Z",
+    "sha256": "4caa0823439c70c7df30ada30ea0d8bc942761fa38afc2f853fdc939fb6643d2",
+    "commit": "d1ac22791bdf6f276c8dcce3ec02d707daca3735"
+  },
+  "failed_status": 503,
+  "console_log": [
+    [
+      "[stripe webhook]",
+      "evt_local_PG17",
+      "TEMPORARY_FIXTURE_FAILURE"
+    ]
+  ],
+  "after_failure_receipts": [],
+  "after_retry_receipts": [
+    {
+      "path": "stripeEvents/evt_local_PG17",
+      "data": {
+        "type": "invoice.paid",
+        "userId": "usr_local_PG17",
+        "stripeSubscriptionId": "sub_localPG17",
+        "checkoutSessionId": "cs_test_localPG17",
+        "processingVersion": 3,
+        "processedAt": "2026-10-30T01:02:58.339Z"
+      },
+      "createTime": {
+        "seconds": 1793322178,
+        "nanoseconds": 346070000
+      },
+      "updateTime": {
+        "seconds": 1793322178,
+        "nanoseconds": 346070000
+      }
+    }
+  ],
+  "after_replay_receipts": [
+    {
+      "path": "stripeEvents/evt_local_PG17",
+      "data": {
+        "type": "invoice.paid",
+        "userId": "usr_local_PG17",
+        "stripeSubscriptionId": "sub_localPG17",
+        "checkoutSessionId": "cs_test_localPG17",
+        "processingVersion": 3,
+        "processedAt": "2026-10-30T01:02:58.339Z"
+      },
+      "createTime": {
+        "seconds": 1793322178,
+        "nanoseconds": 346070000
+      },
+      "updateTime": {
+        "seconds": 1793322178,
+        "nanoseconds": 346070000
+      }
+    }
+  ],
+  "finding": "El recibo de éxito no constituye historial durable de cada intento fallido y reentregado. La consola registra el fallo inducido. La comprobación no demuestra auditoría remota ni actor de procesamiento por intento.",
+  "required_followup": "Para CA23.4 se requiere un registro durable por entrega/ejecución, con identificador de evento e intento, fecha, ejecutor y resultado/error; conservar deduplicación del efecto de negocio. Definir y verificar en un cambio de implementación separado.",
+  "task": "NPG10 sigue En curso; PG17 sigue Parcial."
+}

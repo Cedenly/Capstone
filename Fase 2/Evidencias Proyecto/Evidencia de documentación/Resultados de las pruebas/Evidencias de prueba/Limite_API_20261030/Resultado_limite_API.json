@@ -1,0 +1,2379 @@
+{
+  "executed_at_utc": "2026-10-30T15:23:13.528Z",
+  "commit": "d1ac22791bdf6f276c8dcce3ec02d707daca3735",
+  "environment": {
+    "project": "demo-aprueba-limite",
+    "edition": "standard",
+    "firestore_host": "127.0.0.1:8188",
+    "http_origin": "http://127.0.0.1:36947",
+    "node": "v24.22.1",
+    "data_driver": "firestore"
+  },
+  "scope": "Rutas HTTP originales /me, /me/quota y /practice/next, auth JWT original y persistencia en emulador. Tiempo de Date controlado solo en el proceso del ensayo. Cuatro usuarios y una pregunta ficticios; no valida contenido educativo.",
+  "production_code_modified": false,
+  "live_accounts_modified": false,
+  "hashes": [
+    {
+      "file": "backend/src/routes/me.js",
+      "sha256": "208999be565eb58bb5e5a3f91553ed529d3d50e4108e91e11c68bdf8bba483db"
+    },
+    {
+      "file": "backend/src/routes/practice.js",
+      "sha256": "dab6b4a3a8e5cc07f8775a87741bd5edb944cd57304f575e62dde1b14f115a29"
+    },
+    {
+      "file": "backend/src/middleware/auth.js",
+      "sha256": "6e1b03371fb36f330003f6285ff1625c7d229f87abc1e30cf7105174c37beb90"
+    },
+    {
+      "file": "backend/src/data/repo.js",
+      "sha256": "b0a91c426b5fdc17036a775082dfe0fc32391fb95469e27e2cc7c4605fd4978e"
+    },
+    {
+      "file": "backend/src/data/firestore.js",
+      "sha256": "2a45b6aa452b7d47cb0117ebd7f16b253d2b5f80e07bc86440bfcdd8910592f6"
+    },
+    {
+      "file": "backend/src/lib/jwt.js",
+      "sha256": "d10179fc5cad89fcc1ecabd88cc7b128c8acbb67910d89be84c569544e527d74"
+    },
+    {
+      "file": "backend/src/lib/quota.js",
+      "sha256": "4fbd687e74015d83fabb1c508103e74b44d52322a77c1975e2f8fa30290d2a7f"
+    },
+    {
+      "file": "backend/src/lib/entitlements.js",
+      "sha256": "602d1dfaa5bf1b5bcb0c30109863afbd5dc8ef2ef9ee94ec8640492554227b7f"
+    }
+  ],
+  "authentication_control": {
+    "status": 401,
+    "body": {
+      "data": null,
+      "error": {
+        "code": "AUTH_REQUIRED",
+        "message": "Falta el token de acceso",
+        "details": [],
+        "field": null
+      },
+      "meta": {
+        "requestId": "req_b47ba74e-5b1",
+        "timestamp": "2026-11-30T12:05:12.999Z"
+      }
+    },
+    "client_duration_ms": 25.451769999999897
+  },
+  "scenario_count": 16,
+  "scenario_passed": 16,
+  "http_requests": 79,
+  "results": [
+    {
+      "user_id": "usr_local_limite_uni_active",
+      "plan": "uni",
+      "status": "active",
+      "stages": [
+        {
+          "stage": "antes",
+          "time": "2026-11-30T12:05:12.999Z",
+          "expected": {
+            "plan": "uni",
+            "unlimited": true,
+            "next_status": 200
+          },
+          "profile": {
+            "status": 200,
+            "body": {
+              "data": {
+                "id": "usr_local_limite_uni_active",
+                "name": "Fixture local de acceso",
+                "email": "usr_local_limite_uni_active@example.invalid",
+                "plan": "uni",
+                "streak": 0,
+                "quota": {
+                  "used": 20,
+                  "max": 999999,
+                  "freeMax": 20
+                },
+                "medals": {
+                  "bronze": 0,
+                  "silver": 0,
+                  "gold": 0,
+                  "diamond": 0,
+                  "platinum": 0
+                },
+                "school": null,
+                "age": null,
+                "region": null,
+                "authProvider": "password",
+                "phone": null,
+                "phoneVerified": false,
+                "country": null,
+                "language": "es",
+                "gradeId": null,
+                "onboarded": false
+              },
+              "error": null,
+              "meta": {
+                "requestId": "req_f31b3bbc-b40",
+                "timestamp": "2026-11-30T12:05:12.999Z"
+              }
+            },
+            "client_duration_ms": 54.684205999999904
+          },
+          "quota": {
+            "status": 200,
+            "body": {
+              "data": {
+                "used": 20,
+                "max": 999999,
+                "freeMax": 20,
+                "base": 10,
+                "bonuses": {
+                  "school": true,
+                  "address": true
+                },
+                "unlimited": true,
+                "unlimitedTestId": "cien",
+                "resetsAt": "2026-12-01T00:00:00.000Z"
+              },
+              "error": null,
+              "meta": {
+                "requestId": "req_955f0a37-240",
+                "timestamp": "2026-11-30T12:05:12.999Z"
+              }
+            },
+            "client_duration_ms": 37.638234999999895
+          },
+          "next": {
+            "status": 200,
+            "body": {
+              "data": {
+                "id": "q_local_limite",
+                "testId": "cien",
+                "axis": "control",
+                "difficulty": "d2",
+                "statement": "Pregunta ficticia usada solo para comprobar autorización",
+                "options": [
+                  "Control A",
+                  "Control B"
+                ],
+                "sessionId": "prs_8a233375e33f4106b87e42d97fde8c46",
+                "progress": {
+                  "current": 1,
+                  "total": 10
+                }
+              },
+              "error": null,
+              "meta": {
+                "requestId": "req_5a1161c2-168",
+                "timestamp": "2026-11-30T12:05:12.999Z",
+                "quota": {
+                  "used": 20,
+                  "max": 999999
+                }
+              }
+            },
+            "client_duration_ms": 66.976901
+          },
+          "before": {
+            "billing": {
+              "plan": "uni",
+              "planSource": "subscription",
+              "billingProvider": "stripe",
+              "billingStatus": "active",
+              "billingAccessActive": true,
+              "billingPeriodEnd": "2026-11-30T12:05:13.000Z",
+              "billingTestId": "cien"
+            },
+            "quota": {
+              "day": "2026-11-30",
+              "used": 20,
+              "total": 20
+            },
+            "attempt_count": 0
+          },
+          "after": {
+            "billing": {
+              "plan": "uni",
+              "planSource": "subscription",
+              "billingProvider": "stripe",
+              "billingStatus": "active",
+              "billingAccessActive": true,
+              "billingPeriodEnd": "2026-11-30T12:05:13.000Z",
+              "billingTestId": "cien"
+            },
+            "quota": {
+              "day": "2026-11-30",
+              "used": 20,
+              "total": 20
+            },
+            "attempt_count": 1
+          },
+          "result": "Aprobado"
+        },
+        {
+          "stage": "limite",
+          "time": "2026-11-30T12:05:13.000Z",
+          "expected": {
+            "plan": "free",
+            "unlimited": false,
+            "next_status": 422
+          },
+          "profile": {
+            "status": 200,
+            "body": {
+              "data": {
+                "id": "usr_local_limite_uni_active",
+                "name": "Fixture local de acceso",
+                "email": "usr_local_limite_uni_active@example.invalid",
+                "plan": "free",
+                "streak": 0,
+                "quota": {
+                  "used": 20,
+                  "max": 20,
+                  "freeMax": 20
+                },
+                "medals": {
+                  "bronze": 0,
+                  "silver": 0,
+                  "gold": 0,
+                  "diamond": 0,
+                  "platinum": 0
+                },
+                "school": null,
+                "age": null,
+                "region": null,
+                "authProvider": "password",
+                "phone": null,
+                "phoneVerified": false,
+                "country": null,
+                "language": "es",
+                "gradeId": null,
+                "onboarded": false
+              },
+              "error": null,
+              "meta": {
+                "requestId": "req_5d144f4c-414",
+                "timestamp": "2026-11-30T12:05:13.000Z"
+              }
+            },
+            "client_duration_ms": 36.57066599999985
+          },
+          "quota": {
+            "status": 200,
+            "body": {
+              "data": {
+                "used": 20,
+                "max": 20,
+                "freeMax": 20,
+                "base": 10,
+                "bonuses": {
+                  "school": true,
+                  "address": true
+                },
+                "unlimited": false,
+                "unlimitedTestId": null,
+                "resetsAt": "2026-12-01T00:00:00.000Z"
+              },
+              "error": null,
+              "meta": {
+                "requestId": "req_17ae0ee5-b67",
+                "timestamp": "2026-11-30T12:05:13.000Z"
+              }
+            },
+            "client_duration_ms": 25.95754100000022
+          },
+          "next": {
+            "status": 422,
+            "body": {
+              "data": null,
+              "error": {
+                "code": "QUOTA_DAILY_LIMIT",
+                "message": "Se alcanzo la cuota diaria gratuita",
+                "details": [],
+                "field": null
+              },
+              "meta": {
+                "requestId": "req_e508c318-772",
+                "timestamp": "2026-11-30T12:05:13.000Z"
+              }
+            },
+            "client_duration_ms": 24.808383999999933
+          },
+          "before": {
+            "billing": {
+              "plan": "uni",
+              "planSource": "subscription",
+              "billingProvider": "stripe",
+              "billingStatus": "active",
+              "billingAccessActive": true,
+              "billingPeriodEnd": "2026-11-30T12:05:13.000Z",
+              "billingTestId": "cien"
+            },
+            "quota": {
+              "day": "2026-11-30",
+              "used": 20,
+              "total": 20
+            },
+            "attempt_count": 1
+          },
+          "after": {
+            "billing": {
+              "plan": "uni",
+              "planSource": "subscription",
+              "billingProvider": "stripe",
+              "billingStatus": "active",
+              "billingAccessActive": true,
+              "billingPeriodEnd": "2026-11-30T12:05:13.000Z",
+              "billingTestId": "cien"
+            },
+            "quota": {
+              "day": "2026-11-30",
+              "used": 20,
+              "total": 20
+            },
+            "attempt_count": 1
+          },
+          "result": "Aprobado"
+        },
+        {
+          "stage": "despues",
+          "time": "2026-11-30T12:05:13.001Z",
+          "expected": {
+            "plan": "free",
+            "unlimited": false,
+            "next_status": 422
+          },
+          "profile": {
+            "status": 200,
+            "body": {
+              "data": {
+                "id": "usr_local_limite_uni_active",
+                "name": "Fixture local de acceso",
+                "email": "usr_local_limite_uni_active@example.invalid",
+                "plan": "free",
+                "streak": 0,
+                "quota": {
+                  "used": 20,
+                  "max": 20,
+                  "freeMax": 20
+                },
+                "medals": {
+                  "bronze": 0,
+                  "silver": 0,
+                  "gold": 0,
+                  "diamond": 0,
+                  "platinum": 0
+                },
+                "school": null,
+                "age": null,
+                "region": null,
+                "authProvider": "password",
+                "phone": null,
+                "phoneVerified": false,
+                "country": null,
+                "language": "es",
+                "gradeId": null,
+                "onboarded": false
+              },
+              "error": null,
+              "meta": {
+                "requestId": "req_428be13d-d7c",
+                "timestamp": "2026-11-30T12:05:13.001Z"
+              }
+            },
+            "client_duration_ms": 24.788143999999875
+          },
+          "quota": {
+            "status": 200,
+            "body": {
+              "data": {
+                "used": 20,
+                "max": 20,
+                "freeMax": 20,
+                "base": 10,
+                "bonuses": {
+                  "school": true,
+                  "address": true
+                },
+                "unlimited": false,
+                "unlimitedTestId": null,
+                "resetsAt": "2026-12-01T00:00:00.000Z"
+              },
+              "error": null,
+              "meta": {
+                "requestId": "req_bd0ed2f2-843",
+                "timestamp": "2026-11-30T12:05:13.001Z"
+              }
+            },
+            "client_duration_ms": 26.056051000000025
+          },
+          "next": {
+            "status": 422,
+            "body": {
+              "data": null,
+              "error": {
+                "code": "QUOTA_DAILY_LIMIT",
+                "message": "Se alcanzo la cuota diaria gratuita",
+                "details": [],
+                "field": null
+              },
+              "meta": {
+                "requestId": "req_4f5f1e0b-840",
+                "timestamp": "2026-11-30T12:05:13.001Z"
+              }
+            },
+            "client_duration_ms": 15.79780699999992
+          },
+          "before": {
+            "billing": {
+              "plan": "uni",
+              "planSource": "subscription",
+              "billingProvider": "stripe",
+              "billingStatus": "active",
+              "billingAccessActive": true,
+              "billingPeriodEnd": "2026-11-30T12:05:13.000Z",
+              "billingTestId": "cien"
+            },
+            "quota": {
+              "day": "2026-11-30",
+              "used": 20,
+              "total": 20
+            },
+            "attempt_count": 1
+          },
+          "after": {
+            "billing": {
+              "plan": "uni",
+              "planSource": "subscription",
+              "billingProvider": "stripe",
+              "billingStatus": "active",
+              "billingAccessActive": true,
+              "billingPeriodEnd": "2026-11-30T12:05:13.000Z",
+              "billingTestId": "cien"
+            },
+            "quota": {
+              "day": "2026-11-30",
+              "used": 20,
+              "total": 20
+            },
+            "attempt_count": 1
+          },
+          "result": "Aprobado"
+        },
+        {
+          "stage": "repetida",
+          "time": "2026-11-30T12:05:13.001Z",
+          "expected": {
+            "plan": "free",
+            "unlimited": false,
+            "next_status": 422
+          },
+          "profile": {
+            "status": 200,
+            "body": {
+              "data": {
+                "id": "usr_local_limite_uni_active",
+                "name": "Fixture local de acceso",
+                "email": "usr_local_limite_uni_active@example.invalid",
+                "plan": "free",
+                "streak": 0,
+                "quota": {
+                  "used": 20,
+                  "max": 20,
+                  "freeMax": 20
+                },
+                "medals": {
+                  "bronze": 0,
+                  "silver": 0,
+                  "gold": 0,
+                  "diamond": 0,
+                  "platinum": 0
+                },
+                "school": null,
+                "age": null,
+                "region": null,
+                "authProvider": "password",
+                "phone": null,
+                "phoneVerified": false,
+                "country": null,
+                "language": "es",
+                "gradeId": null,
+                "onboarded": false
+              },
+              "error": null,
+              "meta": {
+                "requestId": "req_aec22e9a-4da",
+                "timestamp": "2026-11-30T12:05:13.001Z"
+              }
+            },
+            "client_duration_ms": 21.448513000000048
+          },
+          "quota": {
+            "status": 200,
+            "body": {
+              "data": {
+                "used": 20,
+                "max": 20,
+                "freeMax": 20,
+                "base": 10,
+                "bonuses": {
+                  "school": true,
+                  "address": true
+                },
+                "unlimited": false,
+                "unlimitedTestId": null,
+                "resetsAt": "2026-12-01T00:00:00.000Z"
+              },
+              "error": null,
+              "meta": {
+                "requestId": "req_cf337eb9-921",
+                "timestamp": "2026-11-30T12:05:13.001Z"
+              }
+            },
+            "client_duration_ms": 17.89758800000004
+          },
+          "next": {
+            "status": 422,
+            "body": {
+              "data": null,
+              "error": {
+                "code": "QUOTA_DAILY_LIMIT",
+                "message": "Se alcanzo la cuota diaria gratuita",
+                "details": [],
+                "field": null
+              },
+              "meta": {
+                "requestId": "req_8f197e17-00c",
+                "timestamp": "2026-11-30T12:05:13.001Z"
+              }
+            },
+            "client_duration_ms": 13.851280999999972
+          },
+          "before": {
+            "billing": {
+              "plan": "uni",
+              "planSource": "subscription",
+              "billingProvider": "stripe",
+              "billingStatus": "active",
+              "billingAccessActive": true,
+              "billingPeriodEnd": "2026-11-30T12:05:13.000Z",
+              "billingTestId": "cien"
+            },
+            "quota": {
+              "day": "2026-11-30",
+              "used": 20,
+              "total": 20
+            },
+            "attempt_count": 1
+          },
+          "after": {
+            "billing": {
+              "plan": "uni",
+              "planSource": "subscription",
+              "billingProvider": "stripe",
+              "billingStatus": "active",
+              "billingAccessActive": true,
+              "billingPeriodEnd": "2026-11-30T12:05:13.000Z",
+              "billingTestId": "cien"
+            },
+            "quota": {
+              "day": "2026-11-30",
+              "used": 20,
+              "total": 20
+            },
+            "attempt_count": 1
+          },
+          "result": "Aprobado"
+        }
+      ]
+    },
+    {
+      "user_id": "usr_local_limite_uni_past_due",
+      "plan": "uni",
+      "status": "past_due",
+      "stages": [
+        {
+          "stage": "antes",
+          "time": "2026-11-30T12:05:12.999Z",
+          "expected": {
+            "plan": "uni",
+            "unlimited": true,
+            "next_status": 200
+          },
+          "profile": {
+            "status": 200,
+            "body": {
+              "data": {
+                "id": "usr_local_limite_uni_past_due",
+                "name": "Fixture local de acceso",
+                "email": "usr_local_limite_uni_past_due@example.invalid",
+                "plan": "uni",
+                "streak": 0,
+                "quota": {
+                  "used": 20,
+                  "max": 999999,
+                  "freeMax": 20
+                },
+                "medals": {
+                  "bronze": 0,
+                  "silver": 0,
+                  "gold": 0,
+                  "diamond": 0,
+                  "platinum": 0
+                },
+                "school": null,
+                "age": null,
+                "region": null,
+                "authProvider": "password",
+                "phone": null,
+                "phoneVerified": false,
+                "country": null,
+                "language": "es",
+                "gradeId": null,
+                "onboarded": false
+              },
+              "error": null,
+              "meta": {
+                "requestId": "req_cf94053e-4af",
+                "timestamp": "2026-11-30T12:05:12.999Z"
+              }
+            },
+            "client_duration_ms": 25.288573000000042
+          },
+          "quota": {
+            "status": 200,
+            "body": {
+              "data": {
+                "used": 20,
+                "max": 999999,
+                "freeMax": 20,
+                "base": 10,
+                "bonuses": {
+                  "school": true,
+                  "address": true
+                },
+                "unlimited": true,
+                "unlimitedTestId": "cien",
+                "resetsAt": "2026-12-01T00:00:00.000Z"
+              },
+              "error": null,
+              "meta": {
+                "requestId": "req_30590b71-580",
+                "timestamp": "2026-11-30T12:05:12.999Z"
+              }
+            },
+            "client_duration_ms": 25.728577000000087
+          },
+          "next": {
+            "status": 200,
+            "body": {
+              "data": {
+                "id": "q_local_limite",
+                "testId": "cien",
+                "axis": "control",
+                "difficulty": "d2",
+                "statement": "Pregunta ficticia usada solo para comprobar autorización",
+                "options": [
+                  "Control A",
+                  "Control B"
+                ],
+                "sessionId": "prs_08473519f8b244c5a5f97f31c1504770",
+                "progress": {
+                  "current": 1,
+                  "total": 10
+                }
+              },
+              "error": null,
+              "meta": {
+                "requestId": "req_b129ac0c-e8f",
+                "timestamp": "2026-11-30T12:05:12.999Z",
+                "quota": {
+                  "used": 20,
+                  "max": 999999
+                }
+              }
+            },
+            "client_duration_ms": 47.03151099999991
+          },
+          "before": {
+            "billing": {
+              "plan": "uni",
+              "planSource": "subscription",
+              "billingProvider": "stripe",
+              "billingStatus": "past_due",
+              "billingAccessActive": true,
+              "billingPeriodEnd": "2026-11-30T12:05:13.000Z",
+              "billingTestId": "cien"
+            },
+            "quota": {
+              "day": "2026-11-30",
+              "used": 20,
+              "total": 20
+            },
+            "attempt_count": 0
+          },
+          "after": {
+            "billing": {
+              "plan": "uni",
+              "planSource": "subscription",
+              "billingProvider": "stripe",
+              "billingStatus": "past_due",
+              "billingAccessActive": true,
+              "billingPeriodEnd": "2026-11-30T12:05:13.000Z",
+              "billingTestId": "cien"
+            },
+            "quota": {
+              "day": "2026-11-30",
+              "used": 20,
+              "total": 20
+            },
+            "attempt_count": 1
+          },
+          "result": "Aprobado"
+        },
+        {
+          "stage": "limite",
+          "time": "2026-11-30T12:05:13.000Z",
+          "expected": {
+            "plan": "free",
+            "unlimited": false,
+            "next_status": 422
+          },
+          "profile": {
+            "status": 200,
+            "body": {
+              "data": {
+                "id": "usr_local_limite_uni_past_due",
+                "name": "Fixture local de acceso",
+                "email": "usr_local_limite_uni_past_due@example.invalid",
+                "plan": "free",
+                "streak": 0,
+                "quota": {
+                  "used": 20,
+                  "max": 20,
+                  "freeMax": 20
+                },
+                "medals": {
+                  "bronze": 0,
+                  "silver": 0,
+                  "gold": 0,
+                  "diamond": 0,
+                  "platinum": 0
+                },
+                "school": null,
+                "age": null,
+                "region": null,
+                "authProvider": "password",
+                "phone": null,
+                "phoneVerified": false,
+                "country": null,
+                "language": "es",
+                "gradeId": null,
+                "onboarded": false
+              },
+              "error": null,
+              "meta": {
+                "requestId": "req_62b5173f-f84",
+                "timestamp": "2026-11-30T12:05:13.000Z"
+              }
+            },
+            "client_duration_ms": 20.747961999999916
+          },
+          "quota": {
+            "status": 200,
+            "body": {
+              "data": {
+                "used": 20,
+                "max": 20,
+                "freeMax": 20,
+                "base": 10,
+                "bonuses": {
+                  "school": true,
+                  "address": true
+                },
+                "unlimited": false,
+                "unlimitedTestId": null,
+                "resetsAt": "2026-12-01T00:00:00.000Z"
+              },
+              "error": null,
+              "meta": {
+                "requestId": "req_0a0e8ad5-9b8",
+                "timestamp": "2026-11-30T12:05:13.000Z"
+              }
+            },
+            "client_duration_ms": 17.22518500000001
+          },
+          "next": {
+            "status": 422,
+            "body": {
+              "data": null,
+              "error": {
+                "code": "QUOTA_DAILY_LIMIT",
+                "message": "Se alcanzo la cuota diaria gratuita",
+                "details": [],
+                "field": null
+              },
+              "meta": {
+                "requestId": "req_da42a08e-887",
+                "timestamp": "2026-11-30T12:05:13.000Z"
+              }
+            },
+            "client_duration_ms": 10.920406999999841
+          },
+          "before": {
+            "billing": {
+              "plan": "uni",
+              "planSource": "subscription",
+              "billingProvider": "stripe",
+              "billingStatus": "past_due",
+              "billingAccessActive": true,
+              "billingPeriodEnd": "2026-11-30T12:05:13.000Z",
+              "billingTestId": "cien"
+            },
+            "quota": {
+              "day": "2026-11-30",
+              "used": 20,
+              "total": 20
+            },
+            "attempt_count": 1
+          },
+          "after": {
+            "billing": {
+              "plan": "uni",
+              "planSource": "subscription",
+              "billingProvider": "stripe",
+              "billingStatus": "past_due",
+              "billingAccessActive": true,
+              "billingPeriodEnd": "2026-11-30T12:05:13.000Z",
+              "billingTestId": "cien"
+            },
+            "quota": {
+              "day": "2026-11-30",
+              "used": 20,
+              "total": 20
+            },
+            "attempt_count": 1
+          },
+          "result": "Aprobado"
+        },
+        {
+          "stage": "despues",
+          "time": "2026-11-30T12:05:13.001Z",
+          "expected": {
+            "plan": "free",
+            "unlimited": false,
+            "next_status": 422
+          },
+          "profile": {
+            "status": 200,
+            "body": {
+              "data": {
+                "id": "usr_local_limite_uni_past_due",
+                "name": "Fixture local de acceso",
+                "email": "usr_local_limite_uni_past_due@example.invalid",
+                "plan": "free",
+                "streak": 0,
+                "quota": {
+                  "used": 20,
+                  "max": 20,
+                  "freeMax": 20
+                },
+                "medals": {
+                  "bronze": 0,
+                  "silver": 0,
+                  "gold": 0,
+                  "diamond": 0,
+                  "platinum": 0
+                },
+                "school": null,
+                "age": null,
+                "region": null,
+                "authProvider": "password",
+                "phone": null,
+                "phoneVerified": false,
+                "country": null,
+                "language": "es",
+                "gradeId": null,
+                "onboarded": false
+              },
+              "error": null,
+              "meta": {
+                "requestId": "req_536aa837-746",
+                "timestamp": "2026-11-30T12:05:13.001Z"
+              }
+            },
+            "client_duration_ms": 15.587299999999914
+          },
+          "quota": {
+            "status": 200,
+            "body": {
+              "data": {
+                "used": 20,
+                "max": 20,
+                "freeMax": 20,
+                "base": 10,
+                "bonuses": {
+                  "school": true,
+                  "address": true
+                },
+                "unlimited": false,
+                "unlimitedTestId": null,
+                "resetsAt": "2026-12-01T00:00:00.000Z"
+              },
+              "error": null,
+              "meta": {
+                "requestId": "req_90037e88-5ed",
+                "timestamp": "2026-11-30T12:05:13.001Z"
+              }
+            },
+            "client_duration_ms": 15.020483999999897
+          },
+          "next": {
+            "status": 422,
+            "body": {
+              "data": null,
+              "error": {
+                "code": "QUOTA_DAILY_LIMIT",
+                "message": "Se alcanzo la cuota diaria gratuita",
+                "details": [],
+                "field": null
+              },
+              "meta": {
+                "requestId": "req_7b9da7bd-97a",
+                "timestamp": "2026-11-30T12:05:13.001Z"
+              }
+            },
+            "client_duration_ms": 13.208343000000013
+          },
+          "before": {
+            "billing": {
+              "plan": "uni",
+              "planSource": "subscription",
+              "billingProvider": "stripe",
+              "billingStatus": "past_due",
+              "billingAccessActive": true,
+              "billingPeriodEnd": "2026-11-30T12:05:13.000Z",
+              "billingTestId": "cien"
+            },
+            "quota": {
+              "day": "2026-11-30",
+              "used": 20,
+              "total": 20
+            },
+            "attempt_count": 1
+          },
+          "after": {
+            "billing": {
+              "plan": "uni",
+              "planSource": "subscription",
+              "billingProvider": "stripe",
+              "billingStatus": "past_due",
+              "billingAccessActive": true,
+              "billingPeriodEnd": "2026-11-30T12:05:13.000Z",
+              "billingTestId": "cien"
+            },
+            "quota": {
+              "day": "2026-11-30",
+              "used": 20,
+              "total": 20
+            },
+            "attempt_count": 1
+          },
+          "result": "Aprobado"
+        },
+        {
+          "stage": "repetida",
+          "time": "2026-11-30T12:05:13.001Z",
+          "expected": {
+            "plan": "free",
+            "unlimited": false,
+            "next_status": 422
+          },
+          "profile": {
+            "status": 200,
+            "body": {
+              "data": {
+                "id": "usr_local_limite_uni_past_due",
+                "name": "Fixture local de acceso",
+                "email": "usr_local_limite_uni_past_due@example.invalid",
+                "plan": "free",
+                "streak": 0,
+                "quota": {
+                  "used": 20,
+                  "max": 20,
+                  "freeMax": 20
+                },
+                "medals": {
+                  "bronze": 0,
+                  "silver": 0,
+                  "gold": 0,
+                  "diamond": 0,
+                  "platinum": 0
+                },
+                "school": null,
+                "age": null,
+                "region": null,
+                "authProvider": "password",
+                "phone": null,
+                "phoneVerified": false,
+                "country": null,
+                "language": "es",
+                "gradeId": null,
+                "onboarded": false
+              },
+              "error": null,
+              "meta": {
+                "requestId": "req_163e2012-055",
+                "timestamp": "2026-11-30T12:05:13.001Z"
+              }
+            },
+            "client_duration_ms": 20.260681000000204
+          },
+          "quota": {
+            "status": 200,
+            "body": {
+              "data": {
+                "used": 20,
+                "max": 20,
+                "freeMax": 20,
+                "base": 10,
+                "bonuses": {
+                  "school": true,
+                  "address": true
+                },
+                "unlimited": false,
+                "unlimitedTestId": null,
+                "resetsAt": "2026-12-01T00:00:00.000Z"
+              },
+              "error": null,
+              "meta": {
+                "requestId": "req_c27c8bbd-301",
+                "timestamp": "2026-11-30T12:05:13.001Z"
+              }
+            },
+            "client_duration_ms": 21.196788000000197
+          },
+          "next": {
+            "status": 422,
+            "body": {
+              "data": null,
+              "error": {
+                "code": "QUOTA_DAILY_LIMIT",
+                "message": "Se alcanzo la cuota diaria gratuita",
+                "details": [],
+                "field": null
+              },
+              "meta": {
+                "requestId": "req_4f0bf829-470",
+                "timestamp": "2026-11-30T12:05:13.001Z"
+              }
+            },
+            "client_duration_ms": 12.767942999999832
+          },
+          "before": {
+            "billing": {
+              "plan": "uni",
+              "planSource": "subscription",
+              "billingProvider": "stripe",
+              "billingStatus": "past_due",
+              "billingAccessActive": true,
+              "billingPeriodEnd": "2026-11-30T12:05:13.000Z",
+              "billingTestId": "cien"
+            },
+            "quota": {
+              "day": "2026-11-30",
+              "used": 20,
+              "total": 20
+            },
+            "attempt_count": 1
+          },
+          "after": {
+            "billing": {
+              "plan": "uni",
+              "planSource": "subscription",
+              "billingProvider": "stripe",
+              "billingStatus": "past_due",
+              "billingAccessActive": true,
+              "billingPeriodEnd": "2026-11-30T12:05:13.000Z",
+              "billingTestId": "cien"
+            },
+            "quota": {
+              "day": "2026-11-30",
+              "used": 20,
+              "total": 20
+            },
+            "attempt_count": 1
+          },
+          "result": "Aprobado"
+        }
+      ]
+    },
+    {
+      "user_id": "usr_local_limite_all_active",
+      "plan": "all",
+      "status": "active",
+      "stages": [
+        {
+          "stage": "antes",
+          "time": "2026-11-30T12:05:12.999Z",
+          "expected": {
+            "plan": "all",
+            "unlimited": true,
+            "next_status": 200
+          },
+          "profile": {
+            "status": 200,
+            "body": {
+              "data": {
+                "id": "usr_local_limite_all_active",
+                "name": "Fixture local de acceso",
+                "email": "usr_local_limite_all_active@example.invalid",
+                "plan": "all",
+                "streak": 0,
+                "quota": {
+                  "used": 20,
+                  "max": 999999,
+                  "freeMax": 20
+                },
+                "medals": {
+                  "bronze": 0,
+                  "silver": 0,
+                  "gold": 0,
+                  "diamond": 0,
+                  "platinum": 0
+                },
+                "school": null,
+                "age": null,
+                "region": null,
+                "authProvider": "password",
+                "phone": null,
+                "phoneVerified": false,
+                "country": null,
+                "language": "es",
+                "gradeId": null,
+                "onboarded": false
+              },
+              "error": null,
+              "meta": {
+                "requestId": "req_a472f433-50a",
+                "timestamp": "2026-11-30T12:05:12.999Z"
+              }
+            },
+            "client_duration_ms": 16.542715000000044
+          },
+          "quota": {
+            "status": 200,
+            "body": {
+              "data": {
+                "used": 20,
+                "max": 999999,
+                "freeMax": 20,
+                "base": 10,
+                "bonuses": {
+                  "school": true,
+                  "address": true
+                },
+                "unlimited": true,
+                "unlimitedTestId": null,
+                "resetsAt": "2026-12-01T00:00:00.000Z"
+              },
+              "error": null,
+              "meta": {
+                "requestId": "req_86350bbe-083",
+                "timestamp": "2026-11-30T12:05:12.999Z"
+              }
+            },
+            "client_duration_ms": 21.92607799999996
+          },
+          "next": {
+            "status": 200,
+            "body": {
+              "data": {
+                "id": "q_local_limite",
+                "testId": "cien",
+                "axis": "control",
+                "difficulty": "d2",
+                "statement": "Pregunta ficticia usada solo para comprobar autorización",
+                "options": [
+                  "Control A",
+                  "Control B"
+                ],
+                "sessionId": "prs_751803f7f9974dbcbdd22a95466e47a7",
+                "progress": {
+                  "current": 1,
+                  "total": 10
+                }
+              },
+              "error": null,
+              "meta": {
+                "requestId": "req_c642fd34-c23",
+                "timestamp": "2026-11-30T12:05:12.999Z",
+                "quota": {
+                  "used": 20,
+                  "max": 999999
+                }
+              }
+            },
+            "client_duration_ms": 28.16721000000007
+          },
+          "before": {
+            "billing": {
+              "plan": "all",
+              "planSource": "subscription",
+              "billingProvider": "stripe",
+              "billingStatus": "active",
+              "billingAccessActive": true,
+              "billingPeriodEnd": "2026-11-30T12:05:13.000Z",
+              "billingTestId": null
+            },
+            "quota": {
+              "day": "2026-11-30",
+              "used": 20,
+              "total": 20
+            },
+            "attempt_count": 0
+          },
+          "after": {
+            "billing": {
+              "plan": "all",
+              "planSource": "subscription",
+              "billingProvider": "stripe",
+              "billingStatus": "active",
+              "billingAccessActive": true,
+              "billingPeriodEnd": "2026-11-30T12:05:13.000Z",
+              "billingTestId": null
+            },
+            "quota": {
+              "day": "2026-11-30",
+              "used": 20,
+              "total": 20
+            },
+            "attempt_count": 1
+          },
+          "result": "Aprobado"
+        },
+        {
+          "stage": "limite",
+          "time": "2026-11-30T12:05:13.000Z",
+          "expected": {
+            "plan": "free",
+            "unlimited": false,
+            "next_status": 422
+          },
+          "profile": {
+            "status": 200,
+            "body": {
+              "data": {
+                "id": "usr_local_limite_all_active",
+                "name": "Fixture local de acceso",
+                "email": "usr_local_limite_all_active@example.invalid",
+                "plan": "free",
+                "streak": 0,
+                "quota": {
+                  "used": 20,
+                  "max": 20,
+                  "freeMax": 20
+                },
+                "medals": {
+                  "bronze": 0,
+                  "silver": 0,
+                  "gold": 0,
+                  "diamond": 0,
+                  "platinum": 0
+                },
+                "school": null,
+                "age": null,
+                "region": null,
+                "authProvider": "password",
+                "phone": null,
+                "phoneVerified": false,
+                "country": null,
+                "language": "es",
+                "gradeId": null,
+                "onboarded": false
+              },
+              "error": null,
+              "meta": {
+                "requestId": "req_b53df4f7-c92",
+                "timestamp": "2026-11-30T12:05:13.000Z"
+              }
+            },
+            "client_duration_ms": 18.10717999999997
+          },
+          "quota": {
+            "status": 200,
+            "body": {
+              "data": {
+                "used": 20,
+                "max": 20,
+                "freeMax": 20,
+                "base": 10,
+                "bonuses": {
+                  "school": true,
+                  "address": true
+                },
+                "unlimited": false,
+                "unlimitedTestId": null,
+                "resetsAt": "2026-12-01T00:00:00.000Z"
+              },
+              "error": null,
+              "meta": {
+                "requestId": "req_73c0bf10-3e8",
+                "timestamp": "2026-11-30T12:05:13.000Z"
+              }
+            },
+            "client_duration_ms": 23.833493999999973
+          },
+          "next": {
+            "status": 422,
+            "body": {
+              "data": null,
+              "error": {
+                "code": "QUOTA_DAILY_LIMIT",
+                "message": "Se alcanzo la cuota diaria gratuita",
+                "details": [],
+                "field": null
+              },
+              "meta": {
+                "requestId": "req_7567a5e6-30f",
+                "timestamp": "2026-11-30T12:05:13.000Z"
+              }
+            },
+            "client_duration_ms": 11.520175999999992
+          },
+          "before": {
+            "billing": {
+              "plan": "all",
+              "planSource": "subscription",
+              "billingProvider": "stripe",
+              "billingStatus": "active",
+              "billingAccessActive": true,
+              "billingPeriodEnd": "2026-11-30T12:05:13.000Z",
+              "billingTestId": null
+            },
+            "quota": {
+              "day": "2026-11-30",
+              "used": 20,
+              "total": 20
+            },
+            "attempt_count": 1
+          },
+          "after": {
+            "billing": {
+              "plan": "all",
+              "planSource": "subscription",
+              "billingProvider": "stripe",
+              "billingStatus": "active",
+              "billingAccessActive": true,
+              "billingPeriodEnd": "2026-11-30T12:05:13.000Z",
+              "billingTestId": null
+            },
+            "quota": {
+              "day": "2026-11-30",
+              "used": 20,
+              "total": 20
+            },
+            "attempt_count": 1
+          },
+          "result": "Aprobado"
+        },
+        {
+          "stage": "despues",
+          "time": "2026-11-30T12:05:13.001Z",
+          "expected": {
+            "plan": "free",
+            "unlimited": false,
+            "next_status": 422
+          },
+          "profile": {
+            "status": 200,
+            "body": {
+              "data": {
+                "id": "usr_local_limite_all_active",
+                "name": "Fixture local de acceso",
+                "email": "usr_local_limite_all_active@example.invalid",
+                "plan": "free",
+                "streak": 0,
+                "quota": {
+                  "used": 20,
+                  "max": 20,
+                  "freeMax": 20
+                },
+                "medals": {
+                  "bronze": 0,
+                  "silver": 0,
+                  "gold": 0,
+                  "diamond": 0,
+                  "platinum": 0
+                },
+                "school": null,
+                "age": null,
+                "region": null,
+                "authProvider": "password",
+                "phone": null,
+                "phoneVerified": false,
+                "country": null,
+                "language": "es",
+                "gradeId": null,
+                "onboarded": false
+              },
+              "error": null,
+              "meta": {
+                "requestId": "req_acf3a941-853",
+                "timestamp": "2026-11-30T12:05:13.001Z"
+              }
+            },
+            "client_duration_ms": 19.347683999999845
+          },
+          "quota": {
+            "status": 200,
+            "body": {
+              "data": {
+                "used": 20,
+                "max": 20,
+                "freeMax": 20,
+                "base": 10,
+                "bonuses": {
+                  "school": true,
+                  "address": true
+                },
+                "unlimited": false,
+                "unlimitedTestId": null,
+                "resetsAt": "2026-12-01T00:00:00.000Z"
+              },
+              "error": null,
+              "meta": {
+                "requestId": "req_5486d306-184",
+                "timestamp": "2026-11-30T12:05:13.001Z"
+              }
+            },
+            "client_duration_ms": 15.596748999999818
+          },
+          "next": {
+            "status": 422,
+            "body": {
+              "data": null,
+              "error": {
+                "code": "QUOTA_DAILY_LIMIT",
+                "message": "Se alcanzo la cuota diaria gratuita",
+                "details": [],
+                "field": null
+              },
+              "meta": {
+                "requestId": "req_2a2d83e3-060",
+                "timestamp": "2026-11-30T12:05:13.001Z"
+              }
+            },
+            "client_duration_ms": 9.37039999999979
+          },
+          "before": {
+            "billing": {
+              "plan": "all",
+              "planSource": "subscription",
+              "billingProvider": "stripe",
+              "billingStatus": "active",
+              "billingAccessActive": true,
+              "billingPeriodEnd": "2026-11-30T12:05:13.000Z",
+              "billingTestId": null
+            },
+            "quota": {
+              "day": "2026-11-30",
+              "used": 20,
+              "total": 20
+            },
+            "attempt_count": 1
+          },
+          "after": {
+            "billing": {
+              "plan": "all",
+              "planSource": "subscription",
+              "billingProvider": "stripe",
+              "billingStatus": "active",
+              "billingAccessActive": true,
+              "billingPeriodEnd": "2026-11-30T12:05:13.000Z",
+              "billingTestId": null
+            },
+            "quota": {
+              "day": "2026-11-30",
+              "used": 20,
+              "total": 20
+            },
+            "attempt_count": 1
+          },
+          "result": "Aprobado"
+        },
+        {
+          "stage": "repetida",
+          "time": "2026-11-30T12:05:13.001Z",
+          "expected": {
+            "plan": "free",
+            "unlimited": false,
+            "next_status": 422
+          },
+          "profile": {
+            "status": 200,
+            "body": {
+              "data": {
+                "id": "usr_local_limite_all_active",
+                "name": "Fixture local de acceso",
+                "email": "usr_local_limite_all_active@example.invalid",
+                "plan": "free",
+                "streak": 0,
+                "quota": {
+                  "used": 20,
+                  "max": 20,
+                  "freeMax": 20
+                },
+                "medals": {
+                  "bronze": 0,
+                  "silver": 0,
+                  "gold": 0,
+                  "diamond": 0,
+                  "platinum": 0
+                },
+                "school": null,
+                "age": null,
+                "region": null,
+                "authProvider": "password",
+                "phone": null,
+                "phoneVerified": false,
+                "country": null,
+                "language": "es",
+                "gradeId": null,
+                "onboarded": false
+              },
+              "error": null,
+              "meta": {
+                "requestId": "req_7457c34c-9f0",
+                "timestamp": "2026-11-30T12:05:13.001Z"
+              }
+            },
+            "client_duration_ms": 17.071893000000273
+          },
+          "quota": {
+            "status": 200,
+            "body": {
+              "data": {
+                "used": 20,
+                "max": 20,
+                "freeMax": 20,
+                "base": 10,
+                "bonuses": {
+                  "school": true,
+                  "address": true
+                },
+                "unlimited": false,
+                "unlimitedTestId": null,
+                "resetsAt": "2026-12-01T00:00:00.000Z"
+              },
+              "error": null,
+              "meta": {
+                "requestId": "req_23381e48-da2",
+                "timestamp": "2026-11-30T12:05:13.001Z"
+              }
+            },
+            "client_duration_ms": 18.147385000000213
+          },
+          "next": {
+            "status": 422,
+            "body": {
+              "data": null,
+              "error": {
+                "code": "QUOTA_DAILY_LIMIT",
+                "message": "Se alcanzo la cuota diaria gratuita",
+                "details": [],
+                "field": null
+              },
+              "meta": {
+                "requestId": "req_0c335a67-26d",
+                "timestamp": "2026-11-30T12:05:13.001Z"
+              }
+            },
+            "client_duration_ms": 15.164262000000235
+          },
+          "before": {
+            "billing": {
+              "plan": "all",
+              "planSource": "subscription",
+              "billingProvider": "stripe",
+              "billingStatus": "active",
+              "billingAccessActive": true,
+              "billingPeriodEnd": "2026-11-30T12:05:13.000Z",
+              "billingTestId": null
+            },
+            "quota": {
+              "day": "2026-11-30",
+              "used": 20,
+              "total": 20
+            },
+            "attempt_count": 1
+          },
+          "after": {
+            "billing": {
+              "plan": "all",
+              "planSource": "subscription",
+              "billingProvider": "stripe",
+              "billingStatus": "active",
+              "billingAccessActive": true,
+              "billingPeriodEnd": "2026-11-30T12:05:13.000Z",
+              "billingTestId": null
+            },
+            "quota": {
+              "day": "2026-11-30",
+              "used": 20,
+              "total": 20
+            },
+            "attempt_count": 1
+          },
+          "result": "Aprobado"
+        }
+      ]
+    },
+    {
+      "user_id": "usr_local_limite_all_past_due",
+      "plan": "all",
+      "status": "past_due",
+      "stages": [
+        {
+          "stage": "antes",
+          "time": "2026-11-30T12:05:12.999Z",
+          "expected": {
+            "plan": "all",
+            "unlimited": true,
+            "next_status": 200
+          },
+          "profile": {
+            "status": 200,
+            "body": {
+              "data": {
+                "id": "usr_local_limite_all_past_due",
+                "name": "Fixture local de acceso",
+                "email": "usr_local_limite_all_past_due@example.invalid",
+                "plan": "all",
+                "streak": 0,
+                "quota": {
+                  "used": 20,
+                  "max": 999999,
+                  "freeMax": 20
+                },
+                "medals": {
+                  "bronze": 0,
+                  "silver": 0,
+                  "gold": 0,
+                  "diamond": 0,
+                  "platinum": 0
+                },
+                "school": null,
+                "age": null,
+                "region": null,
+                "authProvider": "password",
+                "phone": null,
+                "phoneVerified": false,
+                "country": null,
+                "language": "es",
+                "gradeId": null,
+                "onboarded": false
+              },
+              "error": null,
+              "meta": {
+                "requestId": "req_b41770e2-634",
+                "timestamp": "2026-11-30T12:05:12.999Z"
+              }
+            },
+            "client_duration_ms": 18.029011000000082
+          },
+          "quota": {
+            "status": 200,
+            "body": {
+              "data": {
+                "used": 20,
+                "max": 999999,
+                "freeMax": 20,
+                "base": 10,
+                "bonuses": {
+                  "school": true,
+                  "address": true
+                },
+                "unlimited": true,
+                "unlimitedTestId": null,
+                "resetsAt": "2026-12-01T00:00:00.000Z"
+              },
+              "error": null,
+              "meta": {
+                "requestId": "req_09c3e64b-95b",
+                "timestamp": "2026-11-30T12:05:12.999Z"
+              }
+            },
+            "client_duration_ms": 16.332068000000163
+          },
+          "next": {
+            "status": 200,
+            "body": {
+              "data": {
+                "id": "q_local_limite",
+                "testId": "cien",
+                "axis": "control",
+                "difficulty": "d2",
+                "statement": "Pregunta ficticia usada solo para comprobar autorización",
+                "options": [
+                  "Control A",
+                  "Control B"
+                ],
+                "sessionId": "prs_f9da699dab5f4070bb57afc34a1d915c",
+                "progress": {
+                  "current": 1,
+                  "total": 10
+                }
+              },
+              "error": null,
+              "meta": {
+                "requestId": "req_95b2c362-ef5",
+                "timestamp": "2026-11-30T12:05:12.999Z",
+                "quota": {
+                  "used": 20,
+                  "max": 999999
+                }
+              }
+            },
+            "client_duration_ms": 28.409524000000147
+          },
+          "before": {
+            "billing": {
+              "plan": "all",
+              "planSource": "subscription",
+              "billingProvider": "stripe",
+              "billingStatus": "past_due",
+              "billingAccessActive": true,
+              "billingPeriodEnd": "2026-11-30T12:05:13.000Z",
+              "billingTestId": null
+            },
+            "quota": {
+              "day": "2026-11-30",
+              "used": 20,
+              "total": 20
+            },
+            "attempt_count": 0
+          },
+          "after": {
+            "billing": {
+              "plan": "all",
+              "planSource": "subscription",
+              "billingProvider": "stripe",
+              "billingStatus": "past_due",
+              "billingAccessActive": true,
+              "billingPeriodEnd": "2026-11-30T12:05:13.000Z",
+              "billingTestId": null
+            },
+            "quota": {
+              "day": "2026-11-30",
+              "used": 20,
+              "total": 20
+            },
+            "attempt_count": 1
+          },
+          "result": "Aprobado"
+        },
+        {
+          "stage": "limite",
+          "time": "2026-11-30T12:05:13.000Z",
+          "expected": {
+            "plan": "free",
+            "unlimited": false,
+            "next_status": 422
+          },
+          "profile": {
+            "status": 200,
+            "body": {
+              "data": {
+                "id": "usr_local_limite_all_past_due",
+                "name": "Fixture local de acceso",
+                "email": "usr_local_limite_all_past_due@example.invalid",
+                "plan": "free",
+                "streak": 0,
+                "quota": {
+                  "used": 20,
+                  "max": 20,
+                  "freeMax": 20
+                },
+                "medals": {
+                  "bronze": 0,
+                  "silver": 0,
+                  "gold": 0,
+                  "diamond": 0,
+                  "platinum": 0
+                },
+                "school": null,
+                "age": null,
+                "region": null,
+                "authProvider": "password",
+                "phone": null,
+                "phoneVerified": false,
+                "country": null,
+                "language": "es",
+                "gradeId": null,
+                "onboarded": false
+              },
+              "error": null,
+              "meta": {
+                "requestId": "req_6adab289-c26",
+                "timestamp": "2026-11-30T12:05:13.000Z"
+              }
+            },
+            "client_duration_ms": 23.20826100000022
+          },
+          "quota": {
+            "status": 200,
+            "body": {
+              "data": {
+                "used": 20,
+                "max": 20,
+                "freeMax": 20,
+                "base": 10,
+                "bonuses": {
+                  "school": true,
+                  "address": true
+                },
+                "unlimited": false,
+                "unlimitedTestId": null,
+                "resetsAt": "2026-12-01T00:00:00.000Z"
+              },
+              "error": null,
+              "meta": {
+                "requestId": "req_f85d54c1-94f",
+                "timestamp": "2026-11-30T12:05:13.000Z"
+              }
+            },
+            "client_duration_ms": 17.577621000000363
+          },
+          "next": {
+            "status": 422,
+            "body": {
+              "data": null,
+              "error": {
+                "code": "QUOTA_DAILY_LIMIT",
+                "message": "Se alcanzo la cuota diaria gratuita",
+                "details": [],
+                "field": null
+              },
+              "meta": {
+                "requestId": "req_7e06c6df-bfb",
+                "timestamp": "2026-11-30T12:05:13.000Z"
+              }
+            },
+            "client_duration_ms": 10.965505000000121
+          },
+          "before": {
+            "billing": {
+              "plan": "all",
+              "planSource": "subscription",
+              "billingProvider": "stripe",
+              "billingStatus": "past_due",
+              "billingAccessActive": true,
+              "billingPeriodEnd": "2026-11-30T12:05:13.000Z",
+              "billingTestId": null
+            },
+            "quota": {
+              "day": "2026-11-30",
+              "used": 20,
+              "total": 20
+            },
+            "attempt_count": 1
+          },
+          "after": {
+            "billing": {
+              "plan": "all",
+              "planSource": "subscription",
+              "billingProvider": "stripe",
+              "billingStatus": "past_due",
+              "billingAccessActive": true,
+              "billingPeriodEnd": "2026-11-30T12:05:13.000Z",
+              "billingTestId": null
+            },
+            "quota": {
+              "day": "2026-11-30",
+              "used": 20,
+              "total": 20
+            },
+            "attempt_count": 1
+          },
+          "result": "Aprobado"
+        },
+        {
+          "stage": "despues",
+          "time": "2026-11-30T12:05:13.001Z",
+          "expected": {
+            "plan": "free",
+            "unlimited": false,
+            "next_status": 422
+          },
+          "profile": {
+            "status": 200,
+            "body": {
+              "data": {
+                "id": "usr_local_limite_all_past_due",
+                "name": "Fixture local de acceso",
+                "email": "usr_local_limite_all_past_due@example.invalid",
+                "plan": "free",
+                "streak": 0,
+                "quota": {
+                  "used": 20,
+                  "max": 20,
+                  "freeMax": 20
+                },
+                "medals": {
+                  "bronze": 0,
+                  "silver": 0,
+                  "gold": 0,
+                  "diamond": 0,
+                  "platinum": 0
+                },
+                "school": null,
+                "age": null,
+                "region": null,
+                "authProvider": "password",
+                "phone": null,
+                "phoneVerified": false,
+                "country": null,
+                "language": "es",
+                "gradeId": null,
+                "onboarded": false
+              },
+              "error": null,
+              "meta": {
+                "requestId": "req_9a892d17-c41",
+                "timestamp": "2026-11-30T12:05:13.001Z"
+              }
+            },
+            "client_duration_ms": 16.247170000000096
+          },
+          "quota": {
+            "status": 200,
+            "body": {
+              "data": {
+                "used": 20,
+                "max": 20,
+                "freeMax": 20,
+                "base": 10,
+                "bonuses": {
+                  "school": true,
+                  "address": true
+                },
+                "unlimited": false,
+                "unlimitedTestId": null,
+                "resetsAt": "2026-12-01T00:00:00.000Z"
+              },
+              "error": null,
+              "meta": {
+                "requestId": "req_b9a880f7-bb9",
+                "timestamp": "2026-11-30T12:05:13.001Z"
+              }
+            },
+            "client_duration_ms": 15.329967000000124
+          },
+          "next": {
+            "status": 422,
+            "body": {
+              "data": null,
+              "error": {
+                "code": "QUOTA_DAILY_LIMIT",
+                "message": "Se alcanzo la cuota diaria gratuita",
+                "details": [],
+                "field": null
+              },
+              "meta": {
+                "requestId": "req_750db1fe-549",
+                "timestamp": "2026-11-30T12:05:13.001Z"
+              }
+            },
+            "client_duration_ms": 10.734019999999873
+          },
+          "before": {
+            "billing": {
+              "plan": "all",
+              "planSource": "subscription",
+              "billingProvider": "stripe",
+              "billingStatus": "past_due",
+              "billingAccessActive": true,
+              "billingPeriodEnd": "2026-11-30T12:05:13.000Z",
+              "billingTestId": null
+            },
+            "quota": {
+              "day": "2026-11-30",
+              "used": 20,
+              "total": 20
+            },
+            "attempt_count": 1
+          },
+          "after": {
+            "billing": {
+              "plan": "all",
+              "planSource": "subscription",
+              "billingProvider": "stripe",
+              "billingStatus": "past_due",
+              "billingAccessActive": true,
+              "billingPeriodEnd": "2026-11-30T12:05:13.000Z",
+              "billingTestId": null
+            },
+            "quota": {
+              "day": "2026-11-30",
+              "used": 20,
+              "total": 20
+            },
+            "attempt_count": 1
+          },
+          "result": "Aprobado"
+        },
+        {
+          "stage": "repetida",
+          "time": "2026-11-30T12:05:13.001Z",
+          "expected": {
+            "plan": "free",
+            "unlimited": false,
+            "next_status": 422
+          },
+          "profile": {
+            "status": 200,
+            "body": {
+              "data": {
+                "id": "usr_local_limite_all_past_due",
+                "name": "Fixture local de acceso",
+                "email": "usr_local_limite_all_past_due@example.invalid",
+                "plan": "free",
+                "streak": 0,
+                "quota": {
+                  "used": 20,
+                  "max": 20,
+                  "freeMax": 20
+                },
+                "medals": {
+                  "bronze": 0,
+                  "silver": 0,
+                  "gold": 0,
+                  "diamond": 0,
+                  "platinum": 0
+                },
+                "school": null,
+                "age": null,
+                "region": null,
+                "authProvider": "password",
+                "phone": null,
+                "phoneVerified": false,
+                "country": null,
+                "language": "es",
+                "gradeId": null,
+                "onboarded": false
+              },
+              "error": null,
+              "meta": {
+                "requestId": "req_4766b14c-1d5",
+                "timestamp": "2026-11-30T12:05:13.001Z"
+              }
+            },
+            "client_duration_ms": 17.418750000000273
+          },
+          "quota": {
+            "status": 200,
+            "body": {
+              "data": {
+                "used": 20,
+                "max": 20,
+                "freeMax": 20,
+                "base": 10,
+                "bonuses": {
+                  "school": true,
+                  "address": true
+                },
+                "unlimited": false,
+                "unlimitedTestId": null,
+                "resetsAt": "2026-12-01T00:00:00.000Z"
+              },
+              "error": null,
+              "meta": {
+                "requestId": "req_84a50efb-da8",
+                "timestamp": "2026-11-30T12:05:13.001Z"
+              }
+            },
+            "client_duration_ms": 14.833488000000216
+          },
+          "next": {
+            "status": 422,
+            "body": {
+              "data": null,
+              "error": {
+                "code": "QUOTA_DAILY_LIMIT",
+                "message": "Se alcanzo la cuota diaria gratuita",
+                "details": [],
+                "field": null
+              },
+              "meta": {
+                "requestId": "req_716184fb-93d",
+                "timestamp": "2026-11-30T12:05:13.001Z"
+              }
+            },
+            "client_duration_ms": 8.580890000000181
+          },
+          "before": {
+            "billing": {
+              "plan": "all",
+              "planSource": "subscription",
+              "billingProvider": "stripe",
+              "billingStatus": "past_due",
+              "billingAccessActive": true,
+              "billingPeriodEnd": "2026-11-30T12:05:13.000Z",
+              "billingTestId": null
+            },
+            "quota": {
+              "day": "2026-11-30",
+              "used": 20,
+              "total": 20
+            },
+            "attempt_count": 1
+          },
+          "after": {
+            "billing": {
+              "plan": "all",
+              "planSource": "subscription",
+              "billingProvider": "stripe",
+              "billingStatus": "past_due",
+              "billingAccessActive": true,
+              "billingPeriodEnd": "2026-11-30T12:05:13.000Z",
+              "billingTestId": null
+            },
+            "quota": {
+              "day": "2026-11-30",
+              "used": 20,
+              "total": 20
+            },
+            "attempt_count": 1
+          },
+          "result": "Aprobado"
+        }
+      ]
+    }
+  ],
+  "performanceSample": {
+    "operation": "GET /api/v1/me",
+    "N": 30,
+    "concurrency": 1,
+    "environment": "HTTP local + Firestore Emulator Standard; sin llamadas Stripe",
+    "timing": "performance.now al entrar en Express hasta finish de la respuesta; separado del tiempo cliente; Date controlada no altera este reloj",
+    "samples": [
+      {
+        "n": 50,
+        "method": "GET",
+        "path": "/api/v1/me",
+        "status": 200,
+        "duration_ms": 19.13045699999975
+      },
+      {
+        "n": 51,
+        "method": "GET",
+        "path": "/api/v1/me",
+        "status": 200,
+        "duration_ms": 11.79232200000024
+      },
+      {
+        "n": 52,
+        "method": "GET",
+        "path": "/api/v1/me",
+        "status": 200,
+        "duration_ms": 14.905325999999604
+      },
+      {
+        "n": 53,
+        "method": "GET",
+        "path": "/api/v1/me",
+        "status": 200,
+        "duration_ms": 15.069945000000189
+      },
+      {
+        "n": 54,
+        "method": "GET",
+        "path": "/api/v1/me",
+        "status": 200,
+        "duration_ms": 12.552401999999802
+      },
+      {
+        "n": 55,
+        "method": "GET",
+        "path": "/api/v1/me",
+        "status": 200,
+        "duration_ms": 14.011543000000074
+      },
+      {
+        "n": 56,
+        "method": "GET",
+        "path": "/api/v1/me",
+        "status": 200,
+        "duration_ms": 12.002414000000044
+      },
+      {
+        "n": 57,
+        "method": "GET",
+        "path": "/api/v1/me",
+        "status": 200,
+        "duration_ms": 12.549231999999847
+      },
+      {
+        "n": 58,
+        "method": "GET",
+        "path": "/api/v1/me",
+        "status": 200,
+        "duration_ms": 12.819316000000072
+      },
+      {
+        "n": 59,
+        "method": "GET",
+        "path": "/api/v1/me",
+        "status": 200,
+        "duration_ms": 12.54545300000018
+      },
+      {
+        "n": 60,
+        "method": "GET",
+        "path": "/api/v1/me",
+        "status": 200,
+        "duration_ms": 19.84259099999963
+      },
+      {
+        "n": 61,
+        "method": "GET",
+        "path": "/api/v1/me",
+        "status": 200,
+        "duration_ms": 17.190947999999935
+      },
+      {
+        "n": 62,
+        "method": "GET",
+        "path": "/api/v1/me",
+        "status": 200,
+        "duration_ms": 18.645692000000054
+      },
+      {
+        "n": 63,
+        "method": "GET",
+        "path": "/api/v1/me",
+        "status": 200,
+        "duration_ms": 14.498177000000396
+      },
+      {
+        "n": 64,
+        "method": "GET",
+        "path": "/api/v1/me",
+        "status": 200,
+        "duration_ms": 17.44264699999985
+      },
+      {
+        "n": 65,
+        "method": "GET",
+        "path": "/api/v1/me",
+        "status": 200,
+        "duration_ms": 18.272248000000218
+      },
+      {
+        "n": 66,
+        "method": "GET",
+        "path": "/api/v1/me",
+        "status": 200,
+        "duration_ms": 12.852506000000176
+      },
+      {
+        "n": 67,
+        "method": "GET",
+        "path": "/api/v1/me",
+        "status": 200,
+        "duration_ms": 13.629622000000381
+      },
+      {
+        "n": 68,
+        "method": "GET",
+        "path": "/api/v1/me",
+        "status": 200,
+        "duration_ms": 17.080750999999964
+      },
+      {
+        "n": 69,
+        "method": "GET",
+        "path": "/api/v1/me",
+        "status": 200,
+        "duration_ms": 13.003337999999985
+      },
+      {
+        "n": 70,
+        "method": "GET",
+        "path": "/api/v1/me",
+        "status": 200,
+        "duration_ms": 14.082926000000043
+      },
+      {
+        "n": 71,
+        "method": "GET",
+        "path": "/api/v1/me",
+        "status": 200,
+        "duration_ms": 17.0811020000001
+      },
+      {
+        "n": 72,
+        "method": "GET",
+        "path": "/api/v1/me",
+        "status": 200,
+        "duration_ms": 21.196218000000044
+      },
+      {
+        "n": 73,
+        "method": "GET",
+        "path": "/api/v1/me",
+        "status": 200,
+        "duration_ms": 22.54433999999992
+      },
+      {
+        "n": 74,
+        "method": "GET",
+        "path": "/api/v1/me",
+        "status": 200,
+        "duration_ms": 13.311313000000155
+      },
+      {
+        "n": 75,
+        "method": "GET",
+        "path": "/api/v1/me",
+        "status": 200,
+        "duration_ms": 12.409588999999869
+      },
+      {
+        "n": 76,
+        "method": "GET",
+        "path": "/api/v1/me",
+        "status": 200,
+        "duration_ms": 12.704787000000124
+      },
+      {
+        "n": 77,
+        "method": "GET",
+        "path": "/api/v1/me",
+        "status": 200,
+        "duration_ms": 20.498199999999997
+      },
+      {
+        "n": 78,
+        "method": "GET",
+        "path": "/api/v1/me",
+        "status": 200,
+        "duration_ms": 14.974019000000226
+      },
+      {
+        "n": 79,
+        "method": "GET",
+        "path": "/api/v1/me",
+        "status": 200,
+        "duration_ms": 18.64555100000007
+      }
+    ],
+    "p95_ms": 21.196218000000044,
+    "under_3000_ms": 30,
+    "limits": "No mide Vercel ni Firestore remoto. No acredita RNF-07 en el despliegue ni cambia estado PG18 con esta muestra aislada."
+  },
+  "conclusion": "La API devuelve el plan pagado antes del fin y free desde el límite exacto. Tras agotar cuota gratuita, práctica permite acceso antes y lo deniega desde el límite. Repetición no crea intentos ni cambia campos de facturación. La retirada efectiva se calcula al leer: los campos guardados plan/billingAccessActive/billingStatus no se limpian automáticamente en estas rutas.",
+  "limits": "No acredita webhook real de vencimiento, interfaz del alumno, relojes remotos, notificaciones, sincronización durable de estado ni una transición única auditada. NPG09 permanece abierta y PG10/11/12 parciales. Los 16 escenarios HTTP y 30 muestras locales se cuentan aparte de los 57 casos principales."
+}

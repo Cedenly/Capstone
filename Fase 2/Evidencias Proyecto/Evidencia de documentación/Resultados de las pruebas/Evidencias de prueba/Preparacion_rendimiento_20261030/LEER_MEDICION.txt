@@ -1,0 +1,32 @@
+PREPARACIÓN DE MEDICIÓN HTTP — 30-10-2026
+
+Estado: ejecutor preparado y validado con respuestas ficticias. NO se ejecutó contra
+el despliegue. No se aprueba PG18/PG19 con estas comprobaciones locales.
+
+Uso desde el equipo habitual, con Node.js 22 o 24 y terminal interactiva:
+  node medir_api.mjs
+Puede usarse Windows PowerShell o Terminal. Escribir las credenciales de una cuenta
+DEDICADA DE PRUEBA solo en la terminal; contraseña oculta. Destino fijo:
+https://aprueba-student-api.vercel.app/api/v1. No admite redirecciones ni otro host.
+No pegar credenciales en ChatGPT ni en los archivos. Conservar únicamente el JSON
+Resultado_rendimiento_API_....json para revisión posterior.
+
+El login puede conceder premio diario. GET /me guarda el perfil y normaliza la cuota
+según el código original. Por eso no se presenta esta medición como libre de escrituras.
+No se envían respuestas de práctica ni operaciones de pago o de suscripción.
+Se realizan 30 GET /me y 30 GET /me/quota, uno a la vez, separados por 200 ms.
+Se incluye la primera petición; no se eliminan errores ni duraciones altas.
+Ante 401/403/429, error 5xx, tiempo agotado o respuesta no interpretable se detiene
+la tanda, que conserva N esperado y no puede aprobarse si quedó incompleta.
+
+Reloj: performance.now desde el envío hasta recibir y leer JSON. Incluye red y tiempo
+de aplicación; NO es tiempo interno aislado del servidor ni tiempo de herramientas.
+Umbral de muestra: al menos 29 de 30 respuestas HTTP200 válidas y menores a 3000ms.
+p95 por rango más próximo. Una respuesta de error nunca cuenta como éxito rápido.
+La conclusión solo corresponde a esas operaciones y condiciones, no al producto entero.
+No mide pantalla, Stripe, PG19 ni todos los requisitos de rendimiento.
+Salida: tiempos, estado HTTP y requestId acotado; sin correo, clave, token ni perfil.
+
+Validación del ejecutor: node verificar_ejecutor.mjs
+7 controles locales correctos según Verificacion_ejecutor_local.json. Estos controles
+no usan red y no se suman a los 57 casos ni al total de pruebas funcionales aprobadas.

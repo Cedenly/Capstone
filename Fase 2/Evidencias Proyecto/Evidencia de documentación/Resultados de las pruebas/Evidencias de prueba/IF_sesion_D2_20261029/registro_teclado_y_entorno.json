@@ -1,0 +1,122 @@
+{
+  "plan": [
+    {
+      "id": "",
+      "label": null,
+      "tag": "A",
+      "text": "🏠Inicio"
+    },
+    {
+      "id": "",
+      "label": null,
+      "tag": "A",
+      "text": "✏️Practicar"
+    },
+    {
+      "id": "",
+      "label": null,
+      "tag": "A",
+      "text": "🏅Medallas"
+    },
+    {
+      "id": "",
+      "label": null,
+      "tag": "A",
+      "text": "👥Grupos"
+    },
+    {
+      "id": "",
+      "label": null,
+      "tag": "A",
+      "text": "💬Comunidad"
+    },
+    {
+      "id": "",
+      "label": null,
+      "tag": "A",
+      "text": "💳Mi planPRO"
+    },
+    {
+      "id": "",
+      "label": null,
+      "tag": "A",
+      "text": "⚙️Ajustes"
+    },
+    {
+      "id": "",
+      "label": null,
+      "tag": "INPUT",
+      "text": ""
+    },
+    {
+      "id": "",
+      "label": null,
+      "tag": "SELECT",
+      "text": "ESEN"
+    },
+    {
+      "id": "",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "🌙"
+    },
+    {
+      "id": "",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "Mensual"
+    },
+    {
+      "id": "",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "Anual · 2 meses gratis"
+    },
+    {
+      "id": "",
+      "label": null,
+      "tag": "DIV",
+      "text": "🎯1 prueba ilimitadaUSD 1/mes✓Preguntas ilimitadas de 1 prueba a eleccion✓Recorreccion de preguntasElige la prueba que tendrás ilimitadaSele"
+    },
+    {
+      "id": "plan-test",
+      "label": null,
+      "tag": "SELECT",
+      "text": "Selecciona una pruebaComp. LectoraMatematica M1Ciencias"
+    }
+  ],
+  "login": [
+    {
+      "id": "login-email",
+      "tag": "INPUT",
+      "text": ""
+    },
+    {
+      "id": "login-password",
+      "tag": "INPUT",
+      "text": ""
+    },
+    {
+      "id": "",
+      "tag": "BUTTON",
+      "text": "Entrar"
+    },
+    {
+      "id": "",
+      "tag": "A",
+      "text": "Olvidaste tu contraseña?"
+    },
+    {
+      "id": "",
+      "tag": "A",
+      "text": "Registrate"
+    }
+  ],
+  "environment": {
+    "browser": "Chrome remoto",
+    "version": "No expuesta por el entorno de inspección",
+    "account": "correod2@correod2.com",
+    "visibleAlias": "Prueba Fase2 D",
+    "plan": "free"
+  }
+}

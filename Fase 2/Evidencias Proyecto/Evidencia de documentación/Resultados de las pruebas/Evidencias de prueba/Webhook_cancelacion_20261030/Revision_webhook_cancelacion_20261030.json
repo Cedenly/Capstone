@@ -1,0 +1,209 @@
+{
+  "date": "2026-10-30",
+  "source_method": "Transcripción visual de capturas aportadas por el usuario; no es una exportación JSON íntegra de Stripe. No se rellenan campos que no se han registrado.",
+  "destination": {
+    "id": "we_1UMxFAAhY3J8iTOwX2zTpgY6",
+    "url": "https://aprueba-student-api.vercel.app/api/v1/webhooks/stripe",
+    "active": true
+  },
+  "event": {
+    "id": "evt_1UWG4nAhY3J8iTOwTr4HZM3P",
+    "type": "customer.subscription.deleted",
+    "created": 1793367757,
+    "created_utc": "2026-10-30T13:42:37+00:00",
+    "api_version": "2026-08-26.dahlia",
+    "livemode": false,
+    "pending_webhooks": 0,
+    "subscription": {
+      "id": "sub_1UWEYZAhY3J8iTOwyPTu8Ihu",
+      "customer": "cus_VXJAOZAucUHSrB",
+      "status": "canceled",
+      "cancel_at_period_end": true,
+      "cancel_at": 1801310713,
+      "canceled_at": 1798950000,
+      "ended_at": 1801310713,
+      "ended_at_utc": "2027-01-30T12:05:13+00:00",
+      "test_clock": "clock_1UWFEeAhY3J8iTOw5k8zuN6f",
+      "metadata": {
+        "testId": "cien",
+        "plan": "uni",
+        "integration": "aprueba_mvp",
+        "billingCycle": "monthly",
+        "attemptId": "28c909e1-9fff-488f-a13c-7dd8eef67b90",
+        "userId": "usr_5cf425a950"
+      }
+    }
+  },
+  "delivery": {
+    "source": "Automático",
+    "state": "Entregado",
+    "attempt_display": "30 oct 2026, 13:42:39",
+    "http_status": 200,
+    "response": {
+      "data": {
+        "received": true,
+        "processed": true
+      },
+      "error": null,
+      "meta": {
+        "requestId": "req_b3b92118-fad",
+        "timestamp": "2026-10-30T13:42:39.964Z"
+      }
+    },
+    "duration_ms": null
+  },
+  "weekly_aggregate": {
+    "range_label": "Esta semana",
+    "range_boundaries_not_exported": true,
+    "deliveries": 65,
+    "failed": 0,
+    "min_ms": 882,
+    "mean_ms": 2677,
+    "max_ms": 10541,
+    "p95_ms": null,
+    "individual_samples": null,
+    "source": "image(20261030-185313).png"
+  },
+  "correlation": {
+    "previous_test_account": "renov@renov.com",
+    "subscription_matches_previous_test": true,
+    "customer_matches_previous_test": true,
+    "metadata_user_matches_previous_test": true,
+    "admin_observation": {
+      "source": "Observación directa autenticada de la consola Aprueba durante esta conversación",
+      "subscription_state": "Cancelada",
+      "access": "No habilitado",
+      "subscription_rows": 11,
+      "invoice_rows": 22,
+      "not_a_raw_firestore_export": true
+    }
+  },
+  "limits": [
+    "Catorce capturas incluyen varias vistas del mismo evento: no son catorce entregas distintas.",
+    "received/processed true es el acuse del backend, no una lectura independiente de Firestore ni prueba de unicidad del historial.",
+    "pending_webhooks 0 no acredita auditoría interna ni duración individual.",
+    "El tiempo de creación del evento y el timestamp de respuesta no forman una medida de duración HTTP del intento.",
+    "El máximo 10541 ms supera 5000 ms, pero no permite calcular el porcentaje por debajo de 5000 ms ni p95 con 65 entregas.",
+    "El resumen agregado no sustituye la ejecución formal de PG19 con duraciones individuales.",
+    "La fecha de negocio del reloj de prueba y las marcas reales del evento/transporte se conservan separadas.",
+    "La exportación posterior confirma el recibo y el estado final persistidos; quedan pendientes la transición histórica auditada, el corte en interfaz estudiante y la medición representativa de tiempos."
+  ],
+  "counts_unchanged": {
+    "tasks": {
+      "total": 84,
+      "completed": 76,
+      "not_applicable": 1,
+      "open": 7
+    },
+    "main_cases": {
+      "total": 57,
+      "passed": 32,
+      "partial": 13,
+      "failed": 2,
+      "blocked": 8,
+      "not_executed": 2
+    }
+  },
+  "sources": [
+    {
+      "file": "image(20261030-185016).png",
+      "library_file_id": "libfile_c97cd7929d708191926b1a6e549301cc",
+      "bytes": 81964,
+      "sha256": "a2cbb8ad77a3a7b3d9af515c7e0c0880bba9e7901bdc06c7b937f19d4d053603"
+    },
+    {
+      "file": "image(20261030-185313).png",
+      "library_file_id": "libfile_beb08dfaede48191b2e53fd2b8bf238a",
+      "bytes": 147737,
+      "sha256": "283e77a87e9c19a090ef2f003cf1621cc1caab1d2e9fad88b9086be585167a00"
+    },
+    {
+      "file": "image(20261030-185430).png",
+      "library_file_id": "libfile_cd524a85fdd08191847a37ccf9ae1c02",
+      "bytes": 153591,
+      "sha256": "9d69f245a044c4365c0c88a6b147de20b9cbc535e286738588d1378643a81474"
+    },
+    {
+      "file": "image(20261030-185551).png",
+      "library_file_id": "libfile_67f52af4b0488191930f3c2cbd63dedc",
+      "bytes": 152614,
+      "sha256": "54439fc5c8998fc308a300b8f89d701867de7ce97600ee9d5b7ce34f23427ce6"
+    },
+    {
+      "file": "image(20261030-185556).png",
+      "library_file_id": "libfile_58ed3e25810881919a93152acc74347e",
+      "bytes": 147026,
+      "sha256": "a7559cb1b4f8db55368c4bf1e796f952d8799d73643ef6263b5a46d0730fe72b"
+    },
+    {
+      "file": "image(20261030-185601).png",
+      "library_file_id": "libfile_6bf81ec4e9988191b1986a891204cf1b",
+      "bytes": 157140,
+      "sha256": "1e09558068ab0fe59f077081d5e4cacf79aafef73773c72135d356e72c6794f8"
+    },
+    {
+      "file": "image(20261030-185605).png",
+      "library_file_id": "libfile_96f3d481208881918e648466cd769def",
+      "bytes": 153718,
+      "sha256": "2c2e0a282424684f98623c11adaea01ee0b3d6866c4576b4e8f39036377f793a"
+    },
+    {
+      "file": "image(20261030-185610).png",
+      "library_file_id": "libfile_24f84c4f6adc81919dfbb8778d701141",
+      "bytes": 150834,
+      "sha256": "da41d51efceb77021b3a16723d6991a4b93249d3ad38160601f6a84ea58b5fa4"
+    },
+    {
+      "file": "image(20261030-185726).png",
+      "library_file_id": "libfile_bba7bc1e63ec819191a383a52a50e075",
+      "bytes": 153353,
+      "sha256": "7441a63ee97e51d71e0161f2b1c9e73ab4032e2967e0e969e28be5cbe764cf3c"
+    },
+    {
+      "file": "image(20261030-185730).png",
+      "library_file_id": "libfile_7ed44807a208819183a6f609fd93799a",
+      "bytes": 150505,
+      "sha256": "607f28519cc3e8c786726ba3484007f7fd7aa912c5022b486dc3414f818baaa4"
+    },
+    {
+      "file": "image(20261030-185737).png",
+      "library_file_id": "libfile_55d1a1d85bb88191a190459de2475da3",
+      "bytes": 146166,
+      "sha256": "17b012ecbedd1ac2f2924e74ee93a724adea995a9ee2eadec242b53bd20c083a"
+    },
+    {
+      "file": "image(20261030-185741).png",
+      "library_file_id": "libfile_9eaca2f8024c8191b901daf9ebccd15e",
+      "bytes": 146860,
+      "sha256": "adef2225eb5184af1aedca37fa3d1d76f9203a5466f30f5d5c7e87dc9257c8c0"
+    },
+    {
+      "file": "image(20261030-185745).png",
+      "library_file_id": "libfile_82d10fb81b40819189a9bd490c4a6bac",
+      "bytes": 138821,
+      "sha256": "64bd30b68c031d4d5aa508b2ecdb6fdf075aa86b7774be5bd6b8df9e4d31ff64"
+    },
+    {
+      "file": "image(20261030-185752).png",
+      "library_file_id": "libfile_918902e7390c81918f432e189b69d47f",
+      "bytes": 141928,
+      "sha256": "926b72c9effdd95f915d9c3dce8b886b8c78207699379c2efc7f3991f9cb2bb6"
+    }
+  ],
+  "source_images_not_embedded": true,
+  "deployed": false,
+  "production_code_changed": false,
+  "firestore_confirmation_file": "Confirmacion_firestore_cancelacion_20261030.json",
+  "firestore_confirmation_summary": {
+    "source_library_file_id": "libfile_2fbcd46574108191b4057b19e3f42cb5",
+    "complete": true,
+    "errors": 0,
+    "receipt_processingVersion": 3,
+    "subscription_status": "canceled",
+    "subscription_accessActive": false,
+    "user_plan": "free",
+    "user_billingAccessActive": false,
+    "unique_transition_proven": false,
+    "student_boundary_proven": false
+  }
+}

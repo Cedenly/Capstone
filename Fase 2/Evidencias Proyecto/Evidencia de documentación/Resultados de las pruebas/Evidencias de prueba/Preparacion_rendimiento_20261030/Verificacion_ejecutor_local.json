@@ -1,0 +1,15 @@
+{
+  "executedAt": "2026-10-30T16:14:24.770Z",
+  "scope": "Dobles locales, sin conexión HTTP ni credenciales reales.",
+  "checks": [
+    "60 respuestas ficticias clasificadas por operación",
+    "p95 y umbral estricto menor a 3000 ms",
+    "95% de 30 requiere 29 muestras correctas",
+    "29 muestras totales no bastan",
+    "401 detiene la tanda conservando N esperado",
+    "JSON inválido no se aprueba",
+    "salida no contiene token ni datos privados del cuerpo"
+  ],
+  "result": "7/7 comprobaciones correctas",
+  "remote_performance_proven": false
+}

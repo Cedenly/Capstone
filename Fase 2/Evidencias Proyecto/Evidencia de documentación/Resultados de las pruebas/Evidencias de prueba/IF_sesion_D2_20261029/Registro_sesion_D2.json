@@ -1,0 +1,156 @@
+{
+  "fecha": "2026-10-29",
+  "zona": "America/Santiago",
+  "hora": "No correlacionada para cada paso",
+  "cuenta": "IF-GRATIS-D2: cuenta nueva indicada por Sebastián, correod2@correod2.com, alias visible Prueba Fase2 D. Correo confirmado en Checkout. Plan Gratis y 0/10 al inicio; sin compra ni suscripción activada durante esta ejecución. No sustituye las cuentas D original ni B/C/E en sus otras pruebas.",
+  "entorno": "Se reconfirmaron en Vercel los mismos cuatro despliegues READY: estudiante dpl_2wRv94gK5xUgc425Y7EQZn3KeXbD y API dpl_5eJZCmftDNTSqjZrdneNgDMn4Hbf (commit d1ac22791bdf6f276c8dcce3ec02d707daca3735); administración dpl_8vAoKcdYiCURXHD6epwGhpzvP5oS y API dpl_7gFk4xUq7YXU2Hp8uy4799ograpC (commit 31fb7f2866317b555e65b91c37256cff4e129ef3). Node 24.x informado por los cuatro proyectos. El cliente es Chrome remoto; versión y sistema no expuestos por la inspección, por lo que no se reutilizan los metadatos Chrome 156/Windows de la ejecución anterior.",
+  "resumen": "57 casos principales: 22 aprobados, 9 parciales, 2 fallidos, 10 bloqueados y 14 no ejecutados. Se mantienen aparte las 18 comprobaciones EX y los tres antecedentes históricos.",
+  "interfaz": "Interfaz: 16 casos, 7 aprobados, 4 parciales, 2 fallidos, 2 bloqueados y 1 no ejecutado. IF-02 e IF-15 pasan a aprobados en el alcance de la ejecución D2 en Chrome remoto.",
+  "ejecuciones": [
+    {
+      "id": "IF-02-E03-20261029",
+      "case": "IF-02",
+      "state": "Aprobado",
+      "observed": "Ingreso correcto mediante formulario seguro. Inicio muestra Plan Gratis y 0 de 10 usadas. Mi plan conserva alias y catálogo tras recargar. Cerrar sesion lleva a /login; Atrás mantiene /login sin datos del plan. La navegación directa a /plan redirige a /login, sin datos privados.",
+      "limit": "Verificación funcional de interfaz con cuenta gratuita D2. No prueba revocación de tokens, caché/red ni autorización de API. Estado final: sesión cerrada."
+    },
+    {
+      "id": "IF-15-E03-20261029",
+      "case": "IF-15",
+      "state": "Aprobado",
+      "observed": "Tab recorre los enlaces y controles de Mi plan; foco visible en selector y Continuar. End/Enter permiten elegir Ciencias y Escape/Tab salir del selector. Espacio abre el Checkout de USD1 mensual; Tab alcanza Volver y Enter permite retornar a Aprueba. El descarte se activa con Enter. Espacio activa Anual (USD10/50) y Mayús+Tab/Enter vuelve a Mensual (USD1/5). En login, Tab recorre correo, contraseña, Entrar, Olvidaste y Registro; Mayús+Tab retorna a Entrar. Espacio activa la validación de campo requerido y mueve foco a correo.",
+      "limit": "Aprobación de navegación básica en login, Mi plan y contratación hasta resumen, en Chrome remoto. No certifica WCAG, lectores de pantalla, otros navegadores ni el hallazgo O05 de Practicar, que sigue pendiente."
+    },
+    {
+      "id": "IF-13-E05-20261029",
+      "case": "IF-13",
+      "state": "Fallido",
+      "observed": "Seleccionados Ciencias y Mensual, Checkout muestra Aprueba - 1 prueba ilimitada por USD1/mes, sin nombrar Ciencias. La tarjeta de intento pendiente tampoco muestra la materia. Al regresar con Atrás, Continuar/Actualizar/Descartar quedaron habilitados sin recargar; se volvió otra vez con el enlace Volver activado con Enter. Intento descartado sin enviar pago.",
+      "limit": "D02 sigue reproducido para esta muestra. D03 no se reprodujo en esta ejecución; no se afirma corrección de código ni cierre en la combinación original. No se consultó factura con D2 ni se cubrió la matriz completa de navegadores; se conserva el estado Fallido."
+    }
+  ],
+  "teclado": {
+    "plan": [
+      {
+        "id": "",
+        "label": null,
+        "tag": "A",
+        "text": "🏠Inicio"
+      },
+      {
+        "id": "",
+        "label": null,
+        "tag": "A",
+        "text": "✏️Practicar"
+      },
+      {
+        "id": "",
+        "label": null,
+        "tag": "A",
+        "text": "🏅Medallas"
+      },
+      {
+        "id": "",
+        "label": null,
+        "tag": "A",
+        "text": "👥Grupos"
+      },
+      {
+        "id": "",
+        "label": null,
+        "tag": "A",
+        "text": "💬Comunidad"
+      },
+      {
+        "id": "",
+        "label": null,
+        "tag": "A",
+        "text": "💳Mi planPRO"
+      },
+      {
+        "id": "",
+        "label": null,
+        "tag": "A",
+        "text": "⚙️Ajustes"
+      },
+      {
+        "id": "",
+        "label": null,
+        "tag": "INPUT",
+        "text": ""
+      },
+      {
+        "id": "",
+        "label": null,
+        "tag": "SELECT",
+        "text": "ESEN"
+      },
+      {
+        "id": "",
+        "label": null,
+        "tag": "BUTTON",
+        "text": "🌙"
+      },
+      {
+        "id": "",
+        "label": null,
+        "tag": "BUTTON",
+        "text": "Mensual"
+      },
+      {
+        "id": "",
+        "label": null,
+        "tag": "BUTTON",
+        "text": "Anual · 2 meses gratis"
+      },
+      {
+        "id": "",
+        "label": null,
+        "tag": "DIV",
+        "text": "🎯1 prueba ilimitadaUSD 1/mes✓Preguntas ilimitadas de 1 prueba a eleccion✓Recorreccion de preguntasElige la prueba que tendrás ilimitadaSele"
+      },
+      {
+        "id": "plan-test",
+        "label": null,
+        "tag": "SELECT",
+        "text": "Selecciona una pruebaComp. LectoraMatematica M1Ciencias"
+      }
+    ],
+    "login": [
+      {
+        "id": "login-email",
+        "tag": "INPUT",
+        "text": ""
+      },
+      {
+        "id": "login-password",
+        "tag": "INPUT",
+        "text": ""
+      },
+      {
+        "id": "",
+        "tag": "BUTTON",
+        "text": "Entrar"
+      },
+      {
+        "id": "",
+        "tag": "A",
+        "text": "Olvidaste tu contraseña?"
+      },
+      {
+        "id": "",
+        "tag": "A",
+        "text": "Registrate"
+      }
+    ],
+    "environment": {
+      "browser": "Chrome remoto",
+      "version": "No expuesta por el entorno de inspección",
+      "account": "correod2@correod2.com",
+      "visibleAlias": "Prueba Fase2 D",
+      "plan": "free"
+    }
+  },
+  "checkout_summary": "{\"content\":[{\"type\":\"text\",\"text\":\"{\\\"livemode\\\":false,\\\"currency\\\":\\\"usd\\\",\\\"totalAmount\\\":100,\\\"lineItems\\\":[{\\\"name\\\":\\\"Aprueba - 1 prueba ilimitada\\\",\\\"minorUnitsAmount\\\":100}],\\\"payment_method_types\\\":[\\\"card\\\",\\\"apple_pay\\\",\\\"link_instant_debit\\\"]}\"}]}",
+  "limites": "No se envió pago. Se descartó la sesión de Checkout y se cerró la sesión de Aprueba. No se cambiaron contraseñas, código, despliegues ni responsables."
+}

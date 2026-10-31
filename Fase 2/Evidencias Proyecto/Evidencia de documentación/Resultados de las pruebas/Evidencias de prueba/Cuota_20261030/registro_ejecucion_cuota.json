@@ -1,0 +1,114 @@
+{
+  "execution_id": "IF-05-E03-20261030",
+  "date": "30-10-2026",
+  "timezone": "America/Santiago",
+  "period": "2026-10-30T07:42:59-03:00 a 2026-10-30T07:52:04-03:00",
+  "account": "Cuenta solicitada Prueba Fase2 D2 (correod2@correod2.com). Nombre mostrado: Prueba Fase2 D. Correo no visible en las pantallas revisadas.",
+  "environment": "Navegador remoto Chrome, viewport 1363x936. Sitio publicado https://aprueba-student.vercel.app. API verificada READY en Vercel: dpl_5eJZCmftDNTSqjZrdneNgDMn4Hbf. Versión exacta del navegador y commit del frontend no consultados.",
+  "initial": "Plan Gratis, 17 de 20 usadas, 15 medallas de bronce, racha 2. Bonos mostrados 10 base +5 colegio +5 dirección. Filtro Lectora ya seleccionado.",
+  "observed": "Tres respuestas de Lectora aceptadas como correctas. Secuencia visible 17/20 → 18/20 → 19/20 → 20/20 y bronce 15 → 16 → 17 → 18. Al pulsar Siguiente pregunta después de la última aparece Cuota diaria alcanzada. Ver planes abre Mi plan en modo de prueba con ofertas de USD 1/mes y USD 5/mes. Al volver a Inicio y reingresar a Practicar persiste el bloqueo.",
+  "limit": "Acredita el tramo observado de 17 a 20, bloqueo adicional, persistencia al reingresar y destino de Ver planes. No prueba reinicio diario, fecha interna de la cuota, acumulación de bonos desde cero en esta tanda, todos los dispositivos, peticiones directas contra API ni compra. Identidad: alias solicitado y nombre mostrado, sin lectura independiente del correo. Los tiempos del navegador incluyen ejecución remota y no acreditan PG18/19.",
+  "final": "Plan Gratis, 20 de 20 utilizadas, 18 medallas de bronce, filtro Lectora conservado, sin compra nueva ni cambios de configuración. Sesión abierta para continuar con los siguientes bloques.",
+  "status": "Aprobado",
+  "evidence": [
+    {
+      "id": "EV-130",
+      "filename": "IF05_D2_01_inicio_17_de_20.jpg",
+      "observed": "Inicio antes de responder. Plan Gratis y contador 17 de 20.",
+      "captured_at": "2026-10-30T07:42:59-03:00",
+      "sha256": "50d413b7f1031a4f87c3562310fd5a5cc110c9ae69ab8b4b283b7962e71e6b1a"
+    },
+    {
+      "id": "EV-131",
+      "filename": "IF05_D2_02_pregunta_inicial.jpg",
+      "observed": "Primera pregunta de la tanda. Lectora, esperanza y sueño despierto.",
+      "captured_at": "2026-10-30T07:44:26-03:00",
+      "sha256": "e04286f38fe6f2cb18fa5a4b5d2f31f6828cbdeb23e247c4f96c2a168585d995"
+    },
+    {
+      "id": "EV-132",
+      "filename": "IF05_D2_03_respuesta_correcta.jpg",
+      "observed": "Primera respuesta aceptada como correcta. Alternativa Metáfora.",
+      "captured_at": "2026-10-30T07:46:23-03:00",
+      "sha256": "fff2e0a0b63bc0ddc0cb29450091d16f7b20f3009a6b61f63b8e2538ba9337c8"
+    },
+    {
+      "id": "EV-133",
+      "filename": "IF05_D2_04_inicio_18_de_20.jpg",
+      "observed": "Inicio actualizado. Contador 18 de 20 y 16 medallas de bronce.",
+      "captured_at": "2026-10-30T07:46:45-03:00",
+      "sha256": "80a64bd7a23b93b9af2a206c57568c8fbeae1c4ff576f889ec6d3871e6cc36bd"
+    },
+    {
+      "id": "EV-134",
+      "filename": "IF05_D2_05_pregunta_19.jpg",
+      "observed": "Segunda pregunta. Comparación de la lluvia con dedos impacientes.",
+      "captured_at": "2026-10-30T07:47:54-03:00",
+      "sha256": "1ddbb33dab812a5077f4d415c5249ed3900597964ab838be9d0a5a1d5b96adb6"
+    },
+    {
+      "id": "EV-135",
+      "filename": "IF05_D2_06_segunda_respuesta_correcta.jpg",
+      "observed": "Segunda respuesta aceptada como correcta. Alternativa Símil.",
+      "captured_at": "2026-10-30T07:48:04-03:00",
+      "sha256": "c8634df99d2ed104e79b8a5c63eb4d5bf778fb5712d78ad086a995bf3161cdea"
+    },
+    {
+      "id": "EV-136",
+      "filename": "IF05_D2_07_inicio_19_de_20.jpg",
+      "observed": "Inicio actualizado. Contador 19 de 20 y 17 medallas de bronce.",
+      "captured_at": "2026-10-30T07:48:44-03:00",
+      "sha256": "f89a5079cb7bcefa1dcb28ef5778c48511b22b57985ca46005199ea2a5541b1a"
+    },
+    {
+      "id": "EV-137",
+      "filename": "IF05_D2_08_pregunta_20.jpg",
+      "observed": "Tercera pregunta, último cupo. El viento silbaba una melodía.",
+      "captured_at": "2026-10-30T07:49:06-03:00",
+      "sha256": "7313e3d57352ffb2cf8f2cb7db0ab79072880587ae25ec5af2c8f58a694fae38"
+    },
+    {
+      "id": "EV-138",
+      "filename": "IF05_D2_09_ultima_respuesta_correcta.jpg",
+      "observed": "Tercera respuesta aceptada como correcta. Alternativa Personificación.",
+      "captured_at": "2026-10-30T07:49:49-03:00",
+      "sha256": "ab4db25d6056e75f9d8053efc23076bc570f16dcec40ced66158f69081ebdc74"
+    },
+    {
+      "id": "EV-139",
+      "filename": "IF05_D2_10_bloqueo_cuota.jpg",
+      "observed": "Intento de continuar. Cuota diaria alcanzada y botón Ver planes.",
+      "captured_at": "2026-10-30T07:50:45-03:00",
+      "sha256": "b059b3e9e04416ad21b701f241c5747ab56d7b21514247753899a47295964450"
+    },
+    {
+      "id": "EV-140",
+      "filename": "IF05_D2_11_ver_planes.jpg",
+      "observed": "Resultado del clic en Ver planes. Oferta mensual y modo de prueba.",
+      "captured_at": "2026-10-30T07:51:16-03:00",
+      "sha256": "6b8d99f69e554d66e1ac32242920d69c8562cc4e5b6e51fec625acfa1ac517ab"
+    },
+    {
+      "id": "EV-141",
+      "filename": "IF05_D2_12_inicio_20_de_20.jpg",
+      "observed": "Inicio actualizado. Contador 20 de 20 y 18 medallas de bronce.",
+      "captured_at": "2026-10-30T07:51:17-03:00",
+      "sha256": "812a821c91647a68768b0f5a365fe57ab2178c85e30232b4c150357e03392529"
+    },
+    {
+      "id": "EV-142",
+      "filename": "IF05_D2_13_bloqueo_al_reingresar.jpg",
+      "observed": "Reingreso a Practicar. Persiste Cuota diaria alcanzada.",
+      "captured_at": "2026-10-30T07:52:04-03:00",
+      "sha256": "bb63561874d57a377dc8b4c7c7a74fd64bc5ae8070138e579674463f99dd8a0d"
+    }
+  ],
+  "recovery": {
+    "execution_id": "INC-20261030-REC",
+    "evidence_id": "EV-143",
+    "filename": "INC_REC_01_firestore_cuota_disponible.png",
+    "observed": "Captura aportada por el usuario muestra 6/50.000 lecturas diarias. En esta tanda el acceso, tres respuestas y navegación a planes funcionaron. Recuperación funcional observada en estas operaciones, sin certificar todas las funciones.",
+    "limit": "Captura de cuota recortada sin encabezado de proyecto visible. Corresponde al flujo del enlace del proyecto solicitado; no se verificó por una consulta directa a Firebase. No sustituye la correlación del requestId del incidente original de Thiare.",
+    "sha256": "43f653d224f5c78d45430cab46942310e4c2368aa3f06a58079a1cd1a200cd5a"
+  }
+}

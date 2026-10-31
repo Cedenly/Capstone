@@ -1,0 +1,117 @@
+[
+  {
+    "file": "IF02_D2_01_inicio_gratis.jpg",
+    "bytes": 86177,
+    "sha256": "fb0e5c8bb01c34b3f0d9a3abf3bce813c7726d76cd2b33f5d1368d5caac955c7"
+  },
+  {
+    "file": "IF02_D2_02_plan_antes_recarga.jpg",
+    "bytes": 62999,
+    "sha256": "571a48319bd06edbab61cd9bae40449cb73353a56b86644f6ca086f2365f4251"
+  },
+  {
+    "file": "IF02_D2_03_plan_tras_recarga.jpg",
+    "bytes": 62999,
+    "sha256": "571a48319bd06edbab61cd9bae40449cb73353a56b86644f6ca086f2365f4251"
+  },
+  {
+    "file": "IF02_D2_04_antes_cerrar_sesion.jpg",
+    "bytes": 55685,
+    "sha256": "6af8134734f437e2f12e86c63764cfbf301d572c52d63d66f4cc86b30a123d8a"
+  },
+  {
+    "file": "IF02_D2_05_cierre_completado.jpg",
+    "bytes": 33460,
+    "sha256": "5491086ce4d9b11b3e6a18916156283de0f152af7ef7729642e5eb8756b96b30"
+  },
+  {
+    "file": "IF02_D2_06_atras_sin_sesion.jpg",
+    "bytes": 33460,
+    "sha256": "5491086ce4d9b11b3e6a18916156283de0f152af7ef7729642e5eb8756b96b30"
+  },
+  {
+    "file": "IF02_D2_07_url_directa_protegida.jpg",
+    "bytes": 33460,
+    "sha256": "5491086ce4d9b11b3e6a18916156283de0f152af7ef7729642e5eb8756b96b30"
+  },
+  {
+    "file": "IF13_D2_01_regreso_atras_sin_recargar.jpg",
+    "bytes": 47295,
+    "sha256": "67a1effc46a5c3537f774687b6425d8571f6eb8293004b5cafbf6b3a0178d43c"
+  },
+  {
+    "file": "IF13_D2_02_retorno_enter.jpg",
+    "bytes": 47302,
+    "sha256": "4c66bf3acd83c08986879b5e0039680426c8cea42d954adffee24f310a0b3952"
+  },
+  {
+    "file": "IF15_D2_01_foco_selector.jpg",
+    "bytes": 63558,
+    "sha256": "ac8a8a6b2fa9d6ee7c0d7029b59ac169c1332f003aee87598169044eb17b6f2b"
+  },
+  {
+    "file": "IF15_D2_02_ciencias_teclado.jpg",
+    "bytes": 63613,
+    "sha256": "40146d4d79f54d138b6e5e9fe728a3561ecacb9d2b09485907f46eb949fc36c0"
+  },
+  {
+    "file": "IF15_D2_04_foco_boton_continuar.jpg",
+    "bytes": 64336,
+    "sha256": "5cc296a1c031a25f3d0ed0796d71a126c99967db24a802ff350f81798c4470bb"
+  },
+  {
+    "file": "IF15_D2_05_checkout_una_prueba.jpg",
+    "bytes": 54059,
+    "sha256": "9a4036d2334b81c4208cccb05d34184978317b15b2a85bd0b868d3fb0f71664c"
+  },
+  {
+    "file": "IF15_D2_06_foco_checkout.jpg",
+    "bytes": 54050,
+    "sha256": "79620a0e1b07fa3d224e4b4c3cb43386eb9de552b42d141d0c22ead51d1e710e"
+  },
+  {
+    "file": "IF15_D2_07_intento_descartado.jpg",
+    "bytes": 62999,
+    "sha256": "571a48319bd06edbab61cd9bae40449cb73353a56b86644f6ca086f2365f4251"
+  },
+  {
+    "file": "IF15_D2_08_anual_espacio.jpg",
+    "bytes": 63978,
+    "sha256": "f372e6b0e0ca1fa78becfea694892b41e0d810e5db522875f5feab32d30d5b3e"
+  },
+  {
+    "file": "IF15_D2_09_mensual_enter.jpg",
+    "bytes": 63310,
+    "sha256": "784ce68bb55d1ab66b7919faecd7e26a31ca7a56b4444cf5e8421bb24d7d46e2"
+  },
+  {
+    "file": "IF15_D2_10_login_foco_entrar.jpg",
+    "bytes": 33776,
+    "sha256": "f65be7e0c1550a486b262485a7c3da410dd245ed2ec08740056ffbd912a6e349"
+  },
+  {
+    "file": "IF15_D2_11_login_activacion_espacio.jpg",
+    "bytes": 36905,
+    "sha256": "6db26fa3a8f23af7048ba0e64ba97cd9bb4faef640744cbe2225e8e270cefe9d"
+  },
+  {
+    "file": "Registro_sesion_D2.json",
+    "bytes": 6591,
+    "sha256": "5183a877af49825ff035a34de7211c0e07bff3cfb8e2b6a1dab2032b52f352d9"
+  },
+  {
+    "file": "checkout_resumen_sin_pago.json",
+    "bytes": 318,
+    "sha256": "50c75b50d08f838408a1bc7d1746d7dd8e36d4fde5a5576c4136f7ca25af0cc9"
+  },
+  {
+    "file": "deployments_d2.json",
+    "bytes": 803,
+    "sha256": "635f4ff1be81aa2943fb0a8a42c64e9f4d1f38e2908b0fdf299b2726d78a6aa7"
+  },
+  {
+    "file": "registro_teclado_y_entorno.json",
+    "bytes": 2204,
+    "sha256": "e1d78c2ac16bd9f15ef4a9c028e8c6d63b189ee16e2731c96de1216deb3afa99"
+  }
+]

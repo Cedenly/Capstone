@@ -1,0 +1,159 @@
+{
+  "date": "2026-10-29",
+  "timezone": "America/Santiago",
+  "exact_time": "No registrada de manera correlacionada para cada paso",
+  "summary": "57 casos principales: 20 aprobados, 11 parciales, 2 fallidos, 10 bloqueados y 14 no ejecutados. Las 18 comprobaciones EX y los tres antecedentes históricos se mantienen separados.",
+  "interface_summary": "Interfaz: 16 casos, 5 aprobados, 6 parciales, 2 fallidos, 2 bloqueados y 1 no ejecutado. IF-10 pasa de parcial a aprobado en el alcance de la muestra de facturación revisada.",
+  "environment": "Estudiante y API: commit d1ac22791bdf6f276c8dcce3ec02d707daca3735, repositorio aprueba_student_web, rama main. Administración y API: commit 31fb7f2866317b555e65b91c37256cff4e129ef3, repositorio aprueba-admin, rama main. Los cuatro despliegues READY y sus alias de producción se verificaron mediante Vercel el 29-10-2026. No se acreditó identidad con una copia local del código ni equivalencia completa entre las configuraciones de ejecución.",
+  "executions": [
+    {
+      "id": "IF-02-E02-20261029",
+      "case": "IF-02",
+      "status": "Parcial",
+      "account": "Prueba Vercel Octubre, Ciencias mensual; variante de la cuenta gratuita prevista",
+      "observed": "Ingreso correcto. Mi plan muestra Ciencias, Mensual, fin 04-11-2026 y vuelve a mostrar los mismos valores tras recargar.",
+      "limit": "No se ejecutó cierre/Atrás/URL sin sesión en esta tanda. La cuenta utilizada es de pago; no se declara completada la secuencia original con IF-GRATIS."
+    },
+    {
+      "id": "IF-09-E02-20261029",
+      "case": "IF-09",
+      "status": "Parcial",
+      "account": "Administrador MVP; muestra Prueba Vercel Octubre",
+      "observed": "8 suscripciones, 7 accesos habilitados, 0 renovaciones canceladas. Filtro por cuenta muestra 1/1/0; búsqueda sin coincidencias 0/0/0. La cuenta A muestra Ciencias, Mensual y fin 04-11-2026, igual que estudiante.",
+      "limit": "Solo 8 registros frente a 25 por página; Anterior/Siguiente deshabilitados. No se comprobó segunda página ni se consultó Stripe de nuevo en esta tanda. El registro demo tiene fin 20-10 y acceso no habilitado, coherente con fecha vencida; no prueba la implementación del cálculo."
+    },
+    {
+      "id": "IF-10-E02-20261029",
+      "case": "IF-10",
+      "status": "Aprobado",
+      "account": "Administrador MVP; Prueba Vercel Octubre",
+      "observed": "17 facturas pagadas mostradas por USD 39,74; suma de filas coincide. Filtro por in_1UMxrGAhY3J8iTOwmIsCrK8E muestra 1 factura por USD 1,00. Ver factura abre RNGZ23UJ-0001, pagada el 04-10-2026, Visa de prueba terminada en 4242. El enlace PDF entrega una factura legible con el mismo número, cuenta, importe y descripción de una prueba ilimitada del 04-10 al 04-11. Al quitar filtro se restauran 17/17/USD39,74.",
+      "limit": "Se aprueba la muestra y los cuatro pasos definidos de IF-10. No se observaron controles de reembolso ni exportación CSV en esta pestaña; esto documenta su disponibilidad, no aprueba esas funciones. El PDF es la factura emitida y conserva Importe adeudado USD1.00; la página alojada acredita pagada. No confundir factura con recibo ni deducir deuda actual del PDF. La muestra incluye facturas históricas de otras cuentas Stripe; no se afirma que todas pertenezcan a la cuenta Stripe vigente."
+    },
+    {
+      "id": "IF-15-E02-20261029",
+      "case": "IF-15",
+      "status": "Parcial",
+      "account": "Prueba Vercel Octubre",
+      "observed": "Tab recorrió navegación, búsqueda, idioma, tema, portal y Actualizar estado. Mayús+Tab retornó al portal. Espacio y Enter en Actualizar estado produjeron Actualizando…; el botón tuvo foco visible.",
+      "limit": "Mi plan verificado. Faltan recorrido completo de inicio de sesión y resumen de contratación; no se generaliza a todos los controles."
+    },
+    {
+      "id": "IF-16-PRE-20261029",
+      "case": "IF-16",
+      "status": "No ejecutado",
+      "account": "Prueba Vercel Octubre",
+      "observed": "Los atajos Ctrl+plus y Ctrl+equal no cambiaron el zoom: innerWidth 1363 y devicePixelRatio 1 antes y después.",
+      "limit": "Limitación del navegador de pruebas. No se utilizó emulación de ancho para sustituir zoom real; no se atribuye un defecto de accesibilidad a Aprueba por esta limitación."
+    }
+  ],
+  "subscription_counts": [
+    8,
+    7,
+    0
+  ],
+  "filtered_subscription_counts": [
+    1,
+    1,
+    0
+  ],
+  "empty_subscription_counts": [
+    0,
+    0,
+    0
+  ],
+  "invoice_amounts_usd": [
+    1,
+    3.95,
+    1,
+    3.99,
+    1,
+    3.8,
+    0,
+    1,
+    4,
+    1,
+    4,
+    1,
+    4,
+    0,
+    1,
+    4,
+    5
+  ],
+  "invoice_total_usd": 39.74,
+  "evidence_files": [
+    {
+      "path": "IF02_01_plan_antes_recarga.jpg",
+      "sha256": "c5b06bed598feb33b40477b2641c869dad2bb845cb0f0394ba861679de9c8190"
+    },
+    {
+      "path": "IF02_02_plan_despues_recarga.jpg",
+      "sha256": "c5b06bed598feb33b40477b2641c869dad2bb845cb0f0394ba861679de9c8190"
+    },
+    {
+      "path": "IF09_01_suscripciones_inicial.jpg",
+      "sha256": "6f24417bcc377cec66e914e083c6ed83dc517cb44cf9d880954a12e7fd7d7063"
+    },
+    {
+      "path": "IF09_03_filtro_completo.jpg",
+      "sha256": "e6f54e5b329a6d87fdbc31a4b794640ccde5d94125ca36161ab5864d578ddfdd"
+    },
+    {
+      "path": "IF09_04_sin_coincidencias.jpg",
+      "sha256": "887db0d89415d463695f0310d94ba9d6d3591e7cc920e07905e045bc06a7059c"
+    },
+    {
+      "path": "IF10_01_facturas_inicial.jpg",
+      "sha256": "7bbc3e3a2830190de3723df904b4b91fb00f1bb4d02cce231ab7695c66708ba6"
+    },
+    {
+      "path": "IF10_02_factura_filtrada.jpg",
+      "sha256": "e146fad186f924a05d8520145c708955fddb47237ea01a32aa167debc780decf"
+    },
+    {
+      "path": "IF10_03_comprobante_pagado.jpg",
+      "sha256": "c7291c73a6afbef134ae55bc8f1bb60a7c59f85c673a983ee91777635934d2aa"
+    },
+    {
+      "path": "IF10_04_indicadores_restaurados.jpg",
+      "sha256": "1c2163b992625fa4993fd60d509e8a8527b8add356a71c3bf4747e76753eefbc"
+    },
+    {
+      "path": "IF10_05_fin_listado.jpg",
+      "sha256": "6cff5e5c9bb9dbdf72779366cf966dc4a6a258fd562f0e7b970e3a014793f0a1"
+    },
+    {
+      "path": "IF10_factura_desde_admin_RNGZ23UJ-0001.pdf",
+      "sha256": "7266259daee37c81eaf79e4d89f5727e7fac3d1fd15ab7da3d842ff85afc80e1"
+    },
+    {
+      "path": "IF15_02_espacio_actualizar.jpg",
+      "sha256": "0060cca013638ba2504c73d59b5fb53600f8230cf0757ccabd9aca481cc17dbd"
+    },
+    {
+      "path": "IF15_03_mayus_tab.jpg",
+      "sha256": "511e7cd2dd2a0d72f292e7fe769358f3b3a7f03347d4733d5692dd237650f791"
+    },
+    {
+      "path": "IF15_04_enter_actualizar.jpg",
+      "sha256": "0060cca013638ba2504c73d59b5fb53600f8230cf0757ccabd9aca481cc17dbd"
+    },
+    {
+      "path": "vercel_aprueba-admin-api.json",
+      "sha256": "fe86205bf5cecd02a259f8b33e60abf799f1573ee857ea1ac0761437ce12c6f8"
+    },
+    {
+      "path": "vercel_aprueba-admin.json",
+      "sha256": "3adda500bce911a799e36ce00a4e2d3d3f433ac2d2137720a58c4038e1c1e4ae"
+    },
+    {
+      "path": "vercel_aprueba-student-api.json",
+      "sha256": "d365da689a193f1256f372dc70f6d3e1b65e38082c656a3980c876af3218209d"
+    },
+    {
+      "path": "vercel_aprueba-student.json",
+      "sha256": "c028a1f946dc0df735726f259f5a16d9f601afe844208e09aa715b2a3b2e5679"
+    }
+  ]
+}

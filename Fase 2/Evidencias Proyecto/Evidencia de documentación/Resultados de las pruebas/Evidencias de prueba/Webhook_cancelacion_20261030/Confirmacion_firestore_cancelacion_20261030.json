@@ -1,0 +1,426 @@
+{
+  "source": {
+    "file": "DAD_20_FIRESTORE_BD_aprueba-mvp-pruebas-2fc41_COMPLETO_2026-10-30T19-08-17-640Z.json",
+    "library_file_id": "libfile_2fbcd46574108191b4057b19e3f42cb5",
+    "sha256": "ed5402b71c2e86b341d7a0c6090c152f8963a8e3af3fbc844ee7baa19c12a075",
+    "bytes": 3171118,
+    "metadata": {
+      "projectId": "aprueba-mvp-pruebas-2fc41",
+      "databaseId": "(default)",
+      "startedAt": "2026-10-30T19:08:17.640Z",
+      "finishedAt": "2026-10-30T19:08:26.485Z",
+      "complete": true,
+      "scope": "Documentos y subcolecciones accesibles en esta base de Firestore",
+      "exclusions": [
+        "Authentication",
+        "Storage",
+        "Security Rules",
+        "index definitions",
+        "IAM",
+        "campos sin ejemplos guardados"
+      ],
+      "notes": [
+        "Esquema observado, no contrato de datos obligatorio.",
+        "Lecturas durante un intervalo; evitar cambios mientras se ejecuta.",
+        "IDs de texto pueden representar relaciones aunque no sean DocumentReference.",
+        "No es un archivo de importacion nativo de Firebase."
+      ]
+    },
+    "stats": {
+      "documents": 2008,
+      "missingParents": 0,
+      "collections": 28
+    },
+    "errors": []
+  },
+  "method": "Lectura independiente de la exportación posterior del usuario; selección explícita de campos de facturación. Los enteros Firestore se normalizan sin perder precisión. No incluye hashes de contraseña, credenciales, sesiones ni enlaces de factura.",
+  "receipt": {
+    "path": "stripeEvents/evt_1UWG4nAhY3J8iTOwTr4HZM3P",
+    "createTime": "2026-10-30T13:42:39.808Z",
+    "updateTime": "2026-10-30T13:42:39.808Z",
+    "data": {
+      "type": "customer.subscription.deleted",
+      "userId": "usr_5cf425a950",
+      "stripeSubscriptionId": "sub_1UWEYZAhY3J8iTOwyPTu8Ihu",
+      "processingVersion": 3,
+      "processedAt": "2026-10-30T13:42:39.494Z"
+    }
+  },
+  "subscription": {
+    "path": "subscriptions/sub_1UWEYZAhY3J8iTOwyPTu8Ihu",
+    "createTime": "2026-10-30T12:05:21.275Z",
+    "updateTime": "2026-10-30T13:42:39.808Z",
+    "data": {
+      "id": "sub_1UWEYZAhY3J8iTOwyPTu8Ihu",
+      "userId": "usr_5cf425a950",
+      "status": "canceled",
+      "accessActive": false,
+      "plan": "uni",
+      "billingCycle": "monthly",
+      "testId": "cien",
+      "currentPeriodStart": "2026-12-30T12:05:13.000Z",
+      "currentPeriodEnd": "2027-01-30T12:05:13.000Z",
+      "cancelAtPeriodEnd": true,
+      "paymentPending": false,
+      "latestInvoiceId": "in_1UWFpMAhY3J8iTOwoVZ91gZm",
+      "updatedAt": "2026-10-30T13:42:39.494Z"
+    }
+  },
+  "user_billing": {
+    "path": "users/usr_5cf425a950",
+    "createTime": "2026-10-30T11:19:15.113Z",
+    "updateTime": "2026-10-30T13:42:39.808Z",
+    "data": {
+      "id": "usr_5cf425a950",
+      "plan": "free",
+      "stripeSubscriptionId": "sub_1UWEYZAhY3J8iTOwyPTu8Ihu",
+      "billingAccessActive": false,
+      "billingStatus": "canceled",
+      "billingPeriodEnd": "2027-01-30T12:05:13.000Z",
+      "billingUpdatedAt": "2026-10-30T13:42:39.494Z"
+    }
+  },
+  "latest_invoice": {
+    "path": "invoices/in_1UWFpMAhY3J8iTOwoVZ91gZm",
+    "createTime": "2026-10-30T13:26:44.985Z",
+    "updateTime": "2026-10-30T13:42:39.808Z",
+    "data": {
+      "id": "in_1UWFpMAhY3J8iTOwoVZ91gZm",
+      "userId": "usr_5cf425a950",
+      "stripeSubscriptionId": "sub_1UWEYZAhY3J8iTOwyPTu8Ihu",
+      "status": "paid",
+      "amount": 1,
+      "currency": "USD",
+      "createdAt": "2026-12-30T12:05:13.000Z",
+      "paidAt": "2027-01-03T04:11:18.000Z",
+      "updatedAt": "2026-10-30T13:42:39.494Z"
+    }
+  },
+  "related_receipts": [
+    {
+      "path": "stripeEvents/evt_1UWEYaAhY3J8iTOw7RYolviG",
+      "createTime": "2026-10-30T12:05:21.275Z",
+      "updateTime": "2026-10-30T12:05:21.275Z",
+      "data": {
+        "type": "checkout.session.completed",
+        "userId": "usr_5cf425a950",
+        "stripeSubscriptionId": "sub_1UWEYZAhY3J8iTOwyPTu8Ihu",
+        "processingVersion": 3,
+        "processedAt": "2026-10-30T12:05:20.924Z"
+      }
+    },
+    {
+      "path": "stripeEvents/evt_1UWEYaAhY3J8iTOwLGbNACYZ",
+      "createTime": "2026-10-30T12:05:23.720Z",
+      "updateTime": "2026-10-30T12:05:23.720Z",
+      "data": {
+        "type": "invoice.paid",
+        "userId": "usr_5cf425a950",
+        "stripeSubscriptionId": "sub_1UWEYZAhY3J8iTOwyPTu8Ihu",
+        "processingVersion": 3,
+        "processedAt": "2026-10-30T12:05:23.460Z"
+      }
+    },
+    {
+      "path": "stripeEvents/evt_1UWEYaAhY3J8iTOwP1wrBBUH",
+      "createTime": "2026-10-30T12:05:26.327Z",
+      "updateTime": "2026-10-30T12:05:26.327Z",
+      "data": {
+        "type": "customer.subscription.created",
+        "userId": "usr_5cf425a950",
+        "stripeSubscriptionId": "sub_1UWEYZAhY3J8iTOwyPTu8Ihu",
+        "processingVersion": 3,
+        "processedAt": "2026-10-30T12:05:26.015Z"
+      }
+    },
+    {
+      "path": "stripeEvents/evt_1UWFEfAhY3J8iTOwEVKNSftC",
+      "createTime": "2026-10-30T12:48:49.099Z",
+      "updateTime": "2026-10-30T12:48:49.099Z",
+      "data": {
+        "type": "customer.updated",
+        "userId": "usr_5cf425a950",
+        "stripeSubscriptionId": "sub_1UWEYZAhY3J8iTOwyPTu8Ihu",
+        "processingVersion": 3,
+        "processedAt": "2026-10-30T12:48:48.911Z"
+      }
+    },
+    {
+      "path": "stripeEvents/evt_1UWFEiAhY3J8iTOwkPdlacpJ",
+      "createTime": "2026-10-30T12:48:50.343Z",
+      "updateTime": "2026-10-30T12:48:50.343Z",
+      "data": {
+        "type": "customer.subscription.updated",
+        "userId": "usr_5cf425a950",
+        "stripeSubscriptionId": "sub_1UWEYZAhY3J8iTOwyPTu8Ihu",
+        "processingVersion": 3,
+        "processedAt": "2026-10-30T12:48:50.081Z"
+      }
+    },
+    {
+      "path": "stripeEvents/evt_1UWFIPAhY3J8iTOwF9JBiskW",
+      "createTime": "2026-10-30T12:52:40.119Z",
+      "updateTime": "2026-10-30T12:52:40.119Z",
+      "data": {
+        "type": "invoice.paid",
+        "userId": "usr_5cf425a950",
+        "stripeSubscriptionId": "sub_1UWEYZAhY3J8iTOwyPTu8Ihu",
+        "processingVersion": 3,
+        "processedAt": "2026-10-30T12:52:39.821Z"
+      }
+    },
+    {
+      "path": "stripeEvents/evt_1UWFkbAhY3J8iTOw1EuqaX59",
+      "createTime": "2026-10-30T13:21:50.543Z",
+      "updateTime": "2026-10-30T13:21:50.543Z",
+      "data": {
+        "type": "customer.subscription.updated",
+        "userId": "usr_5cf425a950",
+        "stripeSubscriptionId": "sub_1UWEYZAhY3J8iTOwyPTu8Ihu",
+        "processingVersion": 3,
+        "processedAt": "2026-10-30T13:21:50.276Z"
+      }
+    },
+    {
+      "path": "stripeEvents/evt_1UWFpNAhY3J8iTOwzlaPD6D7",
+      "createTime": "2026-10-30T13:26:44.985Z",
+      "updateTime": "2026-10-30T13:26:44.985Z",
+      "data": {
+        "type": "customer.subscription.updated",
+        "userId": "usr_5cf425a950",
+        "stripeSubscriptionId": "sub_1UWEYZAhY3J8iTOwyPTu8Ihu",
+        "processingVersion": 3,
+        "processedAt": "2026-10-30T13:26:44.719Z"
+      }
+    },
+    {
+      "path": "stripeEvents/evt_1UWFpSAhY3J8iTOwrjAcu0Yx",
+      "createTime": "2026-10-30T13:26:48.063Z",
+      "updateTime": "2026-10-30T13:26:48.063Z",
+      "data": {
+        "type": "customer.updated",
+        "userId": "usr_5cf425a950",
+        "stripeSubscriptionId": "sub_1UWEYZAhY3J8iTOwyPTu8Ihu",
+        "processingVersion": 3,
+        "processedAt": "2026-10-30T13:26:47.990Z"
+      }
+    },
+    {
+      "path": "stripeEvents/evt_1UWFpSAhY3J8iTOwbS5TFrUQ",
+      "createTime": "2026-10-30T13:26:49.055Z",
+      "updateTime": "2026-10-30T13:26:49.055Z",
+      "data": {
+        "type": "customer.subscription.updated",
+        "userId": "usr_5cf425a950",
+        "stripeSubscriptionId": "sub_1UWEYZAhY3J8iTOwyPTu8Ihu",
+        "processingVersion": 3,
+        "processedAt": "2026-10-30T13:26:48.430Z"
+      }
+    },
+    {
+      "path": "stripeEvents/evt_1UWFpTAhY3J8iTOwV2ERUW4R",
+      "createTime": "2026-10-30T13:26:50.932Z",
+      "updateTime": "2026-10-30T13:26:50.932Z",
+      "data": {
+        "type": "invoice.payment_failed",
+        "userId": "usr_5cf425a950",
+        "stripeSubscriptionId": "sub_1UWEYZAhY3J8iTOwyPTu8Ihu",
+        "processingVersion": 3,
+        "processedAt": "2026-10-30T13:26:50.616Z"
+      }
+    },
+    {
+      "path": "stripeEvents/evt_1UWFsiAhY3J8iTOw5ccMBJv8",
+      "createTime": "2026-10-30T13:30:10.508Z",
+      "updateTime": "2026-10-30T13:30:10.508Z",
+      "data": {
+        "type": "invoice.payment_failed",
+        "userId": "usr_5cf425a950",
+        "stripeSubscriptionId": "sub_1UWEYZAhY3J8iTOwyPTu8Ihu",
+        "processingVersion": 3,
+        "processedAt": "2026-10-30T13:30:10.197Z"
+      }
+    },
+    {
+      "path": "stripeEvents/evt_1UWFvaAhY3J8iTOwiggTkM8R",
+      "createTime": "2026-10-30T13:33:08.164Z",
+      "updateTime": "2026-10-30T13:33:08.164Z",
+      "data": {
+        "type": "customer.subscription.updated",
+        "userId": "usr_5cf425a950",
+        "stripeSubscriptionId": "sub_1UWEYZAhY3J8iTOwyPTu8Ihu",
+        "processingVersion": 3,
+        "processedAt": "2026-10-30T13:33:07.856Z"
+      }
+    },
+    {
+      "path": "stripeEvents/evt_1UWFxQAhY3J8iTOwmRN95R34",
+      "createTime": "2026-10-30T13:35:02.004Z",
+      "updateTime": "2026-10-30T13:35:02.004Z",
+      "data": {
+        "type": "customer.updated",
+        "userId": "usr_5cf425a950",
+        "stripeSubscriptionId": "sub_1UWEYZAhY3J8iTOwyPTu8Ihu",
+        "processingVersion": 3,
+        "processedAt": "2026-10-30T13:35:01.493Z"
+      }
+    },
+    {
+      "path": "stripeEvents/evt_1UWFxPAhY3J8iTOwdVrAL2yS",
+      "createTime": "2026-10-30T13:35:04.076Z",
+      "updateTime": "2026-10-30T13:35:04.076Z",
+      "data": {
+        "type": "customer.subscription.updated",
+        "userId": "usr_5cf425a950",
+        "stripeSubscriptionId": "sub_1UWEYZAhY3J8iTOwyPTu8Ihu",
+        "processingVersion": 3,
+        "processedAt": "2026-10-30T13:35:03.768Z"
+      }
+    },
+    {
+      "path": "stripeEvents/evt_1UWFxPAhY3J8iTOwpaTgkpbS",
+      "createTime": "2026-10-30T13:35:06.886Z",
+      "updateTime": "2026-10-30T13:35:06.886Z",
+      "data": {
+        "type": "invoice.paid",
+        "userId": "usr_5cf425a950",
+        "stripeSubscriptionId": "sub_1UWEYZAhY3J8iTOwyPTu8Ihu",
+        "processingVersion": 3,
+        "processedAt": "2026-10-30T13:35:06.543Z"
+      }
+    },
+    {
+      "path": "stripeEvents/evt_1UWG35AhY3J8iTOwoGgnKj5l",
+      "createTime": "2026-10-30T13:40:56.953Z",
+      "updateTime": "2026-10-30T13:40:56.953Z",
+      "data": {
+        "type": "customer.subscription.updated",
+        "userId": "usr_5cf425a950",
+        "stripeSubscriptionId": "sub_1UWEYZAhY3J8iTOwyPTu8Ihu",
+        "processingVersion": 3,
+        "processedAt": "2026-10-30T13:40:56.637Z"
+      }
+    },
+    {
+      "path": "stripeEvents/evt_1UWG4nAhY3J8iTOwTr4HZM3P",
+      "createTime": "2026-10-30T13:42:39.808Z",
+      "updateTime": "2026-10-30T13:42:39.808Z",
+      "data": {
+        "type": "customer.subscription.deleted",
+        "userId": "usr_5cf425a950",
+        "stripeSubscriptionId": "sub_1UWEYZAhY3J8iTOwyPTu8Ihu",
+        "processingVersion": 3,
+        "processedAt": "2026-10-30T13:42:39.494Z"
+      }
+    }
+  ],
+  "related_invoices": [
+    {
+      "path": "invoices/in_1UWEYXAhY3J8iTOwv9LgneAH",
+      "createTime": "2026-10-30T12:05:21.275Z",
+      "updateTime": "2026-10-30T12:05:26.327Z",
+      "data": {
+        "id": "in_1UWEYXAhY3J8iTOwv9LgneAH",
+        "userId": "usr_5cf425a950",
+        "stripeSubscriptionId": "sub_1UWEYZAhY3J8iTOwyPTu8Ihu",
+        "status": "paid",
+        "amount": 1,
+        "currency": "USD",
+        "createdAt": "2026-10-30T12:05:13.000Z",
+        "paidAt": "2026-10-30T12:05:14.000Z"
+      }
+    },
+    {
+      "path": "invoices/in_1UWFEhAhY3J8iTOwtQrgoRBi",
+      "createTime": "2026-10-30T12:48:50.343Z",
+      "updateTime": "2026-10-30T13:21:50.543Z",
+      "data": {
+        "id": "in_1UWFEhAhY3J8iTOwtQrgoRBi",
+        "userId": "usr_5cf425a950",
+        "stripeSubscriptionId": "sub_1UWEYZAhY3J8iTOwyPTu8Ihu",
+        "status": "paid",
+        "amount": 1,
+        "currency": "USD",
+        "createdAt": "2026-11-30T12:05:13.000Z",
+        "paidAt": "2026-11-30T13:05:13.000Z"
+      }
+    },
+    {
+      "path": "invoices/in_1UWFpMAhY3J8iTOwoVZ91gZm",
+      "createTime": "2026-10-30T13:26:44.985Z",
+      "updateTime": "2026-10-30T13:42:39.808Z",
+      "data": {
+        "id": "in_1UWFpMAhY3J8iTOwoVZ91gZm",
+        "userId": "usr_5cf425a950",
+        "stripeSubscriptionId": "sub_1UWEYZAhY3J8iTOwyPTu8Ihu",
+        "status": "paid",
+        "amount": 1,
+        "currency": "USD",
+        "createdAt": "2026-12-30T12:05:13.000Z",
+        "paidAt": "2027-01-03T04:11:18.000Z"
+      }
+    }
+  ],
+  "observations": {
+    "related_receipts": 18,
+    "payment_failed_receipts": 2,
+    "cancel_receipts": 1,
+    "related_paid_invoices": 3,
+    "all_auditLog_documents": 5,
+    "auditLog_matches_for_user_subscription_or_event": [],
+    "snapshot_collection_counts": {
+      "adminUsers": 1,
+      "answers": 152,
+      "auditLog": 5,
+      "benefits": 3,
+      "checkoutAttempts": 16,
+      "checkoutSessions": 21,
+      "comments": 1,
+      "conversations": 1,
+      "corrections": 3,
+      "features": 6,
+      "groupMembers": 6,
+      "groups": 2,
+      "invoices": 24,
+      "medalLedger": 96,
+      "messages": 4,
+      "notifications": 2,
+      "plans": 3,
+      "posts": 2,
+      "practiceSessions": 143,
+      "questions": 1365,
+      "sponsors": 3,
+      "stripeEvents": 105,
+      "subscriptions": 13,
+      "tests": 5,
+      "tutorRequests": 1,
+      "tutorReviews": 2,
+      "tutors": 4,
+      "users": 19
+    }
+  },
+  "limits": [
+    "La exportación se obtuvo entre 19:08:17.640 y 19:08:26.485 UTC del 30-10-2026; no es una instantánea atómica ni un historial de versiones.",
+    "Un recibo por ID confirma persistencia observada y correlación; no prueba ausencia de reintentos, entrega única ni una sola transición histórica.",
+    "No se encontró en los cinco documentos auditLog una referencia al usuario, suscripción o evento de esta prueba. No hay prueba nueva de auditoría durable de la transición de acceso.",
+    "La interfaz estudiante no fue observada antes y después del vencimiento exacto; NPG09 permanece Pendiente de prueba.",
+    "La fecha real del procesamiento es octubre de 2026; el fin del período en enero de 2027 pertenece al reloj de prueba de Stripe.",
+    "Los 13 registros de suscripciones y 24 facturas de esta exportación son un corte posterior al de 11 y 22 observados anteriormente en administración.",
+    "Sin duraciones HTTP individuales nuevas; RNF-15 y NPG11 mantienen sus límites."
+  ],
+  "status": {
+    "tasks_completed": 76,
+    "tasks_not_applicable": 1,
+    "tasks_open": 7,
+    "main_cases_unchanged": {
+      "total": 57,
+      "passed": 32,
+      "partial": 13,
+      "failed": 2,
+      "blocked": 8,
+      "not_executed": 2
+    }
+  },
+  "code_changed": false,
+  "deployment_performed": false
+}

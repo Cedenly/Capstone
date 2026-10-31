@@ -1,0 +1,30 @@
+[
+  {
+    "name": "aprueba-student",
+    "id": "dpl_2wRv94gK5xUgc425Y7EQZn3KeXbD",
+    "state": "READY",
+    "url": "aprueba-student-mulv3ye8p-aprueba-admin3.vercel.app",
+    "nodeVersion": "24.x"
+  },
+  {
+    "name": "aprueba-student-api",
+    "id": "dpl_5eJZCmftDNTSqjZrdneNgDMn4Hbf",
+    "state": "READY",
+    "url": "aprueba-student-8y6somz05-aprueba-admin3.vercel.app",
+    "nodeVersion": "24.x"
+  },
+  {
+    "name": "aprueba-admin",
+    "id": "dpl_8vAoKcdYiCURXHD6epwGhpzvP5oS",
+    "state": "READY",
+    "url": "aprueba-admin-fabkicp8m-aprueba-admin3.vercel.app",
+    "nodeVersion": "24.x"
+  },
+  {
+    "name": "aprueba-admin-api",
+    "id": "dpl_7gFk4xUq7YXU2Hp8uy4799ograpC",
+    "state": "READY",
+    "url": "aprueba-admin-84pxt9zmz-aprueba-admin3.vercel.app",
+    "nodeVersion": "24.x"
+  }
+]

@@ -1,0 +1,19 @@
+{
+  "id": "dpl_5eJZCmftDNTSqjZrdneNgDMn4Hbf",
+  "name": "aprueba-student-api",
+  "url": "aprueba-student-8y6somz05-aprueba-admin3.vercel.app",
+  "readyState": "READY",
+  "target": "production",
+  "alias": [
+    "aprueba-student-api.vercel.app",
+    "aprueba-student-api-aprueba-admin3.vercel.app",
+    "aprueba-student-api-git-main-aprueba-admin3.vercel.app"
+  ],
+  "meta": {
+    "githubCommitRef": "main",
+    "githubCommitSha": "d1ac22791bdf6f276c8dcce3ec02d707daca3735",
+    "githubCommitMessage": "fix: sincronizar estado de recorrecciones del alumno",
+    "githubRepo": "aprueba_student_web",
+    "githubOrg": "Koetigsegg414"
+  }
+}

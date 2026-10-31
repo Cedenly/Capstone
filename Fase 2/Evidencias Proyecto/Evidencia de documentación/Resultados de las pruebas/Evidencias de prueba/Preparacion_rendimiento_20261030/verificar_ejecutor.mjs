@@ -1,0 +1,13 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs/promises';
+import {collect,summarize} from './medir_api.mjs';
+const token='TOKEN_FICTICIO_NO_REAL',marker='DATO_PRIVADO_FICTICIO';let tick=0,calls=0;
+const fetchImpl=async(url,options)=>{calls++;assert.ok(url.startsWith('https://aprueba-student-api.vercel.app/api/v1/'));assert.equal(options.headers.Authorization,'Bearer '+token);tick+=url.endsWith('/quota')?3100:20;return {status:200,json:async()=>({data:url.endsWith('/quota')?{used:0,max:10,unlimited:false}:{plan:'free',email:marker},error:null,meta:{requestId:'req_a12'}})}};
+const groups=await collect({token,fetchImpl,clock:()=>tick,N:30,pause:0});assert.equal(calls,60);assert.equal(groups[0].summary.within_sample_target,true);assert.equal(groups[1].summary.within_sample_target,false);assert.equal(groups[1].summary.p95_http_client_ms,3100);assert.equal(JSON.stringify(groups).includes(token),false);assert.equal(JSON.stringify(groups).includes(marker),false);
+const sample=(duration_ms=1,ok=true)=>({duration_ms,ok});
+assert.equal(summarize([...Array.from({length:29},()=>sample()),sample(3000)]).within_sample_target,true);
+assert.equal(summarize([...Array.from({length:28},()=>sample()),sample(3000),sample(3001)]).within_sample_target,false);
+assert.equal(summarize(Array.from({length:29},()=>sample())).within_sample_target,false);
+const failed=await collect({token,fetchImpl:async()=>({status:401,json:async()=>({data:null,error:{code:'AUTH_REQUIRED'}})}),clock:()=>0,N:30,pause:0});assert.equal(failed.length,1);assert.equal(failed[0].stopReason,'HTTP_401');assert.equal(failed[0].summary.within_sample_target,false);assert.equal(failed[0].summary.expected,30);assert.equal(failed[0].summary.observed,1);
+const malformed=await collect({token,fetchImpl:async()=>({status:200,json:async()=>{throw new Error(marker)}}),clock:()=>0,N:30,pause:0});assert.equal(malformed[0].summary.within_sample_target,false);assert.equal(JSON.stringify(malformed).includes(marker),false);
+await fs.writeFile(new URL('./Verificacion_ejecutor_local.json',import.meta.url),JSON.stringify({executedAt:new Date().toISOString(),scope:'Dobles locales, sin conexión HTTP ni credenciales reales.',checks:['60 respuestas ficticias clasificadas por operación','p95 y umbral estricto menor a 3000 ms','95% de 30 requiere 29 muestras correctas','29 muestras totales no bastan','401 detiene la tanda conservando N esperado','JSON inválido no se aprueba','salida no contiene token ni datos privados del cuerpo'],result:'7/7 comprobaciones correctas',remote_performance_proven:false},null,2));console.log('7/7 comprobaciones locales del ejecutor; no es medición del despliegue.');

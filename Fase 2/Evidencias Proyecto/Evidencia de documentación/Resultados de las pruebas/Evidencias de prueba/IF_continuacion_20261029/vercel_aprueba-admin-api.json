@@ -1,0 +1,19 @@
+{
+  "id": "dpl_7gFk4xUq7YXU2Hp8uy4799ograpC",
+  "name": "aprueba-admin-api",
+  "url": "aprueba-admin-84pxt9zmz-aprueba-admin3.vercel.app",
+  "readyState": "READY",
+  "target": "production",
+  "alias": [
+    "aprueba-admin-api.vercel.app",
+    "aprueba-admin-api-aprueba-admin3.vercel.app",
+    "aprueba-admin-api-git-main-aprueba-admin3.vercel.app"
+  ],
+  "meta": {
+    "githubCommitRef": "main",
+    "githubCommitSha": "31fb7f2866317b555e65b91c37256cff4e129ef3",
+    "githubCommitMessage": "fix: resolver recorrecciones y otorgar medallas una sola vez",
+    "githubRepo": "aprueba-admin",
+    "githubOrg": "Koetigsegg414"
+  }
+}

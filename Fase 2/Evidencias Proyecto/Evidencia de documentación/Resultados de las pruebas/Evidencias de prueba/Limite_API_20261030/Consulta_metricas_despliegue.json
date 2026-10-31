@@ -1,0 +1,8 @@
+{
+  "operation": "Consulta de observabilidad de duración de funciones",
+  "project": "aprueba-student-api",
+  "metric": "vercel.function_invocation.function_duration_ms",
+  "result": "La consulta devolvió HTTP 400 bad_request y no entregó muestras.",
+  "interpretation": "No es una medición de la aplicación ni demuestra ausencia de datos o un fallo de rendimiento. No se utilizó para aprobar o rechazar PG18/19.",
+  "scope": "Solo lectura; no se cambió configuración."
+}

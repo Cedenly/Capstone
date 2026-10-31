@@ -1,0 +1,177 @@
+{
+  "items": [
+    {
+      "id": "REN_EV01",
+      "file": "REN_01_inicio_gratis.jpg",
+      "record": "PREP-REN-20261030",
+      "observed": "Estado inicial Gratis, 0/10 y nombre Prueba Fase2 Renovación.",
+      "source": "Captura directa del navegador remoto",
+      "time": "2026-10-30T08:32:41-03:00",
+      "sha256": "b57e07d4f17a2994d98c014d08db2221d5df184d0a820942feaf15753cac4af4"
+    },
+    {
+      "id": "REN_EV02",
+      "file": "REN_02_oferta_ciencias_mensual.jpg",
+      "record": "PREP-REN-20261030",
+      "observed": "Oferta Ciencias mensual USD1 en modo de prueba.",
+      "source": "Captura directa del navegador remoto",
+      "time": "2026-10-30T08:34:09-03:00",
+      "sha256": "79679d041eb9e7775bf1bb88a49e709baff80e92848874d66ddda22a8c5fa9a5"
+    },
+    {
+      "id": "REN_EV03",
+      "file": "REN_03_checkout_test_inicial.jpg",
+      "record": "PREP-REN-20261030",
+      "observed": "Checkout test inicial para renov@renov.com por USD1/mes.",
+      "source": "Captura directa del navegador remoto",
+      "time": "2026-10-30T08:36:45-03:00",
+      "sha256": "b56ed657209efe8db261845a540c965903c4147ff5b126b268bfc1945c6a82bf"
+    },
+    {
+      "id": "REN_EV04",
+      "file": "REN_04_checkout_preparado_pendiente_autorizacion.jpg",
+      "record": "PREP-REN-20261030",
+      "observed": "Formulario preparado con tarjeta oficial de prueba 4242 y Chile, antes de autorización explícita.",
+      "source": "Captura directa del navegador remoto",
+      "time": "2026-10-30T08:41:10-03:00",
+      "sha256": "a8f51eca4d6fbaa5672a89a0ea3d9c3aa31cd559a523ac6ed260d64ef4cf4614"
+    },
+    {
+      "id": "REN_EV05",
+      "file": "REN_05_pago_confirmado_ciencias_mensual.jpg",
+      "record": "PREP-REN-20261030",
+      "observed": "Tras autorización, Pago confirmado, Ciencias mensual activa y fin 30-11-2026.",
+      "source": "Captura directa del navegador remoto",
+      "time": "2026-10-30T09:07:17-03:00",
+      "sha256": "614afe1c24a27f1b500d84cba265e46d9bc5442a23818ada9b06187d40dab621"
+    },
+    {
+      "id": "REN_EV06",
+      "file": "REN_06_inicio_con_suscripcion.jpg",
+      "record": "PREP-REN-20261030",
+      "observed": "Inicio posterior: Ilimitada en Ciencias, cuota compartida de otras materias en 0.",
+      "source": "Captura directa del navegador remoto",
+      "time": "2026-10-30T09:09:10-03:00",
+      "sha256": "34fd9b4eecb2c0476ebcca0e71189b300df7401d4e05c8982623266f2919e0e0"
+    },
+    {
+      "id": "CFG_EV01",
+      "file": "CFG_01_avisos_automaticos.png",
+      "record": "CONF-STRIPE-20261030",
+      "observed": "Avisos de renovación, tarjeta próxima a vencer y fallo de tarjeta desactivados.",
+      "source": "Captura aportada por Sebastián el 30-10-2026. Nombre original image(20261030-110949).png",
+      "time": "Fecha de recepción 30-10-2026; hora de captura no verificada independientemente.",
+      "sha256": "47dda6850b8e52ee01d55e6729beefe78a9cc70ec350d41fc01a31e4ce01d8e9"
+    },
+    {
+      "id": "CFG_EV02",
+      "file": "CFG_02_evento_y_confirmacion.png",
+      "record": "CONF-STRIPE-20261030",
+      "observed": "Evento próximo a renovación 7 días antes. Pagos que requieren confirmación: cancelar suscripción si sigue pendiente 15 días.",
+      "source": "Captura aportada por Sebastián el 30-10-2026. Nombre original image(20261030-110956).png",
+      "time": "Fecha de recepción 30-10-2026; hora de captura no verificada independientemente.",
+      "sha256": "6c19d4e645b84d56fb0b17ee2b37bd0b4e05643baa29cf013c69bfa49f322b58"
+    },
+    {
+      "id": "CFG_EV03",
+      "file": "CFG_03_politica_pago_fallido.png",
+      "record": "CONF-STRIPE-20261030",
+      "observed": "Primer fallo de renovación: dejar suscripción vencida. Agotados los reintentos: cancelar suscripción y dejar factura vencida.",
+      "source": "Captura aportada por Sebastián el 30-10-2026. Nombre original image(20261030-111004).png",
+      "time": "Fecha de recepción 30-10-2026; hora de captura no verificada independientemente.",
+      "sha256": "ee1fadd027ceed37dd31b6d76fcf3c8628c984a87f3f5715c0164d14200e6b78"
+    },
+    {
+      "id": "CFG_EV04",
+      "file": "CFG_04_disputas_y_prorrateo.png",
+      "record": "CONF-STRIPE-20261030",
+      "observed": "Configuración de disputas y prorrateo conservada como contexto. No se ejecutaron esos flujos.",
+      "source": "Captura aportada por Sebastián el 30-10-2026. Nombre original image(20261030-111009).png",
+      "time": "Fecha de recepción 30-10-2026; hora de captura no verificada independientemente.",
+      "sha256": "8dae270ee6473a95142cf26f885e60f06a8f78a1f06ca772bcec7f18762cf9f4"
+    },
+    {
+      "id": "CFG_EV05",
+      "file": "CFG_05_facturas_manuales.png",
+      "record": "CONF-STRIPE-20261030",
+      "observed": "Para facturas de pago manual, envío de facturas finalizadas y notas de crédito activado. Recordatorios de impago desactivados. Alcance distinto al cobro automático probado.",
+      "source": "Captura aportada por Sebastián el 30-10-2026. Nombre original image(20261030-111014).png",
+      "time": "Fecha de recepción 30-10-2026; hora de captura no verificada independientemente.",
+      "sha256": "0451eb1565a4392667e5707ca7c81419286bd4d1cc38aa3af43138ea85b84bc8"
+    },
+    {
+      "id": "CFG_EV06",
+      "file": "CFG_06_modo_facturacion.png",
+      "record": "CONF-STRIPE-20261030",
+      "observed": "Modo predeterminado Dashboard Flexible y clásico oculto. Modo API sujeto a integración y versión. No acredita modo de cada suscripción por sí solo.",
+      "source": "Captura aportada por Sebastián el 30-10-2026. Nombre original image(20261030-111018).png",
+      "time": "Fecha de recepción 30-10-2026; hora de captura no verificada independientemente.",
+      "sha256": "654b89129f71434f77a3172b71437f97cc395cf0eeac76d5635fcef05e72056c"
+    },
+    {
+      "id": "CFG_EV07",
+      "file": "CFG_07_smart_retries.png",
+      "record": "CONF-STRIPE-20261030",
+      "observed": "Smart Retries activado: hasta 8 reintentos dentro de 2 semanas. Es una configuración observada, sin ejecución de sus reintentos.",
+      "source": "Captura aportada por Sebastián el 30-10-2026. Nombre original image(20261030-111222).png",
+      "time": "Fecha de recepción 30-10-2026; hora de captura no verificada independientemente.",
+      "sha256": "72d3caf16cea80a04133a4508540398bca1aa4562002124ae02bdfa2fa98919e"
+    }
+  ],
+  "api": {
+    "collected_at": "2026-10-30T12:22:35.724Z",
+    "account": "acct_1UMr3HAhY3J8iTOw",
+    "livemode": false,
+    "email": "renov@renov.com",
+    "customer": "cus_VXJAOZAucUHSrB",
+    "user_id": "usr_5cf425a950",
+    "subscription": {
+      "id": "sub_1UWEYZAhY3J8iTOwyPTu8Ihu",
+      "status": "active",
+      "metadata": {
+        "attemptId": "28c909e1-9fff-488f-a13c-7dd8eef67b90",
+        "billingCycle": "monthly",
+        "integration": "aprueba_mvp",
+        "plan": "uni",
+        "testId": "cien",
+        "userId": "usr_5cf425a950"
+      },
+      "latest_invoice": "in_1UWEYXAhY3J8iTOwv9LgneAH",
+      "test_clock": null,
+      "items": [
+        {
+          "price": "price_1UMtdgAhY3J8iTOwCaU4YkPk",
+          "amount": 100,
+          "currency": "usd",
+          "interval": "month",
+          "current_period_start": 1793361913,
+          "current_period_end": 1796040313
+        }
+      ]
+    },
+    "invoice": {
+      "id": "in_1UWEYXAhY3J8iTOwv9LgneAH",
+      "number": "GAVVFJEE-0001",
+      "status": "paid",
+      "livemode": false,
+      "amount_paid": 100,
+      "amount_remaining": 0,
+      "currency": "usd",
+      "billing_reason": "subscription_create",
+      "created": 1793361913
+    },
+    "clock_attempt": {
+      "status": "No se confirmó creación. Dos respuestas de autenticación solicitada y aceptada con instrucción de repetir; no se hizo tercer intento.",
+      "subscription_test_clock_after_attempts": null,
+      "requested_params": {
+        "customer": "cus_VXJAOZAucUHSrB",
+        "frozen_time": 1793363968,
+        "name": "Fase2 Renovacion - renov@renov.com"
+      }
+    },
+    "test_status": "Preparación completada con compra inicial. PG10/11/12 siguen No ejecutado; no hubo ciclo de renovación ni vencimiento."
+  },
+  "counts": "57 casos: 32 aprobados, 9 parciales, 2 fallidos, 8 bloqueados y 6 no ejecutados. IF15-O05 complementario fuera del denominador. 12 tareas abiertas.",
+  "policy": "Smart Retries hasta 8 reintentos en 2 semanas; al primer fallo de renovación, dejar suscripción vencida; al agotar reintentos, cancelar suscripción y dejar factura vencida. Correos automáticos de renovación y fallo de tarjeta desactivados.",
+  "limits": "La configuración y la compra inicial preparan los casos PG10/11/12, pero no ejecutan un ciclo de renovación ni vencimiento. Los 15 días de pagos por confirmar y 60 días de facturas manuales no acreditan gracia de acceso. El backend usa Date.now; un reloj de Stripe aislado no acredita el vencimiento en Aprueba."
+}

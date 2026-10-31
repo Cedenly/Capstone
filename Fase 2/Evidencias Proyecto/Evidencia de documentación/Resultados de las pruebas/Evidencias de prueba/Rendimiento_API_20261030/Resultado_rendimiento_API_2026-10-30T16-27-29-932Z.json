@@ -1,0 +1,467 @@
+{
+  "kind": "Muestra HTTP cliente del despliegue",
+  "executedAt": "2026-10-30T16:26:08.337Z",
+  "finishedAt": "2026-10-30T16:27:29.932Z",
+  "origin": "https://aprueba-student-api.vercel.app/api/v1",
+  "preparedOnly": false,
+  "N_per_operation": 30,
+  "concurrency": 1,
+  "interval_ms": 200,
+  "timing": "performance.now desde fetch hasta JSON recibido, incluye red y lectura de respuesta; login excluido. No es tiempo interno del servidor.",
+  "credential_policy": "No se guardan correo, contraseña, tokens, cuerpo de perfil ni datos de pago.",
+  "groups": [
+    {
+      "operation": "GET /me",
+      "stopReason": null,
+      "samples": [
+        {
+          "index": 1,
+          "status": 200,
+          "duration_ms": 2335.1927000000014,
+          "ok": true,
+          "requestId": "req_975a5e2a-554"
+        },
+        {
+          "index": 2,
+          "status": 200,
+          "duration_ms": 1070.4179000000004,
+          "ok": true,
+          "requestId": "req_e5e28167-4db"
+        },
+        {
+          "index": 3,
+          "status": 200,
+          "duration_ms": 1059.7288000000008,
+          "ok": true,
+          "requestId": "req_887281c6-3f1"
+        },
+        {
+          "index": 4,
+          "status": 200,
+          "duration_ms": 1179.4825999999975,
+          "ok": true,
+          "requestId": "req_beed5bad-fe2"
+        },
+        {
+          "index": 5,
+          "status": 200,
+          "duration_ms": 1399.3696999999993,
+          "ok": true,
+          "requestId": "req_0fb906a7-ce9"
+        },
+        {
+          "index": 6,
+          "status": 200,
+          "duration_ms": 1428.6689000000006,
+          "ok": true,
+          "requestId": "req_fa8a9c0a-a31"
+        },
+        {
+          "index": 7,
+          "status": 200,
+          "duration_ms": 1265.9894999999997,
+          "ok": true,
+          "requestId": "req_d6993e12-91e"
+        },
+        {
+          "index": 8,
+          "status": 200,
+          "duration_ms": 1389.4847999999984,
+          "ok": true,
+          "requestId": "req_4e8c1bc2-fec"
+        },
+        {
+          "index": 9,
+          "status": 200,
+          "duration_ms": 1076.802599999999,
+          "ok": true,
+          "requestId": "req_85d31f98-684"
+        },
+        {
+          "index": 10,
+          "status": 200,
+          "duration_ms": 1076.703800000003,
+          "ok": true,
+          "requestId": "req_2beafacd-cf8"
+        },
+        {
+          "index": 11,
+          "status": 200,
+          "duration_ms": 1069.0862000000016,
+          "ok": true,
+          "requestId": "req_3972e9c1-a93"
+        },
+        {
+          "index": 12,
+          "status": 200,
+          "duration_ms": 1076.6715000000004,
+          "ok": true,
+          "requestId": "req_ebe1698b-ae9"
+        },
+        {
+          "index": 13,
+          "status": 200,
+          "duration_ms": 1011.7746000000006,
+          "ok": true,
+          "requestId": "req_89dde88f-518"
+        },
+        {
+          "index": 14,
+          "status": 200,
+          "duration_ms": 948.3532999999989,
+          "ok": true,
+          "requestId": "req_cb13beb0-0a8"
+        },
+        {
+          "index": 15,
+          "status": 200,
+          "duration_ms": 977.2423000000017,
+          "ok": true,
+          "requestId": "req_8c161d38-307"
+        },
+        {
+          "index": 16,
+          "status": 200,
+          "duration_ms": 1030.2497000000003,
+          "ok": true,
+          "requestId": "req_2b1d44b1-338"
+        },
+        {
+          "index": 17,
+          "status": 200,
+          "duration_ms": 939.7019999999975,
+          "ok": true,
+          "requestId": "req_8b0757dd-fec"
+        },
+        {
+          "index": 18,
+          "status": 200,
+          "duration_ms": 1104.5339999999997,
+          "ok": true,
+          "requestId": "req_d46e8988-305"
+        },
+        {
+          "index": 19,
+          "status": 200,
+          "duration_ms": 935.5627000000022,
+          "ok": true,
+          "requestId": "req_af50a636-c37"
+        },
+        {
+          "index": 20,
+          "status": 200,
+          "duration_ms": 998.3565000000017,
+          "ok": true,
+          "requestId": "req_cba0a21f-c09"
+        },
+        {
+          "index": 21,
+          "status": 200,
+          "duration_ms": 1073.6094000000012,
+          "ok": true,
+          "requestId": "req_913fa753-ab0"
+        },
+        {
+          "index": 22,
+          "status": 200,
+          "duration_ms": 1071.4801999999981,
+          "ok": true,
+          "requestId": "req_da5e4475-57a"
+        },
+        {
+          "index": 23,
+          "status": 200,
+          "duration_ms": 974.2242000000042,
+          "ok": true,
+          "requestId": "req_24cd02c0-5ae"
+        },
+        {
+          "index": 24,
+          "status": 200,
+          "duration_ms": 804.8056999999972,
+          "ok": true,
+          "requestId": "req_7b008cae-7ba"
+        },
+        {
+          "index": 25,
+          "status": 200,
+          "duration_ms": 1252.1501999999964,
+          "ok": true,
+          "requestId": "req_3c96de66-891"
+        },
+        {
+          "index": 26,
+          "status": 200,
+          "duration_ms": 964.7929000000004,
+          "ok": true,
+          "requestId": "req_b853d67e-4f9"
+        },
+        {
+          "index": 27,
+          "status": 200,
+          "duration_ms": 1032.3910000000033,
+          "ok": true,
+          "requestId": "req_9c1562fa-5ae"
+        },
+        {
+          "index": 28,
+          "status": 200,
+          "duration_ms": 987.3640999999989,
+          "ok": true,
+          "requestId": "req_88862044-a33"
+        },
+        {
+          "index": 29,
+          "status": 200,
+          "duration_ms": 894.6431999999986,
+          "ok": true,
+          "requestId": "req_11d3f7e8-170"
+        },
+        {
+          "index": 30,
+          "status": 200,
+          "duration_ms": 1022.3257999999987,
+          "ok": true,
+          "requestId": "req_1f774033-8c7"
+        }
+      ],
+      "summary": {
+        "expected": 30,
+        "observed": 30,
+        "completed": true,
+        "threshold_ms": 3000,
+        "under_threshold_and_correct": 30,
+        "required": 29,
+        "p95_http_client_ms": 1428.6689000000006,
+        "within_sample_target": true
+      }
+    },
+    {
+      "operation": "GET /me/quota",
+      "stopReason": null,
+      "samples": [
+        {
+          "index": 1,
+          "status": 200,
+          "duration_ms": 1495.938000000002,
+          "ok": true,
+          "requestId": "req_e08f65eb-df2"
+        },
+        {
+          "index": 2,
+          "status": 200,
+          "duration_ms": 868.1376000000018,
+          "ok": true,
+          "requestId": "req_b3806518-357"
+        },
+        {
+          "index": 3,
+          "status": 200,
+          "duration_ms": 832.0769,
+          "ok": true,
+          "requestId": "req_8360a85b-9b6"
+        },
+        {
+          "index": 4,
+          "status": 200,
+          "duration_ms": 962.1875,
+          "ok": true,
+          "requestId": "req_dc223ccd-2ba"
+        },
+        {
+          "index": 5,
+          "status": 200,
+          "duration_ms": 971.4279000000024,
+          "ok": true,
+          "requestId": "req_e173adfb-1c1"
+        },
+        {
+          "index": 6,
+          "status": 200,
+          "duration_ms": 1488.4429999999993,
+          "ok": true,
+          "requestId": "req_8b58e659-5c5"
+        },
+        {
+          "index": 7,
+          "status": 200,
+          "duration_ms": 1525.649599999997,
+          "ok": true,
+          "requestId": "req_dff6fca2-4de"
+        },
+        {
+          "index": 8,
+          "status": 200,
+          "duration_ms": 1626.0483000000022,
+          "ok": true,
+          "requestId": "req_429e3dc7-aec"
+        },
+        {
+          "index": 9,
+          "status": 200,
+          "duration_ms": 1036.880999999994,
+          "ok": true,
+          "requestId": "req_d74d4511-23b"
+        },
+        {
+          "index": 10,
+          "status": 200,
+          "duration_ms": 884.6009000000049,
+          "ok": true,
+          "requestId": "req_00a8c93d-b9d"
+        },
+        {
+          "index": 11,
+          "status": 200,
+          "duration_ms": 1794.8692000000083,
+          "ok": true,
+          "requestId": "req_a3cce14a-b43"
+        },
+        {
+          "index": 12,
+          "status": 200,
+          "duration_ms": 968.0111999999936,
+          "ok": true,
+          "requestId": "req_492e951d-012"
+        },
+        {
+          "index": 13,
+          "status": 200,
+          "duration_ms": 1236.3478999999934,
+          "ok": true,
+          "requestId": "req_bd23712a-829"
+        },
+        {
+          "index": 14,
+          "status": 200,
+          "duration_ms": 1392.7474999999977,
+          "ok": true,
+          "requestId": "req_eb20edc0-e71"
+        },
+        {
+          "index": 15,
+          "status": 200,
+          "duration_ms": 881.3834999999963,
+          "ok": true,
+          "requestId": "req_93db8379-add"
+        },
+        {
+          "index": 16,
+          "status": 200,
+          "duration_ms": 1101.299199999994,
+          "ok": true,
+          "requestId": "req_9a2a3807-44d"
+        },
+        {
+          "index": 17,
+          "status": 200,
+          "duration_ms": 1495.6517000000022,
+          "ok": true,
+          "requestId": "req_6b611b75-ac2"
+        },
+        {
+          "index": 18,
+          "status": 200,
+          "duration_ms": 999.8008999999875,
+          "ok": true,
+          "requestId": "req_500e3528-18b"
+        },
+        {
+          "index": 19,
+          "status": 200,
+          "duration_ms": 1126.613000000012,
+          "ok": true,
+          "requestId": "req_6af5c309-fc6"
+        },
+        {
+          "index": 20,
+          "status": 200,
+          "duration_ms": 1031.2897000000085,
+          "ok": true,
+          "requestId": "req_ab888d18-7e8"
+        },
+        {
+          "index": 21,
+          "status": 200,
+          "duration_ms": 1201.1861999999965,
+          "ok": true,
+          "requestId": "req_cc7f56c6-796"
+        },
+        {
+          "index": 22,
+          "status": 200,
+          "duration_ms": 1407.602700000003,
+          "ok": true,
+          "requestId": "req_6c32c8c2-190"
+        },
+        {
+          "index": 23,
+          "status": 200,
+          "duration_ms": 1034.0980999999883,
+          "ok": true,
+          "requestId": "req_d7a1bd01-b79"
+        },
+        {
+          "index": 24,
+          "status": 200,
+          "duration_ms": 1334.9043000000092,
+          "ok": true,
+          "requestId": "req_5a51e0de-fe2"
+        },
+        {
+          "index": 25,
+          "status": 200,
+          "duration_ms": 1146.1986000000034,
+          "ok": true,
+          "requestId": "req_75712157-b58"
+        },
+        {
+          "index": 26,
+          "status": 200,
+          "duration_ms": 919.1665999999968,
+          "ok": true,
+          "requestId": "req_fa478a13-fde"
+        },
+        {
+          "index": 27,
+          "status": 200,
+          "duration_ms": 1089.4030000000057,
+          "ok": true,
+          "requestId": "req_02dd90e6-2d1"
+        },
+        {
+          "index": 28,
+          "status": 200,
+          "duration_ms": 1332.8824000000022,
+          "ok": true,
+          "requestId": "req_dd429c12-722"
+        },
+        {
+          "index": 29,
+          "status": 200,
+          "duration_ms": 1284.2612999999983,
+          "ok": true,
+          "requestId": "req_7b9e210b-101"
+        },
+        {
+          "index": 30,
+          "status": 200,
+          "duration_ms": 1223.875,
+          "ok": true,
+          "requestId": "req_25a96790-239"
+        }
+      ],
+      "summary": {
+        "expected": 30,
+        "observed": 30,
+        "completed": true,
+        "threshold_ms": 3000,
+        "under_threshold_and_correct": 30,
+        "required": 29,
+        "p95_http_client_ms": 1626.0483000000022,
+        "within_sample_target": true
+      }
+    }
+  ],
+  "limits": "No mide latencia interna aislada, interfaz, Stripe ni webhook PG19. Una muestra correcta no acredita otras operaciones ni todos los RNF. Si se corta por error, se conserva N esperado y no se aprueba la muestra incompleta."
+}

@@ -1,0 +1,29 @@
+{
+  "case": "PG-02",
+  "status": "Preparada; pago final no ejecutado por bloqueo de revisión automática",
+  "account": "Prueba Fase2 B",
+  "email": "correo3@correo3.com",
+  "checkoutSessionId": "cs_test_a1Sb4HHUhroDNkhOvy2AdWvsXmfGwjydGdyEoMo2S6dGGPcRZfSOrkQmrx",
+  "observed": [
+    "Inicio de sesión verificado",
+    "Plan Gratis, cuota 0/10",
+    "Oferta Todas mensual USD 5",
+    "Checkout muestra Entorno de prueba",
+    "Tarjeta sintética 4242, Link desactivado"
+  ],
+  "pending": [
+    "Confirmación personal del pago de prueba",
+    "Verificar retorno, factura, período y beneficio",
+    "Comparar datos posteriores"
+  ],
+  "otherAccounts": {
+    "C": "correoC@correoC.com",
+    "D": "correoD@correoD.com",
+    "E": "correoE@correoE.com"
+  },
+  "timestampsUTC": [
+    "2026-10-29T17:32:50.049Z",
+    "2026-10-29T17:32:58.092Z",
+    "2026-10-29T17:34:17.065Z"
+  ]
+}

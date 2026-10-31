@@ -1,0 +1,71 @@
+{
+  "reviewedAt": "2026-10-30T16:35:23.198971+00:00",
+  "source": {
+    "name": "Resultado_rendimiento_API_2026-10-30T16-27-29-932Z.json",
+    "library_file_id": "libfile_47d480bf9bb8819188e305e07424c2a6",
+    "sha256": "db0e73ef3d1f9b94c6d19ecc76684b42e4a967ad4580c4a66e3b6eb3da339011",
+    "executedAtUTC": "2026-10-30T16:26:08.337Z",
+    "finishedAtUTC": "2026-10-30T16:27:29.932Z",
+    "executedAtChile": "2026-10-30T13:26:08.337000-03:00",
+    "finishedAtChile": "2026-10-30T13:27:29.932000-03:00"
+  },
+  "recalculated": [
+    {
+      "operation": "GET /me",
+      "N": 30,
+      "valid_HTTP200": 30,
+      "valid_under_3000_ms": 30,
+      "required": 29,
+      "percent_valid_under_threshold": 100.0,
+      "p95_ms": 1428.6689000000006,
+      "min_ms": 804.8056999999972,
+      "max_ms": 2335.1927000000014,
+      "mean_ms": 1115.0386933333332
+    },
+    {
+      "operation": "GET /me/quota",
+      "N": 30,
+      "valid_HTTP200": 30,
+      "valid_under_3000_ms": 30,
+      "required": 29,
+      "percent_valid_under_threshold": 100.0,
+      "p95_ms": 1626.0483000000022,
+      "min_ms": 832.0769,
+      "max_ms": 1794.8692000000083,
+      "mean_ms": 1189.76609
+    }
+  ],
+  "checks": {
+    "sample_indices_contiguous": true,
+    "request_ids_unique": 60,
+    "summary_agrees_with_raw_samples": true,
+    "reported_elapsed_seconds": 81.595,
+    "sum_sample_duration_seconds": 69.14414350000001,
+    "reported_time_covers_sample_duration": true
+  },
+  "case": "PG-18",
+  "state": "Parcial",
+  "reason": "Muestra HTTP cliente del despliegue correcta en dos consultas. Incluye red y lectura JSON; no separa latencia propia del servidor. El caso exige ese desglose: no se declara aprobación integral RNF-07. No mide creación de sesión ni webhook PG19.",
+  "task": "NPG11 En curso; ocho tareas abiertas conservadas.",
+  "counts": {
+    "main": 57,
+    "approved": 32,
+    "partial": 13,
+    "failed": 2,
+    "blocked": 8,
+    "not_executed": 2,
+    "payments": {
+      "approved": 14,
+      "partial": 9,
+      "not_executed": 2
+    }
+  },
+  "conditions": {
+    "N_per_operation": 30,
+    "concurrency": 1,
+    "interval_ms": 200,
+    "identity": "Identidad y correo no conservados; no atribuir la muestra a una cuenta específica.",
+    "platform": "Node, sistema, equipo y red no registrados en el JSON.",
+    "version": "Alias comprobado después del ensayo: ver Version_despliegue.json; no es un pin de versión por petición."
+  }
+}

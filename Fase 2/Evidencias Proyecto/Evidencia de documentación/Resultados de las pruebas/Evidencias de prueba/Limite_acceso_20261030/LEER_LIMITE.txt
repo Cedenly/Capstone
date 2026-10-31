@@ -1,0 +1,4 @@
+LÍMITE DE ACCESO — ENSAYO LOCAL DEL 30-10-2026
+16 comprobaciones de la función original effectivePlan, revisión d1ac227. Para uni y all con acceso confirmado, el plan se conserva antes del fin pagado y pasa a free al llegar al límite. past_due conserva únicamente el período confirmado y vigente. Se probaron acceso no confirmado, canceled, unpaid y fecha inválida.
+Se usaron estados ficticios y tiempo explícito. El ensayo no acredita la interfaz publicada, sincronización ni transición durable única. PG10–PG12 mantienen cobertura parcial. Las 16 comprobaciones tienen denominador propio.
+Fuente original: backend/src/lib/entitlements.js; huella en Resultado_limite_acceso.json. Reproducción local: node reproducir.mjs. No se alteró el backend del proyecto.

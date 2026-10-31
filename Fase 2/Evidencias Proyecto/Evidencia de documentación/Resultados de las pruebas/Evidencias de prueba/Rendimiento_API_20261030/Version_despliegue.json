@@ -1,0 +1,17 @@
+{
+  "verifiedAt": "2026-10-30T16:31:21.572Z",
+  "queriedAlias": "aprueba-student-api.vercel.app",
+  "deploymentId": "dpl_5eJZCmftDNTSqjZrdneNgDMn4Hbf",
+  "projectId": "prj_kJhUrKJGspA49OKTZzN3mu0F2lH6",
+  "state": "READY",
+  "commit": "d1ac22791bdf6f276c8dcce3ec02d707daca3735",
+  "aliases": [
+    "aprueba-student-api.vercel.app",
+    "aprueba-student-api-aprueba-admin3.vercel.app",
+    "aprueba-student-api-git-main-aprueba-admin3.vercel.app"
+  ],
+  "regions": [
+    "iad1"
+  ],
+  "limit": "Consulta posterior al ensayo; el JSON de medición no incluye versión Node, sistema, conexión ni identificador de deployment por petición."
+}

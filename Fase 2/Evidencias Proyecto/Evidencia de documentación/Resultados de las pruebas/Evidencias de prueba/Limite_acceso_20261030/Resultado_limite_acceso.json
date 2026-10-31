@@ -1,0 +1,237 @@
+{
+  "executed_at_utc": "2026-10-30T15:05:21.726Z",
+  "source": {
+    "commit": "d1ac22791bdf6f276c8dcce3ec02d707daca3735",
+    "file": "backend/src/lib/entitlements.js",
+    "sha256": "602d1dfaa5bf1b5bcb0c30109863afbd5dc8ef2ef9ee94ec8640492554227b7f",
+    "original_bytes_unchanged": true
+  },
+  "scope": "Ejecución local de la función original effectivePlan con estados ficticios identificados y now explícito. Sin modificar código del proyecto ni despliegue. No son datos ni cambios de cuentas reales.",
+  "requirement": "Conservar beneficio confirmado antes del fin pagado y devolver free desde el instante exacto del fin. No añadir gracia.",
+  "total": 16,
+  "passed": 16,
+  "results": [
+    {
+      "id": "LIM-uni-active-antes",
+      "user": {
+        "plan": "uni",
+        "billingProvider": "stripe",
+        "planSource": "subscription",
+        "billingStatus": "active",
+        "billingAccessActive": true,
+        "billingPeriodEnd": "2026-11-30T12:05:13.000Z"
+      },
+      "now": 1796040312999,
+      "expected": "uni",
+      "observed": "uni"
+    },
+    {
+      "id": "LIM-uni-active-limite",
+      "user": {
+        "plan": "uni",
+        "billingProvider": "stripe",
+        "planSource": "subscription",
+        "billingStatus": "active",
+        "billingAccessActive": true,
+        "billingPeriodEnd": "2026-11-30T12:05:13.000Z"
+      },
+      "now": 1796040313000,
+      "expected": "free",
+      "observed": "free"
+    },
+    {
+      "id": "LIM-uni-active-despues",
+      "user": {
+        "plan": "uni",
+        "billingProvider": "stripe",
+        "planSource": "subscription",
+        "billingStatus": "active",
+        "billingAccessActive": true,
+        "billingPeriodEnd": "2026-11-30T12:05:13.000Z"
+      },
+      "now": 1796040313001,
+      "expected": "free",
+      "observed": "free"
+    },
+    {
+      "id": "LIM-uni-past_due-antes",
+      "user": {
+        "plan": "uni",
+        "billingProvider": "stripe",
+        "planSource": "subscription",
+        "billingStatus": "past_due",
+        "billingAccessActive": true,
+        "billingPeriodEnd": "2026-11-30T12:05:13.000Z"
+      },
+      "now": 1796040312999,
+      "expected": "uni",
+      "observed": "uni"
+    },
+    {
+      "id": "LIM-uni-past_due-limite",
+      "user": {
+        "plan": "uni",
+        "billingProvider": "stripe",
+        "planSource": "subscription",
+        "billingStatus": "past_due",
+        "billingAccessActive": true,
+        "billingPeriodEnd": "2026-11-30T12:05:13.000Z"
+      },
+      "now": 1796040313000,
+      "expected": "free",
+      "observed": "free"
+    },
+    {
+      "id": "LIM-uni-past_due-despues",
+      "user": {
+        "plan": "uni",
+        "billingProvider": "stripe",
+        "planSource": "subscription",
+        "billingStatus": "past_due",
+        "billingAccessActive": true,
+        "billingPeriodEnd": "2026-11-30T12:05:13.000Z"
+      },
+      "now": 1796040313001,
+      "expected": "free",
+      "observed": "free"
+    },
+    {
+      "id": "LIM-all-active-antes",
+      "user": {
+        "plan": "all",
+        "billingProvider": "stripe",
+        "planSource": "subscription",
+        "billingStatus": "active",
+        "billingAccessActive": true,
+        "billingPeriodEnd": "2026-11-30T12:05:13.000Z"
+      },
+      "now": 1796040312999,
+      "expected": "all",
+      "observed": "all"
+    },
+    {
+      "id": "LIM-all-active-limite",
+      "user": {
+        "plan": "all",
+        "billingProvider": "stripe",
+        "planSource": "subscription",
+        "billingStatus": "active",
+        "billingAccessActive": true,
+        "billingPeriodEnd": "2026-11-30T12:05:13.000Z"
+      },
+      "now": 1796040313000,
+      "expected": "free",
+      "observed": "free"
+    },
+    {
+      "id": "LIM-all-active-despues",
+      "user": {
+        "plan": "all",
+        "billingProvider": "stripe",
+        "planSource": "subscription",
+        "billingStatus": "active",
+        "billingAccessActive": true,
+        "billingPeriodEnd": "2026-11-30T12:05:13.000Z"
+      },
+      "now": 1796040313001,
+      "expected": "free",
+      "observed": "free"
+    },
+    {
+      "id": "LIM-all-past_due-antes",
+      "user": {
+        "plan": "all",
+        "billingProvider": "stripe",
+        "planSource": "subscription",
+        "billingStatus": "past_due",
+        "billingAccessActive": true,
+        "billingPeriodEnd": "2026-11-30T12:05:13.000Z"
+      },
+      "now": 1796040312999,
+      "expected": "all",
+      "observed": "all"
+    },
+    {
+      "id": "LIM-all-past_due-limite",
+      "user": {
+        "plan": "all",
+        "billingProvider": "stripe",
+        "planSource": "subscription",
+        "billingStatus": "past_due",
+        "billingAccessActive": true,
+        "billingPeriodEnd": "2026-11-30T12:05:13.000Z"
+      },
+      "now": 1796040313000,
+      "expected": "free",
+      "observed": "free"
+    },
+    {
+      "id": "LIM-all-past_due-despues",
+      "user": {
+        "plan": "all",
+        "billingProvider": "stripe",
+        "planSource": "subscription",
+        "billingStatus": "past_due",
+        "billingAccessActive": true,
+        "billingPeriodEnd": "2026-11-30T12:05:13.000Z"
+      },
+      "now": 1796040313001,
+      "expected": "free",
+      "observed": "free"
+    },
+    {
+      "id": "LIM-sin-acceso-confirmado",
+      "user": {
+        "plan": "all",
+        "billingProvider": "stripe",
+        "billingStatus": "active",
+        "billingAccessActive": false,
+        "billingPeriodEnd": "2026-11-30T12:05:13.000Z"
+      },
+      "now": 1796040312999,
+      "expected": "free",
+      "observed": "free"
+    },
+    {
+      "id": "LIM-canceled",
+      "user": {
+        "plan": "all",
+        "billingProvider": "stripe",
+        "billingStatus": "canceled",
+        "billingAccessActive": true,
+        "billingPeriodEnd": "2026-11-30T12:05:13.000Z"
+      },
+      "now": 1796040312999,
+      "expected": "free",
+      "observed": "free"
+    },
+    {
+      "id": "LIM-unpaid",
+      "user": {
+        "plan": "all",
+        "billingProvider": "stripe",
+        "billingStatus": "unpaid",
+        "billingAccessActive": true,
+        "billingPeriodEnd": "2026-11-30T12:05:13.000Z"
+      },
+      "now": 1796040312999,
+      "expected": "free",
+      "observed": "free"
+    },
+    {
+      "id": "LIM-fecha-invalida",
+      "user": {
+        "plan": "all",
+        "billingProvider": "stripe",
+        "billingStatus": "active",
+        "billingAccessActive": true,
+        "billingPeriodEnd": "invalid"
+      },
+      "now": 1796040312999,
+      "expected": "free",
+      "observed": "free"
+    }
+  ],
+  "conclusion": "En esta función revisada, uni y all dejan de ser efectivos exactamente al vencer billingPeriodEnd. past_due puede mantener solo el período previamente confirmado todavía vigente. No existe extensión de días en esta función.",
+  "limits": "No prueba sincronización Firestore, entrega de webhook, reloj del despliegue, interfaz del alumno, retiro durable único ni política externa de notificaciones. No se cierra NPG09 ni se aprueba integralmente PG10/11/12. No se mezcla con los 57 casos principales."
+}

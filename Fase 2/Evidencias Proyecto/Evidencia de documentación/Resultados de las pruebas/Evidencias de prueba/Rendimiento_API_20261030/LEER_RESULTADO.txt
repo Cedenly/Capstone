@@ -1,0 +1,35 @@
+MEDICIÓN HTTP DEL DESPLIEGUE — 30-10-2026
+
+Fuente original: Resultado_rendimiento_API_2026-10-30T16-27-29-932Z.json,
+aportado por el usuario. Se conserva byte a byte y se identifica por SHA256 en
+Revision_medicion_API.json. No se conserva identidad, contraseña ni token.
+
+Ejecución: 13:26:08.337 a 13:27:29.932, America/Santiago (UTC-3).
+30 GET /me y 30 GET /me/quota; concurrencia 1, intervalo declarado 200 ms.
+Ambas tandas completas: 30/30 HTTP200 y correctas, 30/30 menores a 3000 ms.
+Perfil: p95 1428,669 ms; máximo 2335,193 ms.
+Cuota: p95 1626,048 ms; máximo 1794,869 ms.
+El umbral de muestra exigía 29 de 30 por operación; ambas lo cumplen.
+Índices consecutivos y 60 requestId distintos; estadísticas recalculadas desde los
+valores crudos y coherentes con el resumen. No se excluye la primera petición.
+
+Alcance
+performance.now mide desde fetch hasta leer JSON. Incluye red y respuesta; no es
+latencia interna aislada, tiempo de herramientas ni pantalla. PG18 pasa de
+No ejecutado a Parcial: hay evidencia de dos consultas y falta separar tramo propio
+para aprobar el criterio completo. No se midió creación de Checkout ni acuse del
+webhook PG19. 
+57 casos: 32 aprobados, 13 parciales, 2 fallidos, 8 bloqueados, 2 no ejecutados.
+Pagos: 14 aprobados, 9 parciales, 2 no ejecutados. No se añaden 60 casos nuevos.
+
+Contexto de versión
+Consulta posterior del alias identifica READY, deployment dpl_5eJZCmftDNTSqjZrdneNgDMn4Hbf,
+commit d1ac22791bdf6f276c8dcce3ec02d707daca3735. Ver Version_despliegue.json.
+El archivo recibido no contiene deployment por petición, Node, sistema ni red:
+no se inventan esos datos ni se atribuye la muestra a una cuenta concreta.
+
+Recalcular sin red: python revisar_medicion_api.py
+Requiere únicamente Python 3 y este JSON en la misma carpeta. Reescribe la revisión
+con nueva fecha de revisión, sin ejecutar consultas ni generar una nueva medición.
+
+Estado del avance al 30-10-2026: consultar ../../Resultados_de_pruebas.docx. Los resultados locales se limitan al entorno descrito; no se extrapolan al despliegue completo.

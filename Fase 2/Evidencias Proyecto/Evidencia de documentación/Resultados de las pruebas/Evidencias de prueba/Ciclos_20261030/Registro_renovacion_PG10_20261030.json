@@ -1,0 +1,140 @@
+{
+  "observed_at_utc": "2026-10-30T12:59:09.297Z",
+  "case": "PG10",
+  "account_email": "renov@renov.com",
+  "customer": "cus_VXJAOZAucUHSrB",
+  "subscription": "sub_1UWEYZAhY3J8iTOwyPTu8Ihu",
+  "stripe_invoices": [
+    {
+      "id": "in_1UWFEhAhY3J8iTOwtQrgoRBi",
+      "number": "GAVVFJEE-0002",
+      "status": "paid",
+      "billing_reason": "subscription_cycle",
+      "currency": "usd",
+      "amount_paid": 100,
+      "amount_remaining": 0,
+      "attempt_count": 1,
+      "attempted": true,
+      "auto_advance": false,
+      "created": 1796040313,
+      "status_transitions": {
+        "finalized_at": 1796043913,
+        "marked_uncollectible_at": null,
+        "paid_at": 1796043913,
+        "voided_at": null
+      },
+      "test_clock": "clock_1UWFEeAhY3J8iTOw5k8zuN6f",
+      "subscription": "sub_1UWEYZAhY3J8iTOwyPTu8Ihu",
+      "lines": [
+        {
+          "period": {
+            "end": 1798632313,
+            "start": 1796040313
+          },
+          "amount": 100
+        }
+      ],
+      "livemode": false
+    },
+    {
+      "id": "in_1UWEYXAhY3J8iTOwv9LgneAH",
+      "number": "GAVVFJEE-0001",
+      "status": "paid",
+      "billing_reason": "subscription_create",
+      "currency": "usd",
+      "amount_paid": 100,
+      "amount_remaining": 0,
+      "attempt_count": 0,
+      "attempted": true,
+      "auto_advance": false,
+      "created": 1793361913,
+      "status_transitions": {
+        "finalized_at": 1793361913,
+        "marked_uncollectible_at": null,
+        "paid_at": 1793361914,
+        "voided_at": null
+      },
+      "test_clock": null,
+      "subscription": "sub_1UWEYZAhY3J8iTOwyPTu8Ihu",
+      "lines": [
+        {
+          "period": {
+            "end": 1796040313,
+            "start": 1793361913
+          },
+          "amount": 100
+        }
+      ],
+      "livemode": false
+    }
+  ],
+  "stripe_subscriptions": [
+    {
+      "id": "sub_1UWEYZAhY3J8iTOwyPTu8Ihu",
+      "status": "active",
+      "test_clock": "clock_1UWFEeAhY3J8iTOw5k8zuN6f",
+      "cancel_at": null,
+      "items": [
+        {
+          "id": "si_VXJAdbfUiux8jc",
+          "current_period_start": 1796040313,
+          "current_period_end": 1798632313,
+          "price": "price_1UMtdgAhY3J8iTOwCaU4YkPk"
+        }
+      ],
+      "latest_invoice": "in_1UWFEhAhY3J8iTOwtQrgoRBi",
+      "livemode": false
+    }
+  ],
+  "observations": [
+    "Nueva factura GAVVFJEE-0002 de USD 1 pagada por renovación automática, billing_reason subscription_cycle, un intento, saldo cero.",
+    "Nuevo período Stripe: 2026-11-30T12:05:13Z a 2026-12-30T12:05:13Z.",
+    "Mi plan mostró Suscripción pendiente de regularización antes y después de Actualizar estado.",
+    "Tras recargar, el encabezado cambió de 1 prueba ilimitada a Plan Gratis."
+  ],
+  "inference": {
+    "reason": "La simulación adelanta Stripe, mientras Aprueba usa Date.now real. El período nuevo empieza en el futuro respecto del 30 de octubre real.",
+    "code_reference": "revision_publicada_20261029/codigo/backend/src/services/stripeBilling.js",
+    "lines": [
+      657,
+      658,
+      774,
+      775,
+      776,
+      777,
+      778,
+      779,
+      780,
+      781
+    ],
+    "qualification": "Explicación respaldada por código revisado; no se ha instrumentado el servidor desplegado ni avanzado el reloj de Aprueba."
+  },
+  "classification": {
+    "PG10": "Parcial: cobro de renovación en Stripe confirmado; acceso integrado limitado por relojes distintos.",
+    "master_documents_updated": false,
+    "PG11": "No ejecutado",
+    "PG12": "No ejecutado"
+  },
+  "limits": [
+    "No prueba de conservación de beneficios al cruzar el período real en Aprueba.",
+    "No cambiar código, fechas reales ni configuración global para forzar aprobación.",
+    "No repetir compra ni finalizar/eliminar la simulación."
+  ],
+  "evidence": [
+    "upload/image(20261030-124357).png",
+    "upload/image(20261030-124945).png",
+    "upload/image(20261030-125454).png",
+    "REN_07_plan_tras_renovar_antes_sincronizar.jpg",
+    "REN_08_plan_tras_actualizar_estado.jpg",
+    "REN_09_plan_tras_recargar.jpg"
+  ],
+  "runtime_logs": {
+    "project": "prj_kJhUrKJGspA49OKTZzN3mu0F2lH6",
+    "window": "2026-10-30T12:37:15.173Z a 2026-10-30T12:57:15.173Z",
+    "levels": [
+      "error",
+      "warning"
+    ],
+    "result": "Sin registros coincidentes; no demuestra entrega de webhooks ni ausencia total de errores."
+  }
+}

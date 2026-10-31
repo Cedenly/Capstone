@@ -1,0 +1,149 @@
+{
+  "observed_at_utc": "2026-10-30T13:49:27.559Z",
+  "simulation_time": "2027-01-30T12:10:00Z",
+  "case": "PG12",
+  "subscriptions": {
+    "has_more": false,
+    "data": [
+      {
+        "id": "sub_1UWEYZAhY3J8iTOwyPTu8Ihu",
+        "status": "canceled",
+        "cancel_at_period_end": true,
+        "cancel_at": 1801310713,
+        "canceled_at": 1798950000,
+        "ended_at": 1801310713,
+        "latest_invoice": "in_1UWFpMAhY3J8iTOwoVZ91gZm",
+        "default_payment_method": "pm_1UWEYWAhY3J8iTOw7i23EfcH",
+        "test_clock": "clock_1UWFEeAhY3J8iTOw5k8zuN6f",
+        "cancellation_details": {
+          "comment": null,
+          "feedback": null,
+          "feedback_option": null,
+          "reason": "cancellation_requested"
+        },
+        "items": [
+          {
+            "start": 1798632313,
+            "end": 1801310713,
+            "price": "price_1UMtdgAhY3J8iTOwCaU4YkPk"
+          }
+        ],
+        "livemode": false
+      }
+    ]
+  },
+  "invoices": {
+    "has_more": false,
+    "data": [
+      {
+        "id": "in_1UWFpMAhY3J8iTOwoVZ91gZm",
+        "number": "GAVVFJEE-0003",
+        "status": "paid",
+        "billing_reason": "subscription_cycle",
+        "amount_due": 100,
+        "amount_paid": 100,
+        "amount_remaining": 0,
+        "currency": "usd",
+        "attempt_count": 3,
+        "next_payment_attempt": null,
+        "status_transitions": {
+          "finalized_at": 1798635913,
+          "marked_uncollectible_at": null,
+          "paid_at": 1798949478,
+          "voided_at": null
+        },
+        "created": 1798632313,
+        "test_clock": "clock_1UWFEeAhY3J8iTOw5k8zuN6f",
+        "lines": [
+          {
+            "amount": 100,
+            "period": {
+              "end": 1801310713,
+              "start": 1798632313
+            }
+          }
+        ],
+        "livemode": false
+      },
+      {
+        "id": "in_1UWFEhAhY3J8iTOwtQrgoRBi",
+        "number": "GAVVFJEE-0002",
+        "status": "paid",
+        "billing_reason": "subscription_cycle",
+        "amount_due": 100,
+        "amount_paid": 100,
+        "amount_remaining": 0,
+        "currency": "usd",
+        "attempt_count": 1,
+        "next_payment_attempt": null,
+        "status_transitions": {
+          "finalized_at": 1796043913,
+          "marked_uncollectible_at": null,
+          "paid_at": 1796043913,
+          "voided_at": null
+        },
+        "created": 1796040313,
+        "test_clock": "clock_1UWFEeAhY3J8iTOw5k8zuN6f",
+        "lines": [
+          {
+            "amount": 100,
+            "period": {
+              "end": 1798632313,
+              "start": 1796040313
+            }
+          }
+        ],
+        "livemode": false
+      },
+      {
+        "id": "in_1UWEYXAhY3J8iTOwv9LgneAH",
+        "number": "GAVVFJEE-0001",
+        "status": "paid",
+        "billing_reason": "subscription_create",
+        "amount_due": 100,
+        "amount_paid": 100,
+        "amount_remaining": 0,
+        "currency": "usd",
+        "attempt_count": 0,
+        "next_payment_attempt": null,
+        "status_transitions": {
+          "finalized_at": 1793361913,
+          "marked_uncollectible_at": null,
+          "paid_at": 1793361914,
+          "voided_at": null
+        },
+        "created": 1793361913,
+        "test_clock": null,
+        "lines": [
+          {
+            "amount": 100,
+            "period": {
+              "end": 1796040313,
+              "start": 1793361913
+            }
+          }
+        ],
+        "livemode": false
+      }
+    ]
+  },
+  "ui": {
+    "plan": "Gratis",
+    "quota_used": 0,
+    "quota_limit": 10,
+    "warning_regularizacion": false,
+    "offers_visible": true,
+    "subject_preference": "Matemática M2, sin modificar",
+    "evidence": [
+      "REN_10_plan_tras_cancelacion_efectiva.jpg",
+      "REN_11_inicio_gratis_tras_cancelacion.jpg"
+    ]
+  },
+  "limits": [
+    "El plan había pasado a Gratis antes del fin simulado por diferencia de relojes; no se acredita conservación correcta del derecho previo.",
+    "Sin exportación Firestore posterior ni demostración de transición durable única auditada.",
+    "Cancelación voluntaria al final del período; no equivale a agotamiento de reintentos."
+  ],
+  "classification": "Parcial",
+  "master_documents_updated": false
+}

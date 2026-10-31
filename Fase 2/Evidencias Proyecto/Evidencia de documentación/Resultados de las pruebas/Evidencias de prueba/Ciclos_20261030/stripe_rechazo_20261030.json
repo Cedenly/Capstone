@@ -1,0 +1,137 @@
+{
+  "observed_at_utc": "2026-10-30T13:29:14.390Z",
+  "case": "PG11",
+  "scenario": "Primer rechazo de renovación en Stripe",
+  "account": "renov@renov.com",
+  "invoice": {
+    "id": "in_1UWFpMAhY3J8iTOwoVZ91gZm",
+    "number": "GAVVFJEE-0003",
+    "status": "open",
+    "billing_reason": "subscription_cycle",
+    "amount_due": 100,
+    "amount_paid": 0,
+    "amount_remaining": 100,
+    "currency": "usd",
+    "attempt_count": 1,
+    "attempted": true,
+    "auto_advance": true,
+    "created": 1798632313,
+    "next_payment_attempt": 1798789309,
+    "automatically_finalizes_at": null,
+    "status_transitions": {
+      "finalized_at": 1798635913,
+      "marked_uncollectible_at": null,
+      "paid_at": null,
+      "voided_at": null
+    },
+    "default_payment_method": null,
+    "test_clock": "clock_1UWFEeAhY3J8iTOw5k8zuN6f",
+    "last_finalization_error": null,
+    "lines": [
+      {
+        "amount": 100,
+        "period": {
+          "end": 1801310713,
+          "start": 1798632313
+        }
+      }
+    ],
+    "livemode": false
+  },
+  "subscription": {
+    "id": "sub_1UWEYZAhY3J8iTOwyPTu8Ihu",
+    "status": "past_due",
+    "default_payment_method": "pm_1UWFZpAhY3J8iTOwxrFlwfhY",
+    "test_clock": "clock_1UWFEeAhY3J8iTOw5k8zuN6f",
+    "latest_invoice": "in_1UWFpMAhY3J8iTOwoVZ91gZm",
+    "cancel_at": null,
+    "canceled_at": null,
+    "cancellation_details": {
+      "comment": null,
+      "feedback": null,
+      "feedback_option": null,
+      "reason": null
+    },
+    "pause_collection": null,
+    "items": [
+      {
+        "id": "si_VXJAdbfUiux8jc",
+        "price": "price_1UMtdgAhY3J8iTOwCaU4YkPk",
+        "current_period_start": 1798632313,
+        "current_period_end": 1801310713
+      }
+    ]
+  },
+  "payment_intents": [
+    {
+      "id": "pi_3UWFpPAhY3J8iTOw0ARfRnPH",
+      "status": "requires_payment_method",
+      "amount": 100,
+      "amount_received": 0,
+      "currency": "usd",
+      "created": 1793366803,
+      "customer": "cus_VXJAOZAucUHSrB",
+      "description": "Subscription update",
+      "payment_method": null,
+      "latest_charge": "ch_3UWFpPAhY3J8iTOw0BNnt9jf",
+      "last_payment_error": {
+        "type": "card_error",
+        "code": "card_declined",
+        "decline_code": "generic_decline",
+        "message": "Your card was declined.",
+        "payment_method": {
+          "id": "pm_1UWFZpAhY3J8iTOwxrFlwfhY",
+          "last4": "0341",
+          "brand": "visa"
+        }
+      },
+      "livemode": false
+    },
+    {
+      "id": "pi_3UWFINAhY3J8iTOw1eVFr76E",
+      "status": "succeeded",
+      "amount": 100,
+      "amount_received": 100,
+      "currency": "usd",
+      "created": 1793364755,
+      "customer": "cus_VXJAOZAucUHSrB",
+      "description": "Subscription update",
+      "payment_method": "pm_1UWEYWAhY3J8iTOw7i23EfcH",
+      "latest_charge": "ch_3UWFINAhY3J8iTOw1h0kwGOz",
+      "last_payment_error": null,
+      "livemode": false
+    },
+    {
+      "id": "pi_3UWEYXAhY3J8iTOw1PSdpK0G",
+      "status": "succeeded",
+      "amount": 100,
+      "amount_received": 100,
+      "currency": "usd",
+      "created": 1793361913,
+      "customer": "cus_VXJAOZAucUHSrB",
+      "description": "Subscription creation",
+      "payment_method": "pm_1UWEYWAhY3J8iTOw7i23EfcH",
+      "latest_charge": "ch_3UWEYXAhY3J8iTOw1NHKxph0",
+      "last_payment_error": null,
+      "livemode": false
+    }
+  ],
+  "next_attempt_utc": "2027-01-01T07:41:49.000Z",
+  "classification": "Parcial: rechazo y reintento programado observados en Stripe. Aún no se ha observado ejecución del reintento, recuperación, agotamiento ni acceso integral en Aprueba.",
+  "master_documents_updated": false,
+  "simulation_time_from_user_screenshot": "2026-12-30T13:15:00Z",
+  "screenshots": [
+    {
+      "path": "upload/image(20261030-132727).png",
+      "library_file_id": "libfile_b866ee946394819181bc0a3808f68466"
+    },
+    {
+      "path": "upload/image(20261030-132731).png",
+      "library_file_id": "libfile_6a1d0f841bf48191b8a07bc6d56fdb45"
+    },
+    {
+      "path": "upload/image(20261030-132736).png",
+      "library_file_id": "libfile_db0b75dc17fc8191a18c01689aa8e7b0"
+    }
+  ]
+}

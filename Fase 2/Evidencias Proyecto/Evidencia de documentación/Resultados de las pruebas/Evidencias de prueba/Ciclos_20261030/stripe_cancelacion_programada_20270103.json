@@ -1,0 +1,33 @@
+{
+  "observed_at_utc": "2026-10-30T13:41:48.051Z",
+  "case": "PG12",
+  "stage": "Cancelación programada, antes del vencimiento",
+  "simulation_time": "2027-01-03T04:20:00Z",
+  "master_documents_updated": false,
+  "subscriptions": [
+    {
+      "id": "sub_1UWEYZAhY3J8iTOwyPTu8Ihu",
+      "status": "active",
+      "cancel_at_period_end": true,
+      "cancel_at": 1801310713,
+      "cancel_at_utc": "2027-01-30T12:05:13.000Z",
+      "canceled_at": 1798950000,
+      "ended_at": null,
+      "latest_invoice": "in_1UWFpMAhY3J8iTOwoVZ91gZm",
+      "test_clock": "clock_1UWFEeAhY3J8iTOw5k8zuN6f",
+      "default_payment_method": "pm_1UWEYWAhY3J8iTOw7i23EfcH",
+      "items": [
+        {
+          "start": 1798632313,
+          "end": 1801310713,
+          "price": "price_1UMtdgAhY3J8iTOwCaU4YkPk"
+        }
+      ]
+    }
+  ],
+  "evidence": [
+    "upload/image(20261030-134110).png",
+    "upload/image(20261030-134114).png",
+    "upload/image(20261030-134118).png"
+  ]
+}

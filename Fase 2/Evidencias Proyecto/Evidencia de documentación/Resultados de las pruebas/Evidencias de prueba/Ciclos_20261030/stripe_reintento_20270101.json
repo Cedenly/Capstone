@@ -1,0 +1,73 @@
+{
+  "observed_at_utc": "2026-10-30T13:32:04.323Z",
+  "case": "PG11",
+  "simulation_time": "2027-01-01T08:00:00Z",
+  "customer": "cus_VXJAOZAucUHSrB",
+  "invoice": {
+    "id": "in_1UWFpMAhY3J8iTOwoVZ91gZm",
+    "number": "GAVVFJEE-0003",
+    "status": "open",
+    "amount_paid": 0,
+    "amount_remaining": 100,
+    "attempt_count": 2,
+    "attempted": true,
+    "next_payment_attempt": 1798949478,
+    "auto_advance": true,
+    "status_transitions": {
+      "finalized_at": 1798635913,
+      "marked_uncollectible_at": null,
+      "paid_at": null,
+      "voided_at": null
+    }
+  },
+  "subscription": {
+    "id": "sub_1UWEYZAhY3J8iTOwyPTu8Ihu",
+    "status": "past_due",
+    "default_payment_method": "pm_1UWFZpAhY3J8iTOwxrFlwfhY",
+    "latest_invoice": "in_1UWFpMAhY3J8iTOwoVZ91gZm",
+    "test_clock": "clock_1UWFEeAhY3J8iTOw5k8zuN6f",
+    "items": [
+      {
+        "start": 1798632313,
+        "end": 1801310713
+      }
+    ]
+  },
+  "payment_intent": {
+    "id": "pi_3UWFpPAhY3J8iTOw0ARfRnPH",
+    "status": "requires_payment_method",
+    "last_payment_error": {
+      "code": "card_declined",
+      "decline_code": "generic_decline"
+    }
+  },
+  "charge": {
+    "id": "ch_3UWFpPAhY3J8iTOw0HY62Ine",
+    "payment_intent": "pi_3UWFpPAhY3J8iTOw0ARfRnPH",
+    "customer": "cus_VXJAOZAucUHSrB",
+    "amount": 100,
+    "amount_captured": 0,
+    "paid": false,
+    "status": "failed",
+    "failure_code": "card_declined",
+    "failure_message": "Your card was declined.",
+    "created": 1793367005,
+    "outcome": {
+      "type": "issuer_declined",
+      "reason": "generic_decline",
+      "network_status": "declined_by_network"
+    },
+    "last4": "0341",
+    "livemode": false
+  },
+  "previous_first_failure_charge": "ch_3UWFpPAhY3J8iTOw0BNnt9jf",
+  "conclusion": "Segundo intento y nuevo Charge rechazado con 0341; aún no se ha probado recuperación ni agotamiento. No acredita acceso integral en Aprueba.",
+  "next_attempt_utc": "2027-01-03T04:11:18.000Z",
+  "evidence": [
+    "upload/image(20261030-133059).png",
+    "upload/image(20261030-133105).png",
+    "upload/image(20261030-133109).png",
+    "upload/image(20261030-133114).png"
+  ],
+  "master_documents_updated": false
+}

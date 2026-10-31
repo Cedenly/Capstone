@@ -1,0 +1,54 @@
+{
+  "observed_at_utc": "2026-10-30T13:33:54.965Z",
+  "simulation_time_from_capture": "2027-01-01T08:00:00Z",
+  "case": "PG11 recuperación preparada",
+  "master_documents_updated": false,
+  "subscription": [
+    {
+      "id": "sub_1UWEYZAhY3J8iTOwyPTu8Ihu",
+      "status": "past_due",
+      "default_payment_method": "pm_1UWEYWAhY3J8iTOw7i23EfcH",
+      "latest_invoice": "in_1UWFpMAhY3J8iTOwoVZ91gZm",
+      "test_clock": "clock_1UWFEeAhY3J8iTOw5k8zuN6f",
+      "items": [
+        {
+          "start": 1798632313,
+          "end": 1801310713,
+          "price": "price_1UMtdgAhY3J8iTOwCaU4YkPk"
+        }
+      ]
+    }
+  ],
+  "invoices": [
+    {
+      "id": "in_1UWFpMAhY3J8iTOwoVZ91gZm",
+      "number": "GAVVFJEE-0003",
+      "status": "open",
+      "amount_paid": 0,
+      "amount_remaining": 100,
+      "attempt_count": 2,
+      "next_payment_attempt": 1798949478,
+      "next_attempt_utc": "2027-01-03T04:11:18.000Z"
+    },
+    {
+      "id": "in_1UWFEhAhY3J8iTOwtQrgoRBi",
+      "number": "GAVVFJEE-0002",
+      "status": "paid",
+      "amount_paid": 100,
+      "amount_remaining": 0,
+      "attempt_count": 1,
+      "next_payment_attempt": null,
+      "next_attempt_utc": null
+    },
+    {
+      "id": "in_1UWEYXAhY3J8iTOwv9LgneAH",
+      "number": "GAVVFJEE-0001",
+      "status": "paid",
+      "amount_paid": 100,
+      "amount_remaining": 0,
+      "attempt_count": 0,
+      "next_payment_attempt": null,
+      "next_attempt_utc": null
+    }
+  ]
+}

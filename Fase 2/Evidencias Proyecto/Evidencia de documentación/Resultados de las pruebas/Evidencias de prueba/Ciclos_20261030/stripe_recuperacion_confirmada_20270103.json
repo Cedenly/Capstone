@@ -1,0 +1,135 @@
+{
+  "observed_at_utc": "2026-10-30T13:38:22.719Z",
+  "case": "PG11",
+  "stage": "Recuperación mediante reintento automático",
+  "simulation_time": "2027-01-03T04:20:00Z",
+  "master_documents_updated": false,
+  "invoices": [
+    {
+      "id": "in_1UWFpMAhY3J8iTOwoVZ91gZm",
+      "number": "GAVVFJEE-0003",
+      "status": "paid",
+      "billing_reason": "subscription_cycle",
+      "amount_paid": 100,
+      "amount_remaining": 0,
+      "currency": "usd",
+      "attempt_count": 3,
+      "next_payment_attempt": null,
+      "status_transitions": {
+        "finalized_at": 1798635913,
+        "marked_uncollectible_at": null,
+        "paid_at": 1798949478,
+        "voided_at": null
+      },
+      "lines": [
+        {
+          "amount": 100,
+          "period": {
+            "end": 1801310713,
+            "start": 1798632313
+          }
+        }
+      ],
+      "livemode": false
+    },
+    {
+      "id": "in_1UWFEhAhY3J8iTOwtQrgoRBi",
+      "number": "GAVVFJEE-0002",
+      "status": "paid",
+      "billing_reason": "subscription_cycle",
+      "amount_paid": 100,
+      "amount_remaining": 0,
+      "currency": "usd",
+      "attempt_count": 1,
+      "next_payment_attempt": null,
+      "status_transitions": {
+        "finalized_at": 1796043913,
+        "marked_uncollectible_at": null,
+        "paid_at": 1796043913,
+        "voided_at": null
+      },
+      "lines": [
+        {
+          "amount": 100,
+          "period": {
+            "end": 1798632313,
+            "start": 1796040313
+          }
+        }
+      ],
+      "livemode": false
+    },
+    {
+      "id": "in_1UWEYXAhY3J8iTOwv9LgneAH",
+      "number": "GAVVFJEE-0001",
+      "status": "paid",
+      "billing_reason": "subscription_create",
+      "amount_paid": 100,
+      "amount_remaining": 0,
+      "currency": "usd",
+      "attempt_count": 0,
+      "next_payment_attempt": null,
+      "status_transitions": {
+        "finalized_at": 1793361913,
+        "marked_uncollectible_at": null,
+        "paid_at": 1793361914,
+        "voided_at": null
+      },
+      "lines": [
+        {
+          "amount": 100,
+          "period": {
+            "end": 1796040313,
+            "start": 1793361913
+          }
+        }
+      ],
+      "livemode": false
+    }
+  ],
+  "subscription": [
+    {
+      "id": "sub_1UWEYZAhY3J8iTOwyPTu8Ihu",
+      "status": "active",
+      "default_payment_method": "pm_1UWEYWAhY3J8iTOw7i23EfcH",
+      "latest_invoice": "in_1UWFpMAhY3J8iTOwoVZ91gZm",
+      "test_clock": "clock_1UWFEeAhY3J8iTOw5k8zuN6f",
+      "cancel_at_period_end": false,
+      "cancel_at": null,
+      "items": [
+        {
+          "start": 1798632313,
+          "end": 1801310713,
+          "price": "price_1UMtdgAhY3J8iTOwCaU4YkPk"
+        }
+      ]
+    }
+  ],
+  "intents": [
+    {
+      "id": "pi_3UWFpPAhY3J8iTOw0ARfRnPH",
+      "status": "succeeded",
+      "amount_received": 100,
+      "payment_method": "pm_1UWEYWAhY3J8iTOw7i23EfcH",
+      "last_payment_error": null,
+      "latest_charge": {
+        "id": "ch_3UWFpPAhY3J8iTOw02AoIuI7",
+        "payment_intent": "pi_3UWFpPAhY3J8iTOw0ARfRnPH",
+        "status": "succeeded",
+        "paid": true,
+        "amount": 100,
+        "amount_captured": 100,
+        "last4": "4242",
+        "created": 1793367298,
+        "livemode": false
+      }
+    }
+  ],
+  "classification": "Parcial: rechazo, reintento fallido y recuperación en Stripe; faltan validación integral del acceso y avisos de Aprueba y agotamiento de política si corresponde.",
+  "evidence": [
+    "upload/image(20261030-133724).png",
+    "upload/image(20261030-133728).png",
+    "upload/image(20261030-133732).png",
+    "upload/image(20261030-133737).png"
+  ]
+}

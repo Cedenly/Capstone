@@ -1,0 +1,56 @@
+{
+  "observed_at_utc": "2026-10-30T12:50:59.879Z",
+  "account": "acct_1UMr3HAhY3J8iTOw",
+  "customer": "cus_VXJAOZAucUHSrB",
+  "source": "GetInvoices scoped to customer and subscription",
+  "invoices": [
+    {
+      "id": "in_1UWFEhAhY3J8iTOwtQrgoRBi",
+      "status": "draft",
+      "billing_reason": "subscription_cycle",
+      "currency": "usd",
+      "amount_due": 100,
+      "amount_paid": 0,
+      "amount_remaining": 100,
+      "attempt_count": 0,
+      "attempted": false,
+      "auto_advance": true,
+      "created": 1796040313,
+      "automatically_finalizes_at": 1796043913,
+      "next_payment_attempt": 1796043913,
+      "test_clock": "clock_1UWFEeAhY3J8iTOw5k8zuN6f",
+      "subscription": "sub_1UWEYZAhY3J8iTOwyPTu8Ihu",
+      "periods": [
+        {
+          "end": 1798632313,
+          "start": 1796040313
+        }
+      ],
+      "livemode": false
+    },
+    {
+      "id": "in_1UWEYXAhY3J8iTOwv9LgneAH",
+      "status": "paid",
+      "billing_reason": "subscription_create",
+      "currency": "usd",
+      "amount_due": 100,
+      "amount_paid": 100,
+      "amount_remaining": 0,
+      "attempt_count": 0,
+      "attempted": true,
+      "auto_advance": false,
+      "created": 1793361913,
+      "automatically_finalizes_at": null,
+      "next_payment_attempt": null,
+      "test_clock": null,
+      "subscription": "sub_1UWEYZAhY3J8iTOwyPTu8Ihu",
+      "periods": [
+        {
+          "end": 1796040313,
+          "start": 1793361913
+        }
+      ],
+      "livemode": false
+    }
+  ]
+}

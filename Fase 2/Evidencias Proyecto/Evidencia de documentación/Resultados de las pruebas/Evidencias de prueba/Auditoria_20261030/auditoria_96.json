@@ -1,0 +1,779 @@
+{
+  "rows": [
+    {
+      "id": "CA-01.1",
+      "status": "Evidencia parcial",
+      "observed": "Catálogo visible en IF03/08; no contraste publicado contra no publicado.",
+      "gap": "Falta plan no publicado y prueba del filtro de publicación.",
+      "source": "Casos_y_resultados_Pagos_Fase2.xlsx!Cobertura/Ejecuciones: PG-01, PG-02, PG-06, PG-07; Resultados_Datos_y_permisos_Fase2.xlsx!Cobertura/Ejecuciones: DP-11; Casos_y_resultados_Interfaz_Fase2.xlsx!Cobertura/Ejecuciones: IF-03, IF-08",
+      "action": "Prueba adicional controlada o decisión de alcance"
+    },
+    {
+      "id": "CA-01.2",
+      "status": "Evidencia parcial",
+      "observed": "Precios y beneficios observados; IF03 registra límites/plan gratuito incompletos.",
+      "gap": "Resolver D01 y verificar todos los elementos del criterio.",
+      "source": "Casos_y_resultados_Pagos_Fase2.xlsx!Cobertura/Ejecuciones: PG-01, PG-02, PG-06, PG-07; Resultados_Datos_y_permisos_Fase2.xlsx!Cobertura/Ejecuciones: DP-11; Casos_y_resultados_Interfaz_Fase2.xlsx!Cobertura/Ejecuciones: IF-03, IF-08",
+      "action": "Prueba adicional controlada o decisión de alcance"
+    },
+    {
+      "id": "CA-01.3",
+      "status": "Bloqueado por disponibilidad",
+      "observed": "No hay cambio de versión publicado ejecutado; catálogo compartido sin plan desechable.",
+      "gap": "Habilitar versión/plan de prueba o documentar alcance.",
+      "source": "Casos_y_resultados_Pagos_Fase2.xlsx!Cobertura/Ejecuciones: PG-01, PG-02, PG-06, PG-07; Resultados_Datos_y_permisos_Fase2.xlsx!Cobertura/Ejecuciones: DP-11; Casos_y_resultados_Interfaz_Fase2.xlsx!Cobertura/Ejecuciones: IF-03, IF-08",
+      "action": "Precondición de producto/contenido"
+    },
+    {
+      "id": "CA-01.4",
+      "status": "Sin ejecución específica",
+      "observed": "El incidente acredita errores del servicio; no demuestra específicamente catálogo y reintento útiles.",
+      "gap": "Probar un fallo de consulta de catálogo con mensaje y recuperación.",
+      "source": "Casos_y_resultados_Pagos_Fase2.xlsx!Cobertura/Ejecuciones: PG-01, PG-02, PG-06, PG-07; Resultados_Datos_y_permisos_Fase2.xlsx!Cobertura/Ejecuciones: DP-11; Casos_y_resultados_Interfaz_Fase2.xlsx!Cobertura/Ejecuciones: IF-03, IF-08",
+      "action": "Prueba adicional controlada o decisión de alcance"
+    },
+    {
+      "id": "CA-02.1",
+      "status": "Evidencia directa delimitada",
+      "observed": "PG01/02/06/07 acreditan precios mensual/anual de ofertas probadas.",
+      "gap": "Conservar el límite de esas ofertas y la descripción incompleta de Ciencias D02.",
+      "source": "Casos_y_resultados_Pagos_Fase2.xlsx!Cobertura/Ejecuciones: PG-01, PG-02, PG-06, PG-07; Casos_y_resultados_Interfaz_Fase2.xlsx!Cobertura/Ejecuciones: IF-13",
+      "action": "Reutilizar evidencia y mantener límites"
+    },
+    {
+      "id": "CA-02.2",
+      "status": "Evidencia parcial",
+      "observed": "Ciencias seleccionada y persistida en PG06; el resumen no la nombra.",
+      "gap": "Acreditar también rechazo de selección ausente/no publicada.",
+      "source": "Casos_y_resultados_Pagos_Fase2.xlsx!Cobertura/Ejecuciones: PG-01, PG-02, PG-06, PG-07; Casos_y_resultados_Interfaz_Fase2.xlsx!Cobertura/Ejecuciones: IF-13",
+      "action": "Prueba adicional controlada o decisión de alcance"
+    },
+    {
+      "id": "CA-02.3",
+      "status": "Evidencia directa delimitada",
+      "observed": "PG02/07 muestran contratación Todas sin materia única obligatoria.",
+      "gap": "No equivale a cobertura de práctica de cinco materias.",
+      "source": "Casos_y_resultados_Pagos_Fase2.xlsx!Cobertura/Ejecuciones: PG-01, PG-02, PG-06, PG-07; Casos_y_resultados_Interfaz_Fase2.xlsx!Cobertura/Ejecuciones: IF-13",
+      "action": "Reutilizar evidencia y mantener límites"
+    },
+    {
+      "id": "CA-02.4",
+      "status": "Evidencia parcial",
+      "observed": "IF13 documenta resumen, regreso y D02/D03; no todos los elementos requeridos son conformes.",
+      "gap": "Resolver descripción y regreso; verificar modificación, recurrencia y cancelación.",
+      "source": "Casos_y_resultados_Pagos_Fase2.xlsx!Cobertura/Ejecuciones: PG-01, PG-02, PG-06, PG-07; Casos_y_resultados_Interfaz_Fase2.xlsx!Cobertura/Ejecuciones: IF-13",
+      "action": "Prueba adicional controlada o decisión de alcance"
+    },
+    {
+      "id": "CA-03.1",
+      "status": "Evidencia parcial",
+      "observed": "Compras válidas y validaciones estáticas del backend; no batería de entradas inválidas.",
+      "gap": "Probar precio/ciclo/moneda/materia inválidos sin crear cobros reales.",
+      "source": "Casos_y_resultados_Pagos_Fase2.xlsx!Cobertura/Ejecuciones: PG-01, PG-02, PG-06, PG-07, PG-14",
+      "action": "Prueba adicional controlada o decisión de alcance"
+    },
+    {
+      "id": "CA-03.2",
+      "status": "Evidencia directa delimitada",
+      "observed": "Exportaciones filtradas C/E relacionan usuario, intento, sesión, oferta y Stripe.",
+      "gap": "Muestra de operaciones controladas, no todas las solicitudes posibles.",
+      "source": "Casos_y_resultados_Pagos_Fase2.xlsx!Cobertura/Ejecuciones: PG-01, PG-02, PG-06, PG-07, PG-14; Anuales_20261030/Firestore_anuales_filtrado.json (ANUAL-E06), muestra C/E",
+      "action": "Reutilizar evidencia y mantener límites"
+    },
+    {
+      "id": "CA-03.3",
+      "status": "Sin ejecución específica",
+      "observed": "No hay ejecución específica de monto alterado.",
+      "gap": "Solicitar precio manipulado y comprobar fuente de precio del backend en entorno controlado.",
+      "source": "Casos_y_resultados_Pagos_Fase2.xlsx!Cobertura/Ejecuciones: PG-01, PG-02, PG-06, PG-07, PG-14",
+      "action": "Prueba adicional controlada o decisión de alcance"
+    },
+    {
+      "id": "CA-03.4",
+      "status": "Sin ejecución específica",
+      "observed": "PG14 prueba concurrencia de eventos, no creación de Checkout con la misma clave.",
+      "gap": "Probar idempotencia de creación con clave repetida; no reutilizar PG14 como sustituto.",
+      "source": "Casos_y_resultados_Pagos_Fase2.xlsx!Cobertura/Ejecuciones: PG-01, PG-02, PG-06, PG-07, PG-14",
+      "action": "Prueba adicional controlada o decisión de alcance"
+    },
+    {
+      "id": "CA-04.1",
+      "status": "Evidencia directa delimitada",
+      "observed": "Checkout alojado por Stripe observado en compras y rechazos.",
+      "gap": "Solo sesiones de prueba documentadas.",
+      "source": "Casos_y_resultados_Pagos_Fase2.xlsx!Cobertura/Ejecuciones: PG-03, CP02, PG-22; Casos_y_resultados_Interfaz_Fase2.xlsx!Cobertura/Ejecuciones: IF-13",
+      "action": "Reutilizar evidencia y mantener límites"
+    },
+    {
+      "id": "CA-04.2",
+      "status": "Evidencia parcial",
+      "observed": "Medios enmascarados y flujo externo; no auditoría exhaustiva de almacenamiento/red.",
+      "gap": "Comprobar ausencia de PAN/CVC en solicitudes, registros y persistencia del alcance.",
+      "source": "Casos_y_resultados_Pagos_Fase2.xlsx!Cobertura/Ejecuciones: PG-03, CP02, PG-22; Casos_y_resultados_Interfaz_Fase2.xlsx!Cobertura/Ejecuciones: IF-13",
+      "action": "Prueba adicional controlada o decisión de alcance"
+    },
+    {
+      "id": "CA-04.3",
+      "status": "Evidencia directa delimitada",
+      "observed": "PG03 y compras aprobadas acreditan retornos cancelación/éxito.",
+      "gap": "No incluye retorno manipulado.",
+      "source": "Casos_y_resultados_Pagos_Fase2.xlsx!Cobertura/Ejecuciones: PG-03, CP02, PG-22; Casos_y_resultados_Interfaz_Fase2.xlsx!Cobertura/Ejecuciones: IF-13",
+      "action": "Reutilizar evidencia y mantener límites"
+    },
+    {
+      "id": "CA-04.4",
+      "status": "Sin ejecución específica",
+      "observed": "No se ejecutó retorno de éxito sin pago confirmado.",
+      "gap": "Preparar prueba controlada de retorno manipulado, sin activar por URL.",
+      "source": "Casos_y_resultados_Pagos_Fase2.xlsx!Cobertura/Ejecuciones: PG-03, CP02, PG-22; Casos_y_resultados_Interfaz_Fase2.xlsx!Cobertura/Ejecuciones: IF-13",
+      "action": "Prueba adicional controlada o decisión de alcance"
+    },
+    {
+      "id": "CA-05.1",
+      "status": "Evidencia directa delimitada",
+      "observed": "PG16 incluye rechazo HTTP de firma inválida y contraste de persistencia; comprobaciones locales válidas.",
+      "gap": "Alcance de firma documentado; no todos los errores del receptor.",
+      "source": "Casos_y_resultados_Pagos_Fase2.xlsx!Cobertura/Ejecuciones: PG-13, PG-14, PG-15, PG-16, PG-17",
+      "action": "Reutilizar evidencia y mantener límites"
+    },
+    {
+      "id": "CA-05.2",
+      "status": "Evidencia parcial",
+      "observed": "Firma inválida sin cambios acreditada; cuerpo mal formado no cubierto de forma específica.",
+      "gap": "Añadir subcaso de cuerpo mal formado y estado antes/después.",
+      "source": "Casos_y_resultados_Pagos_Fase2.xlsx!Cobertura/Ejecuciones: PG-13, PG-14, PG-15, PG-16, PG-17",
+      "action": "Prueba adicional controlada o decisión de alcance"
+    },
+    {
+      "id": "CA-05.3",
+      "status": "Evidencia directa delimitada",
+      "observed": "PG13 y consultas/persistencia de eventos relacionan IDs internos y Stripe.",
+      "gap": "Muestra de eventos admitidos documentados.",
+      "source": "Casos_y_resultados_Pagos_Fase2.xlsx!Cobertura/Ejecuciones: PG-13, PG-14, PG-15, PG-16, PG-17",
+      "action": "Reutilizar evidencia y mantener límites"
+    },
+    {
+      "id": "CA-05.4",
+      "status": "Sin ejecución específica",
+      "observed": "El código ignora tipos no soportados, pero falta ejecución del criterio completo y su registro.",
+      "gap": "Comprobar evento válido no admitido, respuesta y ausencia de activación.",
+      "source": "Casos_y_resultados_Pagos_Fase2.xlsx!Cobertura/Ejecuciones: PG-13, PG-14, PG-15, PG-16, PG-17",
+      "action": "Prueba adicional controlada o decisión de alcance"
+    },
+    {
+      "id": "CA-06.1",
+      "status": "Evidencia directa delimitada",
+      "observed": "Extractos C/E conservan usuario, plan, materia, ciclo e importes en intentos/sesiones.",
+      "gap": "Delimitado a las dos operaciones contrastadas.",
+      "source": "Casos_y_resultados_Pagos_Fase2.xlsx!Cobertura/Ejecuciones: CP02, PG-15; Resultados_Datos_y_permisos_Fase2.xlsx!Cobertura/Ejecuciones: DP-03; Anuales_20261030/Firestore_anuales_filtrado.json (ANUAL-E06), muestra C/E",
+      "action": "Reutilizar evidencia y mantener límites"
+    },
+    {
+      "id": "CA-06.2",
+      "status": "Evidencia parcial",
+      "observed": "Fechas e IDs disponibles en muestras; no auditoría de cada cambio con origen.",
+      "gap": "Completar trazabilidad de transiciones y origen.",
+      "source": "Casos_y_resultados_Pagos_Fase2.xlsx!Cobertura/Ejecuciones: CP02, PG-15; Resultados_Datos_y_permisos_Fase2.xlsx!Cobertura/Ejecuciones: DP-03",
+      "action": "Prueba adicional controlada o decisión de alcance"
+    },
+    {
+      "id": "CA-06.3",
+      "status": "Evidencia directa delimitada",
+      "observed": "CP02/CP03 y PG04 acreditan conservación del plan frente a rechazo.",
+      "gap": "No extender a todo fallo imaginable.",
+      "source": "Casos_y_resultados_Pagos_Fase2.xlsx!Cobertura/Ejecuciones: CP02, PG-15; Resultados_Datos_y_permisos_Fase2.xlsx!Cobertura/Ejecuciones: DP-03",
+      "action": "Reutilizar evidencia y mantener límites"
+    },
+    {
+      "id": "CA-06.4",
+      "status": "Evidencia parcial",
+      "observed": "Suscripción, factura y Checkout correlacionados; acceso desde una transacción a todo evento no acreditado.",
+      "gap": "Comprobar navegación/consulta de todas las relaciones requeridas.",
+      "source": "Casos_y_resultados_Pagos_Fase2.xlsx!Cobertura/Ejecuciones: CP02, PG-15; Resultados_Datos_y_permisos_Fase2.xlsx!Cobertura/Ejecuciones: DP-03",
+      "action": "Prueba adicional controlada o decisión de alcance"
+    },
+    {
+      "id": "CA-07.1",
+      "status": "Evidencia directa delimitada",
+      "observed": "Compras y reentrega PG13 conservan una suscripción en las operaciones controladas.",
+      "gap": "No certifica exclusión de duplicados bajo toda carga.",
+      "source": "Casos_y_resultados_Pagos_Fase2.xlsx!Cobertura/Ejecuciones: PG-01, PG-02, CP03-R, PG-04, PG-05, PG-06, PG-07, PG-13, PG-14, PG-20",
+      "action": "Reutilizar evidencia y mantener límites"
+    },
+    {
+      "id": "CA-07.2",
+      "status": "Evidencia parcial",
+      "observed": "Uni y tres materias de Todas comprobadas; M2/Historia sin contenido.",
+      "gap": "Completar cobertura faltante o decisión explícita de alcance.",
+      "source": "Casos_y_resultados_Pagos_Fase2.xlsx!Cobertura/Ejecuciones: PG-01, PG-02, CP03-R, PG-04, PG-05, PG-06, PG-07, PG-13, PG-14, PG-20",
+      "action": "Prueba adicional controlada o decisión de alcance"
+    },
+    {
+      "id": "CA-07.3",
+      "status": "Evidencia directa delimitada",
+      "observed": "PG06/07 y extractos acreditan inicio, fin y comprobante de activación.",
+      "gap": "No equivale a renovación futura.",
+      "source": "Casos_y_resultados_Pagos_Fase2.xlsx!Cobertura/Ejecuciones: PG-01, PG-02, CP03-R, PG-04, PG-05, PG-06, PG-07, PG-13, PG-14, PG-20; Anuales_20261030/Firestore_anuales_filtrado.json (ANUAL-E06), muestra C/E",
+      "action": "Reutilizar evidencia y mantener límites"
+    },
+    {
+      "id": "CA-07.4",
+      "status": "Evidencia directa delimitada",
+      "observed": "PG13: reentrega real, duplicate true y exportación antes/después sin cambios.",
+      "gap": "Solo evento y estado documentados; no añadir esta evidencia como una compra nueva.",
+      "source": "Casos_y_resultados_Pagos_Fase2.xlsx!Cobertura/Ejecuciones: PG-01, PG-02, CP03-R, PG-04, PG-05, PG-06, PG-07, PG-13, PG-14, PG-20",
+      "action": "Reutilizar evidencia y mantener límites"
+    },
+    {
+      "id": "CA-08.1",
+      "status": "Evidencia parcial",
+      "observed": "Interfaz y código consultan estado; no captura de red correlacionada de todos los retornos.",
+      "gap": "Acreditar consulta real al backend durante retorno.",
+      "source": "Casos_y_resultados_Pagos_Fase2.xlsx!Cobertura/Ejecuciones: PG-03, CP02, CP03-R, PG-05; Resultados_Datos_y_permisos_Fase2.xlsx!Cobertura/Ejecuciones: DP-01, DP-02",
+      "action": "Prueba adicional controlada o decisión de alcance"
+    },
+    {
+      "id": "CA-08.2",
+      "status": "Evidencia parcial",
+      "observed": "Pagado, pendiente y rechazo observados; falta una matriz explícita de los cuatro estados en Aprueba.",
+      "gap": "Completar diferenciación de cancelado/fallido sin inferirla solo desde Stripe.",
+      "source": "Casos_y_resultados_Pagos_Fase2.xlsx!Cobertura/Ejecuciones: PG-03, CP02, CP03-R, PG-05; Resultados_Datos_y_permisos_Fase2.xlsx!Cobertura/Ejecuciones: DP-01, DP-02",
+      "action": "Prueba adicional controlada o decisión de alcance"
+    },
+    {
+      "id": "CA-08.3",
+      "status": "Evidencia directa delimitada",
+      "observed": "Mi plan C/E y CP03-R muestran oferta, ciclo, materia aplicable, fin y medio enmascarado.",
+      "gap": "Muestras controladas; en Todas no aplica materia única.",
+      "source": "Casos_y_resultados_Pagos_Fase2.xlsx!Cobertura/Ejecuciones: PG-03, CP02, CP03-R, PG-05; Resultados_Datos_y_permisos_Fase2.xlsx!Cobertura/Ejecuciones: DP-01, DP-02",
+      "action": "Reutilizar evidencia y mantener límites"
+    },
+    {
+      "id": "CA-08.4",
+      "status": "Evidencia directa delimitada",
+      "observed": "DP01/02 e IF02 acreditan recarga y nueva sesión con datos conservados.",
+      "gap": "No sustituye revocación de tokens o caché/red.",
+      "source": "Casos_y_resultados_Pagos_Fase2.xlsx!Cobertura/Ejecuciones: PG-03, CP02, CP03-R, PG-05; Resultados_Datos_y_permisos_Fase2.xlsx!Cobertura/Ejecuciones: DP-01, DP-02",
+      "action": "Reutilizar evidencia y mantener límites"
+    },
+    {
+      "id": "CA-09.1",
+      "status": "Evidencia directa delimitada",
+      "observed": "PG08 registra fecha de término antes de confirmar cancelación.",
+      "gap": "No acredita término efectivo al llegar esa fecha.",
+      "source": "Casos_y_resultados_Pagos_Fase2.xlsx!Cobertura/Ejecuciones: PG-08, PG-09, PG-12",
+      "action": "Reutilizar evidencia y mantener límites"
+    },
+    {
+      "id": "CA-09.2",
+      "status": "Evidencia directa delimitada",
+      "observed": "PG08 muestra cancelación programada en Portal y Aprueba/admin.",
+      "gap": "Sin inspección interna del webhook en esa tanda.",
+      "source": "Casos_y_resultados_Pagos_Fase2.xlsx!Cobertura/Ejecuciones: PG-08, PG-09, PG-12",
+      "action": "Reutilizar evidencia y mantener límites"
+    },
+    {
+      "id": "CA-09.3",
+      "status": "Evidencia directa delimitada",
+      "observed": "PG09 acredita reactivación antes de terminar el periodo.",
+      "gap": "No cubre reactivación posterior a vencimiento.",
+      "source": "Casos_y_resultados_Pagos_Fase2.xlsx!Cobertura/Ejecuciones: PG-08, PG-09, PG-12",
+      "action": "Reutilizar evidencia y mantener límites"
+    },
+    {
+      "id": "CA-09.4",
+      "status": "Evidencia directa delimitada",
+      "observed": "PG08/09 conservan estado y fecha en comprobaciones posteriores.",
+      "gap": "Misma suscripción y periodo documentados.",
+      "source": "Casos_y_resultados_Pagos_Fase2.xlsx!Cobertura/Ejecuciones: PG-08, PG-09, PG-12",
+      "action": "Reutilizar evidencia y mantener límites"
+    },
+    {
+      "id": "CA-10.1",
+      "status": "Evidencia parcial",
+      "observed": "EX17/18 y CP03 muestran alternativas observadas, sin probar todas las incompatibles.",
+      "gap": "Definir compatibilidad y probar una alternativa inválida.",
+      "source": "Casos_y_resultados_Pagos_Fase2.xlsx!Cobertura/Ejecuciones: CP03, PG-04, PG-20; Resultados_Datos_y_permisos_Fase2.xlsx!Cobertura/Ejecuciones: EX-17, EX-18",
+      "action": "Prueba adicional controlada o decisión de alcance"
+    },
+    {
+      "id": "CA-10.2",
+      "status": "Evidencia parcial",
+      "observed": "Cobros/ajustes USD4 y crédito observados; falta resumen completo de todas las fechas/políticas.",
+      "gap": "Verificar fecha efectiva y ajuste conforme a regla confirmada.",
+      "source": "Casos_y_resultados_Pagos_Fase2.xlsx!Cobertura/Ejecuciones: CP03, PG-04, PG-20; Resultados_Datos_y_permisos_Fase2.xlsx!Cobertura/Ejecuciones: EX-17, EX-18",
+      "action": "Prueba adicional controlada o decisión de alcance"
+    },
+    {
+      "id": "CA-10.3",
+      "status": "Evidencia parcial",
+      "observed": "Cambio y pago efectuados; no batería de todas las validaciones de la política.",
+      "gap": "Confirmar política y sus límites antes de aprobar todo el criterio.",
+      "source": "Casos_y_resultados_Pagos_Fase2.xlsx!Cobertura/Ejecuciones: CP03, PG-04, PG-20; Resultados_Datos_y_permisos_Fase2.xlsx!Cobertura/Ejecuciones: EX-17, EX-18",
+      "action": "Prueba adicional controlada o decisión de alcance"
+    },
+    {
+      "id": "CA-10.4",
+      "status": "Evidencia directa delimitada",
+      "observed": "CP03/PG04 conservan Ciencias ante rechazo y muestran resultado; CP03-R recupera.",
+      "gap": "No afirmar acceso Todas antes del pago.",
+      "source": "Casos_y_resultados_Pagos_Fase2.xlsx!Cobertura/Ejecuciones: CP03, PG-04, PG-20; Resultados_Datos_y_permisos_Fase2.xlsx!Cobertura/Ejecuciones: EX-17, EX-18",
+      "action": "Reutilizar evidencia y mantener límites"
+    },
+    {
+      "id": "CA-11.1",
+      "status": "Evidencia parcial",
+      "observed": "Admin muestra datos; IF09 no llegó a segunda página por cantidad insuficiente.",
+      "gap": "Acreditar paginación y rol positivo en alcance definido.",
+      "source": "Resultados_Datos_y_permisos_Fase2.xlsx!Cobertura/Ejecuciones: DP-06, DP-09; Casos_y_resultados_Interfaz_Fase2.xlsx!Cobertura/Ejecuciones: IF-09, IF-10",
+      "action": "Prueba adicional controlada o decisión de alcance"
+    },
+    {
+      "id": "CA-11.2",
+      "status": "Evidencia parcial",
+      "observed": "Búsqueda/filtros observados; combinación con rango de fechas no acreditada.",
+      "gap": "Confirmar controles disponibles y probar combinación requerida.",
+      "source": "Resultados_Datos_y_permisos_Fase2.xlsx!Cobertura/Ejecuciones: DP-06, DP-09; Casos_y_resultados_Interfaz_Fase2.xlsx!Cobertura/Ejecuciones: IF-09, IF-10",
+      "action": "Prueba adicional controlada o decisión de alcance"
+    },
+    {
+      "id": "CA-11.3",
+      "status": "Evidencia directa delimitada",
+      "observed": "Facturación muestra referencia, importe, moneda, fecha y estado en muestras C/E.",
+      "gap": "No certifica cada registro de la base.",
+      "source": "Resultados_Datos_y_permisos_Fase2.xlsx!Cobertura/Ejecuciones: DP-06, DP-09; Casos_y_resultados_Interfaz_Fase2.xlsx!Cobertura/Ejecuciones: IF-09, IF-10",
+      "action": "Reutilizar evidencia y mantener límites"
+    },
+    {
+      "id": "CA-11.4",
+      "status": "Evidencia parcial",
+      "observed": "DP09 rechaza tokens estudiante con 401 sin datos; DP06 y otros roles siguen pendientes.",
+      "gap": "Completar frontera de interfaz y, si aplica, matriz de roles administrativos.",
+      "source": "Resultados_Datos_y_permisos_Fase2.xlsx!Cobertura/Ejecuciones: DP-06, DP-09; Casos_y_resultados_Interfaz_Fase2.xlsx!Cobertura/Ejecuciones: IF-09, IF-10",
+      "action": "Prueba adicional controlada o decisión de alcance"
+    },
+    {
+      "id": "CA-12.1",
+      "status": "Evidencia parcial",
+      "observed": "Comprobantes propios abiertos con referencia y medio enmascarado; detalle integral no acreditado.",
+      "gap": "Comprobar detalle de la transacción dentro del alcance acordado.",
+      "source": "Resultados_Datos_y_permisos_Fase2.xlsx!Cobertura/Ejecuciones: DP-03, DP-16",
+      "action": "Prueba adicional controlada o decisión de alcance"
+    },
+    {
+      "id": "CA-12.2",
+      "status": "Evidencia parcial",
+      "observed": "Suscripción/comprobante disponibles; disputa/eventos no acreditados desde esa vista.",
+      "gap": "Definir y verificar relaciones de detalle faltantes.",
+      "source": "Resultados_Datos_y_permisos_Fase2.xlsx!Cobertura/Ejecuciones: DP-03, DP-16",
+      "action": "Prueba adicional controlada o decisión de alcance"
+    },
+    {
+      "id": "CA-12.3",
+      "status": "Evidencia parcial",
+      "observed": "Fechas/eventos técnicos conservados; no auditoría completa con origen y responsable.",
+      "gap": "Acreditar los campos en cambios y vista de auditoría.",
+      "source": "Resultados_Datos_y_permisos_Fase2.xlsx!Cobertura/Ejecuciones: DP-03, DP-16",
+      "action": "Prueba adicional controlada o decisión de alcance"
+    },
+    {
+      "id": "CA-12.4",
+      "status": "Evidencia parcial",
+      "observed": "DP10 acredita 404 para Checkout ajeno, no toda referencia de detalle de transacción.",
+      "gap": "Probar referencia inexistente e inaccesible del recurso específico.",
+      "source": "Resultados_Datos_y_permisos_Fase2.xlsx!Cobertura/Ejecuciones: DP-03, DP-16",
+      "action": "Prueba adicional controlada o decisión de alcance"
+    },
+    {
+      "id": "CA-13.1",
+      "status": "Sin ejecución específica",
+      "observed": "PG10 no ejecutado; compras iniciales y pruebas locales no son renovación.",
+      "gap": "Preparar ciclo compatible de Stripe y reloj de Aprueba y contrastar una sola extensión.",
+      "source": "Casos_y_resultados_Pagos_Fase2.xlsx!Cobertura/Ejecuciones: PG-10",
+      "action": "Prueba adicional controlada o decisión de alcance"
+    },
+    {
+      "id": "CA-13.2",
+      "status": "Sin ejecución específica",
+      "observed": "No hay renovación integral con plan/ciclo/materia antes y después.",
+      "gap": "Comprobar conservación de oferta en la renovación real o simulación válida.",
+      "source": "Casos_y_resultados_Pagos_Fase2.xlsx!Cobertura/Ejecuciones: PG-10",
+      "action": "Prueba adicional controlada o decisión de alcance"
+    },
+    {
+      "id": "CA-13.3",
+      "status": "Sin ejecución específica",
+      "observed": "No hay nuevo cobro recurrente y comprobante correlacionados.",
+      "gap": "Correlacionar factura renovada, transacción y suscripción.",
+      "source": "Casos_y_resultados_Pagos_Fase2.xlsx!Cobertura/Ejecuciones: PG-10",
+      "action": "Prueba adicional controlada o decisión de alcance"
+    },
+    {
+      "id": "CA-13.4",
+      "status": "Sin ejecución específica",
+      "observed": "No se observó nuevo término del periodo tras renovación.",
+      "gap": "Registrar UI y persistencia posteriores a una renovación acreditada.",
+      "source": "Casos_y_resultados_Pagos_Fase2.xlsx!Cobertura/Ejecuciones: PG-10",
+      "action": "Prueba adicional controlada o decisión de alcance"
+    },
+    {
+      "id": "CA-14.1",
+      "status": "Evidencia parcial",
+      "observed": "CP03 acredita rechazo de cambio; no reemplaza renovación rechazada PG11.",
+      "gap": "Ejecutar cobro recurrente fallido y verificar estados compatibles.",
+      "source": "Casos_y_resultados_Pagos_Fase2.xlsx!Cobertura/Ejecuciones: CP03, CP03-R, PG-11",
+      "action": "Prueba adicional controlada o decisión de alcance"
+    },
+    {
+      "id": "CA-14.2",
+      "status": "Sin ejecución específica",
+      "observed": "No existe evidencia de cada intento de cobro con fecha, causa y resultado.",
+      "gap": "Confirmar política del proveedor y obtener historial por intento.",
+      "source": "Casos_y_resultados_Pagos_Fase2.xlsx!Cobertura/Ejecuciones: CP03, CP03-R, PG-11",
+      "action": "Prueba adicional controlada o decisión de alcance"
+    },
+    {
+      "id": "CA-14.3",
+      "status": "Evidencia parcial",
+      "observed": "CP03-R recupera factura de cambio sin duplicar; contexto recurrente no ejecutado.",
+      "gap": "Ejecutar recuperación de cobro recurrente y comprobar suscripción.",
+      "source": "Casos_y_resultados_Pagos_Fase2.xlsx!Cobertura/Ejecuciones: CP03, CP03-R, PG-11",
+      "action": "Prueba adicional controlada o decisión de alcance"
+    },
+    {
+      "id": "CA-14.4",
+      "status": "Decisión de alcance",
+      "observed": "Política de reintentos agotados y seguimiento operativo no confirmada.",
+      "gap": "Decidir política y comprobar caso agotado en consola; no inferirla de maxAttempts de Firestore.",
+      "source": "Casos_y_resultados_Pagos_Fase2.xlsx!Cobertura/Ejecuciones: CP03, CP03-R, PG-11",
+      "action": "Decisión del grupo antes de ejecutar"
+    },
+    {
+      "id": "CA-15.1",
+      "status": "Sin ejecución específica",
+      "observed": "No emisión financiera localizada en el backend estudiantil revisado ni prueba de envío/recepción.",
+      "gap": "Confirmar integración externa o registrar bloqueo y decisión; PG21 no ejecutado.",
+      "source": "Casos_y_resultados_Pagos_Fase2.xlsx!Cobertura/Ejecuciones: PG-21",
+      "action": "Prueba adicional controlada o decisión de alcance"
+    },
+    {
+      "id": "CA-15.2",
+      "status": "Sin ejecución específica",
+      "observed": "Notificaciones demo/preferencias no prueban composición de aviso financiero real.",
+      "gap": "Obtener aviso generado con plan, estado y acción, sin secretos.",
+      "source": "Casos_y_resultados_Pagos_Fase2.xlsx!Cobertura/Ejecuciones: PG-21",
+      "action": "Prueba adicional controlada o decisión de alcance"
+    },
+    {
+      "id": "CA-15.3",
+      "status": "Sin ejecución específica",
+      "observed": "No hay registro correlacionado de resultado de envío financiero.",
+      "gap": "Acreditar ID del aviso, canal, destinatario de prueba y resultado.",
+      "source": "Casos_y_resultados_Pagos_Fase2.xlsx!Cobertura/Ejecuciones: PG-21",
+      "action": "Prueba adicional controlada o decisión de alcance"
+    },
+    {
+      "id": "CA-15.4",
+      "status": "Sin ejecución específica",
+      "observed": "No se probó fallo de envío independiente del pago.",
+      "gap": "Requiere emisor y fallo controlado que conserve resultado financiero y permita reintento.",
+      "source": "Casos_y_resultados_Pagos_Fase2.xlsx!Cobertura/Ejecuciones: PG-21",
+      "action": "Prueba adicional controlada o decisión de alcance"
+    },
+    {
+      "id": "CA-16.1",
+      "status": "Decisión de alcance",
+      "observed": "El código conserva derecho pagado antes de su fin; no gracia adicional confirmada.",
+      "gap": "Acordar duración, inicio y fecha límite de gracia o declarar diferencia de alcance.",
+      "source": "Casos_y_resultados_Pagos_Fase2.xlsx!Cobertura/Ejecuciones: PG-11, PG-12",
+      "action": "Decisión del grupo antes de ejecutar"
+    },
+    {
+      "id": "CA-16.2",
+      "status": "Decisión de alcance",
+      "observed": "Recuperación dentro de periodo pagado no acredita recuperación dentro de gracia adicional.",
+      "gap": "Definir si hay gracia; luego probar recuperación en ese intervalo.",
+      "source": "Casos_y_resultados_Pagos_Fase2.xlsx!Cobertura/Ejecuciones: PG-11, PG-12",
+      "action": "Decisión del grupo antes de ejecutar"
+    },
+    {
+      "id": "CA-16.3",
+      "status": "Decisión de alcance",
+      "observed": "Sin política acordada ni reloj integral compatible.",
+      "gap": "Definir vencimiento/gracia y probar retirada de pago con permanencia gratuita.",
+      "source": "Casos_y_resultados_Pagos_Fase2.xlsx!Cobertura/Ejecuciones: PG-11, PG-12",
+      "action": "Decisión del grupo antes de ejecutar"
+    },
+    {
+      "id": "CA-16.4",
+      "status": "Evidencia parcial",
+      "observed": "effectivePlan devuelve free al vencer; no prueba transición durable única y auditada.",
+      "gap": "Acreditar vencimiento real/simulado, ejecución única y registro requerido.",
+      "source": "Casos_y_resultados_Pagos_Fase2.xlsx!Cobertura/Ejecuciones: PG-11, PG-12",
+      "action": "Prueba adicional controlada o decisión de alcance"
+    },
+    {
+      "id": "CA-17.1",
+      "status": "Evidencia directa delimitada",
+      "observed": "Portal propio de Stripe abierto y método actualizado en secuencia CP03-R/EX04.",
+      "gap": "Solo propietario y operaciones documentados.",
+      "source": "Casos_y_resultados_Pagos_Fase2.xlsx!Cobertura/Ejecuciones: CP03, CP03-R",
+      "action": "Reutilizar evidencia y mantener límites"
+    },
+    {
+      "id": "CA-17.2",
+      "status": "Evidencia parcial",
+      "observed": "Marca/últimos dígitos visibles; no auditoría exhaustiva de ausencia de datos completos.",
+      "gap": "Verificar red, registros y persistencia del alcance de actualización.",
+      "source": "Casos_y_resultados_Pagos_Fase2.xlsx!Cobertura/Ejecuciones: CP03, CP03-R",
+      "action": "Prueba adicional controlada o decisión de alcance"
+    },
+    {
+      "id": "CA-17.3",
+      "status": "Sin ejecución específica",
+      "observed": "DP10 prueba Checkout; no autorización negativa de Portal de actualización.",
+      "gap": "Probar Portal con usuario ajeno y sin sesión, con recursos propios controlados.",
+      "source": "Casos_y_resultados_Pagos_Fase2.xlsx!Cobertura/Ejecuciones: CP03, CP03-R",
+      "action": "Prueba adicional controlada o decisión de alcance"
+    },
+    {
+      "id": "CA-17.4",
+      "status": "Evidencia directa delimitada",
+      "observed": "CP03-R y estado posterior muestran marca y últimos dígitos disponibles.",
+      "gap": "No afirmar soporte universal de medios ni datos completos.",
+      "source": "Casos_y_resultados_Pagos_Fase2.xlsx!Cobertura/Ejecuciones: CP03, CP03-R",
+      "action": "Reutilizar evidencia y mantener límites"
+    },
+    {
+      "id": "CA-18.1",
+      "status": "Decisión de alcance",
+      "observed": "Reembolso no ejecutado; inventario DP16 no demuestra ausencia global.",
+      "gap": "Confirmar compromiso, operación habilitada, rol y datos desechables.",
+      "source": "Resultados_Datos_y_permisos_Fase2.xlsx!Cobertura/Ejecuciones: DP-16",
+      "action": "Decisión del grupo antes de ejecutar"
+    },
+    {
+      "id": "CA-18.2",
+      "status": "Decisión de alcance",
+      "observed": "No hay ejecución de monto reembolsable ni saldo restante.",
+      "gap": "Resolver alcance; si se incluye, probar saldo y exceso en test.",
+      "source": "Resultados_Datos_y_permisos_Fase2.xlsx!Cobertura/Ejecuciones: DP-16",
+      "action": "Decisión del grupo antes de ejecutar"
+    },
+    {
+      "id": "CA-18.3",
+      "status": "Decisión de alcance",
+      "observed": "No hay operación correlacionada y campos de auditoría de reembolso.",
+      "gap": "Resolver alcance y obtener comprobante/registro de una operación de prueba.",
+      "source": "Resultados_Datos_y_permisos_Fase2.xlsx!Cobertura/Ejecuciones: DP-16",
+      "action": "Decisión del grupo antes de ejecutar"
+    },
+    {
+      "id": "CA-18.4",
+      "status": "Decisión de alcance",
+      "observed": "No hay política de beneficios tras reembolso confirmada.",
+      "gap": "Decidir política y comprobar conservación del historial; no ejecutar devolución ahora.",
+      "source": "Resultados_Datos_y_permisos_Fase2.xlsx!Cobertura/Ejecuciones: DP-16",
+      "action": "Decisión del grupo antes de ejecutar"
+    },
+    {
+      "id": "CA-19.1",
+      "status": "Decisión de alcance",
+      "observed": "Sin prueba de evento de disputa; inventario de vistas no demuestra ausencia global.",
+      "gap": "Confirmar compromiso y mecanismo de disputa de prueba.",
+      "source": "Resultados_Datos_y_permisos_Fase2.xlsx!Cobertura/Ejecuciones: DP-16",
+      "action": "Decisión del grupo antes de ejecutar"
+    },
+    {
+      "id": "CA-19.2",
+      "status": "Decisión de alcance",
+      "observed": "Sin consulta de caso de disputa con datos y plazo.",
+      "gap": "Confirmar alcance y superficie de seguimiento.",
+      "source": "Resultados_Datos_y_permisos_Fase2.xlsx!Cobertura/Ejecuciones: DP-16",
+      "action": "Decisión del grupo antes de ejecutar"
+    },
+    {
+      "id": "CA-19.3",
+      "status": "Decisión de alcance",
+      "observed": "Sin actualización correlacionada del mismo caso.",
+      "gap": "Definir evento de cambio y comprobar idempotencia de la disputa.",
+      "source": "Resultados_Datos_y_permisos_Fase2.xlsx!Cobertura/Ejecuciones: DP-16",
+      "action": "Decisión del grupo antes de ejecutar"
+    },
+    {
+      "id": "CA-19.4",
+      "status": "Decisión de alcance",
+      "observed": "Sin cierre de disputa ni verificación del historial original.",
+      "gap": "Confirmar política de cierre y preservar transacción original.",
+      "source": "Resultados_Datos_y_permisos_Fase2.xlsx!Cobertura/Ejecuciones: DP-16",
+      "action": "Decisión del grupo antes de ejecutar"
+    },
+    {
+      "id": "CA-20.1",
+      "status": "Decisión de alcance",
+      "observed": "Historial interno del estudiante no disponible; DP10 Checkout no lo sustituye.",
+      "gap": "Acordar si Portal satisface RF20 o si se exige historial dentro de Aprueba.",
+      "source": "Resultados_Datos_y_permisos_Fase2.xlsx!Cobertura/Ejecuciones: DP-04, DP-07, DP-10; Casos_y_resultados_Interfaz_Fase2.xlsx!Cobertura/Ejecuciones: IF-06, IF-07",
+      "action": "Decisión del grupo antes de ejecutar"
+    },
+    {
+      "id": "CA-20.2",
+      "status": "Evidencia parcial",
+      "observed": "Facturas/Portal/admin muestran campos; historial estudiantil interno sin cobertura.",
+      "gap": "Resolver superficie exigida y verificar campos de una transacción propia.",
+      "source": "Resultados_Datos_y_permisos_Fase2.xlsx!Cobertura/Ejecuciones: DP-04, DP-07, DP-10; Casos_y_resultados_Interfaz_Fase2.xlsx!Cobertura/Ejecuciones: IF-06, IF-07",
+      "action": "Prueba adicional controlada o decisión de alcance"
+    },
+    {
+      "id": "CA-20.3",
+      "status": "Evidencia parcial",
+      "observed": "Comprobante propio abierto; no toda autorización de enlace/documento acreditada.",
+      "gap": "Probar apertura y acceso autorizado según la ruta acordada.",
+      "source": "Resultados_Datos_y_permisos_Fase2.xlsx!Cobertura/Ejecuciones: DP-04, DP-07, DP-10; Casos_y_resultados_Interfaz_Fase2.xlsx!Cobertura/Ejecuciones: IF-06, IF-07",
+      "action": "Prueba adicional controlada o decisión de alcance"
+    },
+    {
+      "id": "CA-20.4",
+      "status": "Bloqueado por disponibilidad",
+      "observed": "IF06 bloqueado: no hay pantalla de historial interno para probar vacío.",
+      "gap": "Habilitación o decisión de alcance; no fabricar estado vacío.",
+      "source": "Resultados_Datos_y_permisos_Fase2.xlsx!Cobertura/Ejecuciones: DP-04, DP-07, DP-10; Casos_y_resultados_Interfaz_Fase2.xlsx!Cobertura/Ejecuciones: IF-06, IF-07",
+      "action": "Precondición de producto/contenido"
+    },
+    {
+      "id": "CA-21.1",
+      "status": "Decisión de alcance",
+      "observed": "DP16 solo inventaría; no conciliación ejecutada.",
+      "gap": "Confirmar compromiso, fuente y periodo de conciliación.",
+      "source": "Resultados_Datos_y_permisos_Fase2.xlsx!Cobertura/Ejecuciones: DP-16",
+      "action": "Decisión del grupo antes de ejecutar"
+    },
+    {
+      "id": "CA-21.2",
+      "status": "Decisión de alcance",
+      "observed": "Sin resultados que distingan coincidencias/faltantes/diferencias.",
+      "gap": "Definir muestra controlada y criterio de coincidencia.",
+      "source": "Resultados_Datos_y_permisos_Fase2.xlsx!Cobertura/Ejecuciones: DP-16",
+      "action": "Decisión del grupo antes de ejecutar"
+    },
+    {
+      "id": "CA-21.3",
+      "status": "Decisión de alcance",
+      "observed": "Sin prueba de no modificación durante conciliación.",
+      "gap": "Si se incluye, comparar estado antes/después y autorización.",
+      "source": "Resultados_Datos_y_permisos_Fase2.xlsx!Cobertura/Ejecuciones: DP-16",
+      "action": "Decisión del grupo antes de ejecutar"
+    },
+    {
+      "id": "CA-21.4",
+      "status": "Decisión de alcance",
+      "observed": "Sin ejecución de conciliación con registro durable.",
+      "gap": "Definir responsable, fecha, alcance y resultado requeridos.",
+      "source": "Resultados_Datos_y_permisos_Fase2.xlsx!Cobertura/Ejecuciones: DP-16",
+      "action": "Decisión del grupo antes de ejecutar"
+    },
+    {
+      "id": "CA-22.1",
+      "status": "Decisión de alcance",
+      "observed": "PDF de factura no es CSV de resultados filtrados.",
+      "gap": "Confirmar exportación comprometida y recurso filtrado.",
+      "source": "Resultados_Datos_y_permisos_Fase2.xlsx!Cobertura/Ejecuciones: DP-16",
+      "action": "Decisión del grupo antes de ejecutar"
+    },
+    {
+      "id": "CA-22.2",
+      "status": "Decisión de alcance",
+      "observed": "No hay CSV de aplicación para inspeccionar; extractos locales no lo sustituyen.",
+      "gap": "Si se incluye, revisar exclusión de secretos en archivo exportado.",
+      "source": "Resultados_Datos_y_permisos_Fase2.xlsx!Cobertura/Ejecuciones: DP-16",
+      "action": "Decisión del grupo antes de ejecutar"
+    },
+    {
+      "id": "CA-22.3",
+      "status": "Decisión de alcance",
+      "observed": "No hay exportación de resultados con fecha/zona/columnas comprobadas.",
+      "gap": "Definir formato y verificar un archivo generado por el producto.",
+      "source": "Resultados_Datos_y_permisos_Fase2.xlsx!Cobertura/Ejecuciones: DP-16",
+      "action": "Decisión del grupo antes de ejecutar"
+    },
+    {
+      "id": "CA-22.4",
+      "status": "Decisión de alcance",
+      "observed": "No hay registro de usuario/alcance/resultado de exportación.",
+      "gap": "Confirmar operación y auditoría; no inventar una exportación manual.",
+      "source": "Resultados_Datos_y_permisos_Fase2.xlsx!Cobertura/Ejecuciones: DP-16",
+      "action": "Decisión del grupo antes de ejecutar"
+    },
+    {
+      "id": "CA-23.1",
+      "status": "Decisión de alcance",
+      "observed": "PG17 no acredita selección y reproceso autorizado por Operaciones.",
+      "gap": "Resolver alcance RF23 y superficie de operación.",
+      "source": "Casos_y_resultados_Pagos_Fase2.xlsx!Cobertura/Ejecuciones: PG-17; Resultados_Datos_y_permisos_Fase2.xlsx!Cobertura/Ejecuciones: DP-16",
+      "action": "Decisión del grupo antes de ejecutar"
+    },
+    {
+      "id": "CA-23.2",
+      "status": "Evidencia parcial",
+      "observed": "PG13 y reintento PG17 evitan duplicado técnico; no consola de reproceso.",
+      "gap": "Comprobar acción de Operaciones si pertenece al alcance.",
+      "source": "Casos_y_resultados_Pagos_Fase2.xlsx!Cobertura/Ejecuciones: PG-17; Resultados_Datos_y_permisos_Fase2.xlsx!Cobertura/Ejecuciones: DP-16",
+      "action": "Prueba adicional controlada o decisión de alcance"
+    },
+    {
+      "id": "CA-23.3",
+      "status": "Evidencia parcial",
+      "observed": "PG17 recupera con controles técnicos en aislamiento; no todo reproceso operativo.",
+      "gap": "Acreditar autenticidad/idempotencia en la acción autorizada requerida.",
+      "source": "Casos_y_resultados_Pagos_Fase2.xlsx!Cobertura/Ejecuciones: PG-17; Resultados_Datos_y_permisos_Fase2.xlsx!Cobertura/Ejecuciones: DP-16",
+      "action": "Prueba adicional controlada o decisión de alcance"
+    },
+    {
+      "id": "CA-23.4",
+      "status": "Evidencia parcial",
+      "observed": "PG17 recupera, pero no conserva todos los intentos con responsable/resultado/error.",
+      "gap": "Mantener brecha CA23.4; log y processedAt de éxito no son historial completo.",
+      "source": "Casos_y_resultados_Pagos_Fase2.xlsx!Cobertura/Ejecuciones: PG-17; Resultados_Datos_y_permisos_Fase2.xlsx!Cobertura/Ejecuciones: DP-16",
+      "action": "Prueba adicional controlada o decisión de alcance"
+    },
+    {
+      "id": "CA-24.1",
+      "status": "Bloqueado por disponibilidad",
+      "observed": "DP12–15 bloqueados; editor descriptivo observado y cancelado.",
+      "gap": "Operaciones habilitadas y plan desechable; no cambiar planes compartidos.",
+      "source": "Resultados_Datos_y_permisos_Fase2.xlsx!Cobertura/Ejecuciones: DP-11, DP-12, DP-13, DP-14, DP-15; Casos_y_resultados_Interfaz_Fase2.xlsx!Cobertura/Ejecuciones: IF-08",
+      "action": "Precondición de producto/contenido"
+    },
+    {
+      "id": "CA-24.2",
+      "status": "Bloqueado por disponibilidad",
+      "observed": "Precios solo lectura; sin publicación de una versión nueva.",
+      "gap": "Confirmar implementación/versionado y probar vínculo Stripe en test.",
+      "source": "Resultados_Datos_y_permisos_Fase2.xlsx!Cobertura/Ejecuciones: DP-11, DP-12, DP-13, DP-14, DP-15; Casos_y_resultados_Interfaz_Fase2.xlsx!Cobertura/Ejecuciones: IF-08",
+      "action": "Precondición de producto/contenido"
+    },
+    {
+      "id": "CA-24.3",
+      "status": "Bloqueado por disponibilidad",
+      "observed": "Eliminar deshabilitado; no demuestra regla dependiente de suscriptores activos.",
+      "gap": "Probar rechazo destructivo cuando exista operación y plan de prueba apropiado.",
+      "source": "Resultados_Datos_y_permisos_Fase2.xlsx!Cobertura/Ejecuciones: DP-11, DP-12, DP-13, DP-14, DP-15; Casos_y_resultados_Interfaz_Fase2.xlsx!Cobertura/Ejecuciones: IF-08",
+      "action": "Precondición de producto/contenido"
+    },
+    {
+      "id": "CA-24.4",
+      "status": "Bloqueado por disponibilidad",
+      "observed": "Sin cambio guardado ni auditoría del catálogo.",
+      "gap": "Acreditar auditoría y ofertas vigentes después de un cambio autorizado.",
+      "source": "Resultados_Datos_y_permisos_Fase2.xlsx!Cobertura/Ejecuciones: DP-11, DP-12, DP-13, DP-14, DP-15; Casos_y_resultados_Interfaz_Fase2.xlsx!Cobertura/Ejecuciones: IF-08",
+      "action": "Precondición de producto/contenido"
+    }
+  ],
+  "counts": {
+    "Evidencia parcial": 31,
+    "Bloqueado por disponibilidad": 6,
+    "Sin ejecución específica": 15,
+    "Evidencia directa delimitada": 22,
+    "Decisión de alcance": 22
+  }
+}

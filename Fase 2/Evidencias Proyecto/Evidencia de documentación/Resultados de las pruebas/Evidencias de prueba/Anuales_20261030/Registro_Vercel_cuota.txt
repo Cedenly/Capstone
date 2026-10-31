@@ -1,0 +1,81 @@
+## Runtime Logs
+
+**Project:** prj_kJhUrKJGspA49OKTZzN3mu0F2lH6
+**Time range:** 2026-10-30T02:14:32.811Z → 2026-10-30T02:34:32.811Z
+
+### 2026-10-30T02:32:43.959Z POST /api/v1/auth/login [error/function]
+dep=dpl_5eJZCmftDNTSqjZrdneNgDMn4Hbf branch=main request=wj4ck-1793327562679-7cc34984158b domain=aprueba-student-api.vercel.app environment=production region=cle1 runtime=nodejs24.x stream=stderr
+    [error] Error: 8 RESOURCE_EXHAUSTED: Quota exceeded.
+        at callErrorFromStatus (/var/task/backend/node_modules/@grpc/grpc-js/build/src/call.js:32:19)
+        at Object.onReceiveStatus (/var/task/backend/node_modules/@grpc/grpc-js/build/src/client.js:359:73)
+        at Object.onReceiveStatus (/var/task/backend/node_modules/@grpc/grpc-js/build/src/client-interceptors.js:327:181)
+        at /var/task/backend/node_modules/@grpc/grpc-js/build/src/resolving-call.js:135:78
+        at process.processTicksAndRejections (node:internal/process/task_queues:85:11)
+    for call at
+        at ServiceClientImpl.makeServerStreamRequest (/var/task/backend/node_modules/@grpc/grpc-js/build/src/client.js:342:32)
+        at ServiceClientImpl.<anonymous> (/var/task/backend/node_modules/@grpc/grpc-js/build/src/make-client.js:105:19)
+        at /var/task/backend/node_modules/@google-cloud/firestore/build/src/v1/firestore_client.js:269:29
+        at /var/task/backend/node_modules/google-gax/build/src/streamingCalls/streamingApiCaller.js:39:28
+        at /var/task/backend/node_modules/google-gax/build/src/normalCalls/timeout.js:44:16
+        at Object.request (/var/task/backend/node_modules/google-gax/build/src/streamingCalls/streaming.js:248:40)
+        at makeRequest (/var/task/backend/node_modules/google-gax/node_modules/retry-request/index.js:159:28)
+        at retryRequest (/var/task/backend/node_modules/google-gax/node_modules/retry-request/index.js:119:5)
+        at StreamProxy.setStream (/var/task/backend/node_modules/google-gax/build/src/streamingCalls/streaming.js:239:37)
+        at StreamingApiCaller.call (/var/task/backend/node_modules/google-gax/build/src/streamingCalls/streamingApiCaller.js:55:16)
+    Caused by: Error
+        at QueryUtil._getResponse (/var/task/backend/node_modules/@google-cloud/firestore/build/src/reference/query-util.js:47:23)
+        at CollectionReference._getResponse (/var/task/backend/node_modules/@google-cloud/firestore/build/src/reference/query.js:905:32)
+        at CollectionReference._get (/var/task/backend/node_modules/@goo… (truncated)
+
+### 2026-10-30T02:20:25.315Z POST /api/v1/auth/refresh [error/function]
+dep=dpl_5eJZCmftDNTSqjZrdneNgDMn4Hbf branch=main request=ll77q-1793326824905-0fc37ee694fb domain=aprueba-student-api.vercel.app environment=production region=cle1 runtime=nodejs24.x stream=stderr
+    [error] Error: 8 RESOURCE_EXHAUSTED: Quota exceeded.
+        at callErrorFromStatus (/var/task/backend/node_modules/@grpc/grpc-js/build/src/call.js:32:19)
+        at Object.onReceiveStatus (/var/task/backend/node_modules/@grpc/grpc-js/build/src/client.js:359:73)
+        at Object.onReceiveStatus (/var/task/backend/node_modules/@grpc/grpc-js/build/src/client-interceptors.js:327:181)
+        at /var/task/backend/node_modules/@grpc/grpc-js/build/src/resolving-call.js:135:78
+        at process.processTicksAndRejections (node:internal/process/task_queues:85:11)
+    for call at
+        at ServiceClientImpl.makeServerStreamRequest (/var/task/backend/node_modules/@grpc/grpc-js/build/src/client.js:342:32)
+        at ServiceClientImpl.<anonymous> (/var/task/backend/node_modules/@grpc/grpc-js/build/src/make-client.js:105:19)
+        at /var/task/backend/node_modules/@google-cloud/firestore/build/src/v1/firestore_client.js:269:29
+        at /var/task/backend/node_modules/google-gax/build/src/streamingCalls/streamingApiCaller.js:39:28
+        at /var/task/backend/node_modules/google-gax/build/src/normalCalls/timeout.js:44:16
+        at Object.request (/var/task/backend/node_modules/google-gax/build/src/streamingCalls/streaming.js:248:40)
+        at makeRequest (/var/task/backend/node_modules/google-gax/node_modules/retry-request/index.js:159:28)
+        at retryRequest (/var/task/backend/node_modules/google-gax/node_modules/retry-request/index.js:119:5)
+        at StreamProxy.setStream (/var/task/backend/node_modules/google-gax/build/src/streamingCalls/streaming.js:239:37)
+        at StreamingApiCaller.call (/var/task/backend/node_modules/google-gax/build/src/streamingCalls/streamingApiCaller.js:55:16)
+    Caused by: Error
+        at /var/task/backend/node_modules/@google-cloud/firestore/build/src/index.js:1097:27
+        at /var/task/backend/node_modules/@google-cloud/firestore/build/src/telemetry/enabled-trace-util.js:125:30
+        at NoopContextManager.with (/var/task/backend/node_modules/@opentelemetry/api/build/src/context/NoopContextManager.js:14:19)… (truncated)
+
+### 2026-10-30T02:18:05.070Z GET /api/v1/me/quota [error/function]
+dep=dpl_5eJZCmftDNTSqjZrdneNgDMn4Hbf branch=main request=v6zx9-1793326460321-445b4acaa21c domain=aprueba-student-api.vercel.app environment=production region=gru1 runtime=nodejs24.x stream=stderr
+    [error] Error: 8 RESOURCE_EXHAUSTED: Quota exceeded.
+        at callErrorFromStatus (/var/task/backend/node_modules/@grpc/grpc-js/build/src/call.js:32:19)
+        at Object.onReceiveStatus (/var/task/backend/node_modules/@grpc/grpc-js/build/src/client.js:359:73)
+        at Object.onReceiveStatus (/var/task/backend/node_modules/@grpc/grpc-js/build/src/client-interceptors.js:327:181)
+        at /var/task/backend/node_modules/@grpc/grpc-js/build/src/resolving-call.js:135:78
+        at process.processTicksAndRejections (node:internal/process/task_queues:85:11)
+    for call at
+        at ServiceClientImpl.makeServerStreamRequest (/var/task/backend/node_modules/@grpc/grpc-js/build/src/client.js:342:32)
+        at ServiceClientImpl.<anonymous> (/var/task/backend/node_modules/@grpc/grpc-js/build/src/make-client.js:105:19)
+        at /var/task/backend/node_modules/@google-cloud/firestore/build/src/v1/firestore_client.js:269:29
+        at /var/task/backend/node_modules/google-gax/build/src/streamingCalls/streamingApiCaller.js:39:28
+        at /var/task/backend/node_modules/google-gax/build/src/normalCalls/timeout.js:44:16
+        at Object.request (/var/task/backend/node_modules/google-gax/build/src/streamingCalls/streaming.js:248:40)
+        at makeRequest (/var/task/backend/node_modules/google-gax/node_modules/retry-request/index.js:159:28)
+        at retryRequest (/var/task/backend/node_modules/google-gax/node_modules/retry-request/index.js:119:5)
+        at StreamProxy.setStream (/var/task/backend/node_modules/google-gax/build/src/streamingCalls/streaming.js:239:37)
+        at StreamingApiCaller.call (/var/task/backend/node_modules/google-gax/build/src/streamingCalls/streamingApiCaller.js:55:16) {
+      code: 8,
+      details: 'Quota exceeded.',
+      metadata: Metadata {
+        internalRepr: Map(1) { 'x-debug-tracking-id' => [Array] },
+        opaqueData: Map(0) {},
+        options: {}
+      }
+    }
+

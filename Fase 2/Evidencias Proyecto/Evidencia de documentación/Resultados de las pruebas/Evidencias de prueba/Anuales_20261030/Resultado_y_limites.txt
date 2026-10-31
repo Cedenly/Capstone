@@ -1,0 +1,61 @@
+CONTRASTE DE PLANES ANUALES DEL 29 DE OCTUBRE
+
+Verificación Stripe registrada a las 23:24:28 Chile del 29-10-2026
+(30-10-2026 02:24:28.862Z). Verificación de error en Vercel a las 23:34 Chile.
+Cuenta sandbox acct_1UMr3HAhY3J8iTOw; todos los objetos consultados livemode=false.
+Solo se hicieron GET al proveedor. No se creó ni se repitió ningún pago.
+
+PG06 CUENTA C
+Suscripción sub_1UW3S9AhY3J8iTOwMNeaVbsS, active, uni/cien/yearly.
+Precio price_1UMtdiAhY3J8iTOwWLZcYok9: USD 10, intervalo year, interval_count 1.
+Factura in_1UW3S8AhY3J8iTOwD901Ktuh pagada, debido=pagado USD 10,
+remanente cero. Periodo: 29-10-2026 21:13:52 a 29-10-2027 21:13:52 Chile.
+Son registros preexistentes: no se atribuye su contratación a esta sesión.
+Se pidió acceso seguro para Prueba Fase2 C. La pantalla devolvió
+Error interno del servidor y no hubo autenticación verificada.
+No se inspeccionaron ni guardaron los valores del formulario.
+
+PG07 CUENTA E
+Suscripción sub_1UW3hlAhY3J8iTOwH4EJiYeO, active, all/yearly.
+Precio price_1UMtdoAhY3J8iTOwhppb7fH8: USD 50, intervalo year, interval_count 1.
+Factura in_1UW3hjAhY3J8iTOw9fvTzsZ3 pagada, debido=pagado USD 50,
+remanente cero. Periodo: 29-10-2026 21:29:58 a 29-10-2027 21:29:58 Chile.
+No se intentó otro acceso para E después de confirmar el bloqueo de consultas.
+Tampoco se atribuye la contratación preexistente a esta verificación posterior.
+
+BLOQUEO DEL ENTORNO
+Vercel registró POST /api/v1/auth/login a las 02:32:43.959Z:
+request wj4ck-1793327562679-7cc34984158b, Firestore error 8
+RESOURCE_EXHAUSTED: Quota exceeded. El mismo error aparece en
+GET /api/v1/me/quota a las 02:18:05.070Z y auth/refresh a las 02:20:25.315Z.
+El despliegue sigue READY, commit d1ac22791bdf6f276c8dcce3ec02d707daca3735.
+Esto no identifica qué límite exacto se excedió ni su hora de restablecimiento.
+No demuestra contraseña incorrecta ni un bloqueo del navegador por automatización.
+Registro_Vercel_cuota.txt conserva la salida obtenida; sus trazas están truncadas
+por el proveedor, como indica el propio texto. No contiene cuerpos de acceso.
+
+ESTADO DEL CONTRASTE TÉCNICO DEL 29 DE OCTUBRE
+PG06 y PG07: Parcial por contraste técnico de cobro/ciclo/periodo.
+No se da por aprobada la compra inicial completa ni la activación en Aprueba.
+Persistencia: las exportaciones completas ya recibidas del 30-10 01:25–01:30Z
+(29-10 22:25–22:30 Chile) contienen cinco documentos filtrados por cuenta,
+diez por fuente. Coinciden usuario, suscripción, factura, plan, ciclo,
+periodo, derecho activo, ausencia de deuda y checkout cerrado. C: factura
+USD 10 y checkout 1.000 centavos; E: USD 50 y 5.000 centavos.
+Los campos permitidos y sus fechas son idénticos entre ambas fuentes.
+Se excluyen contraseñas, hashes, tokens, contactos y enlaces privados.
+Esto no es una consulta actual ni acredita prácticas por interfaz.
+
+En ese contraste técnico faltaban vistas de la misma suscripción/factura en Mi plan y administración;
+cuota/beneficio; práctica y corrección de Ciencias para C; comprobación por
+materia para E. Los filtros y contenido de M2/Historia requieren sus evidencias.
+No recrear la contratación para recuperar capturas de una operación anterior.
+La ausencia de capturas iniciales de estos pagos se declara expresamente.
+
+Evidencia de cuota del 30-10-2026 00:09 Chile
+Las capturas aportadas el 30-10-2026 a las 00:09 Chile identifican el límite agotado en Cloud Firestore API, proyecto aprueba-mvp-pruebas-2fc41, base (default): 50.055 lecturas frente a 50.000 gratuitas al día, indicador 100 % y Ajustable No. Las escrituras muestran 615 de 20.000. Es evidencia del bloqueo de entorno OBS-ENTORNO-01; no acredita un fallo de contraseña ni un resultado funcional nuevo.
+La documentación oficial establece un reinicio diario alrededor de medianoche del Pacífico: para el 30-10-2026 corresponde aproximadamente a las 04:00 America/Santiago. Es una referencia horaria, no una recuperación observada ni una garantía de minuto exacto. Fuente consultada el 30-10-2026: https://firebase.google.com/docs/firestore/quotas
+
+Ver Continuacion_despues_de_cuota.txt.
+
+Estado de los casos al 30-10-2026: PG06 aprobado en su recorrido y PG07 parcial por M2/Historia. La evidencia de interfaz y el balance están en ../../Resultados_de_pruebas.docx y ../../Adjuntos/Casos_y_resultados_de_pagos.xlsx. El contraste técnico previo conserva sus límites.

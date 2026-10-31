@@ -1,0 +1,16 @@
+{
+  "checkedAt": "2026-10-30T02:34:33Z",
+  "source": "Vercel get_deployment",
+  "deploymentId": "dpl_5eJZCmftDNTSqjZrdneNgDMn4Hbf",
+  "name": "aprueba-student-api",
+  "readyState": "READY",
+  "url": "aprueba-student-8y6somz05-aprueba-admin3.vercel.app",
+  "projectId": null,
+  "git": {
+    "githubCommitSha": "d1ac22791bdf6f276c8dcce3ec02d707daca3735",
+    "githubCommitRef": "main",
+    "githubRepo": "aprueba_student_web",
+    "githubOrg": "Koetigsegg414"
+  },
+  "limits": "READY describe el despliegue, no la salud de Firestore; el registro de error acredita el bloqueo de consultas."
+}

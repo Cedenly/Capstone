@@ -1,0 +1,18 @@
+Incidente del servidor durante la sesión de pruebas
+Fecha y hora: 29-10-2026, 23:11:30 (America/Santiago)
+Consulta hecha desde el navegador, sin sesión ni credenciales (solo lectura):
+
+GET https://aprueba-student-api.vercel.app/api/v1/plans
+-> 500 {"error":{"code":"INTERNAL","message":"Error interno del servidor"}}  requestId req_c6de4093-b4a
+
+GET https://aprueba-student-api.vercel.app/api/v1/health
+-> 401 AUTH_REQUIRED "Falta el token de acceso" (la ruta exige sesión)
+
+GET https://aprueba-student-api.vercel.app/
+-> 404 NOT_FOUND (esperado)
+
+Contexto:
+- Desde aprox. 23:07 la práctica mostró "No pudimos completar esta acción. Inténtalo nuevamente." y el botón Reintentar no tuvo efecto.
+- Al recargar, la aplicación volvió al inicio de sesión. A las 23:10 el inicio de sesión de correod2@correod2.com respondió "Error interno del servidor".
+- La lista pública de planes también devuelve 500, por lo que la falla es del servidor y no de la sesión ni de la cuenta.
+- La causa no se pudo determinar desde el navegador (no se tiene acceso a los registros de Vercel ni de Firebase).

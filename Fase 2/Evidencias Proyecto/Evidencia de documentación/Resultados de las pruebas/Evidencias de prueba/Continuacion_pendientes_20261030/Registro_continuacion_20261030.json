@@ -1,0 +1,45 @@
+{
+  "executed_at_utc": "2026-10-30T14:31:09.631028+00:00",
+  "kind": "Comprobaciones complementarias; no cierre de tareas",
+  "deployment": {
+    "project": "aprueba-student-api",
+    "deployment_id": "dpl_5eJZCmftDNTSqjZrdneNgDMn4Hbf",
+    "commit": "d1ac22791bdf6f276c8dcce3ec02d707daca3735",
+    "state": "READY",
+    "source": "Vercel get_project y get_deployment; sin cambios"
+  },
+  "measurements": {
+    "direct_public_query": "GET https://aprueba-student-api.vercel.app/api/v1/plans",
+    "result": "curl timeout de conexión a 20 segundos; HTTP 000; no se obtuvo respuesta",
+    "interpretation": "Límite del entorno de ejecución. No es muestra válida de rendimiento de Aprueba, no acredita ni refuta RNF-07. No se ejecutó carga ni se repitió el bucle.",
+    "runtime_logs_1h": "Consulta rechazada por retención del plan; no equivale a cero errores.",
+    "runtime_logs_30m": "Consulta corregida sin registros para los criterios y ventana solicitados. No demuestra ausencia histórica de intentos o errores.",
+    "verdict": "PG18/19 sin nuevas mediciones válidas"
+  },
+  "DP06": {
+    "account": "renov@renov.com",
+    "student_control": "Sesión de Aprueba Alumno existente: Prueba Fase2 Renovación, Plan Gratis, cuota 0/10",
+    "admin_origin": "https://aprueba-admin.vercel.app",
+    "interaction": "Un intento con correo estudiante; contraseña proporcionada por formulario seguro, sin registrar valores.",
+    "observed": "Credenciales invalidas o cuenta no habilitada",
+    "administrative_data_visible": false,
+    "verdict": "Rechazo observado, evidencia complementaria parcial; no atribuir causa exclusivamente al rol porque el mensaje también contempla credenciales inválidas. No sustituye DP06 con cuenta B ni completa NDP03.",
+    "screenshot": "DP06_rechazo_admin_20261030.jpg"
+  },
+  "pending_decisions": [
+    "Alcance de M2/Historia y disponibilidad de preguntas válidas.",
+    "Gracia de acceso y emisor/canal de avisos de pagos.",
+    "Registro durable por intento: resolver alcance o implementar en una tarea autorizada independiente."
+  ],
+  "unchanged_counts": {
+    "tasks_open": 12,
+    "main_cases": 57,
+    "approved": 32,
+    "partial": 12,
+    "failed": 2,
+    "blocked": 8,
+    "not_executed": 3
+  },
+  "code_or_deployment_changes": false,
+  "responsible_reassignments": false
+}

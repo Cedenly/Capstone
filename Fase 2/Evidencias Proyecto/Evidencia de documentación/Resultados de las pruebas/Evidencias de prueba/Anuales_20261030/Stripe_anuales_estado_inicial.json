@@ -1,0 +1,203 @@
+{
+  "recordedAt": "2026-10-30T02:24:28.862Z",
+  "source": "Stripe connector GET /v1/customers, /v1/subscriptions and /v1/invoices",
+  "account": "acct_1UMr3HAhY3J8iTOw",
+  "livemode": false,
+  "scope": "Lecturas de dos cuentas de prueba. No se creó ni repitió ningún pago. No acredita por sí solo beneficios o persistencia en Aprueba.",
+  "records": [
+    {
+      "alias": "Prueba Fase2 C",
+      "customer": [
+        {
+          "id": "cus_VX7hEt2lIuccf8",
+          "balance": 0,
+          "livemode": false,
+          "test_clock": null
+        }
+      ],
+      "subscriptions": [
+        {
+          "id": "sub_1UW3S9AhY3J8iTOwMNeaVbsS",
+          "livemode": false,
+          "status": "active",
+          "created": 1793319232,
+          "metadata": {
+            "attemptId": "6efcf409-83e0-45f7-9875-3d939d039508",
+            "billingCycle": "yearly",
+            "integration": "aprueba_mvp",
+            "plan": "uni",
+            "testId": "cien",
+            "userId": "usr_61a4061122"
+          },
+          "items": [
+            {
+              "id": "si_VX7hHYoe9X5vXk",
+              "current_period_start": 1793319232,
+              "current_period_end": 1824855232,
+              "price": {
+                "id": "price_1UMtdiAhY3J8iTOwWLZcYok9",
+                "unit_amount": 1000,
+                "currency": "usd",
+                "recurring": {
+                  "interval": "year",
+                  "interval_count": 1,
+                  "meter": null,
+                  "trial_period_days": null,
+                  "usage_type": "licensed"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "invoices": [
+        {
+          "id": "in_1UW3S8AhY3J8iTOwD901Ktuh",
+          "livemode": false,
+          "status": "paid",
+          "amount_paid": 1000,
+          "amount_due": 1000,
+          "amount_remaining": 0,
+          "currency": "usd",
+          "created": 1793319232,
+          "status_transitions": {
+            "finalized_at": 1793319232,
+            "marked_uncollectible_at": null,
+            "paid_at": 1793319232,
+            "voided_at": null
+          },
+          "parent": {
+            "quote_details": null,
+            "subscription_details": {
+              "metadata": {
+                "attemptId": "6efcf409-83e0-45f7-9875-3d939d039508",
+                "billingCycle": "yearly",
+                "integration": "aprueba_mvp",
+                "plan": "uni",
+                "testId": "cien",
+                "userId": "usr_61a4061122"
+              },
+              "subscription": "sub_1UW3S9AhY3J8iTOwMNeaVbsS"
+            },
+            "type": "subscription_details"
+          },
+          "lines": [
+            {
+              "id": "il_1UW3S8AhY3J8iTOwKPOzQfn3",
+              "amount": 1000,
+              "description": "1 × Aprueba - 1 prueba ilimitada (a $10.00/año)",
+              "period": {
+                "end": 1824855232,
+                "start": 1793319232
+              },
+              "pricing": {
+                "price_details": {
+                  "price": "price_1UMtdiAhY3J8iTOwWLZcYok9",
+                  "product": "prod_aprueba_uni"
+                },
+                "type": "price_details",
+                "unit_amount_decimal": "1000"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "alias": "Prueba Fase2 E",
+      "customer": [
+        {
+          "id": "cus_VX7x8JXUxAIizQ",
+          "balance": 0,
+          "livemode": false,
+          "test_clock": null
+        }
+      ],
+      "subscriptions": [
+        {
+          "id": "sub_1UW3hlAhY3J8iTOwH4EJiYeO",
+          "livemode": false,
+          "status": "active",
+          "created": 1793320198,
+          "metadata": {
+            "attemptId": "90d73861-8355-416d-b47c-e2715e63fb67",
+            "billingCycle": "yearly",
+            "integration": "aprueba_mvp",
+            "plan": "all",
+            "userId": "usr_d58ab7f21d"
+          },
+          "items": [
+            {
+              "id": "si_VX7xY8UDpSDRJX",
+              "current_period_start": 1793320198,
+              "current_period_end": 1824856198,
+              "price": {
+                "id": "price_1UMtdoAhY3J8iTOwhppb7fH8",
+                "unit_amount": 5000,
+                "currency": "usd",
+                "recurring": {
+                  "interval": "year",
+                  "interval_count": 1,
+                  "meter": null,
+                  "trial_period_days": null,
+                  "usage_type": "licensed"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "invoices": [
+        {
+          "id": "in_1UW3hjAhY3J8iTOw9fvTzsZ3",
+          "livemode": false,
+          "status": "paid",
+          "amount_paid": 5000,
+          "amount_due": 5000,
+          "amount_remaining": 0,
+          "currency": "usd",
+          "created": 1793320198,
+          "status_transitions": {
+            "finalized_at": 1793320198,
+            "marked_uncollectible_at": null,
+            "paid_at": 1793320200,
+            "voided_at": null
+          },
+          "parent": {
+            "quote_details": null,
+            "subscription_details": {
+              "metadata": {
+                "attemptId": "90d73861-8355-416d-b47c-e2715e63fb67",
+                "billingCycle": "yearly",
+                "integration": "aprueba_mvp",
+                "plan": "all",
+                "userId": "usr_d58ab7f21d"
+              },
+              "subscription": "sub_1UW3hlAhY3J8iTOwH4EJiYeO"
+            },
+            "type": "subscription_details"
+          },
+          "lines": [
+            {
+              "id": "il_1UW3hiAhY3J8iTOw4FZOB9JM",
+              "amount": 5000,
+              "description": "1 × Aprueba - Todas las pruebas (a $50.00/año)",
+              "period": {
+                "end": 1824856198,
+                "start": 1793320198
+              },
+              "pricing": {
+                "price_details": {
+                  "price": "price_1UMtdoAhY3J8iTOwhppb7fH8",
+                  "product": "prod_aprueba_all"
+                },
+                "type": "price_details",
+                "unit_amount_decimal": "5000"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

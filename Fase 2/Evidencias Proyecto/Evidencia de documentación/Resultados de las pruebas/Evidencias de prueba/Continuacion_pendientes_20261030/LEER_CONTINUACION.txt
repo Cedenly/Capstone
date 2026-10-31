@@ -1,0 +1,2 @@
+ANTECEDENTES DE PREPARACIÓN — 30-10-2026
+Los archivos de esta carpeta documentan la preparación y las observaciones de esa sesión. Una preparación no equivale a ejecución funcional. El resultado consolidado y las limitaciones de los 57 casos están en ../../Resultados_de_pruebas.docx y en las hojas Cobertura, Ejecuciones y Evidencias de cada libro. No se requieren nuevas operaciones para registrar este corte del avance.

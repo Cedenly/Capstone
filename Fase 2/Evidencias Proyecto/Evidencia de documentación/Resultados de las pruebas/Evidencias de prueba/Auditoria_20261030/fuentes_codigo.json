@@ -1,0 +1,25 @@
+{
+  "revision_referencia": "d1ac22791bdf6f276c8dcce3ec02d707daca3735 previamente contrastada; sin consulta nueva al despliegue",
+  "files": [
+    {
+      "path": "backend/src/lib/entitlements.js",
+      "sha256": "602d1dfaa5bf1b5bcb0c30109863afbd5dc8ef2ef9ee94ec8640492554227b7f"
+    },
+    {
+      "path": "backend/src/services/stripeBilling.js",
+      "sha256": "5b8ab8c2ea1c6e9b18a21f46b47511f4191b28ed74f4691ba3a6e00f53977aaa"
+    },
+    {
+      "path": "backend/src/routes/me.js",
+      "sha256": "208999be565eb58bb5e5a3f91553ed529d3d50e4108e91e11c68bdf8bba483db"
+    },
+    {
+      "path": "backend/src/routes/stripeWebhook.js",
+      "sha256": "779300f2d4d7a5906fc21c0b540e6fcdcb39ad74712d80c43bf88fa560142018"
+    },
+    {
+      "path": "backend/package.json",
+      "sha256": "60b28d0f09e11b3d10e0770c619351826fe84f466dbb455c21f5eb0f24e826ae"
+    }
+  ]
+}

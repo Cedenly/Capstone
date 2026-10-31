@@ -1,0 +1,22 @@
+Registro del orden de foco con la tecla Tab
+Fecha y hora: 29-10-2026, aprox. 22:39 (America/Santiago)
+Sitio: https://aprueba-student.vercel.app/practicar (cuenta Prueba Fase2 E, filtro Ciencias)
+Navegador: Chrome en Windows (equipo de Thiare), zoom 100 %
+Procedimiento: clic en zona vacía de la página y 16 pulsaciones de Tab; se registró cada elemento que recibió el foco (evento focusin).
+
+Orden observado (se repite en ciclo):
+1. INPUT  Buscar pregunta, tema o grupo...
+2. SELECT idioma (ES / EN)
+3. BUTTON modo oscuro
+4. A Inicio
+5. A Practicar
+6. A Medallas
+7. A Grupos
+8. A Comunidad
+9. A Mi plan
+10. A Ajustes
+11. vuelve a 1 (INPUT Buscar...)
+
+Las alternativas A a E de la pregunta y el botón "Comprobar respuesta" nunca recibieron el foco.
+Árbol de accesibilidad (lectura de la página): las alternativas aparecen con rol "generic"; no figuran como botón, opción ni casilla. Solo "Comprobar respuesta" figura como botón (deshabilitado hasta elegir una alternativa).
+Conclusión: con solo teclado no se puede elegir una alternativa ni responder. Confirma la observación O-05.

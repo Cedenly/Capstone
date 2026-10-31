@@ -1,0 +1,5 @@
+{
+  "equal": true,
+  "fieldsCompared": "id,customer,status,currency,livemode,cancel flags,latest_invoice,test_clock,items IDs,period,price,product,amount,interval,quantity",
+  "scope": "Snapshot Stripe seleccionado; no incluye Firestore ni garantiza ausencia de escrituras internas"
+}

@@ -1,0 +1,9 @@
+PG13-REAL-20261029-2228 — Reentrega real aportada por Sebastián
+
+HTTP200 y duplicate=true, requestId req_489b97fa-222, 29-10-2026 22:28:06 Chile (30-10 01:28:06 UTC). Evento evt_1UVvAMAhY3J8iTOwH6pm84WH.
+
+Antes: extracción 01:25:42.969Z–01:25:53.327Z. Después: 01:30:38.642Z–01:30:47.590Z. Fuentes completas, sin errores, mismo proyecto/base y 1915 documentos en 28 colecciones. Comparación de todos los documentos accesibles: cero altas, cero bajas, cero cambios en datos, createTime y updateTime. Recibo del evento preexistente con processingVersion=3 y sin cambios.
+
+PG13 APROBADO para reentrega y conservación del estado revisado. Se adjuntan solo extractos filtrados de cuenta A (17 registros), resultado de comparación, respuesta y captura. Las exportaciones completas contienen información de autenticación y no se incluyen en el paquete compartible.
+
+Límites: no es instantánea atómica, no comprende otros servicios Firebase y no compara cargos del proveedor antes/después. El texto del cuerpo fue aportado por el usuario y correlacionado con la captura. No se ejecutó otro reenvío.

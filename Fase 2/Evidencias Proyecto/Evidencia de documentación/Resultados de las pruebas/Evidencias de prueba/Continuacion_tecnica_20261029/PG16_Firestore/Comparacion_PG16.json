@@ -1,0 +1,59 @@
+{
+  "caso": "PG-16",
+  "resultado_comparacion": "Sin diferencias en el alcance filtrado",
+  "estado_caso_general": "Parcial; esta comparacion no cierra todos los escenarios del caso",
+  "proyecto": "aprueba-mvp-pruebas-2fc41",
+  "scope": {
+    "userId": "usr_cd0e892722",
+    "accountAlias": "Prueba Fase 2 A",
+    "collections": [
+      "users",
+      "subscriptions",
+      "invoices",
+      "stripeEvents"
+    ],
+    "limits": [
+      "Solo campos permitidos y registros vinculados a la cuenta A o eventos sinteticos de firma invalida.",
+      "No incluye datos de contacto, hashes, contrasenas, tokens, claves, URLs de facturas ni payloads completos.",
+      "No es exportacion integral ni instantanea atomica. complete describe la exportacion fuente accesible."
+    ]
+  },
+  "exportacion_antes": {
+    "projectId": "aprueba-mvp-pruebas-2fc41",
+    "databaseId": "(default)",
+    "startedAt": "2026-10-30T00:02:04.243Z",
+    "finishedAt": "2026-10-30T00:02:13.056Z",
+    "complete": true
+  },
+  "solicitud_http": {
+    "responseAt": "2026-10-30T00:27:35.312Z",
+    "http_status": 400,
+    "error_code": "WEBHOOK_SIGNATURE_INVALID",
+    "requestId": "req_95cf5458-c22",
+    "synthetic_event_id": "evt_aprueba_capstone_invalid_7148b5c5e4ed4341967ea798b58d852e"
+  },
+  "exportacion_despues": {
+    "projectId": "aprueba-mvp-pruebas-2fc41",
+    "databaseId": "(default)",
+    "startedAt": "2026-10-30T00:40:34.422Z",
+    "finishedAt": "2026-10-30T00:40:44.712Z",
+    "complete": true
+  },
+  "registros_antes": 17,
+  "registros_despues": 17,
+  "agregados": [],
+  "eliminados": [],
+  "modificados": [],
+  "evento_sintetico_presente": false,
+  "archivos_fuente_sha256": {
+    "EVIDENCIA_FIREBASE_FILTRADA_A_2026-10-30T00-25-57-632Z.json": "cc4026ffb8ae8356e814d8ba1def7091eeeb698218da0a843e20e8e29666a804",
+    "EVIDENCIA_FIREBASE_FILTRADA_A_2026-10-30T00-40-49-745Z(1).json": "21067e7eb3de6ba742330088cdd764a2487ee4fc90802ac987bdf45aa4446d9e",
+    "PG16_respuesta_20261029.json": "105bdbeca5097d8561f9a3510ada360da0ca5ce2b9f922e4775fa473e6ffd9e1"
+  },
+  "limitaciones": [
+    "Comparacion de campos permitidos de usuario A, suscripcion, facturas y eventos vinculados; no es verificacion global de Firestore.",
+    "Exportaciones secuenciales, no instantaneas atomicas.",
+    "El filtro no busca de forma independiente la factura sintetica in_test_nonexistent si no esta vinculada al alcance.",
+    "Se verifico una firma invalida en el despliegue compartido de pruebas; no todas las variantes en un entorno aislado."
+  ]
+}

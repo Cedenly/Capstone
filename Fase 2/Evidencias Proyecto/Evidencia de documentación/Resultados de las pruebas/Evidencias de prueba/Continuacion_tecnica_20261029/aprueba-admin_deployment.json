@@ -1,0 +1,43 @@
+{
+  "observedAt": "2026-10-29T23:27:51.942Z",
+  "result": {
+    "deployment": {
+      "id": "dpl_8vAoKcdYiCURXHD6epwGhpzvP5oS",
+      "name": "aprueba-admin",
+      "url": "aprueba-admin-fabkicp8m-aprueba-admin3.vercel.app",
+      "type": "LAMBDAS",
+      "state": "READY",
+      "createdAt": 1791349548316,
+      "creator": {
+        "uid": "G5KMrsz2i9SEb27qSwbfUZax",
+        "username": "koetigsegg414"
+      },
+      "project": {
+        "id": "prj_Dp34doTMtdaG6YmTTVsG8jkd0usQ",
+        "name": "aprueba-admin",
+        "framework": "vite"
+      },
+      "meta": {
+        "githubCommitRef": "main",
+        "githubCommitSha": "31fb7f2866317b555e65b91c37256cff4e129ef3",
+        "githubCommitMessage": "fix: resolver recorrecciones y otorgar medallas una sola vez",
+        "githubRepo": "aprueba-admin",
+        "githubOrg": "Koetigsegg414"
+      },
+      "alias": [
+        "aprueba-admin.vercel.app",
+        "aprueba-admin-aprueba-admin3.vercel.app",
+        "aprueba-admin-git-main-aprueba-admin3.vercel.app"
+      ],
+      "target": "production",
+      "regions": [
+        "iad1"
+      ],
+      "buildingAt": 1791349574162,
+      "ready": 1791349579166,
+      "readyState": "READY",
+      "source": "git",
+      "aliasError": null
+    }
+  }
+}

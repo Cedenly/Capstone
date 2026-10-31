@@ -1,0 +1,124 @@
+{
+  "date": "2026-10-29T21:45:41.432215-03:00",
+  "sources": [
+    "https://aprueba-student-api.vercel.app/api/v1",
+    "https://aprueba-admin-api.vercel.app/api/v1/admin"
+  ],
+  "method": "Credenciales ingresadas por el usuario; tokens solo en memoria; consultas GET; respuestas guardadas como indicadores sin datos personales ni tokens. El login puede aplicar la recompensa diaria normal.",
+  "records": [
+    {
+      "account": "C",
+      "request": "POST /auth/login",
+      "result": {
+        "http": 200,
+        "authenticated": true
+      },
+      "note": "Credenciales y respuesta de autenticación no guardadas."
+    },
+    {
+      "account": "E",
+      "request": "POST /auth/login",
+      "result": {
+        "http": 200,
+        "authenticated": true
+      },
+      "note": "Credenciales y respuesta de autenticación no guardadas."
+    },
+    {
+      "account": "C",
+      "request": "Identidad propia",
+      "result": {
+        "http": 200,
+        "error_code": null,
+        "success": null,
+        "has_data": true,
+        "has_subscription": false,
+        "has_checkout": false
+      }
+    },
+    {
+      "account": "C",
+      "request": "Checkout propio",
+      "result": {
+        "http": 200,
+        "error_code": null,
+        "success": null,
+        "has_data": true,
+        "has_subscription": true,
+        "has_checkout": true
+      }
+    },
+    {
+      "account": "C",
+      "request": "Checkout ajeno",
+      "result": {
+        "http": 404,
+        "error_code": "CHECKOUT_NOT_FOUND",
+        "success": null,
+        "has_data": false,
+        "has_subscription": false,
+        "has_checkout": false
+      }
+    },
+    {
+      "account": "C",
+      "request": "API administrativa con token estudiante",
+      "result": {
+        "http": 401,
+        "error_code": "AUTH_INVALID",
+        "success": null,
+        "has_data": false,
+        "has_subscription": false,
+        "has_checkout": false
+      }
+    },
+    {
+      "account": "E",
+      "request": "Identidad propia",
+      "result": {
+        "http": 200,
+        "error_code": null,
+        "success": null,
+        "has_data": true,
+        "has_subscription": false,
+        "has_checkout": false
+      }
+    },
+    {
+      "account": "E",
+      "request": "Checkout propio",
+      "result": {
+        "http": 200,
+        "error_code": null,
+        "success": null,
+        "has_data": true,
+        "has_subscription": true,
+        "has_checkout": true
+      }
+    },
+    {
+      "account": "E",
+      "request": "Checkout ajeno",
+      "result": {
+        "http": 404,
+        "error_code": "CHECKOUT_NOT_FOUND",
+        "success": null,
+        "has_data": false,
+        "has_subscription": false,
+        "has_checkout": false
+      }
+    },
+    {
+      "account": "E",
+      "request": "API administrativa con token estudiante",
+      "result": {
+        "http": 401,
+        "error_code": "AUTH_INVALID",
+        "success": null,
+        "has_data": false,
+        "has_subscription": false,
+        "has_checkout": false
+      }
+    }
+  ]
+}

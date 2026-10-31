@@ -1,0 +1,30 @@
+{
+  "observedAt": "2026-10-29T23:27:49.698Z",
+  "object": "list",
+  "has_more": false,
+  "subscriptions": [
+    {
+      "id": "sub_1UVuvWAhY3J8iTOwIx3147Sz",
+      "customer": "cus_VWytQkXU3Nd5tt",
+      "status": "active",
+      "currency": "usd",
+      "livemode": false,
+      "cancel_at_period_end": false,
+      "cancel_at": null,
+      "latest_invoice": "in_1UVv5VAhY3J8iTOwbfpXdNdz",
+      "test_clock": null,
+      "items": [
+        {
+          "id": "si_VWythH8zeoPX9f",
+          "current_period_start": 1793286456,
+          "current_period_end": 1795964856,
+          "price": "price_1UMtdlAhY3J8iTOwsTxr9fTO",
+          "product": "prod_aprueba_all",
+          "amount": 500,
+          "interval": "month",
+          "quantity": 1
+        }
+      ]
+    }
+  ]
+}

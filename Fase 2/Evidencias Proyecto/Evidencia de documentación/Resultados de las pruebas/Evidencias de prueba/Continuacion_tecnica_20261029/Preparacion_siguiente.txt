@@ -1,0 +1,1 @@
+Las comprobaciones técnicas disponibles se describen en PG13_Real, PG16_Emulador y Stripe_real. PG13 acredita reentrega real; PG14 y PG15 conservan límites de entorno local; PG17 mantiene la brecha de auditoría por intento. El estado al corte figura en ../../Resultados_de_pruebas.docx. No se requiere repetir esas operaciones para documentar este avance.

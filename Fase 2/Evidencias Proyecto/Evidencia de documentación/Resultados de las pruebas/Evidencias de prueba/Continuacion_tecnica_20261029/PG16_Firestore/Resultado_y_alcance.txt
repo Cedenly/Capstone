@@ -1,0 +1,10 @@
+PG-16 — Comparacion de Firestore antes y despues
+
+La solicitud con firma invalida recibio HTTP 400 / WEBHOOK_SIGNATURE_INVALID el 29 de octubre de 2026 a las 21:27:35 (Chile).
+La exportacion anterior finalizo a las 21:02:13; la posterior se ejecuto entre las 21:40:34 y las 21:40:44.
+
+Resultado: los 17 registros filtrados son identicos (1 usuario, 1 suscripcion, 2 facturas y 13 eventos). Se compararon rutas, existencia, campos permitidos, createTime y updateTime. No hay altas, bajas ni modificaciones. El identificador del evento sintetico no aparece en los registros filtrados.
+
+Conclusion: el escenario de rechazo de esta solicitud y ausencia de cambios en los datos revisados cuenta con evidencia favorable. PG-16 se mantiene Parcial en su alcance general. No se declara ausencia global de escrituras, ni se han completado todas las variantes de firmas invalidas en un entorno aislado. El filtro tampoco comprueba de forma independiente la factura ficticia in_test_nonexistent.
+
+Este paquete complementa los informes y hojas de calculo existentes; no los reemplaza ni modifica sus estados. No se repitio la solicitud. No contiene credenciales.

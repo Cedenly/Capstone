@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "dotenv": "^16.6.1",
+    "express": "^4.19.2",
+    "firebase-admin": "^14.3.0",
+    "firebase-tools": "^15.34.2",
+    "stripe": "^22.6.2"
+  }
+}

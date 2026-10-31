@@ -1,0 +1,3158 @@
+{
+  "executedAt": "2026-10-30T01:02:58.426Z",
+  "commit": "d1ac22791bdf6f276c8dcce3ec02d707daca3735",
+  "environment": {
+    "project": "demo-aprueba-pg16",
+    "edition": "standard",
+    "firestoreHost": "127.0.0.1:8187",
+    "url": "http://127.0.0.1:37327/api/v1/webhooks/stripe",
+    "node": "v24.22.1"
+  },
+  "kind": "Integración local HTTP y Firestore Emulator con dobles explícitos de consultas Stripe",
+  "scope": "Middleware, handler, servicio de negocio y transacciones originales. SDK Stripe real para firma local; subscriptions.retrieve, invoices.retrieve y checkout.sessions.retrieve sustituidos por fixtures de lectura. Sin cuentas, cobros ni API Stripe real.",
+  "limits": "No acredita entrega/reenvío real Stripe–Vercel, ausencia de cobros duplicados en el proveedor, reintentos automáticos ni persistencia de errores en auditoría. PG13 mantiene pendiente su precondición de evento real.",
+  "hashes": [
+    {
+      "file": "backend/src/middleware/verifyStripeWebhook.js",
+      "sha256": "96f0b726ef4dca60a0eb6312e0b88b673806a388ca7a26bf072bbc11eacb781e"
+    },
+    {
+      "file": "backend/src/routes/stripeWebhook.js",
+      "sha256": "779300f2d4d7a5906fc21c0b540e6fcdcb39ad74712d80c43bf88fa560142018"
+    },
+    {
+      "file": "backend/src/services/stripeBilling.js",
+      "sha256": "5b8ab8c2ea1c6e9b18a21f46b47511f4191b28ed74f4691ba3a6e00f53977aaa"
+    },
+    {
+      "file": "backend/src/config/firebase.js",
+      "sha256": "bb8fe031ebda7a2dd48263cb01ddaf9dccbf43f132936c5fdfb10a45ade79e5a"
+    },
+    {
+      "file": "backend/src/config/stripe.js",
+      "sha256": "3ca1d94f7c82758510d06ab4e4d52b8cfcc783ad8eb2631a39cbfc2b98af4b2c"
+    },
+    {
+      "file": "backend/src/lib/envelope.js",
+      "sha256": "08778be60d4aca78ee6e25065adf0905db0eeac6441bc0780d200218f320d5f3"
+    }
+  ],
+  "externalRequests": 0,
+  "total": 4,
+  "passed": 4,
+  "results": [
+    {
+      "id": "PG-13",
+      "description": "Reentrega secuencial idéntica con persistencia real emulada y Stripe simulado",
+      "result": "Aprobado",
+      "output": {
+        "initial": {
+          "now": 1793322173,
+          "user": "usr_local_PG13",
+          "attempt": "attempt_PG13",
+          "invoice": {
+            "id": "in_localPG13",
+            "object": "invoice",
+            "livemode": false,
+            "currency": "usd",
+            "customer": "cus_localPG13",
+            "subscription": "sub_localPG13",
+            "status": "paid",
+            "amount_remaining": 0,
+            "amount_paid": 500,
+            "amount_due": 500,
+            "created": 1793322143,
+            "status_transitions": {
+              "paid_at": 1793322153
+            }
+          },
+          "oldInvoice": {
+            "id": "in_oldPG13",
+            "object": "invoice",
+            "livemode": false,
+            "currency": "usd",
+            "customer": "cus_localPG13",
+            "subscription": "sub_localPG13",
+            "status": "open",
+            "amount_remaining": 500,
+            "amount_paid": 0,
+            "amount_due": 500,
+            "created": 1793322143,
+            "status_transitions": {
+              "paid_at": null
+            }
+          },
+          "subscription": {
+            "id": "sub_localPG13",
+            "object": "subscription",
+            "livemode": false,
+            "customer": "cus_localPG13",
+            "metadata": {
+              "integration": "aprueba_mvp",
+              "userId": "usr_local_PG13",
+              "attemptId": "attempt_PG13"
+            },
+            "status": "active",
+            "created": 1793322113,
+            "cancel_at_period_end": false,
+            "latest_invoice": {
+              "id": "in_localPG13",
+              "object": "invoice",
+              "livemode": false,
+              "currency": "usd",
+              "customer": "cus_localPG13",
+              "subscription": "sub_localPG13",
+              "status": "paid",
+              "amount_remaining": 0,
+              "amount_paid": 500,
+              "amount_due": 500,
+              "created": 1793322143,
+              "status_transitions": {
+                "paid_at": 1793322153
+              }
+            },
+            "items": {
+              "has_more": false,
+              "data": [
+                {
+                  "quantity": 1,
+                  "current_period_start": 1793322113,
+                  "current_period_end": 1795914173,
+                  "price": {
+                    "id": "price_all_monthly",
+                    "livemode": false,
+                    "currency": "usd",
+                    "unit_amount": 500,
+                    "product": "prod_aprueba_all",
+                    "type": "recurring",
+                    "billing_scheme": "per_unit",
+                    "recurring": {
+                      "interval": "month",
+                      "interval_count": 1,
+                      "usage_type": "licensed"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "session": {
+            "id": "cs_test_localPG13",
+            "object": "checkout.session",
+            "livemode": false,
+            "mode": "subscription",
+            "client_reference_id": "usr_local_PG13",
+            "metadata": {
+              "integration": "aprueba_mvp",
+              "userId": "usr_local_PG13",
+              "attemptId": "attempt_PG13"
+            },
+            "customer": "cus_localPG13",
+            "subscription": "sub_localPG13",
+            "status": "complete",
+            "payment_status": "paid"
+          }
+        },
+        "before": [
+          {
+            "path": "checkoutAttempts/usr_local_PG13",
+            "data": {
+              "attemptId": "attempt_PG13",
+              "closed": false
+            },
+            "createTime": {
+              "seconds": 1793322173,
+              "nanoseconds": 626822000
+            },
+            "updateTime": {
+              "seconds": 1793322173,
+              "nanoseconds": 626822000
+            }
+          },
+          {
+            "path": "checkoutSessions/cs_test_localPG13",
+            "data": {
+              "id": "cs_test_localPG13",
+              "userId": "usr_local_PG13",
+              "attemptId": "attempt_PG13",
+              "testId": null
+            },
+            "createTime": {
+              "seconds": 1793322173,
+              "nanoseconds": 620629000
+            },
+            "updateTime": {
+              "seconds": 1793322173,
+              "nanoseconds": 620629000
+            }
+          },
+          {
+            "path": "users/usr_local_PG13",
+            "data": {
+              "id": "usr_local_PG13",
+              "name": "Fixture local PG13",
+              "plan": "free",
+              "state": "active",
+              "selectedTests": [
+                "cien"
+              ]
+            },
+            "createTime": {
+              "seconds": 1793322173,
+              "nanoseconds": 593067000
+            },
+            "updateTime": {
+              "seconds": 1793322173,
+              "nanoseconds": 593067000
+            }
+          }
+        ],
+        "first": {
+          "event": {
+            "id": "evt_local_PG13",
+            "object": "event",
+            "type": "invoice.paid",
+            "livemode": false,
+            "created": 1793322173,
+            "data": {
+              "object": {
+                "id": "in_localPG13"
+              }
+            }
+          },
+          "start": "2026-10-30T01:02:53.734Z",
+          "finish": "2026-10-30T01:02:53.867Z",
+          "status": 200,
+          "body": {
+            "data": {
+              "received": true,
+              "processed": true
+            },
+            "error": null,
+            "meta": {
+              "requestId": "req_34523f59-483",
+              "timestamp": "2026-10-30T01:02:53.861Z"
+            }
+          }
+        },
+        "afterFirst": [
+          {
+            "path": "checkoutAttempts/usr_local_PG13",
+            "data": {
+              "attemptId": "attempt_PG13",
+              "closed": true
+            },
+            "createTime": {
+              "seconds": 1793322173,
+              "nanoseconds": 626822000
+            },
+            "updateTime": {
+              "seconds": 1793322173,
+              "nanoseconds": 857019000
+            }
+          },
+          {
+            "path": "checkoutSessions/cs_test_localPG13",
+            "data": {
+              "id": "cs_test_localPG13",
+              "userId": "usr_local_PG13",
+              "attemptId": "attempt_PG13",
+              "testId": null,
+              "stripeSubscriptionId": "sub_localPG13",
+              "fulfillmentStatus": "active",
+              "paymentStatus": "paid",
+              "status": "complete",
+              "updatedAt": "2026-10-30T01:02:53.826Z"
+            },
+            "createTime": {
+              "seconds": 1793322173,
+              "nanoseconds": 620629000
+            },
+            "updateTime": {
+              "seconds": 1793322173,
+              "nanoseconds": 857019000
+            }
+          },
+          {
+            "path": "invoices/in_localPG13",
+            "data": {
+              "amount": 5,
+              "livemode": false,
+              "userId": "usr_local_PG13",
+              "createdAt": "2026-10-30T01:02:23.000Z",
+              "hostedInvoiceUrl": null,
+              "pdfUrl": null,
+              "stripeSubscriptionId": "sub_localPG13",
+              "provider": "stripe",
+              "paidAt": "2026-10-30T01:02:33.000Z",
+              "currency": "USD",
+              "id": "in_localPG13",
+              "stripeCustomerId": "cus_localPG13",
+              "status": "paid",
+              "updatedAt": "2026-10-30T01:02:53.826Z"
+            },
+            "createTime": {
+              "seconds": 1793322173,
+              "nanoseconds": 857019000
+            },
+            "updateTime": {
+              "seconds": 1793322173,
+              "nanoseconds": 857019000
+            }
+          },
+          {
+            "path": "stripeEvents/evt_local_PG13",
+            "data": {
+              "type": "invoice.paid",
+              "userId": "usr_local_PG13",
+              "stripeSubscriptionId": "sub_localPG13",
+              "checkoutSessionId": "cs_test_localPG13",
+              "processingVersion": 3,
+              "processedAt": "2026-10-30T01:02:53.826Z"
+            },
+            "createTime": {
+              "seconds": 1793322173,
+              "nanoseconds": 857019000
+            },
+            "updateTime": {
+              "seconds": 1793322173,
+              "nanoseconds": 857019000
+            }
+          },
+          {
+            "path": "subscriptions/sub_localPG13",
+            "data": {
+              "currentPeriodStart": "2026-10-30T01:01:53.000Z",
+              "livemode": false,
+              "accessActive": true,
+              "paymentPending": false,
+              "checkoutSessionId": "cs_test_localPG13",
+              "currentPeriodEnd": "2026-11-29T01:02:53.000Z",
+              "userId": "usr_local_PG13",
+              "createdAt": "2026-10-30T01:01:53.000Z",
+              "provider": "stripe",
+              "billingCycle": "monthly",
+              "latestInvoiceId": "in_localPG13",
+              "cancelAtPeriodEnd": false,
+              "paymentMethod": null,
+              "testId": null,
+              "paidEntitlement": {
+                "currentPeriodStart": "2026-10-30T01:01:53.000Z",
+                "billingCycle": "monthly",
+                "currentPeriodEnd": "2026-11-29T01:02:53.000Z",
+                "invoiceId": "in_localPG13",
+                "testId": null,
+                "priceId": "price_all_monthly",
+                "plan": "all"
+              },
+              "id": "sub_localPG13",
+              "priceId": "price_all_monthly",
+              "stripeCustomerId": "cus_localPG13",
+              "plan": "all",
+              "stripePlan": {
+                "currentPeriodStart": "2026-10-30T01:01:53.000Z",
+                "billingCycle": "monthly",
+                "currentPeriodEnd": "2026-11-29T01:02:53.000Z",
+                "priceId": "price_all_monthly",
+                "plan": "all"
+              },
+              "status": "active",
+              "updatedAt": "2026-10-30T01:02:53.826Z"
+            },
+            "createTime": {
+              "seconds": 1793322173,
+              "nanoseconds": 857019000
+            },
+            "updateTime": {
+              "seconds": 1793322173,
+              "nanoseconds": 857019000
+            }
+          },
+          {
+            "path": "users/usr_local_PG13",
+            "data": {
+              "id": "usr_local_PG13",
+              "name": "Fixture local PG13",
+              "state": "active",
+              "selectedTests": [
+                "cien"
+              ],
+              "stripeSubscriptionId": "sub_localPG13",
+              "billingAccessActive": true,
+              "billingTestId": null,
+              "billingUpdatedAt": "2026-10-30T01:02:53.826Z",
+              "stripeCustomerId": "cus_localPG13",
+              "billingPeriodEnd": "2026-11-29T01:02:53.000Z",
+              "billingProvider": "stripe",
+              "plan": "all",
+              "billingStatus": "active"
+            },
+            "createTime": {
+              "seconds": 1793322173,
+              "nanoseconds": 593067000
+            },
+            "updateTime": {
+              "seconds": 1793322173,
+              "nanoseconds": 857019000
+            }
+          }
+        ],
+        "second": {
+          "event": {
+            "id": "evt_local_PG13",
+            "object": "event",
+            "type": "invoice.paid",
+            "livemode": false,
+            "created": 1793322173,
+            "data": {
+              "object": {
+                "id": "in_localPG13"
+              }
+            }
+          },
+          "start": "2026-10-30T01:02:53.944Z",
+          "finish": "2026-10-30T01:02:53.954Z",
+          "status": 200,
+          "body": {
+            "data": {
+              "received": true,
+              "duplicate": true
+            },
+            "error": null,
+            "meta": {
+              "requestId": "req_eb0e3894-001",
+              "timestamp": "2026-10-30T01:02:53.953Z"
+            }
+          }
+        },
+        "afterSecond": [
+          {
+            "path": "checkoutAttempts/usr_local_PG13",
+            "data": {
+              "attemptId": "attempt_PG13",
+              "closed": true
+            },
+            "createTime": {
+              "seconds": 1793322173,
+              "nanoseconds": 626822000
+            },
+            "updateTime": {
+              "seconds": 1793322173,
+              "nanoseconds": 857019000
+            }
+          },
+          {
+            "path": "checkoutSessions/cs_test_localPG13",
+            "data": {
+              "id": "cs_test_localPG13",
+              "userId": "usr_local_PG13",
+              "attemptId": "attempt_PG13",
+              "testId": null,
+              "stripeSubscriptionId": "sub_localPG13",
+              "fulfillmentStatus": "active",
+              "paymentStatus": "paid",
+              "status": "complete",
+              "updatedAt": "2026-10-30T01:02:53.826Z"
+            },
+            "createTime": {
+              "seconds": 1793322173,
+              "nanoseconds": 620629000
+            },
+            "updateTime": {
+              "seconds": 1793322173,
+              "nanoseconds": 857019000
+            }
+          },
+          {
+            "path": "invoices/in_localPG13",
+            "data": {
+              "amount": 5,
+              "livemode": false,
+              "userId": "usr_local_PG13",
+              "createdAt": "2026-10-30T01:02:23.000Z",
+              "hostedInvoiceUrl": null,
+              "pdfUrl": null,
+              "stripeSubscriptionId": "sub_localPG13",
+              "provider": "stripe",
+              "paidAt": "2026-10-30T01:02:33.000Z",
+              "currency": "USD",
+              "id": "in_localPG13",
+              "stripeCustomerId": "cus_localPG13",
+              "status": "paid",
+              "updatedAt": "2026-10-30T01:02:53.826Z"
+            },
+            "createTime": {
+              "seconds": 1793322173,
+              "nanoseconds": 857019000
+            },
+            "updateTime": {
+              "seconds": 1793322173,
+              "nanoseconds": 857019000
+            }
+          },
+          {
+            "path": "stripeEvents/evt_local_PG13",
+            "data": {
+              "type": "invoice.paid",
+              "userId": "usr_local_PG13",
+              "stripeSubscriptionId": "sub_localPG13",
+              "checkoutSessionId": "cs_test_localPG13",
+              "processingVersion": 3,
+              "processedAt": "2026-10-30T01:02:53.826Z"
+            },
+            "createTime": {
+              "seconds": 1793322173,
+              "nanoseconds": 857019000
+            },
+            "updateTime": {
+              "seconds": 1793322173,
+              "nanoseconds": 857019000
+            }
+          },
+          {
+            "path": "subscriptions/sub_localPG13",
+            "data": {
+              "currentPeriodStart": "2026-10-30T01:01:53.000Z",
+              "livemode": false,
+              "accessActive": true,
+              "paymentPending": false,
+              "checkoutSessionId": "cs_test_localPG13",
+              "currentPeriodEnd": "2026-11-29T01:02:53.000Z",
+              "userId": "usr_local_PG13",
+              "createdAt": "2026-10-30T01:01:53.000Z",
+              "provider": "stripe",
+              "billingCycle": "monthly",
+              "latestInvoiceId": "in_localPG13",
+              "cancelAtPeriodEnd": false,
+              "paymentMethod": null,
+              "testId": null,
+              "paidEntitlement": {
+                "currentPeriodStart": "2026-10-30T01:01:53.000Z",
+                "billingCycle": "monthly",
+                "currentPeriodEnd": "2026-11-29T01:02:53.000Z",
+                "invoiceId": "in_localPG13",
+                "testId": null,
+                "priceId": "price_all_monthly",
+                "plan": "all"
+              },
+              "id": "sub_localPG13",
+              "priceId": "price_all_monthly",
+              "stripeCustomerId": "cus_localPG13",
+              "plan": "all",
+              "stripePlan": {
+                "currentPeriodStart": "2026-10-30T01:01:53.000Z",
+                "billingCycle": "monthly",
+                "currentPeriodEnd": "2026-11-29T01:02:53.000Z",
+                "priceId": "price_all_monthly",
+                "plan": "all"
+              },
+              "status": "active",
+              "updatedAt": "2026-10-30T01:02:53.826Z"
+            },
+            "createTime": {
+              "seconds": 1793322173,
+              "nanoseconds": 857019000
+            },
+            "updateTime": {
+              "seconds": 1793322173,
+              "nanoseconds": 857019000
+            }
+          },
+          {
+            "path": "users/usr_local_PG13",
+            "data": {
+              "id": "usr_local_PG13",
+              "name": "Fixture local PG13",
+              "state": "active",
+              "selectedTests": [
+                "cien"
+              ],
+              "stripeSubscriptionId": "sub_localPG13",
+              "billingAccessActive": true,
+              "billingTestId": null,
+              "billingUpdatedAt": "2026-10-30T01:02:53.826Z",
+              "stripeCustomerId": "cus_localPG13",
+              "billingPeriodEnd": "2026-11-29T01:02:53.000Z",
+              "billingProvider": "stripe",
+              "plan": "all",
+              "billingStatus": "active"
+            },
+            "createTime": {
+              "seconds": 1793322173,
+              "nanoseconds": 593067000
+            },
+            "updateTime": {
+              "seconds": 1793322173,
+              "nanoseconds": 857019000
+            }
+          }
+        ],
+        "conclusion": "La reentrega no vuelve a escribir ni extiende el beneficio; no acredita un reenvío de evento real Stripe."
+      },
+      "error": null,
+      "logs": [],
+      "stripeReadDoubles": [
+        {
+          "phase": "PG-13",
+          "method": "invoices.retrieve",
+          "id": "in_localPG13"
+        },
+        {
+          "phase": "PG-13",
+          "method": "subscriptions.retrieve",
+          "id": "sub_localPG13"
+        },
+        {
+          "phase": "PG-13",
+          "method": "checkout.sessions.retrieve",
+          "id": "cs_test_localPG13"
+        },
+        {
+          "phase": "PG-13",
+          "method": "subscriptions.retrieve",
+          "id": "sub_localPG13"
+        },
+        {
+          "phase": "PG-13",
+          "method": "invoices.retrieve",
+          "id": "in_localPG13"
+        }
+      ]
+    },
+    {
+      "id": "PG-14",
+      "description": "Dos entregas idénticas concurrentes y transacción con deduplicación",
+      "result": "Aprobado",
+      "output": {
+        "initial": {
+          "now": 1793322174,
+          "user": "usr_local_PG14",
+          "attempt": "attempt_PG14",
+          "invoice": {
+            "id": "in_localPG14",
+            "object": "invoice",
+            "livemode": false,
+            "currency": "usd",
+            "customer": "cus_localPG14",
+            "subscription": "sub_localPG14",
+            "status": "paid",
+            "amount_remaining": 0,
+            "amount_paid": 500,
+            "amount_due": 500,
+            "created": 1793322144,
+            "status_transitions": {
+              "paid_at": 1793322154
+            }
+          },
+          "oldInvoice": {
+            "id": "in_oldPG14",
+            "object": "invoice",
+            "livemode": false,
+            "currency": "usd",
+            "customer": "cus_localPG14",
+            "subscription": "sub_localPG14",
+            "status": "open",
+            "amount_remaining": 500,
+            "amount_paid": 0,
+            "amount_due": 500,
+            "created": 1793322144,
+            "status_transitions": {
+              "paid_at": null
+            }
+          },
+          "subscription": {
+            "id": "sub_localPG14",
+            "object": "subscription",
+            "livemode": false,
+            "customer": "cus_localPG14",
+            "metadata": {
+              "integration": "aprueba_mvp",
+              "userId": "usr_local_PG14",
+              "attemptId": "attempt_PG14"
+            },
+            "status": "active",
+            "created": 1793322114,
+            "cancel_at_period_end": false,
+            "latest_invoice": {
+              "id": "in_localPG14",
+              "object": "invoice",
+              "livemode": false,
+              "currency": "usd",
+              "customer": "cus_localPG14",
+              "subscription": "sub_localPG14",
+              "status": "paid",
+              "amount_remaining": 0,
+              "amount_paid": 500,
+              "amount_due": 500,
+              "created": 1793322144,
+              "status_transitions": {
+                "paid_at": 1793322154
+              }
+            },
+            "items": {
+              "has_more": false,
+              "data": [
+                {
+                  "quantity": 1,
+                  "current_period_start": 1793322114,
+                  "current_period_end": 1795914174,
+                  "price": {
+                    "id": "price_all_monthly",
+                    "livemode": false,
+                    "currency": "usd",
+                    "unit_amount": 500,
+                    "product": "prod_aprueba_all",
+                    "type": "recurring",
+                    "billing_scheme": "per_unit",
+                    "recurring": {
+                      "interval": "month",
+                      "interval_count": 1,
+                      "usage_type": "licensed"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "session": {
+            "id": "cs_test_localPG14",
+            "object": "checkout.session",
+            "livemode": false,
+            "mode": "subscription",
+            "client_reference_id": "usr_local_PG14",
+            "metadata": {
+              "integration": "aprueba_mvp",
+              "userId": "usr_local_PG14",
+              "attemptId": "attempt_PG14"
+            },
+            "customer": "cus_localPG14",
+            "subscription": "sub_localPG14",
+            "status": "complete",
+            "payment_status": "paid"
+          }
+        },
+        "before": [
+          {
+            "path": "checkoutAttempts/usr_local_PG14",
+            "data": {
+              "attemptId": "attempt_PG14",
+              "closed": false
+            },
+            "createTime": {
+              "seconds": 1793322174,
+              "nanoseconds": 155389000
+            },
+            "updateTime": {
+              "seconds": 1793322174,
+              "nanoseconds": 155389000
+            }
+          },
+          {
+            "path": "checkoutSessions/cs_test_localPG14",
+            "data": {
+              "id": "cs_test_localPG14",
+              "userId": "usr_local_PG14",
+              "attemptId": "attempt_PG14",
+              "testId": null
+            },
+            "createTime": {
+              "seconds": 1793322174,
+              "nanoseconds": 152405000
+            },
+            "updateTime": {
+              "seconds": 1793322174,
+              "nanoseconds": 152405000
+            }
+          },
+          {
+            "path": "users/usr_local_PG14",
+            "data": {
+              "id": "usr_local_PG14",
+              "name": "Fixture local PG14",
+              "plan": "free",
+              "state": "active",
+              "selectedTests": [
+                "cien"
+              ]
+            },
+            "createTime": {
+              "seconds": 1793322174,
+              "nanoseconds": 148636000
+            },
+            "updateTime": {
+              "seconds": 1793322174,
+              "nanoseconds": 148636000
+            }
+          }
+        ],
+        "responses": [
+          {
+            "event": {
+              "id": "evt_local_PG14",
+              "object": "event",
+              "type": "invoice.paid",
+              "livemode": false,
+              "created": 1793322174,
+              "data": {
+                "object": {
+                  "id": "in_localPG14"
+                }
+              }
+            },
+            "start": "2026-10-30T01:02:54.187Z",
+            "finish": "2026-10-30T01:02:56.235Z",
+            "status": 200,
+            "body": {
+              "data": {
+                "received": true,
+                "processed": true
+              },
+              "error": null,
+              "meta": {
+                "requestId": "req_6465ab1c-b8c",
+                "timestamp": "2026-10-30T01:02:56.233Z"
+              }
+            }
+          },
+          {
+            "event": {
+              "id": "evt_local_PG14",
+              "object": "event",
+              "type": "invoice.paid",
+              "livemode": false,
+              "created": 1793322174,
+              "data": {
+                "object": {
+                  "id": "in_localPG14"
+                }
+              }
+            },
+            "start": "2026-10-30T01:02:54.189Z",
+            "finish": "2026-10-30T01:02:57.573Z",
+            "status": 200,
+            "body": {
+              "data": {
+                "received": true,
+                "duplicate": true
+              },
+              "error": null,
+              "meta": {
+                "requestId": "req_01e22ff8-683",
+                "timestamp": "2026-10-30T01:02:57.572Z"
+              }
+            }
+          }
+        ],
+        "maxInflight": 2,
+        "after": [
+          {
+            "path": "checkoutAttempts/usr_local_PG14",
+            "data": {
+              "attemptId": "attempt_PG14",
+              "closed": true
+            },
+            "createTime": {
+              "seconds": 1793322174,
+              "nanoseconds": 155389000
+            },
+            "updateTime": {
+              "seconds": 1793322176,
+              "nanoseconds": 230278000
+            }
+          },
+          {
+            "path": "checkoutSessions/cs_test_localPG14",
+            "data": {
+              "id": "cs_test_localPG14",
+              "userId": "usr_local_PG14",
+              "attemptId": "attempt_PG14",
+              "testId": null,
+              "stripeSubscriptionId": "sub_localPG14",
+              "fulfillmentStatus": "active",
+              "paymentStatus": "paid",
+              "status": "complete",
+              "updatedAt": "2026-10-30T01:02:54.221Z"
+            },
+            "createTime": {
+              "seconds": 1793322174,
+              "nanoseconds": 152405000
+            },
+            "updateTime": {
+              "seconds": 1793322176,
+              "nanoseconds": 230278000
+            }
+          },
+          {
+            "path": "invoices/in_localPG14",
+            "data": {
+              "amount": 5,
+              "livemode": false,
+              "userId": "usr_local_PG14",
+              "createdAt": "2026-10-30T01:02:24.000Z",
+              "hostedInvoiceUrl": null,
+              "pdfUrl": null,
+              "stripeSubscriptionId": "sub_localPG14",
+              "provider": "stripe",
+              "paidAt": "2026-10-30T01:02:34.000Z",
+              "currency": "USD",
+              "id": "in_localPG14",
+              "stripeCustomerId": "cus_localPG14",
+              "status": "paid",
+              "updatedAt": "2026-10-30T01:02:54.221Z"
+            },
+            "createTime": {
+              "seconds": 1793322176,
+              "nanoseconds": 230278000
+            },
+            "updateTime": {
+              "seconds": 1793322176,
+              "nanoseconds": 230278000
+            }
+          },
+          {
+            "path": "stripeEvents/evt_local_PG14",
+            "data": {
+              "type": "invoice.paid",
+              "userId": "usr_local_PG14",
+              "stripeSubscriptionId": "sub_localPG14",
+              "checkoutSessionId": "cs_test_localPG14",
+              "processingVersion": 3,
+              "processedAt": "2026-10-30T01:02:54.221Z"
+            },
+            "createTime": {
+              "seconds": 1793322176,
+              "nanoseconds": 230278000
+            },
+            "updateTime": {
+              "seconds": 1793322176,
+              "nanoseconds": 230278000
+            }
+          },
+          {
+            "path": "subscriptions/sub_localPG14",
+            "data": {
+              "currentPeriodStart": "2026-10-30T01:01:54.000Z",
+              "livemode": false,
+              "accessActive": true,
+              "paymentPending": false,
+              "checkoutSessionId": "cs_test_localPG14",
+              "currentPeriodEnd": "2026-11-29T01:02:54.000Z",
+              "userId": "usr_local_PG14",
+              "createdAt": "2026-10-30T01:01:54.000Z",
+              "provider": "stripe",
+              "billingCycle": "monthly",
+              "latestInvoiceId": "in_localPG14",
+              "cancelAtPeriodEnd": false,
+              "paymentMethod": null,
+              "testId": null,
+              "paidEntitlement": {
+                "currentPeriodStart": "2026-10-30T01:01:54.000Z",
+                "billingCycle": "monthly",
+                "currentPeriodEnd": "2026-11-29T01:02:54.000Z",
+                "invoiceId": "in_localPG14",
+                "testId": null,
+                "priceId": "price_all_monthly",
+                "plan": "all"
+              },
+              "id": "sub_localPG14",
+              "priceId": "price_all_monthly",
+              "stripeCustomerId": "cus_localPG14",
+              "plan": "all",
+              "stripePlan": {
+                "currentPeriodStart": "2026-10-30T01:01:54.000Z",
+                "billingCycle": "monthly",
+                "currentPeriodEnd": "2026-11-29T01:02:54.000Z",
+                "priceId": "price_all_monthly",
+                "plan": "all"
+              },
+              "status": "active",
+              "updatedAt": "2026-10-30T01:02:54.221Z"
+            },
+            "createTime": {
+              "seconds": 1793322176,
+              "nanoseconds": 230278000
+            },
+            "updateTime": {
+              "seconds": 1793322176,
+              "nanoseconds": 230278000
+            }
+          },
+          {
+            "path": "users/usr_local_PG14",
+            "data": {
+              "id": "usr_local_PG14",
+              "name": "Fixture local PG14",
+              "state": "active",
+              "selectedTests": [
+                "cien"
+              ],
+              "stripeSubscriptionId": "sub_localPG14",
+              "billingAccessActive": true,
+              "billingTestId": null,
+              "billingUpdatedAt": "2026-10-30T01:02:54.221Z",
+              "stripeCustomerId": "cus_localPG14",
+              "billingPeriodEnd": "2026-11-29T01:02:54.000Z",
+              "billingProvider": "stripe",
+              "plan": "all",
+              "billingStatus": "active"
+            },
+            "createTime": {
+              "seconds": 1793322174,
+              "nanoseconds": 148636000
+            },
+            "updateTime": {
+              "seconds": 1793322176,
+              "nanoseconds": 230278000
+            }
+          }
+        ],
+        "third": {
+          "event": {
+            "id": "evt_local_PG14",
+            "object": "event",
+            "type": "invoice.paid",
+            "livemode": false,
+            "created": 1793322174,
+            "data": {
+              "object": {
+                "id": "in_localPG14"
+              }
+            }
+          },
+          "start": "2026-10-30T01:02:57.624Z",
+          "finish": "2026-10-30T01:02:57.631Z",
+          "status": 200,
+          "body": {
+            "data": {
+              "received": true,
+              "duplicate": true
+            },
+            "error": null,
+            "meta": {
+              "requestId": "req_f5ef4c1b-3e4",
+              "timestamp": "2026-10-30T01:02:57.630Z"
+            }
+          }
+        },
+        "afterThird": [
+          {
+            "path": "checkoutAttempts/usr_local_PG14",
+            "data": {
+              "attemptId": "attempt_PG14",
+              "closed": true
+            },
+            "createTime": {
+              "seconds": 1793322174,
+              "nanoseconds": 155389000
+            },
+            "updateTime": {
+              "seconds": 1793322176,
+              "nanoseconds": 230278000
+            }
+          },
+          {
+            "path": "checkoutSessions/cs_test_localPG14",
+            "data": {
+              "id": "cs_test_localPG14",
+              "userId": "usr_local_PG14",
+              "attemptId": "attempt_PG14",
+              "testId": null,
+              "stripeSubscriptionId": "sub_localPG14",
+              "fulfillmentStatus": "active",
+              "paymentStatus": "paid",
+              "status": "complete",
+              "updatedAt": "2026-10-30T01:02:54.221Z"
+            },
+            "createTime": {
+              "seconds": 1793322174,
+              "nanoseconds": 152405000
+            },
+            "updateTime": {
+              "seconds": 1793322176,
+              "nanoseconds": 230278000
+            }
+          },
+          {
+            "path": "invoices/in_localPG14",
+            "data": {
+              "amount": 5,
+              "livemode": false,
+              "userId": "usr_local_PG14",
+              "createdAt": "2026-10-30T01:02:24.000Z",
+              "hostedInvoiceUrl": null,
+              "pdfUrl": null,
+              "stripeSubscriptionId": "sub_localPG14",
+              "provider": "stripe",
+              "paidAt": "2026-10-30T01:02:34.000Z",
+              "currency": "USD",
+              "id": "in_localPG14",
+              "stripeCustomerId": "cus_localPG14",
+              "status": "paid",
+              "updatedAt": "2026-10-30T01:02:54.221Z"
+            },
+            "createTime": {
+              "seconds": 1793322176,
+              "nanoseconds": 230278000
+            },
+            "updateTime": {
+              "seconds": 1793322176,
+              "nanoseconds": 230278000
+            }
+          },
+          {
+            "path": "stripeEvents/evt_local_PG14",
+            "data": {
+              "type": "invoice.paid",
+              "userId": "usr_local_PG14",
+              "stripeSubscriptionId": "sub_localPG14",
+              "checkoutSessionId": "cs_test_localPG14",
+              "processingVersion": 3,
+              "processedAt": "2026-10-30T01:02:54.221Z"
+            },
+            "createTime": {
+              "seconds": 1793322176,
+              "nanoseconds": 230278000
+            },
+            "updateTime": {
+              "seconds": 1793322176,
+              "nanoseconds": 230278000
+            }
+          },
+          {
+            "path": "subscriptions/sub_localPG14",
+            "data": {
+              "currentPeriodStart": "2026-10-30T01:01:54.000Z",
+              "livemode": false,
+              "accessActive": true,
+              "paymentPending": false,
+              "checkoutSessionId": "cs_test_localPG14",
+              "currentPeriodEnd": "2026-11-29T01:02:54.000Z",
+              "userId": "usr_local_PG14",
+              "createdAt": "2026-10-30T01:01:54.000Z",
+              "provider": "stripe",
+              "billingCycle": "monthly",
+              "latestInvoiceId": "in_localPG14",
+              "cancelAtPeriodEnd": false,
+              "paymentMethod": null,
+              "testId": null,
+              "paidEntitlement": {
+                "currentPeriodStart": "2026-10-30T01:01:54.000Z",
+                "billingCycle": "monthly",
+                "currentPeriodEnd": "2026-11-29T01:02:54.000Z",
+                "invoiceId": "in_localPG14",
+                "testId": null,
+                "priceId": "price_all_monthly",
+                "plan": "all"
+              },
+              "id": "sub_localPG14",
+              "priceId": "price_all_monthly",
+              "stripeCustomerId": "cus_localPG14",
+              "plan": "all",
+              "stripePlan": {
+                "currentPeriodStart": "2026-10-30T01:01:54.000Z",
+                "billingCycle": "monthly",
+                "currentPeriodEnd": "2026-11-29T01:02:54.000Z",
+                "priceId": "price_all_monthly",
+                "plan": "all"
+              },
+              "status": "active",
+              "updatedAt": "2026-10-30T01:02:54.221Z"
+            },
+            "createTime": {
+              "seconds": 1793322176,
+              "nanoseconds": 230278000
+            },
+            "updateTime": {
+              "seconds": 1793322176,
+              "nanoseconds": 230278000
+            }
+          },
+          {
+            "path": "users/usr_local_PG14",
+            "data": {
+              "id": "usr_local_PG14",
+              "name": "Fixture local PG14",
+              "state": "active",
+              "selectedTests": [
+                "cien"
+              ],
+              "stripeSubscriptionId": "sub_localPG14",
+              "billingAccessActive": true,
+              "billingTestId": null,
+              "billingUpdatedAt": "2026-10-30T01:02:54.221Z",
+              "stripeCustomerId": "cus_localPG14",
+              "billingPeriodEnd": "2026-11-29T01:02:54.000Z",
+              "billingProvider": "stripe",
+              "plan": "all",
+              "billingStatus": "active"
+            },
+            "createTime": {
+              "seconds": 1793322174,
+              "nanoseconds": 148636000
+            },
+            "updateTime": {
+              "seconds": 1793322176,
+              "nanoseconds": 230278000
+            }
+          }
+        ],
+        "conclusion": "Una aplicación y una respuesta duplicate bajo simultaneidad comprobada; tercera entrega sin cambios."
+      },
+      "error": null,
+      "logs": [],
+      "stripeReadDoubles": [
+        {
+          "phase": "PG-14",
+          "method": "invoices.retrieve",
+          "id": "in_localPG14"
+        },
+        {
+          "phase": "PG-14",
+          "method": "invoices.retrieve",
+          "id": "in_localPG14"
+        },
+        {
+          "phase": "PG-14",
+          "method": "subscriptions.retrieve",
+          "id": "sub_localPG14"
+        },
+        {
+          "phase": "PG-14",
+          "method": "subscriptions.retrieve",
+          "id": "sub_localPG14"
+        },
+        {
+          "phase": "PG-14",
+          "method": "checkout.sessions.retrieve",
+          "id": "cs_test_localPG14"
+        },
+        {
+          "phase": "PG-14",
+          "method": "subscriptions.retrieve",
+          "id": "sub_localPG14"
+        },
+        {
+          "phase": "PG-14",
+          "method": "invoices.retrieve",
+          "id": "in_localPG14"
+        },
+        {
+          "phase": "PG-14",
+          "method": "checkout.sessions.retrieve",
+          "id": "cs_test_localPG14"
+        },
+        {
+          "phase": "PG-14",
+          "method": "subscriptions.retrieve",
+          "id": "sub_localPG14"
+        },
+        {
+          "phase": "PG-14",
+          "method": "invoices.retrieve",
+          "id": "in_localPG14"
+        }
+      ]
+    },
+    {
+      "id": "PG-15",
+      "description": "Eventos antiguos respetan el estado actual consultado al proveedor simulado",
+      "result": "Aprobado",
+      "output": {
+        "initial": {
+          "now": 1793322177,
+          "user": "usr_local_PG15",
+          "attempt": "attempt_PG15",
+          "invoice": {
+            "id": "in_localPG15",
+            "object": "invoice",
+            "livemode": false,
+            "currency": "usd",
+            "customer": "cus_localPG15",
+            "subscription": "sub_localPG15",
+            "status": "paid",
+            "amount_remaining": 0,
+            "amount_paid": 500,
+            "amount_due": 500,
+            "created": 1793322147,
+            "status_transitions": {
+              "paid_at": 1793322157
+            }
+          },
+          "oldInvoice": {
+            "id": "in_oldPG15",
+            "object": "invoice",
+            "livemode": false,
+            "currency": "usd",
+            "customer": "cus_localPG15",
+            "subscription": "sub_localPG15",
+            "status": "open",
+            "amount_remaining": 500,
+            "amount_paid": 0,
+            "amount_due": 500,
+            "created": 1793322147,
+            "status_transitions": {
+              "paid_at": null
+            }
+          },
+          "subscription": {
+            "id": "sub_localPG15",
+            "object": "subscription",
+            "livemode": false,
+            "customer": "cus_localPG15",
+            "metadata": {
+              "integration": "aprueba_mvp",
+              "userId": "usr_local_PG15",
+              "attemptId": "attempt_PG15"
+            },
+            "status": "active",
+            "created": 1793322117,
+            "cancel_at_period_end": false,
+            "latest_invoice": {
+              "id": "in_localPG15",
+              "object": "invoice",
+              "livemode": false,
+              "currency": "usd",
+              "customer": "cus_localPG15",
+              "subscription": "sub_localPG15",
+              "status": "paid",
+              "amount_remaining": 0,
+              "amount_paid": 500,
+              "amount_due": 500,
+              "created": 1793322147,
+              "status_transitions": {
+                "paid_at": 1793322157
+              }
+            },
+            "items": {
+              "has_more": false,
+              "data": [
+                {
+                  "quantity": 1,
+                  "current_period_start": 1793322117,
+                  "current_period_end": 1795914177,
+                  "price": {
+                    "id": "price_all_monthly",
+                    "livemode": false,
+                    "currency": "usd",
+                    "unit_amount": 500,
+                    "product": "prod_aprueba_all",
+                    "type": "recurring",
+                    "billing_scheme": "per_unit",
+                    "recurring": {
+                      "interval": "month",
+                      "interval_count": 1,
+                      "usage_type": "licensed"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "session": {
+            "id": "cs_test_localPG15",
+            "object": "checkout.session",
+            "livemode": false,
+            "mode": "subscription",
+            "client_reference_id": "usr_local_PG15",
+            "metadata": {
+              "integration": "aprueba_mvp",
+              "userId": "usr_local_PG15",
+              "attemptId": "attempt_PG15"
+            },
+            "customer": "cus_localPG15",
+            "subscription": "sub_localPG15",
+            "status": "complete",
+            "payment_status": "paid"
+          }
+        },
+        "before": [
+          {
+            "path": "checkoutAttempts/usr_local_PG15",
+            "data": {
+              "attemptId": "attempt_PG15",
+              "closed": false
+            },
+            "createTime": {
+              "seconds": 1793322177,
+              "nanoseconds": 739490000
+            },
+            "updateTime": {
+              "seconds": 1793322177,
+              "nanoseconds": 739490000
+            }
+          },
+          {
+            "path": "checkoutSessions/cs_test_localPG15",
+            "data": {
+              "id": "cs_test_localPG15",
+              "userId": "usr_local_PG15",
+              "attemptId": "attempt_PG15",
+              "testId": null
+            },
+            "createTime": {
+              "seconds": 1793322177,
+              "nanoseconds": 735967000
+            },
+            "updateTime": {
+              "seconds": 1793322177,
+              "nanoseconds": 735967000
+            }
+          },
+          {
+            "path": "users/usr_local_PG15",
+            "data": {
+              "id": "usr_local_PG15",
+              "name": "Fixture local PG15",
+              "plan": "free",
+              "state": "active",
+              "selectedTests": [
+                "cien"
+              ]
+            },
+            "createTime": {
+              "seconds": 1793322177,
+              "nanoseconds": 733067000
+            },
+            "updateTime": {
+              "seconds": 1793322177,
+              "nanoseconds": 733067000
+            }
+          }
+        ],
+        "current": {
+          "event": {
+            "id": "evt_local_PG15_current",
+            "object": "event",
+            "type": "customer.subscription.updated",
+            "livemode": false,
+            "created": 1793322177,
+            "data": {
+              "object": {
+                "id": "sub_localPG15"
+              }
+            }
+          },
+          "start": "2026-10-30T01:02:57.759Z",
+          "finish": "2026-10-30T01:02:57.788Z",
+          "status": 200,
+          "body": {
+            "data": {
+              "received": true,
+              "processed": true
+            },
+            "error": null,
+            "meta": {
+              "requestId": "req_352e847c-4ec",
+              "timestamp": "2026-10-30T01:02:57.787Z"
+            }
+          }
+        },
+        "active": [
+          {
+            "path": "checkoutAttempts/usr_local_PG15",
+            "data": {
+              "attemptId": "attempt_PG15",
+              "closed": true
+            },
+            "createTime": {
+              "seconds": 1793322177,
+              "nanoseconds": 739490000
+            },
+            "updateTime": {
+              "seconds": 1793322177,
+              "nanoseconds": 784405000
+            }
+          },
+          {
+            "path": "checkoutSessions/cs_test_localPG15",
+            "data": {
+              "id": "cs_test_localPG15",
+              "userId": "usr_local_PG15",
+              "attemptId": "attempt_PG15",
+              "testId": null,
+              "stripeSubscriptionId": "sub_localPG15",
+              "fulfillmentStatus": "active",
+              "paymentStatus": "paid",
+              "status": "complete",
+              "updatedAt": "2026-10-30T01:02:57.777Z"
+            },
+            "createTime": {
+              "seconds": 1793322177,
+              "nanoseconds": 735967000
+            },
+            "updateTime": {
+              "seconds": 1793322177,
+              "nanoseconds": 784405000
+            }
+          },
+          {
+            "path": "invoices/in_localPG15",
+            "data": {
+              "amount": 5,
+              "livemode": false,
+              "userId": "usr_local_PG15",
+              "createdAt": "2026-10-30T01:02:27.000Z",
+              "hostedInvoiceUrl": null,
+              "pdfUrl": null,
+              "stripeSubscriptionId": "sub_localPG15",
+              "provider": "stripe",
+              "paidAt": "2026-10-30T01:02:37.000Z",
+              "currency": "USD",
+              "id": "in_localPG15",
+              "stripeCustomerId": "cus_localPG15",
+              "status": "paid",
+              "updatedAt": "2026-10-30T01:02:57.777Z"
+            },
+            "createTime": {
+              "seconds": 1793322177,
+              "nanoseconds": 784405000
+            },
+            "updateTime": {
+              "seconds": 1793322177,
+              "nanoseconds": 784405000
+            }
+          },
+          {
+            "path": "stripeEvents/evt_local_PG15_current",
+            "data": {
+              "type": "customer.subscription.updated",
+              "userId": "usr_local_PG15",
+              "stripeSubscriptionId": "sub_localPG15",
+              "checkoutSessionId": "cs_test_localPG15",
+              "processingVersion": 3,
+              "processedAt": "2026-10-30T01:02:57.777Z"
+            },
+            "createTime": {
+              "seconds": 1793322177,
+              "nanoseconds": 784405000
+            },
+            "updateTime": {
+              "seconds": 1793322177,
+              "nanoseconds": 784405000
+            }
+          },
+          {
+            "path": "subscriptions/sub_localPG15",
+            "data": {
+              "currentPeriodStart": "2026-10-30T01:01:57.000Z",
+              "livemode": false,
+              "accessActive": true,
+              "paymentPending": false,
+              "checkoutSessionId": "cs_test_localPG15",
+              "currentPeriodEnd": "2026-11-29T01:02:57.000Z",
+              "userId": "usr_local_PG15",
+              "createdAt": "2026-10-30T01:01:57.000Z",
+              "provider": "stripe",
+              "billingCycle": "monthly",
+              "latestInvoiceId": "in_localPG15",
+              "cancelAtPeriodEnd": false,
+              "paymentMethod": null,
+              "testId": null,
+              "paidEntitlement": {
+                "currentPeriodStart": "2026-10-30T01:01:57.000Z",
+                "billingCycle": "monthly",
+                "currentPeriodEnd": "2026-11-29T01:02:57.000Z",
+                "invoiceId": "in_localPG15",
+                "testId": null,
+                "priceId": "price_all_monthly",
+                "plan": "all"
+              },
+              "id": "sub_localPG15",
+              "priceId": "price_all_monthly",
+              "stripeCustomerId": "cus_localPG15",
+              "plan": "all",
+              "stripePlan": {
+                "currentPeriodStart": "2026-10-30T01:01:57.000Z",
+                "billingCycle": "monthly",
+                "currentPeriodEnd": "2026-11-29T01:02:57.000Z",
+                "priceId": "price_all_monthly",
+                "plan": "all"
+              },
+              "status": "active",
+              "updatedAt": "2026-10-30T01:02:57.777Z"
+            },
+            "createTime": {
+              "seconds": 1793322177,
+              "nanoseconds": 784405000
+            },
+            "updateTime": {
+              "seconds": 1793322177,
+              "nanoseconds": 784405000
+            }
+          },
+          {
+            "path": "users/usr_local_PG15",
+            "data": {
+              "id": "usr_local_PG15",
+              "name": "Fixture local PG15",
+              "state": "active",
+              "selectedTests": [
+                "cien"
+              ],
+              "stripeSubscriptionId": "sub_localPG15",
+              "billingAccessActive": true,
+              "billingTestId": null,
+              "billingUpdatedAt": "2026-10-30T01:02:57.777Z",
+              "stripeCustomerId": "cus_localPG15",
+              "billingPeriodEnd": "2026-11-29T01:02:57.000Z",
+              "billingProvider": "stripe",
+              "plan": "all",
+              "billingStatus": "active"
+            },
+            "createTime": {
+              "seconds": 1793322177,
+              "nanoseconds": 733067000
+            },
+            "updateTime": {
+              "seconds": 1793322177,
+              "nanoseconds": 784405000
+            }
+          }
+        ],
+        "older": {
+          "event": {
+            "id": "evt_local_PG15_old_fail",
+            "object": "event",
+            "type": "invoice.payment_failed",
+            "livemode": false,
+            "created": 1793318577,
+            "data": {
+              "object": {
+                "id": "in_oldPG15"
+              }
+            }
+          },
+          "start": "2026-10-30T01:02:57.834Z",
+          "finish": "2026-10-30T01:02:57.870Z",
+          "status": 200,
+          "body": {
+            "data": {
+              "received": true,
+              "processed": true
+            },
+            "error": null,
+            "meta": {
+              "requestId": "req_361de444-662",
+              "timestamp": "2026-10-30T01:02:57.869Z"
+            }
+          }
+        },
+        "afterOlder": [
+          {
+            "path": "checkoutAttempts/usr_local_PG15",
+            "data": {
+              "attemptId": "attempt_PG15",
+              "closed": true
+            },
+            "createTime": {
+              "seconds": 1793322177,
+              "nanoseconds": 739490000
+            },
+            "updateTime": {
+              "seconds": 1793322177,
+              "nanoseconds": 784405000
+            }
+          },
+          {
+            "path": "checkoutSessions/cs_test_localPG15",
+            "data": {
+              "id": "cs_test_localPG15",
+              "userId": "usr_local_PG15",
+              "attemptId": "attempt_PG15",
+              "testId": null,
+              "stripeSubscriptionId": "sub_localPG15",
+              "fulfillmentStatus": "active",
+              "paymentStatus": "paid",
+              "status": "complete",
+              "updatedAt": "2026-10-30T01:02:57.858Z"
+            },
+            "createTime": {
+              "seconds": 1793322177,
+              "nanoseconds": 735967000
+            },
+            "updateTime": {
+              "seconds": 1793322177,
+              "nanoseconds": 867110000
+            }
+          },
+          {
+            "path": "invoices/in_localPG15",
+            "data": {
+              "amount": 5,
+              "livemode": false,
+              "userId": "usr_local_PG15",
+              "createdAt": "2026-10-30T01:02:27.000Z",
+              "hostedInvoiceUrl": null,
+              "pdfUrl": null,
+              "stripeSubscriptionId": "sub_localPG15",
+              "provider": "stripe",
+              "paidAt": "2026-10-30T01:02:37.000Z",
+              "currency": "USD",
+              "id": "in_localPG15",
+              "stripeCustomerId": "cus_localPG15",
+              "status": "paid",
+              "updatedAt": "2026-10-30T01:02:57.858Z"
+            },
+            "createTime": {
+              "seconds": 1793322177,
+              "nanoseconds": 784405000
+            },
+            "updateTime": {
+              "seconds": 1793322177,
+              "nanoseconds": 867110000
+            }
+          },
+          {
+            "path": "invoices/in_oldPG15",
+            "data": {
+              "amount": 5,
+              "livemode": false,
+              "userId": "usr_local_PG15",
+              "createdAt": "2026-10-30T01:02:27.000Z",
+              "hostedInvoiceUrl": null,
+              "pdfUrl": null,
+              "stripeSubscriptionId": "sub_localPG15",
+              "provider": "stripe",
+              "paidAt": null,
+              "currency": "USD",
+              "id": "in_oldPG15",
+              "stripeCustomerId": "cus_localPG15",
+              "status": "open",
+              "updatedAt": "2026-10-30T01:02:57.858Z"
+            },
+            "createTime": {
+              "seconds": 1793322177,
+              "nanoseconds": 867110000
+            },
+            "updateTime": {
+              "seconds": 1793322177,
+              "nanoseconds": 867110000
+            }
+          },
+          {
+            "path": "stripeEvents/evt_local_PG15_current",
+            "data": {
+              "type": "customer.subscription.updated",
+              "userId": "usr_local_PG15",
+              "stripeSubscriptionId": "sub_localPG15",
+              "checkoutSessionId": "cs_test_localPG15",
+              "processingVersion": 3,
+              "processedAt": "2026-10-30T01:02:57.777Z"
+            },
+            "createTime": {
+              "seconds": 1793322177,
+              "nanoseconds": 784405000
+            },
+            "updateTime": {
+              "seconds": 1793322177,
+              "nanoseconds": 784405000
+            }
+          },
+          {
+            "path": "stripeEvents/evt_local_PG15_old_fail",
+            "data": {
+              "type": "invoice.payment_failed",
+              "userId": "usr_local_PG15",
+              "stripeSubscriptionId": "sub_localPG15",
+              "checkoutSessionId": "cs_test_localPG15",
+              "processingVersion": 3,
+              "processedAt": "2026-10-30T01:02:57.858Z"
+            },
+            "createTime": {
+              "seconds": 1793322177,
+              "nanoseconds": 867110000
+            },
+            "updateTime": {
+              "seconds": 1793322177,
+              "nanoseconds": 867110000
+            }
+          },
+          {
+            "path": "subscriptions/sub_localPG15",
+            "data": {
+              "currentPeriodStart": "2026-10-30T01:01:57.000Z",
+              "livemode": false,
+              "accessActive": true,
+              "paymentPending": false,
+              "checkoutSessionId": "cs_test_localPG15",
+              "currentPeriodEnd": "2026-11-29T01:02:57.000Z",
+              "userId": "usr_local_PG15",
+              "createdAt": "2026-10-30T01:01:57.000Z",
+              "provider": "stripe",
+              "billingCycle": "monthly",
+              "latestInvoiceId": "in_localPG15",
+              "cancelAtPeriodEnd": false,
+              "paymentMethod": null,
+              "testId": null,
+              "paidEntitlement": {
+                "currentPeriodStart": "2026-10-30T01:01:57.000Z",
+                "billingCycle": "monthly",
+                "currentPeriodEnd": "2026-11-29T01:02:57.000Z",
+                "invoiceId": "in_localPG15",
+                "testId": null,
+                "priceId": "price_all_monthly",
+                "plan": "all"
+              },
+              "id": "sub_localPG15",
+              "priceId": "price_all_monthly",
+              "stripeCustomerId": "cus_localPG15",
+              "plan": "all",
+              "stripePlan": {
+                "currentPeriodStart": "2026-10-30T01:01:57.000Z",
+                "billingCycle": "monthly",
+                "currentPeriodEnd": "2026-11-29T01:02:57.000Z",
+                "priceId": "price_all_monthly",
+                "plan": "all"
+              },
+              "status": "active",
+              "updatedAt": "2026-10-30T01:02:57.858Z"
+            },
+            "createTime": {
+              "seconds": 1793322177,
+              "nanoseconds": 784405000
+            },
+            "updateTime": {
+              "seconds": 1793322177,
+              "nanoseconds": 867110000
+            }
+          },
+          {
+            "path": "users/usr_local_PG15",
+            "data": {
+              "id": "usr_local_PG15",
+              "name": "Fixture local PG15",
+              "state": "active",
+              "selectedTests": [
+                "cien"
+              ],
+              "stripeSubscriptionId": "sub_localPG15",
+              "billingAccessActive": true,
+              "billingTestId": null,
+              "stripeCustomerId": "cus_localPG15",
+              "billingPeriodEnd": "2026-11-29T01:02:57.000Z",
+              "billingProvider": "stripe",
+              "plan": "all",
+              "billingStatus": "active",
+              "billingUpdatedAt": "2026-10-30T01:02:57.858Z"
+            },
+            "createTime": {
+              "seconds": 1793322177,
+              "nanoseconds": 733067000
+            },
+            "updateTime": {
+              "seconds": 1793322177,
+              "nanoseconds": 867110000
+            }
+          }
+        ],
+        "canceled": {
+          "event": {
+            "id": "evt_local_PG15_cancel",
+            "object": "event",
+            "type": "customer.subscription.deleted",
+            "livemode": false,
+            "created": 1793322178,
+            "data": {
+              "object": {
+                "id": "sub_localPG15"
+              }
+            }
+          },
+          "start": "2026-10-30T01:02:57.915Z",
+          "finish": "2026-10-30T01:02:57.943Z",
+          "status": 200,
+          "body": {
+            "data": {
+              "received": true,
+              "processed": true
+            },
+            "error": null,
+            "meta": {
+              "requestId": "req_20a54d27-9cd",
+              "timestamp": "2026-10-30T01:02:57.942Z"
+            }
+          }
+        },
+        "afterCancel": [
+          {
+            "path": "checkoutAttempts/usr_local_PG15",
+            "data": {
+              "attemptId": "attempt_PG15",
+              "closed": true
+            },
+            "createTime": {
+              "seconds": 1793322177,
+              "nanoseconds": 739490000
+            },
+            "updateTime": {
+              "seconds": 1793322177,
+              "nanoseconds": 784405000
+            }
+          },
+          {
+            "path": "checkoutSessions/cs_test_localPG15",
+            "data": {
+              "id": "cs_test_localPG15",
+              "userId": "usr_local_PG15",
+              "attemptId": "attempt_PG15",
+              "testId": null,
+              "stripeSubscriptionId": "sub_localPG15",
+              "paymentStatus": "paid",
+              "status": "complete",
+              "fulfillmentStatus": "ended",
+              "updatedAt": "2026-10-30T01:02:57.935Z"
+            },
+            "createTime": {
+              "seconds": 1793322177,
+              "nanoseconds": 735967000
+            },
+            "updateTime": {
+              "seconds": 1793322177,
+              "nanoseconds": 940423000
+            }
+          },
+          {
+            "path": "invoices/in_localPG15",
+            "data": {
+              "amount": 5,
+              "livemode": false,
+              "userId": "usr_local_PG15",
+              "createdAt": "2026-10-30T01:02:27.000Z",
+              "hostedInvoiceUrl": null,
+              "pdfUrl": null,
+              "stripeSubscriptionId": "sub_localPG15",
+              "provider": "stripe",
+              "paidAt": "2026-10-30T01:02:37.000Z",
+              "currency": "USD",
+              "id": "in_localPG15",
+              "stripeCustomerId": "cus_localPG15",
+              "status": "paid",
+              "updatedAt": "2026-10-30T01:02:57.935Z"
+            },
+            "createTime": {
+              "seconds": 1793322177,
+              "nanoseconds": 784405000
+            },
+            "updateTime": {
+              "seconds": 1793322177,
+              "nanoseconds": 940423000
+            }
+          },
+          {
+            "path": "invoices/in_oldPG15",
+            "data": {
+              "amount": 5,
+              "livemode": false,
+              "userId": "usr_local_PG15",
+              "createdAt": "2026-10-30T01:02:27.000Z",
+              "hostedInvoiceUrl": null,
+              "pdfUrl": null,
+              "stripeSubscriptionId": "sub_localPG15",
+              "provider": "stripe",
+              "paidAt": null,
+              "currency": "USD",
+              "id": "in_oldPG15",
+              "stripeCustomerId": "cus_localPG15",
+              "status": "open",
+              "updatedAt": "2026-10-30T01:02:57.858Z"
+            },
+            "createTime": {
+              "seconds": 1793322177,
+              "nanoseconds": 867110000
+            },
+            "updateTime": {
+              "seconds": 1793322177,
+              "nanoseconds": 867110000
+            }
+          },
+          {
+            "path": "stripeEvents/evt_local_PG15_cancel",
+            "data": {
+              "type": "customer.subscription.deleted",
+              "userId": "usr_local_PG15",
+              "stripeSubscriptionId": "sub_localPG15",
+              "checkoutSessionId": "cs_test_localPG15",
+              "processingVersion": 3,
+              "processedAt": "2026-10-30T01:02:57.935Z"
+            },
+            "createTime": {
+              "seconds": 1793322177,
+              "nanoseconds": 940423000
+            },
+            "updateTime": {
+              "seconds": 1793322177,
+              "nanoseconds": 940423000
+            }
+          },
+          {
+            "path": "stripeEvents/evt_local_PG15_current",
+            "data": {
+              "type": "customer.subscription.updated",
+              "userId": "usr_local_PG15",
+              "stripeSubscriptionId": "sub_localPG15",
+              "checkoutSessionId": "cs_test_localPG15",
+              "processingVersion": 3,
+              "processedAt": "2026-10-30T01:02:57.777Z"
+            },
+            "createTime": {
+              "seconds": 1793322177,
+              "nanoseconds": 784405000
+            },
+            "updateTime": {
+              "seconds": 1793322177,
+              "nanoseconds": 784405000
+            }
+          },
+          {
+            "path": "stripeEvents/evt_local_PG15_old_fail",
+            "data": {
+              "type": "invoice.payment_failed",
+              "userId": "usr_local_PG15",
+              "stripeSubscriptionId": "sub_localPG15",
+              "checkoutSessionId": "cs_test_localPG15",
+              "processingVersion": 3,
+              "processedAt": "2026-10-30T01:02:57.858Z"
+            },
+            "createTime": {
+              "seconds": 1793322177,
+              "nanoseconds": 867110000
+            },
+            "updateTime": {
+              "seconds": 1793322177,
+              "nanoseconds": 867110000
+            }
+          },
+          {
+            "path": "subscriptions/sub_localPG15",
+            "data": {
+              "currentPeriodStart": "2026-10-30T01:01:57.000Z",
+              "livemode": false,
+              "paymentPending": false,
+              "checkoutSessionId": "cs_test_localPG15",
+              "currentPeriodEnd": "2026-11-29T01:02:57.000Z",
+              "userId": "usr_local_PG15",
+              "createdAt": "2026-10-30T01:01:57.000Z",
+              "provider": "stripe",
+              "billingCycle": "monthly",
+              "latestInvoiceId": "in_localPG15",
+              "cancelAtPeriodEnd": false,
+              "paymentMethod": null,
+              "testId": null,
+              "paidEntitlement": {
+                "currentPeriodStart": "2026-10-30T01:01:57.000Z",
+                "billingCycle": "monthly",
+                "currentPeriodEnd": "2026-11-29T01:02:57.000Z",
+                "invoiceId": "in_localPG15",
+                "testId": null,
+                "priceId": "price_all_monthly",
+                "plan": "all"
+              },
+              "id": "sub_localPG15",
+              "priceId": "price_all_monthly",
+              "stripeCustomerId": "cus_localPG15",
+              "plan": "all",
+              "stripePlan": {
+                "currentPeriodStart": "2026-10-30T01:01:57.000Z",
+                "billingCycle": "monthly",
+                "currentPeriodEnd": "2026-11-29T01:02:57.000Z",
+                "priceId": "price_all_monthly",
+                "plan": "all"
+              },
+              "accessActive": false,
+              "status": "canceled",
+              "updatedAt": "2026-10-30T01:02:57.935Z"
+            },
+            "createTime": {
+              "seconds": 1793322177,
+              "nanoseconds": 784405000
+            },
+            "updateTime": {
+              "seconds": 1793322177,
+              "nanoseconds": 940423000
+            }
+          },
+          {
+            "path": "users/usr_local_PG15",
+            "data": {
+              "id": "usr_local_PG15",
+              "name": "Fixture local PG15",
+              "state": "active",
+              "selectedTests": [
+                "cien"
+              ],
+              "stripeSubscriptionId": "sub_localPG15",
+              "billingTestId": null,
+              "stripeCustomerId": "cus_localPG15",
+              "billingPeriodEnd": "2026-11-29T01:02:57.000Z",
+              "billingProvider": "stripe",
+              "billingAccessActive": false,
+              "billingUpdatedAt": "2026-10-30T01:02:57.935Z",
+              "plan": "free",
+              "billingStatus": "canceled"
+            },
+            "createTime": {
+              "seconds": 1793322177,
+              "nanoseconds": 733067000
+            },
+            "updateTime": {
+              "seconds": 1793322177,
+              "nanoseconds": 940423000
+            }
+          }
+        ],
+        "oldPaid": {
+          "event": {
+            "id": "evt_local_PG15_old_paid",
+            "object": "event",
+            "type": "invoice.paid",
+            "livemode": false,
+            "created": 1793314977,
+            "data": {
+              "object": {
+                "id": "in_localPG15"
+              }
+            }
+          },
+          "start": "2026-10-30T01:02:57.997Z",
+          "finish": "2026-10-30T01:02:58.030Z",
+          "status": 200,
+          "body": {
+            "data": {
+              "received": true,
+              "processed": true
+            },
+            "error": null,
+            "meta": {
+              "requestId": "req_f087d965-352",
+              "timestamp": "2026-10-30T01:02:58.029Z"
+            }
+          }
+        },
+        "final": [
+          {
+            "path": "checkoutAttempts/usr_local_PG15",
+            "data": {
+              "attemptId": "attempt_PG15",
+              "closed": true
+            },
+            "createTime": {
+              "seconds": 1793322177,
+              "nanoseconds": 739490000
+            },
+            "updateTime": {
+              "seconds": 1793322177,
+              "nanoseconds": 784405000
+            }
+          },
+          {
+            "path": "checkoutSessions/cs_test_localPG15",
+            "data": {
+              "id": "cs_test_localPG15",
+              "userId": "usr_local_PG15",
+              "attemptId": "attempt_PG15",
+              "testId": null,
+              "stripeSubscriptionId": "sub_localPG15",
+              "paymentStatus": "paid",
+              "status": "complete",
+              "fulfillmentStatus": "ended",
+              "updatedAt": "2026-10-30T01:02:58.020Z"
+            },
+            "createTime": {
+              "seconds": 1793322177,
+              "nanoseconds": 735967000
+            },
+            "updateTime": {
+              "seconds": 1793322178,
+              "nanoseconds": 26404000
+            }
+          },
+          {
+            "path": "invoices/in_localPG15",
+            "data": {
+              "amount": 5,
+              "livemode": false,
+              "userId": "usr_local_PG15",
+              "createdAt": "2026-10-30T01:02:27.000Z",
+              "hostedInvoiceUrl": null,
+              "pdfUrl": null,
+              "stripeSubscriptionId": "sub_localPG15",
+              "provider": "stripe",
+              "paidAt": "2026-10-30T01:02:37.000Z",
+              "currency": "USD",
+              "id": "in_localPG15",
+              "stripeCustomerId": "cus_localPG15",
+              "status": "paid",
+              "updatedAt": "2026-10-30T01:02:58.020Z"
+            },
+            "createTime": {
+              "seconds": 1793322177,
+              "nanoseconds": 784405000
+            },
+            "updateTime": {
+              "seconds": 1793322178,
+              "nanoseconds": 26404000
+            }
+          },
+          {
+            "path": "invoices/in_oldPG15",
+            "data": {
+              "amount": 5,
+              "livemode": false,
+              "userId": "usr_local_PG15",
+              "createdAt": "2026-10-30T01:02:27.000Z",
+              "hostedInvoiceUrl": null,
+              "pdfUrl": null,
+              "stripeSubscriptionId": "sub_localPG15",
+              "provider": "stripe",
+              "paidAt": null,
+              "currency": "USD",
+              "id": "in_oldPG15",
+              "stripeCustomerId": "cus_localPG15",
+              "status": "open",
+              "updatedAt": "2026-10-30T01:02:57.858Z"
+            },
+            "createTime": {
+              "seconds": 1793322177,
+              "nanoseconds": 867110000
+            },
+            "updateTime": {
+              "seconds": 1793322177,
+              "nanoseconds": 867110000
+            }
+          },
+          {
+            "path": "stripeEvents/evt_local_PG15_cancel",
+            "data": {
+              "type": "customer.subscription.deleted",
+              "userId": "usr_local_PG15",
+              "stripeSubscriptionId": "sub_localPG15",
+              "checkoutSessionId": "cs_test_localPG15",
+              "processingVersion": 3,
+              "processedAt": "2026-10-30T01:02:57.935Z"
+            },
+            "createTime": {
+              "seconds": 1793322177,
+              "nanoseconds": 940423000
+            },
+            "updateTime": {
+              "seconds": 1793322177,
+              "nanoseconds": 940423000
+            }
+          },
+          {
+            "path": "stripeEvents/evt_local_PG15_current",
+            "data": {
+              "type": "customer.subscription.updated",
+              "userId": "usr_local_PG15",
+              "stripeSubscriptionId": "sub_localPG15",
+              "checkoutSessionId": "cs_test_localPG15",
+              "processingVersion": 3,
+              "processedAt": "2026-10-30T01:02:57.777Z"
+            },
+            "createTime": {
+              "seconds": 1793322177,
+              "nanoseconds": 784405000
+            },
+            "updateTime": {
+              "seconds": 1793322177,
+              "nanoseconds": 784405000
+            }
+          },
+          {
+            "path": "stripeEvents/evt_local_PG15_old_fail",
+            "data": {
+              "type": "invoice.payment_failed",
+              "userId": "usr_local_PG15",
+              "stripeSubscriptionId": "sub_localPG15",
+              "checkoutSessionId": "cs_test_localPG15",
+              "processingVersion": 3,
+              "processedAt": "2026-10-30T01:02:57.858Z"
+            },
+            "createTime": {
+              "seconds": 1793322177,
+              "nanoseconds": 867110000
+            },
+            "updateTime": {
+              "seconds": 1793322177,
+              "nanoseconds": 867110000
+            }
+          },
+          {
+            "path": "stripeEvents/evt_local_PG15_old_paid",
+            "data": {
+              "type": "invoice.paid",
+              "userId": "usr_local_PG15",
+              "stripeSubscriptionId": "sub_localPG15",
+              "checkoutSessionId": "cs_test_localPG15",
+              "processingVersion": 3,
+              "processedAt": "2026-10-30T01:02:58.020Z"
+            },
+            "createTime": {
+              "seconds": 1793322178,
+              "nanoseconds": 26404000
+            },
+            "updateTime": {
+              "seconds": 1793322178,
+              "nanoseconds": 26404000
+            }
+          },
+          {
+            "path": "subscriptions/sub_localPG15",
+            "data": {
+              "currentPeriodStart": "2026-10-30T01:01:57.000Z",
+              "livemode": false,
+              "paymentPending": false,
+              "checkoutSessionId": "cs_test_localPG15",
+              "currentPeriodEnd": "2026-11-29T01:02:57.000Z",
+              "userId": "usr_local_PG15",
+              "createdAt": "2026-10-30T01:01:57.000Z",
+              "provider": "stripe",
+              "billingCycle": "monthly",
+              "latestInvoiceId": "in_localPG15",
+              "cancelAtPeriodEnd": false,
+              "paymentMethod": null,
+              "testId": null,
+              "paidEntitlement": {
+                "currentPeriodStart": "2026-10-30T01:01:57.000Z",
+                "billingCycle": "monthly",
+                "currentPeriodEnd": "2026-11-29T01:02:57.000Z",
+                "invoiceId": "in_localPG15",
+                "testId": null,
+                "priceId": "price_all_monthly",
+                "plan": "all"
+              },
+              "id": "sub_localPG15",
+              "priceId": "price_all_monthly",
+              "stripeCustomerId": "cus_localPG15",
+              "plan": "all",
+              "stripePlan": {
+                "currentPeriodStart": "2026-10-30T01:01:57.000Z",
+                "billingCycle": "monthly",
+                "currentPeriodEnd": "2026-11-29T01:02:57.000Z",
+                "priceId": "price_all_monthly",
+                "plan": "all"
+              },
+              "accessActive": false,
+              "status": "canceled",
+              "updatedAt": "2026-10-30T01:02:58.020Z"
+            },
+            "createTime": {
+              "seconds": 1793322177,
+              "nanoseconds": 784405000
+            },
+            "updateTime": {
+              "seconds": 1793322178,
+              "nanoseconds": 26404000
+            }
+          },
+          {
+            "path": "users/usr_local_PG15",
+            "data": {
+              "id": "usr_local_PG15",
+              "name": "Fixture local PG15",
+              "state": "active",
+              "selectedTests": [
+                "cien"
+              ],
+              "stripeSubscriptionId": "sub_localPG15",
+              "billingTestId": null,
+              "stripeCustomerId": "cus_localPG15",
+              "billingPeriodEnd": "2026-11-29T01:02:57.000Z",
+              "billingProvider": "stripe",
+              "billingAccessActive": false,
+              "plan": "free",
+              "billingStatus": "canceled",
+              "billingUpdatedAt": "2026-10-30T01:02:58.020Z"
+            },
+            "createTime": {
+              "seconds": 1793322177,
+              "nanoseconds": 733067000
+            },
+            "updateTime": {
+              "seconds": 1793322178,
+              "nanoseconds": 26404000
+            }
+          }
+        ],
+        "conclusion": "La regla observada consulta el estado actual de la suscripción; no ordena exclusivamente por event.created. El evento antiguo no revoca acceso vigente ni reactiva una suscripción cancelada."
+      },
+      "error": null,
+      "logs": [],
+      "stripeReadDoubles": [
+        {
+          "phase": "PG-15",
+          "method": "subscriptions.retrieve",
+          "id": "sub_localPG15"
+        },
+        {
+          "phase": "PG-15",
+          "method": "checkout.sessions.retrieve",
+          "id": "cs_test_localPG15"
+        },
+        {
+          "phase": "PG-15",
+          "method": "subscriptions.retrieve",
+          "id": "sub_localPG15"
+        },
+        {
+          "phase": "PG-15",
+          "method": "invoices.retrieve",
+          "id": "in_oldPG15"
+        },
+        {
+          "phase": "PG-15",
+          "method": "subscriptions.retrieve",
+          "id": "sub_localPG15"
+        },
+        {
+          "phase": "PG-15",
+          "method": "checkout.sessions.retrieve",
+          "id": "cs_test_localPG15"
+        },
+        {
+          "phase": "PG-15",
+          "method": "subscriptions.retrieve",
+          "id": "sub_localPG15"
+        },
+        {
+          "phase": "PG-15",
+          "method": "invoices.retrieve",
+          "id": "in_oldPG15"
+        },
+        {
+          "phase": "PG-15",
+          "method": "subscriptions.retrieve",
+          "id": "sub_localPG15"
+        },
+        {
+          "phase": "PG-15",
+          "method": "checkout.sessions.retrieve",
+          "id": "cs_test_localPG15"
+        },
+        {
+          "phase": "PG-15",
+          "method": "subscriptions.retrieve",
+          "id": "sub_localPG15"
+        },
+        {
+          "phase": "PG-15",
+          "method": "invoices.retrieve",
+          "id": "in_localPG15"
+        },
+        {
+          "phase": "PG-15",
+          "method": "subscriptions.retrieve",
+          "id": "sub_localPG15"
+        },
+        {
+          "phase": "PG-15",
+          "method": "checkout.sessions.retrieve",
+          "id": "cs_test_localPG15"
+        },
+        {
+          "phase": "PG-15",
+          "method": "subscriptions.retrieve",
+          "id": "sub_localPG15"
+        },
+        {
+          "phase": "PG-15",
+          "method": "invoices.retrieve",
+          "id": "in_localPG15"
+        }
+      ]
+    },
+    {
+      "id": "PG-17",
+      "description": "Fallo reversible dentro de la transacción, recuperación y reentrega sin cambios",
+      "result": "Aprobado",
+      "output": {
+        "initial": {
+          "now": 1793322178,
+          "user": "usr_local_PG17",
+          "attempt": "attempt_PG17",
+          "invoice": {
+            "id": "in_localPG17",
+            "object": "invoice",
+            "livemode": false,
+            "currency": "usd",
+            "customer": "cus_localPG17",
+            "subscription": "sub_localPG17",
+            "status": "paid",
+            "amount_remaining": 0,
+            "amount_paid": 500,
+            "amount_due": 500,
+            "created": 1793322148,
+            "status_transitions": {
+              "paid_at": 1793322158
+            }
+          },
+          "oldInvoice": {
+            "id": "in_oldPG17",
+            "object": "invoice",
+            "livemode": false,
+            "currency": "usd",
+            "customer": "cus_localPG17",
+            "subscription": "sub_localPG17",
+            "status": "open",
+            "amount_remaining": 500,
+            "amount_paid": 0,
+            "amount_due": 500,
+            "created": 1793322148,
+            "status_transitions": {
+              "paid_at": null
+            }
+          },
+          "subscription": {
+            "id": "sub_localPG17",
+            "object": "subscription",
+            "livemode": false,
+            "customer": "cus_localPG17",
+            "metadata": {
+              "integration": "aprueba_mvp",
+              "userId": "usr_local_PG17",
+              "attemptId": "attempt_PG17"
+            },
+            "status": "active",
+            "created": 1793322118,
+            "cancel_at_period_end": false,
+            "latest_invoice": {
+              "id": "in_localPG17",
+              "object": "invoice",
+              "livemode": false,
+              "currency": "usd",
+              "customer": "cus_localPG17",
+              "subscription": "sub_localPG17",
+              "status": "paid",
+              "amount_remaining": 0,
+              "amount_paid": 500,
+              "amount_due": 500,
+              "created": 1793322148,
+              "status_transitions": {
+                "paid_at": 1793322158
+              }
+            },
+            "items": {
+              "has_more": false,
+              "data": [
+                {
+                  "quantity": 1,
+                  "current_period_start": 1793322118,
+                  "current_period_end": 1795914178,
+                  "price": {
+                    "id": "price_all_monthly",
+                    "livemode": false,
+                    "currency": "usd",
+                    "unit_amount": 500,
+                    "product": "prod_aprueba_all",
+                    "type": "recurring",
+                    "billing_scheme": "per_unit",
+                    "recurring": {
+                      "interval": "month",
+                      "interval_count": 1,
+                      "usage_type": "licensed"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "session": {
+            "id": "cs_test_localPG17",
+            "object": "checkout.session",
+            "livemode": false,
+            "mode": "subscription",
+            "client_reference_id": "usr_local_PG17",
+            "metadata": {
+              "integration": "aprueba_mvp",
+              "userId": "usr_local_PG17",
+              "attemptId": "attempt_PG17"
+            },
+            "customer": "cus_localPG17",
+            "subscription": "sub_localPG17",
+            "status": "complete",
+            "payment_status": "paid"
+          }
+        },
+        "before": [
+          {
+            "path": "checkoutAttempts/usr_local_PG17",
+            "data": {
+              "attemptId": "attempt_PG17",
+              "closed": false
+            },
+            "createTime": {
+              "seconds": 1793322178,
+              "nanoseconds": 206154000
+            },
+            "updateTime": {
+              "seconds": 1793322178,
+              "nanoseconds": 206154000
+            }
+          },
+          {
+            "path": "checkoutSessions/cs_test_localPG17",
+            "data": {
+              "id": "cs_test_localPG17",
+              "userId": "usr_local_PG17",
+              "attemptId": "attempt_PG17",
+              "testId": null
+            },
+            "createTime": {
+              "seconds": 1793322178,
+              "nanoseconds": 201349000
+            },
+            "updateTime": {
+              "seconds": 1793322178,
+              "nanoseconds": 201349000
+            }
+          },
+          {
+            "path": "users/usr_local_PG17",
+            "data": {
+              "id": "usr_local_PG17",
+              "name": "Fixture local PG17",
+              "plan": "free",
+              "state": "active",
+              "selectedTests": [
+                "cien"
+              ]
+            },
+            "createTime": {
+              "seconds": 1793322178,
+              "nanoseconds": 196133000
+            },
+            "updateTime": {
+              "seconds": 1793322178,
+              "nanoseconds": 196133000
+            }
+          }
+        ],
+        "failed": {
+          "event": {
+            "id": "evt_local_PG17",
+            "object": "event",
+            "type": "invoice.paid",
+            "livemode": false,
+            "created": 1793322178,
+            "data": {
+              "object": {
+                "id": "in_localPG17"
+              }
+            }
+          },
+          "start": "2026-10-30T01:02:58.250Z",
+          "finish": "2026-10-30T01:02:58.289Z",
+          "status": 503,
+          "body": {
+            "data": null,
+            "error": {
+              "code": "WEBHOOK_PROCESSING_FAILED",
+              "message": "No se pudo completar la confirmacion.",
+              "details": [],
+              "field": null
+            },
+            "meta": {
+              "requestId": "req_21a575da-2fd",
+              "timestamp": "2026-10-30T01:02:58.287Z"
+            }
+          }
+        },
+        "afterFailure": [
+          {
+            "path": "checkoutAttempts/usr_local_PG17",
+            "data": {
+              "attemptId": "attempt_PG17",
+              "closed": false
+            },
+            "createTime": {
+              "seconds": 1793322178,
+              "nanoseconds": 206154000
+            },
+            "updateTime": {
+              "seconds": 1793322178,
+              "nanoseconds": 206154000
+            }
+          },
+          {
+            "path": "checkoutSessions/cs_test_localPG17",
+            "data": {
+              "id": "cs_test_localPG17",
+              "userId": "usr_local_PG17",
+              "attemptId": "attempt_PG17",
+              "testId": null
+            },
+            "createTime": {
+              "seconds": 1793322178,
+              "nanoseconds": 201349000
+            },
+            "updateTime": {
+              "seconds": 1793322178,
+              "nanoseconds": 201349000
+            }
+          },
+          {
+            "path": "users/usr_local_PG17",
+            "data": {
+              "id": "usr_local_PG17",
+              "name": "Fixture local PG17",
+              "plan": "free",
+              "state": "active",
+              "selectedTests": [
+                "cien"
+              ]
+            },
+            "createTime": {
+              "seconds": 1793322178,
+              "nanoseconds": 196133000
+            },
+            "updateTime": {
+              "seconds": 1793322178,
+              "nanoseconds": 196133000
+            }
+          }
+        ],
+        "retry": {
+          "event": {
+            "id": "evt_local_PG17",
+            "object": "event",
+            "type": "invoice.paid",
+            "livemode": false,
+            "created": 1793322178,
+            "data": {
+              "object": {
+                "id": "in_localPG17"
+              }
+            }
+          },
+          "start": "2026-10-30T01:02:58.322Z",
+          "finish": "2026-10-30T01:02:58.348Z",
+          "status": 200,
+          "body": {
+            "data": {
+              "received": true,
+              "processed": true
+            },
+            "error": null,
+            "meta": {
+              "requestId": "req_cf981c7d-9cc",
+              "timestamp": "2026-10-30T01:02:58.348Z"
+            }
+          }
+        },
+        "afterRetry": [
+          {
+            "path": "checkoutAttempts/usr_local_PG17",
+            "data": {
+              "attemptId": "attempt_PG17",
+              "closed": true
+            },
+            "createTime": {
+              "seconds": 1793322178,
+              "nanoseconds": 206154000
+            },
+            "updateTime": {
+              "seconds": 1793322178,
+              "nanoseconds": 346070000
+            }
+          },
+          {
+            "path": "checkoutSessions/cs_test_localPG17",
+            "data": {
+              "id": "cs_test_localPG17",
+              "userId": "usr_local_PG17",
+              "attemptId": "attempt_PG17",
+              "testId": null,
+              "stripeSubscriptionId": "sub_localPG17",
+              "fulfillmentStatus": "active",
+              "paymentStatus": "paid",
+              "status": "complete",
+              "updatedAt": "2026-10-30T01:02:58.339Z"
+            },
+            "createTime": {
+              "seconds": 1793322178,
+              "nanoseconds": 201349000
+            },
+            "updateTime": {
+              "seconds": 1793322178,
+              "nanoseconds": 346070000
+            }
+          },
+          {
+            "path": "invoices/in_localPG17",
+            "data": {
+              "amount": 5,
+              "livemode": false,
+              "userId": "usr_local_PG17",
+              "createdAt": "2026-10-30T01:02:28.000Z",
+              "hostedInvoiceUrl": null,
+              "pdfUrl": null,
+              "stripeSubscriptionId": "sub_localPG17",
+              "provider": "stripe",
+              "paidAt": "2026-10-30T01:02:38.000Z",
+              "currency": "USD",
+              "id": "in_localPG17",
+              "stripeCustomerId": "cus_localPG17",
+              "status": "paid",
+              "updatedAt": "2026-10-30T01:02:58.339Z"
+            },
+            "createTime": {
+              "seconds": 1793322178,
+              "nanoseconds": 346070000
+            },
+            "updateTime": {
+              "seconds": 1793322178,
+              "nanoseconds": 346070000
+            }
+          },
+          {
+            "path": "stripeEvents/evt_local_PG17",
+            "data": {
+              "type": "invoice.paid",
+              "userId": "usr_local_PG17",
+              "stripeSubscriptionId": "sub_localPG17",
+              "checkoutSessionId": "cs_test_localPG17",
+              "processingVersion": 3,
+              "processedAt": "2026-10-30T01:02:58.339Z"
+            },
+            "createTime": {
+              "seconds": 1793322178,
+              "nanoseconds": 346070000
+            },
+            "updateTime": {
+              "seconds": 1793322178,
+              "nanoseconds": 346070000
+            }
+          },
+          {
+            "path": "subscriptions/sub_localPG17",
+            "data": {
+              "currentPeriodStart": "2026-10-30T01:01:58.000Z",
+              "livemode": false,
+              "accessActive": true,
+              "paymentPending": false,
+              "checkoutSessionId": "cs_test_localPG17",
+              "currentPeriodEnd": "2026-11-29T01:02:58.000Z",
+              "userId": "usr_local_PG17",
+              "createdAt": "2026-10-30T01:01:58.000Z",
+              "provider": "stripe",
+              "billingCycle": "monthly",
+              "latestInvoiceId": "in_localPG17",
+              "cancelAtPeriodEnd": false,
+              "paymentMethod": null,
+              "testId": null,
+              "paidEntitlement": {
+                "currentPeriodStart": "2026-10-30T01:01:58.000Z",
+                "billingCycle": "monthly",
+                "currentPeriodEnd": "2026-11-29T01:02:58.000Z",
+                "invoiceId": "in_localPG17",
+                "testId": null,
+                "priceId": "price_all_monthly",
+                "plan": "all"
+              },
+              "id": "sub_localPG17",
+              "priceId": "price_all_monthly",
+              "stripeCustomerId": "cus_localPG17",
+              "plan": "all",
+              "stripePlan": {
+                "currentPeriodStart": "2026-10-30T01:01:58.000Z",
+                "billingCycle": "monthly",
+                "currentPeriodEnd": "2026-11-29T01:02:58.000Z",
+                "priceId": "price_all_monthly",
+                "plan": "all"
+              },
+              "status": "active",
+              "updatedAt": "2026-10-30T01:02:58.339Z"
+            },
+            "createTime": {
+              "seconds": 1793322178,
+              "nanoseconds": 346070000
+            },
+            "updateTime": {
+              "seconds": 1793322178,
+              "nanoseconds": 346070000
+            }
+          },
+          {
+            "path": "users/usr_local_PG17",
+            "data": {
+              "id": "usr_local_PG17",
+              "name": "Fixture local PG17",
+              "state": "active",
+              "selectedTests": [
+                "cien"
+              ],
+              "stripeSubscriptionId": "sub_localPG17",
+              "billingAccessActive": true,
+              "billingTestId": null,
+              "billingUpdatedAt": "2026-10-30T01:02:58.339Z",
+              "stripeCustomerId": "cus_localPG17",
+              "billingPeriodEnd": "2026-11-29T01:02:58.000Z",
+              "billingProvider": "stripe",
+              "plan": "all",
+              "billingStatus": "active"
+            },
+            "createTime": {
+              "seconds": 1793322178,
+              "nanoseconds": 196133000
+            },
+            "updateTime": {
+              "seconds": 1793322178,
+              "nanoseconds": 346070000
+            }
+          }
+        ],
+        "replay": {
+          "event": {
+            "id": "evt_local_PG17",
+            "object": "event",
+            "type": "invoice.paid",
+            "livemode": false,
+            "created": 1793322178,
+            "data": {
+              "object": {
+                "id": "in_localPG17"
+              }
+            }
+          },
+          "start": "2026-10-30T01:02:58.382Z",
+          "finish": "2026-10-30T01:02:58.387Z",
+          "status": 200,
+          "body": {
+            "data": {
+              "received": true,
+              "duplicate": true
+            },
+            "error": null,
+            "meta": {
+              "requestId": "req_3b1e570a-77d",
+              "timestamp": "2026-10-30T01:02:58.387Z"
+            }
+          }
+        },
+        "afterReplay": [
+          {
+            "path": "checkoutAttempts/usr_local_PG17",
+            "data": {
+              "attemptId": "attempt_PG17",
+              "closed": true
+            },
+            "createTime": {
+              "seconds": 1793322178,
+              "nanoseconds": 206154000
+            },
+            "updateTime": {
+              "seconds": 1793322178,
+              "nanoseconds": 346070000
+            }
+          },
+          {
+            "path": "checkoutSessions/cs_test_localPG17",
+            "data": {
+              "id": "cs_test_localPG17",
+              "userId": "usr_local_PG17",
+              "attemptId": "attempt_PG17",
+              "testId": null,
+              "stripeSubscriptionId": "sub_localPG17",
+              "fulfillmentStatus": "active",
+              "paymentStatus": "paid",
+              "status": "complete",
+              "updatedAt": "2026-10-30T01:02:58.339Z"
+            },
+            "createTime": {
+              "seconds": 1793322178,
+              "nanoseconds": 201349000
+            },
+            "updateTime": {
+              "seconds": 1793322178,
+              "nanoseconds": 346070000
+            }
+          },
+          {
+            "path": "invoices/in_localPG17",
+            "data": {
+              "amount": 5,
+              "livemode": false,
+              "userId": "usr_local_PG17",
+              "createdAt": "2026-10-30T01:02:28.000Z",
+              "hostedInvoiceUrl": null,
+              "pdfUrl": null,
+              "stripeSubscriptionId": "sub_localPG17",
+              "provider": "stripe",
+              "paidAt": "2026-10-30T01:02:38.000Z",
+              "currency": "USD",
+              "id": "in_localPG17",
+              "stripeCustomerId": "cus_localPG17",
+              "status": "paid",
+              "updatedAt": "2026-10-30T01:02:58.339Z"
+            },
+            "createTime": {
+              "seconds": 1793322178,
+              "nanoseconds": 346070000
+            },
+            "updateTime": {
+              "seconds": 1793322178,
+              "nanoseconds": 346070000
+            }
+          },
+          {
+            "path": "stripeEvents/evt_local_PG17",
+            "data": {
+              "type": "invoice.paid",
+              "userId": "usr_local_PG17",
+              "stripeSubscriptionId": "sub_localPG17",
+              "checkoutSessionId": "cs_test_localPG17",
+              "processingVersion": 3,
+              "processedAt": "2026-10-30T01:02:58.339Z"
+            },
+            "createTime": {
+              "seconds": 1793322178,
+              "nanoseconds": 346070000
+            },
+            "updateTime": {
+              "seconds": 1793322178,
+              "nanoseconds": 346070000
+            }
+          },
+          {
+            "path": "subscriptions/sub_localPG17",
+            "data": {
+              "currentPeriodStart": "2026-10-30T01:01:58.000Z",
+              "livemode": false,
+              "accessActive": true,
+              "paymentPending": false,
+              "checkoutSessionId": "cs_test_localPG17",
+              "currentPeriodEnd": "2026-11-29T01:02:58.000Z",
+              "userId": "usr_local_PG17",
+              "createdAt": "2026-10-30T01:01:58.000Z",
+              "provider": "stripe",
+              "billingCycle": "monthly",
+              "latestInvoiceId": "in_localPG17",
+              "cancelAtPeriodEnd": false,
+              "paymentMethod": null,
+              "testId": null,
+              "paidEntitlement": {
+                "currentPeriodStart": "2026-10-30T01:01:58.000Z",
+                "billingCycle": "monthly",
+                "currentPeriodEnd": "2026-11-29T01:02:58.000Z",
+                "invoiceId": "in_localPG17",
+                "testId": null,
+                "priceId": "price_all_monthly",
+                "plan": "all"
+              },
+              "id": "sub_localPG17",
+              "priceId": "price_all_monthly",
+              "stripeCustomerId": "cus_localPG17",
+              "plan": "all",
+              "stripePlan": {
+                "currentPeriodStart": "2026-10-30T01:01:58.000Z",
+                "billingCycle": "monthly",
+                "currentPeriodEnd": "2026-11-29T01:02:58.000Z",
+                "priceId": "price_all_monthly",
+                "plan": "all"
+              },
+              "status": "active",
+              "updatedAt": "2026-10-30T01:02:58.339Z"
+            },
+            "createTime": {
+              "seconds": 1793322178,
+              "nanoseconds": 346070000
+            },
+            "updateTime": {
+              "seconds": 1793322178,
+              "nanoseconds": 346070000
+            }
+          },
+          {
+            "path": "users/usr_local_PG17",
+            "data": {
+              "id": "usr_local_PG17",
+              "name": "Fixture local PG17",
+              "state": "active",
+              "selectedTests": [
+                "cien"
+              ],
+              "stripeSubscriptionId": "sub_localPG17",
+              "billingAccessActive": true,
+              "billingTestId": null,
+              "billingUpdatedAt": "2026-10-30T01:02:58.339Z",
+              "stripeCustomerId": "cus_localPG17",
+              "billingPeriodEnd": "2026-11-29T01:02:58.000Z",
+              "billingProvider": "stripe",
+              "plan": "all",
+              "billingStatus": "active"
+            },
+            "createTime": {
+              "seconds": 1793322178,
+              "nanoseconds": 196133000
+            },
+            "updateTime": {
+              "seconds": 1793322178,
+              "nanoseconds": 346070000
+            }
+          }
+        ],
+        "conclusion": "503 y registro en consola del handler, sin recibo ni escritura parcial. Reintento aplica una vez. No acredita auditoría duradera ni reintento automático del proveedor."
+      },
+      "error": null,
+      "logs": [
+        [
+          "[stripe webhook]",
+          "evt_local_PG17",
+          "TEMPORARY_FIXTURE_FAILURE"
+        ]
+      ],
+      "stripeReadDoubles": [
+        {
+          "phase": "PG-17",
+          "method": "invoices.retrieve",
+          "id": "in_localPG17"
+        },
+        {
+          "phase": "PG-17",
+          "method": "subscriptions.retrieve",
+          "id": "sub_localPG17"
+        },
+        {
+          "phase": "PG-17",
+          "method": "checkout.sessions.retrieve",
+          "id": "cs_test_localPG17"
+        },
+        {
+          "phase": "PG-17",
+          "method": "subscriptions.retrieve",
+          "id": "sub_localPG17"
+        },
+        {
+          "phase": "PG-17",
+          "method": "invoices.retrieve",
+          "id": "in_localPG17"
+        },
+        {
+          "phase": "PG-17",
+          "method": "invoices.retrieve",
+          "id": "in_localPG17"
+        },
+        {
+          "phase": "PG-17",
+          "method": "subscriptions.retrieve",
+          "id": "sub_localPG17"
+        },
+        {
+          "phase": "PG-17",
+          "method": "checkout.sessions.retrieve",
+          "id": "cs_test_localPG17"
+        },
+        {
+          "phase": "PG-17",
+          "method": "subscriptions.retrieve",
+          "id": "sub_localPG17"
+        },
+        {
+          "phase": "PG-17",
+          "method": "invoices.retrieve",
+          "id": "in_localPG17"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+ESCENARIOS LOCALES DE WEBHOOK — 29-10-2026
+Cuatro escenarios técnicos correctos en el montaje local documentado en los JSON y ejecutores de esta carpeta. Los módulos originales y las respuestas de prueba deben distinguirse de una entrega real Stripe–Vercel. Los resultados se limitan al entorno declarado; no acreditan por sí solos concurrencia, desorden y recuperación en todo el despliegue. PG14, PG15 y PG17 mantienen cobertura parcial.
+Las consultas posteriores al sandbox y sus resultados se conservan por separado en ../Stripe_real. La reentrega real está en ../PG13_Real. La evidencia histórica no se presenta como una ejecución nueva.

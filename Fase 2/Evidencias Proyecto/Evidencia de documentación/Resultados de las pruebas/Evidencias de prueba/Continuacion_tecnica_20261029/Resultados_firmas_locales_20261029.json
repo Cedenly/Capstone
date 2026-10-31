@@ -1,0 +1,162 @@
+{
+  "executedAt": "2026-10-29T23:47:17.013Z",
+  "commit": "d1ac22791bdf6f276c8dcce3ec02d707daca3735",
+  "node": "v24.22.1",
+  "stripeSdk": "22.6.2",
+  "kind": "Comprobaciones aisladas del middleware original de la revisión publicada",
+  "scope": "Stripe SDK real y middleware original; req/res y next simulados. No inicia servidor HTTP ni llama al handler, Stripe API o Firebase. Firma sintética solo local.",
+  "limits": "No aprueba PG16 integral ni PG13/14/15/17; no comprueba despliegue, parser Express, Firestore o efectos de negocio. No agrega casos a los 57 principales.",
+  "hashes": [
+    {
+      "file": "backend/src/middleware/verifyStripeWebhook.js",
+      "sha256": "96f0b726ef4dca60a0eb6312e0b88b673806a388ca7a26bf072bbc11eacb781e"
+    },
+    {
+      "file": "backend/src/config/stripe.js",
+      "sha256": "3ca1d94f7c82758510d06ab4e4d52b8cfcc783ad8eb2631a39cbfc2b98af4b2c"
+    },
+    {
+      "file": "backend/src/lib/envelope.js",
+      "sha256": "08778be60d4aca78ee6e25065adf0905db0eeac6441bc0780d200218f320d5f3"
+    }
+  ],
+  "total": 9,
+  "passed": 9,
+  "cases": [
+    {
+      "id": "UT-FIRMA01",
+      "description": "Mensaje válido firmado llega al siguiente middleware",
+      "expected": {
+        "status": null,
+        "code": null,
+        "forwarded": 1
+      },
+      "observed": {
+        "status": null,
+        "code": null,
+        "forwarded": 1
+      },
+      "result": "Aprobado"
+    },
+    {
+      "id": "UT-FIRMA02",
+      "description": "Sin firma no se reenvía",
+      "expected": {
+        "status": 400,
+        "code": "WEBHOOK_SIGNATURE_MISSING",
+        "forwarded": 0
+      },
+      "observed": {
+        "status": 400,
+        "code": "WEBHOOK_SIGNATURE_MISSING",
+        "forwarded": 0
+      },
+      "result": "Aprobado"
+    },
+    {
+      "id": "UT-FIRMA03",
+      "description": "Firma inválida no se reenvía",
+      "expected": {
+        "status": 400,
+        "code": "WEBHOOK_SIGNATURE_INVALID",
+        "forwarded": 0
+      },
+      "observed": {
+        "status": 400,
+        "code": "WEBHOOK_SIGNATURE_INVALID",
+        "forwarded": 0
+      },
+      "result": "Aprobado"
+    },
+    {
+      "id": "UT-FIRMA04",
+      "description": "Alteración del mensaje después de firmar se rechaza",
+      "expected": {
+        "status": 400,
+        "code": "WEBHOOK_SIGNATURE_INVALID",
+        "forwarded": 0
+      },
+      "observed": {
+        "status": 400,
+        "code": "WEBHOOK_SIGNATURE_INVALID",
+        "forwarded": 0
+      },
+      "result": "Aprobado"
+    },
+    {
+      "id": "UT-FIRMA05",
+      "description": "Firma con marca temporal antigua se rechaza",
+      "expected": {
+        "status": 400,
+        "code": "WEBHOOK_SIGNATURE_INVALID",
+        "forwarded": 0
+      },
+      "observed": {
+        "status": 400,
+        "code": "WEBHOOK_SIGNATURE_INVALID",
+        "forwarded": 0
+      },
+      "result": "Aprobado"
+    },
+    {
+      "id": "UT-FIRMA06",
+      "description": "Mensaje firmado livemode=true se rechaza en el MVP",
+      "expected": {
+        "status": 400,
+        "code": "WEBHOOK_TEST_MODE_REQUIRED",
+        "forwarded": 0
+      },
+      "observed": {
+        "status": 400,
+        "code": "WEBHOOK_TEST_MODE_REQUIRED",
+        "forwarded": 0
+      },
+      "result": "Aprobado"
+    },
+    {
+      "id": "UT-FIRMA07",
+      "description": "Formato de evento inválido con firma válida se rechaza",
+      "expected": {
+        "status": 400,
+        "code": "WEBHOOK_EVENT_INVALID",
+        "forwarded": 0
+      },
+      "observed": {
+        "status": 400,
+        "code": "WEBHOOK_EVENT_INVALID",
+        "forwarded": 0
+      },
+      "result": "Aprobado"
+    },
+    {
+      "id": "UT-FIRMA08",
+      "description": "Cuerpo ya parseado no sustituye mensaje original",
+      "expected": {
+        "status": 400,
+        "code": "WEBHOOK_BODY_INVALID",
+        "forwarded": 0
+      },
+      "observed": {
+        "status": 400,
+        "code": "WEBHOOK_BODY_INVALID",
+        "forwarded": 0
+      },
+      "result": "Aprobado"
+    },
+    {
+      "id": "UT-FIRMA09",
+      "description": "Sin configuración no se reenvía",
+      "expected": {
+        "status": 503,
+        "code": "WEBHOOK_NOT_CONFIGURED",
+        "forwarded": 0
+      },
+      "observed": {
+        "status": 503,
+        "code": "WEBHOOK_NOT_CONFIGURED",
+        "forwarded": 0
+      },
+      "result": "Aprobado"
+    }
+  ]
+}

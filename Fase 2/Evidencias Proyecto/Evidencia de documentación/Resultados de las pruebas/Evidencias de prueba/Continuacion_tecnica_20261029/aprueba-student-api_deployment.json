@@ -1,0 +1,43 @@
+{
+  "observedAt": "2026-10-29T23:27:51.376Z",
+  "result": {
+    "deployment": {
+      "id": "dpl_5eJZCmftDNTSqjZrdneNgDMn4Hbf",
+      "name": "aprueba-student-api",
+      "url": "aprueba-student-8y6somz05-aprueba-admin3.vercel.app",
+      "type": "LAMBDAS",
+      "state": "READY",
+      "createdAt": 1791378822342,
+      "creator": {
+        "uid": "G5KMrsz2i9SEb27qSwbfUZax",
+        "username": "koetigsegg414"
+      },
+      "project": {
+        "id": "prj_kJhUrKJGspA49OKTZzN3mu0F2lH6",
+        "name": "aprueba-student-api",
+        "framework": "express"
+      },
+      "meta": {
+        "githubCommitRef": "main",
+        "githubCommitSha": "d1ac22791bdf6f276c8dcce3ec02d707daca3735",
+        "githubCommitMessage": "fix: sincronizar estado de recorrecciones del alumno",
+        "githubRepo": "aprueba_student_web",
+        "githubOrg": "Koetigsegg414"
+      },
+      "alias": [
+        "aprueba-student-api.vercel.app",
+        "aprueba-student-api-aprueba-admin3.vercel.app",
+        "aprueba-student-api-git-main-aprueba-admin3.vercel.app"
+      ],
+      "target": "production",
+      "regions": [
+        "iad1"
+      ],
+      "buildingAt": 1791378824871,
+      "ready": 1791378841340,
+      "readyState": "READY",
+      "source": "redeploy",
+      "aliasError": null
+    }
+  }
+}

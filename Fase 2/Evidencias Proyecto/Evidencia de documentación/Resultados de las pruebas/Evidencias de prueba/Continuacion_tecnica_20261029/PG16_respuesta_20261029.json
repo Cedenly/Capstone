@@ -1,0 +1,32 @@
+{
+  "case": "PG-16",
+  "observedAt": "2026-10-29T23:27:19.175914+00:00",
+  "url": "https://aprueba-student-api.vercel.app/api/v1/webhooks/stripe",
+  "method": "POST",
+  "signature": "t=0,v1=invalid_test_signature",
+  "payload": {
+    "id": "evt_aprueba_capstone_invalid_0965614e5d074e30902edc7b964003e2",
+    "type": "invoice.paid",
+    "livemode": false,
+    "data": {
+      "object": {
+        "id": "in_test_nonexistent"
+      }
+    }
+  },
+  "scope": "Una sola solicitud sintetica de firma invalida; sin claves, tokens ni cobro",
+  "http_status": 400,
+  "response": {
+    "data": null,
+    "error": {
+      "code": "WEBHOOK_SIGNATURE_INVALID",
+      "message": "La firma de Stripe no es valida.",
+      "details": [],
+      "field": null
+    },
+    "meta": {
+      "requestId": "req_1a45240e-ffe",
+      "timestamp": "2026-10-29T23:27:25.269Z"
+    }
+  }
+}

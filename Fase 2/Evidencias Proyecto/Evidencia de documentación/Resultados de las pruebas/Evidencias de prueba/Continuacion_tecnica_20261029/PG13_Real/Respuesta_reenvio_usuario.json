@@ -1,0 +1,15 @@
+{
+  "source": "Texto de respuesta aportado por Sebastián; HTTP200 en captura adjunta",
+  "http_status": 200,
+  "response": {
+    "data": {
+      "received": true,
+      "duplicate": true
+    },
+    "error": null,
+    "meta": {
+      "requestId": "req_489b97fa-222",
+      "timestamp": "2026-10-30T01:28:06.248Z"
+    }
+  }
+}

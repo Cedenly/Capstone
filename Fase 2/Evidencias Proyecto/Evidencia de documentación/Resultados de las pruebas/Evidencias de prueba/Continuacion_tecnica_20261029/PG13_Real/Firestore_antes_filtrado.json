@@ -1,0 +1,515 @@
+{
+  "format": "aprueba-billing-evidence-filtered-v1",
+  "filteredAt": "2026-10-30T01:32:38.742Z",
+  "sourceFile": "PG13_ANTES.json",
+  "sourceSha256": "1545df38d1067a823acecf0bc9327eeaf499efcbb3155b5934f8bfa37ad007e2",
+  "metadata": {
+    "projectId": "aprueba-mvp-pruebas-2fc41",
+    "databaseId": "(default)",
+    "startedAt": "2026-10-30T01:25:42.969Z",
+    "finishedAt": "2026-10-30T01:25:53.327Z",
+    "complete": true
+  },
+  "scope": {
+    "userId": "usr_cd0e892722",
+    "accountAlias": "Prueba Fase 2 A",
+    "collections": [
+      "users",
+      "subscriptions",
+      "invoices",
+      "stripeEvents"
+    ],
+    "limits": [
+      "Solo campos permitidos y registros vinculados a la cuenta A o eventos sinteticos de firma invalida.",
+      "No incluye datos de contacto, hashes, contrasenas, tokens, claves, URLs de facturas ni payloads completos.",
+      "No es exportacion integral ni instantanea atomica. complete describe la exportacion fuente accesible."
+    ]
+  },
+  "records": [
+    {
+      "path": "invoices/in_1UVuvUAhY3J8iTOwQgyeylGh",
+      "exists": true,
+      "data": {
+        "id": "in_1UVuvUAhY3J8iTOwQgyeylGh",
+        "userId": "usr_cd0e892722",
+        "provider": "stripe",
+        "livemode": false,
+        "status": "paid",
+        "createdAt": "2026-10-29T15:07:36.000Z",
+        "updatedAt": "2026-10-29T15:17:46.929Z",
+        "stripeCustomerId": "cus_VWytQkXU3Nd5tt",
+        "stripeSubscriptionId": "sub_1UVuvWAhY3J8iTOwIx3147Sz",
+        "amount": {
+          "__firestoreType": "integer64",
+          "value": "1"
+        },
+        "currency": "USD",
+        "paidAt": "2026-10-29T15:07:37.000Z"
+      },
+      "createTime": {
+        "__firestoreType": "timestamp",
+        "seconds": 1793286465,
+        "nanoseconds": 808990000,
+        "iso": "2026-10-29T15:07:45.809Z"
+      },
+      "updateTime": {
+        "__firestoreType": "timestamp",
+        "seconds": 1793287067,
+        "nanoseconds": 264853000,
+        "iso": "2026-10-29T15:17:47.265Z"
+      }
+    },
+    {
+      "path": "invoices/in_1UVv5VAhY3J8iTOwbfpXdNdz",
+      "exists": true,
+      "data": {
+        "id": "in_1UVv5VAhY3J8iTOwbfpXdNdz",
+        "userId": "usr_cd0e892722",
+        "provider": "stripe",
+        "livemode": false,
+        "status": "paid",
+        "createdAt": "2026-10-29T15:17:57.000Z",
+        "updatedAt": "2026-10-29T15:23:02.675Z",
+        "stripeCustomerId": "cus_VWytQkXU3Nd5tt",
+        "stripeSubscriptionId": "sub_1UVuvWAhY3J8iTOwIx3147Sz",
+        "amount": {
+          "__firestoreType": "integer64",
+          "value": "4"
+        },
+        "currency": "USD",
+        "paidAt": "2026-10-29T15:22:57.000Z"
+      },
+      "createTime": {
+        "__firestoreType": "timestamp",
+        "seconds": 1793287082,
+        "nanoseconds": 507390000,
+        "iso": "2026-10-29T15:18:02.507Z"
+      },
+      "updateTime": {
+        "__firestoreType": "timestamp",
+        "seconds": 1793287382,
+        "nanoseconds": 794489000,
+        "iso": "2026-10-29T15:23:02.794Z"
+      }
+    },
+    {
+      "path": "stripeEvents/evt_1UVud7AhY3J8iTOwuIAtUh5m",
+      "exists": true,
+      "data": {
+        "type": "checkout.session.expired",
+        "userId": "usr_cd0e892722",
+        "stripeSubscriptionId": null,
+        "checkoutSessionId": "cs_test_a1Xq9vLXxvicUyEcZxHcaLYKq8mcdswWIzrcy9Rg9Co30thCgsnRd8VTOe",
+        "processingVersion": {
+          "__firestoreType": "integer64",
+          "value": "3"
+        },
+        "processedAt": "2026-10-29T14:48:38.930Z"
+      },
+      "createTime": {
+        "__firestoreType": "timestamp",
+        "seconds": 1793285319,
+        "nanoseconds": 5627000,
+        "iso": "2026-10-29T14:48:39.006Z"
+      },
+      "updateTime": {
+        "__firestoreType": "timestamp",
+        "seconds": 1793285319,
+        "nanoseconds": 5627000,
+        "iso": "2026-10-29T14:48:39.006Z"
+      }
+    },
+    {
+      "path": "stripeEvents/evt_1UVuVKAhY3J8iTOwqvUbthb3",
+      "exists": true,
+      "data": {
+        "type": "checkout.session.expired",
+        "userId": "usr_cd0e892722",
+        "stripeSubscriptionId": null,
+        "checkoutSessionId": "cs_test_a1EGGjeslWVIhFv9ZMEznFBJ4MyF2YYqh0PV2l3UiBywEIuoKPtfg6xjui",
+        "processingVersion": {
+          "__firestoreType": "integer64",
+          "value": "3"
+        },
+        "processedAt": "2026-10-29T14:40:35.967Z"
+      },
+      "createTime": {
+        "__firestoreType": "timestamp",
+        "seconds": 1793284836,
+        "nanoseconds": 71669000,
+        "iso": "2026-10-29T14:40:36.072Z"
+      },
+      "updateTime": {
+        "__firestoreType": "timestamp",
+        "seconds": 1793284836,
+        "nanoseconds": 71669000,
+        "iso": "2026-10-29T14:40:36.072Z"
+      }
+    },
+    {
+      "path": "stripeEvents/evt_1UVuvXAhY3J8iTOwAkyPQzkQ",
+      "exists": true,
+      "data": {
+        "type": "invoice.paid",
+        "userId": "usr_cd0e892722",
+        "stripeSubscriptionId": "sub_1UVuvWAhY3J8iTOwIx3147Sz",
+        "checkoutSessionId": "cs_test_a16UUOPJk6XAk21cWbkMZi6yteFMEZqhto84ZizZKwrRwWVSbbwxTQUbIg",
+        "processingVersion": {
+          "__firestoreType": "integer64",
+          "value": "3"
+        },
+        "processedAt": "2026-10-29T15:07:47.746Z"
+      },
+      "createTime": {
+        "__firestoreType": "timestamp",
+        "seconds": 1793286468,
+        "nanoseconds": 318829000,
+        "iso": "2026-10-29T15:07:48.319Z"
+      },
+      "updateTime": {
+        "__firestoreType": "timestamp",
+        "seconds": 1793286468,
+        "nanoseconds": 318829000,
+        "iso": "2026-10-29T15:07:48.319Z"
+      }
+    },
+    {
+      "path": "stripeEvents/evt_1UVuvYAhY3J8iTOwcApJTycT",
+      "exists": true,
+      "data": {
+        "type": "checkout.session.completed",
+        "userId": "usr_cd0e892722",
+        "stripeSubscriptionId": "sub_1UVuvWAhY3J8iTOwIx3147Sz",
+        "checkoutSessionId": "cs_test_a16UUOPJk6XAk21cWbkMZi6yteFMEZqhto84ZizZKwrRwWVSbbwxTQUbIg",
+        "processingVersion": {
+          "__firestoreType": "integer64",
+          "value": "3"
+        },
+        "processedAt": "2026-10-29T15:07:50.845Z"
+      },
+      "createTime": {
+        "__firestoreType": "timestamp",
+        "seconds": 1793286471,
+        "nanoseconds": 139981000,
+        "iso": "2026-10-29T15:07:51.140Z"
+      },
+      "updateTime": {
+        "__firestoreType": "timestamp",
+        "seconds": 1793286471,
+        "nanoseconds": 139981000,
+        "iso": "2026-10-29T15:07:51.140Z"
+      }
+    },
+    {
+      "path": "stripeEvents/evt_1UVuvYAhY3J8iTOwl8fXr2Dt",
+      "exists": true,
+      "data": {
+        "type": "customer.subscription.created",
+        "userId": "usr_cd0e892722",
+        "stripeSubscriptionId": "sub_1UVuvWAhY3J8iTOwIx3147Sz",
+        "checkoutSessionId": "cs_test_a16UUOPJk6XAk21cWbkMZi6yteFMEZqhto84ZizZKwrRwWVSbbwxTQUbIg",
+        "processingVersion": {
+          "__firestoreType": "integer64",
+          "value": "3"
+        },
+        "processedAt": "2026-10-29T15:07:44.559Z"
+      },
+      "createTime": {
+        "__firestoreType": "timestamp",
+        "seconds": 1793286465,
+        "nanoseconds": 808990000,
+        "iso": "2026-10-29T15:07:45.809Z"
+      },
+      "updateTime": {
+        "__firestoreType": "timestamp",
+        "seconds": 1793286465,
+        "nanoseconds": 808990000,
+        "iso": "2026-10-29T15:07:45.809Z"
+      }
+    },
+    {
+      "path": "stripeEvents/evt_1UVv5HAhY3J8iTOwQpS2pzHU",
+      "exists": true,
+      "data": {
+        "type": "customer.updated",
+        "userId": "usr_cd0e892722",
+        "stripeSubscriptionId": "sub_1UVuvWAhY3J8iTOwIx3147Sz",
+        "checkoutSessionId": "cs_test_a16UUOPJk6XAk21cWbkMZi6yteFMEZqhto84ZizZKwrRwWVSbbwxTQUbIg",
+        "processingVersion": {
+          "__firestoreType": "integer64",
+          "value": "3"
+        },
+        "processedAt": "2026-10-29T15:17:46.240Z"
+      },
+      "createTime": {
+        "__firestoreType": "timestamp",
+        "seconds": 1793287066,
+        "nanoseconds": 384170000,
+        "iso": "2026-10-29T15:17:46.384Z"
+      },
+      "updateTime": {
+        "__firestoreType": "timestamp",
+        "seconds": 1793287066,
+        "nanoseconds": 384170000,
+        "iso": "2026-10-29T15:17:46.384Z"
+      }
+    },
+    {
+      "path": "stripeEvents/evt_1UVv5HAhY3J8iTOwyxyDlWwx",
+      "exists": true,
+      "data": {
+        "type": "customer.subscription.updated",
+        "userId": "usr_cd0e892722",
+        "stripeSubscriptionId": "sub_1UVuvWAhY3J8iTOwIx3147Sz",
+        "checkoutSessionId": "cs_test_a16UUOPJk6XAk21cWbkMZi6yteFMEZqhto84ZizZKwrRwWVSbbwxTQUbIg",
+        "processingVersion": {
+          "__firestoreType": "integer64",
+          "value": "3"
+        },
+        "processedAt": "2026-10-29T15:17:46.929Z"
+      },
+      "createTime": {
+        "__firestoreType": "timestamp",
+        "seconds": 1793287067,
+        "nanoseconds": 264853000,
+        "iso": "2026-10-29T15:17:47.265Z"
+      },
+      "updateTime": {
+        "__firestoreType": "timestamp",
+        "seconds": 1793287067,
+        "nanoseconds": 264853000,
+        "iso": "2026-10-29T15:17:47.265Z"
+      }
+    },
+    {
+      "path": "stripeEvents/evt_1UVv5YAhY3J8iTOw8stZfIoD",
+      "exists": true,
+      "data": {
+        "type": "invoice.payment_failed",
+        "userId": "usr_cd0e892722",
+        "stripeSubscriptionId": "sub_1UVuvWAhY3J8iTOwIx3147Sz",
+        "checkoutSessionId": "cs_test_a16UUOPJk6XAk21cWbkMZi6yteFMEZqhto84ZizZKwrRwWVSbbwxTQUbIg",
+        "processingVersion": {
+          "__firestoreType": "integer64",
+          "value": "3"
+        },
+        "processedAt": "2026-10-29T15:18:04.902Z"
+      },
+      "createTime": {
+        "__firestoreType": "timestamp",
+        "seconds": 1793287085,
+        "nanoseconds": 206888000,
+        "iso": "2026-10-29T15:18:05.207Z"
+      },
+      "updateTime": {
+        "__firestoreType": "timestamp",
+        "seconds": 1793287085,
+        "nanoseconds": 206888000,
+        "iso": "2026-10-29T15:18:05.207Z"
+      }
+    },
+    {
+      "path": "stripeEvents/evt_1UVv5YAhY3J8iTOwSalKuJq8",
+      "exists": true,
+      "data": {
+        "type": "customer.subscription.updated",
+        "userId": "usr_cd0e892722",
+        "stripeSubscriptionId": "sub_1UVuvWAhY3J8iTOwIx3147Sz",
+        "checkoutSessionId": "cs_test_a16UUOPJk6XAk21cWbkMZi6yteFMEZqhto84ZizZKwrRwWVSbbwxTQUbIg",
+        "processingVersion": {
+          "__firestoreType": "integer64",
+          "value": "3"
+        },
+        "processedAt": "2026-10-29T15:18:01.620Z"
+      },
+      "createTime": {
+        "__firestoreType": "timestamp",
+        "seconds": 1793287082,
+        "nanoseconds": 507390000,
+        "iso": "2026-10-29T15:18:02.507Z"
+      },
+      "updateTime": {
+        "__firestoreType": "timestamp",
+        "seconds": 1793287082,
+        "nanoseconds": 507390000,
+        "iso": "2026-10-29T15:18:02.507Z"
+      }
+    },
+    {
+      "path": "stripeEvents/evt_1UVv90AhY3J8iTOw5TaSef7S",
+      "exists": true,
+      "data": {
+        "type": "customer.updated",
+        "userId": "usr_cd0e892722",
+        "stripeSubscriptionId": "sub_1UVuvWAhY3J8iTOwIx3147Sz",
+        "checkoutSessionId": "cs_test_a16UUOPJk6XAk21cWbkMZi6yteFMEZqhto84ZizZKwrRwWVSbbwxTQUbIg",
+        "processingVersion": {
+          "__firestoreType": "integer64",
+          "value": "3"
+        },
+        "processedAt": "2026-10-29T15:21:35.503Z"
+      },
+      "createTime": {
+        "__firestoreType": "timestamp",
+        "seconds": 1793287295,
+        "nanoseconds": 609438000,
+        "iso": "2026-10-29T15:21:35.609Z"
+      },
+      "updateTime": {
+        "__firestoreType": "timestamp",
+        "seconds": 1793287295,
+        "nanoseconds": 609438000,
+        "iso": "2026-10-29T15:21:35.609Z"
+      }
+    },
+    {
+      "path": "stripeEvents/evt_1UVv90AhY3J8iTOwnHkwSlxn",
+      "exists": true,
+      "data": {
+        "type": "customer.subscription.updated",
+        "userId": "usr_cd0e892722",
+        "stripeSubscriptionId": "sub_1UVuvWAhY3J8iTOwIx3147Sz",
+        "checkoutSessionId": "cs_test_a16UUOPJk6XAk21cWbkMZi6yteFMEZqhto84ZizZKwrRwWVSbbwxTQUbIg",
+        "processingVersion": {
+          "__firestoreType": "integer64",
+          "value": "3"
+        },
+        "processedAt": "2026-10-29T15:21:35.943Z"
+      },
+      "createTime": {
+        "__firestoreType": "timestamp",
+        "seconds": 1793287296,
+        "nanoseconds": 247238000,
+        "iso": "2026-10-29T15:21:36.247Z"
+      },
+      "updateTime": {
+        "__firestoreType": "timestamp",
+        "seconds": 1793287296,
+        "nanoseconds": 247238000,
+        "iso": "2026-10-29T15:21:36.247Z"
+      }
+    },
+    {
+      "path": "stripeEvents/evt_1UVvAMAhY3J8iTOw0R6WFHVZ",
+      "exists": true,
+      "data": {
+        "type": "customer.subscription.updated",
+        "userId": "usr_cd0e892722",
+        "stripeSubscriptionId": "sub_1UVuvWAhY3J8iTOwIx3147Sz",
+        "checkoutSessionId": "cs_test_a16UUOPJk6XAk21cWbkMZi6yteFMEZqhto84ZizZKwrRwWVSbbwxTQUbIg",
+        "processingVersion": {
+          "__firestoreType": "integer64",
+          "value": "3"
+        },
+        "processedAt": "2026-10-29T15:23:02.675Z"
+      },
+      "createTime": {
+        "__firestoreType": "timestamp",
+        "seconds": 1793287382,
+        "nanoseconds": 794489000,
+        "iso": "2026-10-29T15:23:02.794Z"
+      },
+      "updateTime": {
+        "__firestoreType": "timestamp",
+        "seconds": 1793287382,
+        "nanoseconds": 794489000,
+        "iso": "2026-10-29T15:23:02.794Z"
+      }
+    },
+    {
+      "path": "stripeEvents/evt_1UVvAMAhY3J8iTOwH6pm84WH",
+      "exists": true,
+      "data": {
+        "type": "invoice.paid",
+        "userId": "usr_cd0e892722",
+        "stripeSubscriptionId": "sub_1UVuvWAhY3J8iTOwIx3147Sz",
+        "checkoutSessionId": "cs_test_a16UUOPJk6XAk21cWbkMZi6yteFMEZqhto84ZizZKwrRwWVSbbwxTQUbIg",
+        "processingVersion": {
+          "__firestoreType": "integer64",
+          "value": "3"
+        },
+        "processedAt": "2026-10-29T15:23:00.440Z"
+      },
+      "createTime": {
+        "__firestoreType": "timestamp",
+        "seconds": 1793287380,
+        "nanoseconds": 735416000,
+        "iso": "2026-10-29T15:23:00.735Z"
+      },
+      "updateTime": {
+        "__firestoreType": "timestamp",
+        "seconds": 1793287380,
+        "nanoseconds": 735416000,
+        "iso": "2026-10-29T15:23:00.735Z"
+      }
+    },
+    {
+      "path": "subscriptions/sub_1UVuvWAhY3J8iTOwIx3147Sz",
+      "exists": true,
+      "data": {
+        "id": "sub_1UVuvWAhY3J8iTOwIx3147Sz",
+        "userId": "usr_cd0e892722",
+        "provider": "stripe",
+        "livemode": false,
+        "status": "active",
+        "createdAt": "2026-10-29T15:07:36.000Z",
+        "updatedAt": "2026-10-29T15:23:02.675Z",
+        "stripeCustomerId": "cus_VWytQkXU3Nd5tt",
+        "plan": "all",
+        "testId": null,
+        "billingCycle": "monthly",
+        "currentPeriodStart": "2026-10-29T15:07:36.000Z",
+        "currentPeriodEnd": "2026-11-29T15:07:36.000Z",
+        "cancelAtPeriodEnd": false,
+        "accessActive": true,
+        "paymentPending": false,
+        "checkoutSessionId": "cs_test_a16UUOPJk6XAk21cWbkMZi6yteFMEZqhto84ZizZKwrRwWVSbbwxTQUbIg",
+        "latestInvoiceId": "in_1UVv5VAhY3J8iTOwbfpXdNdz"
+      },
+      "createTime": {
+        "__firestoreType": "timestamp",
+        "seconds": 1793286465,
+        "nanoseconds": 808990000,
+        "iso": "2026-10-29T15:07:45.809Z"
+      },
+      "updateTime": {
+        "__firestoreType": "timestamp",
+        "seconds": 1793287382,
+        "nanoseconds": 794489000,
+        "iso": "2026-10-29T15:23:02.794Z"
+      }
+    },
+    {
+      "path": "users/usr_cd0e892722",
+      "exists": true,
+      "data": {
+        "id": "usr_cd0e892722",
+        "plan": "all",
+        "selectedTests": [
+          "cien"
+        ],
+        "createdAt": "2026-10-29T14:30:42.719Z",
+        "stripeSubscriptionId": "sub_1UVuvWAhY3J8iTOwIx3147Sz",
+        "stripeCustomerId": "cus_VWytQkXU3Nd5tt",
+        "billingProvider": "stripe",
+        "billingStatus": "active",
+        "billingAccessActive": true,
+        "billingPeriodEnd": "2026-11-29T15:07:36.000Z",
+        "billingTestId": null,
+        "billingUpdatedAt": "2026-10-29T15:23:02.675Z"
+      },
+      "createTime": {
+        "__firestoreType": "timestamp",
+        "seconds": 1793284243,
+        "nanoseconds": 194662000,
+        "iso": "2026-10-29T14:30:43.195Z"
+      },
+      "updateTime": {
+        "__firestoreType": "timestamp",
+        "seconds": 1793288046,
+        "nanoseconds": 234197000,
+        "iso": "2026-10-29T15:34:06.234Z"
+      }
+    }
+  ]
+}

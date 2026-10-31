@@ -1,0 +1,93 @@
+{
+  "executedAt": "2026-10-30T01:02:25.567Z",
+  "commit": "d1ac22791bdf6f276c8dcce3ec02d707daca3735",
+  "environment": {
+    "project": "demo-aprueba-pg16",
+    "edition": "standard",
+    "firestoreHost": "127.0.0.1:8187",
+    "url": "http://127.0.0.1:43133/api/v1/webhooks/stripe",
+    "node": "v24.22.1"
+  },
+  "kind": "Integración local HTTP y Firestore Emulator con dobles explícitos de consultas Stripe",
+  "scope": "Middleware, handler, servicio de negocio y transacciones originales. SDK Stripe real para firma local; subscriptions.retrieve, invoices.retrieve y checkout.sessions.retrieve sustituidos por fixtures de lectura. Sin cuentas, cobros ni API Stripe real.",
+  "limits": "No acredita entrega/reenvío real Stripe–Vercel, ausencia de cobros duplicados en el proveedor, reintentos automáticos ni persistencia de errores en auditoría. PG13 mantiene pendiente su precondición de evento real.",
+  "hashes": [
+    {
+      "file": "backend/src/middleware/verifyStripeWebhook.js",
+      "sha256": "96f0b726ef4dca60a0eb6312e0b88b673806a388ca7a26bf072bbc11eacb781e"
+    },
+    {
+      "file": "backend/src/routes/stripeWebhook.js",
+      "sha256": "779300f2d4d7a5906fc21c0b540e6fcdcb39ad74712d80c43bf88fa560142018"
+    },
+    {
+      "file": "backend/src/services/stripeBilling.js",
+      "sha256": "5b8ab8c2ea1c6e9b18a21f46b47511f4191b28ed74f4691ba3a6e00f53977aaa"
+    },
+    {
+      "file": "backend/src/config/firebase.js",
+      "sha256": "bb8fe031ebda7a2dd48263cb01ddaf9dccbf43f132936c5fdfb10a45ade79e5a"
+    },
+    {
+      "file": "backend/src/config/stripe.js",
+      "sha256": "3ca1d94f7c82758510d06ab4e4d52b8cfcc783ad8eb2631a39cbfc2b98af4b2c"
+    },
+    {
+      "file": "backend/src/lib/envelope.js",
+      "sha256": "08778be60d4aca78ee6e25065adf0905db0eeac6441bc0780d200218f320d5f3"
+    }
+  ],
+  "externalRequests": 0,
+  "total": 4,
+  "passed": 0,
+  "results": [
+    {
+      "id": "PG-13",
+      "description": "Reentrega secuencial idéntica con persistencia real emulada y Stripe simulado",
+      "result": "Fallido",
+      "output": null,
+      "error": {
+        "message": "d.createTime.toJSON is not a function",
+        "stack": "TypeError: d.createTime.toJSON is not a function\n    at scan (file:///workspace/scratch/2d7c4b51b596/pg16_emulador_20261029/ejecutar_webhooks_negocio.mjs:31:166)\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at async snapshot (file:///workspace/scratch/2d7c4b51b596/pg16_emulador_20261029/ejecutar_webhooks_negocio.mjs:31:312)\n    at async file:///workspace/scratch/2d7c4b51b596/pg16_emulador_20261029/ejecutar_webhooks_negocio.mjs:55:44\n    at async run (file:///workspace/scratch/2d7c4b51b596/pg16_emulador_20261029/ejecutar_webhooks_negocio.mjs:52:138)\n    at async file:///workspace/scratch/2d7c4b51b596/pg16_emulador_20261029/ejecutar_webhooks_negocio.mjs:54:2"
+      },
+      "logs": [],
+      "stripeReadDoubles": []
+    },
+    {
+      "id": "PG-14",
+      "description": "Dos entregas idénticas concurrentes y transacción con deduplicación",
+      "result": "Fallido",
+      "output": null,
+      "error": {
+        "message": "d.createTime.toJSON is not a function",
+        "stack": "TypeError: d.createTime.toJSON is not a function\n    at scan (file:///workspace/scratch/2d7c4b51b596/pg16_emulador_20261029/ejecutar_webhooks_negocio.mjs:31:166)\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at async snapshot (file:///workspace/scratch/2d7c4b51b596/pg16_emulador_20261029/ejecutar_webhooks_negocio.mjs:31:312)\n    at async file:///workspace/scratch/2d7c4b51b596/pg16_emulador_20261029/ejecutar_webhooks_negocio.mjs:60:44\n    at async run (file:///workspace/scratch/2d7c4b51b596/pg16_emulador_20261029/ejecutar_webhooks_negocio.mjs:52:138)\n    at async file:///workspace/scratch/2d7c4b51b596/pg16_emulador_20261029/ejecutar_webhooks_negocio.mjs:59:2"
+      },
+      "logs": [],
+      "stripeReadDoubles": []
+    },
+    {
+      "id": "PG-15",
+      "description": "Eventos antiguos respetan el estado actual consultado al proveedor simulado",
+      "result": "Fallido",
+      "output": null,
+      "error": {
+        "message": "d.createTime.toJSON is not a function",
+        "stack": "TypeError: d.createTime.toJSON is not a function\n    at scan (file:///workspace/scratch/2d7c4b51b596/pg16_emulador_20261029/ejecutar_webhooks_negocio.mjs:31:166)\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at async snapshot (file:///workspace/scratch/2d7c4b51b596/pg16_emulador_20261029/ejecutar_webhooks_negocio.mjs:31:312)\n    at async file:///workspace/scratch/2d7c4b51b596/pg16_emulador_20261029/ejecutar_webhooks_negocio.mjs:68:44\n    at async run (file:///workspace/scratch/2d7c4b51b596/pg16_emulador_20261029/ejecutar_webhooks_negocio.mjs:52:138)\n    at async file:///workspace/scratch/2d7c4b51b596/pg16_emulador_20261029/ejecutar_webhooks_negocio.mjs:67:2"
+      },
+      "logs": [],
+      "stripeReadDoubles": []
+    },
+    {
+      "id": "PG-17",
+      "description": "Fallo reversible dentro de la transacción, recuperación y reentrega sin cambios",
+      "result": "Fallido",
+      "output": null,
+      "error": {
+        "message": "d.createTime.toJSON is not a function",
+        "stack": "TypeError: d.createTime.toJSON is not a function\n    at scan (file:///workspace/scratch/2d7c4b51b596/pg16_emulador_20261029/ejecutar_webhooks_negocio.mjs:31:166)\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at async snapshot (file:///workspace/scratch/2d7c4b51b596/pg16_emulador_20261029/ejecutar_webhooks_negocio.mjs:31:312)\n    at async file:///workspace/scratch/2d7c4b51b596/pg16_emulador_20261029/ejecutar_webhooks_negocio.mjs:75:44\n    at async run (file:///workspace/scratch/2d7c4b51b596/pg16_emulador_20261029/ejecutar_webhooks_negocio.mjs:52:138)\n    at async file:///workspace/scratch/2d7c4b51b596/pg16_emulador_20261029/ejecutar_webhooks_negocio.mjs:74:2"
+      },
+      "logs": [],
+      "stripeReadDoubles": []
+    }
+  ]
+}

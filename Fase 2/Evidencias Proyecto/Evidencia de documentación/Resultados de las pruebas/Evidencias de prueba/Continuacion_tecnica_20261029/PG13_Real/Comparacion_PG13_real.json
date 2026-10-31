@@ -1,0 +1,59 @@
+{
+  "case": "PG-13",
+  "execution": "PG13-REAL-20261029-2228",
+  "result": "Aprobado en alcance de reentrega y persistencia revisada",
+  "event_id": "evt_1UVvAMAhY3J8iTOwH6pm84WH",
+  "invoice_id": "in_1UVv5VAhY3J8iTOwbfpXdNdz",
+  "subscription_id": "sub_1UVuvWAhY3J8iTOwIx3147Sz",
+  "endpoint_expected": "https://aprueba-student-api.vercel.app/api/v1/webhooks/stripe",
+  "delivery_reference_visible": "wc_1UW4byAhY3J8iTOwVoM69uZz",
+  "execution_by": "Sebastián, desde su navegador habitual; comparación automatizada por asistente",
+  "http_status": 200,
+  "response": {
+    "data": {
+      "received": true,
+      "duplicate": true
+    },
+    "error": null,
+    "meta": {
+      "requestId": "req_489b97fa-222",
+      "timestamp": "2026-10-30T01:28:06.248Z"
+    }
+  },
+  "before_metadata": {
+    "projectId": "aprueba-mvp-pruebas-2fc41",
+    "databaseId": "(default)",
+    "startedAt": "2026-10-30T01:25:42.969Z",
+    "finishedAt": "2026-10-30T01:25:53.327Z",
+    "complete": true
+  },
+  "after_metadata": {
+    "projectId": "aprueba-mvp-pruebas-2fc41",
+    "databaseId": "(default)",
+    "startedAt": "2026-10-30T01:30:38.642Z",
+    "finishedAt": "2026-10-30T01:30:47.590Z",
+    "complete": true
+  },
+  "documents_before": 1915,
+  "documents_after": 1915,
+  "collections": 28,
+  "added": [],
+  "removed": [],
+  "changed": [],
+  "filtered_records": 17,
+  "receipt_before_exists": true,
+  "receipt_unchanged": true,
+  "processing_version": 3,
+  "receipt_processedAt": "2026-10-29T15:23:00.440Z",
+  "sources_sha256": {
+    "PG13_ANTES.json": "1545df38d1067a823acecf0bc9327eeaf499efcbb3155b5934f8bfa37ad007e2",
+    "PG13_DESPUES.json": "1ad265141b97e464b296086268c01f980c7647ece0dba00f9f196431daeef88a"
+  },
+  "limits": [
+    "Comparación de documentos accesibles en dos exportaciones secuenciales, no instantáneas atómicas.",
+    "No compara Authentication, Storage, reglas, índices ni IAM.",
+    "No hay conteo de cargos Stripe antes/después; no se afirma auditoría global de cobros del proveedor.",
+    "HTTP y cuerpo aportados por usuario; la captura no muestra la URL de destino ni el cuerpo completo. Evento y hora correlacionados con la respuesta y el destino registrado previamente.",
+    "pending_webhooks=1 en el payload representa ese momento y no contradice la entrega HTTP200 aportada."
+  ]
+}

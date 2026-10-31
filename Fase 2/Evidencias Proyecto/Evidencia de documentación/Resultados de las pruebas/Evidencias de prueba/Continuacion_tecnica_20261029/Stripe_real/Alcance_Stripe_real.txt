@@ -1,0 +1,4 @@
+WEBHOOKS CON CONSULTAS REALES A STRIPE — 29-10-2026
+Tres escenarios técnicos correctos sobre módulos originales de d1ac227, con receptor HTTP y Firestore Emulator. Se realizaron consultas GET a Stripe sandbox; la persistencia y el receptor de estos escenarios son locales. PG14 y PG15 son parciales para el sistema publicado. PG17 conserva la falta de evidencia de un historial durable por intento.
+Los JSON documentan resultados por paso, instantáneas emuladas, consultas y hashes, estado del proveedor antes y después. Se incluyen ejecutor, log y huellas de seis módulos originales. No se incluyen credenciales ni configuración privada. Un fallo inicial del ejecutor antes de solicitudes de negocio no se considera defecto del producto.
+La reproducción utiliza la estructura y dependencias descritas en ../../../../Plan de pruebas/Plan_de_pruebas.docx, apartado de entorno. Estas consultas no son cobros ni escrituras remotas.

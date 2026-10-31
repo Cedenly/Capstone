@@ -1,0 +1,16 @@
+{
+  "livemode": false,
+  "currency": "usd",
+  "totalAmount": 5000,
+  "lineItems": [
+    {
+      "name": "Aprueba - Todas las pruebas",
+      "minorUnitsAmount": 5000
+    }
+  ],
+  "payment_method_types": [
+    "card",
+    "apple_pay",
+    "link_instant_debit"
+  ]
+}

@@ -1,0 +1,102 @@
+[
+  {
+    "id": "PG08_E01_01_portal_inicial",
+    "at": "2026-10-28T03:17:42.384Z",
+    "note": "Suscripción mensual de una prueba. Portal identifica entorno de prueba. Antes de cancelar."
+  },
+  {
+    "id": "PG08_E01_02_admin_inicial",
+    "at": "2026-10-28T03:17:59.388Z",
+    "note": "Registro administrativo filtrado de la cuenta de prueba antes de cancelar."
+  },
+  {
+    "id": "PG08_E01_03_condicion_cancelacion",
+    "at": "2026-10-28T03:18:20.339Z",
+    "note": "Stripe indica conservación de acceso hasta el 4 de noviembre de 2026. Aún sin confirmar."
+  },
+  {
+    "id": "PG08_E01_04_stripe_cancelada",
+    "at": "2026-10-28T03:18:49.033Z",
+    "note": "Cancelación programada confirmada por Stripe para el 4 de noviembre."
+  },
+  {
+    "id": "PG08_E01_05_admin_cancelada",
+    "at": "2026-10-28T03:19:00.380Z",
+    "note": "Mismo ID de suscripción, renovación cancelada, acceso habilitado y fecha conservada."
+  },
+  {
+    "id": "PG08_E01_06_plan_cancelada",
+    "at": "2026-10-28T03:19:00.453Z",
+    "note": "Mi plan tras actualizar estado."
+  },
+  {
+    "id": "PG08_E01_07_practica_lectora",
+    "at": "2026-10-28T03:20:29.502Z",
+    "note": "Los accesos visibles a Practicar abren LECTORA. No se ha localizado selector de Ciencias en esta pantalla. No acredita práctica de la materia pagada."
+  },
+  {
+    "id": "PG08_E01_08_seleccion_ciencias",
+    "at": "2026-10-28T03:21:52.754Z",
+    "note": "Selección temporal: solo Ciencias en Ajustes > Mis pruebas. Inicialmente estaba seleccionada solo Comp. Lectora; se restaurará al finalizar."
+  },
+  {
+    "id": "PG08_E01_09_ciencias_pregunta",
+    "at": "2026-10-28T03:22:09.179Z",
+    "note": "Práctica CIEN Biología accesible con renovación cancelada."
+  },
+  {
+    "id": "PG08_E01_10_ciencias_corregida",
+    "at": "2026-10-28T03:22:47.634Z",
+    "note": "Respuesta de Ciencias enviada y corrección visible tras cancelar renovación."
+  },
+  {
+    "id": "PG08_E01_11_cuota_despues",
+    "at": "2026-10-28T03:22:58.127Z",
+    "note": "Después de responder Ciencias: beneficio ilimitado y cuota gratuita utilizada 0."
+  },
+  {
+    "id": "PG09_E01_01_condicion_reactivar",
+    "at": "2026-10-28T03:23:21.932Z",
+    "note": "Reactivación antes del vencimiento. Stripe conserva fecha del 4 de noviembre."
+  },
+  {
+    "id": "PG09_E01_02_stripe_reactivada",
+    "at": "2026-10-28T03:23:44.618Z",
+    "note": "Stripe vuelve a mostrar renovación el 4 de noviembre y opción Cancelar."
+  },
+  {
+    "id": "PG09_E01_03_admin_reactivada",
+    "at": "2026-10-28T03:23:58.564Z",
+    "note": "Mismo ID sub_1UMxrIAhY3J8iTOwYmtPRKb5, renovación automática, acceso habilitado y fin 04-11-2026."
+  },
+  {
+    "id": "PG09_E01_04_plan_reactivada",
+    "at": "2026-10-28T03:23:58.634Z",
+    "note": "Mi plan después de Actualizar estado al reactivar."
+  },
+  {
+    "id": "PG09_E01_05_cuota_reactivada",
+    "at": "2026-10-28T03:24:20.901Z",
+    "note": "Beneficio de Ciencias conservado tras reactivar."
+  },
+  {
+    "id": "PRE_CP03_01_saldo_a_favor",
+    "at": "2026-10-28T03:25:17.899Z",
+    "note": "Preparación CP03 y PG20: crédito de período -0,25; cargo 1,26; total 1,01; saldo aplicado -1,01; debido hoy 0,00 USD. No se confirmó el cambio ni se cambió la tarjeta."
+  },
+  {
+    "id": "PRE_ANUAL_01_ofertas",
+    "at": "2026-10-28T03:26:15.307Z",
+    "note": "Ofertas anuales visibles en el portal: una prueba USD10 y todas USD50. Solo inspección, ninguna contratación confirmada."
+  },
+  {
+    "id": "CIERRE_02_preferencias_confirmadas",
+    "at": "2026-10-28T03:26:34.758Z",
+    "note": "Restauración confirmada visualmente: solo Comp. Lectora seleccionada."
+  },
+  {
+    "id": "CIERRE_03_plan_final",
+    "at": "2026-10-28T03:26:34.832Z",
+    "note": "Estado final: Ciencias mensual activa, renovación reactivada, fin 04-11-2026. Sin confirmar cambio de plan."
+  }
+]

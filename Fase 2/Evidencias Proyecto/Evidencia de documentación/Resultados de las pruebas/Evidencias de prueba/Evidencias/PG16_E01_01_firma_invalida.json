@@ -1,0 +1,32 @@
+{
+  "caso": "PG-16",
+  "fecha": "2026-10-29T15:28:20Z",
+  "destino": "https://aprueba-student-api.vercel.app/api/v1/webhooks/stripe",
+  "metodo": "POST",
+  "firma": "t=0,v1=invalid_test_signature",
+  "payload": {
+    "id": "evt_aprueba_capstone_invalid_signature_20261029",
+    "type": "invoice.paid",
+    "livemode": false,
+    "data": {
+      "object": {
+        "id": "in_test_nonexistent"
+      }
+    }
+  },
+  "http_status": 400,
+  "respuesta": {
+    "data": null,
+    "error": {
+      "code": "WEBHOOK_SIGNATURE_INVALID",
+      "message": "La firma de Stripe no es valida.",
+      "details": [],
+      "field": null
+    },
+    "meta": {
+      "requestId": "req_d366464e-716",
+      "timestamp": "2026-10-29T15:28:20.949Z"
+    }
+  },
+  "limite": "Solicitud sintética sin credenciales al endpoint desplegado. No se ejecutó en un entorno aislado ni se verificó directamente Firestore. Es evidencia parcial del rechazo HTTP, no cierre del criterio de ausencia de cambios de negocio."
+}

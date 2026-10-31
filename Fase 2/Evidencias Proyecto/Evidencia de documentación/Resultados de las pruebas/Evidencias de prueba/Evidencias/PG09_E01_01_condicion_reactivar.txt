@@ -1,0 +1,32 @@
+2026-10-28T03:23:21.932Z
+Reactivación antes del vencimiento. Stripe conserva fecha del 4 de noviembre.
+- link "Entorno de prueba de Aprueba - MVP universitario Entorno de prueba":
+  - /url: https://aprueba-student.vercel.app/plan
+  - generic: Entorno de prueba de Aprueba - MVP universitario
+  - text: Entorno de prueba
+- generic: Gestiona tu suscripcion a Aprueba
+- link "Volver a Entorno de prueba de Aprueba - MVP universitario":
+  - /url: https://aprueba-student.vercel.app/plan
+  - generic: Volver a Entorno de prueba de Aprueba - MVP universitario
+- contentinfo:
+  - link "Powered by Stripe":
+    - /url: [enlace de Stripe omitido]
+    - generic: Powered by
+    - img "Stripe"
+  - link "Condiciones":
+    - /url: [enlace de Stripe omitido]
+  - link "Privacidad":
+    - /url: [enlace de Stripe omitido]
+- button "Facturación":
+  - generic: Facturación
+- generic: Renovar
+- generic: Renueva tu suscripción
+- generic: Suscripción actual
+- generic: Aprueba - 1 prueba ilimitada
+- generic: 1,00 US$ por mes
+- generic: Ya no se cancelará esta suscripción. Se renovará el 4 de noviembre de 2026.
+- button "Renovar la suscripción":
+  - generic: Renovar la suscripción
+- button "Volver":
+  - generic: Volver
+- iframe

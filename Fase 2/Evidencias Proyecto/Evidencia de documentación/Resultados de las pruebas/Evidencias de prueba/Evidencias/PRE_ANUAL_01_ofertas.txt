@@ -1,0 +1,41 @@
+2026-10-28T03:26:15.307Z
+Ofertas anuales visibles en el portal: una prueba USD10 y todas USD50. Solo inspección, ninguna contratación confirmada.
+- link "Entorno de prueba de Aprueba - MVP universitario Entorno de prueba":
+  - /url: https://aprueba-student.vercel.app/plan
+  - generic: Entorno de prueba de Aprueba - MVP universitario
+  - text: Entorno de prueba
+- generic: Gestiona tu suscripcion a Aprueba
+- link "Volver a Entorno de prueba de Aprueba - MVP universitario":
+  - /url: https://aprueba-student.vercel.app/plan
+  - generic: Volver a Entorno de prueba de Aprueba - MVP universitario
+- contentinfo:
+  - link "Powered by Stripe":
+    - /url: [enlace de Stripe omitido]
+    - generic: Powered by
+    - img "Stripe"
+  - link "Condiciones":
+    - /url: [enlace de Stripe omitido]
+  - link "Privacidad":
+    - /url: [enlace de Stripe omitido]
+- button "Facturación":
+  - generic: Facturación
+- generic: Suscripciones
+- generic: Actualiza tu suscripción
+- radio "Mensual"
+- generic: Mensual
+- radio "Anual" [checked] [active]
+- generic: Anual
+- generic: Aprueba - 1 prueba ilimitada
+- generic: 10,00 US$
+- text: por año
+- generic: Seleccionado
+- generic: Aprueba - Todas las pruebas
+- generic: 50,00 US$
+- text: por año
+- button "Seleccionar":
+  - generic: Seleccionar
+- generic: Subtotal
+- generic: 10,00 US$ por año
+- button "Continuar":
+  - generic: Continuar
+- iframe

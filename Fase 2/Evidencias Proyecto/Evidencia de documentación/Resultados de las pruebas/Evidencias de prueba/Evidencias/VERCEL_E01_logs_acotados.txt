@@ -1,0 +1,26 @@
+Consulta real de Vercel del 29-10-2026. No mide duraciones ni acredita contenido persistido en Firebase.
+## Runtime Logs
+
+**Project:** prj_kJhUrKJGspA49OKTZzN3mu0F2lH6
+**Time range:** 2026-10-29T14:51:16.817Z → 2026-10-29T15:21:16.817Z
+
+### 2026-10-29T15:19:45.239Z GET /api/v1/me/medals [info/function]
+dep=dpl_5eJZCmftDNTSqjZrdneNgDMn4Hbf branch=main request=f9qv4-1793287183861-2505592a4446 domain=aprueba-student-api.vercel.app environment=production region=sfo1 runtime=nodejs24.x stream=stdout
+    [firebase] Firebase Admin inicializado desde variable de entorno
+
+### 2026-10-29T15:18:27.682Z GET /api/v1/billing/status [info/function]
+dep=dpl_5eJZCmftDNTSqjZrdneNgDMn4Hbf branch=main request=rnvnn-1793287106379-527e1634f1a1 domain=aprueba-student-api.vercel.app environment=production region=sfo1 runtime=nodejs24.x stream=stdout
+    [firebase] Firebase Admin inicializado desde variable de entorno
+
+### 2026-10-29T15:07:42.113Z POST /api/v1/webhooks/stripe [info/function]
+dep=dpl_5eJZCmftDNTSqjZrdneNgDMn4Hbf branch=main request=hxmz4-1793286460813-38de2cbda097 domain=aprueba-student-api.vercel.app environment=production region=pdx1 runtime=nodejs24.x stream=stdout
+    [firebase] Firebase Admin inicializado desde variable de entorno
+
+### 2026-10-29T15:07:41.889Z POST /api/v1/webhooks/stripe [info/function]
+dep=dpl_5eJZCmftDNTSqjZrdneNgDMn4Hbf branch=main request=slskc-1793286460478-c76cd2d0588d domain=aprueba-student-api.vercel.app environment=production region=pdx1 runtime=nodejs24.x stream=stdout
+    [firebase] Firebase Admin inicializado desde variable de entorno
+
+### 2026-10-29T15:07:41.694Z POST /api/v1/webhooks/stripe [info/function]
+dep=dpl_5eJZCmftDNTSqjZrdneNgDMn4Hbf branch=main request=cmqlg-1793286460383-dd24c444a115 domain=aprueba-student-api.vercel.app environment=production region=pdx1 runtime=nodejs24.x stream=stdout
+    [firebase] Firebase Admin inicializado desde variable de entorno
+

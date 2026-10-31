@@ -1,0 +1,51 @@
+2026-10-28T03:25:17.899Z
+Preparación CP03 y PG20: crédito de período -0,25; cargo 1,26; total 1,01; saldo aplicado -1,01; debido hoy 0,00 USD. No se confirmó el cambio ni se cambió la tarjeta.
+- link "Entorno de prueba de Aprueba - MVP universitario Entorno de prueba":
+  - /url: https://aprueba-student.vercel.app/plan
+  - generic: Entorno de prueba de Aprueba - MVP universitario
+  - text: Entorno de prueba
+- generic: Gestiona tu suscripcion a Aprueba
+- link "Volver a Entorno de prueba de Aprueba - MVP universitario":
+  - /url: https://aprueba-student.vercel.app/plan
+  - generic: Volver a Entorno de prueba de Aprueba - MVP universitario
+- contentinfo:
+  - link "Powered by Stripe":
+    - /url: [enlace de Stripe omitido]
+    - generic: Powered by
+    - img "Stripe"
+  - link "Condiciones":
+    - /url: [enlace de Stripe omitido]
+  - link "Privacidad":
+    - /url: [enlace de Stripe omitido]
+- button "Facturación":
+  - generic: Facturación
+- button "Suscripciones":
+  - generic: Suscripciones
+- generic: Confirmar
+- generic: Confirma tus actualizaciones
+- generic: Aprueba - Todas las pruebas
+- text: Lo que pagarás por mes a partir del
+- text: 4 de noviembre de 2026
+- generic: 5,00 US$
+- generic: Crédito prorrateado de Aprueba - 1 prueba ilimitada
+- generic: "-0,25 US$"
+- generic: Cargo prorrateado para Aprueba - Todas las pruebas
+- generic: 1,26 US$
+- generic: Total
+- generic: 1,01 US$
+- generic: Saldo de la cuenta aplicado
+- generic: "-1,01 US$"
+- generic: "Importe debido: hoy"
+- generic: 0,00 US$
+- generic: "Importe debido: hoy"
+- button "Ocultar datos" [active]:
+  - generic: Ocultar datos
+- generic: 0,00 US$
+- link "Mastercard •••• 4444":
+  - /url: /p/session/subscriptions/sub_1UMxrIAhY3J8iTOwYmtPRKb5/update-payment-method/changePaymentMethod?secret=test_YWNjdF8xVU1yM0hBaFkzSjhpVE93LF9WV1FDVnN2b2NuTGdNQWw5dW5uY0wwQmZDWFV0MHQz0100uh9j37MX&plan=price_1UMtdlAhY3J8iTOwsTxr9fTO&quantity=1
+  - generic: Mastercard •••• 4444
+- button "Confirmar":
+  - generic: Confirmar
+- button "Volver":
+  - generic: Volver
+- iframe

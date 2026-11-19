@@ -1,0 +1,26 @@
+Prueba de compra de Ciencias y gestión de la suscripción
+Aprueba Administración · DAD_20 · 19 de noviembre de 2026
+
+Entorno y cuenta de prueba
+
+Se usó la cuenta de alumno «preppt» en aprueba-student.vercel.app y se consultó esa misma cuenta en aprueba-admin.vercel.app. Los portales estaban publicados en Vercel y Stripe operaba en modo de prueba. Las revisiones desplegadas al cierre de la comprobación fueron 71220de en aprueba_student_web y 00624b3 en aprueba-admin.
+
+De la cuota gratuita a la factura
+
+Antes de la compra, el contador del alumno pasó de 0 a 1 pregunta utilizada de las 10 diarias al responder una pregunta. En «Mi plan» se eligió Ciencias por USD 1 al mes. Stripe confirmó el pago de prueba y el portal del alumno mostró una suscripción activa de una prueba ilimitada, asignada a Ciencias, con fin de período el 19 de diciembre de 2026. La factura del 19 de noviembre figuró pagada por USD 1 tanto en el portal de Stripe como en Administración.
+
+Sesión del alumno
+
+Durante el primer recorrido, el regreso desde Stripe solicitó iniciar sesión otra vez. El mismo síntoma se reprodujo al recargar «Mi plan» con F5, mientras la suscripción seguía activa. Después del despliegue de 71220de se repitieron la recarga y el regreso desde el portal de Stripe con la misma cuenta. Se confirmó manualmente que se conservó la sesión. La repetición utilizó la suscripción existente.
+
+Búsqueda en Administración
+
+Antes de la corrección, la búsqueda de la factura de «preppt» desde la página 1 devolvía cero resultados. La misma factura aparecía al pasar a la página 2. Con 00624b3 desplegado, la búsqueda desde la primera página mostró una factura pagada por USD 1. En la pestaña Suscripciones, la búsqueda por el prefijo «prepp» también devolvió el registro de Ciencias mensual con acceso habilitado.
+
+Cancelación al fin del período y reversión
+
+Al programar la cancelación, Stripe indicó que el servicio finalizaría el 19 de diciembre de 2026. En «Mi plan» se mostró «Renovación cancelada, acceso vigente». Administración mantuvo la suscripción activa y el acceso habilitado, con la renovación cancelada y la misma fecha de fin de período. Antes del vencimiento se deshizo la cancelación. La recuperación de la renovación automática se confirmó manualmente, sin captura de ese último paso.
+
+Alcance
+
+La prueba verificó el acceso y la configuración de la renovación dentro del período ya pagado. El cobro del siguiente ciclo y el retorno a Gratis tras el vencimiento quedan pendientes de comprobación. Esta ejecución complementa los registros de octubre y noviembre y mantiene su cómputo histórico por separado.

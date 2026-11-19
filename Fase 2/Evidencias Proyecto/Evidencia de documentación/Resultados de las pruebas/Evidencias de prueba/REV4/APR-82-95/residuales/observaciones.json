@@ -1,0 +1,61 @@
+{
+  "version": "DAD20-LOCAL-20261118-REV4",
+  "fechaUTC": "2026-11-18T02:18:30.729Z",
+  "manifiestoSHA256": "628f864ddd7d2278a847c2bffc2765a1fc2e8989e45c135a1f845443843c9594",
+  "archivosBackendAlumnoVerificados": 63,
+  "firestoreEmulator": "1.22.0",
+  "node": "v24.22.1",
+  "controles": [
+    {
+      "id": "P01",
+      "operacion": "PATCH /me con nombre y colegio",
+      "HTTP": 200,
+      "camposFinancierosPreservados": 9
+    },
+    {
+      "id": "P02",
+      "operacion": "Guardado rezagado en repositorio Firestore y GET /me HTTP",
+      "planLeido": "all",
+      "camposFinancierosPreservados": 9
+    },
+    {
+      "id": "Q01",
+      "materia": "m2",
+      "plan": "all",
+      "preguntaHTTP": 200,
+      "respuestaHTTP": 201,
+      "cuotaAntes": 10,
+      "cuotaDespues": 10,
+      "totalAntes": 10,
+      "totalDespues": 11
+    },
+    {
+      "id": "F01",
+      "materia": "m2",
+      "plan": "free",
+      "cuotaAgotada": 10,
+      "HTTP": 422,
+      "codigo": "QUOTA_BASE_REACHED"
+    },
+    {
+      "id": "Q02",
+      "materia": "hist",
+      "plan": "all",
+      "preguntaHTTP": 200,
+      "respuestaHTTP": 201,
+      "cuotaAntes": 10,
+      "cuotaDespues": 10,
+      "totalAntes": 11,
+      "totalDespues": 12
+    },
+    {
+      "id": "F02",
+      "materia": "hist",
+      "plan": "free",
+      "cuotaAgotada": 10,
+      "HTTP": 422,
+      "codigo": "QUOTA_BASE_REACHED"
+    }
+  ],
+  "resultado": "CUMPLE"
+}

@@ -1,0 +1,56 @@
+{
+  "scope": "Ruta original billingPortal.js de main alumno dec2868, ejecutada en VM. Autenticación y servicios sustituidos por fixtures. No se usó cuenta real ni se consultó Stripe/Firestore. Los casos no determinan la causa del fallo observado.",
+  "checkedAt": "2026-11-17T16:19:09.329Z",
+  "results": [
+    {
+      "mode": "expired",
+      "description": "La fecha vencida por sí sola no bloquea abrir Portal si los vínculos y Stripe son válidos",
+      "status": 200,
+      "code": null,
+      "logs": [],
+      "result": "aprobado_local"
+    },
+    {
+      "mode": "wrong_owner",
+      "description": "Propietario distinto devuelve PORTAL_ACCOUNT_MISMATCH",
+      "status": 409,
+      "code": "PORTAL_ACCOUNT_MISMATCH",
+      "logs": [],
+      "result": "aprobado_local"
+    },
+    {
+      "mode": "missing_remote",
+      "description": "Recurso inexistente en Stripe termina en PORTAL_UNAVAILABLE",
+      "status": 503,
+      "code": "PORTAL_UNAVAILABLE",
+      "logs": [
+        [
+          "[stripe portal]",
+          "resource_missing"
+        ]
+      ],
+      "result": "aprobado_local"
+    },
+    {
+      "mode": "db_error",
+      "description": "Error de lectura Firestore termina en el mismo PORTAL_UNAVAILABLE",
+      "status": 503,
+      "code": "PORTAL_UNAVAILABLE",
+      "logs": [
+        [
+          "[stripe portal]",
+          "UNAVAILABLE"
+        ]
+      ],
+      "result": "aprobado_local"
+    },
+    {
+      "mode": "bad_config",
+      "description": "Configuración de Portal inválida devuelve PORTAL_NOT_CONFIGURED",
+      "status": 503,
+      "code": "PORTAL_NOT_CONFIGURED",
+      "logs": [],
+      "result": "aprobado_local"
+    }
+  ]
+}

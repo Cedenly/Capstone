@@ -1,0 +1,919 @@
+{
+  "scope": "LOCAL_CROSS_SERVICE_REHEARSAL_NOT_EXTERNAL_INTEGRATION",
+  "outcome": "PASS",
+  "startedAt": "2026-11-18T02:21:00.872Z",
+  "ticket": "APR-95",
+  "caso": "Ciencias yearly",
+  "candidate": "DAD20-LOCAL-20261118-REV4",
+  "backendManifestSha256": "29f7677b86c349b9ee28c36afd09c683029a34def9876278b32ae64f4beb6bae",
+  "project": "demo-apr84-1794968460872",
+  "node": "v24.22.1",
+  "emulator": {
+    "version": "1.22.0",
+    "sha256": "9b6498b7f62714d67f48f59b3818883cd682dbcd46b9f59511de81c97bb5166c"
+  },
+  "checks": [
+    {
+      "id": "C01",
+      "name": "Both actual entrypoints start against one isolated Firestore project",
+      "result": "PASS"
+    },
+    {
+      "id": "C02",
+      "name": "Two students register and log in; finance admin logs in through actual HTTP routes",
+      "result": "PASS"
+    },
+    {
+      "id": "UI-API-01",
+      "name": "Lectura inicial de Mi plan devuelve cuenta gratis, catálogo, cuota y hora de reinicio",
+      "result": "PASS"
+    },
+    {
+      "id": "C03",
+      "name": "Checkout is created through the full application without granting a paid right",
+      "result": "PASS"
+    },
+    {
+      "id": "UI-API-02",
+      "name": "Al volver con el pago pendiente, consultar estado, catálogo y cuota conserva la sesión y el plan gratuito",
+      "result": "PASS"
+    },
+    {
+      "id": "C04",
+      "name": "Signed webhook enters the real app and persists one financial entitlement",
+      "result": "PASS"
+    },
+    {
+      "id": "C05",
+      "name": "Student and finance admin read matching subscription, owner, amount and period",
+      "result": "PASS"
+    },
+    {
+      "id": "UI-API-03",
+      "name": "Las lecturas de retorno confirmado conservan la suscripción y la cuota ilimitada",
+      "result": "PASS"
+    },
+    {
+      "id": "C06",
+      "name": "Repeating the confirmed event preserves the same financial projection",
+      "result": "PASS"
+    },
+    {
+      "id": "C07",
+      "name": "The other logged-in student sees no purchased subscription, invoice or foreign Checkout",
+      "result": "PASS"
+    },
+    {
+      "id": "C08",
+      "name": "Supplied backend sources and dependency locks remain byte-identical",
+      "result": "PASS"
+    }
+  ],
+  "observations": [
+    {
+      "label": "student-health",
+      "route": "/health",
+      "status": 200,
+      "body": {
+        "status": "ok",
+        "service": "aprueba-student-api",
+        "driver": "firestore"
+      }
+    },
+    {
+      "label": "admin-health",
+      "route": "/health",
+      "status": 200,
+      "body": {
+        "status": "ok",
+        "service": "aprueba-admin-api"
+      }
+    },
+    {
+      "label": "buyer-registered",
+      "route": "/api/v1/auth/register",
+      "status": 201,
+      "body": {
+        "data": {
+          "user": {
+            "id": "usr_1eaafc1934",
+            "name": "Synthetic buyer",
+            "email": "apr84-buyer@example.invalid",
+            "plan": "free",
+            "streak": 0,
+            "quota": {
+              "used": 0,
+              "max": 10
+            },
+            "medals": {
+              "bronze": 1,
+              "silver": 0,
+              "gold": 0,
+              "diamond": 0,
+              "platinum": 0
+            },
+            "authProvider": "password",
+            "phone": null,
+            "phoneVerified": false,
+            "country": "CL",
+            "language": "es",
+            "gradeId": null,
+            "onboarded": false
+          },
+          "expiresIn": 900
+        },
+        "error": null,
+        "meta": {
+          "requestId": "req_119d40ca-9f9",
+          "timestamp": "2026-11-18T02:21:06.864Z"
+        }
+      }
+    },
+    {
+      "label": "buyer-logged-in",
+      "route": "/api/v1/auth/login",
+      "status": 200,
+      "body": {
+        "data": {
+          "user": {
+            "id": "usr_1eaafc1934",
+            "name": "Synthetic buyer",
+            "email": "apr84-buyer@example.invalid",
+            "plan": "free",
+            "streak": 1,
+            "quota": {
+              "used": 0,
+              "max": 10
+            },
+            "medals": {
+              "bronze": 2,
+              "silver": 0,
+              "gold": 0,
+              "diamond": 0,
+              "platinum": 0
+            },
+            "authProvider": "password",
+            "phone": null,
+            "phoneVerified": false,
+            "country": "CL",
+            "language": "es",
+            "gradeId": null,
+            "onboarded": false
+          },
+          "expiresIn": 900,
+          "dailyLoginReward": {
+            "tier": "bronze",
+            "amount": 1
+          }
+        },
+        "error": null,
+        "meta": {
+          "requestId": "req_0072433c-42e",
+          "timestamp": "2026-11-18T02:21:07.067Z"
+        }
+      }
+    },
+    {
+      "label": "other-registered",
+      "route": "/api/v1/auth/register",
+      "status": 201,
+      "body": {
+        "data": {
+          "user": {
+            "id": "usr_c57740e469",
+            "name": "Synthetic other",
+            "email": "apr84-other@example.invalid",
+            "plan": "free",
+            "streak": 0,
+            "quota": {
+              "used": 0,
+              "max": 10
+            },
+            "medals": {
+              "bronze": 1,
+              "silver": 0,
+              "gold": 0,
+              "diamond": 0,
+              "platinum": 0
+            },
+            "authProvider": "password",
+            "phone": null,
+            "phoneVerified": false,
+            "country": "CL",
+            "language": "es",
+            "gradeId": null,
+            "onboarded": false
+          },
+          "expiresIn": 900
+        },
+        "error": null,
+        "meta": {
+          "requestId": "req_d7adbdee-989",
+          "timestamp": "2026-11-18T02:21:07.213Z"
+        }
+      }
+    },
+    {
+      "label": "other-logged-in",
+      "route": "/api/v1/auth/login",
+      "status": 200,
+      "body": {
+        "data": {
+          "user": {
+            "id": "usr_c57740e469",
+            "name": "Synthetic other",
+            "email": "apr84-other@example.invalid",
+            "plan": "free",
+            "streak": 1,
+            "quota": {
+              "used": 0,
+              "max": 10
+            },
+            "medals": {
+              "bronze": 2,
+              "silver": 0,
+              "gold": 0,
+              "diamond": 0,
+              "platinum": 0
+            },
+            "authProvider": "password",
+            "phone": null,
+            "phoneVerified": false,
+            "country": "CL",
+            "language": "es",
+            "gradeId": null,
+            "onboarded": false
+          },
+          "expiresIn": 900,
+          "dailyLoginReward": {
+            "tier": "bronze",
+            "amount": 1
+          }
+        },
+        "error": null,
+        "meta": {
+          "requestId": "req_ca55dc65-276",
+          "timestamp": "2026-11-18T02:21:07.365Z"
+        }
+      }
+    },
+    {
+      "label": "finance-logged-in",
+      "route": "/api/v1/admin/auth/login",
+      "status": 200,
+      "body": {
+        "data": {
+          "user": {
+            "id": "adm_apr84_finance",
+            "name": "Synthetic finance",
+            "role": "finance",
+            "email": "apr84-finance@example.invalid"
+          }
+        },
+        "error": null,
+        "meta": {
+          "requestId": "req_b4af1292-d79",
+          "timestamp": "2026-11-18T02:21:07.736Z"
+        }
+      }
+    },
+    {
+      "label": "free /plans",
+      "route": "/api/v1/plans",
+      "status": 200,
+      "body": {
+        "data": [
+          {
+            "id": "uni",
+            "popular": false,
+            "features": [],
+            "price": {
+              "monthly": 1,
+              "yearly": 10
+            }
+          },
+          {
+            "id": "all",
+            "popular": false,
+            "features": [],
+            "price": {
+              "monthly": 5,
+              "yearly": 50
+            }
+          }
+        ],
+        "error": null,
+        "meta": {
+          "requestId": "req_320ec511-ad3",
+          "timestamp": "2026-11-18T02:21:07.775Z"
+        }
+      }
+    },
+    {
+      "label": "free /billing/status",
+      "route": "/api/v1/billing/status",
+      "status": 200,
+      "body": {
+        "data": {
+          "subscription": null,
+          "checkout": null,
+          "billingIdentity": {
+            "status": "unlinked",
+            "issues": []
+          }
+        },
+        "error": null,
+        "meta": {
+          "requestId": "req_ccb7cb38-246",
+          "timestamp": "2026-11-18T02:21:07.816Z"
+        }
+      }
+    },
+    {
+      "label": "free /me/quota",
+      "route": "/api/v1/me/quota",
+      "status": 200,
+      "body": {
+        "data": {
+          "used": 0,
+          "max": 10,
+          "freeMax": 10,
+          "base": 10,
+          "bonuses": {
+            "school": false,
+            "address": false
+          },
+          "unlimited": false,
+          "unlimitedTestId": null,
+          "resetsAt": "2026-11-19T00:00:00.000Z"
+        },
+        "error": null,
+        "meta": {
+          "requestId": "req_87988117-6cd",
+          "timestamp": "2026-11-18T02:21:07.822Z"
+        }
+      }
+    },
+    {
+      "label": "checkout-created",
+      "route": "/api/v1/checkout/sessions",
+      "status": 201,
+      "body": {
+        "data": {
+          "checkoutSessionId": "cs_test_apr841",
+          "url": "https://checkout.stripe.com/c/pay/apr84-synthetic-not-a-real-session",
+          "amount": 10,
+          "currency": "USD",
+          "plan": "uni",
+          "testId": "ciencias",
+          "billingCycle": "yearly"
+        },
+        "error": null,
+        "meta": {
+          "requestId": "req_6733a33e-df8",
+          "timestamp": "2026-11-18T02:21:08.188Z"
+        }
+      }
+    },
+    {
+      "label": "pending-status",
+      "route": "/api/v1/billing/status?session_id=cs_test_apr841",
+      "status": 200,
+      "body": {
+        "data": {
+          "subscription": null,
+          "checkout": {
+            "id": "cs_test_apr841",
+            "attemptId": "dfc32799-2801-46c4-89df-3d7c62a1f0bb",
+            "plan": "uni",
+            "testId": "ciencias",
+            "billingCycle": "yearly",
+            "amount": 10,
+            "currency": "USD",
+            "status": "pending"
+          },
+          "billingIdentity": {
+            "status": "unlinked",
+            "issues": []
+          }
+        },
+        "error": null,
+        "meta": {
+          "requestId": "req_d96b5b5c-168",
+          "timestamp": "2026-11-18T02:21:08.313Z"
+        }
+      }
+    },
+    {
+      "label": "pending-return /plans",
+      "route": "/api/v1/plans",
+      "status": 200,
+      "body": {
+        "data": [
+          {
+            "id": "uni",
+            "popular": false,
+            "features": [],
+            "price": {
+              "monthly": 1,
+              "yearly": 10
+            }
+          },
+          {
+            "id": "all",
+            "popular": false,
+            "features": [],
+            "price": {
+              "monthly": 5,
+              "yearly": 50
+            }
+          }
+        ],
+        "error": null,
+        "meta": {
+          "requestId": "req_4fdb5d01-458",
+          "timestamp": "2026-11-18T02:21:08.516Z"
+        }
+      }
+    },
+    {
+      "label": "pending-return /me/quota",
+      "route": "/api/v1/me/quota",
+      "status": 200,
+      "body": {
+        "data": {
+          "used": 0,
+          "max": 10,
+          "freeMax": 10,
+          "base": 10,
+          "bonuses": {
+            "school": false,
+            "address": false
+          },
+          "unlimited": false,
+          "unlimitedTestId": null,
+          "resetsAt": "2026-11-19T00:00:00.000Z"
+        },
+        "error": null,
+        "meta": {
+          "requestId": "req_b7e955b2-dfc",
+          "timestamp": "2026-11-18T02:21:08.565Z"
+        }
+      }
+    },
+    {
+      "label": "pending-return /billing/status",
+      "route": "/api/v1/billing/status",
+      "status": 200,
+      "body": {
+        "data": {
+          "subscription": null,
+          "checkout": {
+            "id": "cs_test_apr841",
+            "attemptId": "dfc32799-2801-46c4-89df-3d7c62a1f0bb",
+            "plan": "uni",
+            "testId": "ciencias",
+            "billingCycle": "yearly",
+            "amount": 10,
+            "currency": "USD",
+            "status": "pending"
+          },
+          "billingIdentity": {
+            "status": "unlinked",
+            "issues": []
+          }
+        },
+        "error": null,
+        "meta": {
+          "requestId": "req_33509c63-77f",
+          "timestamp": "2026-11-18T02:21:08.571Z"
+        }
+      }
+    },
+    {
+      "label": "webhook-confirmation",
+      "status": 200,
+      "body": {
+        "data": {
+          "received": true,
+          "processed": true
+        },
+        "error": null,
+        "meta": {
+          "requestId": "req_282b1490-fd3",
+          "timestamp": "2026-11-18T02:21:08.703Z"
+        }
+      }
+    },
+    {
+      "label": "student-invoices",
+      "route": "/api/v1/me/invoices",
+      "status": 200,
+      "body": {
+        "data": [
+          {
+            "id": "in_apr84buyer",
+            "amount": 10,
+            "currency": "USD",
+            "status": "paid",
+            "paidAt": "2026-11-18T02:21:08.000Z",
+            "pdfUrl": null
+          }
+        ],
+        "error": null,
+        "meta": {
+          "requestId": "req_38615791-db7",
+          "timestamp": "2026-11-18T02:21:08.812Z"
+        }
+      }
+    },
+    {
+      "label": "student-subscription",
+      "route": "/api/v1/me/subscription",
+      "status": 200,
+      "body": {
+        "data": {
+          "id": "sub_apr84buyer",
+          "plan": "uni",
+          "billingCycle": "yearly",
+          "status": "active",
+          "currentPeriodEnd": "2027-11-18T02:21:08.000Z",
+          "cancelAtPeriodEnd": false,
+          "paymentMethod": {
+            "last4": "4242",
+            "brand": "visa"
+          },
+          "billingIdentity": {
+            "status": "consistent",
+            "issues": []
+          }
+        },
+        "error": null,
+        "meta": {
+          "requestId": "req_80eb3704-ad8",
+          "timestamp": "2026-11-18T02:21:08.826Z"
+        }
+      }
+    },
+    {
+      "label": "admin-subscriptions",
+      "route": "/api/v1/admin/billing/subscriptions",
+      "status": 200,
+      "body": {
+        "data": [
+          {
+            "id": "sub_apr84buyer",
+            "user": {
+              "id": "usr_1eaafc1934",
+              "name": "Synthetic buyer",
+              "email": "apr84-buyer@example.invalid"
+            },
+            "status": "active",
+            "updatedAt": "2026-11-18T02:21:08.665Z",
+            "plan": "uni",
+            "billingCycle": "yearly",
+            "testId": "ciencias",
+            "testLabel": "Ciencias",
+            "paymentPending": false,
+            "currentPeriodEnd": "2027-11-18T02:21:08.000Z",
+            "cancelAtPeriodEnd": false,
+            "billingIdentity": {
+              "status": "consistent",
+              "issues": []
+            },
+            "accessActive": true
+          }
+        ],
+        "error": null,
+        "meta": {
+          "requestId": "req_92e5e184-202",
+          "timestamp": "2026-11-18T02:21:08.863Z",
+          "mode": "test",
+          "pagination": {
+            "pageSize": 25,
+            "nextCursor": null
+          }
+        }
+      }
+    },
+    {
+      "label": "admin-invoices",
+      "route": "/api/v1/admin/billing/invoices",
+      "status": 200,
+      "body": {
+        "data": [
+          {
+            "id": "in_apr84buyer",
+            "user": {
+              "id": "usr_1eaafc1934",
+              "name": "Synthetic buyer",
+              "email": "apr84-buyer@example.invalid"
+            },
+            "status": "paid",
+            "updatedAt": "2026-11-18T02:21:08.665Z",
+            "subscriptionId": "sub_apr84buyer",
+            "billingIdentity": {
+              "status": "consistent",
+              "issues": []
+            },
+            "amountCents": 1000,
+            "createdAt": "2026-11-18T02:21:08.000Z",
+            "paidAt": "2026-11-18T02:21:08.000Z",
+            "hostedInvoiceUrl": null,
+            "pdfUrl": null
+          }
+        ],
+        "error": null,
+        "meta": {
+          "requestId": "req_f0283ad9-ece",
+          "timestamp": "2026-11-18T02:21:08.871Z",
+          "mode": "test",
+          "pagination": {
+            "pageSize": 25,
+            "nextCursor": null
+          }
+        }
+      }
+    },
+    {
+      "label": "confirmed-billing-status",
+      "route": "/api/v1/billing/status?session_id=cs_test_apr841",
+      "status": 200,
+      "body": {
+        "data": {
+          "subscription": {
+            "id": "sub_apr84buyer",
+            "plan": "uni",
+            "testId": "ciencias",
+            "billingCycle": "yearly",
+            "status": "active",
+            "accessActive": true,
+            "paymentPending": false,
+            "currentPeriodEnd": "2027-11-18T02:21:08.000Z",
+            "cancelAtPeriodEnd": false,
+            "paymentMethod": {
+              "last4": "4242",
+              "brand": "visa"
+            },
+            "uniAssignment": {
+              "testId": "ciencias",
+              "testLabel": "Ciencias"
+            }
+          },
+          "checkout": {
+            "id": "cs_test_apr841",
+            "attemptId": "dfc32799-2801-46c4-89df-3d7c62a1f0bb",
+            "plan": "uni",
+            "testId": "ciencias",
+            "billingCycle": "yearly",
+            "amount": 10,
+            "currency": "USD",
+            "status": "active"
+          },
+          "billingIdentity": {
+            "status": "consistent",
+            "issues": []
+          }
+        },
+        "error": null,
+        "meta": {
+          "requestId": "req_f38a0254-2df",
+          "timestamp": "2026-11-18T02:21:08.902Z"
+        }
+      }
+    },
+    {
+      "label": "confirmed-return /plans",
+      "route": "/api/v1/plans",
+      "status": 200,
+      "body": {
+        "data": [
+          {
+            "id": "uni",
+            "popular": false,
+            "features": [],
+            "price": {
+              "monthly": 1,
+              "yearly": 10
+            }
+          },
+          {
+            "id": "all",
+            "popular": false,
+            "features": [],
+            "price": {
+              "monthly": 5,
+              "yearly": 50
+            }
+          }
+        ],
+        "error": null,
+        "meta": {
+          "requestId": "req_8cf84b29-d26",
+          "timestamp": "2026-11-18T02:21:08.916Z"
+        }
+      }
+    },
+    {
+      "label": "confirmed-return /me/quota",
+      "route": "/api/v1/me/quota",
+      "status": 200,
+      "body": {
+        "data": {
+          "used": 0,
+          "max": 999999,
+          "freeMax": 10,
+          "base": 10,
+          "bonuses": {
+            "school": false,
+            "address": false
+          },
+          "unlimited": true,
+          "unlimitedTestId": "ciencias",
+          "resetsAt": "2026-11-19T00:00:00.000Z"
+        },
+        "error": null,
+        "meta": {
+          "requestId": "req_0ebe4852-969",
+          "timestamp": "2026-11-18T02:21:08.975Z"
+        }
+      }
+    },
+    {
+      "label": "confirmed-return /billing/status?session_id=cs_test_apr841",
+      "route": "/api/v1/billing/status?session_id=cs_test_apr841",
+      "status": 200,
+      "body": {
+        "data": {
+          "subscription": {
+            "id": "sub_apr84buyer",
+            "plan": "uni",
+            "testId": "ciencias",
+            "billingCycle": "yearly",
+            "status": "active",
+            "accessActive": true,
+            "paymentPending": false,
+            "currentPeriodEnd": "2027-11-18T02:21:08.000Z",
+            "cancelAtPeriodEnd": false,
+            "paymentMethod": {
+              "last4": "4242",
+              "brand": "visa"
+            },
+            "uniAssignment": {
+              "testId": "ciencias",
+              "testLabel": "Ciencias"
+            }
+          },
+          "checkout": {
+            "id": "cs_test_apr841",
+            "attemptId": "dfc32799-2801-46c4-89df-3d7c62a1f0bb",
+            "plan": "uni",
+            "testId": "ciencias",
+            "billingCycle": "yearly",
+            "amount": 10,
+            "currency": "USD",
+            "status": "active"
+          },
+          "billingIdentity": {
+            "status": "consistent",
+            "issues": []
+          }
+        },
+        "error": null,
+        "meta": {
+          "requestId": "req_4f3dd4a5-70e",
+          "timestamp": "2026-11-18T02:21:08.987Z"
+        }
+      }
+    },
+    {
+      "label": "webhook-replay",
+      "status": 200,
+      "body": {
+        "data": {
+          "received": true,
+          "duplicate": true
+        },
+        "error": null,
+        "meta": {
+          "requestId": "req_c1c11df1-1df",
+          "timestamp": "2026-11-18T02:21:09.098Z"
+        }
+      }
+    },
+    {
+      "label": "other-status",
+      "route": "/api/v1/billing/status",
+      "status": 200,
+      "body": {
+        "data": {
+          "subscription": null,
+          "checkout": null,
+          "billingIdentity": {
+            "status": "unlinked",
+            "issues": []
+          }
+        },
+        "error": null,
+        "meta": {
+          "requestId": "req_3bdbe978-c58",
+          "timestamp": "2026-11-18T02:21:09.199Z"
+        }
+      }
+    },
+    {
+      "label": "other-invoices",
+      "route": "/api/v1/me/invoices",
+      "status": 200,
+      "body": {
+        "data": [],
+        "error": null,
+        "meta": {
+          "requestId": "req_121e5c38-d52",
+          "timestamp": "2026-11-18T02:21:09.201Z"
+        }
+      }
+    },
+    {
+      "label": "foreign-checkout",
+      "route": "/api/v1/billing/status?session_id=cs_test_apr841",
+      "status": 404,
+      "body": {
+        "data": null,
+        "error": {
+          "code": "CHECKOUT_NOT_FOUND",
+          "message": "No se encontro esa compra en tu cuenta.",
+          "details": [],
+          "field": null
+        },
+        "meta": {
+          "requestId": "req_48f0dab4-38d",
+          "timestamp": "2026-11-18T02:21:09.213Z"
+        }
+      }
+    }
+  ],
+  "limitations": [
+    "Two supplied backend entrypoints and their current local identity are exercised; no implementation from another group is included.",
+    "Stripe SDK uses a synthetic loopback HTTP provider. No remote Stripe sandbox, card network or actual charges are tested.",
+    "Firestore Emulator only; cloud IAM/rules/indexes and operational deployment are not validated.",
+    "HTTP registration/login use temporary synthetic accounts; phone verification is disabled only in the isolated test environment.",
+    "No browser or hosted Checkout page is used; CORS preflight, refresh-cookie roundtrip, UI rendering and navigation are not certified.",
+    "HTTP requests use loopback. The unchanged administrator entrypoint binds to its default interfaces rather than honoring HOST.",
+    "Financial snapshots contain a documented field selection, not whole Firestore documents or authentication/session stores.",
+    "This single financial journey contains multiple checkpoints; they are not independent complete acceptance scenarios.",
+    "The selected backend is exercised locally. Browser interactions, Docker, deployment and external integration are outside this HTTP run."
+  ],
+  "financialJourneyCount": 1,
+  "checkCount": 11,
+  "providerHttpCalls": [
+    {
+      "method": "GET",
+      "path": "/v1/prices/price_uni_yearly",
+      "query": {}
+    },
+    {
+      "method": "GET",
+      "path": "/v1/checkout/sessions",
+      "query": {
+        "created[gte]": "1794968167",
+        "created[lte]": "1794968469",
+        "limit": "100"
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/v1/checkout/sessions",
+      "query": {}
+    },
+    {
+      "method": "GET",
+      "path": "/v1/checkout/sessions/cs_test_apr841",
+      "query": {}
+    },
+    {
+      "method": "GET",
+      "path": "/v1/checkout/sessions/cs_test_apr841",
+      "query": {}
+    },
+    {
+      "method": "GET",
+      "path": "/v1/subscriptions/sub_apr84buyer",
+      "query": {
+        "expand[0]": "latest_invoice",
+        "expand[1]": "default_payment_method",
+        "expand[2]": "default_source",
+        "expand[3]": "customer.invoice_settings.default_payment_method",
+        "expand[4]": "customer.default_source"
+      }
+    }
+  ],
+  "identifiers": {
+    "userId": "usr_1eaafc1934",
+    "sessionId": "cs_test_apr841",
+    "attemptId": "dfc32799-2801-46c4-89df-3d7c62a1f0bb",
+    "subscriptionId": "sub_apr84buyer",
+    "invoiceId": "in_apr84buyer"
+  },
+  "finishedAt": "2026-11-18T02:21:09.737Z"
+}

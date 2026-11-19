@@ -1,0 +1,50 @@
+{
+  "ticket": "APR-95",
+  "fecha_chile": "2026-11-18",
+  "commit_alumno": "c3a511ca35aa782aa1ec2fc00fa7860ed5a8867a",
+  "admin": "backend incluido en el respaldo REV4 del 17 de noviembre",
+  "cantidad_archivos_del_manifiesto": 81,
+  "archivos_que_cambiaron": [
+    "student/backend/src/routes/me.js"
+  ],
+  "sha256_me_js": "f8307685a58e52b6be560a610f737ecdebfc92b536a9ad64e39b91e4817df383",
+  "entorno": "Dos API locales DAD_20 con emulador Firestore y proveedor Stripe sintético en loopback.",
+  "limites": "El banco de pruebas no incluye cliente externo, Docker integrado, Checkout alojado ni Stripe remoto. Los ciclos son simulados.",
+  "recorridos": [
+    {
+      "caso": "ciencias_mensual",
+      "resultado": "PASS",
+      "controles": 11,
+      "revision": "REV4-APR72-c3a511c",
+      "informe": "ciencias_mensual/report.json"
+    },
+    {
+      "caso": "ciencias_anual",
+      "resultado": "PASS",
+      "controles": 11,
+      "revision": "REV4-APR72-c3a511c",
+      "informe": "ciencias_anual/report.json"
+    },
+    {
+      "caso": "todas_mensual",
+      "resultado": "PASS",
+      "controles": 11,
+      "revision": "REV4-APR72-c3a511c",
+      "informe": "todas_mensual/report.json"
+    },
+    {
+      "caso": "todas_anual",
+      "resultado": "PASS",
+      "controles": 11,
+      "revision": "REV4-APR72-c3a511c",
+      "informe": "todas_anual/report.json"
+    },
+    {
+      "caso": "rechazos_recuperacion",
+      "resultado": "PASS",
+      "controles": 11,
+      "revision": "REV4-APR72-c3a511c",
+      "informe": "rechazos_recuperacion/report.json"
+    }
+  ]
+}

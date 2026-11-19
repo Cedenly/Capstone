@@ -1,0 +1,42 @@
+{
+  "base_compartida": {
+    "component_sha256": "8d14e0d2612499b36469c9ec7ec52449255307dc92c297f62726e8674777417a",
+    "method": "Componente completo; salida controlada y pageshow.persisted=true inducido, sin recargar.",
+    "disabled_before_return": true,
+    "read_status_after_return": 0,
+    "checkout_creations": 1,
+    "still_opening_and_disabled": true,
+    "can_continue_after_return": false,
+    "can_discard_after_return": false
+  },
+  "REV2": {
+    "component_sha256": "39179518333daabf20715ded1e1c33856c3fc20166235b00cc41d23411e0f214",
+    "method": "Componente completo; salida controlada y pageshow.persisted=true inducido, sin recargar.",
+    "disabled_before_return": true,
+    "read_status_after_return": 0,
+    "checkout_creations": 1,
+    "still_opening_and_disabled": true,
+    "can_continue_after_return": false,
+    "can_discard_after_return": false
+  },
+  "rama_Thiare_e7099da": {
+    "component_sha256": "221f5a8c08e2af1f6d1be87ae9db2fc8684a643ed55bccc1fba6fba2eb648b98",
+    "method": "Componente completo; salida controlada y pageshow.persisted=true inducido, sin recargar.",
+    "disabled_before_return": true,
+    "read_status_after_return": 1,
+    "checkout_creations": 1,
+    "still_opening_and_disabled": false,
+    "can_continue_after_return": true,
+    "can_discard_after_return": true
+  },
+  "REV4": {
+    "component_sha256": "50d9bc835a63e1f6c0224ae2c12629b890bc611405fb35c8e8b9631d6d7d1a09",
+    "method": "Componente completo; salida controlada y pageshow.persisted=true inducido, sin recargar.",
+    "disabled_before_return": true,
+    "read_status_after_return": 1,
+    "checkout_creations": 1,
+    "still_opening_and_disabled": false,
+    "can_continue_after_return": true,
+    "can_discard_after_return": true
+  }
+}

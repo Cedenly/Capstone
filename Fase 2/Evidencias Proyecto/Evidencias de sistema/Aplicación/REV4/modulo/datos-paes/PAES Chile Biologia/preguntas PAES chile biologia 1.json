@@ -1,0 +1,184 @@
+[
+    {
+        "pregunta": "¿Cuál de los siguientes organelos es el encargado de la respiración celular y de generar la mayor parte de la energía (ATP) en una célula eucarionte?",
+        "alternativas": ["Ribosoma", "Complejo de Golgi", "Retículo endoplasmático", "Lisosoma", "Mitocondria"],
+        "respuesta_correcta": "E",
+        "explicacion_respuesta": "La mitocondria es el organelo donde se llevan a cabo las etapas finales de la respiración celular (Ciclo de Krebs y Fosforilación Oxidativa), produciendo grandes cantidades de ATP, la moneda energética de la célula. Los ribosomas sintetizan proteínas, el complejo de Golgi modifica y empaqueta proteínas, el retículo endoplasmático está involucrado en la síntesis de lípidos y proteínas, y los lisosomas digieren material desechado.",
+        "habilidad_requerida": "Para aprender sobre los organelos celulares, te sugiero crear mapas conceptuales que asocien cada estructura con su función específica. Por ejemplo, asocia la mitocondria con \"casa de la energía\" o el retículo endoplasmático con la \"fábrica de proteínas\". Prepara tarjetas de memoria (flashcards) y explica cada función con tus propias palabras. En la PAES, es común que te presenten imágenes para que identifiques organelos o que relaciones conceptos de función celular."
+    },
+    {
+        "pregunta": "Durante la etapa S del ciclo celular, ¿cuál es el proceso más relevante que ocurre?",
+        "alternativas": ["División del núcleo (mitosis)", "División del citoplasma (citocinesis)", "Duplicación del material genético (ADN)", "Crecimiento celular y síntesis de proteínas", "Condensación de los cromosomas"],
+        "respuesta_correcta": "C",
+        "explicacion_respuesta": "El ciclo celular se compone de interfase (G1, S y G2) y la fase M (mitosis y citocinesis). La etapa S (de síntesis) es la fase en la que ocurre la replicación o duplicación del ADN, generando dos copias idénticas del material genético para que cada célula hija reciba una dotación completa. La mitosis (A) ocurre en la fase M, la citocinesis (B) es la división del citoplasma, el crecimiento (D) es propio de G1 y G2, y la condensación cromosómica (E) sucede al inicio de la mitosis.",
+        "habilidad_requerida": "Para dominar este tema, te recomiendo dibujar y etiquetar las distintas fases del ciclo celular (G1, S, G2, y las etapas de la mitosis). Memoriza el nombre de cada fase y su evento más significativo. Un mnemotécnico útil para las etapas de la mitosis es: **P**rofase (**P**rimera), **M**etafase (**M**edia), **A**nafase (**A**trás) y **T**elofase (**T**ermina). Practicar con preguntas que te pidan identificar qué ocurre en qué fase es una estrategia clave para la prueba."
+    },
+    {
+        "pregunta": "La permeabilidad selectiva es una propiedad fundamental de la membrana plasmática. ¿Cuál de las siguientes moléculas puede difundirse directamente a través de la bicapa lipídica, sin la ayuda de proteínas transportadoras?",
+        "alternativas": ["Glucosa", "Ion Sodio (Na+)", "Agua (H2O)", "Proteína", "Oxígeno (O2)"],
+        "respuesta_correcta": "E",
+        "explicacion_respuesta": "La membrana plasmática es una bicapa lipídica que actúa como barrera selectiva. Las moléculas pequeñas y no polares (apolares), como el oxígeno (O2) y el dióxido de carbono (CO2), se disuelven en la bicapa y la atraviesan fácilmente por difusión simple. La glucosa y los iones, aunque pequeños, son polares y requieren proteínas de transporte. El agua puede atravesar la membrana por difusión simple en pequeña cantidad, pero principalmente usa acuaporinas. Las proteínas son macromoléculas demasiado grandes y polares.",
+        "habilidad_requerida": "Para entender la permeabilidad, es clave clasificar las moléculas según su tamaño y polaridad. **Moléculas no polares (apolares) y pequeñas**: atraviesan la bicapa fácilmente. **Moléculas polares grandes o iones**: requieren transporte asistido. Un buen ejercicio mental es tomar una molécula y preguntarte: ¿tiene carga? ¿es grande? La respuesta te dirá cómo cruza la membrana. Este es un tipo de razonamiento que la PAES evalúa constantemente."
+    },
+    {
+        "pregunta": "La teoría celular es un pilar de la biología. ¿Cuál de los siguientes enunciados NO es parte de la teoría celular moderna?",
+        "alternativas": ["Todos los seres vivos están formados por una o más células.", "La célula es la unidad estructural y funcional de los seres vivos.", "Todas las células provienen de otras células preexistentes.", "La célula es la unidad de reproducción, pues contiene el material genético.", "La célula es la unidad más pequeña de la materia con vida propia."],
+        "respuesta_correcta": "D",
+        "explicacion_respuesta": "Los postulados clásicos de la teoría celular son: 1) Todos los seres vivos están compuestos por una o más células (A); 2) La célula es la unidad básica de estructura y función (B); 3) Todas las células provienen de células preexistentes por división celular (C). La opción D, si bien la célula contiene el material genético y se reproduce, la afirmación de que es 'la unidad de reproducción' no es un postulado clásico y es menos precisa. La opción E describe a la célula como la unidad más pequeña con vida, lo cual es correcto y se desprende de la teoría.",
+        "habilidad_requerida": "Un excelente método de estudio es visualizar la historia y a los científicos clave (Hooke, Leeuwenhoek, Schwann, Schleiden, Virchow). Para recordar los tres postulados principales, piensa: **1. Estructura** (todos los seres vivos tienen células), **2. Función** (la célula es la unidad de vida), **3. Origen** (omnis cellula e cellula). Para la PAES, te pueden preguntar cuál afirmación es consistente con la teoría, por lo que es crucial dominar estos principios."
+    },
+    {
+        "pregunta": "En un experimento, un biólogo coloca células vegetales en una solución con alta concentración de sales. Al microscopio, observa que el volumen celular disminuye y la membrana plasmática se separa de la pared celular. Este fenómeno se denomina:",
+        "alternativas": ["Turgencia", "Citólisis", "Plasmólisis", "Difusión facilitada", "Endocitosis"],
+        "respuesta_correcta": "C",
+        "explicacion_respuesta": "La plasmólisis es el proceso que ocurre cuando una célula vegetal se encuentra en un medio hipertónico (alta concentración de solutos fuera). El agua sale de la célula por ósmosis, el protoplasma se contrae y la membrana se despega de la pared celular. La turgencia (A) es el estado normal de la célula vegetal en un medio hipotónico. La citólisis (B) es la ruptura de la célula en un medio hipotónico (en células animales). La difusión facilitada (D) y la endocitosis (E) son otros tipos de transporte.",
+        "habilidad_requerida": "Recuerda la regla: 'El agua sigue al soluto'. Para entender la ósmosis, compárala con el movimiento de personas hacia un lugar con más espacio. Cuando hay muchos solutos afuera (solución hipertónica), el agua se mueve hacia afuera para tratar de diluirlos. Es útil dibujar los tres escenarios: hipertónico, hipotónico e isotónico, y memorizar qué le sucede a la célula en cada caso."
+    },
+    {
+        "pregunta": "¿Cuál de los siguientes alimentos es principalmente rico en carbohidratos (glúcidos), los cuales cumplen una función energética fundamental para el organismo?",
+        "alternativas": ["Arroz", "Carne de vacuno", "Aceite de oliva", "Huevo", "Queso"],
+        "respuesta_correcta": "A",
+        "explicacion_respuesta": "El arroz es un cereal que se compone principalmente de almidón, un polisacárido que es la principal reserva de carbohidratos en los vegetales. Su función principal es proveer energía. La carne, los huevos y el queso son ricos en proteínas y lípidos. El aceite es rico en lípidos (grasas). La pregunta evalúa el conocimiento sobre la función de los carbohidratos como moléculas energéticas y su presencia en la dieta diaria.",
+        "habilidad_requerida": "Para fijar este conocimiento, clasifica los alimentos que consumes diariamente según su macronutriente principal (carbohidratos, proteínas o lípidos). Recuerda ejemplos claves: **carbohidratos** (pan, pastas, legumbres, frutas), **proteínas** (carnes, huevos, lácteos), **lípidos** (aceites, frutos secos, mantequilla). Entender esta clasificación es el primer paso para estudiar procesos como la digestión y el metabolismo."
+    },
+    {
+        "pregunta": "Las proteínas son macromoléculas formadas por la unión de aminoácidos mediante un tipo de enlace específico. ¿Cómo se denomina este enlace?",
+        "alternativas": ["Puente de hidrógeno", "Enlace glucosídico", "Enlace peptídico", "Enlace fosfodiéster", "Enlace iónico"],
+        "respuesta_correcta": "C",
+        "explicacion_respuesta": "Los aminoácidos se unen entre sí para formar proteínas a través de un enlace covalente llamado enlace peptídico. Este enlace se forma entre el grupo carboxilo (-COOH) de un aminoácido y el grupo amino (-NH2) de otro, liberando una molécula de agua (reacción de deshidratación). El enlace glucosídico (B) une monosacáridos, el fosfodiéster (D) une nucleótidos, y los puentes de hidrógeno (A) e iónicos (E) son interacciones más débiles que estabilizan la estructura tridimensional de las proteínas.",
+        "habilidad_requerida": "Para estudiar las macromoléculas, es muy útil crear una tabla de resumen que incluya: **Biomolécula**, **Monómero (unidad básica)** y **Enlace principal**. Por ejemplo, para proteínas: monómero = aminoácido, enlace = peptídico. Para ácidos nucleicos: monómero = nucleótido, enlace = fosfodiéster. Para carbohidratos: monómero = monosacárido, enlace = glucosídico. Practicar estos conceptos cruzados es clave para la prueba."
+    },
+    {
+        "pregunta": "Un equipo de investigadores quiere purificar una proteína específica de una muestra biológica. Para ello, deben romper la célula y separar sus componentes. ¿Qué organelo, conocido como el 'centro de reciclaje' de la célula, deberían romper con cuidado para evitar la degradación de todas las proteínas de la muestra?",
+        "alternativas": ["Núcleo", "Retículo endoplasmático", "Complejo de Golgi", "Lisosoma", "Mitocondria"],
+        "respuesta_correcta": "D",
+        "explicacion_respuesta": "Los lisosomas son orgánulos que contienen enzimas hidrolíticas ácidas (hidrolasas) que degradan todo tipo de biomoléculas: proteínas, lípidos, carbohidratos y ácidos nucleicos. Si se rompen, estas enzimas digerirían indiscriminadamente los componentes celulares, incluyendo la proteína de interés. El resto de los organelos cumplen otras funciones: el núcleo contiene el ADN, el retículo y el Golgi están involucrados en la síntesis y empaquetamiento, y la mitocondria es el centro energético.",
+        "habilidad_requerida": "Asocia los organelos con 'personajes' para recordar su función: los lisosomas son los **'equipos de limpieza' o 'de reciclaje'**; las mitocondrias son las **'centrales energéticas'**; el retículo endoplasmático es la **'fábrica'**; el complejo de Golgi es la **'oficina de correos'**; y el núcleo es la **'biblioteca de instrucciones'**. Esta analogía te ayudará a responder preguntas sobre funciones celulares."
+    },
+    {
+        "pregunta": "Durante la anafase de la mitosis, ¿qué evento esencial ocurre para garantizar que las células hijas reciban la misma información genética?",
+        "alternativas": ["Los cromosomas se condensan y se hacen visibles", "Los cromosomas se alinean en la placa ecuatorial", "Las cromátidas hermanas se separan y son atraídas hacia polos opuestos", "La envoltura nuclear se reforma alrededor de cada grupo de cromosomas", "El citoplasma se divide en dos células hijas"],
+        "respuesta_correcta": "C",
+        "explicacion_respuesta": "En la anafase, las proteínas que mantienen unidas a las cromátidas hermanas (cohesinas) son degradadas. Esto permite que las microtúbulos del huso acortándose tiren de cada cromátida hacia polos opuestos de la célula. Esto asegura que cada célula hija reciba una copia idéntica de cada cromosoma. La condensación (A) ocurre en la profase, la alineación (B) en la metafase, la reforma de la envoltura (D) en la telofase y la división del citoplasma (E) es la citocinesis.",
+        "habilidad_requerida": "Para la mitosis, utiliza la mnemotécnica **P-M-A-T** (Profase, Metafase, Anafase, Telofase) y memoriza el evento CLAVE de cada fase. El examen de la PAES frecuentemente te mostrará imágenes de células en diferentes etapas para que las identifiques. Practicar con diagramas y preguntas de asociación es la mejor forma de aprender este proceso."
+    },
+    {
+        "pregunta": "La glucólisis es la primera etapa de la respiración celular. ¿Dónde ocurre este proceso en la célula y cuáles son sus productos netos por cada molécula de glucosa?",
+        "alternativas": ["En la mitocondria: 2 piruvato, 2 ATP y 2 NADH", "En la mitocondria: 2 piruvato, 2 ATP y 2 FADH2", "En el citoplasma: 2 piruvato, 2 ATP y 2 NADH", "En el citoplasma: 2 piruvato, 4 ATP y 2 NADH", "En el citoplasma: 2 piruvato, 38 ATP y 6 CO2"],
+        "respuesta_correcta": "C",
+        "explicacion_respuesta": "La glucólisis ocurre en el citoplasma (hialoplasma) de la célula. Durante este proceso, una molécula de glucosa de 6 carbonos se descompone en dos moléculas de piruvato de 3 carbonos. En términos de energía neta, se invierten 2 ATP y se producen 4 ATP, dando una ganancia neta de 2 ATP. También se generan 2 moléculas de NADH (nicotinamida adenina dinucleótido). La opción D es incorrecta porque indica ganancia neta de 4 ATP (la ganancia neta es 2). La opción E describe los productos de la respiración celular completa.",
+        "habilidad_requerida": "La respiración celular es un proceso complejo. Te sugiero dibujar un mapa general del proceso en tres etapas: **1. Glucólisis** (ocurre en el citoplasma), **2. Ciclo de Krebs** (en la matriz mitocondrial), **3. Cadena de transporte de electrones** (en la membrana mitocondrial interna). Escribe al lado de cada etapa sus reactivos y productos. Este tipo de esquemas visuales son de gran ayuda para la prueba."
+    },
+    {
+        "pregunta": "¿Cuál de los siguientes es un ejemplo de una estructura, proceso o sistema que se encuentra exclusivamente en células animales y no en células vegetales?",
+        "alternativas": ["Pared celular de celulosa", "Cloroplastos", "Vacuola central", "Centríolos", "Plasmodesmos"],
+        "respuesta_correcta": "D",
+        "explicacion_respuesta": "Los centríolos son estructuras cilíndricas que participan en la organización de los microtúbulos y en la formación del huso mitótico durante la división celular. Están presentes en la mayoría de las células animales, pero están ausentes en la mayoría de las células vegetales superiores. La pared celular (A), los cloroplastos (B), la gran vacuola central (C) y los plasmodesmos (E) son estructuras característicamente vegetales.",
+        "habilidad_requerida": "Crear un cuadro comparativo de células **animal vs. vegetal** es una herramienta de estudio infalible. Enumera las estructuras presentes en cada una y compáralas. Preguntas sobre estas diferencias aparecen con frecuencia. Recuerda ejemplos clave: **animal = centríolos**; **vegetal = cloroplastos, pared celular y gran vacuola central**."
+    },
+    {
+        "pregunta": "Durante la interfase del ciclo celular, la célula pasa por tres etapas. ¿En cuál de ellas ocurre la replicación del ADN?",
+        "alternativas": ["G1 (Gap 1)", "S (Síntesis)", "G2 (Gap 2)", "Fase M (Mitosis)", "Citocinesis"],
+        "respuesta_correcta": "B",
+        "explicacion_respuesta": "La etapa S (Síntesis) es la fase de la interfase donde el ADN se duplica para preparar la célula para la división. En G1 ocurre crecimiento celular y preparación para la síntesis de ADN; en G2 continúa el crecimiento y la célula se prepara para la mitosis. La fase M y la citocinesis son la división nuclear y citoplasmática, respectivamente.",
+        "habilidad_requerida": "Una vez más, enfatizo la importancia de las fases del ciclo celular. Recuerda el orden: **G1 (crecimiento) -> S (síntesis de ADN) -> G2 (preparación para la división) -> M (mitosis)**. La letra S es clave, ya que su nombre proviene de la palabra en inglés 'synthesis'. Asocia esta letra con la duplicación del material genético para la prueba."
+    },
+    {
+        "pregunta": "¿Cuál de las siguientes opciones describe correctamente la función del complejo de Golgi en la célula?",
+        "alternativas": ["Llevar a cabo la respiración celular para producir energía", "Almacenar y digerir materiales de desecho", "Sintetizar proteínas a partir de aminoácidos", "Modificar, clasificar y empaquetar proteínas y lípidos en vesículas", "Convertir la energía lumínica en energía química (fotosíntesis)"],
+        "respuesta_correcta": "D",
+        "explicacion_respuesta": "El complejo de Golgi actúa como el centro de clasificación y empaquetamiento de la célula. Recibe proteínas y lípidos del retículo endoplasmático, los modifica (ej: añadiendo carbohidratos), los clasifica y los empaqueta en vesículas que los transportan a otros orgánulos o a la membrana plasmática para su secreción. Las funciones de respiración (A) son de la mitocondria, la digestión (B) de los lisosomas, la síntesis de proteínas (C) de los ribosomas y la fotosíntesis (E) de los cloroplastos.",
+        "habilidad_requerida": "Imagina el tráfico de proteínas en la célula: los **ribosomas las producen**, el **retículo endoplasmático rugoso las pliega**, el **Golgi las empaqueta** y las **vesículas las transportan**. Visualizar este flujo es crucial para entender las relaciones entre organelos, un tipo de pregunta frecuente en la PAES."
+    },
+    {
+        "pregunta": "¿Qué nombre recibe el proceso mediante el cual las células envuelven grandes partículas o microorganismos del medio externo, formando una vesícula para ingresarlos a su interior?",
+        "alternativas": ["Exocitosis", "Fagocitosis", "Pinocitosis", "Difusión simple", "Ósmosis"],
+        "respuesta_correcta": "B",
+        "explicacion_respuesta": "La fagocitosis (del griego 'fago' = comer y 'cito' = célula) es un tipo de endocitosis en el cual la célula emite seudópodos que envuelven una partícula grande o un patógeno, formando una vesícula llamada fagosoma para ser digerido. La exocitosis (A) es la liberación de material al exterior, la pinocitosis (C) es la ingestión de líquidos y solutos, y la difusión simple (D) y ósmosis (E) son formas de transporte pasivo de pequeñas moléculas.",
+        "habilidad_requerida": "Para recordar la 'fagocitosis', piensa en la palabra **'fag'** que suena a 'devorar'. Es la forma en que los glóbulos blancos (macrófagos) 'devoran' a las bacterias. Este tipo de analogías te ayudará a recordar procesos complejos el día de la prueba. El examen puede preguntarte la función de células especializadas como los macrófagos."
+    },
+    {
+        "pregunta": "En la replicación del ADN, una enzima tiene la función de desenrollar la doble hélice para que pueda ser copiada. ¿Cuál es el nombre de esta enzima?",
+        "alternativas": ["ADN polimerasa", "Helicasa", "ARN polimerasa", "Ligasa", "Primasa"],
+        "respuesta_correcta": "B",
+        "explicacion_respuesta": "La helicasa es la enzima responsable de desenrollar y separar las dos hebras de la doble hélice del ADN, rompiendo los puentes de hidrógeno entre las bases nitrogenadas. Esto crea la 'horquilla de replicación' que sirve como molde. La ADN polimerasa (A) construye la nueva cadena, la ARN polimerasa (C) participa en la transcripción, la ligasa (D) une fragmentos de ADN y la primasa (E) coloca un cebador.",
+        "habilidad_requerida": "Para estudiar la síntesis de ADN, te sugiero crear un 'teatro de enzimas' asignando un rol a cada una: **Helicasa** (el 'sacacorchos' que desenrolla), **ADN Polimerasa** (la 'máquina de escribir' que copia), **Ligasa** (el 'pegamento' que une). Para la PAES, es clave reconocer la función principal de las enzimas involucradas en la replicación y transcripción, y diferenciarlas entre sí."
+    },
+    {
+        "pregunta": "Las hormonas son mensajeros químicos que regulan diversas funciones corporales. ¿Cuál de las siguientes es una característica correcta del sistema endocrino?",
+        "alternativas": ["Su acción es extremadamente rápida, durando milisegundos.", "Sus señales viajan a través de impulsos nerviosos.", "Las hormonas actúan sobre células específicas llamadas células blanco o diana.", "El efecto de las hormonas es siempre local y en el punto de contacto.", "Es el responsable de generar y coordinar movimientos musculares voluntarios."],
+        "respuesta_correcta": "C",
+        "explicacion_respuesta": "Las hormonas son secretadas por glándulas endocrinas y viajan por el torrente sanguíneo hasta encontrar células que posean receptores específicos para ellas, denominadas células blanco (o diana). La acción hormonal suele ser más lenta y prolongada que la del sistema nervioso (descartando la opción A). Sus señales viajan por la sangre, no por impulsos nerviosos (B). Su efecto no es necesariamente local, puede ser sistémico (D). El sistema nervioso, y no el endocrino, es el responsable de los movimientos voluntarios (E).",
+        "habilidad_requerida": "Para distinguir los sistemas nervioso y endocrino, piensa en el siguiente paralelo: el **nervioso** es como un **mensaje de texto** (rápido, directo y de corta duración), mientras que el **endocrino** es como un **email o una carta** (más lento, viaja por un medio y tiene un efecto más largo). Además, recuerda el concepto de 'célula blanco': una hormona no actúa en cualquier célula, solo en aquellas preparadas para recibirla."
+    },
+    {
+        "pregunta": "Un equipo de investigación estudia el efecto de una toxina que inhibe completamente la síntesis de proteínas al bloquear la subunidad 70S de los ribosomas. ¿En qué tipo de células se verá afectada principalmente la síntesis de proteínas?",
+        "alternativas": ["En células animales, pero no en vegetales", "En células procariotas (bacterias)", "En células eucariotas (animales y vegetales)", "En mitocondrias y cloroplastos", "En el núcleo celular"],
+        "respuesta_correcta": "B",
+        "explicacion_respuesta": "La subunidad 70S es característica de los ribosomas de los procariotas (como las bacterias). Los ribosomas de las células eucariotas (animales, vegetales, hongos) son de 80S. Por lo tanto, una toxina que actúe específicamente sobre la subunidad 70S afectará la síntesis de proteínas en bacterias, no en las células eucariotas humanas o animales, lo que explica el mecanismo de muchos antibióticos. Si bien eucariotas tienen ribosomas 70S en mitocondrias y cloroplastos, el efecto principal y la pregunta se refieren al tipo celular general.",
+        "habilidad_requerida": "Diferenciar procariotas de eucariotas es fundamental en biología. Recuerda la regla mnemotécnica: '**Pro**cariotas son **Pro**tótipo, más **Pro**blemáticos' (son más antiguos y simples). Asocia **70S** con el número **7**0 y a los **Pro**cariotas. Para los **Eu**cariotas, asocia **80**S con el número **8**0 y la palabra **Eu**ropeo (más **Eu**ropeos, más **Eu**rpeos, más 'evolucionados'). Este tipo de asociación te será útil el día de la prueba."
+    },
+    {
+        "pregunta": "¿Cuál de los siguientes procesos biológicos ocurre exclusivamente en organismos autótrofos y tiene como principal objetivo la síntesis de materia orgánica a partir de materia inorgánica?",
+        "alternativas": ["Respiración celular", "Fotosíntesis", "Fermentación láctica", "Digestión", "Síntesis de proteínas"],
+        "respuesta_correcta": "B",
+        "explicacion_respuesta": "La fotosíntesis es el proceso mediante el cual los organismos autótrofos (plantas, algas y algunas bacterias) capturan energía lumínica para transformar dióxido de carbono (CO2) y agua (H2O) en glucosa y otros compuestos orgánicos, liberando oxígeno. La respiración celular y la fermentación ocurren en todos los seres vivos. La digestión descompone alimentos, y la síntesis de proteínas es un proceso universal.",
+        "habilidad_requerida": "Recuerda que **'Auto'** significa 'por sí mismo'. Los **autótrofos** son los que pueden **'auto-fabricarse'** su propio alimento. La **fotosíntesis** es su principal herramienta. Aprende la ecuación general de la fotosíntesis: **6 CO2 + 6 H2O + luz -> C6H12O6 + 6 O2**. Este es un conocimiento que la PAES puede evaluar directamente o como base para preguntas de razonamiento."
+    },
+    {
+        "pregunta": "Si una molécula de ADN tiene un 30% de Adenina (A), ¿cuál será el porcentaje aproximado de Citosina (C)?",
+        "alternativas": ["20%", "30%", "40%", "50%", "70%"],
+        "respuesta_correcta": "A",
+        "explicacion_respuesta": "Según las reglas de Chargaff, en el ADN bicatenario, la cantidad de Adenina (A) es igual a la de Timina (T), y la cantidad de Guanina (G) es igual a la de Citosina (C). Si hay 30% de A, entonces hay 30% de T. Entre ambos suman 60% del total de bases. El porcentaje restante (40%) corresponde a la suma de G + C, y como G = C, entonces C = 40%/2 = 20%.",
+        "habilidad_requerida": "Para este tipo de problema, memoriza la regla de Chargaff: **A = T** y **G = C**. Visualiza una escalera: A siempre se empareja con T, y G siempre con C. Si sabes el porcentaje de una base, puedes deducir el porcentaje de las demás. Practica resolviendo ejercicios con diferentes valores. Este es un tipo de ítem de cálculo simple que la PAES puede incluir."
+    },
+    {
+        "pregunta": "¿Cuál de las siguientes opciones es un ejemplo de un factor abiótico que afecta significativamente a un ecosistema?",
+        "alternativas": ["La presencia de un depredador tope", "La competencia por alimento entre dos especies", "La cantidad de luz solar disponible", "La simbiosis entre un hongo y una raíz", "La densidad de una población de árboles"],
+        "respuesta_correcta": "C",
+        "explicacion_respuesta": "Los factores abióticos son los componentes físicos y químicos no vivos del ecosistema, como la luz solar, la temperatura, el agua, el suelo y los nutrientes. La cantidad de luz solar (C) influye directamente en la fotosíntesis y, por ende, en la productividad del ecosistema. El resto de las opciones (depredador, competencia, simbiosis, densidad poblacional) son factores bióticos, ya que involucran o resultan de la interacción entre seres vivos.",
+        "habilidad_requerida": "Para distinguir factores **a**bióticos (no vivos) de **bióticos** (vivos), te sugiero el mnemotécnico: **'A' de 'A'biotic**' es 'sin vida', son las condiciones **físicas y químicas**. **'B' de 'Biotic**' es de 'vida' (Biodiversidad), son los **seres vivos y sus interacciones**. Para la PAES, es un error frecuente confundirlos, así que ten clara esta diferencia, ya que es la base para entender el equilibrio ecológico."
+    },
+    {
+        "pregunta": "En la cadena de transporte de electrones de la respiración celular, ¿cuál es la molécula que actúa como el principal aceptor final de electrones?",
+        "alternativas": ["Agua (H2O)", "Dióxido de carbono (CO2)", "Oxígeno (O2)", "NAD+", "ATP"],
+        "respuesta_correcta": "C",
+        "explicacion_respuesta": "El oxígeno (O2) es el aceptor final de electrones en la cadena de transporte de electrones mitocondrial. Al aceptar los electrones, se combina con iones de hidrógeno (H+) para formar agua (H2O). La función del oxígeno es crucial para mantener el flujo de electrones y la producción de ATP; sin él, la cadena se detiene. El CO2 se produce en el ciclo de Krebs, el NAD+ es un transportador de electrones y el ATP es la moneda energética.",
+        "habilidad_requerida": "Una forma sencilla de recordar esta clave es: **'El oxígeno es el que te mantiene con vida'**, porque literalmente es lo último que atrapa los electrones para que todo el proceso de producción de energía siga funcionando. Piensa en la cadena de transporte como una línea de producción: si al final nadie recibe los productos (los electrones), la línea se para por completo. En la PAES, es esencial asociar la molécula de oxígeno con su papel como aceptor final."
+    },
+    {
+        "pregunta": "¿Cuál de los siguientes apareamientos de bases de ADN es correcto según la complementariedad de las bases nitrogenadas?",
+        "alternativas": ["Adenina (A) se empareja con Guanina (G)", "Citosina (C) se empareja con Timina (T)", "Adenina (A) se empareja con Timina (T)", "Guanina (G) se empareja con Timina (T)", "Adenina (A) se empareja con Citosina (C)"],
+        "respuesta_correcta": "C",
+        "explicacion_respuesta": "En el ADN, la Adenina (A) siempre se empareja con la Timina (T) mediante dos puentes de hidrógeno, y la Guanina (G) siempre se empareja con la Citosina (C) mediante tres puentes de hidrógeno. Este apareamiento específico es la base de la complementariedad de las hebras del ADN y es fundamental para su replicación. Las otras opciones presentan emparejamientos incorrectos que no ocurren en la naturaleza.",
+        "habilidad_requerida": "Para recordar las reglas de apareamiento de bases, es muy útil usar la siguiente nemotecnia: **'A**ma a **T**i' (A con T) y **'G**rita **C**onmigo' (G con C). Otra forma es: '**C**lase **G**rande' (Guanina se empareja con Citosina). Estas frases te ayudarán a recordar de manera inmediata los pares correctos durante el examen."
+    },
+    {
+        "pregunta": "Cuando una célula se encuentra en un medio hipotónico (menor concentración de solutos que en el interior celular), ¿qué es lo que generalmente ocurre?",
+        "alternativas": ["La célula se arruga o encoge.", "La célula se hincha y puede llegar a explotar (citólisis).", "No ocurre ningún cambio en el volumen celular.", "La célula detiene su metabolismo.", "Se activa el transporte activo para expulsar agua."],
+        "respuesta_correcta": "B",
+        "explicacion_respuesta": "En un medio hipotónico, la concentración de agua es mayor fuera de la célula que dentro. Por ósmosis, el agua se mueve hacia el interior de la célula, donde hay una mayor concentración de solutos. Esto hace que la célula se hinche. Si el influjo de agua es constante, la célula animal puede llegar a estallar (citólisis). Las células vegetales tienen una pared celular que evita la ruptura, generando turgencia.",
+        "habilidad_requerida": "Recuerda: **'hipo**' significa 'menos' o 'bajo'. En un medio **hipo**tónico, hay **menos** solutos afuera, por lo que el agua **entra** para tratar de equilibrar. Piensa en una uva: si la sumerges en agua destilada, se hinchará porque el agua entra. Para la prueba, es una buena práctica siempre visualizar la dirección del flujo de agua según la tonicidad del medio."
+    },
+    {
+        "pregunta": "Los ribosomas, los orgánulos responsables de la síntesis de proteínas, están formados principalmente por:",
+        "alternativas": ["ADN y proteínas", "ARN mensajero y ADN", "ARN ribosómico (ARNr) y proteínas", "Lípidos y carbohidratos", "ARN de transferencia (ARNt) solamente"],
+        "respuesta_correcta": "C",
+        "explicacion_respuesta": "Los ribosomas son complejos ribonucleoproteicos compuestos por dos subunidades (una grande y una pequeña). Cada subunidad está formada por moléculas de ARN ribosómico (ARNr) y una variedad de proteínas. La combinación de estos componentes es lo que le da estructura y función a los ribosomas para catalizar la formación de enlaces peptídicos.",
+        "habilidad_requerida": "Para estudiar este tema, clasifica los diferentes tipos de ARN y sus funciones: **ARN mensajero (ARNm):** lleva el código; **ARN ribosómico (ARNr):** forma parte de la 'fábrica' (ribosoma); **ARN de transferencia (ARNt):** es el 'camión' que trae los aminoácidos. Para la PAES, es común que te pregunten la función de cada uno, así que memorizar estos roles es clave."
+    },
+    {
+        "pregunta": "¿Cuál es la principal función de la vesícula biliar en el proceso de la digestión en humanos?",
+        "alternativas": ["Producir enzimas que digieren proteínas.", "Producir bicarbonato para neutralizar el ácido estomacal.", "Almacenar y concentrar la bilis producida por el hígado.", "Absorber el agua y los nutrientes de los alimentos.", "Ser el principal sitio de absorción de nutrientes."],
+        "respuesta_correcta": "C",
+        "explicacion_respuesta": "La vesícula biliar es un pequeño órgano con forma de pera ubicado debajo del hígado. Su función principal no es producir bilis, sino almacenarla y concentrarla hasta que sea necesaria para la digestión de las grasas en el duodeno. El hígado es el órgano que produce la bilis (descartando A y B). La absorción de agua y nutrientes ocurre principalmente en el intestino delgado (E), y el bicarbonato es producido por el páncreas (B).",
+        "habilidad_requerida": "Visualiza el sistema digestivo como una línea de producción. El **hígado** es la 'fábrica' que produce el detergente (bilis) para cortar las grasas. La **vesícula biliar** es el 'depósito' donde se guarda ese detergente hasta que la comida (especialmente las grasas) llega al intestino. Hacer este tipo de analogías te ayudará a recordar las funciones específicas de cada órgano anexo."
+    },
+    {
+        "pregunta": "En el clásico experimento de la mancha de grasa, un grupo de estudiantes utilizó agua, detergente y aceite de cocina para modelar la digestión de lípidos. En este modelo, ¿qué representa la acción del detergente?",
+        "alternativas": ["La acción del jugo gástrico", "El proceso de absorción de grasas", "La acción emulsionante de las sales biliares", "La función del páncreas", "El papel de las enzimas proteasas"],
+        "respuesta_correcta": "C",
+        "explicacion_respuesta": "El aceite y el agua no se mezclan (son inmiscibles). El detergente actúa como un emulsionante, rompiendo la grasa en pequeñas gotitas que se dispersan en el agua, aumentando la superficie de contacto para la acción de las enzimas digestivas (lipasas). Este proceso es muy similar a la acción emulsionante de las sales biliares producidas por el hígado sobre las grasas en el intestino delgado.",
+        "habilidad_requerida": "La PAES puede evaluar la comprensión de conceptos abstractos a través de modelos experimentales sencillos. En este caso, la clave es entender que el detergente en el experimento cumple la misma función que las **sales biliares** en el cuerpo: **emulsionar las grasas**. Al hacer la analogía 'detergente : grasa :: sales biliares : lípidos', podrás contestar este tipo de preguntas de manera exitosa."
+    }
+]

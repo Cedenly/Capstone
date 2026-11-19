@@ -1,0 +1,122 @@
+{
+  "resultado": "APROBADO",
+  "facturaMejora": "in_apr95_mejora",
+  "centavos": 400,
+  "referencia": "Proveedor sintético; ejercicios del manejador del módulo, sin tarjeta ni cobro remoto.",
+  "antes": {
+    "suscripcion": {
+      "plan": "uni",
+      "testId": "cienciasqa",
+      "paidEntitlement": {
+        "currentPeriodStart": "2026-11-18T02:20:08.000Z",
+        "billingCycle": "monthly",
+        "currentPeriodEnd": "2026-12-18T02:20:08.000Z",
+        "invoiceId": "in_apr95_ciencias",
+        "testId": "cienciasqa",
+        "priceId": "price_uni_monthly",
+        "plan": "uni"
+      },
+      "currentPeriodEnd": "2026-12-18T02:20:08.000Z",
+      "paymentPending": false,
+      "accessActive": true,
+      "latestInvoiceId": "in_apr95_ciencias"
+    },
+    "cuota": {
+      "sinLimite": true,
+      "materia": "cienciasqa"
+    },
+    "facturas": [
+      {
+        "id": "in_apr84buyer",
+        "estado": "paid",
+        "importe": 5
+      },
+      {
+        "id": "in_apr95_ciencias",
+        "estado": "paid",
+        "importe": 1
+      }
+    ]
+  },
+  "trasRechazo": {
+    "suscripcion": {
+      "plan": "uni",
+      "testId": "cienciasqa",
+      "paidEntitlement": {
+        "currentPeriodStart": "2026-11-18T02:20:08.000Z",
+        "billingCycle": "monthly",
+        "currentPeriodEnd": "2026-12-18T02:20:08.000Z",
+        "invoiceId": "in_apr95_ciencias",
+        "testId": "cienciasqa",
+        "priceId": "price_uni_monthly",
+        "plan": "uni"
+      },
+      "currentPeriodEnd": "2026-12-18T02:20:08.000Z",
+      "paymentPending": true,
+      "accessActive": true,
+      "latestInvoiceId": "in_apr95_mejora"
+    },
+    "cuota": {
+      "sinLimite": true,
+      "materia": "cienciasqa"
+    },
+    "facturas": [
+      {
+        "id": "in_apr84buyer",
+        "estado": "paid",
+        "importe": 5
+      },
+      {
+        "id": "in_apr95_ciencias",
+        "estado": "paid",
+        "importe": 1
+      },
+      {
+        "id": "in_apr95_mejora",
+        "estado": "open",
+        "importe": 4
+      }
+    ]
+  },
+  "trasPago": {
+    "suscripcion": {
+      "plan": "all",
+      "testId": null,
+      "paidEntitlement": {
+        "currentPeriodStart": "2026-11-18T02:20:08.000Z",
+        "billingCycle": "monthly",
+        "currentPeriodEnd": "2026-12-18T02:20:08.000Z",
+        "invoiceId": "in_apr95_mejora",
+        "testId": null,
+        "priceId": "price_all_monthly",
+        "plan": "all"
+      },
+      "currentPeriodEnd": "2026-12-18T02:20:08.000Z",
+      "paymentPending": false,
+      "accessActive": true,
+      "latestInvoiceId": "in_apr95_mejora"
+    },
+    "cuota": {
+      "sinLimite": true,
+      "materia": null
+    },
+    "facturas": [
+      {
+        "id": "in_apr84buyer",
+        "estado": "paid",
+        "importe": 5
+      },
+      {
+        "id": "in_apr95_ciencias",
+        "estado": "paid",
+        "importe": 1
+      },
+      {
+        "id": "in_apr95_mejora",
+        "estado": "paid",
+        "importe": 4
+      }
+    ]
+  },
+  "reenvioDuplicado": true
+}

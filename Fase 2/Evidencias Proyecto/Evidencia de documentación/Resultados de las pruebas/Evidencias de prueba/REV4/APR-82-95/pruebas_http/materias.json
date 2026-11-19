@@ -1,0 +1,332 @@
+{
+  "controls": [
+    {
+      "scenario": "materia anunciada antes del Portal: valida",
+      "observed": "cien",
+      "accepted": true
+    },
+    {
+      "scenario": "reenvío e importe real de la factura: valida",
+      "duplicate": true,
+      "invoicePersisted": true,
+      "accepted": true
+    },
+    {
+      "scenario": "derecho Una ya pagado después de retirar la materia del catálogo",
+      "webhook": {
+        "status": 200,
+        "processed": true
+      },
+      "active": true,
+      "subject": "cien",
+      "accepted": true
+    },
+    {
+      "scenario": "materia anunciada antes del Portal: archivada",
+      "observed": null,
+      "accepted": true
+    },
+    {
+      "scenario": "reenvío e importe real de la factura: archivada",
+      "duplicate": true,
+      "invoicePersisted": true,
+      "accepted": true
+    },
+    {
+      "scenario": "vigencia anterior conservada frente a nuevo plazo del proveedor: archivada",
+      "requestedPeriodEnd": "2026-12-18T04:18:05.000Z",
+      "after": "2026-12-18T02:18:05.000Z",
+      "accepted": true
+    },
+    {
+      "scenario": "nuevo evento normal tras restablecer catálogo: archivada",
+      "event": {
+        "status": 200,
+        "processed": true
+      },
+      "plan": "uni",
+      "subject": "m1",
+      "accepted": true
+    },
+    {
+      "scenario": "materia anunciada antes del Portal: retirada",
+      "observed": null,
+      "accepted": true
+    },
+    {
+      "scenario": "reenvío e importe real de la factura: retirada",
+      "duplicate": true,
+      "invoicePersisted": true,
+      "accepted": true
+    },
+    {
+      "scenario": "vigencia anterior conservada frente a nuevo plazo del proveedor: retirada",
+      "requestedPeriodEnd": "2026-12-18T04:18:05.000Z",
+      "after": "2026-12-18T02:18:05.000Z",
+      "accepted": true
+    },
+    {
+      "scenario": "nuevo evento normal tras restablecer catálogo: retirada",
+      "event": {
+        "status": 200,
+        "processed": true
+      },
+      "plan": "uni",
+      "subject": "hist",
+      "accepted": true
+    },
+    {
+      "scenario": "materia anunciada antes del Portal: sin_contenido",
+      "observed": null,
+      "accepted": true
+    },
+    {
+      "scenario": "reenvío e importe real de la factura: sin_contenido",
+      "duplicate": true,
+      "invoicePersisted": true,
+      "accepted": true
+    },
+    {
+      "scenario": "vigencia anterior conservada frente a nuevo plazo del proveedor: sin_contenido",
+      "requestedPeriodEnd": "2026-12-18T04:18:05.000Z",
+      "after": "2026-12-18T02:18:05.000Z",
+      "accepted": true
+    },
+    {
+      "scenario": "nuevo evento normal tras restablecer catálogo: sin_contenido",
+      "event": {
+        "status": 200,
+        "processed": true
+      },
+      "plan": "uni",
+      "subject": "lectora",
+      "accepted": true
+    },
+    {
+      "scenario": "nueva contratación de la misma materia tras un intervalo sin derecho",
+      "event": {
+        "status": 200,
+        "processed": true
+      },
+      "priorEnd": "2026-11-18T01:18:05.000Z",
+      "appliedEnd": "2026-11-18T01:18:05.000Z",
+      "active": false,
+      "accepted": true
+    },
+    {
+      "scenario": "factura Una pagada recuperada sin constancia de una materia previamente asignada",
+      "webhook": 200,
+      "previousEnd": "2026-11-18T01:18:05.000Z",
+      "appliedEnd": "2026-11-18T01:18:05.000Z",
+      "active": false,
+      "historicalInvoiceSaved": true,
+      "accepted": true
+    },
+    {
+      "scenario": "cancelación terminal con materia retirada",
+      "event": {
+        "status": 200,
+        "processed": true
+      },
+      "after": {
+        "plan": "all",
+        "active": false,
+        "periodEnd": "2026-12-18T02:18:05.000Z",
+        "providerPlan": "uni",
+        "preview": null,
+        "invoice": "in_prueba_baja_final",
+        "subscriptionTestId": null,
+        "quotaTestId": null,
+        "paidSubject": null,
+        "paidStart": "2026-11-18T02:18:05.000Z",
+        "paidEnd": "2026-12-18T02:18:05.000Z"
+      },
+      "accepted": true
+    }
+  ],
+  "result": "CUMPLE",
+  "ticket": "APR-82",
+  "candidate": "DAD20-LOCAL-20261118-REV4",
+  "backendManifestSha256": "29f7677b86c349b9ee28c36afd09c683029a34def9876278b32ae64f4beb6bae",
+  "fixture": "Una cuenta de prueba con Todas de pago y cambio sintético de precio; Firestore Emulator, dos backends locales, SDK Stripe dirigido solo a localhost.",
+  "cases": [
+    {
+      "case": "valida",
+      "subject": "cien",
+      "catalog": {
+        "active": true,
+        "published": true,
+        "availableQuestions": 1
+      },
+      "before": {
+        "plan": "all",
+        "active": true,
+        "periodEnd": "2026-12-18T02:18:05.000Z",
+        "providerPlan": "all",
+        "preview": "cien",
+        "invoice": "in_apr84buyer",
+        "subscriptionTestId": null,
+        "quotaTestId": null,
+        "paidSubject": null,
+        "paidStart": "2026-11-18T02:18:05.000Z",
+        "paidEnd": "2026-12-18T02:18:05.000Z"
+      },
+      "comparatorCheckout": null,
+      "providerProjection": {
+        "status": 200,
+        "processed": true
+      },
+      "after": {
+        "plan": "uni",
+        "active": true,
+        "periodEnd": "2026-12-18T02:18:05.000Z",
+        "providerPlan": "uni",
+        "preview": "cien",
+        "invoice": "in_prueba_todas_una_valida",
+        "subscriptionTestId": "cien",
+        "quotaTestId": "cien",
+        "paidSubject": "cien",
+        "paidStart": "2026-11-18T02:18:05.000Z",
+        "paidEnd": "2026-12-18T02:18:05.000Z"
+      },
+      "criterion": "Al asignar Una por primera vez, la materia debe ser elegible y se preserva la vigencia ya pagada.",
+      "eligibleAssignment": "CUMPLE"
+    },
+    {
+      "case": "archivada",
+      "subject": "m1",
+      "catalog": {
+        "active": false,
+        "published": true,
+        "availableQuestions": 1
+      },
+      "before": {
+        "plan": "all",
+        "active": true,
+        "periodEnd": "2026-12-18T02:18:05.000Z",
+        "providerPlan": "all",
+        "preview": "m1",
+        "invoice": "in_prueba_una_todas_valida",
+        "subscriptionTestId": null,
+        "quotaTestId": null,
+        "paidSubject": null,
+        "paidStart": "2026-11-18T02:18:05.000Z",
+        "paidEnd": "2026-12-18T02:18:05.000Z"
+      },
+      "comparatorCheckout": {
+        "status": 400,
+        "code": "INVALID_TEST"
+      },
+      "providerProjection": {
+        "status": 200,
+        "processed": true
+      },
+      "after": {
+        "plan": "all",
+        "active": true,
+        "periodEnd": "2026-12-18T02:18:05.000Z",
+        "providerPlan": "uni",
+        "preview": null,
+        "invoice": "in_prueba_todas_una_archivada",
+        "subscriptionTestId": null,
+        "quotaTestId": null,
+        "paidSubject": null,
+        "paidStart": "2026-11-18T02:18:05.000Z",
+        "paidEnd": "2026-12-18T02:18:05.000Z"
+      },
+      "criterion": "Al asignar Una por primera vez, la materia debe ser elegible y se preserva la vigencia ya pagada.",
+      "eligibleAssignment": "CUMPLE"
+    },
+    {
+      "case": "retirada",
+      "subject": "hist",
+      "catalog": {
+        "active": true,
+        "published": false,
+        "availableQuestions": 1
+      },
+      "before": {
+        "plan": "all",
+        "active": true,
+        "periodEnd": "2026-12-18T02:18:05.000Z",
+        "providerPlan": "all",
+        "preview": "hist",
+        "invoice": "in_prueba_una_todas_archivada",
+        "subscriptionTestId": null,
+        "quotaTestId": null,
+        "paidSubject": null,
+        "paidStart": "2026-11-18T02:18:05.000Z",
+        "paidEnd": "2026-12-18T02:18:05.000Z"
+      },
+      "comparatorCheckout": {
+        "status": 400,
+        "code": "INVALID_TEST"
+      },
+      "providerProjection": {
+        "status": 200,
+        "processed": true
+      },
+      "after": {
+        "plan": "all",
+        "active": true,
+        "periodEnd": "2026-12-18T02:18:05.000Z",
+        "providerPlan": "uni",
+        "preview": null,
+        "invoice": "in_prueba_todas_una_retirada",
+        "subscriptionTestId": null,
+        "quotaTestId": null,
+        "paidSubject": null,
+        "paidStart": "2026-11-18T02:18:05.000Z",
+        "paidEnd": "2026-12-18T02:18:05.000Z"
+      },
+      "criterion": "Al asignar Una por primera vez, la materia debe ser elegible y se preserva la vigencia ya pagada.",
+      "eligibleAssignment": "CUMPLE"
+    },
+    {
+      "case": "sin_contenido",
+      "subject": "lectora",
+      "catalog": {
+        "active": true,
+        "published": true,
+        "availableQuestions": 0
+      },
+      "before": {
+        "plan": "all",
+        "active": true,
+        "periodEnd": "2026-12-18T02:18:05.000Z",
+        "providerPlan": "all",
+        "preview": "lectora",
+        "invoice": "in_prueba_una_todas_retirada",
+        "subscriptionTestId": null,
+        "quotaTestId": null,
+        "paidSubject": null,
+        "paidStart": "2026-11-18T02:18:05.000Z",
+        "paidEnd": "2026-12-18T02:18:05.000Z"
+      },
+      "comparatorCheckout": {
+        "status": 422,
+        "code": "TEST_NO_QUESTIONS"
+      },
+      "providerProjection": {
+        "status": 200,
+        "processed": true
+      },
+      "after": {
+        "plan": "all",
+        "active": true,
+        "periodEnd": "2026-12-18T02:18:05.000Z",
+        "providerPlan": "uni",
+        "preview": null,
+        "invoice": "in_prueba_todas_una_sin_contenido",
+        "subscriptionTestId": null,
+        "quotaTestId": null,
+        "paidSubject": null,
+        "paidStart": "2026-11-18T02:18:05.000Z",
+        "paidEnd": "2026-12-18T02:18:05.000Z"
+      },
+      "criterion": "Al asignar Una por primera vez, la materia debe ser elegible y se preserva la vigencia ya pagada.",
+      "eligibleAssignment": "CUMPLE"
+    }
+  ],
+  "compiledAt": "2026-11-18T02:18:08.125Z"
+}

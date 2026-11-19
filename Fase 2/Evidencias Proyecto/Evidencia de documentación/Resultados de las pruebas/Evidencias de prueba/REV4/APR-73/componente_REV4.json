@@ -1,0 +1,189 @@
+{
+  "completed_at_utc": "2026-11-18T02:22:02.107Z",
+  "candidate": "DAD20-LOCAL-20261118-REV4",
+  "normal_cancel_return": {
+    "pending": [
+      {
+        "method": "GET",
+        "url": "/tests"
+      },
+      {
+        "method": "GET",
+        "url": "/billing/status"
+      },
+      {
+        "method": "GET",
+        "url": "/plans"
+      },
+      {
+        "method": "GET",
+        "url": "/me/quota"
+      }
+    ],
+    "expired": [
+      {
+        "method": "GET",
+        "url": "/tests"
+      },
+      {
+        "method": "GET",
+        "url": "/billing/status"
+      },
+      {
+        "method": "GET",
+        "url": "/plans"
+      },
+      {
+        "method": "GET",
+        "url": "/me/quota"
+      }
+    ]
+  },
+  "component_sha256": "50d9bc835a63e1f6c0224ae2c12629b890bc611405fb35c8e8b9631d6d7d1a09",
+  "compiler": "Playwright Babel",
+  "node": "v24.22.1",
+  "mode": "full-jsx-component-with-controlled-hooks-router-api-and-events",
+  "checks": [
+    "Cuota Gratis: 15 disponibles, 4 usadas y nombre del plan.",
+    "Selección de Ciencias visible antes de enviar la compra.",
+    "Un único POST con plan, ciclo y materia, redirección solicitada y botón bloqueado durante la salida.",
+    "Restauración pageshow.persisted simulada: libera el bloqueo, consulta estado y muestra intento con Ciencias; sin segunda creación.",
+    "Al perder la respuesta de creación, la vista recupera la reserva sin session_id y la descarta por attemptId.",
+    "El intento vencido permite seleccionar otra compra; un fallo independiente de cuota conserva disponible el flujo.",
+    "La tarjeta Gratis se oculta cuando el backend indica acceso de pago activo.",
+    "URL de cancelación normal, API indica pendiente: muestra Ciencias y permite retomar o descartar sin solicitar otra compra.",
+    "URL de cancelación normal, API indica vencido: ofrece elegir nueva compra y la selección por sí sola no crea un Checkout."
+  ],
+  "controlled_api_calls": [
+    {
+      "method": "GET",
+      "url": "/tests"
+    },
+    {
+      "method": "GET",
+      "url": "/billing/status"
+    },
+    {
+      "method": "GET",
+      "url": "/plans"
+    },
+    {
+      "method": "GET",
+      "url": "/me/quota"
+    },
+    {
+      "method": "POST",
+      "url": "/checkout/sessions"
+    },
+    {
+      "method": "GET",
+      "url": "/billing/status"
+    },
+    {
+      "method": "GET",
+      "url": "/plans"
+    },
+    {
+      "method": "GET",
+      "url": "/me/quota"
+    },
+    {
+      "method": "POST",
+      "url": "/checkout/attempts/attempt-ui/cancel"
+    },
+    {
+      "method": "GET",
+      "url": "/billing/status"
+    },
+    {
+      "method": "GET",
+      "url": "/plans"
+    },
+    {
+      "method": "GET",
+      "url": "/me/quota"
+    },
+    {
+      "method": "POST",
+      "url": "/checkout/sessions"
+    },
+    {
+      "method": "GET",
+      "url": "/billing/status"
+    },
+    {
+      "method": "POST",
+      "url": "/checkout/attempts/attempt-ui/cancel"
+    },
+    {
+      "method": "GET",
+      "url": "/billing/status"
+    },
+    {
+      "method": "GET",
+      "url": "/plans"
+    },
+    {
+      "method": "GET",
+      "url": "/me/quota"
+    },
+    {
+      "method": "GET",
+      "url": "/billing/status"
+    },
+    {
+      "method": "GET",
+      "url": "/plans"
+    },
+    {
+      "method": "GET",
+      "url": "/me/quota"
+    },
+    {
+      "method": "GET",
+      "url": "/billing/status"
+    },
+    {
+      "method": "GET",
+      "url": "/plans"
+    },
+    {
+      "method": "GET",
+      "url": "/me/quota"
+    },
+    {
+      "method": "GET",
+      "url": "/tests"
+    },
+    {
+      "method": "GET",
+      "url": "/billing/status"
+    },
+    {
+      "method": "GET",
+      "url": "/plans"
+    },
+    {
+      "method": "GET",
+      "url": "/me/quota"
+    },
+    {
+      "method": "GET",
+      "url": "/tests"
+    },
+    {
+      "method": "GET",
+      "url": "/billing/status"
+    },
+    {
+      "method": "GET",
+      "url": "/plans"
+    },
+    {
+      "method": "GET",
+      "url": "/me/quota"
+    }
+  ],
+  "result": "PASS",
+  "limitations": "No browser, actual BFCache, official React/Vite build, remote Stripe or integration environment used by this suite."
+}

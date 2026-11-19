@@ -1,0 +1,33 @@
+{
+  "version": "DAD20-LOCAL-20261118-REV4",
+  "fecha_utc": "2026-11-18T02:20:50.898983+00:00",
+  "http": {
+    "entorno": "API real de alumno por HTTP en loopback con driver de memoria vacío y cuenta ficticia",
+    "sin_token": {
+      "metodo": "GET",
+      "ruta": "/api/v1/me/invoices",
+      "estado": 401,
+      "codigo": "AUTH_REQUIRED"
+    },
+    "consulta_de_catalogo": {
+      "metodo": "GET",
+      "ruta": "/api/v1/plans",
+      "estado": 200,
+      "cantidad": 0,
+      "ambito": "almacén de memoria nuevo"
+    },
+    "consulta_de_facturas_propias": {
+      "metodo": "GET",
+      "ruta": "/api/v1/me/invoices",
+      "estado": 200,
+      "data": [],
+      "requestId_presente": true
+    },
+    "cancelacion_heredada": {
+      "metodo": "POST",
+      "ruta": "/api/v1/me/subscription/cancel",
+      "estado": 410,
+      "codigo": "DEMO_SUBSCRIPTION_CANCEL_DISABLED"
+    }
+  }
+}

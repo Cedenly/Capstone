@@ -1,0 +1,21 @@
+# Dependencias y compilaciones
+**/node_modules/
+**/dist/
+
+# Variables de entorno y credenciales
+**/.env
+**/.env.*
+!**/.env.example
+**/serviceAccount*.json
+**/*firebase-adminsdk*.json
+
+# Datos almacenados localmente
+**/.data/
+**/_trash_nm_backend_*/
+
+# Configuración local de Vercel
+.vercel/
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db

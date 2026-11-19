@@ -1,0 +1,359 @@
+[
+  {
+    "pregunta": "Si 5x - 8 = 2x + 10, ¿cuál es el valor de x?",
+    "alternativas": ["4", "5", "6", "7", "8"],
+    "respuesta_correcta": "C",
+    "explicacion_respuesta": "5x - 8 = 2x + 10 → 5x - 2x = 10 + 8 → 3x = 18 → x = 6.",
+    "habilidad_requerida": "Resolver ecuaciones lineales con variables en ambos lados."
+  },
+  {
+    "pregunta": "Resuelve la ecuación cuadrática x² + 4x - 12 = 0.",
+    "alternativas": ["x = 2 y x = -6", "x = -2 y x = 6", "x = 3 y x = -4", "x = -3 y x = 4", "x = 2 y x = 6"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Factorizamos: (x + 6)(x - 2) = 0 → x = -6 o x = 2.",
+    "habilidad_requerida": "Factorizar trinomios cuadráticos o usar fórmula general."
+  },
+  {
+    "pregunta": "En un sistema de ecuaciones: 3x - y = 5, x + y = 7. ¿Cuál es el valor de y?",
+    "alternativas": ["2", "3", "4", "5", "6"],
+    "respuesta_correcta": "B",
+    "explicacion_respuesta": "Sumando: (3x - y)+(x + y)=5+7 → 4x=12 → x=3. Luego 3+y=7 → y=4.",
+    "habilidad_requerida": "Resolver sistemas lineales por reducción."
+  },
+  {
+    "pregunta": "Resuelve: 3^{x-2} = 81.",
+    "alternativas": ["4", "5", "6", "7", "8"],
+    "respuesta_correcta": "C",
+    "explicacion_respuesta": "81 = 3^4, entonces 3^{x-2}=3^4 → x-2=4 → x=6.",
+    "habilidad_requerida": "Resolver ecuaciones exponenciales con igual base."
+  },
+  {
+    "pregunta": "Si log₅(x) = 2, entonces x vale:",
+    "alternativas": ["10", "25", "5", "20", "15"],
+    "respuesta_correcta": "B",
+    "explicacion_respuesta": "Por definición: log₅(x)=2 → 5² = x → x=25.",
+    "habilidad_requerida": "Interpretar logaritmos como exponentes."
+  },
+  {
+    "pregunta": "Un rectángulo tiene largo 12 cm y ancho 5 cm. ¿Cuál es su perímetro?",
+    "alternativas": ["34 cm", "30 cm", "40 cm", "24 cm", "17 cm"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Perímetro = 2×(largo+ancho)=2×(12+5)=2×17=34 cm.",
+    "habilidad_requerida": "Calcular perímetro de un rectángulo."
+  },
+  {
+    "pregunta": "En un triángulo rectángulo, la hipotenusa mide 13 cm y un cateto 5 cm. ¿Cuánto mide el otro cateto?",
+    "alternativas": ["12 cm", "10 cm", "8 cm", "9 cm", "11 cm"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Teorema de Pitágoras: 13² = 5² + c² → 169 = 25 + c² → c²=144 → c=12 cm.",
+    "habilidad_requerida": "Aplicar Pitágoras para hallar cateto faltante."
+  },
+  {
+    "pregunta": "¿Cuál es el área de un círculo de radio 7 cm? (Usa π ≈ 3,14)",
+    "alternativas": ["153,86 cm²", "43,96 cm²", "21,98 cm²", "49 cm²", "153,86 cm²"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Área = πr² = 3,14 × 7² = 3,14 × 49 = 153,86 cm².",
+    "habilidad_requerida": "Aplicar fórmula del área del círculo."
+  },
+  {
+    "pregunta": "Para un ángulo agudo α, si cos α = 0,28, ¿cuál es el valor aproximado de sen α?",
+    "alternativas": ["0,96", "0,64", "0,72", "0,84", "0,50"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "sen²α = 1 - cos²α = 1 - 0,0784 = 0,9216 → senα ≈ 0,96.",
+    "habilidad_requerida": "Usar identidad pitagórica sen²+cos²=1."
+  },
+  {
+    "pregunta": "Simplifica: cos(90° + x).",
+    "alternativas": ["-sen x", "sen x", "-cos x", "cos x", "0"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Por ángulos complementarios: cos(90°+x) = -sen x.",
+    "habilidad_requerida": "Conocer identidades trigonométricas de ángulos suplementarios."
+  },
+  {
+    "pregunta": "¿Cuál es el dominio de f(x) = 1/(x - 4)?",
+    "alternativas": ["ℝ - {4}", "x > 4", "x < 4", "x ≥ 4", "x ≤ 4"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "La función racional no está definida cuando el denominador es 0: x-4≠0 → x≠4.",
+    "habilidad_requerida": "Determinar dominio de funciones racionales."
+  },
+  {
+    "pregunta": "¿Cuál es el rango de f(x) = -x² + 1?",
+    "alternativas": ["(-∞, 1]", "(-∞, 1)", "[1, ∞)", "(1, ∞)", "ℝ"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "El término -x² ≤ 0, entonces -x²+1 ≤ 1. El máximo es 1. Rango (-∞, 1].",
+    "habilidad_requerida": "Determinar rango de funciones cuadráticas cóncavas."
+  },
+  {
+    "pregunta": "Encuentra la pendiente de la recta que pasa por (-1, 5) y (2, -4).",
+    "alternativas": ["-3", "3", "-1", "1", "0"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "m = (-4 - 5)/(2 - (-1)) = (-9)/(3) = -3.",
+    "habilidad_requerida": "Calcular pendiente con dos puntos."
+  },
+  {
+    "pregunta": "¿Cuál es el vértice de la parábola f(x) = x² + 6x + 8?",
+    "alternativas": ["(-3, -1)", "(3, -1)", "(-3, 1)", "(3, 1)", "(0, 8)"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Completamos cuadrados: (x²+6x+9)-1 = (x+3)² -1 → vértice (-3, -1).",
+    "habilidad_requerida": "Completar cuadrados para hallar vértice de parábola."
+  },
+  {
+    "pregunta": "Calcula: lim_{x→3} (x² - 9)/(x - 3).",
+    "alternativas": ["6", "3", "0", "9", "No existe"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Factorizamos (x-3)(x+3)/(x-3)=x+3, límite = 3+3=6.",
+    "habilidad_requerida": "Resolver límites indeterminados factorizando."
+  },
+  {
+    "pregunta": "Si f(x) = 5x⁴ - 2x, entonces f'(x) es:",
+    "alternativas": ["20x³ - 2", "20x³", "5x³ - 2", "20x³ - 2x", "5x⁴ - 2"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Derivada: 5·4x³ - 2·1 = 20x³ - 2.",
+    "habilidad_requerida": "Derivar polinomios aplicando regla de la potencia."
+  },
+  {
+    "pregunta": "Calcula la integral ∫ (3x² + 2x) dx.",
+    "alternativas": ["x³ + x² + C", "3x³ + 2x² + C", "x³ + x²", "x³ + 2x² + C", "3x³ + x² + C"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "∫3x² dx = x³, ∫2x dx = x², más constante C.",
+    "habilidad_requerida": "Integrar polinomios término a término."
+  },
+  {
+    "pregunta": "Se lanza un dado justo. ¿Probabilidad de obtener un número par?",
+    "alternativas": ["1/2", "1/3", "2/3", "1/6", "5/6"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Números pares: 2,4,6 → 3 favorables de 6 totales → 3/6=1/2.",
+    "habilidad_requerida": "Cálculo básico de probabilidad en experimentos equiprobables."
+  },
+  {
+    "pregunta": "¿Cuántos números de 3 cifras distintas se pueden formar con los dígitos 1,2,3,4?",
+    "alternativas": ["24", "12", "64", "4", "16"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Permutaciones de 4 elementos tomados de 3: P(4,3)=4×3×2=24.",
+    "habilidad_requerida": "Aplicar permutaciones sin repetición."
+  },
+  {
+    "pregunta": "Dados los datos: 4, 8, 6, 5, 7. ¿Cuál es la varianza muestral?",
+    "alternativas": ["2", "2,5", "1,5", "3", "2,8"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Media = 6. Suma de cuadrados = (4-6)²+(8-6)²+(6-6)²+(5-6)²+(7-6)² = 4+4+0+1+1=10. Varianza = 10/(5-1)=2,5.",
+    "habilidad_requerida": "Calcular varianza muestral."
+  },
+  {
+    "pregunta": "En una progresión aritmética, a₁ = 7 y d = -2. ¿Cuál es el décimo término?",
+    "alternativas": ["-11", "25", "-13", "9", "5"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "a₁₀ = a₁ + 9d = 7 + 9(-2) = 7 - 18 = -11.",
+    "habilidad_requerida": "Fórmula término general de PA."
+  },
+  {
+    "pregunta": "En una PG, a₁ = 5 y r = 3. ¿Cuál es el cuarto término?",
+    "alternativas": ["135", "45", "405", "15", "180"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "a₄ = a₁·r³ = 5·27 = 135.",
+    "habilidad_requerida": "Fórmula término general de PG."
+  },
+  {
+    "pregunta": "Calcula el módulo del número complejo z = 1 - i.",
+    "alternativas": ["√2", "2", "1", "0", "√3"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "|z| = √(1² + (-1)²) = √(1+1) = √2.",
+    "habilidad_requerida": "Módulo de complejo a+bi."
+  },
+  {
+    "pregunta": "Dados u = (1,2,3) y v = (4,-1,2), calcula el producto escalar.",
+    "alternativas": ["12", "8", "14", "10", "6"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "1·4 + 2·(-1) + 3·2 = 4 -2 +6 = 8.",
+    "habilidad_requerida": "Producto escalar en R³."
+  },
+  {
+    "pregunta": "Resuelve la desigualdad: 3 - 2x ≥ 7.",
+    "alternativas": ["x ≤ -2", "x ≥ -2", "x ≤ 2", "x ≥ 2", "x > -2"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "3 - 2x ≥ 7 → -2x ≥ 4 → x ≤ -2 (dividir por negativo invierte signo).",
+    "habilidad_requerida": "Resolver desigualdades lineales con inversión de signo."
+  },
+  {
+    "pregunta": "¿Cuál es la solución de |2x - 1| = 7?",
+    "alternativas": ["x = 4 o x = -3", "x = 4 o x = 3", "x = -4 o x = 3", "x = 4", "x = -3"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "2x-1=7 → x=4; 2x-1=-7 → 2x=-6 → x=-3.",
+    "habilidad_requerida": "Ecuaciones con valor absoluto."
+  },
+  {
+    "pregunta": "Simplifica: (x² - 4)/(x² + 2x), para x ≠ 0, -2.",
+    "alternativas": ["(x-2)/x", "(x+2)/x", "(x-2)/(x+2)", "x-2", "(x+2)/(x-2)"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Numerador: (x-2)(x+2). Denominador: x(x+2). Cancelamos (x+2): queda (x-2)/x.",
+    "habilidad_requerida": "Simplificar fracciones algebraicas factorizando."
+  },
+  {
+    "pregunta": "Un capital de $1000 crece al 5% anual compuesto. ¿Monto después de 2 años?",
+    "alternativas": ["$1102,50", "$1100", "$1025", "$1050", "$1157,63"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "M = 1000(1+0,05)² = 1000(1,1025) = 1102,5.",
+    "habilidad_requerida": "Modelar interés compuesto con fórmula M=C(1+r)^t."
+  },
+  {
+    "pregunta": "Resuelve log₂(x+1) + log₂(x-1) = 3.",
+    "alternativas": ["3", "√10", "4", "5", "2"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "log₂[(x+1)(x-1)] = 3 → (x+1)(x-1)=2³=8 → x²-1=8 → x²=9 → x=3 (positivo).",
+    "habilidad_requerida": "Propiedades de logaritmos y resolución de ecuaciones logarítmicas."
+  },
+  {
+    "pregunta": "Un triángulo tiene lados 7, 8, 9. ¿Cuál es su área aproximada (fórmula de Herón)?",
+    "alternativas": ["26,83", "24,00", "28,00", "30,00", "22,45"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "s=(7+8+9)/2=12. Área=√[12(12-7)(12-8)(12-9)]=√[12·5·4·3]=√720≈26,83.",
+    "habilidad_requerida": "Aplicar fórmula de Herón para área de triángulo."
+  },
+  {
+    "pregunta": "¿Cuál es el valor de tan(45°)?",
+    "alternativas": ["1", "0", "∞", "√2/2", "√3"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "tan(45°)= sen45°/cos45° = (√2/2)/(√2/2)=1.",
+    "habilidad_requerida": "Valores exactos de funciones trigonométricas en ángulos notables."
+  },
+  {
+    "pregunta": "Halla la derivada de f(x)= sen(2x).",
+    "alternativas": ["2cos(2x)", "cos(2x)", "-2cos(2x)", "2sen(2x)", "-2sen(2x)"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Regla de la cadena: derivada sen(u)=cos(u)·u', con u=2x, u'=2 → 2cos(2x).",
+    "habilidad_requerida": "Derivación de funciones trigonométricas compuestas."
+  },
+  {
+    "pregunta": "Calcula ∫ cos(3x) dx.",
+    "alternativas": ["(1/3)sen(3x)+C", "3 sen(3x)+C", "-1/3 sen(3x)+C", "sen(3x)+C", "-sen(3x)+C"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Sustitución u=3x, du=3dx → ∫cos(u) du/3 = (1/3)sen(u)+C.",
+    "habilidad_requerida": "Integración de funciones trigonométricas con sustitución lineal."
+  },
+  {
+    "pregunta": "Se extraen dos cartas de una baraja de 52 sin reposición. ¿Probabilidad de que ambas sean ases?",
+    "alternativas": ["1/221", "1/169", "4/52", "1/13", "1/52"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "P(primer as)=4/52, P(segundo as|primero)=3/51 → (4/52)*(3/51)=12/2652=1/221.",
+    "habilidad_requerida": "Probabilidad condicional sin reposición."
+  },
+  {
+    "pregunta": "¿Cuántas diagonales tiene un polígono de 10 lados?",
+    "alternativas": ["35", "45", "20", "30", "40"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Fórmula: n(n-3)/2 = 10·7/2 = 35.",
+    "habilidad_requerida": "Combinatoria: número de diagonales de un polígono."
+  },
+  {
+    "pregunta": "El promedio de 5 números es 10. Si se agrega un sexto número 20, ¿nuevo promedio?",
+    "alternativas": ["11,67", "12", "11,5", "12,5", "13"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Suma original=5×10=50, nueva suma=70, promedio=70/6≈11,67.",
+    "habilidad_requerida": "Promedio y cambios en el conjunto de datos."
+  },
+  {
+    "pregunta": "¿Cuál es el radio de una esfera de volumen 288π cm³?",
+    "alternativas": ["6 cm", "3 cm", "9 cm", "12 cm", "4 cm"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Volumen esfera = (4/3)πr³ = 288π → (4/3)r³=288 → r³=216 → r=6 cm.",
+    "habilidad_requerida": "Fórmula volumen esfera y resolución de ecuaciones."
+  },
+  {
+    "pregunta": "Resuelve la inecuación cuadrática x² - 3x + 2 < 0.",
+    "alternativas": ["1 < x < 2", "x < 1 o x > 2", "x < 1 y x > 2", "x > 2", "x < 1"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Factor (x-1)(x-2)<0. La parábola abre hacia arriba, negativa entre raíces: 1<x<2.",
+    "habilidad_requerida": "Resolver inecuaciones cuadráticas analizando signo."
+  },
+  {
+    "pregunta": "Si f(x)= x²+1 y g(x)= 2x, ¿cuál es (f∘g)(x)?",
+    "alternativas": ["4x²+1", "2x²+1", "4x²+2", "2x²+2", "x²+2x+1"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "f(g(x)) = (2x)²+1 = 4x²+1.",
+    "habilidad_requerida": "Composición de funciones."
+  },
+  {
+    "pregunta": "¿Cuál es la inversa de f(x)= (x-3)/2?",
+    "alternativas": ["f⁻¹(x)= 2x+3", "f⁻¹(x)= 2x-3", "f⁻¹(x)= (x+3)/2", "f⁻¹(x)= (x-3)/2", "f⁻¹(x)= x/2+3"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Despejamos x: y=(x-3)/2 → 2y=x-3 → x=2y+3 → f⁻¹(x)=2x+3.",
+    "habilidad_requerida": "Hallar función inversa despejando variable."
+  },
+  {
+    "pregunta": "En una PA, a₅=12 y a₉=24. Halla la diferencia común.",
+    "alternativas": ["3", "4", "2", "6", "12"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "a₉ = a₅ + 4d → 24 = 12 + 4d → 12=4d → d=3.",
+    "habilidad_requerida": "Relación entre términos de una PA."
+  },
+  {
+    "pregunta": "En una PG, a₂=6 y a₄=24. Halla la razón (r>0).",
+    "alternativas": ["2", "3", "4", "1,5", "2,5"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "a₄ = a₂·r² → 24 = 6 r² → r²=4 → r=2.",
+    "habilidad_requerida": "Relación entre términos de una PG."
+  },
+  {
+    "pregunta": "Un número complejo z tiene parte real 4 y módulo 5. ¿Cuál es la parte imaginaria positiva?",
+    "alternativas": ["3", "4", "5", "1", "√41"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "|z|² = 4² + b² = 25 → b²=9 → b=3 (positivo).",
+    "habilidad_requerida": "Relación módulo y partes real/imaginaria."
+  },
+  {
+    "pregunta": "El producto vectorial de u=(1,0,0) y v=(0,1,0) es:",
+    "alternativas": ["(0,0,1)", "(0,0,-1)", "(1,1,0)", "(0,1,0)", "(1,0,0)"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "u × v = determinante |i j k; 1 0 0; 0 1 0| = i(0·0 - 0·1) - j(1·0 - 0·0) + k(1·1 - 0·0)= k = (0,0,1).",
+    "habilidad_requerida": "Producto vectorial en R³."
+  },
+  {
+    "pregunta": "Resuelve: |x-3| ≤ 2.",
+    "alternativas": ["1 ≤ x ≤ 5", "x ≤ 1 o x ≥ 5", "x ≤ 1", "x ≥ 5", "1 < x < 5"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "|x-3|≤2 → -2 ≤ x-3 ≤ 2 → 1 ≤ x ≤ 5.",
+    "habilidad_requerida": "Desigualdad con valor absoluto en intervalo."
+  },
+  {
+    "pregunta": "Simplifica: (x³ - 8)/(x - 2) para x≠2.",
+    "alternativas": ["x²+2x+4", "x²-2x+4", "x²+4", "x²-4", "x+2"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "x³-8 = (x-2)(x²+2x+4). Cancelando (x-2) queda x²+2x+4.",
+    "habilidad_requerida": "Factorizar suma/diferencia de cubos."
+  },
+  {
+    "pregunta": "Una bacteria se triplica cada hora. Si comienza con 200, ¿cuántas hay en 4 horas?",
+    "alternativas": ["16200", "4800", "5400", "7200", "32400"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "N = 200·3⁴ = 200·81 = 16200.",
+    "habilidad_requerida": "Crecimiento exponencial con base 3."
+  },
+  {
+    "pregunta": "Resuelve log(x) + log(4) = log(20) (log base 10).",
+    "alternativas": ["5", "10", "4", "2", "8"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "log(4x) = log(20) → 4x=20 → x=5.",
+    "habilidad_requerida": "Propiedad suma de logaritmos."
+  },
+  {
+    "pregunta": "En un triángulo, un ángulo mide 30°, el lado opuesto 5 cm y otro lado 10 cm. ¿Cuánto mide el ángulo opuesto al lado de 10 cm (ley de senos)?",
+    "alternativas": ["90°", "60°", "45°", "30°", "120°"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Ley senos: sen30°/5 = senB/10 → 0,5/5 = senB/10 → 0,1 = senB/10 → senB=1 → B=90°.",
+    "habilidad_requerida": "Aplicar ley de senos para ángulo faltante."
+  },
+  {
+    "pregunta": "Halla la derivada de f(x)= e^{3x}.",
+    "alternativas": ["3e^{3x}", "e^{3x}", "3e^{x}", "e^{3x}/3", "3xe^{3x-1}"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Derivada de e^u = e^u · u', con u=3x, u'=3 → 3e^{3x}.",
+    "habilidad_requerida": "Derivación exponencial compuesta."
+  },
+  {
+    "pregunta": "Calcula ∫ e^{2x} dx.",
+    "alternativas": ["(1/2)e^{2x}+C", "2e^{2x}+C", "e^{2x}+C", "e^{2x}/2", "2e^{2x}"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "∫ e^{2x} dx = (1/2) e^{2x} + C (sustitución u=2x, du=2dx).",
+    "habilidad_requerida": "Integral de función exponencial compuesta."
+  }
+]

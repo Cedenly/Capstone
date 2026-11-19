@@ -1,0 +1,55 @@
+{
+  "driver": "firestore",
+  "total": 12,
+  "passed": 9,
+  "scenarios": [
+    {
+      "name": "Oculta la factura original in_camila a su titular",
+      "passed": false
+    },
+    {
+      "name": "Oculta la factura original in_juan a su titular",
+      "passed": false
+    },
+    {
+      "name": "Oculta las facturas con procedencia demo explícita",
+      "passed": false
+    },
+    {
+      "name": "Conserva el comprobante Stripe de prueba con su PDF y su monto",
+      "passed": true
+    },
+    {
+      "name": "Conserva el comprobante Stripe con PDF ausente",
+      "passed": true
+    },
+    {
+      "name": "Conserva una factura sin procedencia con otro ID y los mismos atributos históricos",
+      "passed": true
+    },
+    {
+      "name": "Ordena fechas válidas de más reciente a más antigua",
+      "passed": true
+    },
+    {
+      "name": "Aísla los comprobantes de ambos propietarios autenticados",
+      "passed": true
+    },
+    {
+      "name": "Devuelve los mismos campos del contrato anterior",
+      "passed": true
+    },
+    {
+      "name": "La lectura conserva todos los documentos originales de facturación",
+      "passed": true
+    },
+    {
+      "name": "Respeta un origen Stripe explícito incluso si coinciden ID y demás campos",
+      "passed": true
+    },
+    {
+      "name": "Respeta un registro parcialmente coincidente con un importe distinto",
+      "passed": true
+    }
+  ]
+}

@@ -8,8 +8,8 @@ Uso desde el equipo habitual, con Node.js 22 o 24 y terminal interactiva:
 Puede usarse Windows PowerShell o Terminal. Escribir las credenciales de una cuenta
 DEDICADA DE PRUEBA solo en la terminal; contraseña oculta. Destino fijo:
 https://aprueba-student-api.vercel.app/api/v1. No admite redirecciones ni otro host.
-No pegar credenciales en ChatGPT ni en los archivos. Conservar únicamente el JSON
-Resultado_rendimiento_API_....json para revisión posterior.
+Las credenciales de prueba se introducen solo en la terminal. El registro de la medición
+se guarda en Resultado_rendimiento_API_....json.
 
 El login puede conceder premio diario. GET /me guarda el perfil y normaliza la cuota
 según el código original. Por eso no se presenta esta medición como libre de escrituras.

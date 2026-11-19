@@ -1,0 +1,1108 @@
+{
+  "scope": "LOCAL_CROSS_SERVICE_REHEARSAL_NOT_EXTERNAL_INTEGRATION",
+  "outcome": "PASS",
+  "startedAt": "2026-11-18T02:20:01.984Z",
+  "ticket": "APR-84",
+  "candidate": "DAD20-LOCAL-20261118-REV4",
+  "backendManifestSha256": "29f7677b86c349b9ee28c36afd09c683029a34def9876278b32ae64f4beb6bae",
+  "project": "demo-apr84-1794968401984",
+  "node": "v24.22.1",
+  "emulator": {
+    "version": "1.22.0",
+    "sha256": "9b6498b7f62714d67f48f59b3818883cd682dbcd46b9f59511de81c97bb5166c"
+  },
+  "checks": [
+    {
+      "id": "C01",
+      "name": "Both actual entrypoints start against one isolated Firestore project",
+      "result": "PASS"
+    },
+    {
+      "id": "C02",
+      "name": "Two students register and log in; finance admin logs in through actual HTTP routes",
+      "result": "PASS"
+    },
+    {
+      "id": "UI-API-01",
+      "name": "Lectura inicial de Mi plan devuelve cuenta gratis, catálogo, cuota y hora de reinicio",
+      "result": "PASS"
+    },
+    {
+      "id": "C03",
+      "name": "Checkout is created through the full application without granting a paid right",
+      "result": "PASS"
+    },
+    {
+      "id": "UI-API-02",
+      "name": "Al volver con el pago pendiente, consultar estado, catálogo y cuota conserva la sesión y el plan gratuito",
+      "result": "PASS"
+    },
+    {
+      "id": "C04",
+      "name": "Signed webhook enters the real app and persists one financial entitlement",
+      "result": "PASS"
+    },
+    {
+      "id": "C05",
+      "name": "Student and finance admin read matching subscription, owner, amount and period",
+      "result": "PASS"
+    },
+    {
+      "id": "UI-API-03",
+      "name": "Las lecturas de retorno confirmado conservan la suscripción y la cuota ilimitada",
+      "result": "PASS"
+    },
+    {
+      "id": "C06",
+      "name": "Repeating the confirmed event preserves the same financial projection",
+      "result": "PASS"
+    },
+    {
+      "id": "C07",
+      "name": "The other logged-in student sees no purchased subscription, invoice or foreign Checkout",
+      "result": "PASS"
+    },
+    {
+      "id": "C08",
+      "name": "Supplied backend sources and dependency locks remain byte-identical",
+      "result": "PASS"
+    }
+  ],
+  "observations": [
+    {
+      "label": "student-health",
+      "route": "/health",
+      "status": 200,
+      "body": {
+        "status": "ok",
+        "service": "aprueba-student-api",
+        "driver": "firestore"
+      }
+    },
+    {
+      "label": "admin-health",
+      "route": "/health",
+      "status": 200,
+      "body": {
+        "status": "ok",
+        "service": "aprueba-admin-api"
+      }
+    },
+    {
+      "label": "buyer-registered",
+      "route": "/api/v1/auth/register",
+      "status": 201,
+      "body": {
+        "data": {
+          "user": {
+            "id": "usr_9be2a417d4",
+            "name": "Synthetic buyer",
+            "email": "apr84-buyer@example.invalid",
+            "plan": "free",
+            "streak": 0,
+            "quota": {
+              "used": 0,
+              "max": 10
+            },
+            "medals": {
+              "bronze": 1,
+              "silver": 0,
+              "gold": 0,
+              "diamond": 0,
+              "platinum": 0
+            },
+            "authProvider": "password",
+            "phone": null,
+            "phoneVerified": false,
+            "country": "CL",
+            "language": "es",
+            "gradeId": null,
+            "onboarded": false
+          },
+          "expiresIn": 900
+        },
+        "error": null,
+        "meta": {
+          "requestId": "req_8abb9342-e20",
+          "timestamp": "2026-11-18T02:20:07.395Z"
+        }
+      }
+    },
+    {
+      "label": "buyer-logged-in",
+      "route": "/api/v1/auth/login",
+      "status": 200,
+      "body": {
+        "data": {
+          "user": {
+            "id": "usr_9be2a417d4",
+            "name": "Synthetic buyer",
+            "email": "apr84-buyer@example.invalid",
+            "plan": "free",
+            "streak": 1,
+            "quota": {
+              "used": 0,
+              "max": 10
+            },
+            "medals": {
+              "bronze": 2,
+              "silver": 0,
+              "gold": 0,
+              "diamond": 0,
+              "platinum": 0
+            },
+            "authProvider": "password",
+            "phone": null,
+            "phoneVerified": false,
+            "country": "CL",
+            "language": "es",
+            "gradeId": null,
+            "onboarded": false
+          },
+          "expiresIn": 900,
+          "dailyLoginReward": {
+            "tier": "bronze",
+            "amount": 1
+          }
+        },
+        "error": null,
+        "meta": {
+          "requestId": "req_b1f5f2d8-c8e",
+          "timestamp": "2026-11-18T02:20:07.600Z"
+        }
+      }
+    },
+    {
+      "label": "other-registered",
+      "route": "/api/v1/auth/register",
+      "status": 201,
+      "body": {
+        "data": {
+          "user": {
+            "id": "usr_6d46be75a6",
+            "name": "Synthetic other",
+            "email": "apr84-other@example.invalid",
+            "plan": "free",
+            "streak": 0,
+            "quota": {
+              "used": 0,
+              "max": 10
+            },
+            "medals": {
+              "bronze": 1,
+              "silver": 0,
+              "gold": 0,
+              "diamond": 0,
+              "platinum": 0
+            },
+            "authProvider": "password",
+            "phone": null,
+            "phoneVerified": false,
+            "country": "CL",
+            "language": "es",
+            "gradeId": null,
+            "onboarded": false
+          },
+          "expiresIn": 900
+        },
+        "error": null,
+        "meta": {
+          "requestId": "req_61797921-53d",
+          "timestamp": "2026-11-18T02:20:07.705Z"
+        }
+      }
+    },
+    {
+      "label": "other-logged-in",
+      "route": "/api/v1/auth/login",
+      "status": 200,
+      "body": {
+        "data": {
+          "user": {
+            "id": "usr_6d46be75a6",
+            "name": "Synthetic other",
+            "email": "apr84-other@example.invalid",
+            "plan": "free",
+            "streak": 1,
+            "quota": {
+              "used": 0,
+              "max": 10
+            },
+            "medals": {
+              "bronze": 2,
+              "silver": 0,
+              "gold": 0,
+              "diamond": 0,
+              "platinum": 0
+            },
+            "authProvider": "password",
+            "phone": null,
+            "phoneVerified": false,
+            "country": "CL",
+            "language": "es",
+            "gradeId": null,
+            "onboarded": false
+          },
+          "expiresIn": 900,
+          "dailyLoginReward": {
+            "tier": "bronze",
+            "amount": 1
+          }
+        },
+        "error": null,
+        "meta": {
+          "requestId": "req_dfa3ae68-a2b",
+          "timestamp": "2026-11-18T02:20:07.831Z"
+        }
+      }
+    },
+    {
+      "label": "finance-logged-in",
+      "route": "/api/v1/admin/auth/login",
+      "status": 200,
+      "body": {
+        "data": {
+          "user": {
+            "id": "adm_apr84_finance",
+            "name": "Synthetic finance",
+            "role": "finance",
+            "email": "apr84-finance@example.invalid"
+          }
+        },
+        "error": null,
+        "meta": {
+          "requestId": "req_ccd271e4-db7",
+          "timestamp": "2026-11-18T02:20:08.305Z"
+        }
+      }
+    },
+    {
+      "label": "free /plans",
+      "route": "/api/v1/plans",
+      "status": 200,
+      "body": {
+        "data": [
+          {
+            "id": "all",
+            "popular": false,
+            "features": [],
+            "price": {
+              "monthly": 5,
+              "yearly": 50
+            }
+          }
+        ],
+        "error": null,
+        "meta": {
+          "requestId": "req_462209a6-75b",
+          "timestamp": "2026-11-18T02:20:08.336Z"
+        }
+      }
+    },
+    {
+      "label": "free /billing/status",
+      "route": "/api/v1/billing/status",
+      "status": 200,
+      "body": {
+        "data": {
+          "subscription": null,
+          "checkout": null,
+          "billingIdentity": {
+            "status": "unlinked",
+            "issues": []
+          }
+        },
+        "error": null,
+        "meta": {
+          "requestId": "req_48e5d14e-fdb",
+          "timestamp": "2026-11-18T02:20:08.434Z"
+        }
+      }
+    },
+    {
+      "label": "free /me/quota",
+      "route": "/api/v1/me/quota",
+      "status": 200,
+      "body": {
+        "data": {
+          "used": 0,
+          "max": 10,
+          "freeMax": 10,
+          "base": 10,
+          "bonuses": {
+            "school": false,
+            "address": false
+          },
+          "unlimited": false,
+          "unlimitedTestId": null,
+          "resetsAt": "2026-11-19T00:00:00.000Z"
+        },
+        "error": null,
+        "meta": {
+          "requestId": "req_f40bf193-7ed",
+          "timestamp": "2026-11-18T02:20:08.472Z"
+        }
+      }
+    },
+    {
+      "label": "checkout-created",
+      "route": "/api/v1/checkout/sessions",
+      "status": 201,
+      "body": {
+        "data": {
+          "checkoutSessionId": "cs_test_apr841",
+          "url": "https://checkout.stripe.com/c/pay/apr84-synthetic-not-a-real-session",
+          "amount": 5,
+          "currency": "USD",
+          "plan": "all",
+          "testId": null,
+          "billingCycle": "monthly"
+        },
+        "error": null,
+        "meta": {
+          "requestId": "req_16e6a4cb-280",
+          "timestamp": "2026-11-18T02:20:08.723Z"
+        }
+      }
+    },
+    {
+      "label": "pending-status",
+      "route": "/api/v1/billing/status?session_id=cs_test_apr841",
+      "status": 200,
+      "body": {
+        "data": {
+          "subscription": null,
+          "checkout": {
+            "id": "cs_test_apr841",
+            "attemptId": "1a6258f0-9c5f-42e2-bbff-854b33ae8be4",
+            "plan": "all",
+            "testId": null,
+            "billingCycle": "monthly",
+            "amount": 5,
+            "currency": "USD",
+            "status": "pending"
+          },
+          "billingIdentity": {
+            "status": "unlinked",
+            "issues": []
+          }
+        },
+        "error": null,
+        "meta": {
+          "requestId": "req_97651b03-3a8",
+          "timestamp": "2026-11-18T02:20:08.804Z"
+        }
+      }
+    },
+    {
+      "label": "pending-return /plans",
+      "route": "/api/v1/plans",
+      "status": 200,
+      "body": {
+        "data": [
+          {
+            "id": "all",
+            "popular": false,
+            "features": [],
+            "price": {
+              "monthly": 5,
+              "yearly": 50
+            }
+          }
+        ],
+        "error": null,
+        "meta": {
+          "requestId": "req_396a5ef2-85f",
+          "timestamp": "2026-11-18T02:20:08.922Z"
+        }
+      }
+    },
+    {
+      "label": "pending-return /billing/status",
+      "route": "/api/v1/billing/status",
+      "status": 200,
+      "body": {
+        "data": {
+          "subscription": null,
+          "checkout": {
+            "id": "cs_test_apr841",
+            "attemptId": "1a6258f0-9c5f-42e2-bbff-854b33ae8be4",
+            "plan": "all",
+            "testId": null,
+            "billingCycle": "monthly",
+            "amount": 5,
+            "currency": "USD",
+            "status": "pending"
+          },
+          "billingIdentity": {
+            "status": "unlinked",
+            "issues": []
+          }
+        },
+        "error": null,
+        "meta": {
+          "requestId": "req_53541a9a-4ee",
+          "timestamp": "2026-11-18T02:20:08.963Z"
+        }
+      }
+    },
+    {
+      "label": "pending-return /me/quota",
+      "route": "/api/v1/me/quota",
+      "status": 200,
+      "body": {
+        "data": {
+          "used": 0,
+          "max": 10,
+          "freeMax": 10,
+          "base": 10,
+          "bonuses": {
+            "school": false,
+            "address": false
+          },
+          "unlimited": false,
+          "unlimitedTestId": null,
+          "resetsAt": "2026-11-19T00:00:00.000Z"
+        },
+        "error": null,
+        "meta": {
+          "requestId": "req_65c217d7-f0c",
+          "timestamp": "2026-11-18T02:20:08.971Z"
+        }
+      }
+    },
+    {
+      "label": "primer-rechazo-abono-cero",
+      "status": 200,
+      "body": {
+        "data": {
+          "received": true,
+          "processed": true
+        },
+        "error": null,
+        "meta": {
+          "requestId": "req_bfb894ff-5ef",
+          "timestamp": "2026-11-18T02:20:09.063Z"
+        }
+      }
+    },
+    {
+      "label": "webhook-confirmation",
+      "status": 200,
+      "body": {
+        "data": {
+          "received": true,
+          "processed": true
+        },
+        "error": null,
+        "meta": {
+          "requestId": "req_40c80b77-b1a",
+          "timestamp": "2026-11-18T02:20:09.239Z"
+        }
+      }
+    },
+    {
+      "label": "student-invoices",
+      "route": "/api/v1/me/invoices",
+      "status": 200,
+      "body": {
+        "data": [
+          {
+            "id": "in_apr84buyer",
+            "amount": 5,
+            "currency": "USD",
+            "status": "paid",
+            "paidAt": "2026-11-18T02:20:08.000Z",
+            "pdfUrl": null
+          }
+        ],
+        "error": null,
+        "meta": {
+          "requestId": "req_5b78aae7-9f0",
+          "timestamp": "2026-11-18T02:20:09.367Z"
+        }
+      }
+    },
+    {
+      "label": "confirmed-billing-status",
+      "route": "/api/v1/billing/status?session_id=cs_test_apr841",
+      "status": 200,
+      "body": {
+        "data": {
+          "subscription": {
+            "id": "sub_apr84buyer",
+            "plan": "all",
+            "testId": null,
+            "billingCycle": "monthly",
+            "status": "active",
+            "accessActive": true,
+            "paymentPending": false,
+            "currentPeriodEnd": "2026-12-18T02:20:08.000Z",
+            "cancelAtPeriodEnd": false,
+            "paymentMethod": {
+              "last4": "4242",
+              "brand": "visa"
+            },
+            "uniAssignment": null
+          },
+          "checkout": {
+            "id": "cs_test_apr841",
+            "attemptId": "1a6258f0-9c5f-42e2-bbff-854b33ae8be4",
+            "plan": "all",
+            "testId": null,
+            "billingCycle": "monthly",
+            "amount": 5,
+            "currency": "USD",
+            "status": "active"
+          },
+          "billingIdentity": {
+            "status": "consistent",
+            "issues": []
+          }
+        },
+        "error": null,
+        "meta": {
+          "requestId": "req_c07f6fd2-dec",
+          "timestamp": "2026-11-18T02:20:09.387Z"
+        }
+      }
+    },
+    {
+      "label": "student-subscription",
+      "route": "/api/v1/me/subscription",
+      "status": 200,
+      "body": {
+        "data": {
+          "id": "sub_apr84buyer",
+          "plan": "all",
+          "billingCycle": "monthly",
+          "status": "active",
+          "currentPeriodEnd": "2026-12-18T02:20:08.000Z",
+          "cancelAtPeriodEnd": false,
+          "paymentMethod": {
+            "last4": "4242",
+            "brand": "visa"
+          },
+          "billingIdentity": {
+            "status": "consistent",
+            "issues": []
+          }
+        },
+        "error": null,
+        "meta": {
+          "requestId": "req_b4636352-f2e",
+          "timestamp": "2026-11-18T02:20:09.390Z"
+        }
+      }
+    },
+    {
+      "label": "admin-subscriptions",
+      "route": "/api/v1/admin/billing/subscriptions",
+      "status": 200,
+      "body": {
+        "data": [
+          {
+            "id": "sub_apr84buyer",
+            "user": {
+              "id": "usr_9be2a417d4",
+              "name": "Synthetic buyer",
+              "email": "apr84-buyer@example.invalid"
+            },
+            "status": "active",
+            "updatedAt": "2026-11-18T02:20:09.226Z",
+            "plan": "all",
+            "billingCycle": "monthly",
+            "testId": null,
+            "testLabel": null,
+            "paymentPending": false,
+            "currentPeriodEnd": "2026-12-18T02:20:08.000Z",
+            "cancelAtPeriodEnd": false,
+            "billingIdentity": {
+              "status": "consistent",
+              "issues": []
+            },
+            "accessActive": true
+          }
+        ],
+        "error": null,
+        "meta": {
+          "requestId": "req_100ec5f5-cf2",
+          "timestamp": "2026-11-18T02:20:09.397Z",
+          "mode": "test",
+          "pagination": {
+            "pageSize": 25,
+            "nextCursor": null
+          }
+        }
+      }
+    },
+    {
+      "label": "admin-invoices",
+      "route": "/api/v1/admin/billing/invoices",
+      "status": 200,
+      "body": {
+        "data": [
+          {
+            "id": "in_apr84buyer",
+            "user": {
+              "id": "usr_9be2a417d4",
+              "name": "Synthetic buyer",
+              "email": "apr84-buyer@example.invalid"
+            },
+            "status": "paid",
+            "updatedAt": "2026-11-18T02:20:09.226Z",
+            "subscriptionId": "sub_apr84buyer",
+            "billingIdentity": {
+              "status": "consistent",
+              "issues": []
+            },
+            "amountCents": 500,
+            "createdAt": "2026-11-18T02:20:08.000Z",
+            "paidAt": "2026-11-18T02:20:08.000Z",
+            "hostedInvoiceUrl": null,
+            "pdfUrl": null
+          }
+        ],
+        "error": null,
+        "meta": {
+          "requestId": "req_f2ce3f57-9e2",
+          "timestamp": "2026-11-18T02:20:09.409Z",
+          "mode": "test",
+          "pagination": {
+            "pageSize": 25,
+            "nextCursor": null
+          }
+        }
+      }
+    },
+    {
+      "label": "confirmed-return /plans",
+      "route": "/api/v1/plans",
+      "status": 200,
+      "body": {
+        "data": [
+          {
+            "id": "all",
+            "popular": false,
+            "features": [],
+            "price": {
+              "monthly": 5,
+              "yearly": 50
+            }
+          }
+        ],
+        "error": null,
+        "meta": {
+          "requestId": "req_077dec23-9c4",
+          "timestamp": "2026-11-18T02:20:09.422Z"
+        }
+      }
+    },
+    {
+      "label": "confirmed-return /me/quota",
+      "route": "/api/v1/me/quota",
+      "status": 200,
+      "body": {
+        "data": {
+          "used": 0,
+          "max": 999999,
+          "freeMax": 10,
+          "base": 10,
+          "bonuses": {
+            "school": false,
+            "address": false
+          },
+          "unlimited": true,
+          "unlimitedTestId": null,
+          "resetsAt": "2026-11-19T00:00:00.000Z"
+        },
+        "error": null,
+        "meta": {
+          "requestId": "req_56cfbae2-431",
+          "timestamp": "2026-11-18T02:20:09.496Z"
+        }
+      }
+    },
+    {
+      "label": "confirmed-return /billing/status?session_id=cs_test_apr841",
+      "route": "/api/v1/billing/status?session_id=cs_test_apr841",
+      "status": 200,
+      "body": {
+        "data": {
+          "subscription": {
+            "id": "sub_apr84buyer",
+            "plan": "all",
+            "testId": null,
+            "billingCycle": "monthly",
+            "status": "active",
+            "accessActive": true,
+            "paymentPending": false,
+            "currentPeriodEnd": "2026-12-18T02:20:08.000Z",
+            "cancelAtPeriodEnd": false,
+            "paymentMethod": {
+              "last4": "4242",
+              "brand": "visa"
+            },
+            "uniAssignment": null
+          },
+          "checkout": {
+            "id": "cs_test_apr841",
+            "attemptId": "1a6258f0-9c5f-42e2-bbff-854b33ae8be4",
+            "plan": "all",
+            "testId": null,
+            "billingCycle": "monthly",
+            "amount": 5,
+            "currency": "USD",
+            "status": "active"
+          },
+          "billingIdentity": {
+            "status": "consistent",
+            "issues": []
+          }
+        },
+        "error": null,
+        "meta": {
+          "requestId": "req_3375ec94-fdc",
+          "timestamp": "2026-11-18T02:20:09.508Z"
+        }
+      }
+    },
+    {
+      "label": "webhook-replay",
+      "status": 200,
+      "body": {
+        "data": {
+          "received": true,
+          "duplicate": true
+        },
+        "error": null,
+        "meta": {
+          "requestId": "req_57a8de0a-34b",
+          "timestamp": "2026-11-18T02:20:09.592Z"
+        }
+      }
+    },
+    {
+      "label": "other-invoices",
+      "route": "/api/v1/me/invoices",
+      "status": 200,
+      "body": {
+        "data": [],
+        "error": null,
+        "meta": {
+          "requestId": "req_30f8ac78-fe2",
+          "timestamp": "2026-11-18T02:20:09.686Z"
+        }
+      }
+    },
+    {
+      "label": "other-status",
+      "route": "/api/v1/billing/status",
+      "status": 200,
+      "body": {
+        "data": {
+          "subscription": null,
+          "checkout": null,
+          "billingIdentity": {
+            "status": "unlinked",
+            "issues": []
+          }
+        },
+        "error": null,
+        "meta": {
+          "requestId": "req_24a91b53-d79",
+          "timestamp": "2026-11-18T02:20:09.696Z"
+        }
+      }
+    },
+    {
+      "label": "foreign-checkout",
+      "route": "/api/v1/billing/status?session_id=cs_test_apr841",
+      "status": 404,
+      "body": {
+        "data": null,
+        "error": {
+          "code": "CHECKOUT_NOT_FOUND",
+          "message": "No se encontro esa compra en tu cuenta.",
+          "details": [],
+          "field": null
+        },
+        "meta": {
+          "requestId": "req_6d244457-629",
+          "timestamp": "2026-11-18T02:20:09.704Z"
+        }
+      }
+    },
+    {
+      "label": "evt_apr95_ciencias",
+      "status": 200,
+      "body": {
+        "data": {
+          "received": true,
+          "processed": true
+        },
+        "error": null,
+        "meta": {
+          "requestId": "req_25e80add-097",
+          "timestamp": "2026-11-18T02:20:09.816Z"
+        }
+      }
+    },
+    {
+      "label": "evt_apr95_mejora_fallida",
+      "status": 200,
+      "body": {
+        "data": {
+          "received": true,
+          "processed": true
+        },
+        "error": null,
+        "meta": {
+          "requestId": "req_7faff33d-1a0",
+          "timestamp": "2026-11-18T02:20:09.983Z"
+        }
+      }
+    },
+    {
+      "label": "evt_apr95_cobro_recuperado",
+      "status": 200,
+      "body": {
+        "data": {
+          "received": true,
+          "processed": true
+        },
+        "error": null,
+        "meta": {
+          "requestId": "req_a04a9282-e51",
+          "timestamp": "2026-11-18T02:20:10.133Z"
+        }
+      }
+    },
+    {
+      "label": "reenvio-recuperacion",
+      "status": 200,
+      "body": {
+        "data": {
+          "received": true,
+          "duplicate": true
+        },
+        "error": null,
+        "meta": {
+          "requestId": "req_53e877f6-634",
+          "timestamp": "2026-11-18T02:20:10.222Z"
+        }
+      }
+    }
+  ],
+  "limitations": [
+    "Two supplied backend entrypoints and their current local identity are exercised; no implementation from another group is included.",
+    "Stripe SDK uses a synthetic loopback HTTP provider. No remote Stripe sandbox, card network or actual charges are tested.",
+    "Firestore Emulator only; cloud IAM/rules/indexes and operational deployment are not validated.",
+    "HTTP registration/login use temporary synthetic accounts; phone verification is disabled only in the isolated test environment.",
+    "No browser or hosted Checkout page is used; CORS preflight, refresh-cookie roundtrip, UI rendering and navigation are not certified.",
+    "HTTP requests use loopback. The unchanged administrator entrypoint binds to its default interfaces rather than honoring HOST.",
+    "Financial snapshots contain a documented field selection, not whole Firestore documents or authentication/session stores.",
+    "This single financial journey contains multiple checkpoints; they are not independent complete acceptance scenarios.",
+    "The selected backend is exercised locally. Browser interactions, Docker, deployment and external integration are outside this HTTP run."
+  ],
+  "financialJourneyCount": 1,
+  "checkCount": 11,
+  "providerHttpCalls": [
+    {
+      "method": "GET",
+      "path": "/v1/prices/price_all_monthly",
+      "query": {}
+    },
+    {
+      "method": "GET",
+      "path": "/v1/checkout/sessions",
+      "query": {
+        "created[gte]": "1794968108",
+        "created[lte]": "1794968409",
+        "limit": "100"
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/v1/checkout/sessions",
+      "query": {}
+    },
+    {
+      "method": "GET",
+      "path": "/v1/invoices/in_apr84buyer",
+      "query": {}
+    },
+    {
+      "method": "GET",
+      "path": "/v1/subscriptions/sub_apr84buyer",
+      "query": {
+        "expand[0]": "latest_invoice",
+        "expand[1]": "default_payment_method",
+        "expand[2]": "default_source",
+        "expand[3]": "customer.invoice_settings.default_payment_method",
+        "expand[4]": "customer.default_source"
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/v1/checkout/sessions/cs_test_apr841",
+      "query": {}
+    },
+    {
+      "method": "GET",
+      "path": "/v1/subscriptions/sub_apr84buyer",
+      "query": {
+        "expand[0]": "latest_invoice",
+        "expand[1]": "default_payment_method",
+        "expand[2]": "default_source",
+        "expand[3]": "customer.invoice_settings.default_payment_method",
+        "expand[4]": "customer.default_source"
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/v1/invoices/in_apr84buyer",
+      "query": {}
+    },
+    {
+      "method": "GET",
+      "path": "/v1/checkout/sessions/cs_test_apr841",
+      "query": {}
+    },
+    {
+      "method": "GET",
+      "path": "/v1/checkout/sessions/cs_test_apr841",
+      "query": {}
+    },
+    {
+      "method": "GET",
+      "path": "/v1/subscriptions/sub_apr84buyer",
+      "query": {
+        "expand[0]": "latest_invoice",
+        "expand[1]": "default_payment_method",
+        "expand[2]": "default_source",
+        "expand[3]": "customer.invoice_settings.default_payment_method",
+        "expand[4]": "customer.default_source"
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/v1/invoices/in_apr95_ciencias",
+      "query": {}
+    },
+    {
+      "method": "GET",
+      "path": "/v1/subscriptions/sub_apr84buyer",
+      "query": {
+        "expand[0]": "latest_invoice",
+        "expand[1]": "default_payment_method",
+        "expand[2]": "default_source",
+        "expand[3]": "customer.invoice_settings.default_payment_method",
+        "expand[4]": "customer.default_source"
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/v1/checkout/sessions/cs_test_apr841",
+      "query": {}
+    },
+    {
+      "method": "GET",
+      "path": "/v1/subscriptions/sub_apr84buyer",
+      "query": {
+        "expand[0]": "latest_invoice",
+        "expand[1]": "default_payment_method",
+        "expand[2]": "default_source",
+        "expand[3]": "customer.invoice_settings.default_payment_method",
+        "expand[4]": "customer.default_source"
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/v1/invoices/in_apr95_ciencias",
+      "query": {}
+    },
+    {
+      "method": "GET",
+      "path": "/v1/invoices/in_apr95_mejora",
+      "query": {}
+    },
+    {
+      "method": "GET",
+      "path": "/v1/subscriptions/sub_apr84buyer",
+      "query": {
+        "expand[0]": "latest_invoice",
+        "expand[1]": "default_payment_method",
+        "expand[2]": "default_source",
+        "expand[3]": "customer.invoice_settings.default_payment_method",
+        "expand[4]": "customer.default_source"
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/v1/checkout/sessions/cs_test_apr841",
+      "query": {}
+    },
+    {
+      "method": "GET",
+      "path": "/v1/subscriptions/sub_apr84buyer",
+      "query": {
+        "expand[0]": "latest_invoice",
+        "expand[1]": "default_payment_method",
+        "expand[2]": "default_source",
+        "expand[3]": "customer.invoice_settings.default_payment_method",
+        "expand[4]": "customer.default_source"
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/v1/invoices/in_apr95_mejora",
+      "query": {}
+    },
+    {
+      "method": "GET",
+      "path": "/v1/invoices/in_apr95_mejora",
+      "query": {}
+    },
+    {
+      "method": "GET",
+      "path": "/v1/subscriptions/sub_apr84buyer",
+      "query": {
+        "expand[0]": "latest_invoice",
+        "expand[1]": "default_payment_method",
+        "expand[2]": "default_source",
+        "expand[3]": "customer.invoice_settings.default_payment_method",
+        "expand[4]": "customer.default_source"
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/v1/checkout/sessions/cs_test_apr841",
+      "query": {}
+    },
+    {
+      "method": "GET",
+      "path": "/v1/subscriptions/sub_apr84buyer",
+      "query": {
+        "expand[0]": "latest_invoice",
+        "expand[1]": "default_payment_method",
+        "expand[2]": "default_source",
+        "expand[3]": "customer.invoice_settings.default_payment_method",
+        "expand[4]": "customer.default_source"
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/v1/invoices/in_apr95_mejora",
+      "query": {}
+    }
+  ],
+  "identifiers": {
+    "userId": "usr_9be2a417d4",
+    "sessionId": "cs_test_apr841",
+    "attemptId": "1a6258f0-9c5f-42e2-bbff-854b33ae8be4",
+    "subscriptionId": "sub_apr84buyer",
+    "invoiceId": "in_apr84buyer"
+  },
+  "finishedAt": "2026-11-18T02:20:10.783Z"
+}

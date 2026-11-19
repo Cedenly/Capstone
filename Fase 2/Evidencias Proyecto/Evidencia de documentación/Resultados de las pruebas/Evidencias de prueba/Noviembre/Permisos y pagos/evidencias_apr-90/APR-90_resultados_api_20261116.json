@@ -1,0 +1,114 @@
+{
+ "ejecucion": "2026-11-16T18:59:50Z (16-11-2026 15:59, America/Santiago)",
+ "entorno": "API publicada aprueba-student-api.vercel.app y aprueba-admin-api.vercel.app (modo de prueba de Stripe)",
+ "resultados": [
+  {
+   "id": "T01",
+   "sesion": "Sin sesión",
+   "ruta": "POST /checkout/sessions",
+   "operacion": "Crear compra",
+   "esperado": "401",
+   "observado": "401 AUTH_REQUIRED",
+   "resultado": "Aprobado"
+  },
+  {
+   "id": "T02",
+   "sesion": "Sin sesión",
+   "ruta": "POST /billing/portal",
+   "operacion": "Abrir portal de Stripe",
+   "esperado": "401",
+   "observado": "401 AUTH_REQUIRED",
+   "resultado": "Aprobado"
+  },
+  {
+   "id": "T03",
+   "sesion": "Sin sesión",
+   "ruta": "GET /me/invoices",
+   "operacion": "Listar facturas",
+   "esperado": "401",
+   "observado": "401 AUTH_REQUIRED",
+   "resultado": "Aprobado"
+  },
+  {
+   "id": "T04",
+   "sesion": "Sin sesión",
+   "ruta": "GET /me/subscription",
+   "operacion": "Ver suscripción",
+   "esperado": "401",
+   "observado": "401 AUTH_REQUIRED",
+   "resultado": "Aprobado"
+  },
+  {
+   "id": "T05",
+   "sesion": "Sin sesión",
+   "ruta": "POST /checkout/sessions/{sesión de GP}/cancel",
+   "operacion": "Descartar intento ajeno",
+   "esperado": "401",
+   "observado": "401 AUTH_REQUIRED",
+   "resultado": "Aprobado"
+  },
+  {
+   "id": "T06",
+   "sesion": "Sin sesión",
+   "ruta": "GET /billing/status",
+   "operacion": "Estado de facturación",
+   "esperado": "401",
+   "observado": "401 AUTH_REQUIRED",
+   "resultado": "Aprobado"
+  },
+  {
+   "id": "T07",
+   "sesion": "Alumno B",
+   "ruta": "GET /billing/status?session_id={sesión de GP}",
+   "operacion": "Consultar la compra de otro alumno",
+   "esperado": "404 sin datos de GP",
+   "observado": "404 CHECKOUT_NOT_FOUND, sin datos de GP",
+   "resultado": "Aprobado"
+  },
+  {
+   "id": "T08",
+   "sesion": "Alumno B",
+   "ruta": "POST /checkout/sessions/{sesión de GP}/cancel",
+   "operacion": "Descartar la compra de otro alumno",
+   "esperado": "404 y compra de GP intacta",
+   "observado": "404 CHECKOUT_NOT_FOUND, sin datos de GP",
+   "resultado": "Aprobado"
+  },
+  {
+   "id": "T09",
+   "sesion": "Alumno B",
+   "ruta": "POST /billing/portal con customer ajeno en el cuerpo",
+   "operacion": "Abrir el portal de otro cliente",
+   "esperado": "Rechazo; el servidor no acepta un cliente indicado por el navegador",
+   "observado": "400 PORTAL_BODY_NOT_ALLOWED, sin URL de portal",
+   "resultado": "Aprobado"
+  },
+  {
+   "id": "T10",
+   "sesion": "Alumno B",
+   "ruta": "GET /me/invoices",
+   "operacion": "Listar solo facturas propias",
+   "esperado": "200 con solo las propias",
+   "observado": "200, lista vacía (B no tiene compras)",
+   "resultado": "Aprobado"
+  },
+  {
+   "id": "T11",
+   "sesion": "Alumno B",
+   "ruta": "GET /billing/status",
+   "operacion": "Consultar solo su propio estado",
+   "esperado": "200 con el estado de B",
+   "observado": "200, suscripción y checkout en null (estado propio de B)",
+   "resultado": "Aprobado"
+  },
+  {
+   "id": "T12",
+   "sesion": "Alumno B",
+   "ruta": "GET [admin] /admin/billing/subscriptions",
+   "operacion": "Usar la facturación administrativa",
+   "esperado": "Rechazo",
+   "observado": "401 AUTH_INVALID",
+   "resultado": "Aprobado"
+  }
+ ]
+}

@@ -1,0 +1,7 @@
+[aprueba-student-api] escuchando en http://localhost:42775/api/v1 (driver: firestore)
+[firebase] Emulador Firestore en 127.0.0.1:44933
+[stripe webhook] evt_prueba_todas_una_archivada BILLING_TEST_REQUIRED
+[stripe webhook] evt_prueba_todas_una_retirada BILLING_TEST_REQUIRED
+[stripe webhook] evt_prueba_todas_una_sin_contenido BILLING_TEST_REQUIRED
+[stripe webhook] evt_prueba_nueva_vigencia_tras_gap BILLING_TEST_REQUIRED
+[stripe webhook] evt_prueba_recuperacion_historica BILLING_TEST_REQUIRED

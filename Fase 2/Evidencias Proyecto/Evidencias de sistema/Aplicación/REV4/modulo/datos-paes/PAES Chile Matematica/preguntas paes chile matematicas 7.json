@@ -1,0 +1,377 @@
+[
+  {
+    "pregunta": "Resuelve la ecuación: 5 - 2(3x - 1) = 4x + 7.",
+    "alternativas": ["0", "1", "-1", "2", "-2"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Paso 1: Distribuir: 5 - 6x + 2 = 4x + 7 → 7 - 6x = 4x + 7. Paso 2: Restar 7: -6x = 4x → -6x - 4x = 0 → -10x = 0 → x = 0.",
+    "habilidad_requerida": "Clase: Ecuaciones lineales con paréntesis y términos en ambos lados. Simplificar paso a paso. Ejemplo: 3(x-2)+4=2x+1 → 3x-6+4=2x+1 → 3x-2=2x+1 → x=3."
+  },
+  {
+    "pregunta": "Un ángulo mide 30° más que el triple de su complemento. ¿Cuánto mide el ángulo?",
+    "alternativas": ["75°", "60°", "45°", "30°", "90°"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Paso 1: Sea x el ángulo. Complemento = 90° - x. Ecuación: x = 3(90 - x) + 30 → x = 270 - 3x + 30 → x = 300 - 3x → 4x = 300 → x = 75°.",
+    "habilidad_requerida": "Clase: Problemas de ángulos complementarios. Complemento: 90° - x. Suplemento: 180° - x. Plantear ecuación. Ejemplo: un ángulo es el doble de su complemento → x=2(90-x) → x=180-2x → 3x=180 → x=60°."
+  },
+  {
+    "pregunta": "Halla el valor de x en la proporción: (x+1)/(x-1) = 3/2.",
+    "alternativas": ["5", "4", "3", "2", "1"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Paso 1: Multiplicar cruzado: 2(x+1) = 3(x-1) → 2x+2 = 3x-3 → 2+3 = 3x-2x → x=5.",
+    "habilidad_requerida": "Clase: Proporciones con expresiones algebraicas. Multiplicar extremos y medios. Ejemplo: (2x-1)/(x+3)=1/2 → 2(2x-1)=1(x+3) → 4x-2=x+3 → 3x=5 → x=5/3."
+  },
+  {
+    "pregunta": "Calcula la distancia entre los puntos (a, 2a) y (2a, a).",
+    "alternativas": ["a√2", "a", "2a", "a√3", "0"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Paso 1: Δx = 2a - a = a, Δy = a - 2a = -a. d = √(a² + (-a)²)= √(2a²)= a√2.",
+    "habilidad_requerida": "Clase: Distancia con parámetros. Simplificar usando álgebra. Ejemplo: (t, t+1) y (t+1, t) → Δx=1,Δy=-1 → d=√2."
+  },
+  {
+    "pregunta": "La suma de dos números es 15 y su diferencia es 3. ¿Cuál es el producto?",
+    "alternativas": ["54", "45", "36", "27", "18"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Paso 1: Sean x e y. x+y=15, x-y=3 → sumando: 2x=18→x=9, y=6. Producto=54.",
+    "habilidad_requerida": "Clase: Sistema de dos ecuaciones lineales. Resolver por reducción. Ejemplo: suma 10, diferencia 4 → números 7 y 3, producto 21."
+  },
+  {
+    "pregunta": "Resuelve la desigualdad: (2x-1)/3 ≤ (x+4)/2.",
+    "alternativas": ["x ≤ 14", "x ≥ 14", "x ≤ 7", "x ≥ 7", "x ≤ 2"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Paso 1: Multiplicar por 6: 2(2x-1) ≤ 3(x+4) → 4x-2 ≤ 3x+12 → 4x-3x ≤ 12+2 → x ≤ 14.",
+    "habilidad_requerida": "Clase: Inecuaciones con fracciones. Multiplicar por el mcm positivo (no invierte signo). Ejemplo: (3x+1)/2 > (x-2)/3 → multiplicar por 6: 3(3x+1) > 2(x-2) → 9x+3 > 2x-4 → 7x > -7 → x > -1."
+  },
+  {
+    "pregunta": "Si el área de un cuadrado es 64 cm², ¿cuál es su diagonal?",
+    "alternativas": ["8√2 cm", "8 cm", "16 cm", "4√2 cm", "12 cm"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Paso 1: Lado = √64 = 8 cm. Diagonal = lado·√2 = 8√2 cm.",
+    "habilidad_requerida": "Clase: Relación entre lado y diagonal de un cuadrado. Diagonal = L√2. Ejemplo: lado 5 → diagonal 5√2."
+  },
+  {
+    "pregunta": "Halla la derivada de f(x) = x·ln x - x.",
+    "alternativas": ["ln x", "ln x - 1", "1/x", "x", "ln x + 1"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Paso 1: f'(x) = [1·ln x + x·(1/x)] - 1 = ln x + 1 - 1 = ln x.",
+    "habilidad_requerida": "Clase: Derivada de productos y funciones logarítmicas. Recordar d/dx[x ln x] = ln x + 1. Ejemplo: g(x)= x ln x → g'(x)= ln x + 1."
+  },
+  {
+    "pregunta": "Calcula la integral ∫ (cos 2x) dx.",
+    "alternativas": ["(1/2) sen 2x + C", "2 sen 2x + C", "sen 2x + C", "(1/2) sen 2x + C", "-1/2 cos 2x + C"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Paso 1: Sustitución u=2x, du=2dx → dx=du/2 → ∫ cos u du/2 = (1/2) sen u + C = (1/2) sen 2x + C.",
+    "habilidad_requerida": "Clase: Integral de coseno de argumento lineal. ∫ cos(kx) dx = (1/k) sen(kx) + C. Ejemplo: ∫ cos(3x) dx = (1/3) sen 3x + C."
+  },
+  {
+    "pregunta": "Se lanza un dado dos veces. ¿Cuál es la probabilidad de que la suma sea 9?",
+    "alternativas": ["1/9", "1/6", "5/36", "1/12", "2/9"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Paso 1: Pares que suman 9: (3,6),(4,5),(5,4),(6,3) → 4 casos. Total 36. Probabilidad = 4/36 = 1/9.",
+    "habilidad_requerida": "Clase: Probabilidad con dos dados. Contar pares ordenados. Ejemplo: suma 8: 5 casos → 5/36."
+  },
+  {
+    "pregunta": "Resuelve: 2^{x+3} = 16^{x-1}.",
+    "alternativas": ["7/3", "2", "3", "5/2", "4"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Paso 1: 16 = 2⁴, entonces 2^{x+3} = (2⁴)^{x-1} = 2^{4x-4}. Paso 2: Igualar exponentes: x+3 = 4x-4 → 3+4 = 4x-x → 7 = 3x → x = 7/3.",
+    "habilidad_requerida": "Clase: Ecuaciones exponenciales con base común. Escribir ambas potencias con la misma base. Ejemplo: 9^{x-2}=27^{x+1} → 3^{2x-4}=3^{3x+3} → 2x-4=3x+3 → x=-7."
+  },
+  {
+    "pregunta": "Un capital de $3000 se invierte al 4% anual compuesto semestralmente. ¿Cuál es el monto después de 2 años?",
+    "alternativas": ["$3247,30", "$3240", "$3250", "$3230", "$3260"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Paso 1: Tasa semestral = 4%/2 = 2% = 0,02. Número de períodos = 2 años × 2 = 4. Paso 2: M = 3000(1+0,02)⁴ = 3000(1,02)⁴. 1,02⁴ ≈ 1,08243216. M ≈ 3000×1,08243216 = 3247,29648 ≈ $3247,30.",
+    "habilidad_requerida": "Clase: Interés compuesto con capitalización semestral. M = C(1 + r/n)^{nt}. Ejemplo: $1000 al 6% anual compuesto trimestral durante 3 años: n=4, t=3, r=0,06 → M=1000(1+0,015)^{12}=1000(1,015)^{12}≈1195,62."
+  },
+  {
+    "pregunta": "¿Cuál es la ecuación de la recta que pasa por (2, -1) y es perpendicular a x + 2y = 3?",
+    "alternativas": ["y = 2x - 5", "y = -2x + 3", "y = (1/2)x - 2", "y = -(1/2)x", "y = 2x + 3"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Paso 1: Despejar y de la recta dada: 2y = -x+3 → y = -1/2 x + 3/2, pendiente m₁=-1/2. Paso 2: Perpendicular m₂ = -1/m₁ = -1/(-1/2)=2. Paso 3: Usar punto (2,-1): y+1=2(x-2) → y=2x-4-1=2x-5.",
+    "habilidad_requerida": "Clase: Rectas perpendiculares a partir de ecuación general. Hallar pendiente, luego usar perpendicular. Ejemplo: perpendicular a 3x-y=1 (pendiente 3) → m₂=-1/3."
+  },
+  {
+    "pregunta": "Simplifica: (3x²y⁻¹)⁻².",
+    "alternativas": ["x^{-4}y^{2}/9", "9x^{-4}y^{2}", "x^{4}y^{-2}/9", "9x^{4}y^{-2}", "x^{4}y^{2}/9"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Paso 1: (3x²y⁻¹)⁻² = 3⁻² x^{-4} y^{2} = (1/9) x^{-4} y^{2} = x^{-4}y^{2}/9.",
+    "habilidad_requerida": "Clase: Potencias negativas de monomios. (a^m b^n)^p = a^{mp} b^{np}. Luego a^{-k}=1/a^k. Ejemplo: (2x³y⁻²)⁻³ = 2⁻³ x^{-9} y^{6} = (1/8) x^{-9} y^{6}."
+  },
+  {
+    "pregunta": "Un triángulo tiene lados 6, 8 y 10. ¿Cuál es su área?",
+    "alternativas": ["24", "30", "40", "48", "20"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Paso 1: 6²+8²=36+64=100=10², es rectángulo con catetos 6 y 8. Área = (6×8)/2 = 48/2=24.",
+    "habilidad_requerida": "Clase: Área de triángulo rectángulo. Si es rectángulo, área = (producto de catetos)/2. Ejemplo: catetos 5 y 12 → área=30."
+  },
+  {
+    "pregunta": "Resuelve la ecuación cuadrática: 2x² - 5x - 3 = 0.",
+    "alternativas": ["x=3, x=-1/2", "x=-3, x=1/2", "x=3/2, x=-1", "x= -3/2, x=1", "x=5±√37)/4"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Paso 1: Factorizar: (2x+1)(x-3)=0 → 2x+1=0 → x=-1/2; x-3=0 → x=3.",
+    "habilidad_requerida": "Clase: Factorización de cuadráticas con coeficiente a≠1. Buscar dos números que multiplicados den a·c=2·(-3)=-6 y sumados den b=-5: -6 y 1. Luego 2x²-6x+x-3 = 2x(x-3)+(x-3)=(x-3)(2x+1). Ejemplo: 3x²-7x+2=0 → (3x-1)(x-2)=0 → x=1/3, x=2."
+  },
+  {
+    "pregunta": "Calcula la media geométrica de 4 y 9.",
+    "alternativas": ["6", "6,5", "5", "7", "8"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Paso 1: Media geométrica = √(4×9) = √36 = 6.",
+    "habilidad_requerida": "Clase: Media geométrica de dos números. √(a·b). Para más números, raíz n-ésima del producto. Ejemplo: 2 y 8 → √16=4."
+  },
+  {
+    "pregunta": "Si 5x - 2y = 7 y 3x + y = 2, halla 2x - y.",
+    "alternativas": ["1", "2", "3", "4", "5"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Paso 1: Resolver sistema: de la segunda, y=2-3x. Sustituir en primera: 5x -2(2-3x)=7 → 5x-4+6x=7 → 11x=11 → x=1, y=2-3=-1. Paso 2: 2x - y = 2(1) - (-1)=2+1=3. La alternativa correcta es 3. Opción C. Ajusto respuesta: C.",
+    "respuesta_correcta": "C",
+    "explicacion_respuesta": "Paso a paso: x=1, y=-1, luego 2(1)-(-1)=2+1=3.",
+    "habilidad_requerida": "Clase: Resolver sistema lineal y evaluar expresión. Útil para problemas donde piden combinación lineal. Ejemplo: si 2x+3y=5 y x-y=1, hallar x+2y. Resolver: x=2, y=1 → x+2y=4."
+  },
+  {
+    "pregunta": "Halla la derivada de f(x) = √(1 - x²).",
+    "alternativas": ["-x/√(1-x²)", "x/√(1-x²)", "-x/√(1-x²)", "-2x/√(1-x²)", "1/(2√(1-x²))"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Paso 1: f(x)= (1-x²)^{1/2}. f'(x)= (1/2)(1-x²)^{-1/2}·(-2x) = -x/√(1-x²).",
+    "habilidad_requerida": "Clase: Derivada de raíz cuadrada compuesta. d/dx[√u] = u'/(2√u). Ejemplo: f(x)=√(x²+1) → f'(x)= (2x)/(2√(x²+1)) = x/√(x²+1)."
+  },
+  {
+    "pregunta": "Calcula la integral ∫_{-1}^{1} (x³ + x) dx.",
+    "alternativas": ["0", "2", "1", "-2", "1/2"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Paso 1: x³ y x son funciones impares. La integral de una función impar en intervalo simétrico es 0. Por lo tanto resultado 0.",
+    "habilidad_requerida": "Clase: Propiedad de paridad en integrales definidas. Función impar: f(-x)=-f(x) → ∫_{-a}^{a} f = 0. Ejemplo: ∫_{-π}^{π} sen x dx = 0."
+  },
+  {
+    "pregunta": "En una caja hay 5 bolas numeradas del 1 al 5. Se extraen dos sin reposición. ¿Probabilidad de que ambas sean pares?",
+    "alternativas": ["1/10", "2/5", "1/5", "3/10", "1/2"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Paso 1: Números pares: 2,4 (2 casos). Total 5. P(primera par)=2/5. P(segunda par|primera par)=1/4. P= (2/5)*(1/4)=2/20=1/10.",
+    "habilidad_requerida": "Clase: Probabilidad sin reposición con números pequeños. Multiplicar probabilidades condicionales. Ejemplo: de 1-6, extraer dos impares: impares: 1,3,5 (3/6=1/2; luego 2/5) → (1/2)*(2/5)=1/5."
+  },
+  {
+    "pregunta": "¿Cuál es la forma polar de z = -1 + i?",
+    "alternativas": ["√2 cis 135°", "√2 cis 45°", "2 cis 135°", "√2 cis 225°", "√2 cis 315°"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Paso 1: Módulo r = √((-1)²+1²)=√2. Paso 2: Argumento: tan θ = -1/1? En realidad tan θ = y/x = 1/(-1) = -1, pero el punto (-1,1) está en segundo cuadrante → θ=135°. Por tanto z = √2 (cos135° + i sen135°) = √2 cis 135°.",
+    "habilidad_requerida": "Clase: Forma polar de un número complejo. r = √(a²+b²), θ = arctan(b/a) ajustando cuadrante. Ejemplo: z = 1 - i → r=√2, θ= -45° o 315° → √2 cis 315°."
+  },
+  {
+    "pregunta": "Resuelve la inecuación: x² - 4x - 5 < 0.",
+    "alternativas": ["-1 < x < 5", "x < -1 o x > 5", "x < -1 o x > 5", "-5 < x < 1", "x ≤ -1 o x ≥ 5"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Paso 1: Factorizar: (x-5)(x+1) < 0. Raíces -1 y 5. La parábola abre hacia arriba, entonces negativa entre raíces: -1 < x < 5.",
+    "habilidad_requerida": "Clase: Inecuaciones cuadráticas con a>0. La expresión es negativa entre las raíces. Ejemplo: x²-9>0 → x<-3 o x>3."
+  },
+  {
+    "pregunta": "Halla la ecuación de la recta tangente a f(x)= x³ en x=1.",
+    "alternativas": ["y = 3x - 2", "y = 3x + 2", "y = 2x - 1", "y = x + 2", "y = 3x - 1"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Paso 1: f(1)=1, punto (1,1). f'(x)=3x², f'(1)=3. Recta: y-1=3(x-1) → y=3x-3+1=3x-2.",
+    "habilidad_requerida": "Clase: Recta tangente a una potencia. Derivada en el punto da pendiente. Ejemplo: f(x)=x⁴ en x=2 → f(2)=16, f'(2)=32 → y=32x-48."
+  },
+  {
+    "pregunta": "Un auto recorre 240 km en 3 horas. Si su velocidad aumenta en 20 km/h, ¿cuánto tiempo tardará en recorrer la misma distancia?",
+    "alternativas": ["2 h", "2,4 h", "2,5 h", "1,5 h", "3 h"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Paso 1: Velocidad inicial = 240/3 = 80 km/h. Nueva velocidad = 100 km/h. Tiempo = 240/100 = 2,4 h.",
+    "habilidad_requerida": "Clase: Relación velocidad-tiempo-distancia. t = d/v. Ejemplo: 180 km a 60 km/h → 3 h; si aumenta a 90 km/h → 2 h."
+  },
+  {
+    "pregunta": "¿Cuál es la derivada de f(x) = cot(2x)?",
+    "alternativas": ["-2 csc²(2x)", "2 csc²(2x)", "-2 csc²(2x)", "2 sec²(2x)", "-2 sec²(2x)"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Paso 1: d/dx[cot u] = -csc² u · u'. u=2x, u'=2. f'(x)= -csc²(2x)·2 = -2 csc²(2x).",
+    "habilidad_requerida": "Clase: Derivada de cotangente compuesta. d/dx[cot u] = -csc² u · u'. Ejemplo: f(x)=cot(x²) → f'(x)= -2x csc²(x²)."
+  },
+  {
+    "pregunta": "Calcula la integral ∫_{0}^{π/2} sen 2x dx.",
+    "alternativas": ["1", "0", "2", "π/2", "1/2"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Paso 1: Antiderivada: ∫ sen 2x dx = - (1/2) cos 2x. Paso 2: Evaluar: [ -1/2 cos 2x ]₀^{π/2} = (-1/2 cos π) - (-1/2 cos 0) = (-1/2·(-1)) - (-1/2·1) = (1/2) - (-1/2) = 1/2+1/2=1.",
+    "habilidad_requerida": "Clase: Integral definida de seno con argumento lineal. ∫ sen(kx) dx = - (1/k) cos(kx). Ejemplo: ∫₀^{π} sen 3x dx = [-1/3 cos 3x]₀^{π}= -1/3(cos3π - cos0)= -1/3(-1-1)= -1/3(-2)=2/3."
+  },
+  {
+    "pregunta": "Se lanzan tres monedas. ¿Cuál es la probabilidad de obtener al menos dos caras?",
+    "alternativas": ["1/2", "3/8", "5/8", "1/4", "1/8"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Paso 1: Espacio muestral 8 casos. Casos favorables: exactamente 2 caras: 3 casos (CCS, CSC, SCC); exactamente 3 caras: 1 caso (CCC). Total 4. Probabilidad = 4/8 = 1/2.",
+    "habilidad_requerida": "Clase: Probabilidad con monedas. Usar combinatoria o lista. Ejemplo: lanzar 3 monedas, al menos una cara: 7/8."
+  },
+  {
+    "pregunta": "Halla el valor de x tal que log₅(x-2) + log₅ 2 = 1.",
+    "alternativas": ["4,5", "4", "5", "3,5", "6"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Paso 1: log₅[2(x-2)] = 1 → 2(x-2) = 5¹ → 2x-4 = 5 → 2x = 9 → x = 4,5.",
+    "habilidad_requerida": "Clase: Ecuaciones logarítmicas con suma. Convertir a producto y luego a exponencial. Ejemplo: log₂(x+1)+log₂(x-1)=3 → log₂[(x+1)(x-1)]=3 → x²-1=8 → x=3 (positivo)."
+  },
+  {
+    "pregunta": "Un cilindro circular recto tiene altura 12 cm y radio 5 cm. ¿Cuál es su área total?",
+    "alternativas": ["170π cm²", "120π cm²", "100π cm²", "130π cm²", "150π cm²"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Paso 1: Área lateral = 2πrh = 2π·5·12 = 120π. Área base = πr² = 25π, dos bases = 50π. Total = 120π+50π = 170π cm².",
+    "habilidad_requerida": "Clase: Área total de cilindro. A_total = 2πr(h + r). Ejemplo: r=3, h=10 → A=2π·3·(10+3)=6π·13=78π."
+  },
+  {
+    "pregunta": "Resuelve el sistema: x² + y² = 25, y = x - 1.",
+    "alternativas": ["(4,3) y (-3,-4)", "(3,4) y (-4,-5)", "(4,3) y (3,4)", "(5,4) y (-4,-5)", "(4,3) y (-4,-3)"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Paso 1: Sustituir y = x-1: x² + (x-1)² = 25 → x² + x² -2x+1=25 → 2x²-2x-24=0 → x²-x-12=0 → (x-4)(x+3)=0 → x=4 o x=-3. Para x=4, y=3; para x=-3, y=-4. Soluciones (4,3) y (-3,-4).",
+    "habilidad_requerida": "Clase: Intersección de círculo y recta. Sustituir y resolver cuadrática. Ejemplo: x²+y²=10, y=x+2 → x²+(x+2)²=10 → 2x²+4x+4=10 → x²+2x-3=0 → x=1 o -3, puntos (1,3) y (-3,-1)."
+  },
+  {
+    "pregunta": "Calcula el límite: lim_{x→0} (tan 3x)/(x).",
+    "alternativas": ["3", "1", "0", "∞", "1/3"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Paso 1: lim_{x→0} tan(3x)/x = lim_{x→0} [sen(3x)/(x cos 3x)] = lim_{x→0} [3· sen(3x)/(3x) · 1/cos 3x] = 3·1·1 = 3.",
+    "habilidad_requerida": "Clase: Límite fundamental con tangente. lim_{u→0} tan u/u = 1. Ejemplo: lim_{x→0} tan(5x)/(2x) = (5/2)·1 = 2,5."
+  },
+  {
+    "pregunta": "¿Cuál es la suma de los ángulos exteriores de un polígono convexo de 15 lados?",
+    "alternativas": ["360°", "540°", "900°", "1800°", "2700°"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Paso 1: La suma de los ángulos exteriores de cualquier polígono convexo es siempre 360°, independiente del número de lados.",
+    "habilidad_requerida": "Clase: Ángulos exteriores de un polígono. Suma siempre 360°. Cada ángulo exterior = 360°/n en un polígono regular. Ejemplo: hexágono regular → cada ángulo exterior = 60°."
+  },
+  {
+    "pregunta": "Simplifica: (x² - 4x + 4)/(x² - 4).",
+    "alternativas": ["(x-2)/(x+2)", "(x+2)/(x-2)", "(x-2)/(x+2)", "(x-2)²/(x-2)(x+2)", "1"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Paso 1: Numerador: x²-4x+4=(x-2)². Denominador: x²-4=(x-2)(x+2). Cancelamos (x-2): queda (x-2)/(x+2).",
+    "habilidad_requerida": "Clase: Simplificación de fracciones algebraicas. Factorizar trinomios cuadrados perfectos y diferencia de cuadrados. Ejemplo: (x²+6x+9)/(x²-9) = (x+3)²/[(x-3)(x+3)] = (x+3)/(x-3)."
+  },
+  {
+    "pregunta": "Un número complejo z tiene argumento 60° y módulo 4. ¿Cuál es su forma binómica?",
+    "alternativas": ["2 + 2√3 i", "2√3 + 2i", "4√3 + 4i", "2 + 2i", "4 + 4√3 i"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Paso 1: z = r(cosθ + i senθ) = 4(cos60° + i sen60°) = 4(1/2 + i√3/2) = 2 + 2√3 i.",
+    "habilidad_requerida": "Clase: Conversión de polar a binómica. Usar cos y sen de ángulos notables. Ejemplo: r=2, θ=45° → 2(√2/2 + i√2/2)=√2+ i√2."
+  },
+  {
+    "pregunta": "Halla la derivada de f(x) = ln(1 + e^x).",
+    "alternativas": ["e^x/(1+e^x)", "1/(1+e^x)", "e^x/(1+e^x)", "1/(e^x+1)", "e^x/(1+e^x)"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Paso 1: f'(x)= (derivada del interior)/(interior) = e^x/(1+e^x).",
+    "habilidad_requerida": "Clase: Derivada de logaritmo de suma exponencial. d/dx[ln(1+e^x)] = e^x/(1+e^x). Ejemplo: f(x)=ln(1+e^{2x}) → f'(x)=2e^{2x}/(1+e^{2x})."
+  },
+  {
+    "pregunta": "Calcula la integral ∫₀¹ (x + 1)² dx.",
+    "alternativas": ["7/3", "5/3", "3", "4/3", "8/3"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Paso 1: Expandir: (x+1)² = x²+2x+1. Antiderivada: x³/3 + x² + x. Evaluar de 0 a 1: (1/3 + 1 + 1) - 0 = 1/3 + 2 = 7/3.",
+    "habilidad_requerida": "Clase: Integral de polinomio expandido o por sustitución. Ejemplo: ∫₀¹ (2x+1)² dx = ∫₀¹ (4x²+4x+1) dx = [4x³/3+2x²+x]₀¹ = 4/3+2+1 = 4/3+3 = 13/3 ≈4,333."
+  },
+  {
+    "pregunta": "Se extraen dos cartas de una baraja sin reposición. ¿Probabilidad de que ambas sean del mismo palo?",
+    "alternativas": ["12/51", "1/4", "1/17", "4/17", "1/13"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Paso 1: Para cualquier primera carta, quedan 12 cartas del mismo palo de 51 restantes. P = 12/51 = 4/17 ≈ 0,2353. La alternativa 12/51 simplificada es 4/17. En las opciones, 4/17 está como D. Por tanto respuesta D.",
+    "respuesta_correcta": "D",
+    "explicacion_respuesta": "Paso a paso: La primera carta puede ser cualquier palo. La segunda debe ser del mismo palo: quedan 12 del mismo palo de 51. Probabilidad = 12/51 = 4/17.",
+    "habilidad_requerida": "Clase: Probabilidad condicional sin reposición. Para eventos del mismo tipo, después de la primera extracción, la probabilidad depende de cuántas quedan. Ejemplo: dos ases: (4/52)*(3/51)=1/221."
+  },
+  {
+    "pregunta": "Resuelve la ecuación: √(2x+1) = x-1.",
+    "alternativas": ["x=4", "x=0", "x=4 y x=0", "x=2", "x=1"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Paso 1: Elevar al cuadrado: 2x+1 = (x-1)² = x²-2x+1 → 0 = x²-4x → x(x-4)=0 → x=0 o x=4. Paso 2: Verificar: x=0 → √1 = 1, pero x-1=-1, no cumple. x=4 → √9=3, 4-1=3, cumple. Solución única x=4.",
+    "habilidad_requerida": "Clase: Ecuaciones con raíz cuadrada. Elevar al cuadrado y siempre verificar soluciones extrañas. Ejemplo: √(3x+1)=x-3 → elevar: 3x+1=x²-6x+9 → 0=x²-9x+8 → (x-1)(x-8)=0 → x=1 (√4=1? 1-3=-2 no); x=8 (√25=5, 8-3=5 sí)."
+  },
+  {
+    "pregunta": "Halla el valor de la expresión: cos²30° + sen²30°.",
+    "alternativas": ["1", "0,5", "0,75", "0", "1,5"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Paso 1: Por identidad pitagórica, cos²θ+sen²θ=1 para cualquier θ. Por lo tanto =1.",
+    "habilidad_requerida": "Clase: Identidad fundamental trigonométrica. Siempre sen²+cos²=1. Ejemplo: sen²45°+cos²45°=1."
+  },
+  {
+    "pregunta": "Un depósito contiene 300 litros de agua. Se abre una llave que vierte 15 L/min. ¿Cuánto tiempo tarda en llenarse si el depósito tiene capacidad de 750 L?",
+    "alternativas": ["30 min", "20 min", "25 min", "15 min", "40 min"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Paso 1: Falta llenar = 750 - 300 = 450 L. Tasa = 15 L/min. Tiempo = 450/15 = 30 min.",
+    "habilidad_requerida": "Clase: Problemas de llenado. Cantidad a llenar dividido por caudal. Ejemplo: vaciar un estanque de 1000 L a 20 L/min → 50 min."
+  },
+  {
+    "pregunta": "¿Cuál es la ecuación de la parábola con vértice en (0,0) y directriz y = -4?",
+    "alternativas": ["x² = 16y", "x² = -16y", "y² = 16x", "y² = -16x", "x² = 4y"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Paso 1: Directriz y = -4, vértice (0,0) → la parábola abre hacia arriba. La distancia del vértice a la directriz es p = 4. Ecuación: x² = 4py = 16y.",
+    "habilidad_requerida": "Clase: Parábola con vértice en origen y eje vertical. Si la directriz es y = -p (p>0), la ecuación es x² = 4py. Si la directriz es y = p, abre hacia abajo: x² = -4py. Ejemplo: foco (0,3) → p=3, directriz y=-3 → x²=12y."
+  },
+  {
+    "pregunta": "En un triángulo ABC, a=7, b=8, C=60°. Halla c (ley del coseno).",
+    "alternativas": ["√(113-56)", "√(113)", "√(57)", "√(65)", "√(49)"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Paso 1: c² = a²+b²-2ab cosC = 49+64-2·7·8·0,5 = 113 - 56 = 57. c = √57. Pero √57 no está en opciones, √(113-56) = √57 sí. Alternativa A.",
+    "habilidad_requerida": "Clase: Ley del coseno para hallar lado. c² = a² + b² - 2ab cos C. Ejemplo: a=5,b=6,C=120° → c²=25+36-60·(-0,5)=61+30=91 → c=√91."
+  },
+  {
+    "pregunta": "Halla la derivada de f(x) = x·arcsen x.",
+    "alternativas": ["arcsen x + x/√(1-x²)", "arcsen x + 1/√(1-x²)", "x/√(1-x²)", "arcsen x - x/√(1-x²)", "arcsen x"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Paso 1: Regla del producto: u=x, u'=1; v=arcsen x, v'=1/√(1-x²). f'(x)=1·arcsen x + x·(1/√(1-x²)) = arcsen x + x/√(1-x²).",
+    "habilidad_requerida": "Clase: Derivada de arcoseno compuesto. d/dx[arcsen x] = 1/√(1-x²). Ejemplo: f(x)=x² arcsen x → f'(x)=2x arcsen x + x²/√(1-x²)."
+  },
+  {
+    "pregunta": "Calcula la integral indefinida ∫ x/(x²+1) dx.",
+    "alternativas": ["(1/2) ln(x²+1) + C", "ln(x²+1) + C", "(1/2) ln|x²+1| + C", "arctan x + C", "(1/2) arctan x + C"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Paso 1: Sustitución u = x²+1, du=2x dx → x dx = du/2. ∫ x/(x²+1) dx = ∫ (1/2) du/u = (1/2) ln|u|+C = (1/2) ln(x²+1)+C. Como x²+1>0, el valor absoluto no es necesario.",
+    "habilidad_requerida": "Clase: Integración por sustitución donde el numerador es la derivada del denominador (salvo constante). ∫ u'/u dx = ln|u|+C. Ejemplo: ∫ (3x²)/(x³+1) dx = ln|x³+1|+C."
+  },
+  {
+    "pregunta": "Resuelve la inecuación: 2x³ - 8x > 0.",
+    "alternativas": ["(-2,0) ∪ (2,∞)", "(-∞,-2) ∪ (0,2)", "(2,∞)", "(-∞,0) ∪ (2,∞)", "(-2,2)"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Paso 1: Factorizar: 2x(x²-4)=2x(x-2)(x+2)>0. Puntos críticos: x=-2,0,2. Hacer tabla de signos: para x<-2: x negativo, (x-2) negativo, (x+2) negativo → producto de tres negativos = negativo. Entre -2 y 0: x negativo, (x-2) negativo, (x+2) positivo → positivo. Entre 0 y 2: x positivo, (x-2) negativo, (x+2) positivo → negativo. Para x>2: todos positivos → positivo. Solución: (-2,0) ∪ (2,∞).",
+    "habilidad_requerida": "Clase: Inecuaciones polinómicas de grado superior. Factorizar completamente, hallar raíces y analizar signo por intervalos. Ejemplo: x³-4x ≤ 0 → x(x-2)(x+2) ≤ 0 → solución (-∞,-2] ∪ [0,2]."
+  },
+  {
+    "pregunta": "Un móvil parte del reposo y acelera a 4 m/s² durante 5 segundos. ¿Qué distancia recorre?",
+    "alternativas": ["50 m", "100 m", "20 m", "40 m", "60 m"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Paso 1: Fórmula d = v₀t + (1/2)at². v₀=0, a=4, t=5 → d = 0 + (1/2)·4·25 = 2·25 = 50 m.",
+    "habilidad_requerida": "Clase: MRUA distancia con aceleración constante desde reposo. d = (1/2) a t². Ejemplo: a=2, t=3 → d= (1/2)·2·9=9 m."
+  },
+  {
+    "pregunta": "¿Cuál es el valor de cos(180° - θ)?",
+    "alternativas": ["-cos θ", "cos θ", "sen θ", "-sen θ", "0"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Paso 1: Por identidades de ángulos suplementarios: cos(180°-θ) = -cos θ.",
+    "habilidad_requerida": "Clase: Identidades trigonométricas para ángulos suplementarios. sen(180°-θ)=sen θ, cos(180°-θ)=-cos θ, tan(180°-θ)=-tan θ. Ejemplo: cos120° = cos(180-60)= -cos60° = -1/2."
+  },
+  {
+    "pregunta": "Simplifica: (a^{2/3} b^{1/2})^6.",
+    "alternativas": ["a⁴ b³", "a³ b⁴", "a⁴ b²", "a⁶ b³", "a⁴ b⁶"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Paso 1: (a^{2/3})^6 = a^{(2/3)·6} = a⁴; (b^{1/2})^6 = b^{(1/2)·6} = b³. Resultado a⁴ b³.",
+    "habilidad_requerida": "Clase: Potencias de exponentes fraccionarios. (a^{m/n})^p = a^{mp/n}. Ejemplo: (x^{3/4})^8 = x^{6}."
+  },
+  {
+    "pregunta": "Se tienen los números 2, 4, 6, 8, 10. ¿Cuál es la desviación media respecto a la mediana?",
+    "alternativas": ["2,4", "2,0", "3,0", "1,6", "2,8"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Paso 1: Mediana = 6 (tercer dato). Desviaciones absolutas: |2-6|=4, |4-6|=2, |6-6|=0, |8-6|=2, |10-6|=4. Suma = 4+2+0+2+4=12. Desviación media = 12/5 = 2,4.",
+    "habilidad_requerida": "Clase: Desviación media. Promedio de las desviaciones absolutas respecto a la mediana (o media). Ejemplo: datos 1,3,5,7 → mediana=4, desviaciones 3,1,1,3 suma=8, media=8/4=2."
+  },
+  {
+    "pregunta": "Un capital de $4000 produce $600 de interés simple en 3 años. ¿Cuál es la tasa anual?",
+    "alternativas": ["5%", "4%", "6%", "7%", "8%"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Paso 1: I = C·r·t → 600 = 4000·r·3 → 600 = 12000 r → r = 600/12000 = 0,05 = 5%.",
+    "habilidad_requerida": "Clase: Interés simple, despejar tasa. r = I/(C·t). Ejemplo: I=200, C=1000, t=2 → r=200/2000=0,1=10%."
+  },
+  {
+    "pregunta": "Resuelve la ecuación: 3^{x-1} + 3^{x} = 12.",
+    "alternativas": ["2", "1", "3", "0", "4"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Paso 1: Factorizar 3^{x-1}: 3^{x-1}(1+3)=12 → 3^{x-1}·4=12 → 3^{x-1}=3 → x-1=1 → x=2.",
+    "habilidad_requerida": "Clase: Ecuaciones exponenciales con suma de potencias. Factorizar la potencia menor. Ejemplo: 2^{x+1}+2^{x}=24 → 2^{x}(2+1)=24 → 3·2^{x}=24 → 2^{x}=8 → x=3."
+  },
+  {
+    "pregunta": "¿Cuál es la distancia desde el origen a la recta 3x + 4y = 15?",
+    "alternativas": ["3", "4", "5", "2", "1"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Paso 1: Fórmula distancia de (0,0) a Ax+By+C=0: |C|/√(A²+B²). Aquí A=3, B=4, C=-15 (porque 3x+4y-15=0). Distancia = | -15 |/√(9+16)=15/5=3.",
+    "habilidad_requerida": "Clase: Distancia del origen a una recta. d = |C|/√(A²+B²) cuando la ecuación es Ax+By+C=0. Ejemplo: recta 5x+12y-26=0 → d = 26/13=2."
+  }
+]

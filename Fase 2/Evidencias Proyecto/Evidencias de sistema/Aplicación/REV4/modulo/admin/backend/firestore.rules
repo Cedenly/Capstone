@@ -1,0 +1,8 @@
+rules_version = '2';
+// Reglas mínimas: el backend usa el Admin SDK (acceso privilegiado) y omite estas reglas.
+// Se deniega todo acceso directo desde clientes; solo el backend escribe/lee.
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /{document=**} { allow read, write: if false; }
+  }
+}

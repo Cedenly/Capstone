@@ -1,0 +1,298 @@
+{
+  "executedAt": "2026-11-17T03:26:51.827Z",
+  "environment": "Node VM local, rutas originales; Router, datos, JWT, Firestore y Stripe sustituidos por dobles controlados. No hay HTTP, SDK real, firma criptográfica real ni escritura remota.",
+  "sourceCommits": {
+    "student": "dec2868bbc38cd93d883b836d722c9211d626240",
+    "admin": "31fb7f2866317b555e65b91c37256cff4e129ef3"
+  },
+  "totals": {
+    "checks": 24,
+    "passed": 24,
+    "failed": 0
+  },
+  "results": [
+    {
+      "id": "H01",
+      "title": "Sin sesión no devuelve facturas",
+      "status": "aprobado_local",
+      "detail": {
+        "data": null,
+        "error": {
+          "code": "AUTH_REQUIRED",
+          "message": "Falta el token de acceso",
+          "details": [],
+          "field": null
+        },
+        "meta": {
+          "requestId": "req_785add10-43a",
+          "timestamp": "2026-11-17T03:26:51.790Z"
+        }
+      }
+    },
+    {
+      "id": "H02",
+      "title": "Token rechazado no devuelve facturas",
+      "status": "aprobado_local",
+      "detail": ""
+    },
+    {
+      "id": "H03",
+      "title": "Cuenta suspendida rechazada",
+      "status": "aprobado_local",
+      "detail": ""
+    },
+    {
+      "id": "H04",
+      "title": "A solo obtiene sus dos facturas y su orden",
+      "status": "aprobado_local",
+      "detail": {
+        "data": [
+          {
+            "id": "in_A_paid",
+            "amount": 10,
+            "currency": "USD",
+            "status": "paid",
+            "paidAt": "2026-11-15T12:00:00Z",
+            "pdfUrl": "https://invoice.stripe.com/pdf/ejemplo_A"
+          },
+          {
+            "id": "in_A_open",
+            "amount": 4,
+            "currency": "USD",
+            "status": "open",
+            "paidAt": null,
+            "pdfUrl": null
+          }
+        ],
+        "error": null,
+        "meta": {
+          "requestId": "req_d5f370ba-ded",
+          "timestamp": "2026-11-17T03:26:51.803Z"
+        }
+      }
+    },
+    {
+      "id": "H05",
+      "title": "B solo obtiene su factura y enlace",
+      "status": "aprobado_local",
+      "detail": ""
+    },
+    {
+      "id": "H06",
+      "title": "Alumno sin historial obtiene lista vacía",
+      "status": "aprobado_local",
+      "detail": ""
+    },
+    {
+      "id": "H07",
+      "title": "Query userId ajeno no sustituye identidad",
+      "status": "aprobado_local",
+      "detail": ""
+    },
+    {
+      "id": "H08",
+      "title": "Proyección no devuelve datos internos extra",
+      "status": "aprobado_local",
+      "detail": ""
+    },
+    {
+      "id": "H09",
+      "title": "PDF ausente se devuelve null sin fabricar URL",
+      "status": "aprobado_local",
+      "detail": ""
+    },
+    {
+      "id": "H10",
+      "title": "Finanzas consulta facturas en centavos",
+      "status": "aprobado_local",
+      "detail": {
+        "data": [
+          {
+            "id": "in_A_open",
+            "user": {
+              "id": "alumno_A",
+              "name": "",
+              "email": ""
+            },
+            "status": "open",
+            "updatedAt": null,
+            "subscriptionId": "sub_A",
+            "amountCents": 400,
+            "createdAt": null,
+            "paidAt": null,
+            "hostedInvoiceUrl": null,
+            "pdfUrl": null
+          },
+          {
+            "id": "in_A_paid",
+            "user": {
+              "id": "alumno_A",
+              "name": "",
+              "email": ""
+            },
+            "status": "paid",
+            "updatedAt": null,
+            "subscriptionId": "sub_A",
+            "amountCents": 1000,
+            "createdAt": null,
+            "paidAt": "2026-11-15T12:00:00Z",
+            "hostedInvoiceUrl": "https://invoice.stripe.com/i/ejemplo_A",
+            "pdfUrl": "https://invoice.stripe.com/pdf/ejemplo_A"
+          },
+          {
+            "id": "in_B_paid",
+            "user": {
+              "id": "alumno_B",
+              "name": "",
+              "email": ""
+            },
+            "status": "paid",
+            "updatedAt": null,
+            "subscriptionId": "sub_B",
+            "amountCents": 5000,
+            "createdAt": null,
+            "paidAt": "2026-11-16T12:00:00Z",
+            "hostedInvoiceUrl": null,
+            "pdfUrl": "https://invoice.stripe.com/pdf/ejemplo_B"
+          }
+        ],
+        "error": null,
+        "meta": {
+          "requestId": "req_3678cfd1-ef7",
+          "timestamp": "2026-11-17T03:26:51.805Z",
+          "mode": "test",
+          "pagination": {
+            "pageSize": 25,
+            "nextCursor": null
+          }
+        }
+      }
+    },
+    {
+      "id": "H11",
+      "title": "Operaciones y soporte sin permiso financiero",
+      "status": "aprobado_local",
+      "detail": ""
+    },
+    {
+      "id": "H12",
+      "title": "Cursor inválido rechazado",
+      "status": "aprobado_local",
+      "detail": ""
+    },
+    {
+      "id": "H13",
+      "title": "Administración filtra origen demo y modo real",
+      "status": "aprobado_local",
+      "detail": ""
+    },
+    {
+      "id": "H14",
+      "title": "Administración descarta enlaces fuera de dominios permitidos",
+      "status": "aprobado_local",
+      "detail": ""
+    },
+    {
+      "id": "I01",
+      "title": "Factura pagada convierte centavos efectivamente cobrados a USD",
+      "status": "aprobado_local",
+      "detail": {
+        "id": "in_ficticia",
+        "provider": "stripe",
+        "livemode": false,
+        "userId": "alumno_A",
+        "stripeSubscriptionId": "sub_A",
+        "stripeCustomerId": "cus_A",
+        "amount": 12.5,
+        "currency": "USD",
+        "status": "paid",
+        "paidAt": "2026-11-16T20:15:00.000Z",
+        "createdAt": "2026-11-16T20:13:20.000Z",
+        "updatedAt": "2026-11-17T00:00:00Z",
+        "pdfUrl": null,
+        "hostedInvoiceUrl": null
+      }
+    },
+    {
+      "id": "I02",
+      "title": "Factura abierta refleja importe pendiente sin inventar pago",
+      "status": "aprobado_local",
+      "detail": ""
+    },
+    {
+      "id": "I03",
+      "title": "Comprobante ausente se persiste null y no como enlace simulado",
+      "status": "aprobado_local",
+      "detail": ""
+    },
+    {
+      "id": "W01",
+      "title": "Webhook sin firma",
+      "status": "aprobado_local",
+      "detail": ""
+    },
+    {
+      "id": "W02",
+      "title": "Webhook requiere bytes originales",
+      "status": "aprobado_local",
+      "detail": ""
+    },
+    {
+      "id": "W03",
+      "title": "Error del verificador de firma se expresa correctamente",
+      "status": "aprobado_local",
+      "detail": ""
+    },
+    {
+      "id": "W04",
+      "title": "Evento real no permitido en este MVP",
+      "status": "aprobado_local",
+      "detail": ""
+    },
+    {
+      "id": "W05",
+      "title": "Evento de prueba validado se entrega al siguiente middleware",
+      "status": "aprobado_local",
+      "detail": ""
+    },
+    {
+      "id": "W06",
+      "title": "Manejador no acepta evento sin verificar",
+      "status": "aprobado_local",
+      "detail": ""
+    },
+    {
+      "id": "W07",
+      "title": "Fallo de proceso devuelve 503 y log correlacionado",
+      "status": "aprobado_local",
+      "detail": {
+        "response": {
+          "data": null,
+          "error": {
+            "code": "WEBHOOK_PROCESSING_FAILED",
+            "message": "No se pudo completar la confirmacion.",
+            "details": [],
+            "field": null
+          },
+          "meta": {
+            "requestId": "req_15ece785-a2d",
+            "timestamp": "2026-11-17T03:26:51.827Z"
+          }
+        },
+        "log": [
+          "[stripe webhook]",
+          "evt_ficticio",
+          "BILLING_DATA_MISMATCH"
+        ]
+      }
+    }
+  ],
+  "observations": [
+    {
+      "id": "D01",
+      "title": "Datos demo inyectados solo en fixture aislado",
+      "result": "La ruta devuelve la factura demo propia y su PDF #.",
+      "scope": "No demuestra que el entorno objetivo contenga demo. APR-72 sigue condicionado; no se modificó código."
+    }
+  ]
+}

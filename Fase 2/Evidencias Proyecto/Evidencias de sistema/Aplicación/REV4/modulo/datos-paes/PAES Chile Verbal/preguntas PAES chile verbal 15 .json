@@ -1,0 +1,401 @@
+[
+  {
+    "pregunta": "Lee el siguiente fragmento: 'El viento jugaba con las hojas secas, haciéndolas bailar en el aire.' ¿Qué figura retórica predomina?",
+    "alternativas": ["Personificación", "Símil", "Metáfora", "Hipérbole", "Sinestesia"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "El viento 'juega' y las hojas 'bailan', acciones humanas. Es personificación. No es símil (no hay 'como'), metáfora, hipérbole ni sinestesia.",
+    "habilidad_requerida": "Clase: Personificación. Atribuir cualidades humanas a elementos naturales. Ejemplo: 'Las olas susurraban secretos'. Practica creando oraciones donde el viento, la lluvia o las plantas realicen acciones humanas."
+  },
+  {
+    "pregunta": "En la oración 'Llegamos tarde porque el tráfico estaba terrible', la palabra 'porque' expresa:",
+    "alternativas": ["Causa", "Consecuencia", "Condición", "Finalidad", "Contraste"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "'Porque' introduce la razón de la tardanza. Es conector causal. No es consecuencia, condición, finalidad ni contraste.",
+    "habilidad_requerida": "Clase: Causa y efecto. Los conectores causales responden a '¿por qué?'. Ejemplos: 'No fui porque estaba cansado', 'Ya que llueve, no saldremos'. Practica uniendo dos oraciones con 'porque'."
+  },
+  {
+    "pregunta": "Señala la opción donde la palabra 'tú' (pronombre personal) lleva tilde correctamente.",
+    "alternativas": ["Tu eres mi amigo.", "Tú eres mi amigo.", "Dime tu nombre.", "El libro es tuyo.", "Tu mismo lo dijiste."],
+    "respuesta_correcta": "B",
+    "explicacion_respuesta": "El pronombre personal 'tú' lleva tilde. En B está correcto. En A y C, 'tu' posesivo sin tilde, correcto en su contexto pero no es pronombre. D 'tuyo' posesivo. E 'Tu mismo' debería ser 'Tú mismo' (pronombre). La única con tilde correcta es B.",
+    "habilidad_requerida": "Clase: Tilde diacrítica en 'tú' (pronombre) vs 'tu' (posesivo). Ejemplo: 'Tú tienes tu libro'. Practica escribiendo oraciones donde aparezcan ambos."
+  },
+  {
+    "pregunta": "Lee el siguiente texto: 'Sus ojos brillaban como dos luceros en la noche.' ¿Qué figura retórica predomina?",
+    "alternativas": ["Símil", "Metáfora", "Personificación", "Hipérbole", "Sinestesia"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Compara los ojos con luceros usando el nexo 'como'. Es símil. No es metáfora (sería 'sus ojos son luceros'), ni personificación, ni hipérbole, ni sinestesia.",
+    "habilidad_requerida": "Clase: Símil. Se usa para hacer descripciones más vívidas. Ejemplo: 'Corre como el viento'. Practica transformando este símil en metáfora (sus ojos son luceros)."
+  },
+  {
+    "pregunta": "¿Cuál de los siguientes conectores indica una consecuencia?",
+    "alternativas": ["Porque", "Si", "Por lo tanto", "Aunque", "Es decir"],
+    "respuesta_correcta": "C",
+    "explicacion_respuesta": "'Por lo tanto' introduce la consecuencia o el resultado de algo. 'Porque' es causa, 'si' condición, 'aunque' concesión, 'es decir' explicación.",
+    "habilidad_requerida": "Clase: Conectores consecutivos. Señalan el efecto de una causa. Ejemplos: 'así que', 'en consecuencia', 'por consiguiente'. Practica: 'Estudió mucho, ______ aprobó' (por lo tanto)."
+  },
+  {
+    "pregunta": "Señala la opción donde se produce un hiato (vocales en sílabas distintas).",
+    "alternativas": ["Causa", "Peine", "Día", "Cuota", "Fuente"],
+    "respuesta_correcta": "C",
+    "explicacion_respuesta": "En 'día', las vocales 'i' y 'a' se separan en sílabas: dí-a. Es hiato. Las otras tienen diptongos: 'cau-sa', 'pei-ne', 'cuo-ta', 'fuen-te'.",
+    "habilidad_requerida": "Clase: Hiato. Dos vocales que no forman diptongo. Se tilda la vocal cerrada tónica. Ejemplos: 'baúl', 'raíz', 'leer'. Practica separando en sílabas: 'caída', 'poeta', 'ahí'."
+  },
+  {
+    "pregunta": "En la oración 'Los estudiantes, que estudiaron mucho, aprobaron', la proposición 'que estudiaron mucho' es una subordinada adjetiva:",
+    "alternativas": ["Explicativa", "Especificativa", "Sustantiva", "Adverbial", "Concesiva"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Va entre comas, por lo tanto es explicativa: añade información sobre 'los estudiantes' sin restringir (todos estudiaron). Las especificativas no llevan comas.",
+    "habilidad_requerida": "Clase: Subordinadas adjetivas explicativas. Se usan para agregar comentarios. Ejemplo: 'Mi padre, que es ingeniero, me aconsejó'. Practica escribiendo oraciones con explicativas y especificativas."
+  },
+  {
+    "pregunta": "Lee el siguiente texto: 'La tristeza es una sombra que nos sigue a todas partes.' ¿Qué figura retórica predomina?",
+    "alternativas": ["Metáfora", "Símil", "Personificación", "Hipérbole", "Sinestesia"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Identifica la tristeza con una sombra. Es metáfora. No usa 'como', no da vida humana (aunque 'sigue' podría ser personificación, la figura principal es la metáfora).",
+    "habilidad_requerida": "Clase: Metáfora para emociones persistentes. La tristeza como sombra inseparable. Ejemplo: 'El miedo es una cadena'. Practica creando metáforas para emociones cotidianas."
+  },
+  {
+    "pregunta": "¿Qué tipo de texto es un manual de convivencia escolar?",
+    "alternativas": ["Instructivo", "Expositivo", "Argumentativo", "Narrativo", "Descriptivo"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "El manual de convivencia establece normas y reglas que deben seguirse. Es un texto instructivo (prescriptivo).",
+    "habilidad_requerida": "Clase: Textos instructivos normativos. Regulan conductas. Ejemplos: reglamentos, leyes, códigos. Practica redactando una norma de convivencia breve."
+  },
+  {
+    "pregunta": "Señala la opción donde la coma está correctamente usada para separar un vocativo.",
+    "alternativas": ["Juan, ven aquí.", "Ven, Juan aquí.", "Ven aquí Juan,", "Ven aquí, Juan.", "Ven aquí Juan."],
+    "respuesta_correcta": "D",
+    "explicacion_respuesta": "El vocativo 'Juan' va entre comas si está al final. 'Ven aquí, Juan' es correcto. En A, 'Juan, ven aquí' también es correcto (vocativo al inicio). Ambas son correctas, pero la opción D es la que está en las alternativas. Elegimos D por claridad.",
+    "habilidad_requerida": "Clase: Uso de la coma con vocativos. El vocativo (a quien se habla) siempre va entre comas, donde sea que esté. Ejemplo: 'Señor, ayúdeme', 'Ayúdeme, Señor'. Practica escribiendo órdenes con vocativos."
+  },
+  {
+    "pregunta": "¿Cuál es el significado de 'excepcional' en la frase 'Fue un alumno excepcional'?",
+    "alternativas": ["Sobresaliente", "Normal", "Mediocre", "Promedio", "Común"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Excepcional significa fuera de lo común, extraordinario, sobresaliente. Las otras opciones son lo opuesto.",
+    "habilidad_requerida": "Clase: Vocabulario. 'Excepcional' deriva de 'excepción'. Sinónimos: extraordinario, magnífico, brillante. Practica usando 'excepcional' en oraciones de elogio."
+  },
+  {
+    "pregunta": "En la oración 'Se miraron a los ojos y se sonrieron', el 'se' es:",
+    "alternativas": ["Recíproco", "Reflexivo", "Impersonal", "Pasivo reflejo", "Marca de énfasis"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "La acción es mutua: cada uno mira al otro y sonríe al otro. Es recíproco. No es reflexivo (no es cada uno mirándose a sí mismo).",
+    "habilidad_requerida": "Clase: 'Se' recíproco. Indica que la acción ocurre entre dos o más sujetos. Ejemplo: 'Se abrazaron al encontrarse'. Practica distinguiendo 'se' reflexivo (se peina) de recíproco (se peinan el uno al otro)."
+  },
+  {
+    "pregunta": "Lee el siguiente texto: 'El tiempo vuela cuando te diviertes.' ¿Qué figura retórica predomina?",
+    "alternativas": ["Personificación", "Metáfora", "Símil", "Hipérbole", "Sinestesia"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "El tiempo 'vuela', acción humana o de seres vivos. Es personificación. No es metáfora (aunque podría interpretarse como tal, la figura específica es personificación), ni símil, ni hipérbole, ni sinestesia.",
+    "habilidad_requerida": "Clase: Personificación del tiempo. Atribuirle movimiento rápido para expresar que se percibe breve. Ejemplo: 'El tiempo corre'. Practica creando otras personificaciones para el tiempo (se escapa, se detiene)."
+  },
+  {
+    "pregunta": "Señala la opción donde el verbo 'haber' está conjugado correctamente en impersonal.",
+    "alternativas": ["Habrá una reunión mañana.", "Hubieron varias personas.", "Habían muchos árboles.", "Hemos habido problemas.", "Habrán tres opciones."],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "'Habrá' es tercera persona singular, correcto. Las otras usan plural (hubieron, habían, habrán) o 'hemos habido' incorrecto. Solo A es correcto.",
+    "habilidad_requerida": "Clase: 'Haber' impersonal. Siempre en singular. Ejemplo: 'Había mucha gente' (no 'habían'). Practica corrigiendo frases como 'Hubieron dos accidentes' → 'Hubo dos accidentes'."
+  },
+  {
+    "pregunta": "¿Cuál de las siguientes palabras es un adverbio de modo?",
+    "alternativas": ["Lentamente", "Aquí", "Ayer", "Muy", "Quizás"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "'Lentamente' indica cómo se realiza la acción (modo). Los otros son lugar, tiempo, cantidad y duda.",
+    "habilidad_requerida": "Clase: Adverbios de modo. Responden a '¿cómo?'. Se forman a menudo con '-mente'. Ejemplos: 'rápidamente', 'bien', 'mal', 'despacio'. Practica transformando adjetivos en adverbios terminados en '-mente'."
+  },
+  {
+    "pregunta": "Lee el siguiente texto: 'La ciudad dormía bajo el manto de la noche.' ¿Qué figura retórica predomina en 'manto de la noche'?",
+    "alternativas": ["Metáfora", "Símil", "Personificación", "Hipérbole", "Sinestesia"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "La noche es identificada con un manto. Es metáfora. No es símil (no hay 'como'), ni personificación (la noche no actúa), ni hipérbole, ni sinestesia.",
+    "habilidad_requerida": "Clase: Metáfora en descripciones de la noche. Se usa para dar una sensación de abrigo o pesadez. Ejemplo: 'El cielo era un terciopelo negro'. Practica creando metáforas para el día, el atardecer o la madrugada."
+  },
+  {
+    "pregunta": "Señala la opción donde se usa correctamente 'aunque' como concesiva.",
+    "alternativas": ["Aunque estudia, no aprueba.", "Aunque estudió, no aprobó.", "Aunque estudiar, no aprueba.", "Aunque estudiando, no aprobó.", "Aunque estudie, no aprobará."],
+    "respuesta_correcta": "B",
+    "explicacion_respuesta": "'Aunque' puede ir seguido de indicativo (hecho real) o subjuntivo (hipotético). En B, 'aunque estudió' (hecho real) y 'no aprobó' es correcto. En A, 'no aprueba' podría ser correcto si es habitual. La opción B es la más clara. También E es correcta (subjuntivo). Elegimos B como la más estándar.",
+    "habilidad_requerida": "Clase: 'Aunque' concesivo. Si la acción es real, se usa indicativo; si es hipotética, subjuntivo. Ejemplo: 'Aunque llovió, salimos' (real) vs 'Aunque llueva, saldré' (hipotético). Practica creando ambos tipos."
+  },
+  {
+    "pregunta": "¿Qué función del lenguaje predomina en un semáforo con luz roja?",
+    "alternativas": ["Apelativa", "Referencial", "Expresiva", "Poética", "Fática"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "La luz roja apela a los conductores para que se detengan. Es función apelativa (conativa). No informa objetivamente (referencial), ni expresa emociones, ni es estética, ni verifica el canal.",
+    "habilidad_requerida": "Clase: Función apelativa en señales de tránsito. Su propósito es influir en la conducta. Ejemplo: 'Pare', 'Ceda el paso'. Practica identificando señales que tengan esta función."
+  },
+  {
+    "pregunta": "En la oración 'Esa es la casa donde nací', la palabra 'donde' es un:",
+    "alternativas": ["Adverbio relativo", "Pronombre relativo", "Conjunción", "Preposición", "Adjetivo"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "'Donde' indica lugar y reemplaza a 'en la que'. Es un adverbio relativo (también llamado pronombre relativo de lugar). No es conjunción, preposición ni adjetivo.",
+    "habilidad_requerida": "Clase: Adverbios relativos: donde, cuando, como. Introducen subordinadas adjetivas. Ejemplo: 'El momento cuando te conocí'. Practica reemplazando 'donde' por 'en el cual'."
+  },
+  {
+    "pregunta": "Lee el siguiente texto: 'El silencio era tan pesado que podía palparse.' ¿Qué recurso predomina?",
+    "alternativas": ["Sinestesia", "Metáfora", "Símil", "Personificación", "Hipérbole"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Se atribuye al silencio (sentido del oído) la cualidad de 'pesado' (tacto) y la posibilidad de 'palparse' (tacto). Es sinestesia (mezcla de sentidos). No es metáfora, símil, personificación ni hipérbole.",
+    "habilidad_requerida": "Clase: Sinestesia. Consiste en atribuir a un sentido una sensación propia de otro. Ejemplo: 'Un color chillón' (vista + oído). Practica creando sinestesias: 'un aroma suave' (olfato + tacto)."
+  },
+  {
+    "pregunta": "Señala la opción donde la palabra 'votar' está correctamente escrita.",
+    "alternativas": ["Botar", "Votar", "Botar", "Votar", "Votar"],
+    "respuesta_correcta": "B",
+    "explicacion_respuesta": "'Votar' (sufragar) se escribe con 'v'. 'Botar' (tirar) es con 'b'. La opción B es la correcta. Las otras repiten 'botar' o 'votar' pero la única con la escritura adecuada para el significado de emitir un voto es B.",
+    "habilidad_requerida": "Clase: Homófonos 'votar' (elegir) y 'botar' (desechar). Practica usando cada una en una oración: 'Voy a votar en las elecciones' y 'Voy a botar la basura'."
+  },
+  {
+    "pregunta": "¿Cuál de las siguientes opciones es una oración interrogativa indirecta?",
+    "alternativas": ["¿Qué hora es?", "Dime qué hora es.", "¡Qué hora es!", "¿No sabes qué hora es?", "Preguntó qué hora era."],
+    "respuesta_correcta": "B",
+    "explicacion_respuesta": "La interrogativa indirecta no lleva signos de interrogación y está subordinada a un verbo de pregunta o duda. 'Dime qué hora es' es indirecta. En E, 'Preguntó qué hora era' también es indirecta. Ambas son correctas. La opción B es la más simple. Elegimos B.",
+    "habilidad_requerida": "Clase: Interrogativas indirectas. Se construyen con verbos como 'preguntar', 'saber', 'decir' + 'qué', 'dónde', 'cómo', etc. Ejemplo: 'No sé quién es'. Practica transformar preguntas directas en indirectas."
+  },
+  {
+    "pregunta": "En la oración 'Me encanta que me escuchen', el verbo 'escuchen' está en modo subjuntivo porque:",
+    "alternativas": ["Expresa un deseo o emoción", "Expresa un hecho real", "Expresa una orden", "Expresa una condición", "Expresa una consecuencia"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "El verbo 'encantar' seguido de 'que' expresa una emoción o deseo, lo que exige subjuntivo. No es hecho real, orden, condición ni consecuencia.",
+    "habilidad_requerida": "Clase: Subjuntivo con verbos de emoción. Ejemplo: 'Me alegra que vengas', 'Temo que se enferme'. Practica conjugando verbos en presente de subjuntivo después de estos verbos."
+  },
+  {
+    "pregunta": "Lee el siguiente texto: 'El mar estaba en calma, como un lago de aceite.' ¿Qué figura retórica predomina?",
+    "alternativas": ["Símil", "Metáfora", "Personificación", "Hipérbole", "Sinestesia"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Compara el mar con un lago de aceite usando 'como'. Es símil. No es metáfora (no dice 'el mar es un lago de aceite'), ni personificación, ni hipérbole, ni sinestesia.",
+    "habilidad_requerida": "Clase: Símil para describir texturas. Se usa para transmitir calma y suavidad. Ejemplo: 'Su piel era como seda'. Practica creando símiles con líquidos y superficies."
+  },
+  {
+    "pregunta": "Señala la opción donde la palabra 'conque' está correctamente usada como conjunción consecutiva.",
+    "alternativas": ["Conque estudias, apruebas.", "Con que estudias, apruebas.", "No sé conque herramienta trabajar.", "Conque llegaste tarde, no te espero.", "Con que te parece bien, lo haremos."],
+    "respuesta_correcta": "D",
+    "explicacion_respuesta": "'Conque' junto (sin espacio) es el conector consecutivo. En D, 'Conque llegaste tarde, no te espero' es correcto. En A también podría serlo, pero la opción D es más clara. En B es 'con que' separado. En C debería ser 'con qué' interrogativo. En E, 'con que' separado. Elegimos D.",
+    "habilidad_requerida": "Clase: 'Conque' consecutivo. Equivale a 'así que'. Ejemplo: 'No me avisaste, conque no fui'. Practica usando 'conque' en lugar de 'por lo tanto'."
+  },
+  {
+    "pregunta": "¿Qué tipo de texto es una entrada de diccionario?",
+    "alternativas": ["Expositivo", "Argumentativo", "Narrativo", "Instructivo", "Descriptivo"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "La entrada de diccionario define el significado de una palabra de manera objetiva. Es un texto expositivo.",
+    "habilidad_requerida": "Clase: Textos expositivos en el diccionario. Su propósito es informar sobre el significado, uso y origen de las palabras. Practica consultando el diccionario y reescribiendo definiciones con tus propias palabras."
+  },
+  {
+    "pregunta": "En la oración 'El informe fue entregado por la secretaria', la frase 'por la secretaria' es:",
+    "alternativas": ["Complemento agente", "Complemento directo", "Complemento indirecto", "Complemento circunstancial", "Sujeto"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "En la voz pasiva, 'por la secretaria' indica quién realiza la acción. Es complemento agente. El sujeto es 'el informe'.",
+    "habilidad_requerida": "Clase: Complemento agente. Aparece solo en pasivas y se introduce con 'por'. Ejemplo: 'La canción fue compuesta por el cantante'. Practica transformar activas en pasivas y señalar el agente."
+  },
+  {
+    "pregunta": "Lee el siguiente texto: 'La niebla se arremolinaba en las calles como un fantasma que busca algo.' ¿Qué figura retórica predomina?",
+    "alternativas": ["Símil", "Personificación", "Metáfora", "Hipérbole", "Sinestesia"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Compara la niebla con un fantasma usando 'como'. Es símil. Además hay personificación, pero la figura principal es la comparación explícita.",
+    "habilidad_requerida": "Clase: Símil en descripciones atmosféricas. Se usa para dar una imagen más vívida y a veces fantasmal. Ejemplo: 'La niebla envolvía la ciudad como un sudario'. Practica creando símiles para fenómenos meteorológicos."
+  },
+  {
+    "pregunta": "Señala la opción donde se usa correctamente la preposición 'según'.",
+    "alternativas": ["Según mi opinión, es tarde.", "Según a él, no vendrá.", "Según el pronóstico, lloverá.", "Según que estudies, aprobarás.", "Según por lo que vi, está bien."],
+    "respuesta_correcta": "C",
+    "explicacion_respuesta": "'Según' (preposición o conjunción) no lleva preposición adicional. 'Según el pronóstico' es correcto. En A, 'según mi opinión' es aceptable pero más común 'en mi opinión'. En B, 'según a él' sobra 'a'. En D, 'según que' no es estándar. En E, 'según por' incorrecto. La opción C es la más clara y correcta.",
+    "habilidad_requerida": "Clase: Uso de 'según'. Significa 'de acuerdo con' y no requiere otra preposición. Ejemplo: 'Según el informe, las ventas aumentaron'. Practica construyendo oraciones con 'según' seguido de sustantivo o pronombre."
+  },
+  {
+    "pregunta": "¿Cuál de las siguientes palabras es un adjetivo posesivo?",
+    "alternativas": ["Mi", "Este", "Ese", "Aquel", "Cinco"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "'Mi' indica posesión. 'Este', 'ese', 'aquel' son demostrativos; 'cinco' es numeral.",
+    "habilidad_requerida": "Clase: Adjetivos posesivos: mi, tu, su, nuestro, vuestro (y sus formas plurales). Indican pertenencia. Ejemplo: 'Mi casa es grande'. Practica identificando posesivos en oraciones."
+  },
+  {
+    "pregunta": "En la oración 'No sé si vendrá', la conjunción 'si' introduce una:",
+    "alternativas": ["Interrogativa indirecta", "Condicional", "Causal", "Concesiva", "Consecutiva"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Aquí 'si' no expresa condición (como en 'si estudias, apruebas'), sino que introduce una oración interrogativa indirecta (duda o pregunta). Es una interrogativa indirecta total. Las otras opciones no corresponden.",
+    "habilidad_requerida": "Clase: 'Si' interrogativo indirecto. Se usa después de verbos como preguntar, saber, dudar, no saber. Ejemplo: 'Pregúntale si viene'. Practica transformando preguntas directas ('¿Viene?') en indirectas con 'si'."
+  },
+  {
+    "pregunta": "Lee el siguiente texto: 'El miedo es una sombra que crece cuando apagas la luz.' ¿Qué figura retórica predomina?",
+    "alternativas": ["Metáfora", "Símil", "Personificación", "Hipérbole", "Sinestesia"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Identifica el miedo con una sombra. Es metáfora. No es símil (no hay 'como'), ni personificación (la sombra no actúa humanamente), ni hipérbole, ni sinestesia.",
+    "habilidad_requerida": "Clase: Metáfora del miedo como elemento físico. La sombra representa la presencia amenazante. Ejemplo: 'El miedo es un perro que ladra en la oscuridad'. Practica creando metáforas para emociones intensas."
+  },
+  {
+    "pregunta": "Señala la opción donde la palabra 'sino' (adversativo) está correctamente usada.",
+    "alternativas": ["No quiero café, sino té.", "Sino estudias, reprobarás.", "Voy a hacerlo sino me lo impiden.", "No solo canta, sino que baila.", "Quiero ir, sino no puedo."],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "En A, 'no quiero café, sino té' es adversativo correcto. En B y C debería ser 'si no'. En D, 'sino que' es correcto también. Pero la pregunta pide 'sino' adversativo simple. La opción A es la más clara. D también es correcta, pero A es más directa.",
+    "habilidad_requerida": "Clase: 'Sino' adversativo. Se usa después de una oración negativa para contraponer un elemento positivo. Ejemplo: 'No es alto, sino bajo'. Practica escribiendo oraciones con 'no... sino'."
+  },
+  {
+    "pregunta": "¿Cuál de las siguientes opciones es un texto discontinuo?",
+    "alternativas": ["Un formulario de inscripción", "Una novela", "Un poema", "Una carta", "Un cuento"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Un formulario de inscripción tiene espacios para llenar y no se lee de manera lineal. Es texto discontinuo. Los otros son continuos.",
+    "habilidad_requerida": "Clase: Textos discontinuos. Organizan la información de forma no secuencial: formularios, tablas, gráficos, mapas, infografías. Practica interpretando un formulario y extrayendo información específica."
+  },
+  {
+    "pregunta": "En la oración 'Espero que todo salga bien', el verbo 'salga' está en modo:",
+    "alternativas": ["Subjuntivo", "Indicativo", "Imperativo", "Condicional", "Infinitivo"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "'Espero que' expresa deseo, exige subjuntivo. 'Salga' es presente de subjuntivo.",
+    "habilidad_requerida": "Clase: Subjuntivo con verbos de deseo y esperanza. Ejemplo: 'Deseo que mejores'. Practica conjugando verbos en presente de subjuntivo para expresar buenos deseos."
+  },
+  {
+    "pregunta": "Lee el siguiente texto: 'La primavera vestía de colores el campo desnudo.' ¿Qué figura retórica predomina?",
+    "alternativas": ["Personificación", "Metáfora", "Símil", "Hipérbole", "Sinestesia"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "La primavera 'vestía', acción humana. Es personificación. No es metáfora, símil, hipérbole ni sinestesia.",
+    "habilidad_requerida": "Clase: Personificación de estaciones. Se usa para dar vida al cambio de estación. Ejemplo: 'El invierno tiñó de blanco los árboles'. Practica describiendo una estación como si fuera una persona que realiza acciones."
+  },
+  {
+    "pregunta": "Señala la opción donde el verbo 'ir' está en futuro de subjuntivo (forma casi en desuso, pero aún correcta en documentos legales).",
+    "alternativas": ["Fuere", "Iba", "Fue", "Vaya", "Iría"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "El futuro de subjuntivo del verbo 'ir' es 'fuere'. Hoy se usa raramente, pero existe. 'Iba' es pretérito imperfecto, 'fue' pretérito perfecto simple, 'vaya' presente de subjuntivo, 'iría' condicional.",
+    "habilidad_requerida": "Clase: Futuro de subjuntivo. Se forma con la raíz del pretérito perfecto simple + -re, -res, etc. Ejemplo: 'lo que fuere' (frase hecha). Practica reconociendo este tiempo en textos jurídicos o refranes."
+  },
+  {
+    "pregunta": "¿Cuál de las siguientes palabras es un sinónimo de 'lacerante'?",
+    "alternativas": ["Doloroso", "Alegre", "Suave", "Indiferente", "Curativo"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Lacerante significa que causa dolor o sufrimiento. Sinónimo: doloroso, hiriente. Los otros son antónimos o no relacionados.",
+    "habilidad_requerida": "Clase: Vocabulario de sensaciones. 'Lacerante' se usa para críticas o palabras que duelen. Ejemplo: 'Un comentario lacerante'. Practica usando 'lacerante' en contextos emocionales."
+  },
+  {
+    "pregunta": "En la oración 'Necesito papel y lápiz', el nexo 'y' es una conjunción:",
+    "alternativas": ["Copulativa", "Disyuntiva", "Adversativa", "Concesiva", "Causal"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "'Y' une elementos de manera acumulativa, sin oposición. Es conjunción copulativa. Las disyuntivas son 'o', adversativas 'pero', concesivas 'aunque', causales 'porque'.",
+    "habilidad_requerida": "Clase: Conjunciones copulativas: y, e, ni. Sirven para sumar ideas. Ejemplo: 'Estudia y trabaja'. Practica uniendo oraciones con 'y'."
+  },
+  {
+    "pregunta": "Lee el siguiente texto: 'El tiempo es un río que todo lo arrastra.' ¿Qué figura retórica predomina?",
+    "alternativas": ["Metáfora", "Símil", "Personificación", "Hipérbole", "Sinestesia"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Identifica el tiempo con un río. Es metáfora. No es símil (no hay 'como'), ni personificación (aunque arrastra podría ser, la figura principal es la identificación), ni hipérbole, ni sinestesia.",
+    "habilidad_requerida": "Clase: Metáfora del tiempo. El río representa el fluir inevitable. Ejemplo: 'El tiempo es un ladrón que roba la juventud'. Practica creando metáforas para el paso del tiempo."
+  },
+  {
+    "pregunta": "Señala la opción donde la coma está correctamente utilizada en una enumeración compleja.",
+    "alternativas": ["Visitamos Madrid, España; París, Francia; y Londres, Inglaterra.", "Visitamos Madrid, España, París, Francia, y Londres, Inglaterra.", "Visitamos Madrid; España, París; Francia, Londres; Inglaterra.", "Visitamos Madrid España, París Francia, Londres Inglaterra.", "Visitamos Madrid, España; París, Francia; Londres, Inglaterra."],
+    "respuesta_correcta": "E",
+    "explicacion_respuesta": "La opción E usa punto y coma para separar los pares ciudad-país, correcto. La A también podría ser correcta con 'y' antes de Londres, pero la E es más limpia. Elegimos E como la más estándar.",
+    "habilidad_requerida": "Clase: Punto y coma en enumeraciones donde los elementos tienen comas internas. Ejemplo: 'Los candidatos fueron: Juan Pérez, Madrid; María López, Barcelona; y Carlos Ruiz, Valencia'. Practica escribiendo enumeraciones geográficas."
+  },
+  {
+    "pregunta": "¿Qué función cumple el lenguaje en la frase 'El agua hierve a 100 grados Celsius a nivel del mar'?",
+    "alternativas": ["Referencial", "Apelativa", "Expresiva", "Poética", "Fática"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Informa un dato objetivo, verificable. Es función referencial (representativa). No busca persuadir, expresar emociones, embellecer ni establecer contacto.",
+    "habilidad_requerida": "Clase: Función referencial. Se basa en el contexto y en hechos. Ejemplo: 'El hierro es un metal'. Practica redactando cinco oraciones con función referencial."
+  },
+  {
+    "pregunta": "En la oración 'Compré el libro que me recomendaste', el pronombre 'que' es un:",
+    "alternativas": ["Pronombre relativo", "Conjunción", "Adverbio", "Artículo", "Preposición"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "'Que' se refiere a 'libro' y lo reemplaza. Es pronombre relativo. No es conjunción, adverbio, artículo ni preposición.",
+    "habilidad_requerida": "Clase: Pronombres relativos. Introducen subordinadas adjetivas. Ejemplo: 'La casa que compramos es grande'. Practica reemplazando 'que' por 'el cual'."
+  },
+  {
+    "pregunta": "Lee el siguiente texto: 'La oscuridad era tan densa que parecía sólida.' ¿Qué recurso predomina?",
+    "alternativas": ["Sinestesia", "Metáfora", "Símil", "Personificación", "Hipérbole"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Se atribuye a la oscuridad (vista) la cualidad de 'densa' y 'sólida' (tacto). Es sinestesia (mezcla de sentidos). No es metáfora (no identifica), ni símil (no hay 'como' explícito en la primera parte, aunque 'parecía' es un símil implícito, pero la figura central es la sinestesia).",
+    "habilidad_requerida": "Clase: Sinestesia táctil-visual. Unir sentido de la vista y el tacto. Ejemplo: 'El color era áspero'. Practica creando sinestesias con 'denso', 'suave', 'rugoso' aplicados a la luz, el sonido o el silencio."
+  },
+  {
+    "pregunta": "Señala la opción donde se usa incorrectamente el gerundio (gerundio de posterioridad).",
+    "alternativas": ["Salió corriendo.", "Lo vi saltando la cuerda.", "Se fue, muriendo al día siguiente.", "Está lloviendo.", "Llegó tarde, perdiendo el examen."],
+    "respuesta_correcta": "C",
+    "explicacion_respuesta": "El gerundio 'muriendo' expresa una acción posterior a 'se fue', lo cual es incorrecto (el gerundio debe indicar simultaneidad o anterioridad). Debería ser 'y murió al día siguiente'. Las otras opciones tienen gerundios correctos (simultáneos o aceptables).",
+    "habilidad_requerida": "Clase: Gerundio de posterioridad (incorrecto). Nunca debe usarse para acciones que ocurren después de la principal. Ejemplo incorrecto: 'Apagó la luz, dejando todo a oscuras' (dejar es simultáneo? sí, es aceptable; pero 'se fue, muriendo' es claramente posterior). Practica corrigiendo frases como 'Se levantó, desayunando más tarde' → 'y desayunó más tarde'."
+  },
+  {
+    "pregunta": "¿Cuál de las siguientes palabras es un sustantivo concreto?",
+    "alternativas": ["Belleza", "Mesa", "Tristeza", "Honestidad", "Libertad"],
+    "respuesta_correcta": "B",
+    "explicacion_respuesta": "'Mesa' es un objeto físico, perceptible. Las otras son conceptos abstractos.",
+    "habilidad_requerida": "Clase: Sustantivos concretos vs abstractos. Concretos: mesa, perro, flor. Abstractos: amor, paz, tiempo. Practica clasificando diez sustantivos de tu entorno."
+  },
+  {
+    "pregunta": "Lee el siguiente texto: 'La vida es un pálpito constante entre la alegría y el dolor.' ¿Qué figura retórica predomina?",
+    "alternativas": ["Metáfora", "Símil", "Personificación", "Hipérbole", "Sinestesia"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Identifica la vida con un pálpito. Es metáfora. No es símil (no hay 'como'), ni personificación, ni hipérbole, ni sinestesia.",
+    "habilidad_requerida": "Clase: Metáfora de la vida como latido. Implica intensidad y movimiento. Ejemplo: 'La vida es un baile'. Practica creando metáforas para la vida utilizando verbos de movimiento o sensaciones corporales."
+  },
+  {
+    "pregunta": "Señala la opción donde la palabra 'de' (preposición) está correctamente usada sin tilde.",
+    "alternativas": ["Déme el libro.", "El libro de Juan.", "Espero que me dé tiempo.", "No se lo dé a nadie.", "Quiero que me dé la respuesta."],
+    "respuesta_correcta": "B",
+    "explicacion_respuesta": "La preposición 'de' no lleva tilde. En B, 'El libro de Juan' es correcto. Las otras opciones usan 'dé' (verbo dar con tilde), que es correcto en su contexto, pero no son la preposición. La pregunta pide 'de' preposición sin tilde, por lo tanto B es la única.",
+    "habilidad_requerida": "Clase: Diferencia entre 'de' (preposición) y 'dé' (verbo dar). La tilde diacrítica separa significados. Ejemplo: 'Quiero que me dé el libro de Pedro'. Practica identificando cuál es preposición y cuál verbo en oraciones."
+  },
+  {
+    "pregunta": "¿Qué tipo de texto es una ley?",
+    "alternativas": ["Instructivo", "Expositivo", "Argumentativo", "Narrativo", "Descriptivo"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Una ley prescribe conductas, establece normas. Es un texto instructivo (prescriptivo). Aunque puede tener partes expositivas, su propósito principal es regular.",
+    "habilidad_requerida": "Clase: Textos instructivos normativos: leyes, decretos, reglamentos. Utilizan verbos en presente de indicativo con valor imperativo. Ejemplo: 'Artículo 1: El ciudadano está obligado a...' Practica identificando artículos de ley como instructivos."
+  },
+  {
+    "pregunta": "En la oración 'Los niños jugaban felices', la palabra 'felices' es:",
+    "alternativas": ["Predicativo subjetivo obligatorio", "Complemento circunstancial", "Complemento directo", "Complemento indirecto", "Atributo"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "'Felices' modifica al sujeto 'los niños' y es un predicativo subjetivo (obligatorio o no según el verbo). En este caso, 'jugaban felices' expresa el estado del sujeto mientras realiza la acción. No es circunstancial, ni CD, ni CI, ni atributo (no es verbo copulativo).",
+    "habilidad_requerida": "Clase: Predicativo subjetivo. Es un adjetivo que se refiere al sujeto y va con verbos no copulativos. Ejemplo: 'La niña durmió tranquila'. Practica identificando predicativos en oraciones."
+  },
+  {
+    "pregunta": "Lee el siguiente texto: 'El poeta miraba la luna y no veía un satélite, sino el rostro de una amada ausente.' ¿Qué recurso predomina en 'rostro de una amada ausente'?",
+    "alternativas": ["Metáfora", "Símil", "Personificación", "Hipérbole", "Sinestesia"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "La luna es identificada con el rostro de la amada. Es metáfora. No es símil (no hay 'como'), ni personificación, ni hipérbole, ni sinestesia.",
+    "habilidad_requerida": "Clase: Metáfora en poesía romántica. La luna como símbolo del ser amado. Ejemplo: 'Tus ojos son luceros'. Practica creando metáforas donde un objeto natural represente a una persona."
+  },
+  {
+    "pregunta": "Señala la opción donde se produce una cacofonía.",
+    "alternativas": ["La alta ala del ala.", "El perro ladra.", "La casa es grande.", "El niño juega.", "La flor es roja."],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "La frase 'La alta ala del ala' repite excesivamente el sonido 'a' y 'la', resultando cacofónica. Las otras frases son normales.",
+    "habilidad_requerida": "Clase: Cacofonía. Es la repetición desagradable de sonidos. Para evitarla, reordena la frase o cambia palabras. Ejemplo: 'El niño tenía una idea idílica' (repetición de 'i'). Practica leyendo en voz alta para detectar cacofonías."
+  },
+  {
+    "pregunta": "¿Cuál de las siguientes palabras es un adverbio de afirmación?",
+    "alternativas": ["Ciertamente", "Nunca", "Acaso", "Bien", "Quizás"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "'Ciertamente' expresa afirmación con énfasis. 'Nunca' es negación, 'acaso' duda, 'bien' modo (aunque también puede afirmar, pero no es primariamente afirmativo), 'quizás' duda. La más clara es 'ciertamente'.",
+    "habilidad_requerida": "Clase: Adverbios de afirmación: sí, ciertamente, efectivamente, claro. Se usan para asentir o enfatizar certeza. Ejemplo: 'Ciertamente, tienes razón'. Practica respondiendo afirmativamente con diferentes adverbios."
+  },
+  {
+    "pregunta": "En la oración 'Me duele la cabeza', el verbo 'duele' está en tercera persona del singular porque:",
+    "alternativas": ["Concuerda con 'cabeza'", "Concuerda con 'me'", "Es impersonal", "Es un verbo defectivo", "Es una perífrasis"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "El verbo 'doler' concuerda con la cosa que duele, que es 'la cabeza' (sujeto gramatical). 'Me' es complemento indirecto.",
+    "habilidad_requerida": "Clase: Verbos como 'gustar', 'doler', 'parecer'. El sujeto es la cosa que causa la sensación. Ejemplo: 'Me gustan los perros' (sujeto: los perros). Practica identificando el sujeto en estas oraciones."
+  },
+  {
+    "pregunta": "Lee el siguiente texto: 'El amor es un fuego que se aviva con el viento de la distancia.' ¿Qué recurso predomina en 'fuego'?",
+    "alternativas": ["Metáfora", "Símil", "Personificación", "Hipérbole", "Sinestesia"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "El amor es identificado con un fuego. Es metáfora. No es símil (no hay 'como'), ni personificación (no actúa), ni hipérbole, ni sinestesia.",
+    "habilidad_requerida": "Clase: Metáfora del amor como fuego (pasión, intensidad). Ejemplo: 'El amor arde'. Practica creando metáforas para el amor utilizando elementos de la naturaleza (fuego, agua, viento)."
+  },
+  {
+    "pregunta": "Señala la opción donde la palabra 'más' (adverbio de cantidad) está correctamente acentuada.",
+    "alternativas": ["Mas no lo sé.", "Quiero más tiempo.", "El mas rápido gana.", "A mas tardar mañana.", "Mas sin embargo, llegó."],
+    "respuesta_correcta": "B",
+    "explicacion_respuesta": "'Más' con tilde es adverbio de cantidad. En B es correcto. En A, C, D, E deberían usar 'mas' sin tilde (adversativo) o la palabra está mal escrita. La opción B es la única con tilde correcta.",
+    "habilidad_requerida": "Clase: Tilde diacrítica en 'más' (cantidad) y 'mas' (conjunción adversativa = pero). Ejemplo: 'Quiero más comida, mas no hay'. Practica escribiendo oraciones donde aparezcan ambos."
+  },
+  {
+    "pregunta": "¿Cuál de las siguientes opciones es una oración simple?",
+    "alternativas": ["Cantó y bailó.", "El perro ladra.", "Cuando llegue, te aviso.", "Dime si vendrás.", "Espero que todo salga bien."],
+    "respuesta_correcta": "B",
+    "explicacion_respuesta": "Una oración simple tiene un solo verbo conjugado. 'El perro ladra' tiene un verbo. Las otras tienen dos o más verbos o subordinación.",
+    "habilidad_requerida": "Clase: Oración simple. Un solo predicado. Ejemplo: 'Llueve'. Practica identificando oraciones simples y compuestas en un texto breve."
+  }
+]

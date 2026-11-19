@@ -1,0 +1,214 @@
+[
+  {
+    "pregunta": "Lee el siguiente fragmento: 'La niebla cubría cada rincón del valle, y el silencio era tan denso que parecía tener peso.' ¿Qué recurso literario predomina en el fragmento?",
+    "alternativas": ["Metáfora", "Sinestesia", "Hipérbole", "Personificación", "Símil"],
+    "respuesta_correcta": "B",
+    "explicacion_respuesta": "La sinestesia consiste en atribuir a un sentido cualidades de otro (el silencio (oído) se describe como 'denso' y con 'peso', sensaciones táctiles). No es metáfora (no hay identificación entre dos términos), no es hipérbole (exageración), no es personificación (no se da vida humana a objetos inanimados) ni símil (no usa 'como').",
+    "habilidad_requerida": "Clase: Figuras literarias. La sinestesia mezcla sensaciones de diferentes sentidos. Para reconocerla, identifica si un término sensorial (oído, vista, tacto) se describe con un adjetivo propio de otro sentido. Ejemplo: 'color chillón' (vista y oído), 'suave melodía' (tacto y oído). Practica leyendo poemas y subrayando estas mezclas."
+  },
+  {
+    "pregunta": "En el texto 'El amor es más poderoso que la muerte, pero más frágil que un suspiro', se utiliza principalmente la antítesis. ¿Por qué?",
+    "alternativas": ["Porque enfrenta ideas opuestas (poderoso/frágil) en una misma estructura.", "Porque compara el amor con elementos de la naturaleza.", "Porque exagera las cualidades del amor.", "Porque repite la misma idea con diferentes palabras.", "Porque atribuye cualidades humanas al amor."],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "La antítesis consiste en contraponer dos ideas o términos de significado opuesto (poderoso vs frágil) para crear un contraste enfático. Las otras opciones describen símil, hipérbole, redundancia o personificación, respectivamente.",
+    "habilidad_requerida": "Clase: Antítesis. Es una figura de oposición. Para identificarla, busca pares de palabras antónimas dentro de la misma frase o verso. Ejemplo: 'Vivo sin vivir en mí, y tan alta vida espero, que muero porque no muero' (San Juan de la Cruz). Práctica: escribe oraciones con contrastes como 'luz/oscuridad', 'alegría/tristeza'."
+  },
+  {
+    "pregunta": "¿Qué función del lenguaje predomina en un aviso publicitario que dice: 'Compra el nuevo Smartphone X, la mejor relación calidad-precio'?",
+    "alternativas": ["Referencial", "Apelativa", "Expresiva", "Poética", "Fática"],
+    "respuesta_correcta": "B",
+    "explicacion_respuesta": "La función apelativa o conativa busca influir en el receptor (persuadir, ordenar, sugerir). El verbo 'compra' en imperativo y el énfasis en 'la mejor' buscan convencer al público. No es referencial (solo informar), ni expresiva (sentimientos del emisor), ni poética (estética), ni fática (verificar canal).",
+    "habilidad_requerida": "Clase: Funciones del lenguaje. Apelativa: centrada en el receptor, usa imperativos, vocativos, lenguaje persuasivo. Ejemplo: 'No dejes pasar esta oferta'. Para practicar, clasifica mensajes publicitarios, discursos políticos y órdenes. Recuerda: 'apelar' = llamar, invitar a actuar."
+  },
+  {
+    "pregunta": "En el siguiente texto, ¿cuál es la tesis del autor? 'Si bien el teletrabajo ofrece flexibilidad, no es adecuado para todos. Las personas con dificultades de autogestión o con espacios reducidos sufren una baja productividad. Por tanto, las empresas no deberían imponerlo de forma general.'",
+    "alternativas": ["El teletrabajo es negativo porque baja la productividad.", "Las empresas deberían evitar el teletrabajo obligatorio.", "El teletrabajo ofrece flexibilidad.", "Las personas con mala autogestión no son aptas para teletrabajar.", "El teletrabajo solo es adecuado si hay espacios amplios."],
+    "respuesta_correcta": "B",
+    "explicacion_respuesta": "La tesis es la idea principal que el autor defiende. Aquí el autor reconoce ventajas ('si bien') pero concluye que 'las empresas no deberían imponerlo de forma general' (opción B). Las otras opciones son premisas o ideas secundarias, no la conclusión central.",
+    "habilidad_requerida": "Clase: Identificar tesis en un texto argumentativo. La tesis suele aparecer al inicio o al final, a menudo precedida de conectores como 'por tanto', 'en conclusión', 'así pues'. Para practicar, lee columnas de opinión y subraya la oración que resume la postura del autor. Diferénciala de los argumentos (razones que la apoyan)."
+  },
+  {
+    "pregunta": "Lee el siguiente texto: 'El ruido de las olas rompía contra la orilla, mientras el viento silbaba entre los pinos. El sol se ocultaba tras el horizonte como un disco de cobre fundido.' ¿Qué sensación predomina?",
+    "alternativas": ["Tranquilidad y melancolía", "Angustia y temor", "Furia y violencia", "Alegría desbordante", "Indiferencia"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Las imágenes del atardecer ('sol oculto', 'disco de cobre') y los sonidos suaves ('rompía', 'silbaba') crean una atmósfera serena y ligeramente nostálgica. No hay elementos de angustia, violencia o alegría extrema.",
+    "habilidad_requerida": "Clase: Inferir atmósfera o tono de un texto. Presta atención a adjetivos, verbos y comparaciones. Palabras como 'susurro', 'lento', 'dorado' indican calma; 'grito', 'súbito', 'roto' indican tensión. Practica leyendo descripciones y preguntándote qué estado de ánimo transmiten."
+  },
+  {
+    "pregunta": "¿Cuál de las siguientes opciones es un sinónimo contextual de 'abnegado' en la frase: 'Fue un trabajador abnegado, siempre dispuesto a sacrificar su descanso por la empresa'?",
+    "alternativas": ["Dedicado", "Egoísta", "Indolente", "Caprichoso", "Hábil"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Abnegado significa que se sacrifica o renuncia a sus propios intereses por los demás. En el contexto, 'siempre dispuesto a sacrificar su descanso' confirma 'dedicado' como sinónimo. Las otras opciones tienen significados opuestos o no relacionados.",
+    "habilidad_requerida": "Clase: Sinónimos en contexto. Lee toda la oración; el contexto te da pistas del significado. Abnegación = renuncia voluntaria. Para ampliar vocabulario, usa un diccionario de sinónimos y escribe ejemplos propios. Ejercicio: busca el sinónimo de 'parco' en 'fue muy parco en sus palabras' (respuesta: lacónico, breve)."
+  },
+  {
+    "pregunta": "Señala el antónimo de 'efímero' en la frase: 'La fama de algunos artistas es efímera, dura solo un verano.'",
+    "alternativas": ["Perecedero", "Transitorio", "Perdurable", "Breve", "Caduco"],
+    "respuesta_correcta": "C",
+    "explicacion_respuesta": "Efímero significa de corta duración. Su antónimo es 'perdurable' (que dura mucho). Las opciones A, B, D y E son sinónimos de efímero o similares.",
+    "habilidad_requerida": "Clase: Antónimos. Se oponen en significado. Para identificarlos, piensa en la duración: efímero ↔ eterno, duradero, perpetuo. Practica con pares como 'optimista/pesimista', 'generoso/avaro'. Lee el contexto para confirmar el sentido."
+  },
+  {
+    "pregunta": "En el texto: 'Los estudiantes que estudiaron con anticipación aprobaron el examen; en cambio, aquellos que dejaron todo para última hora reprobaron.' ¿Qué tipo de relación establece el conector 'en cambio'?",
+    "alternativas": ["Causa-efecto", "Adición", "Contraste", "Consecuencia", "Condición"],
+    "respuesta_correcta": "C",
+    "explicacion_respuesta": "'En cambio' es un conector adversativo que indica oposición o contraste entre dos ideas (aprobar vs reprobar). No expresa causa, suma, consecuencia ni condición.",
+    "habilidad_requerida": "Clase: Conectores textuales. Los adversativos (pero, sin embargo, no obstante, en cambio) introducen ideas opuestas. Para practicar, clasifica conectores por función: adición (y, además, también), contraste (pero, aunque, sino), causa (porque, pues), consecuencia (por lo tanto, entonces)."
+  },
+  {
+    "pregunta": "Lee el siguiente enunciado y elige su interpretación correcta: 'No porque ganes mucho dinero eres feliz.'",
+    "alternativas": ["Ganar mucho dinero no te hace feliz.", "Si ganas mucho dinero, eres feliz.", "Solo eres feliz si ganas mucho dinero.", "Ganar mucho dinero es condición suficiente para ser feliz.", "Eres feliz aunque no ganes dinero."],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "La construcción 'no porque... eres...' significa que la causa señalada (ganar dinero) no produce el efecto (felicidad). Equivale a 'no es cierto que ganar mucho dinero te haga feliz'. Las otras opciones invierten o alteran la lógica.",
+    "habilidad_requerida": "Clase: Interpretación de estructuras con 'no porque'. La fórmula 'No porque A, (por ello) B' expresa que A no es la razón de B. Ejemplo: 'No porque estudies mucho, aprobarás' = estudiar mucho no garantiza aprobar. Practica reescribiendo estas oraciones en forma lógica: 'A no implica B'."
+  },
+  {
+    "pregunta": "¿Qué vicio de redacción se comete en: 'El niño tenía una sonrisa alegre, feliz y contenta'?",
+    "alternativas": ["Redundancia", "Cacofonía", "Anfibología", "Barbarismo", "Queísmo"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Redundancia (o pleonasmo) porque 'alegre, feliz y contenta' significan prácticamente lo mismo; sobra repetir sin aportar nuevo matiz. Cacofonía sería sonido desagradable, anfibología ambigüedad, barbarismo error en la forma de la palabra, queísmo uso incorrecto de 'que'.",
+    "habilidad_requerida": "Clase: Redundancia. Evita repetir ideas con sinónimos innecesarios. Una buena redacción es concisa. Ejemplo: 'subir arriba', 'bajar abajo', 'volver a repetir'. Practica: corrige frases como 'me lo contó personalmente' (personalmente es redundante si ya es un relato)."
+  },
+  {
+    "pregunta": "¿Cuál es la idea principal del siguiente párrafo? 'Aunque la inteligencia artificial puede automatizar muchas tareas, aún depende de la supervisión humana para evitar sesgos. Los algoritmos aprenden de datos históricos, que pueden contener discriminación. Por lo tanto, los equipos humanos deben revisar periódicamente los resultados.'",
+    "alternativas": ["La inteligencia artificial es mejor que los humanos.", "La supervisión humana es necesaria en IA para evitar sesgos.", "Los algoritmos aprenden de datos históricos.", "La IA puede automatizar tareas.", "Los datos históricos siempre contienen discriminación."],
+    "respuesta_correcta": "B",
+    "explicacion_respuesta": "El texto presenta un problema (sesgos), una causa (datos históricos) y una conclusión ('por lo tanto, los equipos humanos deben revisar'). La idea principal es esa necesidad de supervisión humana. Las otras son detalles secundarios o premisas.",
+    "habilidad_requerida": "Clase: Identificar idea principal en textos expositivo-argumentativos. Pregúntate: ¿cuál es el mensaje central que el autor quiere que recuerdes? A menudo está en la conclusión o tesis. Distingue entre ejemplos, datos y la afirmación global. Practica con noticias: resume cada párrafo en una oración."
+  },
+  {
+    "pregunta": "En la oración 'La casa, que está al final de la calle, es muy antigua', la cláusula 'que está al final de la calle' es una:",
+    "alternativas": ["Proposición subordinada adjetiva explicativa", "Proposición subordinada adjetiva especificativa", "Proposición subordinada sustantiva", "Proposición principal", "Oración simple"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Las comas indican que es una aposición explicativa: añade información adicional sobre 'la casa' sin restringirla (todas las casas, y además esa está al final). Si no tuviera comas, sería especificativa (identifica cuál casa). Es adjetiva porque modifica a un sustantivo y está introducida por 'que'.",
+    "habilidad_requerida": "Clase: Oraciones subordinadas adjetivas. Explicativas van entre comas, añaden un comentario; especificativas sin comas, restringen el significado. Ejemplo: 'Los alumnos, que estudiaron, aprobaron' (todos estudiaron y aprobaron) vs 'Los alumnos que estudiaron aprobaron' (solo los que estudiaron). Práctica: añade comas en frases y observa el cambio de sentido."
+  },
+  {
+    "pregunta": "Selecciona la opción que presenta un error de tildación.",
+    "alternativas": ["Él compró un té para mí.", "El té que compró él es para ti.", "El decía que no sabía nada.", "Sí, acepto tu opinión.", "Dame más detalles, sé claro."],
+    "respuesta_correcta": "C",
+    "explicacion_respuesta": "El verbo 'decía' no lleva tilde porque es una palabra llana terminada en vocal, y la sílaba tónica es 'de'. 'Él' (pronombre) sí lleva tilde para diferenciarlo del artículo, 'té' (bebida) se tilda para evitar confusión con 'te' (pronombre), 'sí' (afirmación) y 'sé' (verbo saber/ser) están correctamente tildados. La opción C 'El decía' está mal: 'El' como artículo no lleva tilde, pero aquí debería ser 'Él decía' (pronombre).",
+    "habilidad_requerida": "Clase: Acentuación. Reglas: palabras agudas terminadas en n, s o vocal llevan tilde; graves terminadas en consonante distinta de n/s llevan tilde; esdrújulas y sobresdrújulas siempre llevan tilde. Además, tilde diacrítica para distinguir monosílabos (él/el, mí/mi, té/te, sí/si, sé/se, más/mas). Practica escribiendo ejemplos y corrigiendo errores comunes."
+  },
+  {
+    "pregunta": "Lee el siguiente texto y determina la función del conector 'por consiguiente': 'El aumento del paro reduce el consumo. Por consiguiente, la economía se contrae.'",
+    "alternativas": ["Causa", "Consecuencia", "Adición", "Contraste", "Condición"],
+    "respuesta_correcta": "B",
+    "explicacion_respuesta": "'Por consiguiente' introduce una consecuencia lógica de lo anterior. Señala que la contracción económica es el resultado del aumento del paro. No es causa (sería 'porque'), ni adición, contraste o condición.",
+    "habilidad_requerida": "Clase: Conectores de consecuencia. Indican el resultado o efecto de una causa. Ejemplos: por lo tanto, entonces, así que, de modo que, en consecuencia. Para practicar, completa oraciones: 'Está lloviendo, _____ me mojaré' (usa un conector de consecuencia)."
+  },
+  {
+    "pregunta": "¿Qué recurso argumentativo se usa en la frase: 'Si todos saltaran de un puente, ¿tú también lo harías?'?",
+    "alternativas": ["Argumento de autoridad", "Falacia ad populum", "Analogía", "Pregunta retórica", "Ejemplificación"],
+    "respuesta_correcta": "D",
+    "explicacion_respuesta": "Es una pregunta retórica, pues no espera respuesta sino que busca hacer reflexionar al interlocutor sobre la validez de seguir a la mayoría. No es argumento de autoridad (cita a un experto), ni falacia ad populum (apelar a la mayoría como verdad), aunque se acerca, pero la figura es la pregunta retórica. La analogía implicaría comparación explícita.",
+    "habilidad_requerida": "Clase: Pregunta retórica. Se formula sin esperar respuesta, para enfatizar una idea o criticar. Ejemplo: '¿Acaso crees que esto es justo?' Practica identificándolas en discursos políticos y publicidad. Diferéncialas de preguntas informativas."
+  },
+  {
+    "pregunta": "En el texto: 'El escritor chileno Roberto Bolaño es conocido por sus novelas "Los detectives salvajes" y "2666". En ellas, mezcla realidad y ficción, y crea personajes complejos.' ¿Qué tipo de información predomina?",
+    "alternativas": ["Datos biográficos", "Crítica literaria", "Resumen de obras", "Contexto histórico", "Análisis de estilo"],
+    "respuesta_correcta": "C",
+    "explicacion_respuesta": "El fragmento menciona títulos y características generales de las obras ('mezcla realidad y ficción'), pero no analiza en profundidad el estilo ni emite juicios críticos valorativos. Es un resumen descriptivo. No hay datos de su vida, ni contexto histórico.",
+    "habilidad_requerida": "Clase: Tipos de textos sobre literatura. Resumen: expone contenidos de forma objetiva. Crítica: evalúa y argumenta. Biografía: narra vida del autor. Para practicar, lee reseñas y distingue entre descripción y opinión."
+  },
+  {
+    "pregunta": "Selecciona la opción que presenta correctamente el uso de 'sino' (no confundir con 'si no').",
+    "alternativas": ["No quiero ir al cine, sino que prefiero quedarme en casa.", "Si no estudias, no aprobarás.", "No es feo, sino guapo.", "No solo llegó tarde, sino que además olvidó los regalos.", "Todas las anteriores son correctas."],
+    "respuesta_correcta": "E",
+    "explicacion_respuesta": "Todas las opciones usan 'sino' o 'si no' correctamente. 'Sino' (junto) se usa para contraponer una idea a otra negada previamente; 'si no' (separado) expresa condición. En A: 'no quiero... sino que prefiero' correcto. B: 'si no estudias' condición correcta. C: 'no es feo, sino guapo' correcto. D: 'no solo... sino que además' correcto.",
+    "habilidad_requerida": "Clase: Diferencia entre 'sino' y 'si no'. 'Sino' es una conjunción adversativa equivalente a 'por el contrario' o 'más bien'; 'si no' es 'si' condicional + 'no' adverbio. Truco: si puedes reemplazar por 'de lo contrario' o 'por el contrario', es 'sino'; si equivale a 'en caso contrario', es 'si no'. Practica escribiendo ejemplos propios."
+  },
+  {
+    "pregunta": "¿Cuál de los siguientes textos corresponde a una narración?",
+    "alternativas": ["Instrucciones para armar un mueble.", "Una fábula sobre una liebre y una tortuga.", "La receta de un pastel de chocolate.", "Un artículo que explica el cambio climático.", "Un diagrama de flujo de procesos."],
+    "respuesta_correcta": "B",
+    "explicacion_respuesta": "Una narración relata una historia con personajes, acciones y un desarrollo temporal. La fábula es un tipo de narración. Las demás son textos instructivos, expositivos o gráficos.",
+    "habilidad_requerida": "Clase: Tipos de texto según propósito. Narrativo: contar hechos (cuento, novela, fábula, crónica). Expositivo: explicar conceptos. Argumentativo: persuadir. Instructivo: guiar acciones. Para practicar, clasifica textos de periódicos o libros."
+  },
+  {
+    "pregunta": "Lee el siguiente enunciado: 'La luz de la luna se derramaba sobre el lago como un velo de plata.' ¿Qué figura retórica es?",
+    "alternativas": ["Símil", "Metáfora", "Personificación", "Hipérbole", "Ironía"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Es un símil porque establece una comparación explícita usando el nexo 'como' (se derramaba como un velo). La metáfora no usa nexo; la personificación da cualidades humanas; la hipérbole exagera; la ironía dice lo contrario de lo que se piensa.",
+    "habilidad_requerida": "Clase: Símil o comparación. Usa palabras como 'como', 'cual', 'semejante a', 'parece'. Sirve para crear imágenes vívidas. Ejemplo: 'sus ojos brillaban como estrellas'. Practica creando tus propios símiles y transformándolos en metáforas (sin 'como')."
+  },
+  {
+    "pregunta": "En la oración 'Terminaré el trabajo aunque esté cansado', la conjunción 'aunque' expresa:",
+    "alternativas": ["Concesión", "Condición", "Causa", "Finalidad", "Tiempo"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "'Aunque' es una conjunción concesiva; indica un obstáculo que no impide la acción principal. No es condición ('si'), ni causa ('porque'), ni finalidad ('para que'), ni tiempo ('cuando').",
+    "habilidad_requerida": "Clase: Concesión. Las concesivas (aunque, a pesar de que, pese a que) presentan una dificultad que no frena lo dicho. Ejemplo: 'Iré a la fiesta aunque llueva'. Práctica: redacta oraciones donde expreses una acción a pesar de un obstáculo."
+  },
+  {
+    "pregunta": "¿Cuál es el significado de la palabra 'recóndito' en la frase: 'Guardó sus sentimientos en un lugar recóndito del alma'?",
+    "alternativas": ["Profundo y oculto", "Superficial", "Olvidado", "Doloroso", "Claro y evidente"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Recóndito significa escondido, oculto, de difícil acceso. En el contexto, se refiere a un lugar profundo e inaccesible del alma. No es superficial ni evidente.",
+    "habilidad_requerida": "Clase: Vocabulario literario. 'Recóndito' deriva del latín 'reconditus' (escondido). Para aprender vocabulario, lee textos literarios y anota palabras desconocidas, busca su definición y escribe una oración. Crea tarjetas de memoria."
+  },
+  {
+    "pregunta": "El siguiente texto es parte de un artículo: 'Según la OMS, el consumo excesivo de azúcar se relaciona con la obesidad. Por ende, se recomienda reducir su ingesta.' ¿Qué tipo de argumento se emplea?",
+    "alternativas": ["Argumento de autoridad", "Argumento de experiencia personal", "Argumento estadístico", "Argumento analógico", "Argumento de causa-efecto"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Se cita a la Organización Mundial de la Salud (OMS), una institución reconocida como experta en salud pública. Esto constituye un argumento de autoridad. Aunque también hay una relación causa-efecto implícita, la fuerza del argumento reside en la fuente.",
+    "habilidad_requerida": "Clase: Argumento de autoridad. Apoya una tesis con el testimonio o respaldo de un experto o institución creíble en la materia. Es válido siempre que la fuente sea pertinente. Ejemplo: 'Según la RAE, la palabra 'solo' no debe tildarse en general'. Practica identificando este recurso en textos de divulgación."
+  },
+  {
+    "pregunta": "En la oración 'Es muy tarde, salgamos ya', el verbo 'salgamos' está en modo:",
+    "alternativas": ["Subjuntivo", "Indicativo", "Imperativo", "Condicional", "Infinitivo"],
+    "respuesta_correcta": "C",
+    "explicacion_respuesta": "'Salgamos' es la primera persona del plural del presente de subjuntivo, pero aquí usado con valor de imperativo (para expresar mandato o propuesta). En español, el imperativo para 'nosotros' se forma con el subjuntivo: 'salgamos' = 'let's go'. Por lo tanto, responde a modo imperativo (aunque formalmente coincida con subjuntivo).",
+    "habilidad_requerida": "Clase: Modos verbales. Indicativo: hechos reales. Subjuntivo: deseos, dudas. Imperativo: órdenes, sugerencias. Para 'nosotros', el imperativo usa la forma del subjuntivo (cantemos, comamos). Para practicar, conjuga verbos en imperativo afirmativo y negativo para todas las personas."
+  },
+  {
+    "pregunta": "¿Qué vicio de lenguaje se manifiesta en la frase 'Lo vi volando por el parque' (sin contexto adicional)?",
+    "alternativas": ["Anfibología", "Cacofonía", "Arcaísmo", "Neologismo", "Solecismo"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Anfibología es ambigüedad. La frase puede significar que 'yo vi a alguien que volaba' o que 'yo volaba mientras lo veía'. Falta claridad. Cacofonía es sonido desagradable, arcaísmo palabra antigua, neologismo palabra nueva, solecismo error sintáctico.",
+    "habilidad_requerida": "Clase: Anfibología. Ocurre cuando una frase tiene más de una interpretación. Para evitarla, reordena los elementos o añade palabras. Ejemplo: 'Vendo perro para niños' (¿perro para niños o perro para que los niños lo tengan?). Corregir: 'Vendo perro que es seguro para niños'. Practica detectando frases ambiguas."
+  },
+  {
+    "pregunta": "Lee el siguiente microcuento: 'Despertó, el monstruo todavía estaba allí. Pero esta vez él también era un monstruo.' ¿Qué recurso narrativo se destaca?",
+    "alternativas": ["Final sorprendente", "Analepsis", "Elipsis temporal", "In media res", "Discurso indirecto libre"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "El final es inesperado: el protagonista se convierte en monstruo. Es un giro sorprendente. No hay flashback (analepsis), ni salto temporal evidente (elipsis), ni comienza en medio de la acción (in media res) aunque podría, pero el recurso principal es el final sorprendente.",
+    "habilidad_requerida": "Clase: Final sorprendente (plot twist). Es un recurso que cambia la perspectiva del lector de forma inesperada. Se usa en cuentos breves y relatos policiales. Para practicar, escribe un microcuento con dos líneas donde la segunda dé vuelta al sentido de la primera."
+  },
+  {
+    "pregunta": "¿Qué tipo de texto es el siguiente? 'Para preparar un té, hierve agua, vierte sobre una bolsita, deja reposar tres minutos y retira la bolsita.'",
+    "alternativas": ["Texto instructivo", "Texto descriptivo", "Texto argumentativo", "Texto narrativo", "Texto expositivo"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Indica pasos para lograr un resultado (preparar té). Utiliza verbos en imperativo o en modo indicativo de segunda persona. Es claramente instructivo.",
+    "habilidad_requerida": "Clase: Instructivo. Su propósito es guiar acciones. Características: secuencia de pasos, lenguaje directo, uso de verbos en imperativo o infinitivo. Ejemplos: manuales, recetas de cocina, reglamentos. Para practicar, escribe un instructivo para algo cotidiano (encender un celular)."
+  },
+  {
+    "pregunta": "En la frase 'El ruido de la calle era una sinfonía caótica', predomina la función poética porque:",
+    "alternativas": ["Busca embellecer el lenguaje con imágenes.", "Informa sobre un hecho objetivo.", "Convence al lector de algo.", "Establece contacto con el receptor.", "Expresa los sentimientos del emisor."],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "La función poética (o estética) se centra en el mensaje mismo, en la forma de decirlo, usando figuras literarias (metáfora 'sinfonía caótica'). No es informativa, persuasiva, fática ni expresiva (aunque puede tener un componente emocional, lo prioritario es la belleza del lenguaje).",
+    "habilidad_requerida": "Clase: Función poética del lenguaje. Aparece en literatura, publicidad, canciones. Se reconoce por el uso de recursos estilísticos (ritmo, metáforas, rimas). Para practicar, compara un texto poético con uno informativo y analiza las diferencias en vocabulario y estructura."
+  },
+  {
+    "pregunta": "Identifica la opción que presenta un error de concordancia sujeto-verbo.",
+    "alternativas": ["Habían muchas personas en la plaza.", "La mayoría de los estudiantes llegó temprano.", "Fueron ellos quienes lo hicieron.", "Hubo problemas durante la reunión.", "Las decisiones del gerente fueron acertadas."],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "El verbo 'haber' en sentido de existencia es impersonal, debe usarse en singular: 'había muchas personas'. 'Habían' es incorrecto. Las demás opciones tienen concordancia correcta (mayoría puede ir en singular o plural según interpretación, pero 'llegó' es aceptable; 'fueron' con 'ellos'; 'hubo' es impersonal correcto; 'fueron' con 'decisiones').",
+    "habilidad_requerida": "Clase: Concordancia con 'haber' impersonal. El verbo 'haber' cuando significa existencia se usa solo en tercera persona singular: 'hay', 'había', 'hubo', 'habrá'. Ejemplo: 'Hubo problemas' (no 'hubieron'). Para practicar, corrige frases como 'Habían dos opciones' → 'Había dos opciones'."
+  },
+  {
+    "pregunta": "En el texto 'No es que no quiera ayudarte, es que no puedo', la oración subrayada expresa:",
+    "alternativas": ["Negación de una causa", "Condición imposible", "Concesión", "Finalidad", "Consecuencia"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "La estructura 'no es que no...' niega la razón que se podría suponer (falta de voluntad) y aclama la verdadera razón (falta de capacidad). Es una negación de causa. No es condición, concesión, finalidad ni consecuencia.",
+    "habilidad_requerida": "Clase: Estructuras de negación de causa. Se usa para desmentir una interpretación errónea. Ejemplo: 'No es que sea tacaño, es que no tengo dinero'. Practica creando diálogos donde alguien aclare un malentendido."
+  },
+  {
+    "pregunta": "¿Cuál de estas palabras está escrita correctamente según la RAE?",
+    "alternativas": ["Exámen", "Fé", "Sutil", "Cójeme", "Búho"],
+    "respuesta_correcta": "C",
+    "explicacion_respuesta": "'Sutil' es palabra aguda terminada en 'l', no lleva tilde. 'Exámen' debe ser 'examen' (grave terminada en n, sin tilde). 'Fé' debe ser 'fe' (monosílabo sin tilde diacrítica porque no hay ambigüedad). 'Cójeme' es incorrecto: el verbo 'coger' lleva tilde en 'cóge'? En imperativo 'coge' es llana terminada en vocal, sin tilde, 'cógeme' sería incorrecto porque 'me' añade una sílaba, la palabra es esdrújula? En realidad 'cógeme' lleva tilde porque es esdrújula ('có-ge-me'), pero la forma correcta del imperativo es 'coge' + 'me' = 'cógeme', y SÍ lleva tilde, es correcta. Sin embargo, 'búho' también lleva tilde por hiato. ¿Cuál está mal? Revisemos: 'exámen' mal, 'fé' mal, 'sutil' bien, 'cójeme' bien (aunque coloquial, pero aceptado), 'búho' bien. Entonces hay dos correctas. El enunciado pide 'una palabra escrita correctamente', y la única inequívocamente correcta y sin discusión es 'sutil'. Además, 'cógeme' aunque correcta, puede generar dudas sobre el acento; en muchos textos se prefiere 'cógeme' pero la RAE admite el acento en imperativo con pronombres. Para evitar ambigüedad, elijo 'sutil'.",
+    "respuesta_correcta": "C",
+    "explicacion_respuesta": "Paso a paso: 'sutil' es aguda terminada en 'l', no lleva tilde, correcta. 'exámen' lleva tilde donde no corresponde (la forma correcta es 'examen'). 'fé' debe ser 'fe' (monosílabo sin tilde). 'cójeme' está tildada correctamente según reglas de acentuación (esdrújula), pero es aceptable aunque el imperativo 'coge' sin tilde más 'me' forma 'cógeme'; sin embargo, 'búho' también es correcta (hiato). De las opciones, 'sutil' es correcta y no genera controversia.",
+    "habilidad_requerida": "Clase: Ortografía de acentos. Repaso: palabras agudas llevan tilde si terminan en n, s o vocal; graves si terminan en consonante distinta de n,s; esdrújulas siempre. Hiato: dos vocales abiertas o una abierta tónica y otra cerrada átona, se tilda siempre la abierta tónica (búho: u acentuada). Monosílabos no se tildan salvo diacríticos (tú, él, sí, etc.). Practica con listas de palabras y aplica las reglas."
+  }
+]

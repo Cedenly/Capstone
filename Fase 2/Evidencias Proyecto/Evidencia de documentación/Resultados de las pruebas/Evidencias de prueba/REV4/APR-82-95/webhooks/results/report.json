@@ -1,0 +1,959 @@
+{
+  "scope": "LOCAL_NOT_INTEGRATED",
+  "ticketStatus": "PARTIAL_PENDING_INTEGRATION",
+  "startedAt": "2026-11-18T02:18:02.771Z",
+  "runtime": "v24.22.1",
+  "project": "demo-apr91",
+  "provider": "synthetic loopback HTTP; real Stripe SDK",
+  "firestore": "official local emulator; firebase-admin SDK",
+  "snapshotHashFormat": "SHA-256 of canonical JSON with recursively sorted object keys; file is pretty printed separately",
+  "scenarios": [
+    {
+      "id": "same_event",
+      "title": "12 simultaneous deliveries of one invoice.paid event",
+      "startedAt": "2026-11-18T02:18:03.109Z",
+      "deliveries": [
+        {
+          "label": "concurrent-4",
+          "eventId": "evt_same_event_paid",
+          "type": "invoice.paid",
+          "eventCreated": 1794968282,
+          "eventSha256": "32cb6742f49430e2a9bec0307dd0e6712919183f456e58fb386363f93d839ebb",
+          "startedAt": "2026-11-18T02:18:03.912Z",
+          "finishedAt": "2026-11-18T02:18:06.766Z",
+          "status": 200,
+          "response": {
+            "data": {
+              "received": true,
+              "processed": true
+            },
+            "error": null,
+            "meta": {
+              "requestId": "req_e90b8f2f-1a6",
+              "timestamp": "2026-11-18T02:18:06.762Z"
+            }
+          },
+          "operator": "APR91 automated local suite"
+        },
+        {
+          "label": "concurrent-11",
+          "eventId": "evt_same_event_paid",
+          "type": "invoice.paid",
+          "eventCreated": 1794968282,
+          "eventSha256": "32cb6742f49430e2a9bec0307dd0e6712919183f456e58fb386363f93d839ebb",
+          "startedAt": "2026-11-18T02:18:03.915Z",
+          "finishedAt": "2026-11-18T02:18:06.789Z",
+          "status": 200,
+          "response": {
+            "data": {
+              "received": true,
+              "duplicate": true
+            },
+            "error": null,
+            "meta": {
+              "requestId": "req_6f2eaa54-5ae",
+              "timestamp": "2026-11-18T02:18:06.788Z"
+            }
+          },
+          "operator": "APR91 automated local suite"
+        },
+        {
+          "label": "concurrent-3",
+          "eventId": "evt_same_event_paid",
+          "type": "invoice.paid",
+          "eventCreated": 1794968282,
+          "eventSha256": "32cb6742f49430e2a9bec0307dd0e6712919183f456e58fb386363f93d839ebb",
+          "startedAt": "2026-11-18T02:18:03.911Z",
+          "finishedAt": "2026-11-18T02:18:06.789Z",
+          "status": 200,
+          "response": {
+            "data": {
+              "received": true,
+              "duplicate": true
+            },
+            "error": null,
+            "meta": {
+              "requestId": "req_560c3ca7-266",
+              "timestamp": "2026-11-18T02:18:06.788Z"
+            }
+          },
+          "operator": "APR91 automated local suite"
+        },
+        {
+          "label": "concurrent-9",
+          "eventId": "evt_same_event_paid",
+          "type": "invoice.paid",
+          "eventCreated": 1794968282,
+          "eventSha256": "32cb6742f49430e2a9bec0307dd0e6712919183f456e58fb386363f93d839ebb",
+          "startedAt": "2026-11-18T02:18:03.914Z",
+          "finishedAt": "2026-11-18T02:18:06.868Z",
+          "status": 200,
+          "response": {
+            "data": {
+              "received": true,
+              "duplicate": true
+            },
+            "error": null,
+            "meta": {
+              "requestId": "req_41bba6ba-37e",
+              "timestamp": "2026-11-18T02:18:06.867Z"
+            }
+          },
+          "operator": "APR91 automated local suite"
+        },
+        {
+          "label": "concurrent-7",
+          "eventId": "evt_same_event_paid",
+          "type": "invoice.paid",
+          "eventCreated": 1794968282,
+          "eventSha256": "32cb6742f49430e2a9bec0307dd0e6712919183f456e58fb386363f93d839ebb",
+          "startedAt": "2026-11-18T02:18:03.913Z",
+          "finishedAt": "2026-11-18T02:18:06.877Z",
+          "status": 200,
+          "response": {
+            "data": {
+              "received": true,
+              "duplicate": true
+            },
+            "error": null,
+            "meta": {
+              "requestId": "req_c44c7b1a-116",
+              "timestamp": "2026-11-18T02:18:06.875Z"
+            }
+          },
+          "operator": "APR91 automated local suite"
+        },
+        {
+          "label": "concurrent-12",
+          "eventId": "evt_same_event_paid",
+          "type": "invoice.paid",
+          "eventCreated": 1794968282,
+          "eventSha256": "32cb6742f49430e2a9bec0307dd0e6712919183f456e58fb386363f93d839ebb",
+          "startedAt": "2026-11-18T02:18:03.915Z",
+          "finishedAt": "2026-11-18T02:18:06.893Z",
+          "status": 200,
+          "response": {
+            "data": {
+              "received": true,
+              "duplicate": true
+            },
+            "error": null,
+            "meta": {
+              "requestId": "req_861e4f42-476",
+              "timestamp": "2026-11-18T02:18:06.892Z"
+            }
+          },
+          "operator": "APR91 automated local suite"
+        },
+        {
+          "label": "concurrent-2",
+          "eventId": "evt_same_event_paid",
+          "type": "invoice.paid",
+          "eventCreated": 1794968282,
+          "eventSha256": "32cb6742f49430e2a9bec0307dd0e6712919183f456e58fb386363f93d839ebb",
+          "startedAt": "2026-11-18T02:18:03.911Z",
+          "finishedAt": "2026-11-18T02:18:07.019Z",
+          "status": 200,
+          "response": {
+            "data": {
+              "received": true,
+              "duplicate": true
+            },
+            "error": null,
+            "meta": {
+              "requestId": "req_c4c5a435-fac",
+              "timestamp": "2026-11-18T02:18:07.018Z"
+            }
+          },
+          "operator": "APR91 automated local suite"
+        },
+        {
+          "label": "concurrent-6",
+          "eventId": "evt_same_event_paid",
+          "type": "invoice.paid",
+          "eventCreated": 1794968282,
+          "eventSha256": "32cb6742f49430e2a9bec0307dd0e6712919183f456e58fb386363f93d839ebb",
+          "startedAt": "2026-11-18T02:18:03.913Z",
+          "finishedAt": "2026-11-18T02:18:07.033Z",
+          "status": 200,
+          "response": {
+            "data": {
+              "received": true,
+              "duplicate": true
+            },
+            "error": null,
+            "meta": {
+              "requestId": "req_5c51ab3b-0a1",
+              "timestamp": "2026-11-18T02:18:07.032Z"
+            }
+          },
+          "operator": "APR91 automated local suite"
+        },
+        {
+          "label": "concurrent-8",
+          "eventId": "evt_same_event_paid",
+          "type": "invoice.paid",
+          "eventCreated": 1794968282,
+          "eventSha256": "32cb6742f49430e2a9bec0307dd0e6712919183f456e58fb386363f93d839ebb",
+          "startedAt": "2026-11-18T02:18:03.913Z",
+          "finishedAt": "2026-11-18T02:18:07.173Z",
+          "status": 200,
+          "response": {
+            "data": {
+              "received": true,
+              "duplicate": true
+            },
+            "error": null,
+            "meta": {
+              "requestId": "req_8cd9a1dd-480",
+              "timestamp": "2026-11-18T02:18:07.172Z"
+            }
+          },
+          "operator": "APR91 automated local suite"
+        },
+        {
+          "label": "concurrent-5",
+          "eventId": "evt_same_event_paid",
+          "type": "invoice.paid",
+          "eventCreated": 1794968282,
+          "eventSha256": "32cb6742f49430e2a9bec0307dd0e6712919183f456e58fb386363f93d839ebb",
+          "startedAt": "2026-11-18T02:18:03.912Z",
+          "finishedAt": "2026-11-18T02:18:07.230Z",
+          "status": 200,
+          "response": {
+            "data": {
+              "received": true,
+              "duplicate": true
+            },
+            "error": null,
+            "meta": {
+              "requestId": "req_711f2b68-bd9",
+              "timestamp": "2026-11-18T02:18:07.229Z"
+            }
+          },
+          "operator": "APR91 automated local suite"
+        },
+        {
+          "label": "concurrent-10",
+          "eventId": "evt_same_event_paid",
+          "type": "invoice.paid",
+          "eventCreated": 1794968282,
+          "eventSha256": "32cb6742f49430e2a9bec0307dd0e6712919183f456e58fb386363f93d839ebb",
+          "startedAt": "2026-11-18T02:18:03.914Z",
+          "finishedAt": "2026-11-18T02:18:07.393Z",
+          "status": 200,
+          "response": {
+            "data": {
+              "received": true,
+              "duplicate": true
+            },
+            "error": null,
+            "meta": {
+              "requestId": "req_25e93dfb-c33",
+              "timestamp": "2026-11-18T02:18:07.392Z"
+            }
+          },
+          "operator": "APR91 automated local suite"
+        },
+        {
+          "label": "concurrent-1",
+          "eventId": "evt_same_event_paid",
+          "type": "invoice.paid",
+          "eventCreated": 1794968282,
+          "eventSha256": "32cb6742f49430e2a9bec0307dd0e6712919183f456e58fb386363f93d839ebb",
+          "startedAt": "2026-11-18T02:18:03.904Z",
+          "finishedAt": "2026-11-18T02:18:07.394Z",
+          "status": 200,
+          "response": {
+            "data": {
+              "received": true,
+              "duplicate": true
+            },
+            "error": null,
+            "meta": {
+              "requestId": "req_5e904902-f7b",
+              "timestamp": "2026-11-18T02:18:07.394Z"
+            }
+          },
+          "operator": "APR91 automated local suite"
+        },
+        {
+          "label": "later-replay",
+          "eventId": "evt_same_event_paid",
+          "type": "invoice.paid",
+          "eventCreated": 1794968282,
+          "eventSha256": "32cb6742f49430e2a9bec0307dd0e6712919183f456e58fb386363f93d839ebb",
+          "startedAt": "2026-11-18T02:18:07.437Z",
+          "finishedAt": "2026-11-18T02:18:07.447Z",
+          "status": 200,
+          "response": {
+            "data": {
+              "received": true,
+              "duplicate": true
+            },
+            "error": null,
+            "meta": {
+              "requestId": "req_e67b75f6-873",
+              "timestamp": "2026-11-18T02:18:07.446Z"
+            }
+          },
+          "operator": "APR91 automated local suite"
+        }
+      ],
+      "snapshots": [
+        {
+          "label": "before",
+          "at": "2026-11-18T02:18:03.903Z",
+          "file": "same_event--before.json",
+          "sha256": "3dcda1eedce88fbe51658546272b567e72c30ee26c2c40223a08ba130e4ece33"
+        },
+        {
+          "label": "after-concurrent",
+          "at": "2026-11-18T02:18:07.437Z",
+          "file": "same_event--after-concurrent.json",
+          "sha256": "fa5ac5be327e2316123ee69d57a9be189a3cb8e01e8a61030d411434839c3fd1"
+        },
+        {
+          "label": "after-replay",
+          "at": "2026-11-18T02:18:07.488Z",
+          "file": "same_event--after-replay.json",
+          "sha256": "fa5ac5be327e2316123ee69d57a9be189a3cb8e01e8a61030d411434839c3fd1"
+        }
+      ],
+      "assertions": [
+        "One processed, eleven duplicates; one subscription/invoice/receipt",
+        "Replay preserves all Firestore values and does not call the provider"
+      ],
+      "status": "PASS",
+      "finishedAt": "2026-11-18T02:18:07.488Z"
+    },
+    {
+      "id": "related_events",
+      "title": "Four related simultaneous events, including an old payment_failed",
+      "startedAt": "2026-11-18T02:18:07.488Z",
+      "deliveries": [
+        {
+          "label": "evt_related_events_checkout",
+          "eventId": "evt_related_events_checkout",
+          "type": "checkout.session.completed",
+          "eventCreated": 1794968282,
+          "eventSha256": "12b0c7eb1bcf4da4013b8ae4f1716ad67a218b37af47fcdb79ecf79d10844963",
+          "startedAt": "2026-11-18T02:18:07.533Z",
+          "finishedAt": "2026-11-18T02:18:10.165Z",
+          "status": 200,
+          "response": {
+            "data": {
+              "received": true,
+              "processed": true
+            },
+            "error": null,
+            "meta": {
+              "requestId": "req_c222d96e-f63",
+              "timestamp": "2026-11-18T02:18:10.164Z"
+            }
+          },
+          "operator": "APR91 automated local suite"
+        },
+        {
+          "label": "evt_related_events_failed_old",
+          "eventId": "evt_related_events_failed_old",
+          "type": "invoice.payment_failed",
+          "eventCreated": 1794795482,
+          "eventSha256": "46e59ba8b73411719e352ec5b27fd3189007b0ee0d52defefe1fc1077faca8ec",
+          "startedAt": "2026-11-18T02:18:07.532Z",
+          "finishedAt": "2026-11-18T02:18:10.331Z",
+          "status": 200,
+          "response": {
+            "data": {
+              "received": true,
+              "processed": true
+            },
+            "error": null,
+            "meta": {
+              "requestId": "req_a79ad1df-6e1",
+              "timestamp": "2026-11-18T02:18:10.330Z"
+            }
+          },
+          "operator": "APR91 automated local suite"
+        },
+        {
+          "label": "evt_related_events_paid",
+          "eventId": "evt_related_events_paid",
+          "type": "invoice.paid",
+          "eventCreated": 1794968282,
+          "eventSha256": "1c1eedb3ae80f320b64446f925a7a523e6a56a4dac23822998d57c4bb0b0fac9",
+          "startedAt": "2026-11-18T02:18:07.532Z",
+          "finishedAt": "2026-11-18T02:18:10.775Z",
+          "status": 200,
+          "response": {
+            "data": {
+              "received": true,
+              "processed": true
+            },
+            "error": null,
+            "meta": {
+              "requestId": "req_0037c957-29e",
+              "timestamp": "2026-11-18T02:18:10.774Z"
+            }
+          },
+          "operator": "APR91 automated local suite"
+        },
+        {
+          "label": "evt_related_events_updated_old",
+          "eventId": "evt_related_events_updated_old",
+          "type": "customer.subscription.updated",
+          "eventCreated": 1794881882,
+          "eventSha256": "fd919fd58715adc78e0f999da22ba9c64527d2cdcecce6336cd02fa15864a432",
+          "startedAt": "2026-11-18T02:18:07.533Z",
+          "finishedAt": "2026-11-18T02:18:10.848Z",
+          "status": 200,
+          "response": {
+            "data": {
+              "received": true,
+              "processed": true
+            },
+            "error": null,
+            "meta": {
+              "requestId": "req_01d7b3a8-7cd",
+              "timestamp": "2026-11-18T02:18:10.847Z"
+            }
+          },
+          "operator": "APR91 automated local suite"
+        }
+      ],
+      "snapshots": [
+        {
+          "label": "before",
+          "at": "2026-11-18T02:18:07.532Z",
+          "file": "related_events--before.json",
+          "sha256": "60748f3d682d5e3b1cfdce25b1d6c242b8cf6be30562a7981ec4629bb015f362"
+        },
+        {
+          "label": "after",
+          "at": "2026-11-18T02:18:10.878Z",
+          "file": "related_events--after.json",
+          "sha256": "d8ba3d1933f87c83403c1eae3d68e183784cce33a939597fea89aa14f591bf34"
+        }
+      ],
+      "assertions": [
+        "Four receipts, one business subscription/invoice and valid entitlement",
+        "Stale embedded failed/past_due state does not override retrieved current state"
+      ],
+      "status": "PASS",
+      "finishedAt": "2026-11-18T02:18:10.878Z"
+    },
+    {
+      "id": "late_failed",
+      "title": "New paid renewal before an older failed invoice and subscription event",
+      "startedAt": "2026-11-18T02:18:10.878Z",
+      "deliveries": [
+        {
+          "label": "evt_late_failed_paid",
+          "eventId": "evt_late_failed_paid",
+          "type": "invoice.paid",
+          "eventCreated": 1794968282,
+          "eventSha256": "36ffad44ada8ec08ef4dc86582f4af973b29e58561f72e047b93177029340963",
+          "startedAt": "2026-11-18T02:18:10.905Z",
+          "finishedAt": "2026-11-18T02:18:10.927Z",
+          "status": 200,
+          "response": {
+            "data": {
+              "received": true,
+              "processed": true
+            },
+            "error": null,
+            "meta": {
+              "requestId": "req_e221d97e-f4a",
+              "timestamp": "2026-11-18T02:18:10.926Z"
+            }
+          },
+          "operator": "APR91 automated local suite"
+        },
+        {
+          "label": "evt_late_failed_failed_old",
+          "eventId": "evt_late_failed_failed_old",
+          "type": "invoice.payment_failed",
+          "eventCreated": 1790648282,
+          "eventSha256": "e74b86100a767ffdeb395974f49e4c6209927cb0bed6d40d68610577ce1bcbd9",
+          "startedAt": "2026-11-18T02:18:10.946Z",
+          "finishedAt": "2026-11-18T02:18:10.974Z",
+          "status": 200,
+          "response": {
+            "data": {
+              "received": true,
+              "processed": true
+            },
+            "error": null,
+            "meta": {
+              "requestId": "req_46a8986a-64b",
+              "timestamp": "2026-11-18T02:18:10.973Z"
+            }
+          },
+          "operator": "APR91 automated local suite"
+        },
+        {
+          "label": "evt_late_failed_sub_old",
+          "eventId": "evt_late_failed_sub_old",
+          "type": "customer.subscription.updated",
+          "eventCreated": 1790648282,
+          "eventSha256": "75de2452bd75993a6eedc9d3a03d130ea60605a0085f1d04d577d65fcbfed0fe",
+          "startedAt": "2026-11-18T02:18:10.974Z",
+          "finishedAt": "2026-11-18T02:18:10.993Z",
+          "status": 200,
+          "response": {
+            "data": {
+              "received": true,
+              "processed": true
+            },
+            "error": null,
+            "meta": {
+              "requestId": "req_d0b9be98-b3b",
+              "timestamp": "2026-11-18T02:18:10.992Z"
+            }
+          },
+          "operator": "APR91 automated local suite"
+        }
+      ],
+      "snapshots": [
+        {
+          "label": "before",
+          "at": "2026-11-18T02:18:10.905Z",
+          "file": "late_failed--before.json",
+          "sha256": "874960cb8ef63a415726c0edfa726d461dc79d3398e1330036018df3bf3759f7"
+        },
+        {
+          "label": "after-paid",
+          "at": "2026-11-18T02:18:10.946Z",
+          "file": "late_failed--after-paid.json",
+          "sha256": "4bf8ef92f848c043bf0be663316c26e36b0a1e48b4004744b27904982d9ddfab"
+        },
+        {
+          "label": "after-late-events",
+          "at": "2026-11-18T02:18:11.012Z",
+          "file": "late_failed--after-late-events.json",
+          "sha256": "d4823a578ad706660726e8285893258743c682dc056d55cfdee6121f1fbafa44"
+        }
+      ],
+      "assertions": [
+        "Old invoice is recorded separately; latest paid invoice remains paid",
+        "Old events preserve the paid period, plan and valid access"
+      ],
+      "status": "PASS",
+      "finishedAt": "2026-11-18T02:18:11.014Z"
+    },
+    {
+      "id": "failed_then_paid",
+      "title": "Old failed notification before paid notification, with current provider state paid",
+      "startedAt": "2026-11-18T02:18:11.014Z",
+      "deliveries": [
+        {
+          "label": "evt_failed_then_paid_old_failed",
+          "eventId": "evt_failed_then_paid_old_failed",
+          "type": "invoice.payment_failed",
+          "eventCreated": 1794881882,
+          "eventSha256": "5b1449716998817a0f846ddb6d51c719edb9716486e659c0e935d54e74dd0bfb",
+          "startedAt": "2026-11-18T02:18:11.036Z",
+          "finishedAt": "2026-11-18T02:18:11.055Z",
+          "status": 200,
+          "response": {
+            "data": {
+              "received": true,
+              "processed": true
+            },
+            "error": null,
+            "meta": {
+              "requestId": "req_976309ae-005",
+              "timestamp": "2026-11-18T02:18:11.054Z"
+            }
+          },
+          "operator": "APR91 automated local suite"
+        },
+        {
+          "label": "evt_failed_then_paid_paid",
+          "eventId": "evt_failed_then_paid_paid",
+          "type": "invoice.paid",
+          "eventCreated": 1794968282,
+          "eventSha256": "b282ab06838aac3f034ac19412e679f55007a8117d040a12cbe35be5028ba2b2",
+          "startedAt": "2026-11-18T02:18:11.074Z",
+          "finishedAt": "2026-11-18T02:18:11.093Z",
+          "status": 200,
+          "response": {
+            "data": {
+              "received": true,
+              "processed": true
+            },
+            "error": null,
+            "meta": {
+              "requestId": "req_d55a5cf1-f94",
+              "timestamp": "2026-11-18T02:18:11.093Z"
+            }
+          },
+          "operator": "APR91 automated local suite"
+        }
+      ],
+      "snapshots": [
+        {
+          "label": "before",
+          "at": "2026-11-18T02:18:11.036Z",
+          "file": "failed_then_paid--before.json",
+          "sha256": "98ae827d64ced153540cb0bc06ff03d394619507eb6ca686d45d6d157aa52caf"
+        },
+        {
+          "label": "after-old-failed",
+          "at": "2026-11-18T02:18:11.074Z",
+          "file": "failed_then_paid--after-old-failed.json",
+          "sha256": "a9dc03bc97fd18f263d917c7062d71f4d1a3d1002dffb93f0b277e655da40bb0"
+        },
+        {
+          "label": "after-paid",
+          "at": "2026-11-18T02:18:11.110Z",
+          "file": "failed_then_paid--after-paid.json",
+          "sha256": "6dc5a01710aecc84255121a4e3348d6a028fd3a37591a3388e8d10d315779e71"
+        }
+      ],
+      "assertions": [
+        "Both delivery orders converge to current paid state without extending the period twice"
+      ],
+      "status": "PASS",
+      "finishedAt": "2026-11-18T02:18:11.110Z"
+    },
+    {
+      "id": "provider_read",
+      "title": "Transient provider_read; retry and duplicate replay",
+      "startedAt": "2026-11-18T02:18:11.110Z",
+      "deliveries": [
+        {
+          "label": "injected-failure",
+          "eventId": "evt_provider_read_paid",
+          "type": "invoice.paid",
+          "eventCreated": 1794968282,
+          "eventSha256": "01f125640836eb1c26a1d08887b868fc273d7ca469dee5277d9139608d9af6a1",
+          "startedAt": "2026-11-18T02:18:11.134Z",
+          "finishedAt": "2026-11-18T02:18:11.139Z",
+          "status": 503,
+          "response": {
+            "data": null,
+            "error": {
+              "code": "WEBHOOK_PROCESSING_FAILED",
+              "message": "No se pudo completar la confirmacion.",
+              "details": [],
+              "field": null
+            },
+            "meta": {
+              "requestId": "req_55341aac-dfc",
+              "timestamp": "2026-11-18T02:18:11.138Z"
+            }
+          },
+          "operator": "APR91 automated local suite"
+        },
+        {
+          "label": "retry",
+          "eventId": "evt_provider_read_paid",
+          "type": "invoice.paid",
+          "eventCreated": 1794968282,
+          "eventSha256": "01f125640836eb1c26a1d08887b868fc273d7ca469dee5277d9139608d9af6a1",
+          "startedAt": "2026-11-18T02:18:11.157Z",
+          "finishedAt": "2026-11-18T02:18:11.178Z",
+          "status": 200,
+          "response": {
+            "data": {
+              "received": true,
+              "processed": true
+            },
+            "error": null,
+            "meta": {
+              "requestId": "req_55e09eb4-5c9",
+              "timestamp": "2026-11-18T02:18:11.177Z"
+            }
+          },
+          "operator": "APR91 automated local suite"
+        },
+        {
+          "label": "duplicate-replay",
+          "eventId": "evt_provider_read_paid",
+          "type": "invoice.paid",
+          "eventCreated": 1794968282,
+          "eventSha256": "01f125640836eb1c26a1d08887b868fc273d7ca469dee5277d9139608d9af6a1",
+          "startedAt": "2026-11-18T02:18:11.197Z",
+          "finishedAt": "2026-11-18T02:18:11.201Z",
+          "status": 200,
+          "response": {
+            "data": {
+              "received": true,
+              "duplicate": true
+            },
+            "error": null,
+            "meta": {
+              "requestId": "req_3dbeb0c6-dab",
+              "timestamp": "2026-11-18T02:18:11.200Z"
+            }
+          },
+          "operator": "APR91 automated local suite"
+        }
+      ],
+      "snapshots": [
+        {
+          "label": "before",
+          "at": "2026-11-18T02:18:11.134Z",
+          "file": "provider_read--before.json",
+          "sha256": "0eaa4ebf64d47920a46376e3c82c79bc88216c593e62c34e1bbaabb3306b7b47"
+        },
+        {
+          "label": "after-failure",
+          "at": "2026-11-18T02:18:11.157Z",
+          "file": "provider_read--after-failure.json",
+          "sha256": "0eaa4ebf64d47920a46376e3c82c79bc88216c593e62c34e1bbaabb3306b7b47"
+        },
+        {
+          "label": "after-retry",
+          "at": "2026-11-18T02:18:11.197Z",
+          "file": "provider_read--after-retry.json",
+          "sha256": "1d4d9c459e43b59576cad644bde86a2b69a5e90e096aedb26eb2f2b189308df6"
+        },
+        {
+          "label": "after-duplicate",
+          "at": "2026-11-18T02:18:11.221Z",
+          "file": "provider_read--after-duplicate.json",
+          "sha256": "1d4d9c459e43b59576cad644bde86a2b69a5e90e096aedb26eb2f2b189308df6"
+        }
+      ],
+      "assertions": [
+        "503 leaves all business documents and receipt unchanged; retry commits one coherent effect",
+        "Final replay leaves the full Firestore snapshot identical"
+      ],
+      "status": "PASS",
+      "finishedAt": "2026-11-18T02:18:11.221Z"
+    },
+    {
+      "id": "before_commit",
+      "title": "Transient before_commit; retry and duplicate replay",
+      "startedAt": "2026-11-18T02:18:11.221Z",
+      "deliveries": [
+        {
+          "label": "injected-failure",
+          "eventId": "evt_before_commit_paid",
+          "type": "invoice.paid",
+          "eventCreated": 1794968282,
+          "eventSha256": "64e3bef31f1a8bad534bc01af6b99f4e5786f9aa26cba25dd617d071dd7137d3",
+          "startedAt": "2026-11-18T02:18:11.245Z",
+          "finishedAt": "2026-11-18T02:18:11.263Z",
+          "status": 503,
+          "response": {
+            "data": null,
+            "error": {
+              "code": "WEBHOOK_PROCESSING_FAILED",
+              "message": "No se pudo completar la confirmacion.",
+              "details": [],
+              "field": null
+            },
+            "meta": {
+              "requestId": "req_e114a0f1-a2c",
+              "timestamp": "2026-11-18T02:18:11.262Z"
+            }
+          },
+          "operator": "APR91 automated local suite"
+        },
+        {
+          "label": "retry",
+          "eventId": "evt_before_commit_paid",
+          "type": "invoice.paid",
+          "eventCreated": 1794968282,
+          "eventSha256": "64e3bef31f1a8bad534bc01af6b99f4e5786f9aa26cba25dd617d071dd7137d3",
+          "startedAt": "2026-11-18T02:18:11.277Z",
+          "finishedAt": "2026-11-18T02:18:11.299Z",
+          "status": 200,
+          "response": {
+            "data": {
+              "received": true,
+              "processed": true
+            },
+            "error": null,
+            "meta": {
+              "requestId": "req_9c7562c9-4b0",
+              "timestamp": "2026-11-18T02:18:11.299Z"
+            }
+          },
+          "operator": "APR91 automated local suite"
+        },
+        {
+          "label": "duplicate-replay",
+          "eventId": "evt_before_commit_paid",
+          "type": "invoice.paid",
+          "eventCreated": 1794968282,
+          "eventSha256": "64e3bef31f1a8bad534bc01af6b99f4e5786f9aa26cba25dd617d071dd7137d3",
+          "startedAt": "2026-11-18T02:18:11.320Z",
+          "finishedAt": "2026-11-18T02:18:11.323Z",
+          "status": 200,
+          "response": {
+            "data": {
+              "received": true,
+              "duplicate": true
+            },
+            "error": null,
+            "meta": {
+              "requestId": "req_a048b98e-bda",
+              "timestamp": "2026-11-18T02:18:11.323Z"
+            }
+          },
+          "operator": "APR91 automated local suite"
+        }
+      ],
+      "snapshots": [
+        {
+          "label": "before",
+          "at": "2026-11-18T02:18:11.245Z",
+          "file": "before_commit--before.json",
+          "sha256": "f856f0d4134543d19fc5be71330eb376dc774c5987dc552d3e08fa9041e1578c"
+        },
+        {
+          "label": "after-failure",
+          "at": "2026-11-18T02:18:11.277Z",
+          "file": "before_commit--after-failure.json",
+          "sha256": "f856f0d4134543d19fc5be71330eb376dc774c5987dc552d3e08fa9041e1578c"
+        },
+        {
+          "label": "after-retry",
+          "at": "2026-11-18T02:18:11.319Z",
+          "file": "before_commit--after-retry.json",
+          "sha256": "1d60c974f32c5adb2b7b4749f602f85a0bc9fd1d87aa79cb54bbb282cec4cade"
+        },
+        {
+          "label": "after-duplicate",
+          "at": "2026-11-18T02:18:11.341Z",
+          "file": "before_commit--after-duplicate.json",
+          "sha256": "1d60c974f32c5adb2b7b4749f602f85a0bc9fd1d87aa79cb54bbb282cec4cade"
+        }
+      ],
+      "assertions": [
+        "503 leaves all business documents and receipt unchanged; retry commits one coherent effect",
+        "Final replay leaves the full Firestore snapshot identical"
+      ],
+      "status": "PASS",
+      "finishedAt": "2026-11-18T02:18:11.341Z"
+    },
+    {
+      "id": "after_commit",
+      "title": "Transient after_commit; retry and duplicate replay",
+      "startedAt": "2026-11-18T02:18:11.341Z",
+      "deliveries": [
+        {
+          "label": "injected-failure",
+          "eventId": "evt_after_commit_paid",
+          "type": "invoice.paid",
+          "eventCreated": 1794968282,
+          "eventSha256": "e4ebb8f72397855ee65ae58ff5b58e87a043f092b0f97c092f6a9279b817e894",
+          "startedAt": "2026-11-18T02:18:11.366Z",
+          "finishedAt": "2026-11-18T02:18:11.387Z",
+          "status": 503,
+          "response": {
+            "data": null,
+            "error": {
+              "code": "WEBHOOK_PROCESSING_FAILED",
+              "message": "No se pudo completar la confirmacion.",
+              "details": [],
+              "field": null
+            },
+            "meta": {
+              "requestId": "req_38650ff1-8a0",
+              "timestamp": "2026-11-18T02:18:11.387Z"
+            }
+          },
+          "operator": "APR91 automated local suite"
+        },
+        {
+          "label": "retry",
+          "eventId": "evt_after_commit_paid",
+          "type": "invoice.paid",
+          "eventCreated": 1794968282,
+          "eventSha256": "e4ebb8f72397855ee65ae58ff5b58e87a043f092b0f97c092f6a9279b817e894",
+          "startedAt": "2026-11-18T02:18:11.409Z",
+          "finishedAt": "2026-11-18T02:18:11.413Z",
+          "status": 200,
+          "response": {
+            "data": {
+              "received": true,
+              "duplicate": true
+            },
+            "error": null,
+            "meta": {
+              "requestId": "req_bb0f4320-07a",
+              "timestamp": "2026-11-18T02:18:11.413Z"
+            }
+          },
+          "operator": "APR91 automated local suite"
+        },
+        {
+          "label": "duplicate-replay",
+          "eventId": "evt_after_commit_paid",
+          "type": "invoice.paid",
+          "eventCreated": 1794968282,
+          "eventSha256": "e4ebb8f72397855ee65ae58ff5b58e87a043f092b0f97c092f6a9279b817e894",
+          "startedAt": "2026-11-18T02:18:11.430Z",
+          "finishedAt": "2026-11-18T02:18:11.433Z",
+          "status": 200,
+          "response": {
+            "data": {
+              "received": true,
+              "duplicate": true
+            },
+            "error": null,
+            "meta": {
+              "requestId": "req_aa323546-e05",
+              "timestamp": "2026-11-18T02:18:11.433Z"
+            }
+          },
+          "operator": "APR91 automated local suite"
+        }
+      ],
+      "snapshots": [
+        {
+          "label": "before",
+          "at": "2026-11-18T02:18:11.365Z",
+          "file": "after_commit--before.json",
+          "sha256": "6f05284ddca16ad68d642866f5904cf27d9a8f7d50e489fbfc1bcb2de41ff647"
+        },
+        {
+          "label": "after-failure",
+          "at": "2026-11-18T02:18:11.409Z",
+          "file": "after_commit--after-failure.json",
+          "sha256": "3535c2cb1064c1d2ef7fe0e7783f4c0454a6f11141d8b6c33b7c01f227d6aa3e"
+        },
+        {
+          "label": "after-retry",
+          "at": "2026-11-18T02:18:11.430Z",
+          "file": "after_commit--after-retry.json",
+          "sha256": "3535c2cb1064c1d2ef7fe0e7783f4c0454a6f11141d8b6c33b7c01f227d6aa3e"
+        },
+        {
+          "label": "after-duplicate",
+          "at": "2026-11-18T02:18:11.449Z",
+          "file": "after_commit--after-duplicate.json",
+          "sha256": "3535c2cb1064c1d2ef7fe0e7783f4c0454a6f11141d8b6c33b7c01f227d6aa3e"
+        }
+      ],
+      "assertions": [
+        "Commit succeeded but acknowledgement failed: retry is duplicate with no further changes",
+        "Final replay leaves the full Firestore snapshot identical"
+      ],
+      "status": "PASS",
+      "finishedAt": "2026-11-18T02:18:11.449Z"
+    }
+  ],
+  "sourceSha256": {
+    "src/services/stripeBilling.js": "abd9f00c12a817d2098d3f9b853d406f03f8992e83b0f375b5b61e093e649073",
+    "src/routes/stripeWebhook.js": "779300f2d4d7a5906fc21c0b540e6fcdcb39ad74712d80c43bf88fa560142018",
+    "src/middleware/verifyStripeWebhook.js": "96f0b726ef4dca60a0eb6312e0b88b673806a388ca7a26bf072bbc11eacb781e",
+    "src/config/firebase.js": "bb8fe031ebda7a2dd48263cb01ddaf9dccbf43f132936c5fdfb10a45ade79e5a",
+    "src/config/stripe.js": "3ca1d94f7c82758510d06ab4e4d52b8cfcc783ad8eb2631a39cbfc2b98af4b2c"
+  },
+  "status": "PASS",
+  "finishedAt": "2026-11-18T02:18:11.449Z",
+  "providerCallCount": 133,
+  "limits": [
+    "No Stripe account or real provider was queried; all HTTP provider objects/signatures are synthetic.",
+    "Only original webhook middleware/handler/service are mounted, not the complete deployed application.",
+    "Fault injection wraps the Firestore transaction boundary locally; it does not emulate every SDK/network failure.",
+    "Local snapshots are sequential and taken after all deliveries in each phase settle.",
+    "Durable per-attempt audit and automatic provider redelivery are not implemented or claimed by this suite."
+  ]
+}

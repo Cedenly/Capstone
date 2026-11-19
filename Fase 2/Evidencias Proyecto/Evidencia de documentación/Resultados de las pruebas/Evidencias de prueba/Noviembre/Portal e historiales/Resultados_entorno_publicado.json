@@ -1,0 +1,67 @@
+{
+  "scope": "Solo GET públicos y rechazo de tokens ficticios. No se crearon sesiones, pagos ni documentos. Sin cuentas autenticadas ni identificación del commit publicado.",
+  "results": [
+    {
+      "route": "/plans",
+      "checkedAt": "2026-11-17T11:34:33.791719-03:00",
+      "method": "GET",
+      "session": "sin sesión",
+      "status": 200,
+      "errorCode": null,
+      "dataIsNull": false,
+      "requestId": "req_cf4ae27d-b09",
+      "publicCatalog": [
+        {
+          "id": "uni",
+          "name": "1 prueba ilimitada",
+          "price": {
+            "monthly": 1,
+            "yearly": 10
+          }
+        },
+        {
+          "id": "all",
+          "name": "Todas las pruebas",
+          "price": {
+            "monthly": 5,
+            "yearly": 50
+          }
+        }
+      ],
+      "result": "catalogo_publico_accesible"
+    },
+    {
+      "route": "/tests?lang=es",
+      "checkedAt": "2026-11-17T11:34:37.182843-03:00",
+      "method": "GET",
+      "session": "sin sesión",
+      "status": 401,
+      "errorCode": "AUTH_REQUIRED",
+      "dataIsNull": true,
+      "requestId": "req_bd1ee363-71c",
+      "result": "requiere_sesion"
+    },
+    {
+      "route": "/billing/status",
+      "checkedAt": "2026-11-17T11:34:37.734073-03:00",
+      "method": "GET",
+      "session": "token ficticio inválido",
+      "status": 401,
+      "errorCode": "AUTH_INVALID",
+      "dataIsNull": true,
+      "requestId": "req_18ac8fe6-137",
+      "result": "aprobado_token_invalido"
+    },
+    {
+      "route": "/me/invoices",
+      "checkedAt": "2026-11-17T11:34:38.067655-03:00",
+      "method": "GET",
+      "session": "token ficticio inválido",
+      "status": 401,
+      "errorCode": "AUTH_INVALID",
+      "dataIsNull": true,
+      "requestId": "req_efc05abb-aa6",
+      "result": "aprobado_token_invalido"
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "scope": "LOCAL_CROSS_SERVICE_REHEARSAL_NOT_EXTERNAL_INTEGRATION",
+  "outcome": "PASS",
+  "candidate": "REV4-APR72-c3a511c",
+  "backendManifestSha256": "785bb69ebecdba2ff1dd712c59a3b5ae99768c73323e8b98cad9a5b379ed8e4f",
+  "startedAt": "2026-11-18T22:20:44.813Z",
+  "finishedAt": "2026-11-18T22:20:48.127Z",
+  "node": "v24.22.3",
+  "emulator": {
+    "version": "1.22.0",
+    "sha256": "9b6498b7f62714d67f48f59b3818883cd682dbcd46b9f59511de81c97bb5166c"
+  },
+  "checks": [
+    {
+      "id": "C01",
+      "name": "Both actual entrypoints start against one isolated Firestore project",
+      "result": "PASS"
+    },
+    {
+      "id": "C02",
+      "name": "Two students register and log in; finance admin logs in through actual HTTP routes",
+      "result": "PASS"
+    },
+    {
+      "id": "UI-API-01",
+      "name": "Lectura inicial de Mi plan devuelve cuenta gratis, catálogo, cuota y hora de reinicio",
+      "result": "PASS"
+    },
+    {
+      "id": "C03",
+      "name": "Checkout is created through the full application without granting a paid right",
+      "result": "PASS"
+    },
+    {
+      "id": "UI-API-02",
+      "name": "Al volver con el pago pendiente, consultar estado, catálogo y cuota conserva la sesión y el plan gratuito",
+      "result": "PASS"
+    },
+    {
+      "id": "C04",
+      "name": "Signed webhook enters the real app and persists one financial entitlement",
+      "result": "PASS"
+    },
+    {
+      "id": "C05",
+      "name": "Student and finance admin read matching subscription, owner, amount and period",
+      "result": "PASS"
+    },
+    {
+      "id": "UI-API-03",
+      "name": "Las lecturas de retorno confirmado conservan la suscripción y la cuota ilimitada",
+      "result": "PASS"
+    },
+    {
+      "id": "C06",
+      "name": "Repeating the confirmed event preserves the same financial projection",
+      "result": "PASS"
+    },
+    {
+      "id": "C07",
+      "name": "The other logged-in student sees no purchased subscription, invoice or foreign Checkout",
+      "result": "PASS"
+    },
+    {
+      "id": "C08",
+      "name": "Supplied backend sources and dependency locks remain byte-identical",
+      "result": "PASS"
+    }
+  ],
+  "limitations": [
+    "Two supplied backend entrypoints and their current local identity are exercised; no implementation from another group is included.",
+    "Stripe SDK uses a synthetic loopback HTTP provider. No remote Stripe sandbox, card network or actual charges are tested.",
+    "Firestore Emulator only; cloud IAM/rules/indexes and operational deployment are not validated.",
+    "HTTP registration/login use temporary synthetic accounts; phone verification is disabled only in the isolated test environment.",
+    "No browser or hosted Checkout page is used; CORS preflight, refresh-cookie roundtrip, UI rendering and navigation are not certified.",
+    "HTTP requests use loopback. The unchanged administrator entrypoint binds to its default interfaces rather than honoring HOST.",
+    "Financial snapshots contain a documented field selection, not whole Firestore documents or authentication/session stores.",
+    "This single financial journey contains multiple checkpoints; they are not independent complete acceptance scenarios.",
+    "The selected backend is exercised locally. Browser interactions, Docker, deployment and external integration are outside this HTTP run."
+  ],
+  "financialJourneyCount": 1,
+  "checkCount": 11,
+  "sha256_informe_original": "439d0a9f37fb233a5b92512babc59c037e54d0f4fa685c0dacc67f67698785d9"
+}

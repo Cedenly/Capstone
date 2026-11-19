@@ -1,0 +1,25 @@
+Resultados complementarios del cliente y los pagos
+DAD_20 · Aprueba Administración · 18 de noviembre de 2026
+
+Ensayos locales
+
+El cliente y el backend de alumno se evaluaron con el cambio de la ruta de facturas del commit c3a511ca35aa782aa1ec2fc00fa7860ed5a8867a. El backend de administración procede de REV4. Los ensayos usaron Firestore Emulator y un proveedor de pagos simulado. Las rutas de retorno y los importes corresponden a ese entorno.
+
+APR-80. En un recorrido de compra de Todas mensual se aprobaron 13 controles de la web y las API. Se comprobó que la misma cuenta consultaba el intento pendiente, la suscripción confirmada y su factura. Se registró la dirección de retorno del Portal. En este ensayo la navegación al sitio de Stripe se interceptó. El detalle figura en APR-80/cliente_resultado.json.
+
+APR-95. Los cinco recorridos fueron Ciencias mensual, Ciencias anual, Todas mensual, Todas anual y rechazo con recuperación. Cada recorrido aprobó sus 11 controles, algunos comunes entre recorridos. El rechazo inicial conservó el acceso gratuito y la mejora rechazada conservó el beneficio anterior. Tras recuperar el pago, el reenvío del evento mantuvo una sola aplicación del cambio. APR-95/resumen.json identifica la versión y enumera las ejecuciones. Los cinco archivos report.json registran sus controles y APR-95/resultados_financieros.json reúne los resultados sobre facturación y derechos de acceso.
+
+Observación manual en Chrome
+
+El 18 de noviembre, Sebastián completó en la web del alumno una compra de Ciencias mensual mediante Stripe en modo de prueba. Aprueba mostró el pago confirmado y Ciencias ilimitada. El Portal alojado de Stripe mostró la suscripción de USD 1 al mes y una factura de USD 1 pagada. Al volver a «Mi plan» se mantenía visible la misma cuenta con Ciencias ilimitada hasta el 18 de diciembre. La captura final se tomó mientras la consulta automática de estado seguía en curso. El recorrido usó la cuenta de prueba REV4. El registro manual no identifica el commit del despliegue.
+
+En un intento previo con otra cuenta histórica, el Portal no pudo abrirse. El diagnóstico registró resource_missing. Esta observación y la compra completada corresponden a cuentas distintas.
+
+Alcance y fuentes
+
+Los resultados corresponden al módulo propio de DAD_20. La comprobación con el cliente y el administrador del proyecto integrado sigue pendiente. Este anexo conserva el corte del 18 de noviembre por separado de los 57 casos del avance y de la campaña anterior identificada como DAD20-LOCAL-20261118-REV4.
+
+Trazabilidad de las pruebas
+El commit del cliente del alumno figura al comienzo del documento. APR-80/cliente_resultado.json identifica las comprobaciones de la cuenta, el intento y la factura. APR-95/resumen.json identifica las cinco ejecuciones y APR-95/resultados_financieros.json documenta la facturación y los beneficios resultantes. Estos archivos se encuentran junto a este documento, en las carpetas APR-80 y APR-95.
+
+Los registros de seguimiento APR-80 y APR-95 corresponden, respectivamente, a las observaciones del Portal y de la compra en Chrome. Los resultados del navegador se describen en «Observación manual en Chrome».

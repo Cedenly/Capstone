@@ -1,0 +1,180 @@
+TAP version 13
+# (node:14) ExperimentalWarning: VM Modules is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: recovery: createBefore can resume the same attempt with at most one session
+ok 1 - recovery: createBefore can resume the same attempt with at most one session
+  ---
+  duration_ms: 32.149323
+  type: 'test'
+  ...
+# Subtest: discard: createBefore can cancel by attemptId and choose another plan
+ok 2 - discard: createBefore can cancel by attemptId and choose another plan
+  ---
+  duration_ms: 14.149362
+  type: 'test'
+  ...
+# Subtest: recovery: createAfter can resume the same attempt with at most one session
+ok 3 - recovery: createAfter can resume the same attempt with at most one session
+  ---
+  duration_ms: 18.896158
+  type: 'test'
+  ...
+# Subtest: discard: createAfter can cancel by attemptId and choose another plan
+ok 4 - discard: createAfter can cancel by attemptId and choose another plan
+  ---
+  duration_ms: 16.695707
+  type: 'test'
+  ...
+# Subtest: recovery: associationWrite can resume the same attempt with at most one session
+ok 5 - recovery: associationWrite can resume the same attempt with at most one session
+  ---
+  duration_ms: 14.304106
+  type: 'test'
+  ...
+# Subtest: discard: associationWrite can cancel by attemptId and choose another plan
+ok 6 - discard: associationWrite can cancel by attemptId and choose another plan
+  ---
+  duration_ms: 8.637968
+  type: 'test'
+  ...
+# Subtest: older than 23 hours: recover an existing orphan without replaying create
+ok 7 - older than 23 hours: recover an existing orphan without replaying create
+  ---
+  duration_ms: 15.426795
+  type: 'test'
+  ...
+# Subtest: expired idempotency key: an expired orphan is identified and a new attempt is distinct
+ok 8 - expired idempotency key: an expired orphan is identified and a new attempt is distinct
+  ---
+  duration_ms: 7.718786
+  type: 'test'
+  ...
+# Subtest: older than 23 hours with no session: discard safely, then retry the same plan
+ok 9 - older than 23 hours with no session: discard safely, then retry the same plan
+  ---
+  duration_ms: 10.186692
+  type: 'test'
+  ...
+# Subtest: uncertain creation after 23h stays reserved until fixed expiry plus quiet time
+ok 10 - uncertain creation after 23h stays reserved until fixed expiry plus quiet time
+  ---
+  duration_ms: 16.018872
+  type: 'test'
+  ...
+# Subtest: legacy late replay uncertainty is measured from the latest dispatch, not the first attempt
+ok 11 - legacy late replay uncertainty is measured from the latest dispatch, not the first attempt
+  ---
+  duration_ms: 7.305711
+  type: 'test'
+  ...
+# Subtest: a cached Stripe 500 cannot silently release the reservation or create another session
+ok 12 - a cached Stripe 500 cannot silently release the reservation or create another session
+  ---
+  duration_ms: 11.330194
+  type: 'test'
+  ...
+# Subtest: simultaneous retries create at most one session and one association
+ok 13 - simultaneous retries create at most one session and one association
+  ---
+  duration_ms: 6.49976
+  type: 'test'
+  ...
+# Subtest: Stripe pagination is exhausted before declaring an orphan absent
+ok 14 - Stripe pagination is exhausted before declaring an orphan absent
+  ---
+  duration_ms: 11.726283
+  type: 'test'
+  ...
+# Subtest: multiple matching provider sessions fail closed instead of picking one or unlocking
+ok 15 - multiple matching provider sessions fail closed instead of picking one or unlocking
+  ---
+  duration_ms: 7.749753
+  type: 'test'
+  ...
+# Subtest: completed orphan (paid) cannot be discarded or open a new checkout
+ok 16 - completed orphan (paid) cannot be discarded or open a new checkout
+  ---
+  duration_ms: 12.599835
+  type: 'test'
+  ...
+# Subtest: completed orphan (unpaid) cannot be discarded or open a new checkout
+ok 17 - completed orphan (unpaid) cannot be discarded or open a new checkout
+  ---
+  duration_ms: 19.481695
+  type: 'test'
+  ...
+# Subtest: another user cannot cancel someone else’s attempt
+ok 18 - another user cannot cancel someone else’s attempt
+  ---
+  duration_ms: 13.552418
+  type: 'test'
+  ...
+# Subtest: an old attempt cancellation cannot close a newer attempt for the same user
+ok 19 - an old attempt cancellation cannot close a newer attempt for the same user
+  ---
+  duration_ms: 6.815448
+  type: 'test'
+  ...
+# Subtest: incomplete provider lookup preserves the reservation and blocks another plan
+ok 20 - incomplete provider lookup preserves the reservation and blocks another plan
+  ---
+  duration_ms: 6.804021
+  type: 'test'
+  ...
+# Subtest: an incomplete Firestore read does not prove absence or permit a new plan
+ok 21 - an incomplete Firestore read does not prove absence or permit a new plan
+  ---
+  duration_ms: 12.585193
+  type: 'test'
+  ...
+# Subtest: a known session with mismatched user cannot be cancelled
+ok 22 - a known session with mismatched user cannot be cancelled
+  ---
+  duration_ms: 11.390705
+  type: 'test'
+  ...
+# Subtest: a known session with mismatched attempt cannot be cancelled
+ok 23 - a known session with mismatched attempt cannot be cancelled
+  ---
+  duration_ms: 14.815441
+  type: 'test'
+  ...
+# Subtest: recovery cannot overwrite an existing session document for bob/foreign-attempt
+ok 24 - recovery cannot overwrite an existing session document for bob/foreign-attempt
+  ---
+  duration_ms: 15.764847
+  type: 'test'
+  ...
+# Subtest: recovery cannot overwrite an existing session document for alice/another-attempt
+ok 25 - recovery cannot overwrite an existing session document for alice/another-attempt
+  ---
+  duration_ms: 14.586073
+  type: 'test'
+  ...
+# Subtest: a provider page marked incomplete with no cursor cannot authorize discard
+ok 26 - a provider page marked incomplete with no cursor cannot authorize discard
+  ---
+  duration_ms: 12.256896
+  type: 'test'
+  ...
+# Subtest: payment wins the expire race: cancellation must not release a completed purchase
+ok 27 - payment wins the expire race: cancellation must not release a completed purchase
+  ---
+  duration_ms: 10.474909
+  type: 'test'
+  ...
+# Subtest: continue and cancel race never leaves both a released attempt and an open payable session
+ok 28 - continue and cancel race never leaves both a released attempt and an open payable session
+  ---
+  duration_ms: 9.160608
+  type: 'test'
+  ...
+1..28
+# tests 28
+# suites 0
+# pass 28
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 488.758418

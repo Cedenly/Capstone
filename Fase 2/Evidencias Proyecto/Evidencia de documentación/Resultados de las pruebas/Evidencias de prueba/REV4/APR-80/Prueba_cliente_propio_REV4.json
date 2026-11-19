@@ -1,0 +1,89 @@
+{
+  "candidata": "DAD20-LOCAL-20261118-REV4",
+  "sha256_manifiesto_candidata": "628f864ddd7d2278a847c2bffc2765a1fc2e8989e45c135a1f845443843c9594",
+  "ejecucion_utc": "2026-11-18T02:20:38.322Z",
+  "alcance": "Cliente de alumno DAD_20 y dos API reales en loopback. Firestore Emulator. Proveedor Stripe, navegador y navegación controlados. Sin cliente, identidad ni servicios de otro grupo.",
+  "manejadores_ejecutados": [
+    "startCheckout",
+    "openPortal"
+  ],
+  "archivos_cliente": {
+    "student/frontend/src/pages/Plan.jsx": "50d9bc835a63e1f6c0224ae2c12629b890bc611405fb35c8e8b9631d6d7d1a09",
+    "student/frontend/src/api/client.js": "e7718200956e75d92346b26f4b19f132c994c987e3208a49e955b0d7c159c32e"
+  },
+  "observaciones": {
+    "cuenta": "Alumno sintético creado en el ensayo; misma identidad al iniciar sesión",
+    "checkout": "HTTP 201, URL HTTPS en checkout.stripe.com registrada sin navegar. El proveedor recibió /plan?checkout=success&session_id={CHECKOUT_SESSION_ID} y /plan?checkout=cancelled.",
+    "retorno_previo": "Misma sesión en pending, sin suscripción",
+    "retorno_confirmado": "Misma sesión en active, acceso vigente y factura vinculada a su dueño",
+    "portal": "HTTP 200, destino HTTPS de billing.stripe.com registrado sin navegar; el proveedor de prueba recibió /plan?portal=return y la cuenta conservó la suscripción tras reconsultar",
+    "reenvio": "Duplicado reconocido; proyección sin cambios"
+  },
+  "controles": [
+    {
+      "id": "C01",
+      "name": "Both actual entrypoints start against one isolated Firestore project",
+      "result": "PASS"
+    },
+    {
+      "id": "C02",
+      "name": "Two students register and log in; finance admin logs in through actual HTTP routes",
+      "result": "PASS"
+    },
+    {
+      "id": "UI-API-01",
+      "name": "Lectura inicial de Mi plan devuelve cuenta gratis, catálogo, cuota y hora de reinicio",
+      "result": "PASS"
+    },
+    {
+      "id": "C03",
+      "name": "Checkout is created through the full application without granting a paid right",
+      "result": "PASS"
+    },
+    {
+      "id": "UI-API-02",
+      "name": "Al volver con el pago pendiente, consultar estado, catálogo y cuota conserva la sesión y el plan gratuito",
+      "result": "PASS"
+    },
+    {
+      "id": "CLIENT-PENDING",
+      "name": "Cliente real verifica su sesión pendiente",
+      "result": "PASS"
+    },
+    {
+      "id": "C04",
+      "name": "Signed webhook enters the real app and persists one financial entitlement",
+      "result": "PASS"
+    },
+    {
+      "id": "C05",
+      "name": "Student and finance admin read matching subscription, owner, amount and period",
+      "result": "PASS"
+    },
+    {
+      "id": "UI-API-03",
+      "name": "Las lecturas de retorno confirmado conservan la suscripción y la cuota ilimitada",
+      "result": "PASS"
+    },
+    {
+      "id": "CLIENT-PAID",
+      "name": "Cliente real recupera la misma compra confirmada",
+      "result": "PASS"
+    },
+    {
+      "id": "CLIENT-PORTAL",
+      "name": "Acción real de Portal y vuelta con suscripción propia vigente",
+      "result": "PASS"
+    },
+    {
+      "id": "C06",
+      "name": "Repeating the confirmed event preserves the same financial projection",
+      "result": "PASS"
+    },
+    {
+      "id": "C08",
+      "name": "Supplied backend sources and dependency locks remain byte-identical",
+      "result": "PASS"
+    }
+  ]
+}

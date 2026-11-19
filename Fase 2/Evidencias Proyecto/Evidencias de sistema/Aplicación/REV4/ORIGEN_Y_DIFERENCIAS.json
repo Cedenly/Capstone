@@ -1,0 +1,30 @@
+{
+  "candidata": "DAD20-LOCAL-20261118-REV4",
+  "base": "DAD20-LOCAL-20261117-REV3",
+  "sha256_manifiesto_modulo": "628f864ddd7d2278a847c2bffc2765a1fc2e8989e45c135a1f845443843c9594",
+  "archivos_totales": 158,
+  "archivos_identicos": 153,
+  "sha256_parche": "a9ea4847cf022873869560827d2672da9f39f346a12c4d84c7e094da89f6542a",
+  "archivos_modificados": {
+    "student/backend/src/lib/questionAvailability.js": {
+      "original": "96352a1669c526e0847062e442ee09cd9ed01b0262e4be08a8045b807a8f7f7e",
+      "parche": "f57ef036bb14a7fc0a614afbc8dbe3dd5cef79c33c66f6cc941173d7c0efbd61"
+    },
+    "student/backend/src/routes/checkout.js": {
+      "original": "ceecd1acdf274c49f4fe3e9548df805edda8d05f966f4c56e61ded0b5d413614",
+      "parche": "579bc9c2f5998f4af920bae5aaab86dc8adab73ec2077c6493765c8d4e10159c"
+    },
+    "student/backend/src/routes/checkoutStatus.js": {
+      "original": "1f1a37e6ab5989fe86c62cd299337ad9cf8efdca27e0169c08d30745a6b9b140",
+      "parche": "95bc2fa5bdc033088c247763db6ff6a94a6c8ae0c365de9152f8f7995c50dfc5"
+    },
+    "student/backend/src/services/stripeBilling.js": {
+      "original": "5b8ab8c2ea1c6e9b18a21f46b47511f4191b28ed74f4691ba3a6e00f53977aaa",
+      "parche": "abd9f00c12a817d2098d3f9b853d406f03f8992e83b0f375b5b61e093e649073"
+    },
+    "student/backend/test/checkout-harness.mjs": {
+      "original": "4e2c96e2ab27b124c5556dc171039c4cb3054bd3ca59a8ce1468422beedf98a0",
+      "parche": "9a598a1bd763fbf69660221fcd4745cff39bc262c396ed4f94893b1954b4f058"
+    }
+  }
+}

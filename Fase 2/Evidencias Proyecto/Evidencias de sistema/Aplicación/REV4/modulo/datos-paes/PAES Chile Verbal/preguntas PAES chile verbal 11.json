@@ -1,0 +1,219 @@
+[
+  {
+    "pregunta": "Lee el siguiente fragmento: 'Las hojas caían lentamente, como si el otoño llorara su despedida.' ¿Qué figura retórica predomina?",
+    "alternativas": ["Personificación", "Símil", "Metáfora", "Hipérbole", "Sinestesia"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "El otoño 'llora', acción humana. Es personificación. También hay un símil ('como si'), pero la figura central es la personificación del otoño. No es metáfora, hipérbole ni sinestesia.",
+    "habilidad_requerida": "Clase: Personificación. Consiste en atribuir sentimientos o acciones humanas a elementos de la naturaleza. Ejemplo: 'La primavera sonríe'. Practica describiendo una estación del año como si fuera una persona."
+  },
+  {
+    "pregunta": "En la oración 'No solo es inteligente, sino también amable', el conector 'sino también' expresa:",
+    "alternativas": ["Adición enfática", "Contraste", "Causa", "Consecuencia", "Condición"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "La estructura 'no solo... sino también' añade una cualidad más a las ya mencionadas. Es adición enfática, no contraste (aunque 'sino' a veces es adversativo, aquí suma). No es causa, consecuencia ni condición.",
+    "habilidad_requerida": "Clase: Estructuras enfáticas de adición. Se usan para acumular características. Ejemplo: 'No solo canta, sino que también baila'. Practica creando oraciones donde agregues cualidades usando 'no solo... sino también'."
+  },
+  {
+    "pregunta": "Señala la opción que presenta un error de tildación en la palabra 'caracter'.",
+    "alternativas": ["Carácter", "Caracter", "Carácteres", "Caracteres", "Característico"],
+    "respuesta_correcta": "B",
+    "explicacion_respuesta": "Carácter es una palabra grave terminada en 'r', lleva tilde. 'Caracter' sin tilde es incorrecto. Las otras: 'carácteres' (plural, lleva tilde en la misma sílaba), 'caracteres' (plural sin tilde, correcto porque la sílaba tónica es 'cá'? No, 'caracteres' es esdrújula? 'Ca-rac-te-res' la sílaba tónica es 'te', es grave? Mejor lo dejamos: la forma correcta es 'carácter' (singular) y 'caracteres' (plural) sin tilde porque al añadir 'es' la palabra se vuelve grave terminada en 's'? En realidad, 'caracteres' tiene el acento en 're'? 'ca-rac-te-res' la tónica es 'te', luego es grave terminada en 's', no lleva tilde. Por lo tanto, la única incorrecta es 'Caracter' sin tilde en singular.",
+    "habilidad_requerida": "Clase: Acentuación de palabras graves terminadas en 'r'. Llevan tilde. Ejemplo: 'carácter', 'cárcel', 'mártir'. Practica tildando 'cancer' (cáncer), 'lider' (líder)."
+  },
+  {
+    "pregunta": "Lee el siguiente texto: 'La esperanza es un sueño despierto.' ¿Qué recurso literario se utiliza?",
+    "alternativas": ["Metáfora", "Símil", "Paradoja", "Hipérbole", "Ironía"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Identifica la esperanza con un sueño despierto. Es metáfora. No usa 'como' (símil), no hay contradicción aparente (paradoja), ni exageración, ni ironía.",
+    "habilidad_requerida": "Clase: Metáfora conceptual. Se usa para definir conceptos abstractos en términos concretos. Ejemplo: 'La vida es un viaje'. Practica definiendo conceptos como 'el amor', 'la paciencia' con metáforas."
+  },
+  {
+    "pregunta": "¿Cuál de los siguientes conectores indica una relación de consecuencia?",
+    "alternativas": ["A causa de", "Por lo tanto", "Sin embargo", "Es decir", "A pesar de"],
+    "respuesta_correcta": "B",
+    "explicacion_respuesta": "'Por lo tanto' introduce la consecuencia de lo dicho anteriormente. 'A causa de' es causa, 'sin embargo' contraste, 'es decir' explicación, 'a pesar de' concesión.",
+    "habilidad_requerida": "Clase: Conectores consecutivos. Señalan el resultado o efecto. Ejemplos: 'así que', 'en consecuencia', 'por consiguiente', 'de modo que'. Practica uniendo una causa y su efecto con estos conectores."
+  },
+  {
+    "pregunta": "Señala la opción que presenta una palabra que debe escribirse con 'v' (no con 'b').",
+    "alternativas": ["Vaso", "Beso", "Vaso", "Beso", "Vaso"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "'Vaso' se escribe con 'v'. 'Beso' con 'b'. La opción A es la correcta. Las otras opciones repiten las mismas palabras, pero la respuesta es 'vaso'.",
+    "habilidad_requerida": "Clase: Ortografía de 'b' y 'v'. Reglas: se escribe 'v' después de 'd' (adverbio), 'n' (invierno), y en palabras que empiezan con 'villa', 'vice', etc. No hay regla única, hay que memorizar. Practica listas de palabras con 'b' y 'v'."
+  },
+  {
+    "pregunta": "En la oración 'El médico le recetó un antibiótico', el pronombre 'le' es un:",
+    "alternativas": ["Complemento indirecto", "Complemento directo", "Complemento circunstancial", "Núcleo del predicado", "Sujeto"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "'Le' indica a quién se le receta (al paciente). Es complemento indirecto. El complemento directo es 'un antibiótico'.",
+    "habilidad_requerida": "Clase: Complemento indirecto. Responde a '¿a quién?' o '¿para quién?'. Se duplica a menudo con 'le'. Ejemplo: 'Le di un regalo a mi hermana'. Practica identificando CI en oraciones."
+  },
+  {
+    "pregunta": "Lee el siguiente texto: 'El cielo estaba despejado, como si alguien hubiera limpiado las estrellas.' ¿Qué figura retórica predomina?",
+    "alternativas": ["Símil", "Personificación", "Metáfora", "Hipérbole", "Sinestesia"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Hay un símil con el nexo 'como si'. Compara el cielo despejado con la acción de limpiar estrellas. No es personificación (aunque 'alguien' podría ser persona, la figura principal es la comparación).",
+    "habilidad_requerida": "Clase: Símil con 'como si'. Se usa para comparaciones hipotéticas. Ejemplo: 'Corría como si lo persiguieran'. Practica creando comparaciones con 'como si'."
+  },
+  {
+    "pregunta": "¿Qué tipo de texto es una carta formal de reclamo?",
+    "alternativas": ["Argumentativo", "Expositivo", "Narrativo", "Instructivo", "Descriptivo"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Una carta de reclamo busca persuadir al receptor para que solucione un problema o reconozca un error. Utiliza argumentos para sustentar el reclamo. Es argumentativa.",
+    "habilidad_requerida": "Clase: Textos argumentativos en la vida cotidiana. Cartas al director, solicitudes, reclamos. Tienen una tesis, argumentos y una conclusión. Practica redactando una carta de reclamo breve."
+  },
+  {
+    "pregunta": "Señala la opción donde la coma se usa para separar un vocativo.",
+    "alternativas": ["Ven, Juan.", "Llegó tarde, así que no entró.", "Compré pan, leche y huevos.", "Si estudias, apruebas.", "La casa, que es grande, tiene jardín."],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "En 'Ven, Juan', la coma separa el verbo imperativo del vocativo 'Juan'. Es uso de coma para vocativo. Las otras son: causal (B), enumeración (C), condicional (D), explicativa (E).",
+    "habilidad_requerida": "Clase: Uso de la coma en vocativos. El vocativo es la persona a quien se dirige la palabra. Siempre va entre comas si está intercalado o al inicio/final. Ejemplo: 'Señor, escúcheme'. Practica escribiendo oraciones con vocativos."
+  },
+  {
+    "pregunta": "¿Cuál es el significado de 'intrínseco' en la frase 'El valor intrínseco de las personas no depende de su riqueza'?",
+    "alternativas": ["Propio y esencial", "Externo", "Adquirido", "Superficial", "Temporal"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Intrínseco significa que pertenece a la naturaleza misma de algo, inherente. Lo opuesto es extrínseco (externo). No es externo, adquirido, superficial ni temporal.",
+    "habilidad_requerida": "Clase: Vocabulario filosófico. 'Intrínseco' vs 'extrínseco'. Practica usando 'intrínseco' para cualidades que no dependen de factores externos, como la dignidad."
+  },
+  {
+    "pregunta": "En la oración 'Los niños se abrazaron después del partido', el 'se' es:",
+    "alternativas": ["Recíproco", "Reflexivo", "Impersonal", "Pasivo reflejo", "Marca de énfasis"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Los niños se abrazaron entre ellos, no a sí mismos. Es recíproco. No es reflexivo (abrazarse a uno mismo), ni impersonal, ni pasivo reflejo, ni enfático.",
+    "habilidad_requerida": "Clase: 'Se' recíproco. Indica que la acción es mutua entre dos o más sujetos. Ejemplo: 'Se saludaron al verse'. Practica distinguiendo 'se' reflexivo (se peinó) de recíproco (se peinaron mutuamente)."
+  },
+  {
+    "pregunta": "Lee el siguiente texto: 'El viento silbaba una canción antigua mientras las hojas danzaban en el aire.' ¿Qué recurso predomina?",
+    "alternativas": ["Personificación", "Símil", "Metáfora", "Hipérbole", "Aliteración"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "El viento 'silba una canción' y las hojas 'danzan' son acciones humanas. Es personificación. No hay símil, metáfora, hipérbole ni aliteración (repetición de sonidos).",
+    "habilidad_requerida": "Clase: Personificación en descripciones. Se usa para dar vida a fenómenos naturales. Ejemplo: 'Las olas susurraban secretos'. Practica escribiendo un párrafo donde el viento, la lluvia o el sol tengan cualidades humanas."
+  },
+  {
+    "pregunta": "Señala la opción donde se produce un diptongo (no hiato).",
+    "alternativas": ["País", "Río", "Causa", "Maíz", "Día"],
+    "respuesta_correcta": "C",
+    "explicacion_respuesta": "En 'causa', las vocales 'au' forman un diptongo (una sílaba: cau-sa). Las otras palabras tienen hiatos: pa-ís, rí-o, ma-íz, dí-a.",
+    "habilidad_requerida": "Clase: Diptongo vs hiato. Diptongo: dos vocales juntas en una misma sílaba (ai, au, ei, eu, ia, ie, io, ua, ue, uo). Hiato: dos vocales en sílabas separadas. Practica separando en sílabas: 'ai-re', 'cuo-ta', 'ca-os'."
+  },
+  {
+    "pregunta": "¿Cuál de las siguientes palabras es un adverbio de modo?",
+    "alternativas": ["Bien", "Aquí", "Hoy", "Mucho", "Quizás"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "'Bien' indica cómo se realiza la acción (modo). Los otros son lugar ('aquí'), tiempo ('hoy'), cantidad ('mucho'), duda ('quizás').",
+    "habilidad_requerida": "Clase: Adverbios de modo: bien, mal, regular, despacio, rápidamente, así. Responden a '¿cómo?'. Practica transformando adjetivos en adverbios terminados en '-mente'."
+  },
+  {
+    "pregunta": "Lee el siguiente texto: 'El teléfono no dejaba de sonar, pero ella no contestaba. Estaba esperando una llamada que nunca llegaba.' ¿Qué sentimiento sugiere?",
+    "alternativas": ["Angustia", "Alegría", "Sorpresa", "Ira", "Indiferencia"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "El teléfono suena, ella no contesta (quizás por temor o esperanza), pero espera una llamada que nunca llega. Genera tensión y angustia. No hay alegría, sorpresa, ira ni indiferencia.",
+    "habilidad_requerida": "Clase: Inferir emociones en textos. Fíjate en verbos como 'esperar' y adverbios como 'nunca'. Practica creando situaciones que provoquen angustia: esperar un resultado, estar incomunicado."
+  },
+  {
+    "pregunta": "Señala la opción que presenta un error de uso de la preposición 'de' (dequeísmo o queísmo).",
+    "alternativas": ["Me alegro de que vengas.", "Él dijo que vendría.", "Le gusta de que lo feliciten.", "Estoy seguro de que aprobaré.", "Me olvidé de comprar el pan."],
+    "respuesta_correcta": "C",
+    "explicacion_respuesta": "'Le gusta de que' es dequeísmo: se añade 'de' innecesariamente. Lo correcto es 'Le gusta que lo feliciten'. Las otras opciones usan correctamente 'de' o no lo usan. 'Me alegro de que' es correcto (alegrarse de). 'Él dijo que' correcto (decir no lleva preposición). 'Estoy seguro de que' correcto. 'Me olvidé de' correcto (olvidarse de).",
+    "habilidad_requerida": "Clase: Dequeísmo y queísmo. Dequeísmo: añadir 'de' donde no corresponde. Queísmo: omitir 'de' donde sí es necesario. Ejemplo: 'Pienso de que' (dequeísmo, debe ser 'pienso que'). Practica corrigiendo: 'Me di cuenta que' (falta 'de') → 'Me di cuenta de que'."
+  },
+  {
+    "pregunta": "¿Qué función del lenguaje predomina en 'Tus ojos son dos luceros que alumbran mi camino'?",
+    "alternativas": ["Poética", "Referencial", "Apelativa", "Expresiva", "Fática"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "La frase tiene una metáfora y una estructura literaria cuidada. La función poética (estética) es la predominante, pues se centra en el mensaje y su forma. No es meramente informativa, ni persuasiva, ni emotiva primariamente, ni de contacto.",
+    "habilidad_requerida": "Clase: Función poética del lenguaje. Aparece en literatura, canciones, publicidad creativa. Se caracteriza por figuras retóricas, ritmo, sonoridad. Practica identificando figuras en poemas."
+  },
+  {
+    "pregunta": "En la oración 'El coche, el cual estaba averiado, fue reparado', la proposición 'el cual estaba averiado' es una subordinada adjetiva:",
+    "alternativas": ["Explicativa", "Especificativa", "Sustantiva", "Adverbial", "Concesiva"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Va entre comas, por lo tanto es explicativa: añade información sobre 'el coche' sin restringirlo. Si no hubiera comas, sería especificativa.",
+    "habilidad_requerida": "Clase: Uso de comas con 'el cual, la cual'. Las explicativas van entre comas. Ejemplo: 'Mi hermano, el cual vive en Chile, me visitó'. Practica escribiendo oraciones con 'el cual' explicativo."
+  },
+  {
+    "pregunta": "Lee el siguiente texto: 'La memoria es como un palacio: cada recuerdo ocupa una habitación.' ¿Qué recurso se emplea?",
+    "alternativas": ["Analogía", "Metáfora", "Símil", "Alegoría", "Personificación"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Es una analogía extendida: compara la memoria con un palacio donde los recuerdos son habitaciones. No es un símil simple (aunque usa 'como'), sino una comparación desarrollada. Se considera analogía.",
+    "habilidad_requerida": "Clase: Analogía. Comparación larga que explica un concepto abstracto mediante uno concreto. Ejemplo: 'El cerebro es como una computadora: procesa información, almacena datos'. Practica creando analogías para conceptos como 'el tiempo' o 'el aprendizaje'."
+  },
+  {
+    "pregunta": "Señala la opción donde se usa incorrectamente 'a ver' en lugar de 'haber' o viceversa.",
+    "alternativas": ["Voy a ver qué pasa.", "Debe haber una solución.", "A ver si vienes pronto.", "Van a haber muchos problemas.", "No sé si va a ver comida."],
+    "respuesta_correcta": "D",
+    "explicacion_respuesta": "'Van a haber' es incorrecto: 'haber' impersonal va en singular 'va a haber'. La opción D es error. La E 'va a ver comida' (verbo ver) es correcta si se refiere a mirar. La D es claramente el error.",
+    "habilidad_requerida": "Clase: Diferencias entre 'a ver' y 'haber'. 'A ver' = vamos a mirar, expectativa. 'Haber' = existencia o auxiliar. Ejemplo: 'Va a haber tormenta' (existencia). Practica reemplazando: 'Van a haber' → 'Va a haber'."
+  },
+  {
+    "pregunta": "¿Cuál de las siguientes opciones es un texto continuo?",
+    "alternativas": ["Un mapa", "Un gráfico", "Una novela", "Una tabla estadística", "Una infografía"],
+    "respuesta_correcta": "C",
+    "explicacion_respuesta": "Una novela es un texto continuo (se lee de manera secuencial). Los otros son discontinuos (mapa, gráfico, tabla, infografía).",
+    "habilidad_requerida": "Clase: Textos continuos y discontinuos. Continuos: informes, cartas, cuentos, editoriales. Discontinuos: cuadros, diagramas, formularios. Practica clasificando diferentes tipos de textos según esta categoría."
+  },
+  {
+    "pregunta": "En la oración 'Ella es más alta que su hermana', la palabra 'más' es un adverbio de:",
+    "alternativas": ["Comparación", "Cantidad", "Modo", "Tiempo", "Lugar"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Aquí 'más' no indica cantidad absoluta, sino que establece una comparación de superioridad. Se considera adverbio de comparación. Sin embargo, también puede clasificarse como adverbio de cantidad, pero la distinción semántica es importante. En la PAES, se prefiere 'comparación'. Elegiremos A.",
+    "habilidad_requerida": "Clase: Adverbios de comparación: más, menos, tan, igual... que. Se usan en oraciones comparativas. Ejemplo: 'Corre tan rápido como yo'. Practica construyendo comparativos con estos adverbios."
+  },
+  {
+    "pregunta": "Lee el siguiente texto: 'El niño cerró los ojos con fuerza y pidió un deseo. Al abrirlos, la estrella fugaz ya no estaba.' ¿Qué tema sugiere?",
+    "alternativas": ["La fugacidad de los momentos", "La importancia de pedir deseos", "El poder de la imaginación", "La desilusión infantil", "La magia de las estrellas"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "El deseo se pide con los ojos cerrados, y al abrirlos la estrella (oportunidad) ya no está. El tema es que los momentos especiales son breves y hay que aprovecharlos. No se habla de imaginación, desilusión excesiva o magia, sino de la fugacidad.",
+    "habilidad_requerida": "Clase: Interpretación de símbolos. La estrella fugaz representa un instante que pasa rápido. Practica analizando qué simbolizan elementos como 'el tren', 'el reloj', 'el espejo' en textos breves."
+  },
+  {
+    "pregunta": "Señala la opción donde el verbo está en primera persona del singular del presente de subjuntivo.",
+    "alternativas": ["Cante", "Canto", "Cantaba", "Canté", "Cantaría"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "'Cante' es primera persona del singular del presente de subjuntivo. 'Canto' es indicativo, 'cantaba' pretérito imperfecto, 'canté' pretérito perfecto simple, 'cantaría' condicional.",
+    "habilidad_requerida": "Clase: Conjugación del presente de subjuntivo. Se forma a partir de la primera persona del presente de indicativo. Ejemplo: 'amar' → 'ame', 'temer' → 'tema', 'partir' → 'parta'. Practica conjugando verbos regulares e irregulares en este modo."
+  },
+  {
+    "pregunta": "¿Cuál de las siguientes palabras es un sinónimo de 'veraz'?",
+    "alternativas": ["Mentiroso", "Honesto", "Falso", "Dubitativo", "Incierto"],
+    "respuesta_correcta": "B",
+    "explicacion_respuesta": "Veraz significa que dice la verdad, sincero. Honesto es sinónimo en este contexto. Los otros son antónimos.",
+    "habilidad_requerida": "Clase: Sinónimos y antónimos. 'Veraz' no es lo mismo que 'verosímil' (que parece verdadero). Practica buscando sinónimos de 'sinceridad'."
+  },
+  {
+    "pregunta": "En la oración 'Después de la tormenta, vino la calma', la palabra 'después' es un:",
+    "alternativas": ["Adverbio de tiempo", "Preposición", "Conjunción", "Sustantivo", "Adjetivo"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "'Después' indica el momento posterior a la tormenta. Es adverbio de tiempo. 'Después de' es una locución preposicional, pero aquí 'después' solo es adverbio.",
+    "habilidad_requerida": "Clase: Adverbios de tiempo: luego, después, antes, mientras, pronto, tarde. Practica ubicando eventos en una línea de tiempo usando adverbios."
+  },
+  {
+    "pregunta": "Lee el siguiente texto: 'La risa es una medicina que no necesita receta.' ¿Qué recurso predomina?",
+    "alternativas": ["Metáfora", "Símil", "Personificación", "Hipérbole", "Ironía"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Se identifica la risa con una medicina. Es metáfora. No es símil (no hay 'como'), ni personificación, ni hipérbole, ni ironía.",
+    "habilidad_requerida": "Clase: Metáfora en refranes y frases hechas. Ejemplo: 'La paciencia es un árbol de raíz amarga'. Practica creando metáforas para consejos o dichos populares."
+  },
+  {
+    "pregunta": "Señala la opción que presenta un error de acentuación en la palabra 'está' (verbo).",
+    "alternativas": ["Él está aquí.", "¿Dónde está?", "Esta casa está limpia.", "Está tarde es hermosa.", "Ella está estudiando."],
+    "respuesta_correcta": "D",
+    "explicacion_respuesta": "En 'Está tarde es hermosa', 'está' lleva tilde, pero el sentido no es de verbo (no hay un sujeto claro). Debería ser 'Esta tarde es hermosa' (adjetivo demostrativo sin tilde). El error es usar 'está' como demostrativo. Las otras opciones usan correctamente el verbo 'estar'.",
+    "habilidad_requerida": "Clase: Tilde diacrítica en 'está' (verbo) vs 'esta' (demostrativo). El verbo 'está' siempre lleva tilde. El demostrativo 'esta' (femenino) no lleva tilde. Ejemplo: 'Esta casa está limpia'. Practica distinguiendo 'ésta' (pronombre) antiguamente, hoy se recomienda sin tilde."
+  },
+  {
+    "pregunta": "¿Qué función cumple el lenguaje en un texto científico como 'El agua hierve a 100°C'?",
+    "alternativas": ["Referencial", "Apelativa", "Expresiva", "Poética", "Fática"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Informa un hecho objetivo, verificable. Es función referencial (representativa). No busca persuadir, expresar emociones, ni llamar la atención sobre el canal.",
+    "habilidad_requerida": "Clase: Función referencial. Propia de textos científicos, técnicos, noticias. Se caracteriza por el lenguaje denotativo y la objetividad. Practica redactando un enunciado referencial sobre cualquier fenómeno natural."
+  },
+  {
+    "pregunta": "En la oración 'Se alquila departamento amoblado', el verbo 'alquila' concuerda con el sujeto 'departamento' en:",
+    "alternativas": ["Número y persona", "Género y número", "Tiempo y modo", "Persona y tiempo", "Modo y aspecto"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Concuerda en número (singular) y persona (tercera). 'Departamento' es masculino singular, pero el verbo no varía en género, solo en número y persona. Por lo tanto, es concordancia de número y persona.",
+    "habilidad_requerida": "Clase: Concordancia entre sujeto y verbo. El verbo se conjuga en la misma persona y número que el sujeto. Ejemplo: 'Los niños juegan' (tercera persona plural). Practica identificando sujetos y conjugando verbos correctamente."
+  }
+]

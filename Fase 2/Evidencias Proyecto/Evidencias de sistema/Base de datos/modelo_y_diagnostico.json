@@ -1,0 +1,67 @@
+{
+  "candidata": "DAD20-LOCAL-20261118-REV4",
+  "manifest_sha256": "628f864ddd7d2278a847c2bffc2765a1fc2e8989e45c135a1f845443843c9594",
+  "archivos_modulo": 158,
+  "archivos_en_ensayo_backend": 81,
+  "version_procesamiento_recibo": 3,
+  "relaciones_comprobadas": {
+    "Usuario, reserva y titular": true,
+    "Sesión, intento y titular": true,
+    "Suscripción de usuario y sesión": true,
+    "Factura del derecho con titular y suscripción": true,
+    "Cliente Stripe coincide": true,
+    "Recibo v3 de la suscripción y del titular": true,
+    "Antes de confirmar, cuenta Gratis sin recibo, factura ni suscripción proyectados": true,
+    "Después de confirmar, acceso activo y factura pagada de USD 5": true,
+    "Reenvío sin cambio en la proyección": true
+  },
+  "factura_local": {
+    "alumno_USD": 5,
+    "administracion_centavos": 500
+  },
+  "materias": {
+    "casos": 4,
+    "controles": 18,
+    "aviso_observado": "[stripe webhook] evt_prueba_todas_una_archivada BILLING_TEST_REQUIRED"
+  },
+  "diagnostico_webhook": {
+    "provider_read": [
+      "503 WEBHOOK_PROCESSING_FAILED",
+      "200 processed",
+      "200 duplicate"
+    ],
+    "after_commit": [
+      "503 WEBHOOK_PROCESSING_FAILED",
+      "200 duplicate",
+      "200 duplicate"
+    ]
+  },
+  "consultas_contraste": [
+    "Q1",
+    "Q2",
+    "Q3a",
+    "Q3b",
+    "Q4",
+    "Q5a",
+    "Q5b",
+    "Q6",
+    "Q7",
+    "Q8",
+    "Q9"
+  ],
+  "indices": {
+    "configuracion_entregada_sin_manifiesto": true,
+    "estado_base_remota": "sin verificar"
+  },
+  "evidencia_sha256": {
+    "pruebas_http/report.json": "f5fb50910f899de4bfa45b9e413e051e7bab46219476790a8f92788a8f940017",
+    "pruebas_http/materias.json": "bb435489fc222fdb87b2977a2745d8255db5a5c94f6eaf36591368bd4fa8ca7c",
+    "pruebas_http/source-manifest.json": "29f7677b86c349b9ee28c36afd09c683029a34def9876278b32ae64f4beb6bae",
+    "pruebas_http/before-confirmation.json": "79075a9dfc710a572ba36dc7a5b0b6e017ca7e8af59f991ec2e699504f2ce357",
+    "pruebas_http/after-confirmation.json": "e787adf078b5a1ac76899e5a68c30dd7d0298c973caaae5a77592a98a2ea9a01",
+    "pruebas_http/before-replay.json": "e787adf078b5a1ac76899e5a68c30dd7d0298c973caaae5a77592a98a2ea9a01",
+    "pruebas_http/after-replay.json": "e787adf078b5a1ac76899e5a68c30dd7d0298c973caaae5a77592a98a2ea9a01",
+    "pruebas_http/student.log": "70ae2fe2a1e2b9b5afd21e559051210b602a026d7e72563c038a77fdebedd273",
+    "webhooks/results/report.json": "12ad647bc47f9cdc2e69101a6ac91b24b522a575e36fe97321929f8dad2e0c01"
+  }
+}

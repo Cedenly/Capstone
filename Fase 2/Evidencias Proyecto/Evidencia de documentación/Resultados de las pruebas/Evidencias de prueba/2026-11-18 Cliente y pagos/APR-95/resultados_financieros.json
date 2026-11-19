@@ -1,0 +1,408 @@
+{
+  "ticket": "APR-95",
+  "fecha_chile": "2026-11-18",
+  "commit_alumno": "c3a511ca35aa782aa1ec2fc00fa7860ed5a8867a",
+  "admin": "backend incluido en el respaldo REV4 del 17 de noviembre",
+  "cantidad_archivos_del_manifiesto": 81,
+  "archivos_que_cambiaron": [
+    "student/backend/src/routes/me.js"
+  ],
+  "sha256_me_js": "f8307685a58e52b6be560a610f737ecdebfc92b536a9ad64e39b91e4817df383",
+  "entorno": "Dos API locales DAD_20 con emulador Firestore y proveedor Stripe sintético en loopback.",
+  "limites": "El banco de pruebas no incluye cliente externo, Docker integrado, Checkout alojado ni Stripe remoto. Los ciclos son simulados.",
+  "recorridos": [
+    {
+      "recorrido": "ciencias_mensual",
+      "inicio_utc": "2026-11-18T22:20:31.510Z",
+      "fin_utc": "2026-11-18T22:20:35.252Z",
+      "revision": "REV4-APR72-c3a511c",
+      "controles": [
+        {
+          "id": "C01",
+          "name": "Both actual entrypoints start against one isolated Firestore project",
+          "result": "PASS"
+        },
+        {
+          "id": "C02",
+          "name": "Two students register and log in; finance admin logs in through actual HTTP routes",
+          "result": "PASS"
+        },
+        {
+          "id": "UI-API-01",
+          "name": "Lectura inicial de Mi plan devuelve cuenta gratis, catálogo, cuota y hora de reinicio",
+          "result": "PASS"
+        },
+        {
+          "id": "C03",
+          "name": "Checkout is created through the full application without granting a paid right",
+          "result": "PASS"
+        },
+        {
+          "id": "UI-API-02",
+          "name": "Al volver con el pago pendiente, consultar estado, catálogo y cuota conserva la sesión y el plan gratuito",
+          "result": "PASS"
+        },
+        {
+          "id": "C04",
+          "name": "Signed webhook enters the real app and persists one financial entitlement",
+          "result": "PASS"
+        },
+        {
+          "id": "C05",
+          "name": "Student and finance admin read matching subscription, owner, amount and period",
+          "result": "PASS"
+        },
+        {
+          "id": "UI-API-03",
+          "name": "Las lecturas de retorno confirmado conservan la suscripción y la cuota ilimitada",
+          "result": "PASS"
+        },
+        {
+          "id": "C06",
+          "name": "Repeating the confirmed event preserves the same financial projection",
+          "result": "PASS"
+        },
+        {
+          "id": "C07",
+          "name": "The other logged-in student sees no purchased subscription, invoice or foreign Checkout",
+          "result": "PASS"
+        },
+        {
+          "id": "C08",
+          "name": "Supplied backend sources and dependency locks remain byte-identical",
+          "result": "PASS"
+        }
+      ],
+      "facturacion": {
+        "importe_usd_alumno": 1,
+        "importe_centavos_admin": 100,
+        "estado_alumno": "paid",
+        "estado_admin": "paid",
+        "id_coincide": true,
+        "facturas_propias": 1,
+        "facturas_vistas_por_el_otro_alumno": 0,
+        "pdf_presente": false
+      },
+      "sha256_informe_bruto": "08baedde875e07deae0c49171a091af0e7b03bffef6a8214a1f86013a8587b6b"
+    },
+    {
+      "recorrido": "ciencias_anual",
+      "inicio_utc": "2026-11-18T22:20:31.511Z",
+      "fin_utc": "2026-11-18T22:20:35.261Z",
+      "revision": "REV4-APR72-c3a511c",
+      "controles": [
+        {
+          "id": "C01",
+          "name": "Both actual entrypoints start against one isolated Firestore project",
+          "result": "PASS"
+        },
+        {
+          "id": "C02",
+          "name": "Two students register and log in; finance admin logs in through actual HTTP routes",
+          "result": "PASS"
+        },
+        {
+          "id": "UI-API-01",
+          "name": "Lectura inicial de Mi plan devuelve cuenta gratis, catálogo, cuota y hora de reinicio",
+          "result": "PASS"
+        },
+        {
+          "id": "C03",
+          "name": "Checkout is created through the full application without granting a paid right",
+          "result": "PASS"
+        },
+        {
+          "id": "UI-API-02",
+          "name": "Al volver con el pago pendiente, consultar estado, catálogo y cuota conserva la sesión y el plan gratuito",
+          "result": "PASS"
+        },
+        {
+          "id": "C04",
+          "name": "Signed webhook enters the real app and persists one financial entitlement",
+          "result": "PASS"
+        },
+        {
+          "id": "C05",
+          "name": "Student and finance admin read matching subscription, owner, amount and period",
+          "result": "PASS"
+        },
+        {
+          "id": "UI-API-03",
+          "name": "Las lecturas de retorno confirmado conservan la suscripción y la cuota ilimitada",
+          "result": "PASS"
+        },
+        {
+          "id": "C06",
+          "name": "Repeating the confirmed event preserves the same financial projection",
+          "result": "PASS"
+        },
+        {
+          "id": "C07",
+          "name": "The other logged-in student sees no purchased subscription, invoice or foreign Checkout",
+          "result": "PASS"
+        },
+        {
+          "id": "C08",
+          "name": "Supplied backend sources and dependency locks remain byte-identical",
+          "result": "PASS"
+        }
+      ],
+      "facturacion": {
+        "importe_usd_alumno": 10,
+        "importe_centavos_admin": 1000,
+        "estado_alumno": "paid",
+        "estado_admin": "paid",
+        "id_coincide": true,
+        "facturas_propias": 1,
+        "facturas_vistas_por_el_otro_alumno": 0,
+        "pdf_presente": false
+      },
+      "sha256_informe_bruto": "494711b5cac3041aff1d8f843f52c31166cced4668cdcf463b60244c667b1898"
+    },
+    {
+      "recorrido": "todas_mensual",
+      "inicio_utc": "2026-11-18T22:20:38.343Z",
+      "fin_utc": "2026-11-18T22:20:43.537Z",
+      "revision": "REV4-APR72-c3a511c",
+      "controles": [
+        {
+          "id": "C01",
+          "name": "Both actual entrypoints start against one isolated Firestore project",
+          "result": "PASS"
+        },
+        {
+          "id": "C02",
+          "name": "Two students register and log in; finance admin logs in through actual HTTP routes",
+          "result": "PASS"
+        },
+        {
+          "id": "UI-API-01",
+          "name": "Lectura inicial de Mi plan devuelve cuenta gratis, catálogo, cuota y hora de reinicio",
+          "result": "PASS"
+        },
+        {
+          "id": "C03",
+          "name": "Checkout is created through the full application without granting a paid right",
+          "result": "PASS"
+        },
+        {
+          "id": "UI-API-02",
+          "name": "Al volver con el pago pendiente, consultar estado, catálogo y cuota conserva la sesión y el plan gratuito",
+          "result": "PASS"
+        },
+        {
+          "id": "C04",
+          "name": "Signed webhook enters the real app and persists one financial entitlement",
+          "result": "PASS"
+        },
+        {
+          "id": "C05",
+          "name": "Student and finance admin read matching subscription, owner, amount and period",
+          "result": "PASS"
+        },
+        {
+          "id": "UI-API-03",
+          "name": "Las lecturas de retorno confirmado conservan la suscripción y la cuota ilimitada",
+          "result": "PASS"
+        },
+        {
+          "id": "C06",
+          "name": "Repeating the confirmed event preserves the same financial projection",
+          "result": "PASS"
+        },
+        {
+          "id": "C07",
+          "name": "The other logged-in student sees no purchased subscription, invoice or foreign Checkout",
+          "result": "PASS"
+        },
+        {
+          "id": "C08",
+          "name": "Supplied backend sources and dependency locks remain byte-identical",
+          "result": "PASS"
+        }
+      ],
+      "facturacion": {
+        "importe_usd_alumno": 5,
+        "importe_centavos_admin": 500,
+        "estado_alumno": "paid",
+        "estado_admin": "paid",
+        "id_coincide": true,
+        "facturas_propias": 1,
+        "facturas_vistas_por_el_otro_alumno": 0,
+        "pdf_presente": false
+      },
+      "sha256_informe_bruto": "9e648872edc7cf248f36152fd89dea6ca3c7c31d4be38de9422e8d83386e019b"
+    },
+    {
+      "recorrido": "todas_anual",
+      "inicio_utc": "2026-11-18T22:20:38.318Z",
+      "fin_utc": "2026-11-18T22:20:41.890Z",
+      "revision": "REV4-APR72-c3a511c",
+      "controles": [
+        {
+          "id": "C01",
+          "name": "Both actual entrypoints start against one isolated Firestore project",
+          "result": "PASS"
+        },
+        {
+          "id": "C02",
+          "name": "Two students register and log in; finance admin logs in through actual HTTP routes",
+          "result": "PASS"
+        },
+        {
+          "id": "UI-API-01",
+          "name": "Lectura inicial de Mi plan devuelve cuenta gratis, catálogo, cuota y hora de reinicio",
+          "result": "PASS"
+        },
+        {
+          "id": "C03",
+          "name": "Checkout is created through the full application without granting a paid right",
+          "result": "PASS"
+        },
+        {
+          "id": "UI-API-02",
+          "name": "Al volver con el pago pendiente, consultar estado, catálogo y cuota conserva la sesión y el plan gratuito",
+          "result": "PASS"
+        },
+        {
+          "id": "C04",
+          "name": "Signed webhook enters the real app and persists one financial entitlement",
+          "result": "PASS"
+        },
+        {
+          "id": "C05",
+          "name": "Student and finance admin read matching subscription, owner, amount and period",
+          "result": "PASS"
+        },
+        {
+          "id": "UI-API-03",
+          "name": "Las lecturas de retorno confirmado conservan la suscripción y la cuota ilimitada",
+          "result": "PASS"
+        },
+        {
+          "id": "C06",
+          "name": "Repeating the confirmed event preserves the same financial projection",
+          "result": "PASS"
+        },
+        {
+          "id": "C07",
+          "name": "The other logged-in student sees no purchased subscription, invoice or foreign Checkout",
+          "result": "PASS"
+        },
+        {
+          "id": "C08",
+          "name": "Supplied backend sources and dependency locks remain byte-identical",
+          "result": "PASS"
+        }
+      ],
+      "facturacion": {
+        "importe_usd_alumno": 50,
+        "importe_centavos_admin": 5000,
+        "estado_alumno": "paid",
+        "estado_admin": "paid",
+        "id_coincide": true,
+        "facturas_propias": 1,
+        "facturas_vistas_por_el_otro_alumno": 0,
+        "pdf_presente": false
+      },
+      "sha256_informe_bruto": "34975a305650147d6b2c5f9c783f9f22192f1f156d141d38469a2f4603ec9a8b"
+    },
+    {
+      "recorrido": "rechazos_recuperacion",
+      "inicio_utc": "2026-11-18T22:20:44.813Z",
+      "fin_utc": "2026-11-18T22:20:48.127Z",
+      "revision": "REV4-APR72-c3a511c",
+      "controles": [
+        {
+          "id": "C01",
+          "name": "Both actual entrypoints start against one isolated Firestore project",
+          "result": "PASS"
+        },
+        {
+          "id": "C02",
+          "name": "Two students register and log in; finance admin logs in through actual HTTP routes",
+          "result": "PASS"
+        },
+        {
+          "id": "UI-API-01",
+          "name": "Lectura inicial de Mi plan devuelve cuenta gratis, catálogo, cuota y hora de reinicio",
+          "result": "PASS"
+        },
+        {
+          "id": "C03",
+          "name": "Checkout is created through the full application without granting a paid right",
+          "result": "PASS"
+        },
+        {
+          "id": "UI-API-02",
+          "name": "Al volver con el pago pendiente, consultar estado, catálogo y cuota conserva la sesión y el plan gratuito",
+          "result": "PASS"
+        },
+        {
+          "id": "C04",
+          "name": "Signed webhook enters the real app and persists one financial entitlement",
+          "result": "PASS"
+        },
+        {
+          "id": "C05",
+          "name": "Student and finance admin read matching subscription, owner, amount and period",
+          "result": "PASS"
+        },
+        {
+          "id": "UI-API-03",
+          "name": "Las lecturas de retorno confirmado conservan la suscripción y la cuota ilimitada",
+          "result": "PASS"
+        },
+        {
+          "id": "C06",
+          "name": "Repeating the confirmed event preserves the same financial projection",
+          "result": "PASS"
+        },
+        {
+          "id": "C07",
+          "name": "The other logged-in student sees no purchased subscription, invoice or foreign Checkout",
+          "result": "PASS"
+        },
+        {
+          "id": "C08",
+          "name": "Supplied backend sources and dependency locks remain byte-identical",
+          "result": "PASS"
+        }
+      ],
+      "facturacion": {
+        "importe_usd_alumno": 5,
+        "importe_centavos_admin": 500,
+        "estado_alumno": "paid",
+        "estado_admin": "paid",
+        "id_coincide": true,
+        "facturas_propias": 1,
+        "facturas_vistas_por_el_otro_alumno": 0,
+        "pdf_presente": false
+      },
+      "sha256_informe_bruto": "439d0a9f37fb233a5b92512babc59c037e54d0f4fa685c0dacc67f67698785d9"
+    }
+  ],
+  "adjudicacion_materia": {
+    "casos": 4,
+    "comprobaciones": 18,
+    "resultado": "CUMPLE"
+  },
+  "primer_rechazo": {
+    "resultado": "APROBADO",
+    "plan": "free",
+    "acceso": false,
+    "cuota_ilimitada": false,
+    "pago_centavos": 0
+  },
+  "recuperacion_mejora": {
+    "resultado": "APROBADO",
+    "importe_centavos": 400,
+    "plan_previo": "uni",
+    "plan_tras_rechazo": "uni",
+    "acceso_tras_rechazo": true,
+    "conserva_fin_periodo_previo": true,
+    "plan_tras_pago": "all",
+    "misma_factura_de_mejora": true,
+    "reenvio_duplicado": true
+  }
+}

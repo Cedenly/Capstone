@@ -1,0 +1,80 @@
+{
+  "users": {
+    "usr_1cc51c41fc": {
+      "id": "usr_1cc51c41fc",
+      "stripeSubscriptionId": "sub_apr84buyer",
+      "billingAccessActive": true,
+      "billingTestId": null,
+      "stripeCustomerId": "cus_apr84buyer",
+      "billingPeriodEnd": "2026-12-18T02:18:05.000Z",
+      "billingProvider": "stripe",
+      "plan": "all",
+      "billingStatus": "active"
+    }
+  },
+  "checkoutAttempts": {
+    "usr_1cc51c41fc": {
+      "attemptId": "70c958b5-4fc6-4e14-9ac5-9c9484c1c132",
+      "userId": "usr_1cc51c41fc",
+      "plan": "all",
+      "testId": null,
+      "sessionId": "cs_test_apr841",
+      "closed": true
+    }
+  },
+  "checkoutSessions": {
+    "cs_test_apr841": {
+      "currency": "usd",
+      "testId": null,
+      "plan": "all",
+      "userId": "usr_1cc51c41fc",
+      "attemptId": "70c958b5-4fc6-4e14-9ac5-9c9484c1c132",
+      "stripeSubscriptionId": "sub_apr84buyer",
+      "fulfillmentStatus": "active",
+      "status": "complete"
+    }
+  },
+  "subscriptions": {
+    "sub_apr84buyer": {
+      "livemode": false,
+      "accessActive": true,
+      "currentPeriodEnd": "2026-12-18T02:18:05.000Z",
+      "userId": "usr_1cc51c41fc",
+      "provider": "stripe",
+      "testId": null,
+      "paidEntitlement": {
+        "currentPeriodStart": "2026-11-18T02:18:05.000Z",
+        "billingCycle": "monthly",
+        "currentPeriodEnd": "2026-12-18T02:18:05.000Z",
+        "invoiceId": "in_apr84buyer",
+        "testId": null,
+        "priceId": "price_all_monthly",
+        "plan": "all"
+      },
+      "id": "sub_apr84buyer",
+      "stripeCustomerId": "cus_apr84buyer",
+      "plan": "all",
+      "status": "active"
+    }
+  },
+  "invoices": {
+    "in_apr84buyer": {
+      "amount": 5,
+      "livemode": false,
+      "userId": "usr_1cc51c41fc",
+      "stripeSubscriptionId": "sub_apr84buyer",
+      "provider": "stripe",
+      "currency": "USD",
+      "id": "in_apr84buyer",
+      "stripeCustomerId": "cus_apr84buyer",
+      "status": "paid"
+    }
+  },
+  "stripeEvents": {
+    "evt_apr84completed": {
+      "userId": "usr_1cc51c41fc",
+      "stripeSubscriptionId": "sub_apr84buyer",
+      "processingVersion": 3
+    }
+  }
+}

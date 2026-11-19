@@ -1,0 +1,121 @@
+{
+  "candidate": "DAD20-LOCAL-20261118-REV4",
+  "startedUTC": "2026-11-18T02:18:01.932Z",
+  "tickets": [
+    "APR-72",
+    "APR-93"
+  ],
+  "node": "v24.22.1",
+  "firestoreEmulator": "1.22.0",
+  "backendSourceManifestEntries": 81,
+  "observations": [
+    {
+      "id": "H01",
+      "summary": "Sin autenticación y dos historiales limpios",
+      "values": {
+        "sinSesion": 401,
+        "primera": 0,
+        "segunda": 0
+      }
+    },
+    {
+      "id": "H02",
+      "summary": "Historial propio de A y B, estado, orden, PDF e importes frente al fixture y administración",
+      "values": {
+        "A": [
+          {
+            "id": "in_fixture_a_new",
+            "amount": 12.34,
+            "currency": "USD",
+            "status": "paid",
+            "paidAt": "2026-10-31T12:00:00.000Z",
+            "pdf": "ausente"
+          },
+          {
+            "id": "in_fixture_a_old",
+            "amount": 1.25,
+            "currency": "USD",
+            "status": "paid",
+            "paidAt": "2026-10-29T12:00:00.000Z",
+            "pdf": "referencia ficticia presente"
+          }
+        ],
+        "B": [
+          {
+            "id": "in_fixture_b",
+            "amount": 7.89,
+            "currency": "USD",
+            "status": "paid",
+            "paidAt": "2026-10-30T12:00:00.000Z",
+            "pdf": "ausente"
+          }
+        ],
+        "administracionCentavos": {
+          "in_fixture_a_new": 1234,
+          "in_fixture_a_old": 125,
+          "in_fixture_b": 789
+        }
+      }
+    },
+    {
+      "id": "H03",
+      "summary": "Factura abierta sin pago ni PDF",
+      "values": {
+        "alumno": {
+          "id": "in_fixture_a_open",
+          "amount": 3.5,
+          "currency": "USD",
+          "status": "open",
+          "paidAt": null,
+          "pdf": "ausente"
+        },
+        "administracionCentavos": 350
+      }
+    },
+    {
+      "id": "V01",
+      "summary": "Periodo vencido con estado financiero activo almacenado",
+      "values": {
+        "perfil": "free",
+        "estadoFinanciero": "active",
+        "vencimiento": "2026-10-01T00:00:00.000Z",
+        "accesoEfectivo": false
+      }
+    },
+    {
+      "id": "P01",
+      "summary": "Vínculo válido y fecha vencida permiten crear sesión local de Portal",
+      "values": {
+        "status": 200,
+        "solicitudesProveedor": [
+          "GET /v1/customers/cus_local93a",
+          "GET /v1/subscriptions/sub_local93a",
+          "GET /v1/billing_portal/configurations/bpc_local93",
+          "POST /v1/billing_portal/sessions"
+        ],
+        "urlVisitada": false
+      }
+    },
+    {
+      "id": "P02",
+      "summary": "Cliente ausente en el proveedor ficticio",
+      "values": {
+        "status": 503,
+        "codigoCliente": "PORTAL_UNAVAILABLE",
+        "codigoRegistro": "resource_missing"
+      }
+    },
+    {
+      "id": "D01",
+      "summary": "Factura de demostración añadida deliberadamente al emulador",
+      "values": {
+        "incluidaEnHistorialAlumno": true,
+        "incluidaEnHistorialAdmin": false,
+        "pdfGuardadoEsMarcador": true,
+        "resultadoFuncional": "DIVERGENCIA_CONDICIONAL"
+      }
+    }
+  ],
+  "resultado": "COMPLETADO_CON_DIVERGENCIA_EN_DATOS_MIXTOS",
+  "finishedUTC": "2026-11-18T02:18:05.913Z"
+}

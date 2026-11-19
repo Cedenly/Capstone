@@ -1,0 +1,1642 @@
+{
+  "scope": "LOCAL_CROSS_SERVICE_REHEARSAL_NOT_EXTERNAL_INTEGRATION",
+  "outcome": "PASS",
+  "startedAt": "2026-11-18T02:18:01.982Z",
+  "ticket": "APR-84",
+  "candidate": "DAD20-LOCAL-20261118-REV4",
+  "backendManifestSha256": "29f7677b86c349b9ee28c36afd09c683029a34def9876278b32ae64f4beb6bae",
+  "project": "demo-apr84-1794968281982",
+  "node": "v24.22.1",
+  "emulator": {
+    "version": "1.22.0",
+    "sha256": "9b6498b7f62714d67f48f59b3818883cd682dbcd46b9f59511de81c97bb5166c"
+  },
+  "checks": [
+    {
+      "id": "C01",
+      "name": "Both actual entrypoints start against one isolated Firestore project",
+      "result": "PASS"
+    },
+    {
+      "id": "C02",
+      "name": "Two students register and log in; finance admin logs in through actual HTTP routes",
+      "result": "PASS"
+    },
+    {
+      "id": "UI-API-01",
+      "name": "Lectura inicial de Mi plan devuelve cuenta gratis, catálogo, cuota y hora de reinicio",
+      "result": "PASS"
+    },
+    {
+      "id": "C03",
+      "name": "Checkout is created through the full application without granting a paid right",
+      "result": "PASS"
+    },
+    {
+      "id": "UI-API-02",
+      "name": "Al volver con el pago pendiente, consultar estado, catálogo y cuota conserva la sesión y el plan gratuito",
+      "result": "PASS"
+    },
+    {
+      "id": "C04",
+      "name": "Signed webhook enters the real app and persists one financial entitlement",
+      "result": "PASS"
+    },
+    {
+      "id": "C05",
+      "name": "Student and finance admin read matching subscription, owner, amount and period",
+      "result": "PASS"
+    },
+    {
+      "id": "UI-API-03",
+      "name": "Las lecturas de retorno confirmado conservan la suscripción y la cuota ilimitada",
+      "result": "PASS"
+    },
+    {
+      "id": "C06",
+      "name": "Repeating the confirmed event preserves the same financial projection",
+      "result": "PASS"
+    },
+    {
+      "id": "C07",
+      "name": "The other logged-in student sees no purchased subscription, invoice or foreign Checkout",
+      "result": "PASS"
+    },
+    {
+      "id": "C08",
+      "name": "Supplied backend sources and dependency locks remain byte-identical",
+      "result": "PASS"
+    }
+  ],
+  "observations": [
+    {
+      "label": "student-health",
+      "route": "/health",
+      "status": 200,
+      "body": {
+        "status": "ok",
+        "service": "aprueba-student-api",
+        "driver": "firestore"
+      }
+    },
+    {
+      "label": "admin-health",
+      "route": "/health",
+      "status": 200,
+      "body": {
+        "status": "ok",
+        "service": "aprueba-admin-api"
+      }
+    },
+    {
+      "label": "buyer-registered",
+      "route": "/api/v1/auth/register",
+      "status": 201,
+      "body": {
+        "data": {
+          "user": {
+            "id": "usr_1cc51c41fc",
+            "name": "Synthetic buyer",
+            "email": "apr84-buyer@example.invalid",
+            "plan": "free",
+            "streak": 0,
+            "quota": {
+              "used": 0,
+              "max": 10
+            },
+            "medals": {
+              "bronze": 1,
+              "silver": 0,
+              "gold": 0,
+              "diamond": 0,
+              "platinum": 0
+            },
+            "authProvider": "password",
+            "phone": null,
+            "phoneVerified": false,
+            "country": "CL",
+            "language": "es",
+            "gradeId": null,
+            "onboarded": false
+          },
+          "expiresIn": 900
+        },
+        "error": null,
+        "meta": {
+          "requestId": "req_13bddb88-c9d",
+          "timestamp": "2026-11-18T02:18:04.834Z"
+        }
+      }
+    },
+    {
+      "label": "buyer-logged-in",
+      "route": "/api/v1/auth/login",
+      "status": 200,
+      "body": {
+        "data": {
+          "user": {
+            "id": "usr_1cc51c41fc",
+            "name": "Synthetic buyer",
+            "email": "apr84-buyer@example.invalid",
+            "plan": "free",
+            "streak": 1,
+            "quota": {
+              "used": 0,
+              "max": 10
+            },
+            "medals": {
+              "bronze": 2,
+              "silver": 0,
+              "gold": 0,
+              "diamond": 0,
+              "platinum": 0
+            },
+            "authProvider": "password",
+            "phone": null,
+            "phoneVerified": false,
+            "country": "CL",
+            "language": "es",
+            "gradeId": null,
+            "onboarded": false
+          },
+          "expiresIn": 900,
+          "dailyLoginReward": {
+            "tier": "bronze",
+            "amount": 1
+          }
+        },
+        "error": null,
+        "meta": {
+          "requestId": "req_7c93f960-51e",
+          "timestamp": "2026-11-18T02:18:04.917Z"
+        }
+      }
+    },
+    {
+      "label": "other-registered",
+      "route": "/api/v1/auth/register",
+      "status": 201,
+      "body": {
+        "data": {
+          "user": {
+            "id": "usr_ad600561dc",
+            "name": "Synthetic other",
+            "email": "apr84-other@example.invalid",
+            "plan": "free",
+            "streak": 0,
+            "quota": {
+              "used": 0,
+              "max": 10
+            },
+            "medals": {
+              "bronze": 1,
+              "silver": 0,
+              "gold": 0,
+              "diamond": 0,
+              "platinum": 0
+            },
+            "authProvider": "password",
+            "phone": null,
+            "phoneVerified": false,
+            "country": "CL",
+            "language": "es",
+            "gradeId": null,
+            "onboarded": false
+          },
+          "expiresIn": 900
+        },
+        "error": null,
+        "meta": {
+          "requestId": "req_e3ec87e3-4f4",
+          "timestamp": "2026-11-18T02:18:04.972Z"
+        }
+      }
+    },
+    {
+      "label": "other-logged-in",
+      "route": "/api/v1/auth/login",
+      "status": 200,
+      "body": {
+        "data": {
+          "user": {
+            "id": "usr_ad600561dc",
+            "name": "Synthetic other",
+            "email": "apr84-other@example.invalid",
+            "plan": "free",
+            "streak": 1,
+            "quota": {
+              "used": 0,
+              "max": 10
+            },
+            "medals": {
+              "bronze": 2,
+              "silver": 0,
+              "gold": 0,
+              "diamond": 0,
+              "platinum": 0
+            },
+            "authProvider": "password",
+            "phone": null,
+            "phoneVerified": false,
+            "country": "CL",
+            "language": "es",
+            "gradeId": null,
+            "onboarded": false
+          },
+          "expiresIn": 900,
+          "dailyLoginReward": {
+            "tier": "bronze",
+            "amount": 1
+          }
+        },
+        "error": null,
+        "meta": {
+          "requestId": "req_a79624b4-35e",
+          "timestamp": "2026-11-18T02:18:05.041Z"
+        }
+      }
+    },
+    {
+      "label": "finance-logged-in",
+      "route": "/api/v1/admin/auth/login",
+      "status": 200,
+      "body": {
+        "data": {
+          "user": {
+            "id": "adm_apr84_finance",
+            "name": "Synthetic finance",
+            "role": "finance",
+            "email": "apr84-finance@example.invalid"
+          }
+        },
+        "error": null,
+        "meta": {
+          "requestId": "req_1abd1327-ee1",
+          "timestamp": "2026-11-18T02:18:05.259Z"
+        }
+      }
+    },
+    {
+      "label": "free /plans",
+      "route": "/api/v1/plans",
+      "status": 200,
+      "body": {
+        "data": [
+          {
+            "id": "all",
+            "popular": false,
+            "features": [],
+            "price": {
+              "monthly": 5,
+              "yearly": 50
+            }
+          }
+        ],
+        "error": null,
+        "meta": {
+          "requestId": "req_392e1100-11e",
+          "timestamp": "2026-11-18T02:18:05.271Z"
+        }
+      }
+    },
+    {
+      "label": "free /billing/status",
+      "route": "/api/v1/billing/status",
+      "status": 200,
+      "body": {
+        "data": {
+          "subscription": null,
+          "checkout": null,
+          "billingIdentity": {
+            "status": "unlinked",
+            "issues": []
+          }
+        },
+        "error": null,
+        "meta": {
+          "requestId": "req_2f933bd7-1e1",
+          "timestamp": "2026-11-18T02:18:05.287Z"
+        }
+      }
+    },
+    {
+      "label": "free /me/quota",
+      "route": "/api/v1/me/quota",
+      "status": 200,
+      "body": {
+        "data": {
+          "used": 0,
+          "max": 10,
+          "freeMax": 10,
+          "base": 10,
+          "bonuses": {
+            "school": false,
+            "address": false
+          },
+          "unlimited": false,
+          "unlimitedTestId": null,
+          "resetsAt": "2026-11-19T00:00:00.000Z"
+        },
+        "error": null,
+        "meta": {
+          "requestId": "req_ea7966c4-8ac",
+          "timestamp": "2026-11-18T02:18:05.294Z"
+        }
+      }
+    },
+    {
+      "label": "checkout-created",
+      "route": "/api/v1/checkout/sessions",
+      "status": 201,
+      "body": {
+        "data": {
+          "checkoutSessionId": "cs_test_apr841",
+          "url": "https://checkout.stripe.com/c/pay/apr84-synthetic-not-a-real-session",
+          "amount": 5,
+          "currency": "USD",
+          "plan": "all",
+          "testId": null,
+          "billingCycle": "monthly"
+        },
+        "error": null,
+        "meta": {
+          "requestId": "req_f7ec2c43-cc0",
+          "timestamp": "2026-11-18T02:18:05.476Z"
+        }
+      }
+    },
+    {
+      "label": "pending-status",
+      "route": "/api/v1/billing/status?session_id=cs_test_apr841",
+      "status": 200,
+      "body": {
+        "data": {
+          "subscription": null,
+          "checkout": {
+            "id": "cs_test_apr841",
+            "attemptId": "70c958b5-4fc6-4e14-9ac5-9c9484c1c132",
+            "plan": "all",
+            "testId": null,
+            "billingCycle": "monthly",
+            "amount": 5,
+            "currency": "USD",
+            "status": "pending"
+          },
+          "billingIdentity": {
+            "status": "unlinked",
+            "issues": []
+          }
+        },
+        "error": null,
+        "meta": {
+          "requestId": "req_bbdfa170-464",
+          "timestamp": "2026-11-18T02:18:05.518Z"
+        }
+      }
+    },
+    {
+      "label": "pending-return /plans",
+      "route": "/api/v1/plans",
+      "status": 200,
+      "body": {
+        "data": [
+          {
+            "id": "all",
+            "popular": false,
+            "features": [],
+            "price": {
+              "monthly": 5,
+              "yearly": 50
+            }
+          }
+        ],
+        "error": null,
+        "meta": {
+          "requestId": "req_e08ec918-054",
+          "timestamp": "2026-11-18T02:18:05.582Z"
+        }
+      }
+    },
+    {
+      "label": "pending-return /me/quota",
+      "route": "/api/v1/me/quota",
+      "status": 200,
+      "body": {
+        "data": {
+          "used": 0,
+          "max": 10,
+          "freeMax": 10,
+          "base": 10,
+          "bonuses": {
+            "school": false,
+            "address": false
+          },
+          "unlimited": false,
+          "unlimitedTestId": null,
+          "resetsAt": "2026-11-19T00:00:00.000Z"
+        },
+        "error": null,
+        "meta": {
+          "requestId": "req_cc31ac33-504",
+          "timestamp": "2026-11-18T02:18:05.602Z"
+        }
+      }
+    },
+    {
+      "label": "pending-return /billing/status",
+      "route": "/api/v1/billing/status",
+      "status": 200,
+      "body": {
+        "data": {
+          "subscription": null,
+          "checkout": {
+            "id": "cs_test_apr841",
+            "attemptId": "70c958b5-4fc6-4e14-9ac5-9c9484c1c132",
+            "plan": "all",
+            "testId": null,
+            "billingCycle": "monthly",
+            "amount": 5,
+            "currency": "USD",
+            "status": "pending"
+          },
+          "billingIdentity": {
+            "status": "unlinked",
+            "issues": []
+          }
+        },
+        "error": null,
+        "meta": {
+          "requestId": "req_b78e92ba-f6d",
+          "timestamp": "2026-11-18T02:18:05.604Z"
+        }
+      }
+    },
+    {
+      "label": "webhook-confirmation",
+      "status": 200,
+      "body": {
+        "data": {
+          "received": true,
+          "processed": true
+        },
+        "error": null,
+        "meta": {
+          "requestId": "req_083f32a7-53b",
+          "timestamp": "2026-11-18T02:18:05.643Z"
+        }
+      }
+    },
+    {
+      "label": "student-subscription",
+      "route": "/api/v1/me/subscription",
+      "status": 200,
+      "body": {
+        "data": {
+          "id": "sub_apr84buyer",
+          "plan": "all",
+          "billingCycle": "monthly",
+          "status": "active",
+          "currentPeriodEnd": "2026-12-18T02:18:05.000Z",
+          "cancelAtPeriodEnd": false,
+          "paymentMethod": {
+            "last4": "4242",
+            "brand": "visa"
+          },
+          "billingIdentity": {
+            "status": "consistent",
+            "issues": []
+          }
+        },
+        "error": null,
+        "meta": {
+          "requestId": "req_7d88d8fd-9d8",
+          "timestamp": "2026-11-18T02:18:05.697Z"
+        }
+      }
+    },
+    {
+      "label": "student-invoices",
+      "route": "/api/v1/me/invoices",
+      "status": 200,
+      "body": {
+        "data": [
+          {
+            "id": "in_apr84buyer",
+            "amount": 5,
+            "currency": "USD",
+            "status": "paid",
+            "paidAt": "2026-11-18T02:18:05.000Z",
+            "pdfUrl": null
+          }
+        ],
+        "error": null,
+        "meta": {
+          "requestId": "req_838918a5-76d",
+          "timestamp": "2026-11-18T02:18:05.704Z"
+        }
+      }
+    },
+    {
+      "label": "confirmed-billing-status",
+      "route": "/api/v1/billing/status?session_id=cs_test_apr841",
+      "status": 200,
+      "body": {
+        "data": {
+          "subscription": {
+            "id": "sub_apr84buyer",
+            "plan": "all",
+            "testId": null,
+            "billingCycle": "monthly",
+            "status": "active",
+            "accessActive": true,
+            "paymentPending": false,
+            "currentPeriodEnd": "2026-12-18T02:18:05.000Z",
+            "cancelAtPeriodEnd": false,
+            "paymentMethod": {
+              "last4": "4242",
+              "brand": "visa"
+            },
+            "uniAssignment": null
+          },
+          "checkout": {
+            "id": "cs_test_apr841",
+            "attemptId": "70c958b5-4fc6-4e14-9ac5-9c9484c1c132",
+            "plan": "all",
+            "testId": null,
+            "billingCycle": "monthly",
+            "amount": 5,
+            "currency": "USD",
+            "status": "active"
+          },
+          "billingIdentity": {
+            "status": "consistent",
+            "issues": []
+          }
+        },
+        "error": null,
+        "meta": {
+          "requestId": "req_4eec99ba-f67",
+          "timestamp": "2026-11-18T02:18:05.711Z"
+        }
+      }
+    },
+    {
+      "label": "admin-subscriptions",
+      "route": "/api/v1/admin/billing/subscriptions",
+      "status": 200,
+      "body": {
+        "data": [
+          {
+            "id": "sub_apr84buyer",
+            "user": {
+              "id": "usr_1cc51c41fc",
+              "name": "Synthetic buyer",
+              "email": "apr84-buyer@example.invalid"
+            },
+            "status": "active",
+            "updatedAt": "2026-11-18T02:18:05.631Z",
+            "plan": "all",
+            "billingCycle": "monthly",
+            "testId": null,
+            "testLabel": null,
+            "paymentPending": false,
+            "currentPeriodEnd": "2026-12-18T02:18:05.000Z",
+            "cancelAtPeriodEnd": false,
+            "billingIdentity": {
+              "status": "consistent",
+              "issues": []
+            },
+            "accessActive": true
+          }
+        ],
+        "error": null,
+        "meta": {
+          "requestId": "req_ca43c89b-f81",
+          "timestamp": "2026-11-18T02:18:05.713Z",
+          "mode": "test",
+          "pagination": {
+            "pageSize": 25,
+            "nextCursor": null
+          }
+        }
+      }
+    },
+    {
+      "label": "admin-invoices",
+      "route": "/api/v1/admin/billing/invoices",
+      "status": 200,
+      "body": {
+        "data": [
+          {
+            "id": "in_apr84buyer",
+            "user": {
+              "id": "usr_1cc51c41fc",
+              "name": "Synthetic buyer",
+              "email": "apr84-buyer@example.invalid"
+            },
+            "status": "paid",
+            "updatedAt": "2026-11-18T02:18:05.631Z",
+            "subscriptionId": "sub_apr84buyer",
+            "billingIdentity": {
+              "status": "consistent",
+              "issues": []
+            },
+            "amountCents": 500,
+            "createdAt": "2026-11-18T02:18:05.000Z",
+            "paidAt": "2026-11-18T02:18:05.000Z",
+            "hostedInvoiceUrl": null,
+            "pdfUrl": null
+          }
+        ],
+        "error": null,
+        "meta": {
+          "requestId": "req_c54a9cd7-057",
+          "timestamp": "2026-11-18T02:18:05.720Z",
+          "mode": "test",
+          "pagination": {
+            "pageSize": 25,
+            "nextCursor": null
+          }
+        }
+      }
+    },
+    {
+      "label": "confirmed-return /plans",
+      "route": "/api/v1/plans",
+      "status": 200,
+      "body": {
+        "data": [
+          {
+            "id": "all",
+            "popular": false,
+            "features": [],
+            "price": {
+              "monthly": 5,
+              "yearly": 50
+            }
+          }
+        ],
+        "error": null,
+        "meta": {
+          "requestId": "req_f1d8b9fd-2ec",
+          "timestamp": "2026-11-18T02:18:05.731Z"
+        }
+      }
+    },
+    {
+      "label": "confirmed-return /billing/status?session_id=cs_test_apr841",
+      "route": "/api/v1/billing/status?session_id=cs_test_apr841",
+      "status": 200,
+      "body": {
+        "data": {
+          "subscription": {
+            "id": "sub_apr84buyer",
+            "plan": "all",
+            "testId": null,
+            "billingCycle": "monthly",
+            "status": "active",
+            "accessActive": true,
+            "paymentPending": false,
+            "currentPeriodEnd": "2026-12-18T02:18:05.000Z",
+            "cancelAtPeriodEnd": false,
+            "paymentMethod": {
+              "last4": "4242",
+              "brand": "visa"
+            },
+            "uniAssignment": null
+          },
+          "checkout": {
+            "id": "cs_test_apr841",
+            "attemptId": "70c958b5-4fc6-4e14-9ac5-9c9484c1c132",
+            "plan": "all",
+            "testId": null,
+            "billingCycle": "monthly",
+            "amount": 5,
+            "currency": "USD",
+            "status": "active"
+          },
+          "billingIdentity": {
+            "status": "consistent",
+            "issues": []
+          }
+        },
+        "error": null,
+        "meta": {
+          "requestId": "req_adf3a7d7-485",
+          "timestamp": "2026-11-18T02:18:05.750Z"
+        }
+      }
+    },
+    {
+      "label": "confirmed-return /me/quota",
+      "route": "/api/v1/me/quota",
+      "status": 200,
+      "body": {
+        "data": {
+          "used": 0,
+          "max": 999999,
+          "freeMax": 10,
+          "base": 10,
+          "bonuses": {
+            "school": false,
+            "address": false
+          },
+          "unlimited": true,
+          "unlimitedTestId": null,
+          "resetsAt": "2026-11-19T00:00:00.000Z"
+        },
+        "error": null,
+        "meta": {
+          "requestId": "req_0112796f-81c",
+          "timestamp": "2026-11-18T02:18:05.751Z"
+        }
+      }
+    },
+    {
+      "label": "webhook-replay",
+      "status": 200,
+      "body": {
+        "data": {
+          "received": true,
+          "duplicate": true
+        },
+        "error": null,
+        "meta": {
+          "requestId": "req_12c1b7e4-dca",
+          "timestamp": "2026-11-18T02:18:05.790Z"
+        }
+      }
+    },
+    {
+      "label": "other-invoices",
+      "route": "/api/v1/me/invoices",
+      "status": 200,
+      "body": {
+        "data": [],
+        "error": null,
+        "meta": {
+          "requestId": "req_05971d2f-568",
+          "timestamp": "2026-11-18T02:18:05.838Z"
+        }
+      }
+    },
+    {
+      "label": "other-status",
+      "route": "/api/v1/billing/status",
+      "status": 200,
+      "body": {
+        "data": {
+          "subscription": null,
+          "checkout": null,
+          "billingIdentity": {
+            "status": "unlinked",
+            "issues": []
+          }
+        },
+        "error": null,
+        "meta": {
+          "requestId": "req_49e85c23-5e1",
+          "timestamp": "2026-11-18T02:18:05.842Z"
+        }
+      }
+    },
+    {
+      "label": "foreign-checkout",
+      "route": "/api/v1/billing/status?session_id=cs_test_apr841",
+      "status": 404,
+      "body": {
+        "data": null,
+        "error": {
+          "code": "CHECKOUT_NOT_FOUND",
+          "message": "No se encontro esa compra en tu cuenta.",
+          "details": [],
+          "field": null
+        },
+        "meta": {
+          "requestId": "req_c78ddeba-ae9",
+          "timestamp": "2026-11-18T02:18:05.845Z"
+        }
+      }
+    },
+    {
+      "label": "todas_una_valida",
+      "status": 200,
+      "body": {
+        "data": {
+          "received": true,
+          "processed": true
+        },
+        "error": null,
+        "meta": {
+          "requestId": "req_150c9682-cdf",
+          "timestamp": "2026-11-18T02:18:06.047Z"
+        }
+      }
+    },
+    {
+      "label": "replay_valida",
+      "status": 200,
+      "body": {
+        "data": {
+          "received": true,
+          "duplicate": true
+        },
+        "error": null,
+        "meta": {
+          "requestId": "req_1c3b27c8-ee9",
+          "timestamp": "2026-11-18T02:18:06.094Z"
+        }
+      }
+    },
+    {
+      "label": "uni_ya_pagada",
+      "status": 200,
+      "body": {
+        "data": {
+          "received": true,
+          "processed": true
+        },
+        "error": null,
+        "meta": {
+          "requestId": "req_7cfef8af-682",
+          "timestamp": "2026-11-18T02:18:06.235Z"
+        }
+      }
+    },
+    {
+      "label": "una_todas_valida",
+      "status": 200,
+      "body": {
+        "data": {
+          "received": true,
+          "processed": true
+        },
+        "error": null,
+        "meta": {
+          "requestId": "req_ab941b37-76e",
+          "timestamp": "2026-11-18T02:18:06.328Z"
+        }
+      }
+    },
+    {
+      "label": "todas_una_archivada",
+      "status": 200,
+      "body": {
+        "data": {
+          "received": true,
+          "processed": true
+        },
+        "error": null,
+        "meta": {
+          "requestId": "req_10a431d0-4d1",
+          "timestamp": "2026-11-18T02:18:06.679Z"
+        }
+      }
+    },
+    {
+      "label": "replay_archivada",
+      "status": 200,
+      "body": {
+        "data": {
+          "received": true,
+          "duplicate": true
+        },
+        "error": null,
+        "meta": {
+          "requestId": "req_68b3da27-870",
+          "timestamp": "2026-11-18T02:18:06.743Z"
+        }
+      }
+    },
+    {
+      "label": "catalogo_restablecido_archivada",
+      "status": 200,
+      "body": {
+        "data": {
+          "received": true,
+          "processed": true
+        },
+        "error": null,
+        "meta": {
+          "requestId": "req_3759a70f-5f3",
+          "timestamp": "2026-11-18T02:18:06.850Z"
+        }
+      }
+    },
+    {
+      "label": "una_todas_archivada",
+      "status": 200,
+      "body": {
+        "data": {
+          "received": true,
+          "processed": true
+        },
+        "error": null,
+        "meta": {
+          "requestId": "req_20a54a75-a9e",
+          "timestamp": "2026-11-18T02:18:06.945Z"
+        }
+      }
+    },
+    {
+      "label": "todas_una_retirada",
+      "status": 200,
+      "body": {
+        "data": {
+          "received": true,
+          "processed": true
+        },
+        "error": null,
+        "meta": {
+          "requestId": "req_b21b6a66-fec",
+          "timestamp": "2026-11-18T02:18:07.192Z"
+        }
+      }
+    },
+    {
+      "label": "replay_retirada",
+      "status": 200,
+      "body": {
+        "data": {
+          "received": true,
+          "duplicate": true
+        },
+        "error": null,
+        "meta": {
+          "requestId": "req_35b4ee7a-a52",
+          "timestamp": "2026-11-18T02:18:07.239Z"
+        }
+      }
+    },
+    {
+      "label": "catalogo_restablecido_retirada",
+      "status": 200,
+      "body": {
+        "data": {
+          "received": true,
+          "processed": true
+        },
+        "error": null,
+        "meta": {
+          "requestId": "req_c996ca6f-235",
+          "timestamp": "2026-11-18T02:18:07.324Z"
+        }
+      }
+    },
+    {
+      "label": "una_todas_retirada",
+      "status": 200,
+      "body": {
+        "data": {
+          "received": true,
+          "processed": true
+        },
+        "error": null,
+        "meta": {
+          "requestId": "req_b12d366c-a8b",
+          "timestamp": "2026-11-18T02:18:07.403Z"
+        }
+      }
+    },
+    {
+      "label": "todas_una_sin_contenido",
+      "status": 200,
+      "body": {
+        "data": {
+          "received": true,
+          "processed": true
+        },
+        "error": null,
+        "meta": {
+          "requestId": "req_8ae73bda-51f",
+          "timestamp": "2026-11-18T02:18:07.675Z"
+        }
+      }
+    },
+    {
+      "label": "replay_sin_contenido",
+      "status": 200,
+      "body": {
+        "data": {
+          "received": true,
+          "duplicate": true
+        },
+        "error": null,
+        "meta": {
+          "requestId": "req_2ad65557-2f2",
+          "timestamp": "2026-11-18T02:18:07.719Z"
+        }
+      }
+    },
+    {
+      "label": "catalogo_restablecido_sin_contenido",
+      "status": 200,
+      "body": {
+        "data": {
+          "received": true,
+          "processed": true
+        },
+        "error": null,
+        "meta": {
+          "requestId": "req_ef11a82c-bc8",
+          "timestamp": "2026-11-18T02:18:07.793Z"
+        }
+      }
+    },
+    {
+      "label": "una_todas_sin_contenido",
+      "status": 200,
+      "body": {
+        "data": {
+          "received": true,
+          "processed": true
+        },
+        "error": null,
+        "meta": {
+          "requestId": "req_d6d647f5-b2b",
+          "timestamp": "2026-11-18T02:18:07.851Z"
+        }
+      }
+    },
+    {
+      "label": "nueva_vigencia_tras_gap",
+      "status": 200,
+      "body": {
+        "data": {
+          "received": true,
+          "processed": true
+        },
+        "error": null,
+        "meta": {
+          "requestId": "req_d5aed700-a4f",
+          "timestamp": "2026-11-18T02:18:07.923Z"
+        }
+      }
+    },
+    {
+      "label": "recuperacion_historica_sin_asignacion",
+      "status": 200,
+      "body": {
+        "data": {
+          "received": true,
+          "processed": true
+        },
+        "error": null,
+        "meta": {
+          "requestId": "req_00e65135-e32",
+          "timestamp": "2026-11-18T02:18:07.991Z"
+        }
+      }
+    },
+    {
+      "label": "restablece_todas_para_baja",
+      "status": 200,
+      "body": {
+        "data": {
+          "received": true,
+          "processed": true
+        },
+        "error": null,
+        "meta": {
+          "requestId": "req_9213dcc9-ec6",
+          "timestamp": "2026-11-18T02:18:08.056Z"
+        }
+      }
+    },
+    {
+      "label": "baja_final",
+      "status": 200,
+      "body": {
+        "data": {
+          "received": true,
+          "processed": true
+        },
+        "error": null,
+        "meta": {
+          "requestId": "req_70bbd094-8c2",
+          "timestamp": "2026-11-18T02:18:08.083Z"
+        }
+      }
+    }
+  ],
+  "limitations": [
+    "Two supplied backend entrypoints and their current local identity are exercised; no implementation from another group is included.",
+    "Stripe SDK uses a synthetic loopback HTTP provider. No remote Stripe sandbox, card network or actual charges are tested.",
+    "Firestore Emulator only; cloud IAM/rules/indexes and operational deployment are not validated.",
+    "HTTP registration/login use temporary synthetic accounts; phone verification is disabled only in the isolated test environment.",
+    "No browser or hosted Checkout page is used; CORS preflight, refresh-cookie roundtrip, UI rendering and navigation are not certified.",
+    "HTTP requests use loopback. The unchanged administrator entrypoint binds to its default interfaces rather than honoring HOST.",
+    "Financial snapshots contain a documented field selection, not whole Firestore documents or authentication/session stores.",
+    "This single financial journey contains multiple checkpoints; they are not independent complete acceptance scenarios.",
+    "The selected backend is exercised locally. Browser interactions, Docker, deployment and external integration are outside this HTTP run."
+  ],
+  "financialJourneyCount": 1,
+  "checkCount": 11,
+  "providerHttpCalls": [
+    {
+      "method": "GET",
+      "path": "/v1/prices/price_all_monthly",
+      "query": {}
+    },
+    {
+      "method": "GET",
+      "path": "/v1/checkout/sessions",
+      "query": {
+        "created[gte]": "1794967985",
+        "created[lte]": "1794968286",
+        "limit": "100"
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/v1/checkout/sessions",
+      "query": {}
+    },
+    {
+      "method": "GET",
+      "path": "/v1/checkout/sessions/cs_test_apr841",
+      "query": {}
+    },
+    {
+      "method": "GET",
+      "path": "/v1/checkout/sessions/cs_test_apr841",
+      "query": {}
+    },
+    {
+      "method": "GET",
+      "path": "/v1/subscriptions/sub_apr84buyer",
+      "query": {
+        "expand[0]": "latest_invoice",
+        "expand[1]": "default_payment_method",
+        "expand[2]": "default_source",
+        "expand[3]": "customer.invoice_settings.default_payment_method",
+        "expand[4]": "customer.default_source"
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/v1/subscriptions/sub_apr84buyer",
+      "query": {
+        "expand[0]": "latest_invoice",
+        "expand[1]": "default_payment_method",
+        "expand[2]": "default_source",
+        "expand[3]": "customer.invoice_settings.default_payment_method",
+        "expand[4]": "customer.default_source"
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/v1/checkout/sessions/cs_test_apr841",
+      "query": {}
+    },
+    {
+      "method": "GET",
+      "path": "/v1/subscriptions/sub_apr84buyer",
+      "query": {
+        "expand[0]": "latest_invoice",
+        "expand[1]": "default_payment_method",
+        "expand[2]": "default_source",
+        "expand[3]": "customer.invoice_settings.default_payment_method",
+        "expand[4]": "customer.default_source"
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/v1/subscriptions/sub_apr84buyer",
+      "query": {
+        "expand[0]": "latest_invoice",
+        "expand[1]": "default_payment_method",
+        "expand[2]": "default_source",
+        "expand[3]": "customer.invoice_settings.default_payment_method",
+        "expand[4]": "customer.default_source"
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/v1/checkout/sessions/cs_test_apr841",
+      "query": {}
+    },
+    {
+      "method": "GET",
+      "path": "/v1/subscriptions/sub_apr84buyer",
+      "query": {
+        "expand[0]": "latest_invoice",
+        "expand[1]": "default_payment_method",
+        "expand[2]": "default_source",
+        "expand[3]": "customer.invoice_settings.default_payment_method",
+        "expand[4]": "customer.default_source"
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/v1/subscriptions/sub_apr84buyer",
+      "query": {
+        "expand[0]": "latest_invoice",
+        "expand[1]": "default_payment_method",
+        "expand[2]": "default_source",
+        "expand[3]": "customer.invoice_settings.default_payment_method",
+        "expand[4]": "customer.default_source"
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/v1/checkout/sessions/cs_test_apr841",
+      "query": {}
+    },
+    {
+      "method": "GET",
+      "path": "/v1/subscriptions/sub_apr84buyer",
+      "query": {
+        "expand[0]": "latest_invoice",
+        "expand[1]": "default_payment_method",
+        "expand[2]": "default_source",
+        "expand[3]": "customer.invoice_settings.default_payment_method",
+        "expand[4]": "customer.default_source"
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/v1/prices/price_uni_monthly",
+      "query": {}
+    },
+    {
+      "method": "GET",
+      "path": "/v1/subscriptions/sub_apr84buyer",
+      "query": {
+        "expand[0]": "latest_invoice",
+        "expand[1]": "default_payment_method",
+        "expand[2]": "default_source",
+        "expand[3]": "customer.invoice_settings.default_payment_method",
+        "expand[4]": "customer.default_source"
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/v1/checkout/sessions/cs_test_apr841",
+      "query": {}
+    },
+    {
+      "method": "GET",
+      "path": "/v1/subscriptions/sub_apr84buyer",
+      "query": {
+        "expand[0]": "latest_invoice",
+        "expand[1]": "default_payment_method",
+        "expand[2]": "default_source",
+        "expand[3]": "customer.invoice_settings.default_payment_method",
+        "expand[4]": "customer.default_source"
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/v1/subscriptions/sub_apr84buyer",
+      "query": {
+        "expand[0]": "latest_invoice",
+        "expand[1]": "default_payment_method",
+        "expand[2]": "default_source",
+        "expand[3]": "customer.invoice_settings.default_payment_method",
+        "expand[4]": "customer.default_source"
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/v1/checkout/sessions/cs_test_apr841",
+      "query": {}
+    },
+    {
+      "method": "GET",
+      "path": "/v1/subscriptions/sub_apr84buyer",
+      "query": {
+        "expand[0]": "latest_invoice",
+        "expand[1]": "default_payment_method",
+        "expand[2]": "default_source",
+        "expand[3]": "customer.invoice_settings.default_payment_method",
+        "expand[4]": "customer.default_source"
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/v1/subscriptions/sub_apr84buyer",
+      "query": {
+        "expand[0]": "latest_invoice",
+        "expand[1]": "default_payment_method",
+        "expand[2]": "default_source",
+        "expand[3]": "customer.invoice_settings.default_payment_method",
+        "expand[4]": "customer.default_source"
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/v1/checkout/sessions/cs_test_apr841",
+      "query": {}
+    },
+    {
+      "method": "GET",
+      "path": "/v1/subscriptions/sub_apr84buyer",
+      "query": {
+        "expand[0]": "latest_invoice",
+        "expand[1]": "default_payment_method",
+        "expand[2]": "default_source",
+        "expand[3]": "customer.invoice_settings.default_payment_method",
+        "expand[4]": "customer.default_source"
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/v1/prices/price_uni_monthly",
+      "query": {}
+    },
+    {
+      "method": "GET",
+      "path": "/v1/subscriptions/sub_apr84buyer",
+      "query": {
+        "expand[0]": "latest_invoice",
+        "expand[1]": "default_payment_method",
+        "expand[2]": "default_source",
+        "expand[3]": "customer.invoice_settings.default_payment_method",
+        "expand[4]": "customer.default_source"
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/v1/checkout/sessions/cs_test_apr841",
+      "query": {}
+    },
+    {
+      "method": "GET",
+      "path": "/v1/subscriptions/sub_apr84buyer",
+      "query": {
+        "expand[0]": "latest_invoice",
+        "expand[1]": "default_payment_method",
+        "expand[2]": "default_source",
+        "expand[3]": "customer.invoice_settings.default_payment_method",
+        "expand[4]": "customer.default_source"
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/v1/subscriptions/sub_apr84buyer",
+      "query": {
+        "expand[0]": "latest_invoice",
+        "expand[1]": "default_payment_method",
+        "expand[2]": "default_source",
+        "expand[3]": "customer.invoice_settings.default_payment_method",
+        "expand[4]": "customer.default_source"
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/v1/checkout/sessions/cs_test_apr841",
+      "query": {}
+    },
+    {
+      "method": "GET",
+      "path": "/v1/subscriptions/sub_apr84buyer",
+      "query": {
+        "expand[0]": "latest_invoice",
+        "expand[1]": "default_payment_method",
+        "expand[2]": "default_source",
+        "expand[3]": "customer.invoice_settings.default_payment_method",
+        "expand[4]": "customer.default_source"
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/v1/subscriptions/sub_apr84buyer",
+      "query": {
+        "expand[0]": "latest_invoice",
+        "expand[1]": "default_payment_method",
+        "expand[2]": "default_source",
+        "expand[3]": "customer.invoice_settings.default_payment_method",
+        "expand[4]": "customer.default_source"
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/v1/checkout/sessions/cs_test_apr841",
+      "query": {}
+    },
+    {
+      "method": "GET",
+      "path": "/v1/subscriptions/sub_apr84buyer",
+      "query": {
+        "expand[0]": "latest_invoice",
+        "expand[1]": "default_payment_method",
+        "expand[2]": "default_source",
+        "expand[3]": "customer.invoice_settings.default_payment_method",
+        "expand[4]": "customer.default_source"
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/v1/prices/price_uni_monthly",
+      "query": {}
+    },
+    {
+      "method": "GET",
+      "path": "/v1/subscriptions/sub_apr84buyer",
+      "query": {
+        "expand[0]": "latest_invoice",
+        "expand[1]": "default_payment_method",
+        "expand[2]": "default_source",
+        "expand[3]": "customer.invoice_settings.default_payment_method",
+        "expand[4]": "customer.default_source"
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/v1/checkout/sessions/cs_test_apr841",
+      "query": {}
+    },
+    {
+      "method": "GET",
+      "path": "/v1/subscriptions/sub_apr84buyer",
+      "query": {
+        "expand[0]": "latest_invoice",
+        "expand[1]": "default_payment_method",
+        "expand[2]": "default_source",
+        "expand[3]": "customer.invoice_settings.default_payment_method",
+        "expand[4]": "customer.default_source"
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/v1/subscriptions/sub_apr84buyer",
+      "query": {
+        "expand[0]": "latest_invoice",
+        "expand[1]": "default_payment_method",
+        "expand[2]": "default_source",
+        "expand[3]": "customer.invoice_settings.default_payment_method",
+        "expand[4]": "customer.default_source"
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/v1/checkout/sessions/cs_test_apr841",
+      "query": {}
+    },
+    {
+      "method": "GET",
+      "path": "/v1/subscriptions/sub_apr84buyer",
+      "query": {
+        "expand[0]": "latest_invoice",
+        "expand[1]": "default_payment_method",
+        "expand[2]": "default_source",
+        "expand[3]": "customer.invoice_settings.default_payment_method",
+        "expand[4]": "customer.default_source"
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/v1/subscriptions/sub_apr84buyer",
+      "query": {
+        "expand[0]": "latest_invoice",
+        "expand[1]": "default_payment_method",
+        "expand[2]": "default_source",
+        "expand[3]": "customer.invoice_settings.default_payment_method",
+        "expand[4]": "customer.default_source"
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/v1/checkout/sessions/cs_test_apr841",
+      "query": {}
+    },
+    {
+      "method": "GET",
+      "path": "/v1/subscriptions/sub_apr84buyer",
+      "query": {
+        "expand[0]": "latest_invoice",
+        "expand[1]": "default_payment_method",
+        "expand[2]": "default_source",
+        "expand[3]": "customer.invoice_settings.default_payment_method",
+        "expand[4]": "customer.default_source"
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/v1/subscriptions/sub_apr84buyer",
+      "query": {
+        "expand[0]": "latest_invoice",
+        "expand[1]": "default_payment_method",
+        "expand[2]": "default_source",
+        "expand[3]": "customer.invoice_settings.default_payment_method",
+        "expand[4]": "customer.default_source"
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/v1/checkout/sessions/cs_test_apr841",
+      "query": {}
+    },
+    {
+      "method": "GET",
+      "path": "/v1/subscriptions/sub_apr84buyer",
+      "query": {
+        "expand[0]": "latest_invoice",
+        "expand[1]": "default_payment_method",
+        "expand[2]": "default_source",
+        "expand[3]": "customer.invoice_settings.default_payment_method",
+        "expand[4]": "customer.default_source"
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/v1/subscriptions/sub_apr84buyer",
+      "query": {
+        "expand[0]": "latest_invoice",
+        "expand[1]": "default_payment_method",
+        "expand[2]": "default_source",
+        "expand[3]": "customer.invoice_settings.default_payment_method",
+        "expand[4]": "customer.default_source"
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/v1/checkout/sessions/cs_test_apr841",
+      "query": {}
+    },
+    {
+      "method": "GET",
+      "path": "/v1/subscriptions/sub_apr84buyer",
+      "query": {
+        "expand[0]": "latest_invoice",
+        "expand[1]": "default_payment_method",
+        "expand[2]": "default_source",
+        "expand[3]": "customer.invoice_settings.default_payment_method",
+        "expand[4]": "customer.default_source"
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/v1/invoices",
+      "query": {
+        "customer": "cus_apr84buyer",
+        "subscription": "sub_apr84buyer",
+        "status": "paid",
+        "limit": "100"
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/v1/subscriptions/sub_apr84buyer",
+      "query": {
+        "expand[0]": "latest_invoice",
+        "expand[1]": "default_payment_method",
+        "expand[2]": "default_source",
+        "expand[3]": "customer.invoice_settings.default_payment_method",
+        "expand[4]": "customer.default_source"
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/v1/checkout/sessions/cs_test_apr841",
+      "query": {}
+    },
+    {
+      "method": "GET",
+      "path": "/v1/subscriptions/sub_apr84buyer",
+      "query": {
+        "expand[0]": "latest_invoice",
+        "expand[1]": "default_payment_method",
+        "expand[2]": "default_source",
+        "expand[3]": "customer.invoice_settings.default_payment_method",
+        "expand[4]": "customer.default_source"
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/v1/subscriptions/sub_apr84buyer",
+      "query": {
+        "expand[0]": "latest_invoice",
+        "expand[1]": "default_payment_method",
+        "expand[2]": "default_source",
+        "expand[3]": "customer.invoice_settings.default_payment_method",
+        "expand[4]": "customer.default_source"
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/v1/checkout/sessions/cs_test_apr841",
+      "query": {}
+    },
+    {
+      "method": "GET",
+      "path": "/v1/subscriptions/sub_apr84buyer",
+      "query": {
+        "expand[0]": "latest_invoice",
+        "expand[1]": "default_payment_method",
+        "expand[2]": "default_source",
+        "expand[3]": "customer.invoice_settings.default_payment_method",
+        "expand[4]": "customer.default_source"
+      }
+    }
+  ],
+  "identifiers": {
+    "userId": "usr_1cc51c41fc",
+    "sessionId": "cs_test_apr841",
+    "attemptId": "70c958b5-4fc6-4e14-9ac5-9c9484c1c132",
+    "subscriptionId": "sub_apr84buyer",
+    "invoiceId": "in_apr84buyer"
+  },
+  "finishedAt": "2026-11-18T02:18:08.478Z"
+}

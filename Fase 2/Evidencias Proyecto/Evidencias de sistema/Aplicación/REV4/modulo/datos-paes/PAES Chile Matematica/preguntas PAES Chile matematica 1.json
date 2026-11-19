@@ -1,0 +1,212 @@
+[
+  {
+    "pregunta": "Si 3x + 5 = 20, ¿cuál es el valor de x?",
+    "alternativas": ["3", "5", "6", "7", "10"],
+    "respuesta_correcta": "B",
+    "explicacion_respuesta": "Resolvemos la ecuación: 3x + 5 = 20 → 3x = 20 - 5 = 15 → x = 15/3 = 5. Por lo tanto, la respuesta correcta es 5.",
+    "habilidad_requerida": "Resolver ecuaciones lineales de primer grado con una incógnita, aplicando operaciones inversas."
+  },
+  {
+    "pregunta": "¿Cuáles son las soluciones de la ecuación x² - 5x + 6 = 0?",
+    "alternativas": ["x = 2 y x = 3", "x = -2 y x = -3", "x = 1 y x = 6", "x = -1 y x = -6", "x = 2 y x = -3"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Factorizamos el trinomio: (x - 2)(x - 3) = 0, entonces x - 2 = 0 → x = 2, o x - 3 = 0 → x = 3. Las soluciones son 2 y 3.",
+    "habilidad_requerida": "Factorizar ecuaciones cuadráticas o aplicar la fórmula general para encontrar raíces."
+  },
+  {
+    "pregunta": "Resuelve el sistema: 2x + y = 7, x - y = 2. ¿Cuál es el valor de x?",
+    "alternativas": ["1", "2", "3", "4", "5"],
+    "respuesta_correcta": "C",
+    "explicacion_respuesta": "Sumamos ambas ecuaciones: (2x+y)+(x-y)=7+2 → 3x = 9 → x = 3. Sustituyendo en x-y=2 → 3-y=2 → y=1. Por lo tanto, x=3.",
+    "habilidad_requerida": "Resolver sistemas de ecuaciones lineales mediante métodos de suma y resta o sustitución."
+  },
+  {
+    "pregunta": "¿Cuál es el valor de x en la ecuación 2^{x+1} = 16?",
+    "alternativas": ["2", "3", "4", "5", "6"],
+    "respuesta_correcta": "B",
+    "explicacion_respuesta": "Escribimos 16 como potencia de 2: 16 = 2^4. Entonces 2^{x+1} = 2^4 → x+1 = 4 → x = 3.",
+    "habilidad_requerida": "Propiedades de las ecuaciones exponenciales con igual base."
+  },
+  {
+    "pregunta": "Si log₂(x) = 3, ¿cuál es el valor de x?",
+    "alternativas": ["6", "8", "9", "12", "16"],
+    "respuesta_correcta": "B",
+    "explicacion_respuesta": "La definición de logaritmo: log₂(x) = 3 significa que 2³ = x, por lo tanto x = 8.",
+    "habilidad_requerida": "Comprender la definición de logaritmo y su relación con la potenciación."
+  },
+  {
+    "pregunta": "Un triángulo tiene base de 10 cm y altura de 6 cm. ¿Cuál es su área?",
+    "alternativas": ["30 cm²", "60 cm²", "15 cm²", "20 cm²", "45 cm²"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Área del triángulo = (base × altura)/2 = (10 × 6)/2 = 60/2 = 30 cm².",
+    "habilidad_requerida": "Aplicar la fórmula del área de un triángulo."
+  },
+  {
+    "pregunta": "En un triángulo rectángulo, los catetos miden 6 cm y 8 cm. ¿Cuánto mide la hipotenusa?",
+    "alternativas": ["10 cm", "12 cm", "14 cm", "9 cm", "7 cm"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Teorema de Pitágoras: hipotenusa² = 6² + 8² = 36 + 64 = 100 → hipotenusa = √100 = 10 cm.",
+    "habilidad_requerida": "Aplicar el teorema de Pitágoras en triángulos rectángulos."
+  },
+  {
+    "pregunta": "¿Cuál es la longitud de una circunferencia de radio 5 cm? (Usa π ≈ 3,14)",
+    "alternativas": ["15,7 cm", "31,4 cm", "62,8 cm", "78,5 cm", "25 cm"],
+    "respuesta_correcta": "B",
+    "explicacion_respuesta": "Longitud = 2πr = 2 × 3,14 × 5 = 31,4 cm.",
+    "habilidad_requerida": "Aplicar la fórmula de perímetro de una circunferencia."
+  },
+  {
+    "pregunta": "En un triángulo rectángulo, el seno de un ángulo agudo α es 0,6. ¿Cuál es el valor aproximado del coseno de α?",
+    "alternativas": ["0,8", "0,4", "0,5", "0,75", "0,9"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Usamos identidad pitagórica: sen²α + cos²α = 1 → 0,36 + cos²α = 1 → cos²α = 0,64 → cosα = 0,8 (positivo por ser ángulo agudo).",
+    "habilidad_requerida": "Aplicar la identidad trigonométrica fundamental sen²θ + cos²θ = 1."
+  },
+  {
+    "pregunta": "Simplifica la expresión: sen(90° - x).",
+    "alternativas": ["sen x", "cos x", "-sen x", "-cos x", "1"],
+    "respuesta_correcta": "B",
+    "explicacion_respuesta": "Por identidades de ángulos complementarios, sen(90° - x) = cos x.",
+    "habilidad_requerida": "Conocer las relaciones entre funciones trigonométricas de ángulos complementarios."
+  },
+  {
+    "pregunta": "¿Cuál es el dominio de la función f(x) = √(x - 3)?",
+    "alternativas": ["[3, ∞)", "(3, ∞)", "(-∞, 3]", "(-∞, 3)", "ℝ"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "La raíz cuadrada está definida para radicandos no negativos: x - 3 ≥ 0 → x ≥ 3, entonces dominio [3, ∞).",
+    "habilidad_requerida": "Determinar el dominio de funciones que involucran raíces cuadradas."
+  },
+  {
+    "pregunta": "¿Cuál es el rango de la función f(x) = x² + 2?",
+    "alternativas": ["[2, ∞)", "(2, ∞)", "(-∞, 2]", "(-∞, 2)", "ℝ"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "x² ≥ 0 para todo x real, entonces x²+2 ≥ 2. El mínimo es 2, y crece sin tope, por lo tanto rango [2, ∞).",
+    "habilidad_requerida": "Determinar el rango de funciones cuadráticas a partir de su expresión."
+  },
+  {
+    "pregunta": "¿Cuál es la pendiente de la recta que pasa por los puntos (2,3) y (5,9)?",
+    "alternativas": ["1", "2", "3", "4", "5"],
+    "respuesta_correcta": "B",
+    "explicacion_respuesta": "Pendiente m = (y₂ - y₁)/(x₂ - x₁) = (9 - 3)/(5 - 2) = 6/3 = 2.",
+    "habilidad_requerida": "Calcular pendiente dados dos puntos de una recta."
+  },
+  {
+    "pregunta": "¿Cuál es el vértice de la parábola f(x) = x² - 4x + 3?",
+    "alternativas": ["(2, -1)", "(-2, 15)", "(1, 0)", "(3, 0)", "(0, 3)"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Completamos cuadrados: x² - 4x + 3 = (x² - 4x + 4) - 1 = (x-2)² - 1. Vértice en (2, -1).",
+    "habilidad_requerida": "Encontrar el vértice de una parábola completando cuadrados o usando fórmula x_v = -b/(2a)."
+  },
+  {
+    "pregunta": "Calcula el límite: lim_{x→2} (x² - 4)/(x - 2).",
+    "alternativas": ["0", "2", "4", "8", "No existe"],
+    "respuesta_correcta": "C",
+    "explicacion_respuesta": "Factorizamos numerador: (x-2)(x+2)/(x-2) = x+2 para x≠2. Entonces límite = 2+2 = 4.",
+    "habilidad_requerida": "Calcular límites indeterminados del tipo 0/0 mediante factorización."
+  },
+  {
+    "pregunta": "Si f(x) = 3x², ¿cuál es f'(x)?",
+    "alternativas": ["6x", "3x", "6x²", "x²", "3"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Derivada de x^n es n x^{n-1}, entonces f'(x) = 3·2·x^{1} = 6x.",
+    "habilidad_requerida": "Aplicar la regla básica de derivación para potencias."
+  },
+  {
+    "pregunta": "Calcula la integral indefinida ∫ 2x dx.",
+    "alternativas": ["x² + C", "2x² + C", "x²", "x²/2 + C", "2 + C"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "La integral de x^n es x^{n+1}/(n+1) + C, entonces ∫2x dx = 2·(x²/2) + C = x² + C.",
+    "habilidad_requerida": "Aplicar la regla de integración de potencias."
+  },
+  {
+    "pregunta": "Se lanza un dado justo de 6 caras. ¿Cuál es la probabilidad de obtener un número mayor que 4?",
+    "alternativas": ["1/3", "1/2", "2/3", "1/6", "5/6"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Números mayores que 4: 5 y 6. Casos favorables: 2. Total casos: 6. Probabilidad = 2/6 = 1/3.",
+    "habilidad_requerida": "Calcular probabilidades clásicas como cociente entre casos favorables y totales."
+  },
+  {
+    "pregunta": "¿De cuántas maneras se pueden ordenar 5 libros distintos en un estante?",
+    "alternativas": ["120", "25", "5", "60", "24"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Permutaciones de 5 elementos: 5! = 5·4·3·2·1 = 120.",
+    "habilidad_requerida": "Aplicar el concepto de permutaciones sin repetición."
+  },
+  {
+    "pregunta": "Las notas de un estudiante son: 6, 7, 5, 6, 8. ¿Cuál es la media aritmética?",
+    "alternativas": ["6,0", "6,4", "6,5", "6,8", "7,0"],
+    "respuesta_correcta": "B",
+    "explicacion_respuesta": "Suma = 6+7+5+6+8 = 32. Número de datos: 5. Media = 32/5 = 6,4.",
+    "habilidad_requerida": "Calcular la media aritmética de un conjunto de datos."
+  },
+  {
+    "pregunta": "¿Cuál es la mediana del siguiente conjunto: 3, 7, 2, 9, 5?",
+    "alternativas": ["3", "5", "6", "7", "9"],
+    "respuesta_correcta": "B",
+    "explicacion_respuesta": "Ordenamos: 2, 3, 5, 7, 9. El valor central es 5 (tercer elemento).",
+    "habilidad_requerida": "Calcular la mediana de un conjunto de datos, ordenando previamente."
+  },
+  {
+    "pregunta": "En una progresión aritmética, el primer término es 2 y la diferencia común es 3. ¿Cuál es el quinto término?",
+    "alternativas": ["14", "11", "17", "12", "15"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Fórmula: a_n = a₁ + (n-1)d. Para n=5: a₅ = 2 + 4·3 = 2 + 12 = 14.",
+    "habilidad_requerida": "Aplicar la fórmula del término general de una progresión aritmética."
+  },
+  {
+    "pregunta": "En una progresión geométrica, el primer término es 3 y la razón es 2. ¿Cuál es el cuarto término?",
+    "alternativas": ["12", "24", "18", "48", "15"],
+    "respuesta_correcta": "B",
+    "explicacion_respuesta": "Fórmula: a_n = a₁·r^{n-1}. Para n=4: a₄ = 3·2^{3} = 3·8 = 24.",
+    "habilidad_requerida": "Aplicar la fórmula del término general de una progresión geométrica."
+  },
+  {
+    "pregunta": "Si z = 3 + 4i, ¿cuál es su módulo?",
+    "alternativas": ["5", "7", "12", "25", "1"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Módulo = √(a² + b²) = √(3² + 4²) = √(9+16) = √25 = 5.",
+    "habilidad_requerida": "Calcular el módulo de un número complejo."
+  },
+  {
+    "pregunta": "Dados los vectores u = (2, -1) y v = (3, 4), ¿cuál es el producto escalar u·v?",
+    "alternativas": ["2", "10", "5", "8", "6"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Producto escalar: 2·3 + (-1)·4 = 6 - 4 = 2.",
+    "habilidad_requerida": "Calcular el producto escalar entre dos vectores en el plano."
+  },
+  {
+    "pregunta": "Resuelve la desigualdad: 2x - 5 < 7.",
+    "alternativas": ["x < 6", "x > 6", "x < 1", "x > 1", "x < -6"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "2x - 5 < 7 → 2x < 12 → x < 6.",
+    "habilidad_requerida": "Resolver desigualdades lineales de primer grado."
+  },
+  {
+    "pregunta": "¿Cuál es la solución de |x - 2| = 5?",
+    "alternativas": ["x = 7 o x = -3", "x = 7 o x = 3", "x = -7 o x = 3", "x = 3 o x = -3", "x = 7"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "|x - 2| = 5 implica dos casos: x - 2 = 5 → x = 7, o x - 2 = -5 → x = -3.",
+    "habilidad_requerida": "Resolver ecuaciones con valor absoluto considerando ambos casos."
+  },
+  {
+    "pregunta": "Simplifica la expresión racional (x² - 9)/(x - 3) para x ≠ 3.",
+    "alternativas": ["x + 3", "x - 3", "x² + 3", "x - 9", "x + 9"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "x² - 9 = (x-3)(x+3), entonces (x-3)(x+3)/(x-3) = x+3.",
+    "habilidad_requerida": "Simplificar expresiones algebraicas racionales factorizando diferencias de cuadrados."
+  },
+  {
+    "pregunta": "Una población de bacterias se duplica cada hora. Si inicialmente hay 100 bacterias, ¿cuántas habrá después de 3 horas?",
+    "alternativas": ["800", "300", "600", "400", "1000"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Crecimiento exponencial: N = 100·2^t. Para t=3: 100·2³ = 100·8 = 800.",
+    "habilidad_requerida": "Modelar situaciones de crecimiento exponencial con función del tipo N = N₀·a^t."
+  },
+  {
+    "pregunta": "Resuelve la ecuación logarítmica: log₃(x) + log₃(9) = 3.",
+    "alternativas": ["3", "9", "27", "1", "81"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Usamos propiedad: log₃(9) = 2, porque 3²=9. Entonces log₃(x) + 2 = 3 → log₃(x)=1 → x = 3¹ = 3.",
+    "habilidad_requerida": "Aplicar propiedades de logaritmos para resolver ecuaciones logarítmicas."
+  }
+]

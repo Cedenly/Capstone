@@ -1,0 +1,317 @@
+[
+  {
+    "pregunta": "Lee el siguiente fragmento: 'El tiempo es un río que arrastra todo lo que encuentra a su paso.' ¿Qué figura retórica predomina?",
+    "alternativas": ["Metáfora", "Símil", "Personificación", "Hipérbole", "Sinestesia"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Identifica el tiempo con un río. Es metáfora. No es símil (no hay 'como'), personificación, hipérbole ni sinestesia.",
+    "habilidad_requerida": "Clase: Metáfora del tiempo como un río (flujo inevitable). Ejemplo: 'El tiempo vuela'. Practica creando otras metáforas del tiempo."
+  },
+  {
+    "pregunta": "En la oración 'Aprobarás si estudias', la conjunción 'si' expresa:",
+    "alternativas": ["Condición", "Causa", "Consecuencia", "Contraste", "Adición"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "'Si' introduce la condición necesaria para aprobar. Es conjunción condicional. Las otras opciones no corresponden.",
+    "habilidad_requerida": "Clase: Oraciones condicionales con 'si'. Estructura: 'si + presente de indicativo, futuro/imperativo'. Ejemplo: 'Si llueve, no salgo'. Practica construyendo condicionales reales."
+  },
+  {
+    "pregunta": "Señala la opción donde la palabra 'cállate' está correctamente acentuada.",
+    "alternativas": ["Callate", "Cállate", "Cal late", "Calla te", "Cállate"],
+    "respuesta_correcta": "B",
+    "explicacion_respuesta": "El imperativo 'cállate' es una palabra esdrújula (cá-lla-te), por lo tanto lleva tilde. La opción B es correcta.",
+    "habilidad_requerida": "Clase: Acentuación de palabras esdrújulas. Todas llevan tilde. Ejemplo: 'cállate', 'cómetelo', 'dímelo'. Practica escribiendo imperativos con pronombres."
+  },
+  {
+    "pregunta": "Lee el siguiente texto: 'La esperanza es una luz que brilla en la oscuridad.' ¿Qué figura retórica predomina?",
+    "alternativas": ["Metáfora", "Símil", "Personificación", "Hipérbole", "Sinestesia"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Identifica la esperanza con una luz. Es metáfora. No es símil, personificación, hipérbole ni sinestesia.",
+    "habilidad_requerida": "Clase: Metáfora de la esperanza como luz en la adversidad. Ejemplo: 'La esperanza es un faro'. Practica creando metáforas para la esperanza."
+  },
+  {
+    "pregunta": "¿Cuál de los siguientes conectores indica una oposición?",
+    "alternativas": ["No obstante", "Además", "Por lo tanto", "Es decir", "Primeramente"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "'No obstante' es conector adversativo (oposición). Los otros son adición, consecuencia, explicación y orden.",
+    "habilidad_requerida": "Clase: Conectores de oposición: pero, sin embargo, no obstante, en cambio. Ejemplo: 'Estaba cansado; no obstante, siguió trabajando'. Practica usándolos."
+  },
+  {
+    "pregunta": "Señala la opción donde la palabra 'hábil' está correctamente acentuada.",
+    "alternativas": ["Habil", "Hábil", "Ha bil", "Habíl", "Hábil"],
+    "respuesta_correcta": "B",
+    "explicacion_respuesta": "'Hábil' es una palabra grave terminada en 'l', por lo tanto lleva tilde. La opción B es correcta.",
+    "habilidad_requerida": "Clase: Reglas de acentuación de graves (llanas). Llevan tilde si terminan en consonante distinta de n/s. Ejemplos: 'cárcel', 'lápiz', 'fácil'. Practica tildando 'hàbil' correctamente."
+  },
+  {
+    "pregunta": "En la oración 'Los coches, que son eléctricos, contaminan menos', la proposición 'que son eléctricos' es una subordinada adjetiva:",
+    "alternativas": ["Explicativa", "Especificativa", "Sustantiva", "Adverbial", "Concesiva"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Va entre comas, por lo tanto es explicativa: todos los coches son eléctricos. Si no hubiera comas, sería especificativa (solo los eléctricos contaminan menos).",
+    "habilidad_requerida": "Clase: Las comas cambian el significado de la subordinada adjetiva. Practica: 'Los estudiantes que estudian aprueban' vs 'Los estudiantes, que estudian, aprueban'."
+  },
+  {
+    "pregunta": "Lee el siguiente texto: 'La noche tenía un manto de estrellas.' ¿Qué figura retórica predomina?",
+    "alternativas": ["Metáfora", "Símil", "Personificación", "Hipérbole", "Sinestesia"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Identifica la noche con un manto. Es metáfora. No es símil, personificación, hipérbole ni sinestesia.",
+    "habilidad_requerida": "Clase: Metáfora de la noche como tela o prenda. Ejemplo: 'El cielo era un terciopelo negro'. Practica creando metáforas para el cielo estrellado."
+  },
+  {
+    "pregunta": "¿Qué tipo de texto es un discurso de despedida?",
+    "alternativas": ["Argumentativo", "Expositivo", "Narrativo", "Instructivo", "Expresivo"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Un discurso de despedida suele contener argumentos para persuadir emocionalmente, aunque predomina la función expresiva. Se considera un texto argumentativo porque expresa una postura y busca convencer o conmover.",
+    "habilidad_requerida": "Clase: Textos argumentativos orales. Tienen tesis, argumentos y una conclusión emotiva. Ejemplo: discursos políticos, despedidas. Practica redactando un breve discurso de despedida."
+  },
+  {
+    "pregunta": "Señala la opción donde la coma está correctamente usada para separar un conector al inicio.",
+    "alternativas": ["Sin embargo, llegó tarde.", "Sin embargo llegó, tarde.", "Sin, embargo llegó tarde.", "Sin embargo llegó tarde,", "Sin embargo, llegó, tarde."],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Después de un conector al inicio de la oración, se escribe coma. 'Sin embargo, llegó tarde' es correcto.",
+    "habilidad_requerida": "Clase: Coma después de conectores al inicio de la oración. Ejemplo: 'Por lo tanto, no asistió'. Practica escribiendo oraciones con 'no obstante', 'en consecuencia' al inicio."
+  },
+  {
+    "pregunta": "¿Cuál es el significado de 'perspicaz' en la frase 'Es un observador perspicaz'?",
+    "alternativas": ["Agudo", "Lento", "Distraído", "Superficial", "Torpe"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Perspicaz significa que tiene capacidad de percibir o comprender rápidamente, agudo. Los otros son antónimos.",
+    "habilidad_requerida": "Clase: Vocabulario. 'Perspicaz' es sinónimo de 'penetrante', 'astuto'. Practica usando 'perspicaz' en oraciones de observación."
+  },
+  {
+    "pregunta": "En la oración 'Se alquilan casas', el 'se' es parte de una construcción:",
+    "alternativas": ["Pasiva refleja", "Impersonal", "Reflexiva", "Recíproca", "Marca de énfasis"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "El verbo 'alquilan' concuerda en plural con 'casas' (sujeto paciente). Es pasiva refleja. No es impersonal (sería 'se alquila casas' en singular, incorrecto).",
+    "habilidad_requerida": "Clase: Pasiva refleja en plural. Ejemplo: 'Se venden frutas'. Practica transformando activas: 'La empresa alquila casas' → 'Se alquilan casas'."
+  },
+  {
+    "pregunta": "Lee el siguiente texto: 'La lluvia era un telón que ocultaba el paisaje.' ¿Qué figura retórica predomina?",
+    "alternativas": ["Metáfora", "Símil", "Personificación", "Hipérbole", "Sinestesia"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Identifica la lluvia con un telón. Es metáfora. No es símil, personificación, hipérbole ni sinestesia.",
+    "habilidad_requerida": "Clase: Metáfora para describir la lluvia como un obstáculo visual. Ejemplo: 'La lluvia era una cortina de agua'. Practica creando metáforas para la lluvia intensa."
+  },
+  {
+    "pregunta": "Señala la opción donde la palabra 'también' está correctamente acentuada.",
+    "alternativas": ["Tambien", "También", "Tambíen", "Tambiém", "También"],
+    "respuesta_correcta": "B",
+    "explicacion_respuesta": "'También' es aguda terminada en N, lleva tilde. La opción B es correcta.",
+    "habilidad_requerida": "Clase: Acentuación de palabras agudas. Llevan tilde si terminan en N, S o vocal. Ejemplo: 'también', 'jamás', 'canción'. Practica tildando 'tambien' correctamente."
+  },
+  {
+    "pregunta": "¿Qué función del lenguaje predomina en una fórmula de saludo como '¿Aló?'?",
+    "alternativas": ["Fática", "Apelativa", "Referencial", "Expresiva", "Poética"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "La función fática se usa para establecer o verificar el canal de comunicación. '¿Aló?' busca confirmar que la conexión está activa. No es apelativa (no busca acción), ni referencial, ni expresiva, ni poética.",
+    "habilidad_requerida": "Clase: Función fática. Aparece en saludos, preguntas de verificación ('¿Me escuchas?'), muletillas. Practica identificando esta función en conversaciones telefónicas."
+  },
+  {
+    "pregunta": "En la oración 'Necesito que me ayudes', el verbo 'ayudes' está en modo:",
+    "alternativas": ["Subjuntivo", "Indicativo", "Imperativo", "Condicional", "Infinitivo"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "'Necesito que' expresa deseo o necesidad, exige subjuntivo. 'Ayudes' es presente de subjuntivo.",
+    "habilidad_requerida": "Clase: Subjuntivo con verbos de necesidad. Ejemplo: 'Quiero que vengas'. Practica conjugando verbos en presente de subjuntivo."
+  },
+  {
+    "pregunta": "Lee el siguiente texto: 'El tiempo es un escultor que moldea nuestros recuerdos.' ¿Qué figura retórica predomina?",
+    "alternativas": ["Metáfora", "Símil", "Personificación", "Hipérbole", "Sinestesia"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Identifica el tiempo con un escultor. Es metáfora. No es símil, personificación (aunque moldea, la figura principal es la identificación), hipérbole ni sinestesia.",
+    "habilidad_requerida": "Clase: Metáfora del tiempo como artista. Ejemplo: 'El tiempo es un jardinero'. Practica creando metáforas para el efecto del tiempo en la memoria."
+  },
+  {
+    "pregunta": "Señala la opción donde se usa correctamente 'hay' (del verbo haber).",
+    "alternativas": ["Hay muchos niños.", "Ahí hay un perro.", "Ay, me duele.", "Hay que estudiar.", "Todas son correctas."],
+    "respuesta_correcta": "E",
+    "explicacion_respuesta": "Todas las opciones usan correctamente 'hay', 'ahí' y 'ay' según corresponda. En A y D 'hay' bien, en B 'ahí' lugar, en C 'ay' interjección. Por lo tanto todas son correctas.",
+    "habilidad_requerida": "Clase: Diferencia entre 'hay' (existencia), 'ahí' (lugar), 'ay' (interjección). Ejemplo: 'Ay, allí hay un problema'. Practica usando las tres en una oración."
+  },
+  {
+    "pregunta": "¿Cuál de las siguientes palabras es un adverbio de duda?",
+    "alternativas": ["Quizás", "No", "Sí", "Bien", "Aquí"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "'Quizás' expresa duda o posibilidad. Los otros son negación, afirmación, modo y lugar.",
+    "habilidad_requerida": "Clase: Adverbios de duda: quizás, acaso, probablemente, posiblemente. Se usan con subjuntivo o indicativo. Ejemplo: 'Quizás venga mañana'. Practica oraciones de duda."
+  },
+  {
+    "pregunta": "Lee el siguiente texto: 'La música es un bálsamo para el alma.' ¿Qué figura retórica predomina?",
+    "alternativas": ["Metáfora", "Símil", "Personificación", "Hipérbole", "Sinestesia"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Identifica la música con un bálsamo. Es metáfora. No es símil (no hay 'como'), personificación, hipérbole ni sinestesia.",
+    "habilidad_requerida": "Clase: Metáfora de la música como medicina. Ejemplo: 'La música es un refugio'. Practica creando metáforas para efectos de la música."
+  },
+  {
+    "pregunta": "Señala la opción donde la palabra 'tú' (pronombre) está correctamente tildada.",
+    "alternativas": ["Tu eres mi amigo.", "Tú eres mi amigo.", "Tu libro es grande.", "Tú libro es grande.", "No te olvides de tu."],
+    "respuesta_correcta": "B",
+    "explicacion_respuesta": "El pronombre personal 'tú' lleva tilde. En B es correcto. 'Tu' posesivo sin tilde en A, C. En D, 'tú' está mal usado con 'libro'. En E, 'tu' posesivo sin tilde al final, incorrecto. Solo B es correcto.",
+    "habilidad_requerida": "Clase: Tilde diacrítica en 'tú' (pronombre) vs 'tu' (posesivo). Ejemplo: 'Tú tienes tu mochila'. Practica diferenciando."
+  },
+  {
+    "pregunta": "¿Qué tipo de texto es una encuesta de opinión?",
+    "alternativas": ["Discontinuo", "Continuo", "Narrativo", "Argumentativo", "Instructivo"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Una encuesta de opinión contiene preguntas y espacios para marcar; no se lee de manera lineal. Es un texto discontinuo.",
+    "habilidad_requerida": "Clase: Textos discontinuos: formularios, tablas, gráficos, mapas. Practica interpretando una encuesta y extrayendo conclusiones."
+  },
+  {
+    "pregunta": "En la oración 'El viento soplaba fuerte', el adverbio 'fuerte' cumple la función de:",
+    "alternativas": ["Complemento circunstancial de modo", "Complemento directo", "Complemento indirecto", "Complemento agente", "Atributo"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Indica cómo soplaba el viento. Es complemento circunstancial de modo. No es directo, indirecto, agente ni atributo.",
+    "habilidad_requerida": "Clase: Circunstancial de modo. Responde a '¿cómo?'. Puede ser un adverbio o una frase. Ejemplo: 'Caminó lentamente'. Practica identificando circunstanciales de modo."
+  },
+  {
+    "pregunta": "Lee el siguiente texto: 'El miedo es una prisión sin barrotes.' ¿Qué figura retórica predomina?",
+    "alternativas": ["Metáfora", "Símil", "Personificación", "Hipérbole", "Paradoja"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Identifica el miedo con una prisión. Es metáfora. También podría considerarse paradoja porque es una prisión sin barrotes (contradicción aparente), pero la figura principal es la metáfora. No es símil, personificación ni hipérbole.",
+    "habilidad_requerida": "Clase: Metáfora y paradoja combinadas. El miedo encierra sin necesidad de muros. Practica creando metáforas para el miedo como una jaula, una red."
+  },
+  {
+    "pregunta": "Señala la opción donde la palabra 'cortés' está correctamente acentuada.",
+    "alternativas": ["Cortes", "Cortés", "Cortéz", "Cortez", "Cortes"],
+    "respuesta_correcta": "B",
+    "explicacion_respuesta": "'Cortés' es una palabra aguda terminada en S, lleva tilde. La opción B es correcta.",
+    "habilidad_requerida": "Clase: Agudas terminadas en S llevan tilde. Ejemplos: 'cortés', 'inglés', 'francés'. Practica tildando 'cortes' correctamente."
+  },
+  {
+    "pregunta": "¿Cuál de las siguientes opciones es un texto continuo?",
+    "alternativas": ["Un gráfico", "Una tabla", "Una novela", "Un mapa", "Un formulario"],
+    "respuesta_correcta": "C",
+    "explicacion_respuesta": "La novela se lee de manera secuencial. Es texto continuo. Los otros son discontinuos.",
+    "habilidad_requerida": "Clase: Textos continuos y discontinuos. Continúan: cartas, informes, cuentos. Discontinuos: gráficos, tablas, diagramas. Practica clasificando diferentes tipos de texto."
+  },
+  {
+    "pregunta": "En la oración 'El niño se peina solo', el 'se' es:",
+    "alternativas": ["Reflexivo", "Recíproco", "Impersonal", "Pasivo reflejo", "Marca de énfasis"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "El niño realiza la acción sobre sí mismo. Es reflexivo. 'Solo' refuerza que no tiene ayuda.",
+    "habilidad_requerida": "Clase: 'Se' reflexivo con énfasis en 'solo'. Ejemplo: 'Se lava las manos'. Practica diferenciando 'se' reflexivo de recíproco (se peinan mutuamente)."
+  },
+  {
+    "pregunta": "Lee el siguiente texto: 'El silencio era una bofetada en su conciencia.' ¿Qué figura retórica predomina?",
+    "alternativas": ["Sinestesia", "Metáfora", "Símil", "Personificación", "Hipérbole"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "El silencio (oído) es una bofetada (tacto, violencia). Mezcla sentidos: sinestesia. También hay metáfora, pero la figura principal es la sinestesia porque el silencio adquiere cualidades táctiles.",
+    "habilidad_requerida": "Clase: Sinestesia auditivo-táctil. Atribuir al sonido sensaciones de golpe o presión. Ejemplo: 'Un rumor punzante'. Practica creando sinestesias con el silencio."
+  },
+  {
+    "pregunta": "Señala la opción donde la palabra 'fácil' está correctamente acentuada.",
+    "alternativas": ["Facil", "Fácil", "Facíl", "Fácil", "Fàcil"],
+    "respuesta_correcta": "B",
+    "explicacion_respuesta": "'Fácil' es grave terminada en 'l', lleva tilde. La opción B es correcta.",
+    "habilidad_requerida": "Clase: Acentuación de graves (llanas) terminadas en consonante distinta de n/s. 'Fácil', 'difícil', 'útil'. Practica tildando 'facil'."
+  },
+  {
+    "pregunta": "¿Qué función del lenguaje predomina en la frase 'Está lloviendo mucho' dicha en una conversación para iniciar el tema?",
+    "alternativas": ["Fática", "Referencial", "Apelativa", "Expresiva", "Poética"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Aunque informa sobre el clima (referencial), la intención principal es romper el silencio o iniciar una conversación. Por lo tanto, predomina la función fática.",
+    "habilidad_requerida": "Clase: Función fática. También aparece en frases como '¿Qué tal?', 'Buen tiempo hace', que no buscan información sino establecer contacto. Practica identificando conversaciones de ascensor."
+  },
+  {
+    "pregunta": "En la oración 'El libro, cuyo autor es chileno, ganó un premio', el pronombre 'cuyo' expresa:",
+    "alternativas": ["Posesión", "Causa", "Condición", "Finalidad", "Consecuencia"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "'Cuyo' indica que el autor pertenece al libro (posesión). No es causa, condición, finalidad ni consecuencia.",
+    "habilidad_requerida": "Clase: Pronombre relativo posesivo 'cuyo'. Concordancia con el poseído. Ejemplo: 'La película cuyos actores son famosos'. Practica usando 'cuyo' en oraciones."
+  },
+  {
+    "pregunta": "Lee el siguiente texto: 'La paciencia es un árbol que tarda en dar frutos.' ¿Qué figura retórica predomina?",
+    "alternativas": ["Metáfora", "Símil", "Personificación", "Hipérbole", "Sinestesia"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Identifica la paciencia con un árbol. Es metáfora. No es símil (no hay 'como'), personificación, hipérbole ni sinestesia.",
+    "habilidad_requerida": "Clase: Metáfora de la paciencia como proceso de crecimiento. Ejemplo: 'La paciencia es una semilla'. Practica creando metáforas para la paciencia relacionadas con la naturaleza."
+  },
+  {
+    "pregunta": "Señala la opción donde la palabra 'cántaro' está correctamente acentuada.",
+    "alternativas": ["Cantaro", "Cántaro", "Cantaró", "Cantáro", "Cantaro"],
+    "respuesta_correcta": "B",
+    "explicacion_respuesta": "'Cántaro' es una palabra esdrújula, lleva tilde en la primera 'a'. La opción B es correcta.",
+    "habilidad_requerida": "Clase: Todas las esdrújulas llevan tilde. Ejemplos: 'pájaro', 'lágrima', 'cántaro'. Practica acentuando 'cancionero' (canción es aguda, 'canción' lleva tilde, 'cancionero' es grave? cuidado)."
+  },
+  {
+    "pregunta": "¿Cuál de las siguientes opciones es un texto argumentativo?",
+    "alternativas": ["Un manual de instrucciones", "Una noticia", "Una columna de opinión", "Un cuento", "Una receta"],
+    "respuesta_correcta": "C",
+    "explicacion_respuesta": "La columna de opinión presenta una tesis y argumentos para persuadir al lector. Es argumentativa.",
+    "habilidad_requerida": "Clase: Textos argumentativos. Columna de opinión, editorial, crítica, ensayo. Practica identificando tesis y argumentos en una columna de periódico."
+  },
+  {
+    "pregunta": "En la oración 'Es necesario que estudies', el verbo 'estudies' está en modo subjuntivo porque:",
+    "alternativas": ["Expresa necesidad", "Expresa certeza", "Expresa orden directa", "Expresa hecho real", "Expresa condición"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "La expresión 'es necesario que' indica necesidad, lo que exige subjuntivo. No es certeza, orden directa, hecho real ni condición (aunque se asemeja).",
+    "habilidad_requerida": "Clase: Subjuntivo con expresiones impersonales de necesidad. Ejemplo: 'Conviene que llegues temprano'. Practica conjugando verbos en presente de subjuntivo."
+  },
+  {
+    "pregunta": "Lee el siguiente texto: 'El amor es un fuego que todo lo consume.' ¿Qué figura retórica predomina?",
+    "alternativas": ["Metáfora", "Símil", "Personificación", "Hipérbole", "Sinestesia"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Identifica el amor con un fuego. Es metáfora. No es símil, personificación, hipérbole ni sinestesia.",
+    "habilidad_requerida": "Clase: Metáfora del amor como fuego (pasión, destrucción). Ejemplo: 'El amor arde'. Practica creando metáforas para el amor usando elementos de la naturaleza."
+  },
+  {
+    "pregunta": "Señala la opción donde la palabra 'pájaro' está correctamente acentuada.",
+    "alternativas": ["Pajaro", "Pájaro", "Pajáro", "Pajaro", "Pajaró"],
+    "respuesta_correcta": "B",
+    "explicacion_respuesta": "'Pájaro' es esdrújula, lleva tilde. La opción B es correcta.",
+    "habilidad_requerida": "Clase: Esdrújulas siempre llevan tilde. Ejemplo: 'pájaro', 'rápido', 'médico'. Practica tildando 'pajaro'."
+  },
+  {
+    "pregunta": "¿Qué tipo de texto es una fábula?",
+    "alternativas": ["Narrativo", "Expositivo", "Argumentativo", "Instructivo", "Descriptivo"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "La fábula cuenta una historia con personajes animales y una moraleja final. Es narrativa.",
+    "habilidad_requerida": "Clase: Fábula como texto narrativo breve con enseñanza. Ejemplo: 'La liebre y la tortuga'. Practica escribiendo una fábula breve con moraleja."
+  },
+  {
+    "pregunta": "En la oración 'La película fue vista por millones de personas', la frase 'por millones de personas' es:",
+    "alternativas": ["Complemento agente", "Complemento directo", "Complemento indirecto", "Complemento circunstancial", "Sujeto"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "En la voz pasiva, 'por millones de personas' indica quién realiza la acción. Es complemento agente.",
+    "habilidad_requerida": "Clase: Complemento agente en pasiva. Se introduce con 'por'. Ejemplo: 'La novela fue escrita por García Márquez'. Practica transformando activas en pasivas."
+  },
+  {
+    "pregunta": "Lee el siguiente texto: 'El tiempo es una moneda que no puedes ahorrar.' ¿Qué figura retórica predomina?",
+    "alternativas": ["Metáfora", "Símil", "Personificación", "Hipérbole", "Sinestesia"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Identifica el tiempo con una moneda. Es metáfora. No es símil, personificación, hipérbole ni sinestesia.",
+    "habilidad_requerida": "Clase: Metáfora del tiempo como dinero (valor, gasto). Ejemplo: 'El tiempo es oro'. Practica creando metáforas económicas para el tiempo."
+  },
+  {
+    "pregunta": "Señala la opción donde la palabra 'teléfono' está correctamente acentuada.",
+    "alternativas": ["Telefono", "Teléfono", "Telefonó", "Telefóno", "Telefono"],
+    "respuesta_correcta": "B",
+    "explicacion_respuesta": "'Teléfono' es esdrújula, lleva tilde en la 'e'. La opción B es correcta.",
+    "habilidad_requerida": "Clase: Esdrújulas. 'Teléfono', 'música', 'página'. Practica tildando 'telefono'."
+  },
+  {
+    "pregunta": "¿Cuál de las siguientes opciones es una oración exclamativa indirecta?",
+    "alternativas": ["¡Qué bonito!", "Dijo que qué bonito era.", "¡Cómo llueve!", "No sé cómo lo hizo.", "Preguntó cómo lo hizo."],
+    "respuesta_correcta": "B",
+    "explicacion_respuesta": "La exclamación indirecta reporta la emoción sin signos de exclamación. 'Dijo que qué bonito era' es el ejemplo correcto. Las otras son exclamativas directas o interrogativas indirectas.",
+    "habilidad_requerida": "Clase: Exclamaciones indirectas. Se introducen con verbos como 'exclamar', 'decir' + 'qué', 'cuánto'. Ejemplo: 'Comentó qué tarde era'. Practica transformar exclamaciones directas en indirectas."
+  },
+  {
+    "pregunta": "En la oración 'Quiero que vengas', el verbo 'vengas' está en:",
+    "alternativas": ["Presente de subjuntivo", "Presente de indicativo", "Imperativo", "Condicional", "Infinitivo"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "El verbo 'querer' seguido de 'que' exige subjuntivo. 'Vengas' es presente de subjuntivo. No es indicativo, imperativo (sería 'ven'), condicional ni infinitivo.",
+    "habilidad_requerida": "Clase: Subjuntivo con verbos de deseo. Ejemplo: 'Espero que estudies'. Practica conjugando verbos en presente de subjuntivo."
+  },
+  {
+    "pregunta": "Lee el siguiente texto: 'La soledad es un desierto sin oasis.' ¿Qué figura retórica predomina?",
+    "alternativas": ["Metáfora", "Símil", "Personificación", "Hipérbole", "Sinestesia"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Identifica la soledad con un desierto. Es metáfora. No es símil (no hay 'como'), personificación, hipérbole ni sinestesia.",
+    "habilidad_requerida": "Clase: Metáfora de la soledad como un desierto (aridez, ausencia). Ejemplo: 'La soledad es un abismo'. Practica creando metáforas para la soledad usando paisajes."
+  },
+  {
+    "pregunta": "Señala la opción donde la palabra 'líder' está correctamente acentuada.",
+    "alternativas": ["Lider", "Líder", "Lidér", "Líder", "Lider"],
+    "respuesta_correcta": "B",
+    "explicacion_respuesta": "'Líder' es grave terminada en 'r', lleva tilde. La opción B es correcta.",
+    "habilidad_requerida": "Clase: Reglas de acentuación de graves. Terminadas en 'r' llevan tilde. Ejemplos: 'cárcel', 'árbol', 'mártir'. Practica tildando 'lider'."
+  }
+]

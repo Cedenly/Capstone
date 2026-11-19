@@ -1,0 +1,352 @@
+[
+  {
+    "pregunta": "La teoría del endosimbionte seriado explica el origen de algunos orgánulos eucariotas. ¿Cuál de los siguientes pares de orgánulos y células progenitoras es correcto según esta teoría?",
+    "alternativas": ["Mitocondria - bacteria aeróbica", "Cloroplasto - bacteria anaeróbica", "Núcleo - arquea", "Retículo endoplasmático - bacteria fotosintética", "Lisosoma - bacteria heterótrofa"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "La teoría endosimbiótica propone que las mitocondrias descendieron de bacterias aeróbicas que fueron englobadas por una célula huésped ancestral, estableciendo una relación simbiótica. Los cloroplastos descendieron de cianobacterias (fotosintéticas, no anaeróbicas). El núcleo no se originó por endosimbiosis de una bacteria, sino por invaginación de la membrana. Las otras opciones no corresponden a la teoría clásica.",
+    "habilidad_requerida": "Para la PAES, es clave conocer las evidencias de la endosimbiosis: las mitocondrias y cloroplastos tienen su propio ADN circular (como bacterias), ribosomas 70S, doble membrana y se dividen por fisión binaria. Repasa los postulados de Lynn Margulis. Preguntas típicas: ¿qué orgánulos tienen su propio ADN? ¿cuál es su origen evolutivo?"
+  },
+  {
+    "pregunta": "¿Cuál de los siguientes organismos NO realiza fotosíntesis oxigénica?",
+    "alternativas": ["Cianobacteria", "Alga verde", "Planta terrestre", "Bacteria púrpura del azufre", "Diatomea"],
+    "respuesta_correcta": "D",
+    "explicacion_respuesta": "Las bacterias púrpuras del azufre realizan fotosíntesis anoxigénica (no producen oxígeno), usando sulfuro de hidrógeno (H2S) como donante de electrones en lugar de agua. Las cianobacterias, algas verdes, plantas y diatomeas realizan fotosíntesis oxigénica (liberan O2).",
+    "habilidad_requerida": "Es importante diferenciar los tipos de fotosíntesis según el donante de electrones y la producción de oxígeno. En la PAES, pueden preguntar qué organismos contribuyeron al aumento del oxígeno atmosférico (cianobacterias). Conoce ejemplos: bacterias verdes del azufre, bacterias púrpuras (anoxigénicas); plantas, algas, cianobacterias (oxigénicas)."
+  },
+  {
+    "pregunta": "Durante la trascripción, la enzima ARN polimerasa sintetiza una hebra de ARN a partir de una plantilla de ADN. ¿Cuál de las siguientes afirmaciones es correcta?",
+    "alternativas": ["Se sintetiza ARN en dirección 3’ → 5’ complementario al ADN", "Se utiliza desoxirribonucleótidos trifosfato", "Se requiere un cebador (primer) para iniciar la síntesis", "La hebra de ADN que se transcribe se llama hebra codificante", "El ARN sintetizado es complementario a la hebra molde de ADN"],
+    "respuesta_correcta": "E",
+    "explicacion_respuesta": "La ARN polimerasa sintetiza ARN en dirección 5’ → 3’, utilizando ribonucleótidos trifosfato (no desoxi-), complementarios a la hebra molde de ADN. No requiere cebador (a diferencia de la ADN polimerasa). La hebra que se transcribe es la hebra molde; la otra hebra es la codificante (tiene la misma secuencia que el ARN, excepto T en lugar de U).",
+    "habilidad_requerida": "Compara trascripción y replicación: en trascripción no hay cebador, se usa ARN polimerasa, se sintetiza ARN a partir de una sola hebra, se produce una cadena corta que luego se procesa. En la PAES, pueden preguntar diferencias clave entre ambos procesos. Memoriza que el ARN es complementario a la hebra molde (no a la codificante)."
+  },
+  {
+    "pregunta": "En un experimento de fotosíntesis, se midió la producción de oxígeno de una planta expuesta a diferentes longitudes de onda. ¿En qué color de luz se espera la menor producción de O2?",
+    "alternativas": ["Rojo", "Azul", "Verde", "Violeta", "Naranja"],
+    "respuesta_correcta": "C",
+    "explicacion_respuesta": "Las plantas reflejan la luz verde (por eso las vemos verdes) y la absorben poco. Por lo tanto, en luz verde la fotosíntesis es mínima, y la producción de oxígeno es la menor. Las longitudes de onda roja y azul son las más absorbidas por los pigmentos fotosintéticos (clorofila a y b, carotenoides), generando mayor actividad fotosintética.",
+    "habilidad_requerida": "Repasa el espectro de absorción de la clorofila: picos en azul (430 nm) y rojo (660 nm), mínima absorción en verde. En la PAES, pueden presentar un gráfico de absorción espectral y preguntar qué color es menos efectivo para la fotosíntesis. También pueden preguntar por qué las hojas son verdes (porque reflejan el verde)."
+  },
+  {
+    "pregunta": "¿Cuál de las siguientes opciones describe correctamente un ejemplo de mecanismo de retroalimentación negativa en el cuerpo humano?",
+    "alternativas": ["La oxitocina estimula las contracciones uterinas, que a su vez aumentan la liberación de oxitocina", "El aumento de glucosa en sangre estimula la liberación de insulina, que disminuye la glucosa", "Una pequeña herida activa factores de coagulación que se amplifican hasta formar un coágulo", "La fiebre estimula la producción de más pirógenos, elevando aún más la temperatura", "La hormona del crecimiento estimula su propia liberación"],
+    "respuesta_correcta": "B",
+    "explicacion_respuesta": "La retroalimentación negativa contrarresta un cambio, manteniendo la homeostasis. Cuando la glucosa aumenta, se libera insulina que la reduce, volviendo al punto de equilibrio. Las otras opciones son ejemplos de retroalimentación positiva (amplifican el cambio): parto (A), coagulación (C), fiebre (D), y secreción de hormona del crecimiento (E).",
+    "habilidad_requerida": "Diferencia claramente retroalimentación positiva (amplifica) y negativa (estabiliza). Ejemplos clásicos: negativa → temperatura corporal, glucosa en sangre, presión arterial; positiva → parto, coagulación, potencial de acción. En la PAES, pueden presentar situaciones y pedir identificar el tipo de retroalimentación."
+  },
+  {
+    "pregunta": "¿Cuál de los siguientes procesos ocurre durante la fase de la profase I de la meiosis?",
+    "alternativas": ["Separación de las cromátidas hermanas", "Alineamiento de los cromosomas en la placa ecuatorial", "Formación del huso mitótico y desintegración de la envoltura nuclear", "Emparejamiento de cromosomas homólogos (sinapsis) y entrecruzamiento (crossing-over)", "División del citoplasma (citocinesis)"],
+    "respuesta_correcta": "D",
+    "explicacion_respuesta": "La profase I es una etapa larga y compleja de la meiosis, en la que los cromosomas homólogos se emparejan (sinapsis), forman bivalentes o tétradas, y ocurre el entrecruzamiento (crossing-over), que intercambia material genético. La separación de cromátidas hermanas (A) ocurre en anafase II; el alineamiento en metafase I (B); la formación del huso y desintegración de la envoltura sucede en profase I, pero la característica distintiva es el crossing-over; la citocinesis (E) ocurre al final de la meiosis I y II.",
+    "habilidad_requerida": "Identifica las etapas de la meiosis y sus eventos clave: Profase I (sinapsis, crossing-over), Metafase I (tétradas en placa), Anafase I (separación de homólogos), Telofase I, y luego la segunda división (similar a mitosis). La PAES puede preguntar en qué etapa se produce la recombinación genética o cómo se genera variabilidad."
+  },
+  {
+    "pregunta": "Un ecosistema puede ser definido como:",
+    "alternativas": ["El conjunto de todos los organismos de una misma especie en un área", "La comunidad de seres vivos de un lugar", "El lugar físico donde vive un organismo", "La interacción entre una comunidad biológica y su ambiente físico", "El flujo de energía y materia a través de los niveles tróficos"],
+    "respuesta_correcta": "D",
+    "explicacion_respuesta": "Un ecosistema incluye tanto los componentes bióticos (comunidad) como los abióticos (factores físicos y químicos), y las interacciones entre ellos. La opción A es población, B es comunidad, C es hábitat, E es una función del ecosistema, no su definición.",
+    "habilidad_requerida": "Define correctamente los niveles ecológicos: individuo → población → comunidad → ecosistema → bioma → biosfera. La PAES puede preguntar ejemplos de cada nivel o la composición de un ecosistema. Es fundamental entender que el ecosistema incluye el medio ambiente y las relaciones."
+  },
+  {
+    "pregunta": "En la fotosíntesis, el agua se oxida y libera electrones. ¿Qué molécula acepta esos electrones en el fotosistema II?",
+    "alternativas": ["NADP+", "Plastoquinona", "Citocromo b6f", "Ferredoxina", "Clorofila P680 oxidada"],
+    "respuesta_correcta": "E",
+    "explicacion_respuesta": "En el fotosistema II, la clorofila P680 dona electrones excitados a una molécula aceptora. La P680 queda oxidada (P680+), y para recuperarse necesita extraer electrones del agua, rompiéndola y liberando O2. El agua dona electrones a la P680+. La plastoquinona (B) acepta electrones después de la feofitina; el citocromo b6f y la ferredoxina participan más adelante; el NADP+ es aceptor final en el fotosistema I.",
+    "habilidad_requerida": "Es útil recordar la cadena de transporte fotosintético: agua → fotosistema II → plastoquinona → complejo citocromo b6f → fotosistema I → ferredoxina → NADP+ → NADPH. El agua es la fuente de electrones, y el O2 es un subproducto. En la PAES, pueden preguntar el rol del agua en la fotosíntesis."
+  },
+  {
+    "pregunta": "Un hombre con sangre tipo A (genotipo IAi) se casa con una mujer con sangre tipo B (genotipo IBi). ¿Cuál es la probabilidad de que su hijo tenga sangre tipo AB?",
+    "alternativas": ["0%", "25%", "50%", "75%", "100%"],
+    "respuesta_correcta": "B",
+    "explicacion_respuesta": "El padre produce gametos IA e i (50% cada uno). La madre produce gametos IB e i (50% cada uno). La combinación que da sangre AB es IAIB. La probabilidad es (1/2) × (1/2) = 1/4 = 25%. Las otras posibilidades: IAi (sangre A, 25%), IBi (sangre B, 25%), ii (sangre O, 25%).",
+    "habilidad_requerida": "Este es un ejercicio clásico de herencia de grupos sanguíneos ABO (alelos múltiples). Practica con cuadros de Punnett. Recuerda que los alelos IA e IB son codominantes y ambos dominan sobre i. En la PAES, pueden preguntar probabilidades o posibles transfusiones."
+  },
+  {
+    "pregunta": "¿Cuál de las siguientes afirmaciones describe mejor la función de los ribosomas?",
+    "alternativas": ["Llevan a cabo la respiración celular", "Almacenan el material genético", "Sintetizan proteínas mediante la traducción del ARNm", "Digieren materiales de desecho", "Realizan la fotosíntesis"],
+    "respuesta_correcta": "C",
+    "explicacion_respuesta": "Los ribosomas son los orgánulos donde se realiza la síntesis de proteínas (traducción). Utilizan la información del ARNm para ensamblar los aminoácidos en una cadena polipeptídica. La respiración celular (A) es en mitocondrias, el almacenamiento del material genético (B) en el núcleo, la digestión (D) en lisosomas, la fotosíntesis (E) en cloroplastos.",
+    "habilidad_requerida": "Ya viste este concepto antes. Refuerza que los ribosomas pueden estar libres en el citosol o adheridos al retículo endoplasmático rugoso. En la PAES, pueden preguntar la función de los ribosomas en la síntesis de proteínas de membrana o de secreción."
+  },
+  {
+    "pregunta": "El antígeno y el anticuerpo son conceptos clave en inmunología. ¿Cuál de las siguientes afirmaciones es correcta?",
+    "alternativas": ["Un anticuerpo es una molécula extraña que desencadena una respuesta inmune", "Un antígeno es una proteína producida por los linfocitos B", "Los anticuerpos se unen específicamente a los antígenos", "Los antígenos destruyen a los patógenos", "Los anticuerpos son células que fagocitan"],
+    "respuesta_correcta": "C",
+    "explicacion_respuesta": "Los anticuerpos (inmunoglobulinas) son proteínas producidas por linfocitos B que reconocen y se unen específicamente a los antígenos (moléculas extrañas). Los antígenos (A) son los que desencadenan la respuesta, no los anticuerpos. Los anticuerpos no son células (E). La destrucción de patógenos puede ocurrir por fagocitosis o activación del complemento, pero no es función directa del antígeno.",
+    "habilidad_requerida": "En la PAES, debes diferenciar antígeno (cualquier molécula que provoca respuesta inmune) de anticuerpo (proteína defensora específica). Asocia 'anti-' (en contra) y 'geno' (que genera). También es útil conocer los tipos de inmunidad (humoral y celular)."
+  },
+  {
+    "pregunta": "¿Cuál de los siguientes procesos ocurre únicamente en células eucariotas y no en procariotas?",
+    "alternativas": ["Replicación del ADN", "Síntesis de proteínas", "Trascripción", "Splicing del ARN (eliminación de intrones)", "Fermentación"],
+    "respuesta_correcta": "D",
+    "explicacion_respuesta": "El splicing (procesamiento del ARN) ocurre en eucariotas para eliminar intrones y unir exones. Los procariotas no tienen intrones ni splicing; su ARNm se traduce directamente. La replicación, trascripción, síntesis de proteínas y fermentación ocurren en ambos tipos celulares.",
+    "habilidad_requerida": "Recuerda que los procariotas tienen genes continuos, mientras que los eucariotas tienen genes fragmentados (intrones/exones). El splicing es un paso clave en la maduración del ARN mensajero eucariota. La PAES puede preguntar qué ocurre en el núcleo antes de que el ARNm salga al citoplasma."
+  },
+  {
+    "pregunta": "En la cadena de transporte de electrones de la fotosíntesis (vía no cíclica), el último aceptor de electrones es:",
+    "alternativas": ["NADP+", "Oxígeno", "Agua", "Plastoquinona", "Citocromo b6f"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "En la fotosíntesis no cíclica, los electrones que salen del fotosistema II pasan por plastoquinona, citocromo b6f, plastocianina, fotosistema I, y finalmente ferredoxina los transfiere a la enzima NADP+ reductasa, que reduce NADP+ a NADPH. El oxígeno (B) no es aceptor en fotosíntesis; el agua (C) es donante; la plastoquinona (D) y citocromo (E) son transportadores intermedios.",
+    "habilidad_requerida": "Es fundamental distinguir el destino de los electrones en fotosíntesis y respiración. En la fotosíntesis no cíclica, el aceptor final es NADP+; en la cíclica, los electrones vuelven al fotosistema I. En la respiración, el aceptor final es O2. En la PAES, pueden preguntar comparaciones."
+  },
+  {
+    "pregunta": "Un agricultor quiere mejorar la fijación de nitrógeno en el suelo para sus cultivos de legumbres. ¿Qué práctica sería más efectiva?",
+    "alternativas": ["Inocular las semillas con bacterias del género Rhizobium", "Agregar nitratos al suelo", "Aumentar la aireación del suelo", "Reducir el pH del suelo a 4", "Añadir hongos micorrízicos"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Las legumbres forman simbiosis con bacterias fijadoras de nitrógeno como Rhizobium. Inocular las semillas con estas bacterias aumenta la formación de nódulos y la fijación de N2. Agregar nitratos (B) suprime la fijación simbiótica. La aireación ayuda pero no es específica; el pH ácido (D) perjudica la simbiosis; los hongos micorrízicos (E) mejoran la absorción de fósforo, no nitrógeno.",
+    "habilidad_requerida": "Aplica conceptos de ciclos biogeoquímicos en agricultura. Conoce la simbiosis entre legumbres y Rhizobium. En la PAES, pueden preguntar sobre prácticas sustentables: rotación de cultivos (leguminosas fijan nitrógeno), uso de biofertilizantes."
+  },
+  {
+    "pregunta": "El proceso por el cual las células convierten la glucosa en energía utilizable en ausencia de oxígeno se denomina:",
+    "alternativas": ["Respiración aeróbica", "Fermentación", "Fotosíntesis", "Quimiosíntesis", "Ciclo de Krebs"],
+    "respuesta_correcta": "B",
+    "explicacion_respuesta": "La fermentación es un proceso anaeróbico que degrada glucosa a productos como ácido láctico o etanol, generando solo 2 ATP netos. La respiración aeróbica (A) requiere oxígeno; la fotosíntesis (C) y quimiosíntesis (D) son procesos anabólicos; el ciclo de Krebs (E) es parte de la respiración aeróbica y requiere oxígeno indirectamente.",
+    "habilidad_requerida": "Ya hemos visto fermentación; ahora refuerza que ocurre en ausencia de oxígeno y el rendimiento es bajo. Ejemplos: fermentación láctica (glóbulos rojos, músculo en ejercicio intenso), alcohólica (levaduras). En la PAES, pueden preguntar sobre aplicaciones (pan, cerveza, yogurt)."
+  },
+  {
+    "pregunta": "En la mitosis, ¿qué estructura se encarga de organizar el huso mitótico y se origina a partir del centro organizador de microtúbulos?",
+    "alternativas": ["Centrómero", "Cinetocoro", "Centríolo", "Telómero", "Nucleolo"],
+    "respuesta_correcta": "C",
+    "explicacion_respuesta": "El centríolo (en células animales) es parte del centrosoma y organiza los microtúbulos del huso mitótico. El centrómero (A) es la región del cromosoma donde se unen las cromátidas; el cinetocoro (B) es la estructura proteica en el centrómero; los telómeros (D) son extremos de los cromosomas; el nucleolo (E) está dentro del núcleo.",
+    "habilidad_requerida": "Revisa las estructuras del cromosoma y la división celular. Los centríolos no existen en plantas superiores, pero la organización del huso sigue ocurriendo sin ellos (centrosoma difuso). En la PAES, pueden preguntar qué ocurre si se inhibe la formación del huso (los cromosomas no se separan)."
+  },
+  {
+    "pregunta": "La presión de turgencia es importante para las plantas porque:",
+    "alternativas": ["Permite el intercambio de gases", "Es la fuerza que impulsa la fotosíntesis", "Ayuda a mantener la rigidez y el porte de la planta", "Regula la apertura de los estomas", "Facilita la absorción de agua por la raíz"],
+    "respuesta_correcta": "C",
+    "explicacion_respuesta": "La turgencia es la presión ejercida por el agua dentro de la vacuola contra la pared celular, que da soporte a la planta (rigidez). Cuando la planta pierde agua (marchitez), la turgencia disminuye. La apertura estomatal (D) está regulada por células oclusivas que también cambian de turgencia, pero la pregunta se refiere al rol principal de la turgencia en el sostén de la planta.",
+    "habilidad_requerida": "Relaciona turgencia con el movimiento de agua por ósmosis. Las plantas mantienen su forma gracias a la turgencia. En condiciones de sequía, se marchitan porque las células pierden agua. En la PAES, pueden preguntar sobre la plasmólisis y la importancia de la vacuola central."
+  },
+  {
+    "pregunta": "Un biólogo quiere estudiar el flujo de energía a través de un ecosistema. ¿Qué unidad de medida sería la más adecuada para expresar la energía almacenada en la biomasa?",
+    "alternativas": ["Gramos de carbono por metro cuadrado (g C/m²)", "Kilogramos por hectárea (kg/ha)", "Calorías por centímetro cúbico (cal/cm³)", "Joules por metro cuadrado (J/m²)", "Número de individuos por hectárea (ind/ha)"],
+    "respuesta_correcta": "D",
+    "explicacion_respuesta": "La energía se mide en julios (o calorías). Para estudiar el flujo de energía (productividad primaria, secundaria), se usa energía por área (J/m² o kJ/m²). Los gramos de carbono (A) son una medida de biomasa (contenido de carbono), pero no directamente energía, aunque se puede convertir. La opción más directa es J/m². Las otras no son unidades de energía.",
+    "habilidad_requerida": "En ecología, la productividad primaria neta se expresa en energía (J/m²/año) o en biomasa (g/m²/año). La PAES puede preguntar sobre pirámides energéticas y por qué la energía disminuye en cada nivel trófico. Recuerda que solo alrededor del 10% de la energía se transfiere al siguiente nivel."
+  },
+  {
+    "pregunta": "¿Cuál de las siguientes opciones corresponde a un carbohidrato de reserva en animales?",
+    "alternativas": ["Almidón", "Celulosa", "Glucógeno", "Quitina", "Lactosa"],
+    "respuesta_correcta": "C",
+    "explicacion_respuesta": "El glucógeno es el polisacárido de reserva energética en animales y hongos. Se almacena principalmente en hígado y músculo. El almidón (A) es la reserva en plantas; la celulosa (B) es estructural vegetal; la quitina (D) forma el exoesqueleto de artrópodos; la lactosa (E) es un disacárido presente en la leche.",
+    "habilidad_requerida": "Asocia cada polisacárido con su función y origen: almidón (plantas, reserva), glucógeno (animales, reserva), celulosa (plantas, estructural), quitina (hongos y artrópodos, estructural). En la PAES, pueden preguntar sobre la digestión de estos carbohidratos (celulosa no digerible por humanos)."
+  },
+  {
+    "pregunta": "¿Cuál de los siguientes factores NO afecta la velocidad de una reacción enzimática?",
+    "alternativas": ["Temperatura", "pH", "Concentración de sustrato", "Concentración de enzima", "Presión atmosférica"],
+    "respuesta_correcta": "E",
+    "explicacion_respuesta": "La presión atmosférica no suele afectar significativamente la actividad enzimática en condiciones normales. La temperatura, pH, concentración de sustrato y de enzima sí alteran la velocidad de reacción (temperatura óptima, pH óptimo, saturación por sustrato).",
+    "habilidad_requerida": "Recuerda los factores que afectan la catálisis enzimática: temperatura (desnaturalización por calor), pH (desnaturalización), concentración de sustrato (hasta saturación), concentración de enzima (proporcional). En la PAES, pueden mostrar gráficos de actividad enzimática en función de estos factores."
+  },
+  {
+    "pregunta": "Durante la fecundación en humanos, el espermatozoide y el óvulo se fusionan para formar un cigoto. ¿Cuál es el número de cromosomas en el cigoto humano normal?",
+    "alternativas": ["23", "46", "24", "48", "22"],
+    "respuesta_correcta": "B",
+    "explicacion_respuesta": "El cigoto humano tiene 46 cromosomas (23 pares), resultado de la unión de 23 cromosomas del espermatozoide (haploide) y 23 del óvulo (haploide). Es diploide. Las otras opciones corresponden a gametos (23) o anormalidades.",
+    "habilidad_requerida": "Repasa la meiosis y la fecundación. La condición diploide (2n) es la normal en células somáticas humanas (46 cromosomas). Conocer que el gameto es n (23) es básico. En la PAES, pueden preguntar sobre aneuploidías (síndrome de Down: 47 cromosomas)."
+  },
+  {
+    "pregunta": "¿Cuál de los siguientes órganos del sistema endocrino produce hormonas que regulan el metabolismo del calcio?",
+    "alternativas": ["Hipotálamo", "Hipófisis", "Tiroides", "Paratiroides", "Páncreas"],
+    "respuesta_correcta": "D",
+    "explicacion_respuesta": "Las glándulas paratiroides producen la hormona paratiroidea (PTH), que aumenta los niveles de calcio en sangre. La tiroides produce calcitonina, que disminuye el calcio, pero el principal regulador es la PTH (paratiroides). El hipotálamo e hipófisis regulan otras hormonas; el páncreas regula glucosa.",
+    "habilidad_requerida": "Asocia glándulas con hormonas específicas y funciones. Paratiroides → PTH → calcio. Tiroides → calcitonina (también calcio, pero efecto opuesto). En la PAES, pueden preguntar sobre enfermedades: hipoparatiroidismo (bajo calcio, tetania), hiperparatiroidismo (alto calcio, cálculos renales)."
+  },
+  {
+    "pregunta": "Un estudiante quiere observar la división celular en una raíz de cebolla. ¿Qué fase del ciclo celular sería más fácil de identificar al microscopio por la condensación de los cromosomas?",
+    "alternativas": ["Interfase", "Profase", "Metafase", "Anafase", "Telofase"],
+    "respuesta_correcta": "B",
+    "explicacion_respuesta": "En profase, los cromosomas se condensan y se hacen visibles como filamentos gruesos. En metafase están alineados, en anafase se separan, en telofase se descondensan. La interfase no muestra cromosomas individualizados.",
+    "habilidad_requerida": "Esta pregunta evalúa el reconocimiento de las fases de la mitosis. La profase es la etapa donde los cromosomas se hacen visibles por primera vez. En la PAES, pueden dar imágenes de células en distintas fases y pedir identificarlas. Es útil recordar las características visuales de cada fase."
+  },
+  {
+    "pregunta": "La vasopresina (hormona antidiurética) es secretada por:",
+    "alternativas": ["Hipófisis posterior (neurohipófisis)", "Hipófisis anterior (adenohipófisis)", "Corteza suprarrenal", "Médula suprarrenal", "Tiroides"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "La vasopresina (ADH) se sintetiza en el hipotálamo y se almacena en la hipófisis posterior (neurohipófisis), desde donde se libera. La adenohipófisis produce otras hormonas (GH, TSH, ACTH, etc.). La corteza suprarrenal produce corticosteroides; la médula suprarrenal produce adrenalina; la tiroides produce tiroxina.",
+    "habilidad_requerida": "Conoce la división de la hipófisis: posterior (neurohipófisis): oxitocina y ADH; anterior (adenohipófisis): hormonas tróficas. En la PAES, pueden preguntar las funciones de cada una. La ADH regula la reabsorción de agua en el riñón; su deficiencia causa diabetes insípida."
+  },
+  {
+    "pregunta": "¿Cuál de los siguientes procesos ocurre en el estroma del cloroplasto?",
+    "alternativas": ["Fase lumínica (fotosíntesis)", "Ciclo de Calvin", "Fosforilación oxidativa", "Transporte de electrones", "Síntesis de clorofila"],
+    "respuesta_correcta": "B",
+    "explicacion_respuesta": "El Ciclo de Calvin (fase oscura) ocurre en el estroma, donde se fija el CO2 para producir glucosa utilizando ATP y NADPH generados en la fase lumínica. La fase lumínica (A) ocurre en los tilacoides; la fosforilación oxidativa (C) es mitocondrial; el transporte de electrones fotosintético (D) es en tilacoides; la síntesis de clorofila (E) involucra varias ubicaciones, no es el proceso principal del estroma.",
+    "habilidad_requerida": "Ya viste esta diferenciación: tilacoides → reacciones lumínicas, estroma → ciclo de Calvin. Refuerza que el estroma contiene las enzimas necesarias para fijar CO2 (RuBisCO). En la PAES, pueden preguntar dónde se consume ATP y NADPH (estroma)."
+  },
+  {
+    "pregunta": "En la herencia ligada al sexo (cromosoma X), un hombre con daltonismo (recesivo) se casa con una mujer portadora (heterocigota normal). ¿Cuál es la probabilidad de que un hijo varón sea daltónico?",
+    "alternativas": ["0%", "25%", "50%", "75%", "100%"],
+    "respuesta_correcta": "C",
+    "explicacion_respuesta": "El hombre daltónico tiene genotipo XdY (donde d es el alelo recesivo). La mujer portadora tiene XDXd. Para los hijos varones, heredan el cromosoma Y del padre y el X de la madre. La madre puede pasar XD o Xd con 50% de probabilidad. Si pasa Xd, el hijo es daltónico (XdY). Por lo tanto, la probabilidad es 50%. Las hijas tienen otro patrón (portadoras o no).",
+    "habilidad_requerida": "Herencia ligada al sexo: varones expresan el alelo recesivo porque solo tienen un X. Practica con cuadros de Punnett para caracteres recesivos ligados al X (daltonismo, hemofilia). En la PAES, pueden preguntar probabilidades para hijos varones y mujeres."
+  },
+  {
+    "pregunta": "¿Qué tipo de defensa inmunitaria está mediada por anticuerpos producidos por linfocitos B?",
+    "alternativas": ["Inmunidad celular", "Inmunidad humoral", "Inmunidad innata", "Barreras físicas", "Inflamación"],
+    "respuesta_correcta": "B",
+    "explicacion_respuesta": "La inmunidad humoral es mediada por anticuerpos solubles en los fluidos corporales (humores), producidos por linfocitos B. La inmunidad celular (A) es mediada por linfocitos T citotóxicos. La inmunidad innata (C) incluye barreras, fagocitos, inflamación; no es específica. Las barreras físicas (D) y la inflamación (E) son parte de la inmunidad innata.",
+    "habilidad_requerida": "Diferencia inmunidad humoral (anticuerpos, células B) y celular (linfocitos T). La PAES puede preguntar sobre tipos de inmunidad y ejemplos (vacunas, infecciones). Recuerda que la inmunidad adaptativa (específica) se divide en humoral y celular."
+  },
+  {
+    "pregunta": "Un ecosistema terrestre con baja precipitación (<250 mm anuales), plantas xerófitas y alta amplitud térmica se clasifica como:",
+    "alternativas": ["Selva tropical", "Desierto", "Sabana", "Bosque templado", "Tundra"],
+    "respuesta_correcta": "B",
+    "explicacion_respuesta": "El desierto se caracteriza por precipitaciones muy bajas (menos de 250 mm/año), plantas adaptadas a la sequía (xerófitas) y grandes variaciones de temperatura entre día y noche. La selva tropical tiene alta precipitación; la sabana, precipitaciones estacionales; el bosque templado, precipitaciones moderadas; la tundra, temperaturas muy bajas y permafrost.",
+    "habilidad_requerida": "Reconoce los biomas terrestres según clima y vegetación. En la PAES, pueden describir características y preguntar el bioma. También pueden comparar adaptaciones de plantas xerófitas (cactus, suculentas) y de animales del desierto."
+  },
+  {
+    "pregunta": "¿Cuál de las siguientes moléculas es un ejemplo de un lípido saponificable?",
+    "alternativas": ["Colesterol", "Triglicérido", "Vitamina A", "Hormona esteroide", "Carotenoide"],
+    "respuesta_correcta": "B",
+    "explicacion_respuesta": "Los lípidos saponificables contienen ácidos grasos y pueden formar jabones (saponificación). Los triglicéridos (grasas y aceites) son saponificables. El colesterol, las hormonas esteroides, las vitaminas liposolubles como A y los carotenoides son lípidos insaponificables (no tienen ácidos grasos).",
+    "habilidad_requerida": "Clasifica los lípidos: saponificables (ácidos grasos + alcohol) como triglicéridos, fosfolípidos; insaponificables (esteroides, terpenos). En la PAES, pueden preguntar diferencias estructurales o funcionales. Los triglicéridos son reserva energética."
+  },
+  {
+    "pregunta": "En el proceso de traducción, los aminoácidos son transportados al ribosoma por moléculas de:",
+    "alternativas": ["ARNm", "ARNt", "ARNr", "ADN", "Proteínas transportadoras"],
+    "respuesta_correcta": "B",
+    "explicacion_respuesta": "El ARN de transferencia (ARNt) es el encargado de llevar los aminoácidos específicos al ribosoma, reconociendo los codones del ARNm mediante su anticodón. El ARNm (A) lleva el mensaje; el ARNr (C) forma parte del ribosoma; el ADN (D) es el molde original; las proteínas transportadoras (E) no son las moléculas de ARNt.",
+    "habilidad_requerida": "Refuerza los roles de los ARN: ARNm → mensajero (copia el ADN), ARNr → ribosómico (forma el ribosoma), ARNt → transferencia (trae aminoácidos). En la PAES, pueden preguntar qué ocurre si falta algún tipo de ARN."
+  },
+  {
+    "pregunta": "¿Cuál de las siguientes opciones describe un efecto directo de la hormona insulina?",
+    "alternativas": ["Aumento de la glucemia (glucosa en sangre)", "Promoción de la entrada de glucosa a las células", "Conversión de glucógeno en glucosa", "Liberación de glucosa desde el hígado", "Estimulación de la gluconeogénesis"],
+    "respuesta_correcta": "B",
+    "explicacion_respuesta": "La insulina facilita la entrada de glucosa a las células (especialmente músculo y tejido adiposo), disminuyendo la glucemia. También promueve la síntesis de glucógeno (no su degradación). Las otras opciones describen efectos del glucagón o de la falta de insulina.",
+    "habilidad_requerida": "Contrasta insulina y glucagón: insulina baja la glucosa; glucagón la eleva. En diabetes, hay deficiencia de insulina (tipo 1) o resistencia (tipo 2). La PAES puede preguntar sobre mecanismos de regulación de la glucosa y enfermedades relacionadas."
+  },
+  {
+    "pregunta": "En una célula eucariota, la síntesis de proteínas destinadas a la secreción ocurre en:",
+    "alternativas": ["Ribosomas libres en el citosol", "Ribosomas adheridos al retículo endoplasmático rugoso", "El complejo de Golgi", "Las mitocondrias", "El núcleo"],
+    "respuesta_correcta": "B",
+    "explicacion_respuesta": "Las proteínas de secreción se sintetizan en ribosomas adheridos al RER, luego pasan al Golgi para su modificación y empaquetamiento en vesículas secretoras. Los ribosomas libres sintetizan proteínas citoplasmáticas. El Golgi modifica pero no sintetiza; las mitocondrias tienen su propia síntesis; el núcleo alberga el ADN pero no sintetiza proteínas.",
+    "habilidad_requerida": "Visualiza la vía secretora: RER → vesícula → Golgi → vesícula → membrana o exterior. En la PAES, pueden preguntar la ubicación de la síntesis de proteínas de membrana o lisosomales, que también siguen esta ruta."
+  },
+  {
+    "pregunta": "¿Cuál de los siguientes compuestos es un producto de la fijación del nitrógeno atmosférico por bacterias?",
+    "alternativas": ["Nitrato (NO3-)", "Nitrito (NO2-)", "Amonio (NH4+)", "Óxido nitroso (N2O)", "Amoníaco (NH3)"],
+    "respuesta_correcta": "C",
+    "explicacion_respuesta": "La fijación biológica del nitrógeno (realizada por bacterias como Rhizobium o Azotobacter) convierte el N2 atmosférico en amonio (NH4+), que es la forma asimilable por las plantas. El amoniaco (NH3) es la forma no ionizada, pero en solución acuosa se protona a NH4+. Los nitratos y nitritos son productos de la nitrificación, no de la fijación.",
+    "habilidad_requerida": "En el ciclo del nitrógeno, los pasos clave son: fijación (N2 → NH4+), nitrificación (NH4+ → NO2- → NO3-), asimilación (plantas toman NH4+ o NO3-), desnitrificación (NO3- → N2). La PAES puede preguntar qué proceso realizan las bacterias simbióticas."
+  },
+  {
+    "pregunta": "¿Cuál de las siguientes estructuras NO está presente en una neurona típica?",
+    "alternativas": ["Axón", "Dendritas", "Cuerpo celular (soma)", "Vaina de mielina", "Centríolos"],
+    "respuesta_correcta": "E",
+    "explicacion_respuesta": "Las neuronas son células altamente diferenciadas que generalmente carecen de centríolos, por lo que no se dividen. Tienen axón, dendritas, cuerpo celular y pueden tener vaina de mielina (producida por oligodendrocitos o células de Schwann). Los centríolos están presentes en células que se dividen.",
+    "habilidad_requerida": "Asocia la ausencia de centríolos con la falta de división celular en neuronas maduras. Esto es importante para entender por qué las lesiones neuronales son irreversibles. En la PAES, pueden preguntar sobre las partes de la neurona y sus funciones, o sobre células gliales que sí se dividen."
+  },
+  {
+    "pregunta": "En la síntesis de proteínas, la adición de un grupo fosfato a una enzima puede activarla o desactivarla. Este proceso se denomina:",
+    "alternativas": ["Fosforilación", "Desfosforilación", "Glicosilación", "Metilación", "Ubiquitinación"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "La fosforilación es la adición reversible de un grupo fosfato por acción de quinasas, y es un mecanismo común de regulación enzimática. La desfosforilación (B) es la remoción. La glicosilación (C) añade carbohidratos; la metilación (D) añade grupos metilo; la ubiquitinación (E) marca proteínas para degradación.",
+    "habilidad_requerida": "La fosforilación es clave en muchas vías de señalización celular (cascadas de quinasas). En la PAES, pueden preguntar mecanismos de regulación postraduccional o cómo ciertas toxinas afectan estos procesos. Recuerda que el ATP dona el fosfato."
+  },
+  {
+    "pregunta": "Una planta con flores rojas (genotipo RR) se cruza con una de flores blancas (genotipo rr). En la F1, todas las flores son rosadas. Este patrón de herencia se denomina:",
+    "alternativas": ["Dominancia completa", "Codominancia", "Dominancia incompleta", "Herencia ligada al sexo", "Epistasia"],
+    "respuesta_correcta": "C",
+    "explicacion_respuesta": "En la dominancia incompleta, el fenotipo heterocigoto (Rr) es intermedio entre los dos homocigotos (RR rojo, rr blanco → Rr rosado). En codominancia (B) ambos alelos se expresan simultáneamente (ejemplo: sangre tipo AB). En dominancia completa (A) el heterocigoto es igual a uno de los homocigotos.",
+    "habilidad_requerida": "Distingue patrones de herencia no mendelianos: dominancia incompleta (mezcla), codominancia (ambos se ven), alelos múltiples (ABO), pleiotropía, etc. En la PAES, pueden preguntar proporciones fenotípicas en F2 (1:2:1 en incompleta, no 3:1)."
+  },
+  {
+    "pregunta": "¿Cuál de las siguientes es una función del sistema tegumentario (piel)?",
+    "alternativas": ["Producir vitaminas liposolubles", "Almacenar calcio", "Protección contra agentes externos", "Regular el pH sanguíneo", "Producir glóbulos rojos"],
+    "respuesta_correcta": "C",
+    "explicacion_respuesta": "La piel actúa como barrera física, química y biológica contra patógenos, radiación UV, deshidratación, etc. Produce vitamina D (no es liposoluble? Sí, pero no es la principal función). El almacenamiento de calcio (B) es óseo; la regulación del pH sanguíneo (D) es renal y respiratoria; la producción de glóbulos rojos (E) es en médula ósea.",
+    "habilidad_requerida": "Conoce las funciones de la piel: protección, termorregulación, sensorial, excreción (sudor), síntesis de vitamina D. En la PAES, pueden preguntar cómo se relaciona la piel con el sistema inmune (barrera) o cómo se produce la vitamina D por exposición solar."
+  },
+  {
+    "pregunta": "El tejido que recubre el interior del corazón se denomina:",
+    "alternativas": ["Miocardio", "Endocardio", "Pericardio", "Epicardio", "Pleura"],
+    "respuesta_correcta": "B",
+    "explicacion_respuesta": "El endocardio es la capa interna del corazón que recubre las cavidades y válvulas cardíacas. El miocardio (A) es el músculo cardíaco; el pericardio (C) es el saco que envuelve el corazón; el epicardio (D) es la capa más externa (parte del pericardio visceral); la pleura (E) recubre los pulmones.",
+    "habilidad_requerida": "Capas del corazón: endocardio (interior), miocardio (medio, grueso), epicardio (exterior, parte del pericardio). Conoce también las funciones de cada capa. En la PAES, pueden preguntar sobre enfermedades como la endocarditis (inflamación del endocardio)."
+  },
+  {
+    "pregunta": "En la cadena trófica: pasto → conejo → zorro → puma. ¿Cuál es el nivel trófico del zorro?",
+    "alternativas": ["Productor", "Consumidor primario", "Consumidor secundario", "Consumidor terciario", "Descomponedor"],
+    "respuesta_correcta": "C",
+    "explicacion_respuesta": "El zorro se alimenta del conejo (consumidor primario), por lo tanto es un consumidor secundario (se ubica en el tercer nivel trófico: productor → consumidor primario → consumidor secundario). El puma sería consumidor terciario (cuarto nivel).",
+    "habilidad_requerida": "Jerarquiza los niveles tróficos: productores (1°), consumidores primarios (herbívoros, 2°), secundarios (carnívoros que comen herbívoros, 3°), terciarios (superdepredadores, 4°). En la PAES, pueden dar una red alimentaria y preguntar el nivel de una especie."
+  },
+  {
+    "pregunta": "¿Cuál de los siguientes orgánulos tiene su propio ADN y ribosomas, lo que apoya la teoría endosimbiótica?",
+    "alternativas": ["Núcleo", "Retículo endoplasmático", "Complejo de Golgi", "Mitocondria", "Lisosoma"],
+    "respuesta_correcta": "D",
+    "explicacion_respuesta": "Tanto las mitocondrias como los cloroplastos poseen su propio ADN circular y ribosomas 70S, similares a los bacterianos. Esta es una de las principales evidencias de la teoría endosimbiótica. El núcleo tiene ADN lineal, pero no es de origen bacteriano; los demás orgánulos carecen de ADN.",
+    "habilidad_requerida": "Ya aparece este concepto. Refuerza que la endosimbiosis explica el origen de mitocondrias y cloroplastos. En la PAES, pueden preguntar qué evidencias apoyan esta teoría (ADN circular, doble membrana, reproducción independiente)."
+  },
+  {
+    "pregunta": "Un paciente tiene dificultad para regular su temperatura corporal y su sudoración. ¿Qué glándula del sistema endocrino podría estar afectada?",
+    "alternativas": ["Tiroides", "Hipófisis", "Hipotálamo", "Páncreas", "Suprarrenal"],
+    "respuesta_correcta": "C",
+    "explicacion_respuesta": "El hipotálamo contiene el centro termorregulador y regula la sudoración y la vasodilatación/vasoconstricción. Además controla la liberación de hormonas de la hipófisis, pero la termorregulación es una función hipotalámica directa. Las otras glándulas no tienen control primario de la temperatura corporal (aunque la tiroides afecta el metabolismo y la producción de calor, la regulación central es hipotalámica).",
+    "habilidad_requerida": "El hipotálamo es el principal integrador de la homeostasis (temperatura, sed, hambre). La PAES puede preguntar qué parte del sistema nervioso o endocrino controla cada función homeostática. También pueden preguntar sobre la fiebre como elevación del punto de ajuste hipotalámico."
+  },
+  {
+    "pregunta": "¿Cuál de los siguientes microorganismos es responsable de la fermentación que produce etanol en la industria cervecera?",
+    "alternativas": ["Saccharomyces cerevisiae (levadura)", "Escherichia coli (bacteria)", "Lactobacillus (bacteria láctica)", "Penicillium (hongo)", "Acetobacter (bacteria acética)"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "La levadura Saccharomyces cerevisiae es el microorganismo utilizado tradicionalmente en la producción de cerveza y pan, ya que realiza fermentación alcohólica (glucosa → etanol + CO2). Las bacterias lácticas producen ácido láctico, las acéticas producen ácido acético, E. coli no es típica en cerveza, Penicillium produce penicilina.",
+    "habilidad_requerida": "Aplica el conocimiento de fermentación en procesos industriales y cotidianos. En la PAES, pueden preguntar productos de fermentación y los organismos involucrados. También pueden relacionar con la producción de alimentos (yogur, queso, pan, vino)."
+  },
+  {
+    "pregunta": "¿Qué estructura se forma en la profase I de la meiosis y es visible al microscopio como un par de cromosomas homólogos apareados?",
+    "alternativas": ["Cromátida", "Tétrada o bivalente", "Cinetocoro", "Centrómero", "Nucleolo"],
+    "respuesta_correcta": "B",
+    "explicacion_respuesta": "En profase I, los cromosomas homólogos se emparejan (sinapsis) formando una tétrada (cuatro cromátidas) o bivalente (dos cromosomas). Esta estructura es visible al microscopio. Las cromátidas son las subunidades de cada cromosoma, el cinetocoro está en el centrómero, el nucleolo es una estructura nuclear.",
+    "habilidad_requerida": "Esta pregunta profundiza en la meiosis I. La tétrada es característica de la profase I y permite el entrecruzamiento. En la PAES, pueden mostrar una imagen de la profase I y pedir identificar los bivalentes. También pueden preguntar en qué fase se produce el crossing-over."
+  },
+  {
+    "pregunta": "Un ecosistema con alta biodiversidad tiende a ser más resiliente. ¿Qué significa resiliencia ecológica?",
+    "alternativas": ["La capacidad de un ecosistema para producir biomasa", "La velocidad con que un ecosistema se recupera tras una perturbación", "El número de especies por unidad de área", "La eficiencia en el uso de la energía", "La resistencia a cambios externos"],
+    "respuesta_correcta": "B",
+    "explicacion_respuesta": "La resiliencia ecológica es la capacidad de un ecosistema para recuperarse y volver a su estado original después de una perturbación (incendio, tala, sequía). La resistencia (E) es la capacidad de resistir cambios sin alterarse. Las otras opciones se refieren a productividad, riqueza específica o eficiencia.",
+    "habilidad_requerida": "Conceptos clave en ecología: resiliencia (recuperación), resistencia (oposición al cambio), biodiversidad (variedad de especies). En la PAES, pueden preguntar por qué ecosistemas con alta biodiversidad son más resilientes (mayor redundancia funcional)."
+  },
+  {
+    "pregunta": "¿Cuál de las siguientes vitaminas es liposoluble?",
+    "alternativas": ["Vitamina C (ácido ascórbico)", "Vitamina B12", "Vitamina B1 (tiamina)", "Vitamina D", "Vitamina B3 (niacina)"],
+    "respuesta_correcta": "D",
+    "explicacion_respuesta": "Las vitaminas liposolubles son A, D, E, K (se almacenan en el tejido adiposo). Las hidrosolubles son el complejo B y la C. La vitamina D es liposoluble; se sintetiza en la piel con exposición solar y es esencial para la absorción de calcio.",
+    "habilidad_requerida": "Clasifica vitaminas por solubilidad: liposolubles (A, D, E, K) e hidrosolubles (B, C). La PAES puede preguntar sobre deficiencias (raquitismo por falta de vitamina D, escorbuto por falta de vitamina C) o funciones. Memoriza los nombres."
+  },
+  {
+    "pregunta": "La contracción muscular se produce por el deslizamiento de los filamentos de actina y miosina. ¿Qué ion es fundamental para desencadenar este proceso?",
+    "alternativas": ["Sodio (Na+)", "Potasio (K+)", "Calcio (Ca2+)", "Magnesio (Mg2+)", "Cloro (Cl-)"],
+    "respuesta_correcta": "C",
+    "explicacion_respuesta": "El calcio se libera del retículo sarcoplasmático cuando la neurona estimula la fibra muscular. El Ca2+ se une a la troponina, desplazando la tropomiosina y permitiendo que la miosina se una a la actina, iniciando el deslizamiento. El sodio y potasio participan en el potencial de acción, pero el disparador directo es el calcio.",
+    "habilidad_requerida": "Recuerda el papel del calcio en la contracción muscular y en otros procesos celulares (exocitosis, apoptosis). En la PAES, pueden preguntar qué sucede si el calcio está bajo (debilidad muscular, tetania). Relaciona con el retículo sarcoplasmático en músculo estriado."
+  },
+  {
+    "pregunta": "En una célula eucariota, la degradación de proteínas marcadas con ubiquitina ocurre en:",
+    "alternativas": ["Lisosoma", "Proteasoma", "Peroxisoma", "Mitocondria", "Núcleo"],
+    "respuesta_correcta": "B",
+    "explicacion_respuesta": "El proteasoma es un complejo proteico que degrada proteínas ubiquitinadas. Los lisosomas degradan materiales por fagocitosis o autofagia, pero no requieren ubiquitina. Los peroxisomas degradan peróxidos; las mitocondrias son centrales energéticas; el núcleo contiene ADN.",
+    "habilidad_requerida": "La ubiquitina-proteasoma es un sistema de control de calidad de proteínas. La PAES puede preguntar sobre mecanismos de degradación selectiva o cómo se regulan los niveles de proteínas en la célula. También relacionar con enfermedades por mal plegamiento (Parkinson, Alzheimer)."
+  },
+  {
+    "pregunta": "¿Cuál de las siguientes opciones es una función de los riñones en el sistema excretor humano?",
+    "alternativas": ["Producir urea", "Filtrar la sangre y eliminar desechos nitrogenados", "Almacenar orina", "Sintetizar proteínas plasmáticas", "Regular la presión arterial solo"],
+    "respuesta_correcta": "B",
+    "explicacion_respuesta": "Los riñones filtran la sangre, eliminan desechos (urea, creatinina, exceso de iones) y regulan el volumen y composición de los líquidos corporales. También producen orina. La urea la produce el hígado (A); el almacenamiento de orina es de la vejiga (C); las proteínas plasmáticas las sintetiza el hígado; la regulación de la presión es una función renal (renina), pero no la única.",
+    "habilidad_requerida": "Conoce las funciones del riñón: filtración, reabsorción, secreción, regulación de agua y electrolitos, equilibrio ácido-base, producción de hormonas (eritropoyetina, renina). En la PAES, pueden preguntar sobre la unidad funcional (nefrona) y sus partes."
+  },
+  {
+    "pregunta": "En una cadena alimentaria, la cantidad de energía disponible disminuye en cada nivel trófico. ¿A qué se debe principalmente esta pérdida?",
+    "alternativas": ["A la acumulación de materia orgánica no consumida", "A que la energía se libera como calor en la respiración celular", "A la limitación de la fotosíntesis", "A la inmigración de especies", "A la ineficiencia en la digestión de los descomponedores"],
+    "respuesta_correcta": "B",
+    "explicacion_respuesta": "La mayor parte de la energía que consume un organismo se usa en su metabolismo (respiración celular) y se libera como calor. Solo una pequeña fracción (alrededor del 10%) se convierte en biomasa y está disponible para el siguiente nivel trófico. Las otras opciones son factores menores o incorrectos.",
+    "habilidad_requerida": "Comprende el flujo de energía y la ley del 10%. En la PAES, pueden preguntar por qué las pirámides de energía tienen forma de escalera y por qué las cadenas rara vez superan 4-5 eslabones. También relacionar con la eficiencia ecológica."
+  },
+  {
+    "pregunta": "¿Qué molécula es la responsable del transporte de oxígeno en la sangre de los vertebrados?",
+    "alternativas": ["Hemoglobina", "Mioglobina", "Hemocianina", "Albumina", "Fibrinógeno"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "La hemoglobina (en glóbulos rojos) transporta el oxígeno de los pulmones a los tejidos. La mioglobina (B) almacena oxígeno en el músculo; la hemocianina (C) es el pigmento respiratorio de algunos invertebrados (moluscos, artrópodos); la albúmina (D) transporta hormonas y ácidos grasos; el fibrinógeno (E) participa en la coagulación.",
+    "habilidad_requerida": "Conoce los pigmentos respiratorios: hemoglobina (hierro, roja), hemocianina (cobre, azul). La PAES puede preguntar adaptaciones de los glóbulos rojos (sin núcleo, forma bicóncava) para el transporte de oxígeno. También la afinidad por O2 y CO2."
+  }
+]

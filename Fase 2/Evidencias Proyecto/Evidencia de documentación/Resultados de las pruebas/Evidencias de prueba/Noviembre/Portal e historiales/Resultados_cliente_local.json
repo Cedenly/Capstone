@@ -1,0 +1,76 @@
+{
+  "checkedAt": "2026-11-17T14:34:00.572Z",
+  "revision": "student main dec2868bbc38cd93d883b836d722c9211d626240",
+  "scope": "Código cliente real ejecutado en VM con fetch, almacenamiento y navegación ficticios. Funciones de Plan extraídas sin cambiar su cuerpo. Sin React, navegador, red, Stripe ni Firestore reales. No acredita integración ni datos reales.",
+  "sources": {
+    "clientSha256": "1d627b626813b6e39fa41aff9a1d6255378ccb90e532ae2b4899827f33ce6d04",
+    "planSha256": "4bad067e5e95d5c1ecbcc437eac8490924d9340edf8b80a2f829c7d2dfc54944"
+  },
+  "results": [
+    {
+      "id": "C01",
+      "description": "Identidad y cuerpo de contratación: Bearer, JSON y sin cookies",
+      "result": "aprobado"
+    },
+    {
+      "id": "C02",
+      "description": "Dos rechazos simultáneos comparten una renovación y reintentan con token nuevo",
+      "result": "aprobado"
+    },
+    {
+      "id": "C03",
+      "description": "Una respuesta tardía del alumno A se rechaza después de cambiar al alumno B",
+      "result": "aprobado"
+    },
+    {
+      "id": "C04",
+      "description": "Renovación rechazada invalida la sesión y notifica al consumidor",
+      "result": "aprobado"
+    },
+    {
+      "id": "C05",
+      "description": "Errores conservan código, estado y campo para la pantalla",
+      "result": "aprobado"
+    },
+    {
+      "id": "C06",
+      "description": "La renovación tardía de A no reemplaza una sesión B",
+      "result": "aprobado"
+    },
+    {
+      "id": "P01",
+      "description": "Una prueba sin materia no envía compra",
+      "result": "aprobado"
+    },
+    {
+      "id": "P02",
+      "description": "Todas las pruebas omite materia y usa Checkout autorizado",
+      "result": "aprobado"
+    },
+    {
+      "id": "P03",
+      "description": "Una prueba conserva la materia en el contrato de compra",
+      "result": "aprobado"
+    },
+    {
+      "id": "P04",
+      "description": "Se rechaza destino Checkout no permitido http://checkout.stripe.com/test",
+      "result": "aprobado"
+    },
+    {
+      "id": "P05",
+      "description": "Se rechaza destino Checkout no permitido https://checkout.stripe.com.example.test/test",
+      "result": "aprobado"
+    },
+    {
+      "id": "P06",
+      "description": "Portal envía cuerpo vacío y usa dominio Stripe autorizado",
+      "result": "aprobado"
+    },
+    {
+      "id": "P07",
+      "description": "Portal rechaza un destino externo",
+      "result": "aprobado"
+    }
+  ]
+}

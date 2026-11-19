@@ -1,0 +1,23 @@
+{
+  "name": "aprueba-student-backend",
+  "version": "1.0.0",
+  "description": "API REST del sitio web del alumno de Aprueba (Express). Driver de datos en memoria/JSON por defecto, Firestore opcional.",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "seed": "node src/seed/seed.js",
+    "smoke": "node src/seed/smoke.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "firebase-admin": "^14.3.0",
+    "jsonwebtoken": "^9.0.2",
+    "stripe": "22.6.2"
+  },
+  "comment_firestore": "firebase-admin está incluido. Para fixtures Firestore usa solo emulador loopback y proyecto demo-* con ALLOW_TEST_SEED=true.",
+  "comment_phone_auth": "Firebase Phone requiere configuración real para producción. Los scripts locales habilitan tokens dev solo tras validar el entorno de pruebas."
+}

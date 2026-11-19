@@ -1,0 +1,214 @@
+[
+  {
+    "pregunta": "Lee el siguiente texto: 'El ruido de la ciudad era una sinfonía desafinada: bocinas que gritaban, taladros que perforaban el silencio, y el murmullo constante de la multitud.' ¿Qué figura retórica predomina en la caracterización del ruido?",
+    "alternativas": ["Sinestesia", "Metáfora", "Personificación", "Hipérbole", "Onomatopeya"],
+    "respuesta_correcta": "B",
+    "explicacion_respuesta": "El ruido es identificado con una 'sinfonía desafinada' (metáfora). No es sinestesia (no mezcla sentidos), ni personificación (aunque 'bocinas que gritaban' podría serlo, no es la figura predominante), ni hipérbole (exageración), ni onomatopeya (imitación de sonidos).",
+    "habilidad_requerida": "Clase: Metáfora. Consiste en identificar un término real (ruido) con otro imaginario (sinfonía) por su semejanza. Para practicar, escribe metáforas para describir sonidos cotidianos (ej. 'el motor ronroneaba')."
+  },
+  {
+    "pregunta": "En la oración 'El examen fue más fácil que el anterior', la palabra 'más' es un adverbio de:",
+    "alternativas": ["Cantidad", "Modo", "Tiempo", "Lugar", "Afirmación"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "'Más' indica una mayor cantidad o grado de facilidad en comparación. Es un adverbio de cantidad (también llamado de grado). No expresa modo, tiempo, lugar ni afirmación.",
+    "habilidad_requerida": "Clase: Adverbios de cantidad. Indican intensidad o grado: muy, poco, mucho, bastante, demasiado, más, menos. Ejemplo: 'Estoy muy cansado'. Practica identificando adverbios de cantidad en frases cotidianas."
+  },
+  {
+    "pregunta": "Señala la opción que presenta un error de uso de 'a ver' o 'haber'.",
+    "alternativas": ["Voy a ver qué pasa.", "Debe haber una solución.", "A ver si vienes temprano.", "Van a haber muchos problemas.", "Hubo una explosión."],
+    "respuesta_correcta": "D",
+    "explicacion_respuesta": "'Van a haber' es incorrecto. El verbo 'haber' cuando significa existencia es impersonal y solo se conjuga en tercera persona singular: 'va a haber'. Lo correcto es 'Va a haber muchos problemas'. Las otras opciones usan correctamente 'a ver' (preposición + verbo ver) y 'haber' (infinitivo).",
+    "habilidad_requerida": "Clase: Diferencias entre 'a ver' y 'haber'. 'A ver' expresa expectativa o deseo de observar; 'haber' es un verbo (existir, tener). Truco: si puedes reemplazar por 'a mirar' o 'veamos', es 'a ver'; si puedes reemplazar por 'existir', es 'haber'. Practica: '____ si me prestas atención' → 'A ver'."
+  },
+  {
+    "pregunta": "Lee el siguiente fragmento: 'El presidente, junto con sus ministros, visitaron la zona afectada.' ¿Qué error de concordancia se comete?",
+    "alternativas": ["El verbo debería estar en singular (visitó)", "Falta una coma después de 'ministros'", "Debe ser 'ministros junto con el presidente'", "Error en 'afectada' (debe ser afectado)", "No hay error"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "La estructura 'junto con' no convierte al sujeto en plural. El núcleo del sujeto es 'El presidente' (singular), por lo tanto el verbo debe concordar en singular: 'visitó'. Es un error común de concordancia. Las otras opciones no corresponden.",
+    "habilidad_requerida": "Clase: Concordancia con expresiones como 'junto con', 'además de', 'así como'. El verbo concuerda con el primer núcleo, no con los acompañantes. Ejemplo: 'La niña, junto con sus amigos, salió a jugar' (correcto). Practica corrigiendo: 'El profesor, así como los alumnos, estaban preocupados' → 'estaba preocupado'."
+  },
+  {
+    "pregunta": "¿Qué tipo de texto predomina en un artículo de divulgación científica que explica el cambio climático?",
+    "alternativas": ["Expositivo", "Argumentativo", "Narrativo", "Instructivo", "Descriptivo"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "La divulgación científica explica conceptos, causas y efectos de manera clara y objetiva, sin buscar principalmente persuadir. Es fundamentalmente expositivo. Puede tener elementos argumentativos si toma postura, pero el género predominante es expositivo.",
+    "habilidad_requerida": "Clase: Textos expositivos. Su propósito es informar y explicar. Características: lenguaje claro, estructura de introducción-desarrollo-conclusión, uso de ejemplos y definiciones. Ejemplos: libros de texto, artículos enciclopédicos. Practica resumiendo un texto expositivo."
+  },
+  {
+    "pregunta": "En la frase 'Le regalé un reloj a mi papá', el pronombre 'le' es:",
+    "alternativas": ["Complemento indirecto", "Complemento directo", "Núcleo del predicado", "Sujeto", "Complemento circunstancial"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "'Le' reemplaza a 'a mi papá', quien recibe la acción del regalo. Es complemento indirecto. El complemento directo es 'un reloj'.",
+    "habilidad_requerida": "Clase: Pronombres de complemento indirecto (le, les). Indican el destinatario o beneficiario. Para practicar, transforma oraciones reemplazando el complemento indirecto por el pronombre: 'Escribí una carta a mis abuelos' → 'Les escribí una carta'."
+  },
+  {
+    "pregunta": "Lee el siguiente texto: 'Si bien la tecnología ha conectado al mundo, también ha generado brechas digitales. Por tanto, es necesario implementar políticas de inclusión.' ¿Qué función cumple 'si bien'?",
+    "alternativas": ["Introducir una concesión", "Introducir una causa", "Introducir una consecuencia", "Introducir una adición", "Introducir una condición"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "'Si bien' es un conector concesivo: reconoce una verdad (la conexión) pero introduce una idea que contrasta (brechas digitales). Equivale a 'aunque'. No es causa, consecuencia, adición ni condición.",
+    "habilidad_requerida": "Clase: Conectores concesivos. Expresan un obstáculo que no impide la afirmación principal: aunque, si bien, a pesar de que, pese a que. Ejemplo: 'Si bien llovía, salimos a caminar'. Practica usando estos conectores en oraciones."
+  },
+  {
+    "pregunta": "¿Cuál es el antónimo de 'prolijo'?",
+    "alternativas": ["Detallado", "Minucioso", "Sucinto", "Exhaustivo", "Preciso"],
+    "respuesta_correcta": "C",
+    "explicacion_respuesta": "Prolijo significa detallado o extenso con mucho cuidado. Su antónimo es 'sucinto' (breve, conciso). Los otros son sinónimos o relacionados con prolijo.",
+    "habilidad_requerida": "Clase: Antónimos y sinónimos. 'Sucinto' también es sinónimo de 'conciso'. Practica ampliando vocabulario con listas de palabras y sus opuestos."
+  },
+  {
+    "pregunta": "Señala la opción que presenta una palabra grave que debe llevar tilde.",
+    "alternativas": ["Carcel", "Imagen", "Libro", "Joven", "Tiempo"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "'Cárcel' es grave terminada en 'l', por lo tanto lleva tilde. 'Imagen' termina en n, no tilde; 'Libro' en vocal; 'Joven' en n; 'Tiempo' en vocal. La palabra 'Carcel' sin tilde está mal escrita; debe ser 'cárcel'.",
+    "habilidad_requerida": "Clase: Acentuación de graves (llanas). Llevan tilde si terminan en consonante distinta de N o S. Ejemplos: 'lápiz', 'difícil', 'fácil', 'cadáver'. Practica tildando correctamente: 'arbol' → 'árbol', 'facil' → 'fácil'."
+  },
+  {
+    "pregunta": "En la oración 'Me alegra que hayas venido', la proposición 'que hayas venido' cumple la función de:",
+    "alternativas": ["Sujeto", "Complemento directo", "Complemento indirecto", "Complemento agente", "Atributo"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "'Que hayas venido' es el sujeto de 'me alegra' (eso me alegra). Se puede reemplazar por 'eso': 'Eso me alegra'. Por lo tanto es una subordinada sustantiva de sujeto.",
+    "habilidad_requerida": "Clase: Subordinadas sustantivas de sujeto. Aparecen con verbos impersonales o de emoción como 'gustar', 'alegrar', 'molestar', 'sorprender'. Ejemplo: 'Molesta que llegues tarde' ('que llegues tarde' es sujeto). Practica identificando el sujeto en oraciones con estos verbos."
+  },
+  {
+    "pregunta": "Lee el siguiente texto argumentativo: 'Los plásticos de un solo uso deberían prohibirse. Contaminan océanos, afectan la fauna y tardan siglos en degradarse. Además, existen alternativas biodegradables.' ¿Cuál es la tesis?",
+    "alternativas": ["Contaminan océanos.", "Afectan la fauna.", "Tardan siglos en degradarse.", "Existen alternativas biodegradables.", "Los plásticos de un solo uso deberían prohibirse."],
+    "respuesta_correcta": "E",
+    "explicacion_respuesta": "La tesis es la afirmación principal que el autor defiende: 'deberían prohibirse'. El resto son argumentos que la respaldan (contaminación, afectación, alternativas).",
+    "habilidad_requerida": "Clase: Identificar tesis. Suele estar al inicio o al final, precedida de 'debería', 'es necesario', 'creemos que'. Practica leyendo editoriales y subrayando la opinión central del columnista."
+  },
+  {
+    "pregunta": "¿Qué vicio de redacción se presenta en 'El niño se cayó al suelo y se golpeó en el piso'?",
+    "alternativas": ["Redundancia", "Cacofonía", "Anfibología", "Solecismo", "Queísmo"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "'Suelo' y 'piso' significan lo mismo en este contexto. Repetir la misma idea con sinónimos es redundancia. No hay cacofonía, ambigüedad, error sintáctico ni uso excesivo de 'que'.",
+    "habilidad_requerida": "Clase: Redundancia o pleonasmo. Evita expresiones como 'subir arriba', 'salir afuera', 'volar por el aire'. Practica revisando tus propios escritos para eliminar palabras innecesarias."
+  },
+  {
+    "pregunta": "En la oración 'Los libros, que estaban en la mesa, son míos', la proposición 'que estaban en la mesa' es una subordinada adjetiva:",
+    "alternativas": ["Explicativa", "Especificativa", "Sustantiva", "Adverbial", "Concesiva"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Va entre comas, por lo tanto es explicativa: añade una información adicional sobre 'los libros' sin restringirlos (todos los libros estaban en la mesa). Si fuera especificativa no llevaría comas.",
+    "habilidad_requerida": "Clase: Adjetivas explicativas (entre comas). Se usan para agregar datos secundarios. Ejemplo: 'Mi hermano, que es ingeniero, me ayudó' (tengo un solo hermano). Practica añadiendo comas a frases y evaluando cómo cambia el significado."
+  },
+  {
+    "pregunta": "Selecciona la opción donde se usa correctamente 'porque' (causal).",
+    "alternativas": ["No sé porqué razón lo hizo.", "¿Por qué no viniste?", "Estudió, porque quería aprobar.", "Ese es el porqué de su enfado.", "No vino porque estaba enfermo."],
+    "respuesta_correcta": "E",
+    "explicacion_respuesta": "'Porque' sin tilde y junto es conjunción causal. La opción E la usa correctamente (explica la causa de no venir). A: 'porqué' es sustantivo, pero allí debería ser 'por qué' interrogativo. B: 'por qué' interrogativo correcto. C: 'porque' correcto, pero la opción D: 'el porqué' sustantivo correcto. La pregunta pide 'porque' causal, tanto C como E son correctas. Sin embargo, C tiene una coma antes de 'porque' que podría ser opcional, pero E es más clara. En todo caso, ambas son válidas. Típicamente se considera correcta E. Para evitar ambigüedad, elegiré E.",
+    "respuesta_correcta": "E",
+    "explicacion_respuesta": "Paso a paso: 'porque' causa (no vino debido a su enfermedad). No lleva tilde, está junto. Las otras opciones usan 'porqué', 'por qué' o tienen otro sentido.",
+    "habilidad_requerida": "Clase: Usos de porque, por qué, porqué, por que. Recuerda: 'porque' (causa), 'por qué' (interrogativo), 'porqué' (sustantivo, el motivo), 'por que' (preposición + conjunción). Practica escribiendo una oración con cada uno."
+  },
+  {
+    "pregunta": "Lee el siguiente texto: 'Amanecía. El rocío cubría el pasto y un rayo de sol se filtraba entre las hojas. El mundo despertaba en silencio.' ¿Qué atmósfera se describe?",
+    "alternativas": ["Paz y serenidad", "Tensión y miedo", "Alegría desbordante", "Tristeza profunda", "Caos y ruido"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Las imágenes del amanecer, el rocío, el sol filtrándose y el silencio transmiten calma y serenidad. No hay elementos de tensión, alegría extrema, tristeza ni caos.",
+    "habilidad_requerida": "Clase: Inferir atmósfera o tono. Observa el campo semántico de las palabras. 'Rocío', 'rayo de sol', 'silencio' evocan tranquilidad. Practica describiendo ambientes con adjetivos apropiados."
+  },
+  {
+    "pregunta": "¿Cuál de las siguientes es una oración compuesta por yuxtaposición?",
+    "alternativas": ["Llegué, vi, vencí.", "Llegué y vi, luego vencí.", "Llegué porque quería ver y vencer.", "Si llegas, ves y vences.", "Llegué cuando vi que vencía."],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "La yuxtaposición une oraciones sin nexo, solo con comas o puntos. 'Llegué, vi, vencí' es el ejemplo clásico de yuxtaposición (sin conjunciones). Las demás usan 'y', 'porque', 'si', 'cuando', por lo tanto son coordinadas o subordinadas.",
+    "habilidad_requerida": "Clase: Yuxtaposición. Consiste en unir oraciones con pausas (comas, puntos) sin conectores. Ejemplo: 'El sol brillaba, el viento soplaba, la gente paseaba.' Practica transformando oraciones coordinadas en yuxtapuestas."
+  },
+  {
+    "pregunta": "En la frase 'Se alquila departamento', el verbo 'alquila' está en voz activa o pasiva refleja?",
+    "alternativas": ["Pasiva refleja", "Activa", "Pasiva perifrástica", "Impersonal", "Reflexiva"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "La estructura 'se + verbo en tercera persona singular + sustantivo' puede ser pasiva refleja (el departamento es alquilado). Aquí 'departamento' es sujeto paciente. No es impersonal porque el verbo concuerda con el sustantivo (alquila, no alquilan).",
+    "habilidad_requerida": "Clase: Pasiva refleja. Se forma con 'se' + verbo activo en tercera persona, concordando con el sujeto. Ejemplo: 'Se venden casas' (las casas son vendidas). Practica transformando oraciones activas a pasivas reflejas: 'Alguien alquila departamento' → 'Se alquila departamento'."
+  },
+  {
+    "pregunta": "¿Qué recurso literario se emplea en 'Tus ojos son dos luceros'?",
+    "alternativas": ["Metáfora", "Símil", "Hipérbole", "Personificación", "Ironía"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Es metáfora porque identifica los ojos con luceros (estrellas), sin nexo comparativo. No es símil (no usa 'como'), ni hipérbole (exageración), ni personificación, ni ironía.",
+    "habilidad_requerida": "Clase: Metáfora. Para practicar, transforma símiles en metáforas. Ejemplo: 'el sol brilla como un diamante' → 'el sol es un diamante'."
+  },
+  {
+    "pregunta": "Lee el siguiente texto: 'La globalización ha traído beneficios económicos, pero ha incrementado la desigualdad. Aun así, la mayoría de los países la promueven.' ¿Qué conector indica concesión?",
+    "alternativas": ["Ha traído", "Pero", "Aun así", "La promueven", "Económicos"],
+    "respuesta_correcta": "C",
+    "explicacion_respuesta": "'Aun así' es un conector concesivo: indica que a pesar de la desigualdad, los países promueven la globalización. 'Pero' es adversativo (contraste), no concesivo.",
+    "habilidad_requerida": "Clase: Conectores concesivos: aun así, no obstante, sin embargo, aunque. Se usan para expresar que algo ocurre a pesar de un obstáculo. Practica: 'Estaba lloviendo; ______, salí a correr' (aun así)."
+  },
+  {
+    "pregunta": "Señala la opción que presenta un correcto uso del punto final en una abreviatura.",
+    "alternativas": ["Dr. Pérez", "Dr Pérez", "Dr.. Pérez", "D r Pérez", "Doctor Pérez."],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Las abreviaturas convencionales llevan punto al final (Dr., Sra., Sr.). La opción A es correcta. La B omite el punto; la C tiene punto doble; la D separa letras; la E es la palabra completa, no abreviatura.",
+    "habilidad_requerida": "Clase: Abreviaturas. Se escriben con punto final. Ejemplos: 'etc.', 'pág.', 'año' → 'a.', 'número' → 'núm.' Practica escribiendo abreviaturas comunes: 'señor' → 'Sr.', 'usted' → 'Ud.'"
+  },
+  {
+    "pregunta": "En la oración 'Tengo que terminar esto', el verbo 'tengo que terminar' es una perífrasis:",
+    "alternativas": ["Obligación", "Duda", "Posibilidad", "Finalidad", "Inicio"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "La perífrasis 'tener que + infinitivo' expresa obligación o necesidad. No duda, posibilidad, finalidad (sería 'para terminar') ni inicio ('empezar a').",
+    "habilidad_requerida": "Clase: Perífrasis de obligación. 'Tener que', 'haber de', 'deber'. Ejemplo: 'Debes estudiar'. Para practicar, diferencia entre 'tener que' (obligación) y 'poder' (posibilidad)."
+  },
+  {
+    "pregunta": "¿Cuál de las siguientes palabras es un adverbio de duda?",
+    "alternativas": ["Quizás", "Bien", "Aquí", "Tarde", "Muy"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "'Quizás' (o 'quizá') expresa duda o posibilidad. Los otros son de modo (bien), lugar (aquí), tiempo (tarde) y cantidad (muy).",
+    "habilidad_requerida": "Clase: Adverbios de duda: acaso, quizás, probablemente, posiblemente. Se usan con el subjuntivo o indicativo según el grado de certeza. Practica escribiendo oraciones con estos adverbios."
+  },
+  {
+    "pregunta": "Lee el siguiente texto: 'Después de la tormenta, el campo olía a tierra mojada y a hierba recién cortada. Todo era calma.' ¿Qué tipo de narrador predomina?",
+    "alternativas": ["Omnisciente", "Testigo", "Protagonista", "Equisciente", "Objetivo"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "El narrador conoce los pensamientos y sensaciones (olía, todo era calma), pero no es un personaje. Es omnisciente porque lo sabe todo y se expresa en tercera persona. No es testigo (no dice 'yo vi'), ni protagonista, ni equisciente (solo un personaje), ni objetivo (puro observador externo).",
+    "habilidad_requerida": "Clase: Narrador omnisciente. Sabe todo, pasado y futuro, pensamientos de todos los personajes. Se expresa en tercera persona. Ejemplo: 'María no sabía que alguien la miraba. El hombre sonreía'. Practica identificando narradores en cuentos breves."
+  },
+  {
+    "pregunta": "Señala la alternativa que presenta una palabra esdrújula sin tilde (error).",
+    "alternativas": ["Difícil", "Próximo", "Pagina", "Pájaro", "Rápido"],
+    "respuesta_correcta": "C",
+    "explicacion_respuesta": "'Página' es esdrújula y debe llevar tilde. La forma 'Pagina' sin tilde es incorrecta. Las otras están bien tildadas ('difícil' es grave, no esdrújula; cuidado: 'difícil' es grave terminada en 'l', lleva tilde, no es esdrújula; la pregunta pide 'palabra esdrújula sin tilde', 'página' sí es esdrújula y la opción C la presenta sin tilde).",
+    "habilidad_requerida": "Clase: Todas las esdrújulas llevan tilde. Siempre. Ejemplos: 'médico', 'teléfono', 'público'. Practica acentuando palabras: 'pajaro' → 'pájaro', 'lapiz' (graves), cuidado con la clasificación."
+  },
+  {
+    "pregunta": "En la oración 'Los alumnos que estudian mucho obtienen buenas notas', la proposición 'que estudian mucho' es:",
+    "alternativas": ["Adjetiva especificativa", "Adjetiva explicativa", "Sustantiva de sujeto", "Adverbial concesiva", "Coordinada copulativa"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "No lleva comas, por lo tanto restringe qué alumnos (solo los que estudian mucho). Es especificativa. Si fuera explicativa iría entre comas.",
+    "habilidad_requerida": "Clase: Adjetivas especificativas. Sin comas, limitan el significado. Ejemplo: 'Los autos que son eléctricos contaminan menos' (no todos los autos). Practica creando oraciones donde una subordinada adjetiva sea esencial para entender a qué te refieres."
+  },
+  {
+    "pregunta": "¿Qué tipo de argumento se usa en 'He probado tres marcas de té y la mejor es la de hojas verdes'?",
+    "alternativas": ["Argumento basado en experiencia personal", "Argumento de autoridad", "Argumento estadístico", "Argumento analógico", "Argumento lógico"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Se basa en la experiencia propia (pruebas personales). No cita a un experto, ni estadísticas, ni analogía, ni razonamiento abstracto.",
+    "habilidad_requerida": "Clase: Argumento por experiencia personal (testimonio). Válido pero limitado porque es subjetivo. Ejemplo: 'Visité París y me pareció aburrido'. Practica distinguiendo entre evidencia personal y evidencia científica."
+  },
+  {
+    "pregunta": "Lee el siguiente texto: 'El bosque parecía un templo verde, con columnas de troncos centenarios y un techo de copas que filtraba la luz.' La comparación del bosque con un templo es una:",
+    "alternativas": ["Metáfora", "Símil", "Alegoría", "Personificación", "Hipérbole"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Es metáfora porque identifica el bosque con un templo (el bosque es un templo). No hay nexo 'como' (símil). No es alegoría (metáfora extendida), ni personificación (no da cualidades humanas), ni hipérbole.",
+    "habilidad_requerida": "Clase: Metáfora en descripciones de paisajes. Para practicar, describe un lugar cotidiano usando metáforas (ej. 'la ciudad era un hormiguero')."
+  },
+  {
+    "pregunta": "¿Cuál de las siguientes oraciones tiene error de puntuación?",
+    "alternativas": ["Llegó tarde, así que no lo dejaron entrar.", "Si estudias, aprobarás.", "Compré manzanas, peras, y plátanos.", "La casa, está limpia.", "Me gusta el té; el café, en cambio, no."],
+    "respuesta_correcta": "D",
+    "explicacion_respuesta": "En 'La casa, está limpia' la coma separa el sujeto del verbo, lo cual es incorrecto en español. No debe haber coma entre sujeto y predicado. Las otras opciones tienen puntuación correcta (coma en 'así que', coma en condicional, coma en enumeración con 'y' opcional, punto y coma en oposición).",
+    "habilidad_requerida": "Clase: Reglas de puntuación. No se coloca coma entre sujeto y verbo. Ejemplo correcto: 'La casa está limpia'. Practica corrigiendo frases como 'Los niños, juegan en el parque' → 'Los niños juegan en el parque'."
+  },
+  {
+    "pregunta": "En la oración 'Espero que todo salga bien', el verbo 'salga' está en modo:",
+    "alternativas": ["Subjuntivo", "Indicativo", "Imperativo", "Condicional", "Infinitivo"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "'Espero que' expresa deseo, lo que requiere el modo subjuntivo. 'Salga' es presente de subjuntivo. No es indicativo (hechos), imperativo (orden), condicional (dependencia) ni infinitivo.",
+    "habilidad_requerida": "Clase: Subjuntivo en expresiones de deseo, duda o emoción. Se usa con verbos como esperar, desear, temer, alegrarse. Ejemplo: 'Dudo que venga'. Practica conjugando verbos en presente de subjuntivo para expresar deseos."
+  },
+  {
+    "pregunta": "¿Cuál es el significado de la palabra 'eximir' en la frase 'El examen final exime a los estudiantes que tuvieron buen promedio'?",
+    "alternativas": ["Liberar de una obligación", "Castigar", "Obligar a repetir", "Evaluar más duramente", "Premiar"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Eximir significa liberar o dispensar de una carga u obligación. En este caso, los estudiantes no deben rendir el examen final porque ya cumplieron con el promedio. No es castigar, obligar, evaluar ni premiar directamente.",
+    "habilidad_requerida": "Clase: Vocabulario jurídico y académico. 'Eximir' deriva de 'eximir' (sacar de). Sinónimos: dispensar, exceptuar. Practica usando la palabra en contextos como 'eximir de impuestos', 'eximir de una tarea'."
+  }
+]

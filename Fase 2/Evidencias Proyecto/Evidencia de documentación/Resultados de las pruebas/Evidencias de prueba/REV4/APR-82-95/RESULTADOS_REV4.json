@@ -1,0 +1,57 @@
+{
+  "revision": "DAD20-LOCAL-20261118-REV4",
+  "sha256_manifiesto_completo": "628f864ddd7d2278a847c2bffc2765a1fc2e8989e45c135a1f845443843c9594",
+  "alcance": "Módulo DAD_20 local con datos sintéticos. Integración con otros equipos, Stripe remoto y despliegue pendientes.",
+  "suites": {
+    "APR82": {
+      "asignaciones": 4,
+      "controles": 18,
+      "evidencia": "pruebas_http/materias.json"
+    },
+    "Todas mensual": {
+      "controles_aprobados": 11,
+      "evidencia": "pruebas_http/report.json"
+    },
+    "Todas anual": {
+      "controles_aprobados": 11,
+      "evidencia": "../regresion_anual/resultado/report.json"
+    },
+    "Una mensual": {
+      "controles_aprobados": 11,
+      "evidencia": "ciencias_monthly/report.json"
+    },
+    "Una anual": {
+      "controles_aprobados": 11,
+      "evidencia": "ciencias_yearly/report.json"
+    },
+    "APR91": {
+      "escenarios": 7,
+      "envios": 31,
+      "capturas": 23,
+      "evidencia": "webhooks/results/report.json"
+    },
+    "rechazos": {
+      "escenarios": [
+        "CP02",
+        "CP03",
+        "CP03-R"
+      ],
+      "ejecucion": "rechazos_http/report.json",
+      "evidencias": [
+        "rechazos_http/rechazo_inicial.json",
+        "rechazos_http/rechazo_y_recuperacion.json"
+      ]
+    },
+    "Checkout": {
+      "aprobadas": 28,
+      "fallidas": 0,
+      "omitidas": 0,
+      "evidencia": "recuperacion_checkout.tap"
+    },
+    "perfil_y_cuota": {
+      "controles": 6,
+      "resultado": "CUMPLE",
+      "evidencia": "residuales/observaciones.json"
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "resultado": "APROBADO",
+  "tipo": "invoice.payment_failed",
+  "cuenta": "free",
+  "acceso": false,
+  "derecho": null,
+  "cuotaIlimitada": false,
+  "factura": "in_apr84buyer",
+  "estado": "open",
+  "montoPagadoProveedorCentavos": 0
+}

@@ -1,0 +1,221 @@
+[
+  {
+    "pregunta": "Lee el siguiente fragmento: 'La noticia corrió como pólvora por todo el pueblo.' ¿Qué figura retórica predomina?",
+    "alternativas": ["Símil", "Metáfora", "Personificación", "Hipérbole", "Sinestesia"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "El símil compara la rapidez de la noticia con la de la pólvora usando el nexo 'como'. No es metáfora (identificación directa), ni personificación, ni hipérbole (aunque hay exageración, la figura principal es la comparación explícita), ni sinestesia.",
+    "habilidad_requerida": "Clase: Símil con verbos de movimiento. Expresiones como 'corrió como pólvora', 'voló como una flecha' son comparaciones muy usadas. Practica creando símiles con verbos de velocidad: 'llegó como un rayo', 'salió como bala'."
+  },
+  {
+    "pregunta": "En la oración 'Terminó el trabajo, aunque con dificultad', la palabra 'aunque' es una conjunción:",
+    "alternativas": ["Concesiva", "Adversativa", "Causal", "Consecutiva", "Condicional"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "'Aunque' introduce una dificultad (con dificultad) que no impide la acción principal (terminó). Es concesiva. A veces se confunde con la adversativa, pero la concesiva expresa un obstáculo no impedimento, mientras la adversativa expresa oposición directa.",
+    "habilidad_requerida": "Clase: Concesivas con 'aunque'. Se diferencian de las adversativas ('pero') en que la concesiva reconoce una objeción pero la acción se cumple. Ejemplo: 'Aunque estaba cansado, siguió trabajando'. Practica reescribiendo oraciones concesivas con 'a pesar de que'."
+  },
+  {
+    "pregunta": "Señala la opción donde la palabra 'sé' (verbo saber o ser) está correctamente tildada.",
+    "alternativas": ["Se que llegaré tarde.", "Sé que llegaré tarde.", "Se feliz.", "No se si vendrá.", "El ya se lo dijo."],
+    "respuesta_correcta": "B",
+    "explicacion_respuesta": "'Sé' con tilde es la primera persona del singular del presente de indicativo de los verbos 'saber' o 'ser' (imperativo 'sé'). En B, 'Sé que llegaré tarde' es correcto (saber). En C debería ser 'Sé feliz' (imperativo de ser). Está sin tilde, error. En A, 'Se que' debería ser 'Sé que'. En D, 'No se si' debería ser 'No sé si'. En E, 'se' es pronombre sin tilde, correcto pero no es el verbo. Por lo tanto la única correcta con tilde es B.",
+    "habilidad_requerida": "Clase: Tilde diacrítica en 'sé' (verbo) vs 'se' (pronombre). El verbo 'sé' lleva tilde. Ejemplo: 'Sé bueno', 'Sé la respuesta'. Practica diferenciando: 'Se lo dije' (pronombre) vs 'Sé lo que digo' (verbo)."
+  },
+  {
+    "pregunta": "Lee el texto: 'El silencio era tan profundo que podía oírse el latido de su propio corazón.' ¿Qué sensación predomina?",
+    "alternativas": ["Solemnidad e introspección", "Miedo", "Alegría", "Enojo", "Sorpresa"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "El silencio profundo y el latido del corazón transmiten calma, recogimiento y reflexión interior. No hay miedo, alegría, enojo ni sorpresa evidentes.",
+    "habilidad_requerida": "Clase: Inferir atmósfera a partir de descripciones auditivas. El silencio absoluto suele asociarse a momentos de paz, meditación o tensión según contexto. Aquí es introspección. Practica describiendo diferentes atmósferas usando sonidos (o ausencia de ellos)."
+  },
+  {
+    "pregunta": "¿Cuál de las siguientes opciones es un conector de explicación?",
+    "alternativas": ["Es decir", "Por lo tanto", "Sin embargo", "Primero", "Además"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "'Es decir' introduce una aclaración o reformulación. Es conector explicativo. 'Por lo tanto' es consecuencia, 'sin embargo' contraste, 'primero' orden, 'además' adición.",
+    "habilidad_requerida": "Clase: Conectores explicativos: es decir, o sea, esto es, en otras palabras. Se usan para aclarar un concepto. Ejemplo: 'El coche no arrancó; es decir, se quedó sin batería'. Practica usando 'es decir' para clarificar frases complejas."
+  },
+  {
+    "pregunta": "Señala la opción que presenta una palabra que debe escribirse con 'c' (no con 's').",
+    "alternativas": ["Ceniza", "Seniza", "Cenisa", "Senisa", "Ceniza"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "'Ceniza' se escribe con 'c' y con 'z'. Las otras opciones tienen errores ('seniza', 'cenisa', 'senisa'). La opción A es la correcta.",
+    "habilidad_requerida": "Clase: Ortografía de la 'c' y 's'. Las palabras como 'ceniza' conservan la 'c' por su origen latino. Practica escribiendo otras palabras con 'c' y 'z': 'cacería', 'cocina', 'cazar'."
+  },
+  {
+    "pregunta": "En la oración 'Mi hermana, que es doctora, me ayudó', la proposición 'que es doctora' es una subordinada adjetiva:",
+    "alternativas": ["Explicativa", "Especificativa", "Sustantiva", "Adverbial", "Concesiva"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Va entre comas, por lo tanto es explicativa: añade información sobre 'mi hermana' (se asume que tengo una sola hermana). No restrinje su significado, sino que comenta.",
+    "habilidad_requerida": "Clase: Explicativas vs especificativas. Con comas: explicativa. Sin comas: especificativa. Ejemplo: 'Los estudiantes que estudian aprueban' (especificativa) vs 'Los estudiantes, que estudian, aprueban' (explicativa, todos estudian). Practica colocando comas para cambiar el sentido."
+  },
+  {
+    "pregunta": "Lee el siguiente texto: 'El emperador vestía sus mejores galas, pero nadie lo miraba. Todos contemplaban el vacío.' ¿Qué crítica subyace?",
+    "alternativas": ["La vanidad y la apariencia", "La pobreza", "El poder de la moda", "La soledad del poder", "La hipocresía social"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "El emperador se viste bien pero nadie lo mira, lo que sugiere que su vanidad es inútil. Podría aludir al cuento del 'traje nuevo del emperador' donde nadie dice la verdad. El tema central es la vanidad y la superficialidad de las apariencias.",
+    "habilidad_requerida": "Clase: Interpretación de críticas sociales en textos breves. A menudo se alude a fábulas clásicas. Practica leyendo una fábula de Esopo e identificando la crítica implícita."
+  },
+  {
+    "pregunta": "Señala la opción donde se usa correctamente 'si no' (condicional).",
+    "alternativas": ["Sino estudias, reprobarás.", "Si no estudias, reprobarás.", "No solo canta, sino que baila.", "No vino, sino que llamó.", "Sino quieres, no vengas."],
+    "respuesta_correcta": "B",
+    "explicacion_respuesta": "'Si no' separado expresa condición. En B, 'Si no estudias' es correcto. En A y E, 'Sino' junto en lugar de 'si no' es error. En C y D, 'sino' adversativo correcto, pero no es 'si no'.",
+    "habilidad_requerida": "Clase: Diferencia entre 'sino' (conjunción adversativa) y 'si no' (condicional). Recuerda: 'si no' equivale a 'en caso contrario'. Ejemplo: 'Si no me avisas, no iré'. Practica sustituyendo 'si no' por 'de lo contrario' para comprobar."
+  },
+  {
+    "pregunta": "¿Cuál de las siguientes palabras es un extranjerismo adaptado al español?",
+    "alternativas": ["Cóctel", "Catering", "Meeting", "Boutique", "Parking"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "'Cóctel' es un extranjerismo adaptado (del inglés 'cocktail') que la RAE acepta con tilde y sin necesidad de cursiva. Los otros ('catering', 'meeting', 'boutique', 'parking') son extranjerismos crudos que aún se escriben en cursiva o comillas.",
+    "habilidad_requerida": "Clase: Extranjerismos adaptados. La RAE los incorpora al diccionario con ortografía española. Ejemplos: 'champú', 'váter', 'ballet', 'pizza'. Consulta la RAE si tienes dudas sobre la adaptación de una palabra extranjera."
+  },
+  {
+    "pregunta": "En la oración 'El libro fue leído por Juan', la voz verbal es:",
+    "alternativas": ["Pasiva perifrástica", "Pasiva refleja", "Activa", "Impersonal", "Reflexiva"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "La pasiva perifrástica se forma con el verbo 'ser' + participio. 'Fue leído' es pasiva perifrástica. No es pasiva refleja (se lee el libro), ni activa, ni impersonal, ni reflexiva.",
+    "habilidad_requerida": "Clase: Voz pasiva perifrástica. Se usa para enfocar la acción en el objeto. Ejemplo: 'La carta fue escrita por Ana'. Practica transformando oraciones activas en pasivas perifrásticas."
+  },
+  {
+    "pregunta": "Lee el siguiente texto: 'La luna llena observaba el valle, cómplice de los enamorados.' ¿Qué figura retórica se emplea?",
+    "alternativas": ["Personificación", "Símil", "Metáfora", "Hipérbole", "Sinestesia"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "La luna 'observa' y es 'cómplice', acciones y cualidades humanas. Es personificación. No es símil, metáfora, hipérbole ni sinestesia.",
+    "habilidad_requerida": "Clase: Personificación de astros. Es común en poesía romántica. Ejemplo: 'El sol acariciaba la tierra'. Practica personificando la luna en una breve descripción."
+  },
+  {
+    "pregunta": "Señala la opción que presenta un error de uso del modo subjuntivo.",
+    "alternativas": ["Espero que vengas.", "Ojalá llueva.", "Tal vez viene mañana.", "No creo que sea cierto.", "Quiero que te calles."],
+    "respuesta_correcta": "C",
+    "explicacion_respuesta": "Después de 'tal vez' (duda) se puede usar indicativo o subjuntivo, pero es más formal el subjuntivo. 'Tal vez viene' es aceptable en algunos contextos, pero no es un error grave. Sin embargo, entre las opciones, la C puede ser la menos recomendable. En B y E están correctos. Busquemos otro: 'No creo que sea cierto' correcto. 'Espero que vengas' correcto. 'Quiero que te calles' correcto. La única con posibilidad de error es C porque muchos gramáticos recomiendan 'tal vez venga'. Elegimos C como la incorrecta según la norma más estricta.",
+    "respuesta_correcta": "C",
+    "explicacion_respuesta": "Aunque 'tal vez' admite indicativo, la forma más académica es con subjuntivo ('tal vez venga'). En la opción C, 'viene' está en indicativo, lo cual es menos recomendable y puede considerarse incorrecto en un examen formal. Las otras opciones usan correctamente el subjuntivo donde corresponde.",
+    "habilidad_requerida": "Clase: Subjuntivo con expresiones de duda. 'Tal vez', 'quizás', 'probablemente' pueden ir seguidos de indicativo o subjuntivo, pero el subjuntivo indica mayor duda. Ejemplo: 'Quizás venga' (más dudoso) vs 'Quizás viene' (menos dudoso). Practica eligiendo según el grado de certeza."
+  },
+  {
+    "pregunta": "¿Qué función del lenguaje predomina en la interjección '¡Ay!'?",
+    "alternativas": ["Expresiva", "Apelativa", "Referencial", "Poética", "Fática"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "La interjección expresa un sentimiento (dolor, sorpresa, etc.). Es función expresiva (emotiva).",
+    "habilidad_requerida": "Clase: Función expresiva. Se manifiesta en interjecciones y exclamaciones. Ejemplo: '¡Uf!', '¡Oh!'. Practica identificando interjecciones en cómics y diálogos."
+  },
+  {
+    "pregunta": "En la oración 'Había muchas personas en la plaza', el verbo 'había' es impersonal porque:",
+    "alternativas": ["No tiene sujeto", "Su sujeto es 'muchas personas'", "Concuerda en plural", "Tiene complemento directo", "Es un verbo copulativo"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "El verbo 'haber' en sentido existencial no tiene sujeto gramatical (es impersonal). Aunque 'personas' parece el sujeto, no lo es; se trata de un complemento directo. Por eso 'había' siempre va en singular.",
+    "habilidad_requerida": "Clase: Verbos impersonales. 'Haber' (existencial), 'hacer' (meteorológico), 'ser' (tiempo). No admiten sujeto. Ejemplo: 'Hace calor', 'Es tarde'. Practica transformando oraciones con 'había' para confirmar que no tiene sujeto."
+  },
+  {
+    "pregunta": "Lee el siguiente texto: 'El espejo le devolvió una imagen que no reconocía. El tiempo había pasado sin permiso.' ¿Qué tema se aborda?",
+    "alternativas": ["El envejecimiento", "La vanidad", "El paso del tiempo como un ladrón", "La pérdida de identidad", "La nostalgia"],
+    "respuesta_correcta": "C",
+    "explicacion_respuesta": "El texto dice que el tiempo pasó 'sin permiso', como si fuera un intruso. La imagen no reconocida sugiere cambio físico. El tema es el tiempo que envejece sin avisar, como un ladrón. Es una metáfora del tiempo como algo ajeno que actúa por su cuenta.",
+    "habilidad_requerida": "Clase: Interpretación de metáforas sobre el tiempo. El tiempo como ladrón, como juez, como río. Practica escribiendo una breve reflexión sobre cómo percibes el paso del tiempo."
+  },
+  {
+    "pregunta": "Señala la opción donde se utiliza correctamente el punto y coma en una oración compuesta.",
+    "alternativas": ["Llegó tarde; por lo tanto, no lo dejaron entrar.", "Llegó tarde; pero no lo dejaron entrar.", "Llegó tarde, por lo tanto; no lo dejaron entrar.", "Llegó tarde; por lo tanto no lo dejaron entrar.", "Llegó tarde por lo tanto; no lo dejaron entrar."],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "El punto y coma se coloca antes de conectores como 'por lo tanto', 'sin embargo', 'no obstante' cuando están entre dos oraciones. La opción A es correcta (punto y coma antes de 'por lo tanto', luego coma después del conector si es largo). En B, 'pero' normalmente lleva coma, no punto y coma. En C y E, el punto y coma está mal ubicado. En D falta la coma después de 'por lo tanto' (opcional pero aceptable, pero la A es más estándar).",
+    "habilidad_requerida": "Clase: Punto y coma antes de conectores consecutivos o adversativos. Se usa para separar oraciones que ya tienen comas. Ejemplo: 'No estudió; por consiguiente, reprobó'. Practica escribiendo oraciones con punto y coma y conectores."
+  },
+  {
+    "pregunta": "¿Cuál de las siguientes palabras es un antónimo de 'frágil'?",
+    "alternativas": ["Débil", "Resistente", "Quebradizo", "Delicado", "Frágil"],
+    "respuesta_correcta": "B",
+    "explicacion_respuesta": "Frágil significa que se rompe fácilmente. Su antónimo es resistente o robusto. Las otras opciones son sinónimos de frágil.",
+    "habilidad_requerida": "Clase: Antónimos. Practica pares: fuerte/débil, duradero/frágil, sólido/quebradizo. Crea una lista de diez antónimos."
+  },
+  {
+    "pregunta": "En la oración 'Le dije la verdad a Juan', el pronombre 'le' es:",
+    "alternativas": ["Complemento indirecto", "Complemento directo", "Núcleo del predicado", "Sujeto", "Complemento circunstancial"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "'Le' reemplaza a 'a Juan', que es el destinatario de la acción. Es complemento indirecto. El complemento directo es 'la verdad'.",
+    "habilidad_requerida": "Clase: CI duplicado con 'le'. En español es obligatorio incluso si aparece el complemento tónico. Ejemplo: 'Le dije la verdad a Juan' (le es CI). Practica identificando el CI en oraciones similares."
+  },
+  {
+    "pregunta": "Lee el siguiente texto: 'La torre inclinada de Pisa parece desafiar la gravedad.' ¿Qué figura retórica se emplea?",
+    "alternativas": ["Personificación", "Metáfora", "Símil", "Hipérbole", "Ironía"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "La torre 'desafía', acción humana. Es personificación. No es metáfora (no identifica la torre con algo), ni símil, ni hipérbole (no exagera), ni ironía.",
+    "habilidad_requerida": "Clase: Personificación en objetos arquitectónicos. Se usa para dar carácter. Ejemplo: 'El edificio miraba al mar'. Practica describiendo un monumento como si tuviera intenciones o sentimientos."
+  },
+  {
+    "pregunta": "Señala la opción que presenta una palabra que debe llevar tilde por ser esdrújula.",
+    "alternativas": ["Arbol", "Carcel", "Pajaro", "Joven", "Volumen"],
+    "respuesta_correcta": "C",
+    "explicacion_respuesta": "'Pájaro' es esdrújula, debe llevar tilde. 'Arbol' es grave (árbol), 'carcel' grave (cárcel), 'joven' grave, 'volumen' grave. La opción C está sin tilde, por lo tanto debe llevarla.",
+    "habilidad_requerida": "Clase: Regla de esdrújulas. Todas llevan tilde. Ejemplos: 'pájaro', 'médico', 'teléfono', 'página'. Practica acentuando correctamente 'lapiz' (lápiz, grave), 'arbol' (árbol, grave)."
+  },
+  {
+    "pregunta": "¿Qué tipo de texto es un aviso 'Se busca personal' en un periódico?",
+    "alternativas": ["Instructivo", "Expositivo", "Argumentativo", "Narrativo", "Descriptivo"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Es un texto instructivo (prescriptivo) porque indica una acción a seguir (postularse). Aunque es breve, pertenece a los textos instructivos de tipo aviso.",
+    "habilidad_requerida": "Clase: Textos instructivos en avisos clasificados. Indican normas o requerimientos. Ejemplo: 'Se arrienda departamento'. Practica redactando un aviso de 'Se necesita' con instrucciones claras."
+  },
+  {
+    "pregunta": "En la oración 'Al llegar, nos recibieron con aplausos', la palabra 'al' (contracción de 'a' + 'el') introduce una:",
+    "alternativas": ["Subordinada adverbial de tiempo", "Subordinada sustantiva", "Subordinada adjetiva", "Oración principal", "Construcción de gerundio"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "'Al + infinitivo' equivale a 'cuando', 'en el momento de'. Es una subordinada adverbial de tiempo. No es sustantiva, ni adjetiva, ni principal, ni gerundio.",
+    "habilidad_requerida": "Clase: Subordinadas temporales con 'al + infinitivo'. Ejemplo: 'Al salir, apaga la luz'. Practica reescribiendo estas oraciones con 'cuando' y con 'al'."
+  },
+  {
+    "pregunta": "Lee el siguiente texto: 'La noche era una boca negra que amenazaba con tragárselo.' ¿Qué figura retórica predomina?",
+    "alternativas": ["Metáfora", "Símil", "Personificación", "Hipérbole", "Sinestesia"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "La noche es identificada con una boca negra (metáfora). No hay nexo 'como', ni atribución de acciones humanas a la noche (aunque 'amenazaba' es personificación, la figura principal es la metáfora de la boca).",
+    "habilidad_requerida": "Clase: Metáfora y personificación combinadas. Puede haber más de una figura. Practica identificando la figura principal en textos complejos."
+  },
+  {
+    "pregunta": "Señala la opción donde se usa incorrectamente el pronombre 'le' (leísmo incorrecto).",
+    "alternativas": ["Le dije la verdad.", "Le vi ayer.", "Le regalé un libro.", "Le compré un helado.", "Le escribí una carta."],
+    "respuesta_correcta": "B",
+    "explicacion_respuesta": "Leísmo incorrecto es usar 'le' como complemento directo de persona cuando debería ser 'lo' (a menos que sea en regiones leístas aceptadas). 'Le vi ayer' debería ser 'Lo vi ayer' (complemento directo). Las otras opciones tienen 'le' como complemento indirecto correcto.",
+    "habilidad_requerida": "Clase: Leísmo. El uso de 'le' por 'lo' como complemento directo masculino es considerado incorrecto por la RAE en la norma culta (excepto en algunas zonas). Ejemplo: 'Le vi' (incorrecto), 'Lo vi' (correcto). Practica reemplazando 'le' por 'lo' o 'la' según corresponda."
+  },
+  {
+    "pregunta": "¿Cuál de las siguientes opciones es un texto argumentativo?",
+    "alternativas": ["Una receta de cocina", "Un editorial de periódico", "Un instructivo de armado", "Un gráfico estadístico", "Un cuento infantil"],
+    "respuesta_correcta": "B",
+    "explicacion_respuesta": "El editorial de un periódico presenta una opinión y argumentos para persuadir al lector. Es argumentativo. Los otros son instructivos, visuales o narrativos.",
+    "habilidad_requerida": "Clase: Textos argumentativos. Incluyen ensayos, columnas de opinión, editoriales, críticas. Practica identificando la tesis y los argumentos en un editorial."
+  },
+  {
+    "pregunta": "En la oración 'Necesito que me ayudes', el verbo 'ayudes' está en modo:",
+    "alternativas": ["Subjuntivo", "Indicativo", "Imperativo", "Condicional", "Infinitivo"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "'Necesito que' expresa deseo o necesidad, exige subjuntivo. 'Ayudes' es presente de subjuntivo.",
+    "habilidad_requerida": "Clase: Subjuntivo después de verbos de necesidad o deseo: necesitar, querer, preferir, esperar. Ejemplo: 'Quiero que vengas'. Practica conjugando verbos en presente de subjuntivo."
+  },
+  {
+    "pregunta": "Lee el siguiente texto: 'Era tan pobre que solo tenía lo que llevaba puesto.' ¿Qué figura retórica se emplea?",
+    "alternativas": ["Hipérbole", "Metáfora", "Personificación", "Ironía", "Paradoja"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Exagera la pobreza al extremo de no tener nada más que la ropa puesta. Es hipérbole. No es metáfora, personificación, ironía ni paradoja.",
+    "habilidad_requerida": "Clase: Hipérbole en descripciones de pobreza o riqueza. Ejemplo: 'Tenía tanto dinero que no cabía en su casa'. Practica creando hipérboles sobre situaciones cotidianas (hambre, sueño, frío)."
+  },
+  {
+    "pregunta": "Señala la opción donde la palabra 'porque' está correctamente usada como conjunción causal.",
+    "alternativas": ["No fui porque estaba enfermo.", "¿Porque no viniste?", "Ese es el porque de su enojo.", "No sé porqué lo hizo.", "Por que no estudias, reprobarás."],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "'Porque' junto y sin tilde es conjunción causal (indica la causa). En A es correcto. B debería ser '¿Por qué?', C debería ser 'el porqué' (sustantivo), D 'por qué' interrogativo, E 'Por que' no es adecuado.",
+    "habilidad_requerida": "Clase: Usos de 'porque', 'por qué', 'porqué', 'por que'. 'Porque' causal: estudio porque quiero aprender. Practica escribiendo una oración con cada uno."
+  },
+  {
+    "pregunta": "¿Cuál es el significado de 'omiso' en la frase 'El gobierno fue omiso ante la crisis'?",
+    "alternativas": ["Negligente", "Eficiente", "Rápido", "Preocupado", "Organizado"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "Omiso significa que no hizo lo que debía, negligente, indiferente. No es eficiente, rápido, preocupado ni organizado.",
+    "habilidad_requerida": "Clase: Vocabulario de responsabilidad. 'Omiso' se opone a 'diligente'. Practica usando 'omiso' en contextos políticos o administrativos."
+  },
+  {
+    "pregunta": "En la oración 'Corrió tanto que se cansó', la palabra 'tanto' es un adverbio de:",
+    "alternativas": ["Cantidad", "Modo", "Tiempo", "Lugar", "Duda"],
+    "respuesta_correcta": "A",
+    "explicacion_respuesta": "'Tanto' indica la magnitud de la acción (cantidad o intensidad). Es adverbio de cantidad. No es modo, tiempo, lugar ni duda.",
+    "habilidad_requerida": "Clase: Adverbios de cantidad: mucho, poco, bastante, demasiado, tanto, más, menos. Practica usándolos con verbos (trabaja mucho) y con adjetivos (muy rápido)."
+  }
+]
